@@ -1,0 +1,2230 @@
+Received: from MIT.EDU ([18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA00713; Sat, 20 Apr 1996 14:17:44 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07922; Sat, 20 Apr 96 14:12:49 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25267; Sat, 20 Apr 1996 11:13:49 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (language), part 18 of 35
+Message-Id: <puzzles/archive/language/part2_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:50 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 2202
+Xref: senator-bedfellow.mit.edu rec.puzzles:25002 news.answers:11522 rec.answers:1922
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/language/part2
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> language/english/pronunciation/homophone/trivial.p <==
+Consider the free non-abelian group on the twenty-six letters of the
+alphabet with all relations of the form <word1> = <word2>, where <word1>
+and <word2> are homophones (i.e. they sound alike but are spelled
+differently).  Show that every letter is trivial.
+
+For example, be = bee, so e is trivial.
+
+==> language/english/pronunciation/homophone/trivial.s <==
+be = bee ==> e is trivial;
+ail = ale ==> i is trivial;
+week = weak ==> a is trivial;
+lie = lye ==> y is trivial;
+to = too ==> o is trivial;
+two = to ==> w is trivial;
+hour = our ==> h is trivial;
+faggot = fagot ==> g is trivial;
+bowl = boll ==> l is trivial;
+gell = jel ==> j is trivial;
+you = ewe ==> u is trivial;
+damn = dam ==> n is trivial;
+limb = limn ==> b is trivial;
+bass = base ==> s is trivial;
+cede = seed ==> c is trivial;
+knead = need ==> k is trivial;
+add = ad ==> d is trivial;
+awful = offal ==> f is trivial;
+gram = gramme ==> m is trivial;
+grip = grippe ==> p is trivial;
+cue = queue ==> q is trivial;
+carrel = carol ==> r is trivial;
+butt = but ==> t is trivial;
+lox = locks ==> x is trivial;
+tsar = czar ==> z is trivial;
+vlei = flay ==> v is trivial.
+
+For a related problem, see _The Jimmy's Book_ (_The American Mathematical
+Monthly_, Vol. 93, Num. 8 (Oct. 1986), p.  637):
+
+Consider the free group on twenty-six letters A, ..., Z.  Mod out by
+the relation that defines two words to be equivalent if (a) one is a
+permutation of the other and (b) each appears as a legitimate English
+word in the dictionary.  Identify the center of this group.
+
+    -- clong@remus.rutgers.edu (Chris Long)
+
+==> language/english/pronunciation/oronym.p <==
+List some oronyms (phrases or sentences that can be read in two ways
+with the same sound).
+
+==> language/english/pronunciation/oronym.s <==
+Phrases:
+    a name		an aim
+    a nice man		an ice man
+    a notion		an ocean
+    append		up end
+    bang cat		bank at
+    be quiet		Beek Wyatt
+    bean ice		be nice
+    bee feeder		beef eater
+    beer drips		beard rips
+    buys ink		buy zinc
+    catch it		cat shit
+    catch ooze		cat chews
+    Cato		Kay toe
+    damn pegs		damp eggs
+    field red		feel dread
+    forced air		four stair
+    fork reeps		four creeps
+    form ate		four mate
+    freed Annie		free Danny
+    grade A		gray day
+    grasp rice		grass price
+    great ape		grey tape
+    her butter		herb utter
+    hiatus		Hy ate us
+    homemaker		hoe-maker
+    I scream		ice cream
+    I stink		iced ink
+    it sprays		it's praise
+    it swings		its wings
+    keep sticking	keeps ticking
+    known ocean		no notion
+    lawn chair		launch air
+    may cough		make off
+    new Deal		nude eel
+    new direction	nude erection
+    night rate		nitrate
+    pawn shop		paunch op
+    peace talks		pea stalks
+    pinch air		pin chair
+    play taught		plate ought
+    plum pie		plump eye
+    scar face		scarf ace
+    seal eyeing		see lying
+    see Mabel		seem able
+    see the meat	see them eat
+    seize ooze		see zoos
+    sick squid		six quid
+    slide rule		sly drool
+    standards-based	standard-spaced
+    stay dill		stayed ill
+    that's tough	that stuff
+    the suns rays meet	the sons raise meat
+    thing call		think all
+    tour an		two ran
+    tulips		two lips
+    twenty six ones	twenty sick swans
+    we'll own		we loan
+    well done other	weld another
+    white shoes		why choose
+    yelp at		yell Pat
+    your crimes		York rhymes
+    youth read		you thread
+
+Sentences:
+    A politician's fate often hangs in a [delicate / delegate] balance.
+    Any [grey day/grade A] would be bad news for one professor I know.
+    Are you aware of the words you have [just uttered / just stuttered]?
+    He would kill Hamlet for [that reason / that treason].
+    How did you do in the [contest / Kant test]?
+    I don't know how [mature/much your] people enjoy such a show.
+    I have [known oceans/no notions] that you yourself couldn't imagine.
+    I like [sadder day/ Saturday].
+    If you listen you can hear the [night rain / night train].
+    I'm taking [a nice / an ice] cold shower.
+    Oh, no!  [This guy/The sky] is falling!
+    Reading in the library is sometimes [allowed / aloud].
+    [Some others / Some mothers] I've seen...
+    That reflects the [secretariat's sphere / secretariat's fear] of competence.
+    That's the [biggest hurdle / biggest turtle] I've ever seen!
+    The [stuffy nose / stuff he knows] can lead to problems.
+    Where is the [spice center / spy center]?
+    [White shoes: / Why choose] the trademark of Pat Boone[./?]
+    You'd be surprised to see a [mint spy / mince pie] in your bank.
+
+See also:
+    the archive entry "telegrams"
+
+References:
+
+    Barry, W J, 1981, Internal Juncture and Speech Communication,
+    Arbeitsberichte.  Institut fu"r Phonetik.  University of Kiel.  Vol 16.
+
+    Brandreth, Giles, _The Joy of Lex_, 1980, New York: William Morrow and Co.,
+    pp. 58-59, who coined the word "oronym"
+
+    Cutler & Butterfield, Rhythmic Cues to Speech Segmentation.  Evidence
+    from juncture misperception, 1992, Journal of Memory and Language, Vol
+    31(2) 218-236  Provides materials in context frames where the
+    alternative segmentations lead to one Vs two word parsings: in furs Vs
+    infers.
+
+    Grice, Martine and Hazan, Valerie, 1989, The assessment of synthetic
+    speech intelligibility using semantically unpredictable sentences,
+    Speech, Hearing and Language, Work in Progress, University College
+    London. The inferior quality of the synthetic speech often caused more
+    than one type of error at once (bright eye -> dry tie).
+
+    Hoard, James E., `Juncture and syllable structure', Phonetica 15,
+    1966, 96-109
+
+    Hockett, Charles F. Hockett, _A Course in Modern Linguistics_, New York:
+    Macmillan, 1958, 54-61
+
+    Lehiste, Ilse.  1960.  An acoustic-phonetic study of internal open
+    juncture.  Phonetica 5 (supplement). pp. 5-54.
+
+    Nakatani L.  H.  & Dukes, K.D., 1977, Locus of Segmental Cues to Word
+    Juncture, Journal of the Acoustical Society of America, Vol 62, pp
+    714-719 and
+
+    Price P, Ostendorf M, Shattuck-Huffnagel S & Fong C (1991) "The use of
+    prosody in syntactic disambibuation" JASA 90 (6) pp2956-2970. It has
+    some good examples,
+
+==> language/english/pronunciation/phonetic.letters.p <==
+What does "FUNEX" mean?
+
+==> language/english/pronunciation/phonetic.letters.s <==
+FUNEX? (Have you any eggs?)
+SVFX. (Yes, we have eggs.)
+FUNEM? (Have you any ham?)
+SVFM. (Yes, we have ham.)
+FUMNX? (Have you ham and eggs?)
+S,S:VFM,VFX,VFMNX! (Yes, yes: we have ham, we have eggs, we have ham and eggs!)
+
+CD ED BD DUCKS? (See the itty bitty ducks?)
+MR NOT DUCKS! (Them are not ducks!)
+OSAR, CDEDBD WINGS? (Oh yes they are, see the itty bitty wings?)
+LILB MR DUCKS! (Well I'll be, them are ducks!)
+
+In Spanish:
+SOCKS. (Eso si que es.)
+
+==> language/english/pronunciation/rhyme.p <==
+What English words are hard to rhyme?
+
+"Rhyme is the identity in sound of an accented vowel in a word...and
+of all consonantal and vowel sounds following it; with a difference in
+the sound of the consonant immediately preceding the accented vowel."
+(From The Complete Rhyming Dictionary by Clement Wood).  Appropriately
+Wood says a couple of pages later, "If a poet commences, 'October is
+the wildest month' he has estopped himself from any rhyme; since
+"month" has no rhyme in English."
+
+==> language/english/pronunciation/rhyme.s <==
+Unless noted otherwise, all words occur in Webster's Ninth Collegiate
+Dictionary, Merriam-Webster, Springfield, MA, 1986.
+
+NI3 = Merriam-Webster's Third New International Dictionary
+NI2 = Merriam-Webster's New International Dictionary, Second Edition
+RHD = Random House Unabridged Dictionary
++ means slang, foreign, obsolete, dialectical, etc.
+
+Word		Rhyme					Assonance
+---------------	---------------------------------------	--------------------
+aitch		brache (NI2+), taich (NI2+)		naish
+angry		unangry (NI2+)				aggry
+angst							lanx
+beards		weirds
+breadth							death
+bulb							pulp
+carpet		charpit
+chimney		timne, polymny (NI2+)
+cusp		wusp (NI2)				bust
+depth							stepped
+eighth							faith
+else							belts
+exit		direxit (RHD+)				sexist
+fiends		teinds, piends
+filched		hilched (NI3+), milched (NI2)		zilch
+filth		spilth, tilth
+fifth							drift
+film		pilm (NI3+)				kiln
+fluxed		luxed (NI3+), muxed (NI3+)		ducked
+glimpsed						rinsed
+gospel							hostile
+gulf							pulse
+jinxed		outminxed (?)				blinked
+leashed		niched, tweesht (NI2+)
+liquid							wicked
+mollusk							smallest
+mouthed		southed
+month							grumph
+mulcts							bulks
+mulched		gulched (NI3+)				bulged
+ninth							pint
+oblige							bides
+oomph		sumph (NI3+)
+orange		sporange
+pint		jint (NI2+)				bind
+poem		phloem, proem
+pregnant	regnant
+purple		curple (NI3+), hirple (NI3+)
+puss		schuss
+rhythm		smitham
+scalds		balds, caulds (NI3+), faulds (NI3+)
+scarce		clairce (NI2), hairse (NI2+)		cares
+sculpts							gulps
+silver		chilver (NI3+)
+sixth							kicks
+spirit		squiret (NI2+)
+tenth		nth					bent
+tsetse		baronetcy, intermezzi, theetsee
+tuft		yuft
+twelfth							health
+widow		kiddo
+width							bridge
+window		indo, lindo
+wolf							bulls
+
+==> language/english/pronunciation/silent.letter.p <==
+For each letter, what word contains that letter silent?
+
+==> language/english/pronunciation/silent.letter.s <==
+aisle
+comb
+indict
+handsome
+twitched
+halfpenny
+gnome
+myrrh
+business
+marijuana
+knock
+talk
+mnemonic
+autumn
+people
+psyche
+cinqcents
+forecastle
+viscount
+hautboy
+plaque
+fivepence
+write
+tableaux
+prayer
+rendezvous
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/pronunciation/silent.most.p <==
+What word has the most silent letters in a row?
+
+==> language/english/pronunciation/silent.most.s <==
+BROUGHAM (4, UGHA)
+  for each letter  AISLE, COMB, INDICT,
+   HANDSOME, TWITCHED, HALFPENNY, GNOME, MYRRH, BUSINESS, MARIJUANA, KNOCK,
+   TALK, MNEMONIC, AUTUMN, PEOPLE, PSYCHE, CINQCENTS, FORECASTLE, VISCOUNT,
+   HAUTBOY, PLAQUE, FIVEPENCE, WRITE, TABLEAUX, PRAYER, RENDEZVOUS
+  homophones, for each letter  O(A)R, LAM(B), S(C)ENT,
+   LE(D)GER, DO(E), WAF(F), REI(G)N, (H)OUR, WA(I)VE, HAJ(J)I, (K)NOT, HA(L)VE,
+   PRIM(M)ER, DAM(N), J(O)UST, (P)SALTER, ?, CAR(R)IES, (S)CENT, TARO(T),
+   B(U)Y, ?, T(W)O, ?, RE(Y), BIZ(Z)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/pronunciation/syllable.p <==
+What words have an exceptional number of letters per syllable?
+
+==> language/english/pronunciation/syllable.s <==
+  longest for each number of syllables 
+   one SCRAUNCHED  [SQUIRRELLED (11)] two SCRATCHBRUSHED (14)
+   one, for each letter  ARCHED, BROUGHAMS, CRAUNCHED, DRAUGHTS,
+    EARTHED, FLINCHED, GROUCHED, HAUNCHED, ITCHED, JOUNCED, KNIGHTS, LAUNCHED,
+    MOOCHED, NAUGHTS, OINKED, PREACHED, QUETCHED, REACHED, SCRAUNCHED,
+    THOUGHTS, UMPHS, VOUCHED, WREATHED, XYSTS, YEARNED, ZOUAVES
+   two, for each letter  ARCHFIENDS, BREAKTHROUGHS, CLOTHESHORSE,
+    DRAUGHTBOARDS, EARTHTONGUES, FLAMEPROOFED, GREATHEART, HAIRSBREADTHS,
+    INTHRALLED, JUNETEENTHS, KNICKKNACKS, LIGHTWEIGHTS, MOOSETONGUES,
+    NIGHTCLOTHES, OUTSTRETCHED, PLOUGHWRIGHTS, QUICKTHORNS, ROUGHSTRINGS,
+    SCRATCHBRUSHED, THROATSTRAPS, UNSTRETCHED, VERSESMITHS, WHERETHROUGH,
+    XANTHINES, YOURSELVES, ZEITGEISTS
+  shortest for each number of syllables 
+   two AA (2) three AREA (4) [O'IO (3)] four IEIE (4) five OXYOPIA (7)
+   six ONIOMANIA (9) [AMIOIDEI (8)] seven EPIDEMIOLOGY (12) [OMOHYOIDEI (10)]
+   eight EPIZOOTIOLOGY (13) nine EPIZOOTIOLOGICAL (16)
+   ten EPIZOOTIOLOGICALLY (18) twelve HUMUHUMUNUKUNUKUAPUAA (21)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/pronunciation/telegrams.p <==
+Since telegrams cost by the word, phonetically similar messages can be cheaper.
+See if you can decipher these extreme cases:
+
+UTICA CHANSON MIGRATE INVENTION ANNUAL KNOBBY SORRY IN FACTUAL BEEN CLOVER.
+
+WEED LICHEN ICE CHEST FOREARM OTHER DISGUISE DELIMIT.
+
+CANCEL MYOCARDIA ITS INFORMAL FUNCTION.
+
+YEARN AFFIX, LOST UKASE, UGANDA JAIL, CONSERVE TENURES YACHT APPEAL.
+
+EYELET SHEILA INDIA HOUSE SHEILAS TURKEY.
+
+BOB STILT SEA, CANTANKEROUS BOAT, HUMUS GOAD IMMORTAL DECOS GUARD.
+
+MARY SINBAD SHEER TOURNEY AUGUSTA WIND NOCTURNE TOOTHBRUSH.
+
+WHINE YOSEMITE NAMES SOY CAN PHILATELIST.
+
+ALBEIT DETRACT UNIVERSE EDIFY MUSTAFA TICKET TICKET IN.
+
+==> language/english/pronunciation/telegrams.s <==
+These are from an old "Games" magazine:
+
+UTICA CHANSON MIGRATE INVENTION ANNUAL KNOBBY SORRY IN FACTUAL BEEN CLOVER.
+	You take a chance on my great invention and you'll not be sorry.
+	 In fact, you'll be in clover.
+
+WEED LICHEN ICE CHEST FOREARM OTHER DISGUISE DELIMIT.
+	We'd like a nice chest for our mother; the sky's the limit.
+
+CANCEL MYOCARDIA ITS INFORMAL FUNCTION.
+	Can't sell my ol' car dear; it's in for malfunction.
+
+YEARN AFFIX, LOST UKASE, UGANDA JAIL, CONSERVE TENURES YACHT APPEAL.
+	You're in a fix. Lost your case. You goin' to jail.
+	Can serve ten years. You ought to appeal.
+
+EYELET SHEILA INDIA HOUSE SHEILAS TURKEY.
+	I let Sheila in their house; she lost her key.
+
+BOB STILT SEA, CANTANKEROUS BOAT, HUMUS GOAD IMMORTAL DECOS GUARD.
+	Bob's still at sea; can't anchor his boat. You must go to him
+	or tell the coast guard.
+
+MARY SINBAD SHEER TOURNEY AUGUSTA WIND NOCTURNE TOOTHBRUSH.
+	Mary's in bed; she hurt her knee.  A gust of wind
+	knocked her into the brush.
+
+WHINE YOSEMITE NAMES SOY CAN PHILATELIST.
+	Why don't you (why'n'ya) send me the names, so I can
+	fill out a list.
+
+ALBEIT DETRACT UNIVERSE EDIFY MUSTAFA TICKET TICKET IN.
+	I'll be at the track and I have a receipt if I must have a ticket to
+	get in.
+
+Here are some others not from "Games":
+
+BRUISES HURT ERASED AFFORD ERECTED TOO
+	Bruce is hurt. He raced a Ford. He wrecked it, too.
+
+==> language/english/puns.p <==
+Where can I find a collection of puns?
+
+==> language/english/puns.s <==
+garbo.uwasa.fi:/pc/ts/tspun12.zip
+
+==> language/english/rare.trigraphs.p <==
+What trigraphs (three-letter combinations) occur in only one word?
+
+==> language/english/rare.trigraphs.s <==
+Here is a list of all the trigraphs which occur exactly once in the union of
+_Official Scrabble Words_ (First Edition), the _Official Scrabble Players
+Dictionary_ and _Webster's Unabridged Dictionary (Second Edition)_,
+together with the words in which they occur.
+
+The definition of "word" is a problematic.  For example, lots of words
+starting deoxy- contain the trigraph `eox', but no others do.  Should
+`eox' be on the list?
+
+Common words are marked with a *.
+
+aae baaed
+adq*headquarter headquarters
+ajs svarajs
+aqs talaqs
+bks nabks
+bze subzero
+cda ducdame
+dph*headphone headphones 
+dsf*handsful 
+dts veldts
+dzu kudzu kudzus 
+ekd*weekday weekdays 
+evh evhoe
+evz evzone evzones 
+exv sexvalent 
+ezv*rendezvous
+fhu cliffhung
+fjo fjord fjords 
+fsp*offspring offsprings 
+gds smaragds
+ggp*eggplant eggplants 
+gnb signboard signboards 
+gnp*signpost signposted signposting signposts
+gnt sovereignty
+gty hogtying
+gza*zigzag zigzagged zigzagging zigzaggy zigzags
+hds camanachds
+hky droshky
+hlr kohlrabi kohlrabies kohlrabis
+hrj lehrjahre
+hyx asphyxia asphyxias asphyxiate asphyxies asphyxy 
+itv mitvoth 
+iwy skiwy
+ixg sixgun
+jds slojds
+jje hajjes
+jki pirojki pirojki
+jym jymold
+kky yukky
+ksg*thanksgiving
+kuz yakuza 
+kvo mikvoth
+kyj*skyjack skyjacked skyjacker skyjackers skyjacking skyjackings skyjacks
+llj killjoy killjoys
+lmd filmdom filmdoms
+ltd*meltdown meltdowns
+lxe calxes
+lzy schmalzy
+mds fremds
+mfy comfy
+mhs ollamhs
+mky dumky
+mmm dwammming
+mpg*campground
+mss bremsstrahlung
+muo muon muonic muonium muoniums muons
+nhs sinhs 
+njy benjy
+nuu continuum
+obg hobgoblin hobgoblins
+ojk pirojki
+okc*bookcase bookcases 
+ovk sovkhoz sovkhozes sovkhozy
+pev*grapevine grapevines
+pfs dummkopfs
+php ephphatha
+pss topssmelt
+pyj pyjama pyjamaed pyjamas
+siq physique physiques
+slt juslted
+smk besmkes
+spb*raspberries raspberry
+spt claspt
+swy swythe
+syg*easygoing
+szy groszy
+tux*tux tuxedo tuxedoes tuxedos tuxes
+tvy outvying
+tzu tzuris
+ucd ducdame
+vho evhoe
+vkh sovkhoz sovkhozes sovkhozy sovkhos
+vly vly 
+vns eevns
+voh evohe
+vun avuncular
+wcy gawcy
+wdu*sawdust sawdusted sawdusting sawdusts sawdusty 
+wfr bowfront
+wft ewftes
+xeu exeunt
+xgl foxglove foxgloves
+xiw taxiway taxiways
+xls cacomixls
+xtd nextdoor
+xva sexvalent
+yks bashlyks
+yrf gyrfalcon gyrfalcons 
+ysd paysd
+yxy asphyxy
+zhk pirozhki
+zow zowie
+zwo*buzzword buzzwords
+zzs*buzzsaw 
+
+==> language/english/self.ref/self.ref.letters.p <==
+Construct a true sentence of the form: "This sentence contains _ a's, _ b's,
+_ c's, ...," where the numbers filling in the blanks are spelled out.
+
+==> language/english/self.ref/self.ref.letters.s <==
+A little history of the problem, culled from the pages of _Metamagical
+Themas_, Hofstadter's collection of his _Scientific American_ columns.
+First mention of it is in the Jan. '82 column.  Lee Sallows opened the
+field with a sentence that began "Only the fool would take trouble to
+verify that his sentence was composed of ten a's ...." etc.
+
+Then in the addendum to the Jan.'83 column on viral sentences, Hofstadter
+quotes Sallows describing his Pangram Machine, "a clock-driven cascade of
+sixteen Johnson-counters," to tackle the problem. An early success was:
+        "This pangram tallies five a's, one b, one c, two d's, twenty-
+        eight e's, eight f's, six g's, eight h's, thirteen i's, one j,
+        one k, three l's, two m's, eighteen n's, fifteen o's, two p's,
+        one q, seven r's, twenty-five s's, twenty-two t's, four u's, four
+        v's, nine w's, two x's, four y's, and one z."
+
+Sallows wagered ten guilders that no-one could create a perfect self-
+documenting sentence beginning, "This computer-generated pangram contains
+...." within ten years.
+
+It was solved very quickly, after Sallows' challenge appeared in Dewdney's
+Oct. '84 SA column.  Larry Tesler solved it by a method Hofstadter calls
+"Robinsonizing," which involves starting with an arbitrary set of values
+for each letter, getting the true values when the sentence is made, and
+plugging the new values back in, making a feedback loop. Eventually, you
+can zero in on a set of values that work.  Tesler's sentence:
+        This computer-generated pangram contains six a's, one b, three
+        c's, three d's, thirty-seven e's, six f's, three g's, nine h's,
+        twelve i's, one j, one k, two l's, three m's, twenty-two n's,
+        thirteen o's, three p's, one q, fourteen r's, twenty-nine s's,
+        twenty-four t's, five u's, six v's, seven w's, four x's, five
+        y's, and one z.
+
+The method of solution (called "Robinsonizing," after the logician Raphael
+Robinson) is as follows:
+1)      Fix the count of a's.
+2)      Fix the count of b's.
+3)      Fix the count of c's.
+...
+26)   Fix the count of z's.
+Then, if the sentence is still wrong, go back to step 1.
+ 
+Most attempts will fall into long loops (what Hofstadter calls attractive
+orbits), but with a good computer program, it's not too hard to find a
+Robinsonizing sequence that zeros in on a fixed set of values.
+
+The February and May 1992 _Word Ways_ have articles on this subject,
+titled "In Quest of a Pangram, (Part 1)" by Lee Sallows.  It tells of his
+search for a self-referential pangram of the form, "This pangram
+contains _ a's, ..., and one z."  (He built special hardware to search
+for them.)  Two such pangrams given in the article are:
+
+    This pangram lists four a's, one b, one c, two d's,
+    twenty-nine e's, eight f's, three g's, five h's, eleven i's,
+    one j, one k, three l's, two m's twenty-two n's, fifteen o's,
+    two p's, one q, seven r's, twenty-six s's, nineteen t's, four
+    u's, five v's, nine w's, two x's, four y's, and one z.
+
+    This pangram contains four a's, one b, two c's, one d, thirty
+    e's, six f's, five g's, seven h's, eleven i's, one j, one k,
+    two l's, two m's eighteen n's, fifteen o's, two p's, one q,
+    five r's, twenty-seven s's, eighteen t's, two u's, seven v's,
+    eight w's, two x's, three y's, & one z.
+
+It also contains one in Dutch by Rudy Kousbroek:
+
+    Dit pangram bevat vijf a's, twee b's, twee c's, drie d's,
+    zesenveertig e's, vijf f's, vier g's, twee h's, vijftien i's,
+    vier j's, een k, twee l's, twee m's, zeventien n's, een o,
+    twee p's, een q, zeven r's, vierentwintig s's, zestien t's,
+    een u, elf v's, acht w's, een x, een y, and zes z's.
+
+References:
+Dewdney, A.K. Scientific American, Oct. 1984, pp 18-22.
+Sallows, L.C.F. Abacus, Vol.2, No.3, Spring 1985, pp 22-40.
+Sallows, L.C.F. Word Ways, Feb. & May 1992
+Hofstadter, D. Scientific American, Jan. 1982, pp 12-17.
+
+==> language/english/self.ref/self.ref.numbers.p <==
+What true sentence has the form: "There are _ 0's, _ 1's, _ 2's, ...,
+in this sentence"?  The "'s" can be dropped if there is only one of any
+number.
+
+==> language/english/self.ref/self.ref.numbers.s <==
+There are 1 0, 7 1's, 3 2's, 2 3's, 1 4, 1 5, 1 6, 2 7's, 1 8, and 1 9
+in this sentence.
+ 
+There are 1 0, 11 1's, 2 2's, 1 3, 1 4, 1 5, 1 6, 1 7, 1 8, and 1 9
+in this sentence.
+
+==> language/english/self.ref/self.ref.words.p <==
+What sentence describes its own word, syllable and letter count?
+
+==> language/english/self.ref/self.ref.words.s <==
+This sentence contains ten words, eighteen syllables, and sixty-four letters.
+
+==> language/english/sentences/behead.p <==
+Is there a sentence that remains a sentence when all its words are beheaded?
+
+==> language/english/sentences/behead.s <==
+Show this bold Prussian that praises slaughter, slaughter brings rout.
+
+==> language/english/sentences/charades.p <==
+A ....... surgeon was ....... to operate because he had .......
+
+==> language/english/sentences/charades.s <==
+A notable surgeon was not able to operate because he had no table.
+
+==> language/english/sentences/emphasis.p <==
+List some sentences that change meaning when the emphasis is moved.
+
+==> language/english/sentences/emphasis.s <==
+Give what you WANT to her and keep the rest for yourself.
+Give what YOU want to HER and keep the rest for yourself.
+
+==> language/english/sentences/pangram.p <==
+A "pangram" is a sentence containing all 26 letters.
+What is the shortest pangram (measured by number of letters or words)?
+What is the shortest word list using all 26 letters in alphabetical order?
+In reverse alphabetical order?
+
+==> language/english/sentences/pangram.s <==
+The single-letter words that have meanings unrelated to their letter shapes
+or sounds, position in the alphabet, etc. are:
+a - indefinite article; on; in; at; to; he; him; she; her; they; them; it; I;
+    have; of; all
+c - 100; cocaine; programming language
+d - 500
+e - base of natural logs; eccentricity; enlarging
+g - acceleration of gravity; general ability; $1000; general audience
+i - one; unit vector in x direction; personal pronoun; in; aye
+j - one; unit vector in y direction
+k - 1000; 1024; strikeout; unit vector in z direction
+l - 50; ell; elevated railroad
+m - 1000; em; pica; an antigen of human blood
+n - an indefinite number; en; an antigen of human blood
+o - oh
+q - quality of oscillatory circuit
+R - one of the three Rs; restricted audience
+t - t-shirt
+u - upper class
+v - five
+w - w particle
+x - unknown quantity; atmospherics; adults only
+y - unknown quantity; YMCA
+z - unknown quantity; buzzing sound; z particle
+It is therefore advisable to exclude single-letter words, with the
+possible exception of 'a'.
+
+As always, word acceptability varies with the dictionaries used.  We use these:
+9C  - Merriam-Webster's Ninth New Collegiate Dictionary, 1986
+NI3 - Merriam-Webster's Third New International Dictionary, 1961
+NI2 - Merriam-Webster's New International Dictionary, Second Edition, 1935
+OED - Oxford English Dictionary with Supplements, 1933 - 85
+'+' indicates obsolete, dialectical, slang, or otherwise substandard word.
+
+Some exceptional pangrams:
+Using only words in 9C:
+Sympathizing would fix Quaker objectives. (5 words, 36 letters)
+Quick brown fox, jump over the lazy dogs. (8 words, 32 letters)
+Pack my box with five dozen liquor jugs. (8 words, 32 letters)
+Jackdaws love my big sphinx of quartz. (7 words, 31 letters)
+The five boxing wizards jump quickly. (6 words, 31 letters)
+How quickly daft jumping zebras vex. (6 words, 30 letters)
+Dub waltz, nymph, for quick jigs vex. (7 words, 28 letters,
+                        Stephen Smith, from a palindrome by Gyles Brandreth)
+Quartz glyph job vex'd cwm finks. (6 words?, 26 letters)
+Cwm, fjord-bank glyphs vext quiz. (6 words, 26 letters, Dmitri Borgmann)
+Using words in 9C and NI3:
+Veldt jynx grimps waqf zho buck. (6 words, 26 letters, Michael Jones)
+Using words in 9C, NI3 and NI3+:
+Squdgy fez, blank jimp crwth vox. (6 words, 26 letters, Claude Shannon)
+Using words in 9C, NI3, NI2 and NI2+:
+Phlegms fyrd wuz qvint jackbox. (5 words, 26 letters, Dmitri Borgmann)
+
+Some exceptional panalphabetic word lists:
+jackbox viewfinder phlegmy quartz (4 words, 31 letters, Mary Hazard)
+benzoxycamphors quick-flowing juventude (3 words, 36 letters, Darryl Francis)
+
+Some exceptional nearly panalphabetic isogrammatic word lists:
+blacksmith gunpowdery (2 words, 20 letters)
+humpbacks frowzy tingled (3 words, 22 letters)
+
+Some exceptional panalphabetic word lists with letters in alphabetical order:
+Using only words in 9C:
+a BCD ef ghi jack limn op querist ulva wax oyez (11 words, 37 letters)
+ABC defog hijack limn op querist ulva wax oyez (9 words, 38 letters)
+Using words in 9C and NI3:
+a BCD ef ghi jak limn op qres to uva wax oyez (12 words, 34 letters)
+ABC defy ghi jak limn op qres to uva wax oyez (11 words, 35 letters)
+ABC defy ghi jak limn opaquers turves wax oyez (9 words, 38 letters)
+scabicide afghani jokul manrope querist purview oxygenize (7 words, 51 letters)
+Using words in 9C, NI3 and NI3+:
+a BCD ef ghi jak limn op QRS to uva wax yez (12 words, 32 letters)
+ABC defy ghi jak limn op QRS to uva wax yez (11 words, 33 letters)
+ab cad ef ghi jak limn op qre stun vow ox yez (12 words, 34 letters)
+ABC defy ghi jak limn op querist uva wax yez (10 words, 35 letters)
+Using words in 9C, NI3, NI3+, NI2 and NI2+:
+ABC def ghi jak limn op qre struv wax yez (10 words, 32 letters)
+ABC def ghi jak limn opaquer struv wax yez (9 words, 34 letters)
+Using words in 9C, NI3, NI3+, NI2, NI2+ and the OED:
+ABC defog hij klam nop QRS tu vow XYZ (9 words, 29 letters, Jeff Grant)
+ABC def ghi jak limn op qres tu vow XYZ (10 words, 30 letters)
+ABC defog hij klam nop querist uvrow XYZ (8 words, 33 letters, Jeff Grant)
+ABC defyghe bij sklim nop querist uvrow XYZ (8 words, 36 letters)
+ABC defog hijack limnophil querist uvrow XYZ (7 words, 38 letters, Jeff Grant)
+
+Some exceptional panalphabetic word lists with letters in reverse alpha order:
+Using words from 9C:
+lazy ox ow vug tsar quip on milk jib hag fed cab a (13 words, 38 letters)
+lazy ox wave uts reequip on milk jihad gifted cabal (10 words, 42 letters)
+Using words from 9C and NI3:
+lazy ox ow vug tsar quip on milk jib hag fed caba (12 words, 38 letters)
+lazy ox wave uts roque pon milk jihad gifted caba (10 words, 40 letters)
+Using words from 9C, NI3 and NI2:
+zo yex wu vug tsar quip on milk jib hag fed caba (12 words, 37 letters)
+zo yex wave uts roque pon milk jihad gifted caba (10 words, 39 letters)
+
+All words are main entries in 9C except the following:
+9C: ghi (at 'ghee')
+NI3: caba, fyrd, jak, opaquers, pon, qre(s), squdgy, uva
+NI3+: jimp, QRS (at 'QRS complex'), sklim, vox (at 'vox populi'), yez
+NI2: benzoxycamphors, jackbox, limnophil, quick-flowing, yex, zo
+NI2+: def, juventude, klam, quar, qvint, struv, tu, wuz
+OED: defyghe (at 'defy'), bij (at 'buy'), hij, nop, uvrow (at 'yuffrouw'),
+	XYZ (at 'X')
+
+The first time I saw this pangram was in Gyles Brandeth's _The Joy of Lex_.
+It appeared there as:
+
+Waltz, nymph, for quick jigs vex Bud.  (7 words, 28 letters, proper noun.)
+
+I always wondered why they didn't try modifying it as:
+
+Waltz, nymph, for quick jigs vex buds.  (7 words, 29 letters, no proper noun.)
+
+However, why fast dances would irritate incipient flowers is beyond me,
+so I tried again:
+
+Waltz, dumb nymph, for quick jigs vex.  (7 words, 29 letters, no proper noun,
+					 makes more sense.)
+
+However, sounds kind of sexist, and we can maybe chop off a letter and
+eliminate the sexism, although suffering some loss of sense:
+
+Waltz, bud nymph, for quick jigs vex.  (7 words, 28 letters, no proper noun,
+					makes less sense.)
+
+There are river nymphs and tree nymphs and mountain nymphs, so there can
+be nymphs of the aforementioned incipent flowers, right?  Sense is a matter
+of opinion, so you can move the bud around or turn it into another imperative
+verb rather than a noun-as-adjective:
+
+Waltz, nymph, bud, for quick jigs vex.  (7 words, 28 letters, no proper noun,
+					 sense is dubious.)
+[We've all heard of budding youth, right?]
+
+Waltz, nymph, for quick bud jigs vex.  (7 words, 28 letters, no proper noun,
+					sense is dubious.)
+[Yeah, we've all learned to dance a merry jig that looks like one of those
+infamous incipient flowers.]
+
+Dub waltz, nymph, for quick jigs vex.  (7 words, 28 letters, no proper noun,
+					came up with this on the spot and
+					actually it looks pretty good!)
+[The idea being that a nymph, being in control of the soundtrack for a TV
+sitcom, has to change the music to which a grandmother is listening, from
+something from Ireland to something from Strauss.]
+
+    -- Stephen Joseph Smith <sjsmith@cs.umd.edu>
+
+It is fairly straightforward, if time-consuming, to search for minimal
+pangrams given a suitable lexicon, and the enclosed program does this. 
+The run time is of the order of 20 MIPS-days if fed `Official Scrabble
+Words', a document nominally listing all sufficiently short words
+playable in tournament Scrabble in Britain.
+
+I also enclose a lexicon which will reproduce the OSW results much more
+quickly.
+
+The results are dominated by onomatopoeic interjections (`pst', `sh',
+etc.), and words borrowed from Welsh (`cwm', `crwth') and Arabic (`qat',
+`suq').  Other lexicons will contain a very different leavening of such
+words, and yield a very different set of pangrams.
+
+Readers are invited to form sentences (or, less challenging, newspaper
+headlines) from these pangrams.  Few are amenable to this sort of thing. 
+
+    -- Steve Thomas
+
+-----cut-----here-----
+#include <stdio.h>
+#include <ctype.h>
+
+extern void *malloc ();
+extern void *realloc ();
+
+long getword ();
+
+#define MAXWORD 26
+int list[MAXWORD];
+int lp;
+
+struct list {
+	struct list *next;
+	char *word;
+};
+
+struct word {
+	long mask;
+	struct list *list;
+} *w;
+int wp;
+int wsize;
+
+char wordbuf[BUFSIZ];
+
+char *letters = "qxjzvwfkbyhpmgcdultnoriase";
+
+int cmp (ap, bp)
+struct word *ap, *bp;
+{
+	char *p;
+	long a = ap->mask, b = bp->mask;
+
+	for (p = letters; *p; p++)
+	{
+		long m = 1L << (*p - 'a');
+
+		if ((a & m) != (b & m))
+			if ((a & m) != 0)
+				return -1;
+			else
+				return 1;
+	}
+	return 0;
+}
+
+void *
+newmem (p, size)
+void *p;
+int size;
+{
+	if (p)
+		p = realloc (p, size);
+	else
+		p = malloc (size);
+	if (p == NULL) {
+		fprintf (stderr, "Out of memory\n");
+		exit (1);
+	}
+	return p;
+}
+
+char *
+dupstr (s)
+char *s;
+{
+	char *p = newmem ((void *)NULL, strlen (s) + 1);
+
+	strcpy (p, s);
+	return p;
+}
+
+main (argc, argv)
+int argc;
+char **argv;
+{
+	long m;
+	int i, j;
+
+	while ((m = getword (stdin)) != 0)
+	{
+		if (wp >= wsize)
+		{
+			wsize += 1000;
+			w = newmem (w, wsize * sizeof (struct word));
+		}
+		w[wp].mask = m;
+		w[wp].list = newmem ((void *)NULL, sizeof (struct list));
+		w[wp].list->word = dupstr (wordbuf);
+		w[wp].list->next = (struct list *)NULL;
+		wp++;
+	}
+	qsort (w, wp, sizeof (struct word), cmp);
+	for (i = 1, j = 1; j < wp; j++)
+	{
+		if (w[j].mask == w[i - 1].mask) {
+			w[j].list->next = w[i - 1].list;
+			w[i - 1].list = w[j].list;
+		} else
+			w[i++] = w[j];
+	}
+	wp = i;
+	pangram (0L, 0, letters);
+	exit (0);
+}
+
+pangram (sofar, min, lets)
+long sofar;
+int min;
+char *lets;
+{
+	register int i;
+	register long must;
+
+	if (sofar == 0x3ffffff) {
+		print ();
+		return;
+	}
+	for (; *lets; lets++)
+		if ((sofar & (1 << (*lets - 'a'))) == 0)
+			break;
+	must = 1 << (*lets - 'a');
+	for (i = min; i < wp; i++)
+	{
+		if (w[i].mask & sofar)
+			continue;
+		if ((w[i].mask & must) == 0)
+			continue;
+		list[lp++] = i;
+		pangram (w[i].mask | sofar, i + 1, lets);
+		--lp;
+	}
+}
+
+long
+getword (fp)
+FILE *fp;
+{
+	long mask, m;
+	char *p;
+	char c;
+
+	while (fgets (wordbuf, sizeof (wordbuf), fp) != NULL) {
+		p = wordbuf;
+		mask = 0L;
+		while ((c = *p++) != '\0') {
+			if (!islower (c))
+				break;
+			m = 1L << (c - 'a');
+			if ((mask & m) != 0)
+				break;
+			mask |= m;
+		}
+		if (c == '\n')
+			p[-1] = c = '\0';
+		if (c == '\0' && mask)
+			return mask;
+	}
+	return 0;
+}
+
+print ()
+{
+	int i;
+
+	for (i = 0; i < lp; i++)
+	{
+		struct word *p = &w[list[i]];
+		struct list *l;
+
+		if (p->list->next == NULL)
+			printf ("%s", p->list->word);
+		else {
+			printf ("(");
+			for (l = p->list; l; l = l->next) {
+				printf ("%s", l->word);
+				if (l->next)
+					printf (" ");
+			}
+			printf (")");
+		}
+		if (i != lp - 1)
+			printf (" ");
+	}
+	printf ("\n");
+	fflush (stdout);
+}
+-----and-----here-----
+ankh
+bad
+bag
+bald
+balk
+balks
+band
+bandh
+bang
+bank
+bap
+bard
+barf
+bark
+bed
+beds
+beg
+bend
+benj
+berk
+berks
+bez
+bhang
+bid
+big
+bight
+bilk
+bink
+bird
+birds
+birk
+bisk
+biz
+blad
+blag
+bland
+blank
+bled
+blend
+blight
+blimp
+blin
+blind
+blink
+blintz
+blip
+blitz
+block
+blond
+blunk
+blunks
+bod
+bods
+bog
+bok
+boks
+bold
+bond
+bong
+bonk
+bonks
+bop
+bord
+bords
+bosk
+box
+brad
+brank
+bred
+brink
+brinks
+brod
+brods
+brog
+brogh
+broghs
+bud
+bug
+bugs
+bulk
+bulks
+bump
+bumps
+bund
+bunds
+bung
+bungs
+bunk
+bunks
+burd
+burds
+burg
+burgh
+burghs
+burk
+burks
+burp
+busk
+by
+ch
+crwth
+cwm
+cwms
+dab
+dag
+dak
+damp
+dap
+deb
+debs
+debt
+deft
+delf
+delfs
+delft
+delph
+delphs
+depth
+derv
+dervs
+dhak
+dib
+dig
+dight
+dink
+dinks
+dirk
+disk
+div
+divs
+dob
+dobs
+dog
+dop
+dorp
+dowf
+drab
+draft
+drib
+dribs
+drip
+drop
+drub
+drubs
+drunk
+drunks
+dub
+dug
+dugs
+dung
+dunk
+dunks
+dup
+dusk
+dwarf
+dzo
+dzos
+fad
+fag
+falx
+fank
+fard
+fax
+fed
+fend
+fends
+fenks
+fez
+fib
+fid
+fig
+fight
+fink
+firk
+fisk
+fix
+fiz
+fjord
+fjords
+flab
+flag
+flak
+flank
+flap
+flax
+fled
+fleg
+flex
+flight
+flimp
+flip
+flisk
+flix
+flog
+flogs
+flong
+flongs
+flop
+flops
+flub
+flump
+flumps
+flung
+flunk
+flux
+fob
+fobs
+fog
+fogs
+fold
+folds
+folk
+folks
+fond
+fonds
+fop
+fops
+ford
+fords
+fork
+forks
+fox
+frab
+frank
+frap
+fremd
+fright
+friz
+frog
+frond
+frump
+frumps
+fub
+fud
+fug
+fugs
+fund
+funds
+funk
+funks
+fy
+fyrd
+fyrds
+gab
+gad
+gamb
+gamp
+gap
+gawk
+gawp
+ged
+geld
+gib
+gid
+gif
+gild
+gink
+gip
+gju
+gjus
+gled
+glib
+glid
+glift
+glitz
+glob
+globs
+glyph
+glyphs
+gob
+god
+gold
+golf
+golfs
+golp
+golps
+gonk
+gov
+govs
+gowd
+gowf
+gowfs
+gowk
+gowks
+graft
+graph
+grub
+grypt
+gub
+gubs
+gulf
+gulfs
+gulp
+gulph
+gulphs
+gunk
+gup
+gym
+gymp
+gyp
+gyps
+hadj
+hank
+hyp
+hyps
+jab
+jag
+jak
+jamb
+jap
+jark
+jerk
+jerks
+jib
+jibs
+jig
+jimp
+jink
+jinks
+jinx
+jird
+jirds
+jiz
+job
+jobs
+jog
+jogs
+jud
+juds
+jug
+jugs
+junk
+junks
+jynx
+kang
+kant
+kaw
+keb
+kebs
+ked
+kef
+kefs
+keg
+kelp
+kemb
+kemp
+kep
+kerb
+kerbs
+kerf
+kerfs
+kex
+khan
+khud
+khuds
+kid
+kids
+kif
+kifs
+kight
+kild
+kiln
+kilp
+kind
+kinds
+king
+kip
+klepht
+knag
+knight
+knob
+knobs
+knub
+knubs
+kob
+kobs
+kond
+kop
+kops
+kraft
+krantz
+kranz
+kvetch
+ky
+kynd
+kynds
+lav
+lev
+lez
+link
+luz
+lynx
+mawk
+nabk
+nth
+pad
+park
+pawk
+pax
+ped
+peg
+pegh
+peghs
+pelf
+pelfs
+penk
+perk
+perv
+pervs
+phang
+phiz
+phlox
+pig
+pight
+pix
+pleb
+plebs
+pled
+plight
+plink
+plod
+plongd
+plonk
+pluck
+plug
+plumb
+plumbs
+plunk
+ply
+pod
+polk
+polks
+pong
+pork
+pox
+poz
+prex
+prod
+prof
+prog
+pst
+pub
+pud
+pug
+pugh
+pulk
+pulks
+punk
+pyx
+qat
+qats
+qibla
+qiblas
+quark
+quiz
+sh
+skelf
+skid
+skrump
+skug
+sphinx
+spiv
+squawk
+st
+sunk
+suq
+swiz
+sylph
+tank
+thilk
+tyg
+vamp
+van
+vang
+vant
+veg
+veld
+velds
+veldt
+vend
+vends
+verb
+verbs
+vet
+vex
+vibs
+vild
+vint
+vly
+vox
+vug
+vugs
+vuln
+waltz
+wank
+welkt
+whack
+zag
+zap
+zarf
+zax
+zed
+zek
+zeks
+zel
+zig
+zigs
+zimb
+zimbs
+zing
+zings
+zip
+zips
+zit
+zurf
+zurfs
+
+==> language/english/sentences/repeated.words.p <==
+What is a sentence with the same word several times repeated?  Do not use
+quotation marks, proper names, a language other than English, or anything
+else distasteful.
+
+==> language/english/sentences/repeated.words.s <==
+Five "had"s in a row:
+
+The parents were unable to conceive, so they hired someone else to
+be a surrogate.
+
+The parents had had a surrogate have their child.
+
+The parents had had had their child.
+
+The child had had no breakfast.
+
+The child whose parents had had had had had no breakfast.
+
+It is arguably possible to construct sentences with arbitrarily many
+repetitions of a word.  For example:
+
+1. Bulldogs fight
+2. Bulldogs bulldogs fight fight.
+    (i.e., bulldogs (that) bulldogs fight, (themselves) fight)
+3. Bulldogs bulldogs bulldogs fight fight fight.
+    (i.e., bulldogs (that) bulldogs (that) bulldogs fight, (themselves) fight,
+    (themselves) fight)
+...
+n. etc.
+
+==> language/english/sentences/sentence.p <==
+Find a sentence with words beginning with the letters of the alphabet, in order.
+
+==> language/english/sentences/sentence.s <==
+After boxes containing dynamite exploded furiously, generating hellish
+inferno jet killing laboring miners, novice operator, paralyzed,
+quickly refuses surgical treatment until veteran workers x-ray youth
+zealously.
+
+A big cuddly dog emitted fierce growls, happily ignoring joyful kids
+licking minute nuts on pretty queer rotten smelly toadstools underneath
+vampires who x-rayed young zombies.
+
+==> language/english/sentences/snowball.p <==
+Construct the longest coherent sentence you can such that the nth word
+is n letters long.
+
+==> language/english/sentences/snowball.s <==
+I
+do
+not
+know
+where
+family
+doctors
+acquired
+illegibly
+perplexing
+handwriting;
+nevertheless,
+extraordinary
+pharmaceutical
+intellectuality,
+counterbalancing
+indecipherability,
+transcendentalizes
+intercommunications'
+incomprehensibleness.
+
+If you add the condition that the letters in each word must be in
+inverse alphabetic order, you have:
+
+A
+zo
+fed
+upon
+solid
+toffee
+zyxomma.
+
+
+==> language/english/sentences/weird.p <==
+Make a sentence containing only words that violate the "i before e" rule.
+
+==> language/english/sentences/weird.s <==
+From the May, 1990 _Word Ways_:
+
+That is IE - Or, Is That EI?
+
+by Paul Leopold
+Stockholm, Sweden
+
+    "Seeing wherein neither weirdly-veiled sovereign deigned
+    agreeing, their feisty heirs, leisurely eyeing eight heinous
+    deity-freightened reindeer sleighs, counterfeited spontaneity,
+    freeing rein (reveille, neighing!); forfeited obeisance,
+    fleeing neighborhood.  Kaleidoscopically-veined foreign
+    heights being seized, either reigned, sleight surfeited,
+    therein; reinvented skein-dyeing; reiteratedly inveighed,
+    feigning weighty seismological reinforcement."
+
+The above passage appears in a book on the ecological conservation
+measures of the enlightened plutocracies of antiquity, Ancient
+Financier Aristocracies' Conscientious Scientific Species Policies,
+by Creighton Leigh Peirce and Keith Leiceister Reid. . . .
+
+Any beings decreeing such ogreish, albeit nonpareil,
+homogeneity must be nucleic protein-deficient from sauteing
+pharmacopoeial caffeine and codeine!
+
+From an 'fgrep cie /usr/dict/words', with similiar words removed.
+ancient coefficient concierge conscience conscientious deficient efficient
+financier glacier hacienda Muncie omniscient proficient science
+Societe(?) society species sufficient
+
+A search through Webster's on-line dictionary produced the following exceptions:
+
+Word: *cie*
+Possible matches are:
+  1. -facient               2. abortifacient          3. ancien regime         
+  4. ancient                5. ancientry              6. boccie                
+  7. cenospecies            8. christian science      9. coefficient           
+ 10. concierge             11. conscience            12. conscience money      
+ 13. conscientious         14. conscientious objector15. deficiency            
+ 16. deficiency disease    17. deficient             18. domestic science      
+ 19. earth science         20. ecospecies            21. efficiency            
+ 22. efficiency engineer   23. efficient             24. facies                
+ 25. fancier               26. financier             27. genospecies           
+ 28. geoscience            29. glacier               30. glacier theory        
+ 31. habeas corpus ad subjiciendum32. hacienda       33. inconscient
+ 34. inefficiency          35. inefficient           36. insufficience         
+ 37. insufficiency         38. insufficient          39. international scientific vocabulary
+ 40. library science       41. liquefacient          42. mental deficiency     
+ 43. mutafacient           44. natural science       45. nescience             
+ 46. omniscience           47. omniscient            48. physical science      
+ 49. political science     50. precieux              51. prescience            
+ 52. prescientific         53. prima facie           54. proficiency           
+ 55. proficient            56. pseudoscience         57. rubefacient           
+ 58. science               59. science fiction       60. scient                
+ 61. sciential             62. scientific            63. scientific method     
+ 64. scientism             65. scientist             66. scientistic           
+ 67. secret society        68. self-sufficiency      69. self-sufficient       
+ 70. social science        71. social scientist      72. societal              
+ 73. society               74. society verse         75. somnifacient          
+ 76. specie                77. species               78. stupefacient          
+ 79. sub specie aeternitatis80. subspecies            81. sufficiency           
+ 82. sufficient            83. sufficient condition  84. superficies           
+ 85. type species          86. unscientific          87. valenciennes          
+ 88. vers de societe       
+
+==> language/english/sentences/word.boundaries.p <==
+List some sentences that can be radically altered by changing word boundaries
+and punctuation.
+
+==> language/english/sentences/word.boundaries.s <==
+Issues topping our mail: manslaughter.
+Is Sue stopping our mailman's laughter?
+
+The real ways I saw it.
+There always is a wit.
+
+You read evil tomes, Tim, at Ed's issue.
+"You're a devil, Tom!" estimated sis Sue.
+
+==> language/english/spelling/gry.p <==
+Find three completely different words ending in "gry."
+
+==> language/english/spelling/gry.s <==
+Aside from "angry" and "hungry" and words derived therefrom, there is
+only one word ending with "-gry" in Webster's Third Unabridged: "aggry."
+However, this word is defective in that it is part of a phrase "aggry beads."
+The OED's usage examples all talk about "aggry beads."
+
+Moving to older dictionaries, we find that "gry" itself is a word in Webster's
+Second Unabridged (and the OED):
+
+gry, n. [L. gry, a trifle; Gr. gry, a grunt]
+   1. a measure equal to one-tenth of a line. [Obs.] (Obs. = obsolete)
+   2. anything very small. [Rare.]
+
+This is a list of 100 words, phrases and names ending in "gry":
+[Explanation of references is given at the end of the list.]
+
+aggry [OED:1:182; W2; W3]
+Agry Dagh (Mount Agry) [EB11]
+ahungry [OED:1:194; FW; W2]
+angry [OED; FW; W2; W3]
+anhungry [OED:1:332; W2]
+Badagry [Johnston; EB11]
+Ballingry [Bartholomew:40; CLG:151; RD:164, pl.49]
+begry [OED:1:770,767]
+bewgry [OED:1:1160]
+bowgry [OED:1:1160]
+braggry [OED:1:1047]
+Bugry [TIG]
+Chockpugry [Worcester]
+Cogry [BBC]
+cony-gry [OED:2:956]
+conyngry [OED:2:956]
+Croftangry [DFC, as "Chrystal Croftangry"]
+dog-hungry [W2]
+Dshagry [Stieler]
+Dzagry [Andree]
+eard-hungry [CED (see "yird"); CSD]
+Echanuggry [Century:103-104, on inset map, Key 104 M 2]
+Egry [France; TIG]
+ever-angry [W2]
+fire-angry [W2]
+Gagry [EB11]
+gry (from Latin _gry_) [OED:4/2:475; W2]
+gry (from Romany _grai_) [W2]
+haegry [EDD (see "hagery")]
+half-angry [W2]
+hangry [OED:1:329]
+heart-angry [W2]
+heart-hungry [W2]
+higry pigry [OED:5/1:285]
+hogry [EDD (see "huggerie"); CSD]
+hogrymogry [EDD (see "huggerie"); CSD (as "hogry-mogry")]
+hongry [OED:5/1:459; EDD:3:282]
+huggrymuggry [EDD (see "huggerie"); CSD (as "huggry-muggry")]
+hungry [OED; FW; W2; W3]
+Hungry Bungry [Daily Illini, in ad for The Giraffe, Spring 1976]
+iggry [OED]
+Jagry [EB11]
+kaingry [EDD (see "caingy")]
+land-hungry [OED; W2]
+leather-hungry [OED]
+Langry [TIG; Times]
+Lisnagry [Bartholomew:489]
+MacLoingry [Phillips (as "Flaithbhertach MacLoingry")]
+mad-angry [OED:6/2:14]
+mad-hungry [OED:6/2:14]
+magry [OED:6/2:36, 6/2:247-48]
+malgry [OED:6/2:247]
+man-hungry [OED]
+Margry [Indians (see "Pierre Margry" in bibliog., v.2, p.1204)]
+maugry [OED:6/2:247-48]
+mawgry [OED:6/2:247]
+meagry [OED:6/2:267]
+meat-hungry [W2]
+menagry [OED (see "managery")]
+messagry [OED]
+nangry [OED]
+overangry [RH1; RH2]
+Pelegry [CE (in main index as "Raymond de Pelegry")]
+Pingry [Bio-Base; HPS:293-94, 120-21]
+podagry [OED; W2 (below the line)]
+Pongry [Andree (Supplement, p.572)]
+pottingry [OED:7/2:1195; Jamieson:3:532]
+puggry [OED:8/1:1573; FW; W2]
+pugry [OED:8/1:1574]
+rungry [EDD:5:188]
+scavengry [OED (in 1715 quote under "scavengery")]
+Schtschigry [LG/1:2045; OSN:97]
+Seagry [TIG; EB11]
+Segry [Johnston; Andree]
+self-angry [W2]
+self-hungry ?
+Shchigry [CLG:1747; Johnson:594; OSN:97,206; Times:185,pl.45]
+shiggry [EDD]
+Shtchigry [LG/1:2045; LG/2:1701]
+Shtshigry [Lipp]
+skugry [OED:9/2:156, 9/1:297; Jamieson:4:266]
+Sygry [Andree]
+Tangry [France]
+Tchangry [Johnson:594; LG/1:435,1117]
+Tchigry [Johnson:594]
+tear-angry [W2]
+tike-hungry [CSD]
+Tingry [France; EB11 (under "Princesse de Tingry")]
+toggry [Simmonds (as "Toggry", but all entries are capitalized)]
+ulgry [Partridge; Smith:24-25]
+unangry [OED; W2]
+vergry [OED:12/1:123]
+Virgy [CLG:2090]
+Wirgy [CLG:2090; NAP:xxxix; Times:220, pl.62; WA:948]
+wind-angry.
+wind-hungry [W2]
+yeard-hungry [CED (see "yird")]
+yerd-hungry [CED (see "yird"); OED]
+yird-hungry [CED (see "yird")]
+Ymagry [OED:1:1009 (col. 3, 1st "boss" verb), (variant of "imagery")]
+
+This list was gathered from the following articles:
+
+George H. Scheetz, In Goodly Gree: With Goodwill, Word Ways 22:195 (Nov. 1989)
+Murray R. Pearce, Who's Flaithbhertach MacLoingry?, Word Ways 23:6 (Feb. 1990)
+Harry B. Partridge, Gypsy Hobby Gry, Word Ways 23:9 (Feb. 1990)
+A. Ross Eckler, -Gry Words in the OED, Word Ways 25:4 (Nov. 1992)
+
+References:
+(Many references are of the form [Source:volume:page] or [Source:page].)
+
+Andree, Richard. Andrees Handatlas (index volume). 1925.
+Bartholomew, John. Gazetteer of the British Isles: Statistical and
+	Topographical. 1887.
+BBC = BBC Pronouncing Dictionary of English Names.
+Bio-Base. (Microfiche) Detroit: Gale Research Company. 1980.
+CE = Catholic Encyclopedia. 1907.
+CED = Chambers English Dictionary. 1988.
+Century = "India, Northern Part." The Century Atlas of the World. 1897, 1898.
+CLG = The Colombia Lippincott Gazetteer of the World. L.E.Seltzer, ed. 1952.
+CSD = Chambers Scots Dictionary. 1971 reprint of 1911 edition.
+Daily Illini (University of Illinois at Urbana-Champaign).
+DFC = Dictionary of Fictional Characters. 1963.
+EB11 = Encyclopedia Britannica, 11th ed.
+EDD = The English Dialect Dictionary. Joseph Wright, ed. 1898.
+France = Map Index of France. G.H.Q. American Expeditionary Forces. 1918.
+FW = Funk & Wagnalls New Standard Dictionary of the English Language. 1943.
+HPS = The Handbook of Private Schools: An Annual Descriptive Survey of
+	Independent Education, 66th ed. 1985.
+Indians = Handbook of American Indians North of Mexico. F. W. Hodge. 1912.
+Jamieson, John. An Etymological Dictionary of the Scottish Language. 1879-87.
+Johnston, Keith. Index Geographicus... 1864.
+LG/1 = Lippincott's Gazetteer of the World: A Complete Pronouncing Gazetteer
+	or Geographical Dictionary of the World. 1888.
+LG/2 = Lippincott's New Gazetteer: ... 1906.
+Lipp = Lippincott's Pronouncing Gazetteer of the World. 1861, undated
+	edition from late 1800's; 1902.
+NAP = Narodowy Atlas Polski. 1973-1978 [Polish language]
+OED = The Oxford English Dictionary. 1933. [Form: OED:volume/part number if
+	applicable:page]
+OSN: U.S.S.R. Volume 6, S-T. Official Standard Names Approved by the United
+	States Board on Geographic Names. Gazetteer #42, 2nd ed. June 1970.
+Partridge, Harry B. "Ad Memoriam Demetrii." Word Ways, 19 (Aug. 1986): 131.
+Phillips, Lawrence. Dictionary of Biographical Reference. 1889.
+RD = The Reader's Digest Complete Atlas of the British Isles, 1st ed. 1965.
+RH1 = Random House Dictionary of the English Language, Unabridged. 1966.
+RH2 = Random House Dictionary of the English Language, Second Edition
+	Unabridged. 1987.
+Simmonds, P.L. Commercial Dictionary of Trade Products. 1883.
+Smith, John. The True Travels, Adventvres and Observations: London 1630.
+Stieler, Adolph. Stieler's Handatlas (index volume). 1925.
+TIG = The Times Index-Gazetteer of the World. 1965.
+Times = The Times Atlas of the World, 7th ed. 1985.
+W2 = Webster's New International Dictionary of the English Language,
+	Second Edition, Unabridged. 1934.
+W3 = Webster's Third New International Dictionary of the English Language,
+	Unabridged. 1961.
+WA = The World Atlas: Index-Gazetteer. Council of Ministires of the USSR, 1968.
+Worcester, J.E. Universal Gazetteer, Second Edition. 1823.
+
+Some words containing "gry" that do not end with "gry": agrypnia,
+agrypnotic, Gryllidae, gryllid, gryllus, Gryllus, grylloblattid, 
+Gryllotalpa, gryllos, grypanian, Gryphaea, Gryll, Gryphaea, gryposis,
+grysbok, gryphon, Gryphosaurus, Grypotherium, grysbuck.  Most of these 
+are in Webster's Second also with one from Webster's Third Edition and
+one from the Random House Dictionary, Second Edition Unabridged.
+
+==> language/english/spelling/j.ending.p <==
+What words and names end in j?
+
+==> language/english/spelling/j.ending.s <==
+Following is a compilation of words ending in j from various
+dictionaries.  Capitalized words and words marked as foreign
+are included, but to keep the list to a managable size,
+personal and place names are excluded.
+
+
+aflaj	 plural of falaj (Cham)
+benj	 variant of bhang - hemp plant (NI2)
+bhimraj	 the rachet-tailed drongo (F&W)
+Bhumij	 branch of Munda tribes in India (NI3)
+Chuj	 a people of Northwestern Guatemala (NI3)
+esraj	 an Indian musical instrument with 3 or 4 strings (OED2)
+falaj    a water channel as part of the ancient irrigation
+	 system of Oman (Cham)
+Funj	 variant of Fung - a people dominant in Sennar (NI3)
+gaj	 Omanese coin (NI2)
+genj	 a common type of cotton cloth in Sudan (F&W)
+gunj	 a grannery in India (NI2)
+hadj	 variant of hajj (NI3)
+haj	 variant of hajj (NI3)
+hajilij	 the bito - a small scrubby tree that grows in dry
+	 parts of Africa and Asia (NI2)
+hajj	 pilgimage to Mecca (NI3)
+hij	 obsolete form of hie or high (OED2)
+Jubaraj	 variant of Yuvaraja - the male heir to an Indian 
+	 pricipality (OED2)
+kaleej	 variant of kalij (NI3)
+kalij	 any of several crested Indian pheasants (NI3)
+kankrej	 guzerat - a breed of Indian cattle (NI3)
+kharaj	 a tax on unbelievers (NI2)
+Khawarij plural of Kharijite - a member of the oldest 
+	 religious sect of Islam (NI3)
+khiraj	 variant of kharaj (NI2)
+kilij	 a Turkish saber with a crescent shaped blade (RHD)
+kurunj	 variant of kurung - the Indian beech (NI2)
+Maharaj	 variant of Maharaja - East Indian prince (OED2)
+munj	 a tough Asiatic grass (NI3)
+naranj	 Maldive Island name for mancala - an Arabian board
+	 game (CD)
+pakhawaj a doubleheaded drum used in Indian music (OED2)
+raj	 rule (NI3)
+saj	 the Indian laurel (NI2)
+samaj	 Hindu religious society (NI3)
+sohmaj	 variant of samaj (NI2)
+somaj	 variant of samaj (NI2)
+svaraj	 variant of swaraj (F&W)
+swaraj	 local self-government in India (NI3)
+taj	 a tall conical cap worn by Moslems (NI3)
+tedj	 variant of tej (OED2)
+tej	 Ethiopian mead (OED2)
+Viraj	 in Hindu Mythology, the mysterious primeval being
+	 when differentiating itself into male and female (F&W)
+Yuvaraj	 same as Jubaraj (OED2)
+Yuveraj	 same as Jubaraj (OED2)
+Yuvraj	 same as Jubaraj (OED2)
+zij	 Persian astronomical tables (F&W)
+
+This list is almost certainly not complete.  For example, on
+page 187 of Beyond Language, Dmitri Borgmann has "Udruj" in a
+word list.  What reference he dug this word out of is unknown;
+the combined efforts of the NPL electronic mailing list could
+not produce the source of this word.  So additions to this list
+will be welcomed by the author.
+
+
+REFERENCES
+
+CD - The Century Dictionary and Cyclopedia, 1911
+Cham - Chambers English Dictionary, 1988
+F&W - Funk & Wagnall's New Standard Dictionary of the English
+      Language, 1941
+NI2 - Webster's New International Dictionary, Second Edition,
+      1942
+NI3 - Webster's Third New International Dictionary, 1981
+OED2 - Oxford English Dictionary, Second Edition, 1989
+RHD - Random House Dictionary of the English Language, 1966
+
+---
+Dan Tilque	--	dant@logos.WR.TEK.COM
+
+==> language/english/spelling/lipograms.p <==
+What books have been written without specific letters, vowels, etc.?
+
+==> language/english/spelling/lipograms.s <==
+Such a book is called a lipogram.
+
+A novel-length example in English (omitting e) exists, titled _Gadsby_.
+
+Georges Perec wrote a French novel titled _La Disparition_ which does
+not contain the letter 'e',  except in a few bits of text that the
+publisher had to include in or on the book somewhere -- such as the
+author's name :-).  But these were all printed in red, making them
+somehow ``not count''.
+
+Perec also wrote another novel in which `e' was the only vowel.
+
+In _La Disparition_, unlike _Gadsby_, the lipogrammatic
+technique is reflected in the story.  Objects disappear or become
+invisible.  We know, however, more or less why the characters can't
+find things like eggs or even remember their names -- because the
+words for them can't be used.
+
+Amazingly, it's been ``translated'' into English (by Harry Mathews, I
+think).
+
+Another work which manages to [almost] adhere to restrictive
+alphabetic rules while also remaining readable as well as providing
+amusement and literary satisfaction (though you have to like
+disjointed fiction) is _Alphabetical Africa_ by Walter Abish.  The
+rules (which of course he doesn't explain, you can't help noticing
+most of them) have to do with initial letters of words.  There are 52
+chapters.  In the first, all words begin with `a'; in the second, all
+words begin with either `a' or `b'; etc, until all words are allowed
+in chapter 26.  Then in the second half, the letters are taken away
+one by one.  It's remarkable when, for instance, you finally get `the'
+and realize how much or little you missed it; earlier, when `I' comes
+in, you feel something like the difference between third- and
+first-person narration.  As one of the blurbs more or less says (I
+don't have it here to quote), reading this is like slowly taking a
+deep breath and letting it out again.
+
+----
+Mitch Marks  mitchell@cs.uchicago.edu
+
+==> language/english/spelling/longest.p <==
+What is the longest word in the English language?
+
+==> language/english/spelling/longest.s <==
+The longest word to occur in both English and American "authoritative"
+unabridged dictionaries is "pneumonoultramicroscopicsilicovolcanoconiosis."
+
+The following is a brief citation history of this "word."
+
+New York Herald Tribune, February 23, 1935, p. 3
+"Pneumonoultramicroscopicsilicovolcanokoniosis succeeded
+electrophotomicrographically as the longest word in the English
+language recognized by the National Puzzlers' League at the opening
+session of the organization's 103d semi-annual meeting held yesterday
+at the Hotel New Yorker.
+
+The puzzlers explained that the forty-five-letter word is the name of a
+special form of silicosis caused by ultra-microscopic particles of
+siliceous volcanic dust."
+
+Everett M. Smith (b. 1/1/1894), President of NPL and Radio News Editor
+of the Christian Science Monitor, cited the word at the convention.
+Smith was also President of the Yankee Puzzlers of Boston.
+It is not known whether Smith coined the word.
+
+"Bedside Manna. The Third Fun in Bed Book.", edited by Frank Scully,
+Simon and Schuster, New York, 1936, p. 87
+"There's been a revival in interest in spelling, but Greg Hartswick,
+the cross word king and world's champion speller, is still in control
+of the situation.  He'd never get any competition from us, that's
+sure, though pronouncing, let alone spelling, a 44 letter word like:
+        Pneumonoultramicrosopicsilicovolkanakoniosis,
+a disease caused by ultra-microscopic particles of sandy volcanic dust
+might give even him laryngitis."
+
+It is likely that Scully, who resided in New York in February 1935,
+read the Herald Tribune article and slightly misremembered the word.
+
+Supplement to the Oxford English Dictionary, 1936
+Both "-coniosis" and "-koniosis" are cited.
+"a factitious word alleged to mean 'a lung disease caused by the inhalation
+of very fine silica dust' but occurring chiefly as an instance of a very long
+word."
+
+Webster's first cite is "-koniosis" in the addendum to the Second Edition.
+The Third Edition changes the "-koniosis" to "-coniosis."
+
+I conjecture that this "word" was coined by word puzzlers, who then
+worked assiduously to get it into the major unabridged dictionaries
+(perhaps with a wink from the editors?)  to put an end to the endless
+squabbling about what is the longest word.
+
+==> language/english/spelling/most.p <==
+What word has the most variant spellings?
+
+==> language/english/spelling/most.s <==
+catercorner
+
+There's eight spellings in Webster's Third.
+
+catercorner
+cater-cornered
+catacorner
+cata-cornered
+catty-corner
+catty-cornered
+kitty-corner
+kitty-cornered
+
+If you look in Random House, you will find one more which doesn't appear
+in Web3, but it only differs by a hyphen:
+
+cater-corner
+
+---
+Dan Tilque    --     dant@techbook.com
+
+==> language/english/spelling/near.palindrome.p <==
+What are some long near palindromes, i.e., words that except for one
+letter would be palindromes?
+
+==> language/english/spelling/near.palindrome.s <==
+Here are the longest near palindromes in Webster's Ninth Collegiate:
+catalatic		footstool		red pepper
+detonated		locofocos		red spider
+dew-clawed		nabataean		retreater
+eisegesis		possessor		stargrass
+foolproof		ratemeter		webmember
+
+==> language/english/spelling/operations.on.words/deletion.p <==
+What exceptional words turn into other words by deletion of letters?
+
+==> language/english/spelling/operations.on.words/deletion.s <==
+   longest beheadable word  P(REDETERMINATION) (16/15)
+    longest for each letter (6-88,181,198,213,13-159,14-219,15-155,16-96,220,
+     17-85) APATHETICALLY, BLITHESOME, CHASTENING, DEMULSIFICATION,
+     EMOTIONLESSNESS, FUTILITARIANISM, GASTRONOMICALLY, HEDRIOPHTHALMA,
+     IDENTIFICATION, JUNCTIONAL, KINAESTHETIC, LIMITABLENESS, METHYLACETYLENE,
+     NEOPALEOZOIC, OENANTHALDEHYDE, PREDETERMINATION, QUINTA, REVOLUTIONARILY,
+     SELECTIVENESS, TREASONABLENESS, UPRAISER, VINDICATION, WHENCEFORWARD,
+     XANTHOPHYLLITE, YOURSELVES, ZOOSPORIFEROUS
+    longest beheadable down to a single letter  PRESTATE (8)
+   longest curtailable word (not a plural)  (COUNTERMAN)D, (UNDERCOVER)T (11)
+    longest curtailable down to a single letter  LAMBASTES
+   longest alternately beheadable and curtailable word  ASHAMED (7)
+   longest arbitrarily beheadable and curtailable (all subsequences words)
+     SHADES (6)
+   longest terminal ellision word  D(EPILATION)S (11)
+   longest letter subtraction down to a single letter  STRANGLING,
+    STRANGING, STANGING, STAGING, SAGING, AGING, GING, GIN, IN, I 
+   longest charitable word (subtract letter anywhere) 
+    PLEATS: LEATS,PEATS,PLATS,PLEAS,PLEAT 
+   shortest stingy word (no deletion possible)  PRY (3)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/operations.on.words/insertion.and.deletion.p <==
+What exceptional words turn into other words by both insertion and 
+deletion of letters?
+
+==> language/english/spelling/operations.on.words/insertion.and.deletion.s <==
+   longest word both charitable and hospitable 
+    AMY: AM,AY,MY;GAMY,ARMY,AMOY,AMYL 
+   shortest word both stingy and hostile  IMPETUOUS (9)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/operations.on.words/insertion.p <==
+What exceptional words turn into other words by insertion of letters?
+
+==> language/english/spelling/operations.on.words/insertion.s <==
+   longest hydration (double reheadment)  (D,R)EVOLUTIONIST (12/13)
+   longest hospitable word (insert letter anywhere) 
+    CARES: SCARES, CHARES, CADRES, CARIES, CARETS, CARESS 
+   shortest hostile word (no deletion possible)  SYZYGY (6)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/operations.on.words/movement.p <==
+What exceptional words turn into other words by movement of letters?
+
+==> language/english/spelling/operations.on.words/movement.s <==
+   longest word allowing exchange of letters (metallege) 
+    CONSERVATIONAL, CONVERSATIONAL 
+   longest head-to-tail shift 
+    SPECULATION, PECULATIONS 
+   longest double head-to-tail shift 
+    STABLE-TABLES-ABLEST 
+   longest complete cyclic transposal  ATE-TEA-EAT (3)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/operations.on.words/substitution.p <==
+What exceptional words turn into other words by substitution of letters?
+
+==> language/english/spelling/operations.on.words/substitution.s <==
+longest onalosi (substitution in every position possible) 
+ PASTERS: MASTERS,POSTERS,PALTERS,PASSERS,PASTORS,PASTELS,PASTERN 	
+shortest isolano (no substitution possible) 
+ ECRU 
+longest word, all letters changed to other letters in minimum number of
+steps, yielding another word  THUMBING-THUMPING-TRUMPING-TRAMPING-
+ TRAPPING-CRAPPING-CRAPPIES-CRAPPOES 
+longest word girders  BADGER/SUNLIT, BUDLET/SANGIR (6)
+longest word with full vowel substitution 
+ CL(A,E,I,O,U)CKING (8) also Y D(A,E,I,O,U,Y)NE (4) 
+longest words with vowel substitutions
+ DESTRUCTIBILITIES, DISTRACTIBILITIES (17)
+longest word constant-letter-shifted to another PRIMERO-SULPHUR (7)
+ arithmetical-letter-shifted DREAM-ETHER (5)
+ constant-shift-with-transposal (shiftgrams) AEROPHANE-SILVERITE (9)
+longest word pair shifted one position on typewriter keyboard WAXIER-ESCORT (6)
+longest word pair confusable on a telephone keypad AMOUNTS-CONTOUR (7)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+

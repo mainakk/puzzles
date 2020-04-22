@@ -1,0 +1,1572 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03496; Sat, 20 Apr 1996 14:53:26 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07986; Sat, 20 Apr 96 14:13:53 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25291; Sat, 20 Apr 1996 11:14:38 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (Instructions), part 01 of 35
+Message-Id: <puzzles/archive/Instructions_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+Date: Wed, 18 Aug 1993 06:04:18 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1545
+Xref: senator-bedfellow.mit.edu rec.puzzles:24989 news.answers:11509 rec.answers:1909
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/Instructions
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> Instructions <==
+Instructions for Accessing rec.puzzles Archive
+
+INTRODUCTION
+
+Below is a list of puzzles, categorized by subject area.  Each puzzle
+includes a solution, compiled from various sources, which is supposed
+to be definitive.
+
+EMAIL
+
+To request a puzzle, send a message to archive-request@questrel.com like:
+
+return_address your_name@your_site.your_domain
+send requested_puzzle_name
+
+For example, if your net address is "mickey@disneyland.com", to request
+"decision/allais.p", send the message:
+
+return_address mickey@disneyland.com
+send allais
+
+To request multiple puzzles, use several "send" lines in a message.
+Please refrain from requesting the entire archive via email.  Use FTP.
+
+FTP
+
+The archive has been posted to news.answers and rec.answers, which are
+archived in the periodic posting archive on rtfm.mit.edu in the
+anonymous ftp directory /pub/usenet.
+
+Other archives are:
+
+	ftp.cs.ruu.nl [131.211.80.17] in the anonymous ftp
+		directory /pub/NEWS.ANSWERS (also accessible via mail
+		server requests to mail-server@cs.ruu.nl)
+	cnam.cnam.fr [192.33.159.6] in the anonymous ftp directory /pub/FAQ
+	ftp.uu.net [137.39.1.9 or 192.48.96.9] in the anonymous ftp
+		directory /usenet
+	ftp.win.tue.nl [131.155.70.100] in the anonymous ftp directory
+		/pub/usenet/news.answers
+	grasp1.univ-lyon1.fr [134.214.100.25] in the anonymous ftp
+		directory /pub/faq (also accessible via mail server
+		requests to listserv@grasp1.univ-lyon1.fr), which is
+		best used by EASInet sites and sites in France that do
+		not have better connectivity to cnam.cnam.fr (e.g.
+		Lyon, Grenoble)
+
+Note that the periodic posting archives on rtfm.mit.edu are also
+accessible via Prospero and WAIS (the database name is "usenet" on port
+210).
+
+CREDIT
+
+The archive is NOT the original work of the editor (just in case you were
+wondering :^).
+
+In keeping with the general net practice on FAQ's, I do not as a rule assign
+credit for solutions.  There are many reasons for this:
+1.  The archive is about the answers to the questions, not about assigning
+    credit.
+2.  Many people, in providing free answers to the net, do not have the time
+    to cite their sources.
+3.  I cut and paste freely from several people's solutions in most cases
+    to come up with as complete an answer as possible.
+4.  I use sources other than postings.
+5.  I am neither qualified nor motivated to assign credit.
+
+However, I do whenever possible put bibliographies in archive entries, and
+I see the inclusion of the net addresses of interested parties as a
+logical extension of this practice.  In particular, if you wrote a
+program to solve a problem and posted the source code of the program,
+you are presumed to be interested in corresponding with others about
+the problem.  So, please let me know the entries you would like to be
+listed in and I will be happy to oblige.
+
+Address corrections or comments to archive-comment@questrel.com.
+
+INDEX
+
+==> bicycle (analysis) <==
+A boy, a girl and a dog go for a 10 mile walk.  The boy and girl can
+
+==> boy.girl.dog (analysis) <==
+A boy, a girl and a dog are standing together on a long, straight road.
+
+==> bugs (analysis) <==
+Four bugs are placed at the corners of a square.  Each bug walks always
+
+==> c.infinity (analysis) <==
+What function is zero at zero, strictly positive elsewhere, infinitely
+
+==> cache (analysis) <==
+Cache and Ferry (How far can a truck go in a desert?)
+
+==> calculate.pi (analysis) <==
+How can I calculate many digits of pi?
+
+==> cats.and.rats (analysis) <==
+If 6 cats can kill 6 rats in 6 minutes, how many cats does it take to
+
+==> dog (analysis) <==
+A body of soldiers form a 50m-by-50m square ABCD on the parade ground.
+
+==> e.and.pi (analysis) <==
+Without finding their numerical values, which is greater, e^(pi) or (pi)^e?
+
+==> functional/distributed (analysis) <==
+     Find all f: R -> R, f not identically zero, such that
+
+==> functional/linear (analysis) <==
+Suppose f is non-decreasing with
+
+==> integral (analysis) <==
+If f is integrable on (0,inf) and differentiable at 0, and a > 0, and:
+
+==> irrational.stamp (analysis) <==
+You have an ink stamp which is so amazingly precise that, when inked
+
+==> minimum.time (analysis) <==
+N people can walk or drive in a two-seater to go from city A to city B.  What
+
+==> particle (analysis) <==
+What is the longest time that a particle can take in travelling between two
+
+==> period (analysis) <==
+What is the least possible integral period of the sum of functions
+
+==> rubberband (analysis) <==
+A bug walks down a rubber band which is attached to a wall at one end and a car
+
+==> sequence (analysis) <==
+Show that in the sequence: x, 2x, 3x, .... (n-1)x (x can be any real number)
+
+==> snow (analysis) <==
+Snow starts falling before noon on a cold December day.  At noon a
+
+==> tower (analysis) <==
+R = N ^ (N ^ (N ^ ...)).  What is the maximum N>0 that will yield a finite R?
+
+==> 7-11 (arithmetic/part1) <==
+A customer at a 7-11 store selected four items to buy, and was told
+
+==> arithmetic.progression (arithmetic/part1) <==
+Is there an arithmetic progression of 20 or more primes?
+
+==> clock/day.of.week (arithmetic/part1) <==
+It's restful sitting in Tom's cosy den, talking quietly and sipping
+
+==> clock/palindromic (arithmetic/part1) <==
+How many times per day does a digital clock display a palindromic number?
+
+==> clock/reversible (arithmetic/part1) <==
+How many times per day can the hour and minute hands on an analog clock switch
+
+==> clock/right.angle (arithmetic/part1) <==
+How many times per day do the hour and minute hands of a clock form a
+
+==> clock/thirds (arithmetic/part1) <==
+Do the 3 hands on a clock ever divide the face of the clock into 3
+
+==> consecutive.composites (arithmetic/part1) <==
+Are there 10,000 consecutive non-prime numbers?
+
+==> consecutive.product (arithmetic/part1) <==
+Prove that the product of three or more consecutive positive integers cannot
+
+==> consecutive.sums (arithmetic/part1) <==
+Find all series of consecutive positive integers whose sum is exactly 10,000.
+
+==> conway (arithmetic/part1) <==
+Describe the sequence a(1)=a(2)=1, a(n) = a(a(n-1)) + a(n-a(n-1)) for n>2.
+
+==> digits/6.and.7 (arithmetic/part1) <==
+Does every number which is not divisible by 5 have a multiple whose
+
+==> digits/all.ones (arithmetic/part1) <==
+Prove that some multiple of any integer ending in 3 contains all 1s.
+
+==> digits/arabian (arithmetic/part1) <==
+What is the Arabian Nights factorial, the number x such that x! has 1001
+
+==> digits/circular (arithmetic/part1) <==
+What 6 digit number, with 6 different digits, when multiplied by all integers
+
+==> digits/divisible (arithmetic/part1) <==
+Find the least number using 0-9 exactly once that is evenly divisible by each
+
+==> digits/equations/123456789 (arithmetic/part1) <==
+In how many ways can "." be replaced with "+", "-", or "" (concatenate) in
+
+==> digits/equations/1992 (arithmetic/part1) <==
+1 = -1+9-9+2.  Extend this list to 2 through 100 on the left side of
+
+==> digits/equations/24 (arithmetic/part1) <==
+Form an expression that evaluates to 24 that contains two 3's, two 7's,
+
+==> digits/equations/383 (arithmetic/part1) <==
+Make 383 out of 1,2,25,50,75,100 using +,-,*,/.
+
+==> digits/equations/find (arithmetic/part1) <==
+Write a program for finding expressions built out of given numbers and using
+
+==> digits/extreme.products (arithmetic/part1) <==
+What are the extremal products of three three-digit numbers using digits 1-9?
+
+==> digits/labels (arithmetic/part1) <==
+You have an arbitrary number of model kits (which you assemble for
+
+==> digits/least.significant/factorial (arithmetic/part1) <==
+What is the least significant non-zero digit in the decimal expansion of n!?
+
+==> digits/least.significant/tower.of.power (arithmetic/part1) <==
+What are the least significant digits of 9^(8^(7^(6^(5^(4^(3^(2^1))))))) ?
+
+==> digits/most.significant/googol (arithmetic/part1) <==
+What digits does googol! start with?
+
+==> digits/most.significant/powers (arithmetic/part1) <==
+What is the probability that 2^N begins with the digits 603245?
+
+==> digits/nine.digits (arithmetic/part1) <==
+Form a number using 0-9 once with its first n digits divisible by n.
+
+==> digits/palindrome (arithmetic/part1) <==
+Does the series formed by adding a number to its reversal always end in
+
+==> digits/palintiples (arithmetic/part1) <==
+Find all numbers that are multiples of their reversals.
+
+==> digits/power.two (arithmetic/part1) <==
+Prove that for any 9-digit number (base 10) there is an integral power
+
+==> digits/prime/101 (arithmetic/part1) <==
+How many primes are in the sequence 101, 10101, 1010101, ...?
+
+==> digits/prime/all.prefix (arithmetic/part1) <==
+What is the longest prime whose every proper prefix is a prime?
+
+==> digits/prime/change.one (arithmetic/part1) <==
+What is the smallest number that cannot be made prime by changing a single
+
+==> digits/prime/prefix.one (arithmetic/part1) <==
+2 is prime, but 12, 22, ..., 92 are not.  Similarly, 5 is prime
+
+==> digits/reverse (arithmetic/part1) <==
+Is there an integer that has its digits reversed after dividing it by 2?
+
+==> digits/rotate (arithmetic/part1) <==
+Find integers where multiplying them by single digits rotates their digits
+
+==> digits/sesqui (arithmetic/part1) <==
+Find the least number where moving the first digit to the end multiplies by 1.5.
+
+==> digits/squares/change.leading (arithmetic/part1) <==
+What squares remain squares when their leading digits are incremented?
+
+==> digits/squares/length.22 (arithmetic/part1) <==
+Is it possible to form two numbers A and B from 22 digits such that
+
+==> digits/squares/length.9 (arithmetic/part1) <==
+Is it possible to make a number and its square, using the digits from 1
+
+==> digits/squares/three.digits (arithmetic/part2) <==
+What squares consist entirely of three digits (e.g., 1, 4, and 9)?
+
+==> digits/squares/twin (arithmetic/part2) <==
+Let a twin be a number formed by writing the same number twice,
+
+==> digits/sum.of.digits (arithmetic/part2) <==
+Find sod ( sod ( sod (4444 ^ 4444 ) ) ).
+
+==> digits/zeros/million (arithmetic/part2) <==
+How many zeros occur in the numbers from 1 to 1,000,000?
+
+==> digits/zeros/trailing (arithmetic/part2) <==
+How many trailing zeros are in the decimal expansion of n!?
+
+==> magic.squares (arithmetic/part2) <==
+Are there large squares, containing only consecutive integers, all of whose
+
+==> pell (arithmetic/part2) <==
+Find integer solutions to x^2 - 92y^2 = 1.
+
+==> subset (arithmetic/part2) <==
+Prove that all sets of n integers contain a subset whose sum is divisible by n.
+
+==> sum.of.cubes (arithmetic/part2) <==
+Find two fractions whose cubes total 6.
+
+==> sums.of.powers (arithmetic/part2) <==
+Partition 1,2,3,...,16 into two equal sets, such that the sums of the
+
+==> tests.for.divisibility/eleven (arithmetic/part2) <==
+What is the test to see if a number is divisible by eleven?
+
+==> tests.for.divisibility/nine (arithmetic/part2) <==
+What is the test to see if a number is divisible by nine?
+
+==> tests.for.divisibility/seven (arithmetic/part2) <==
+What is the test to see if a number is divisible by seven?
+
+==> tests.for.divisibility/three (arithmetic/part2) <==
+What is the test to see if a number is divisible by three?
+
+==> alphabet.blocks (combinatorics) <==
+What is the minimum number of dice painted with one letter on all six sides
+
+==> coinage/combinations (combinatorics) <==
+Assuming you have enough coins of 1, 5, 10, 25 and 50 cents, how many
+
+==> coinage/dimes (combinatorics) <==
+"Dad wants one-cent, two-cent, three-cent, five-cent, and ten-cent
+
+==> coinage/impossible (combinatorics) <==
+What is the smallest number of coins that you can't make a dollar with?
+
+==> color (combinatorics) <==
+An urn contains n balls of different colors.  Randomly select a pair, repaint
+
+==> full (combinatorics) <==
+Consider a string that contains all substrings of length n.  For example,
+
+==> gossip (combinatorics) <==
+n people each know a different piece of gossip.  They can telephone each other
+
+==> grid.dissection (combinatorics) <==
+How many (possibly overlapping) squares are in an mxn grid?  Assume that all
+
+==> permutation (combinatorics) <==
+Compute the nth permutation of k numbers (or objects).
+
+==> subsets (combinatorics) <==
+Out of the set of integers 1,...,100 you are given ten different
+
+==> transitions (combinatorics) <==
+How many n-bit binary strings (0/1) have exactly k transitions
+
+==> contests/games.magazine (competition/part1) <==
+What are the best answers to various contests run by _Games_ magazine?
+
+==> contests/national.puzzle/npc.1993 (competition/part1) <==
+What are the solutions to the Games magazine 1993 National Puzzle Contest?
+
+==> games/bridge (competition/part1) <==
+Are there any programs for solving double-dummy Bridge?
+
+==> games/chess/knight.control (competition/part1) <==
+How many knights does it take to attack or control the board?
+
+==> games/chess/knight.most (competition/part1) <==
+What is the maximum number of knights that can be put on n x n chessboard
+
+==> games/chess/knight.tour (competition/part1) <==
+For what size boards are knight tours possible?
+
+==> games/chess/mutual.stalemate (competition/part1) <==
+What's the minimal number of pieces in a legal mutual stalemate?
+
+==> games/chess/queen.control (competition/part1) <==
+How many queens does it take to attack or control the board?
+
+==> games/chess/queen.most (competition/part1) <==
+How many non-mutually-attacking queens can be placed on various sized boards?
+
+==> games/chess/queens (competition/part1) <==
+How many ways can eight queens be placed so that they control the board?
+
+==> games/chess/rook.paths (competition/part1) <==
+How many non-overlapping paths can a rook take from one corner to the opposite
+
+==> games/chess/size.of.game.tree (competition/part1) <==
+How many different positions are there in the game tree of chess?
+
+==> games/cigarettes (competition/part1) <==
+The game of cigarettes is played as follows:
+
+==> games/connect.four (competition/part1) <==
+Is there a winning strategy for Connect Four?
+
+==> games/craps (competition/part1) <==
+What are the odds in craps?
+
+==> games/crosswords (competition/part1) <==
+Are there programs to make crosswords?  What are the rules for cluing cryptic
+
+==> games/cube (competition/part2) <==
+What are some games involving cubes?
+
+==> games/go-moku (competition/part2) <==
+For a game of k in a row on an n x n board,  for what values of k and n is
+
+==> games/hi-q (competition/part2) <==
+What is the quickest solution of the game Hi-Q (also called Solitaire)?
+
+==> games/jeopardy (competition/part2) <==
+What are the highest, lowest, and most different scores contestants
+
+==> games/nim (competition/part2) <==
+Place 10 piles of 10 $1 bills in a row.  A valid move is to reduce
+
+==> games/online/online.scrabble (competition/part2) <==
+How can I play Scrabble online on the Internet?
+
+==> games/online/unlimited.adventures (competition/part2) <==
+Where can I find information about unlimited adventures?
+
+==> games/othello (competition/part2) <==
+How good are computers at Othello?
+
+==> games/pc/best (competition/part2) <==
+What are the best PC games?
+
+==> games/pc/reviews (competition/part2) <==
+Are reviews of PC games available online?
+
+==> games/pc/solutions (competition/part2) <==
+What are the solutions to various popular PC games?
+
+==> games/poker.face.up (competition/part2) <==
+In Face-Up Poker, two players each select five cards from a face-up deck,
+
+==> games/risk (competition/part2) <==
+What are the odds when tossing dice in Risk?
+
+==> games/rubiks/rubiks.clock (competition/part2) <==
+How do you quickly solve Rubik's clock?
+
+==> games/rubiks/rubiks.cube (competition/part3) <==
+What is known about bounds on solving Rubik's cube?
+
+==> games/rubiks/rubiks.magic (competition/part3) <==
+How do you solve Rubik's Magic?
+
+==> games/scrabble (competition/part3) <==
+What are some exceptional Scrabble Brand Crossword Game (TM) games?
+
+==> games/set (competition/part3) <==
+What is the size of the largest collection of cards from which NO "set"
+
+==> games/soma (competition/part3) <==
+What is the solution to Soma Cubes?
+
+==> games/square-1 (competition/part3) <==
+Does anyone have any hints on how to solve the Square-1 puzzle?
+
+==> games/think.and.jump (competition/part3) <==
+THINK & JUMP:  FIRST THINK, THEN JUMP UNTIL YOU
+
+==> games/tictactoe (competition/part3) <==
+In random tic-tac-toe, what is the probability that the first mover wins?
+
+==> tests/analogies/long (competition/part3) <==
+1. Host : Guest :: Cynophobia : ?
+
+==> tests/analogies/pomfrit (competition/part3) <==
+1. NATURAL: ARTIFICIAL :: ANKYLOSIS: ?
+
+==> tests/analogies/quest (competition/part3) <==
+1. Mother: Maternal :: Stepmother: ?
+
+==> tests/math/putnam/putnam.1967 (competition/part3) <==
+
+
+==> tests/math/putnam/putnam.1987 (competition/part4) <==
+WILLIAM LOWELL PUTNAM MATHEMATICAL COMPETITION
+
+==> tests/math/putnam/putnam.1988 (competition/part4) <==
+Problem A-1: Let R be the region consisting of the points (x,y) of the
+
+==> tests/math/putnam/putnam.1990 (competition/part4) <==
+Problem A-1
+
+==> tests/math/putnam/putnam.1992 (competition/part5) <==
+Problem A1
+
+==> Beale (cryptology) <==
+What are the Beale ciphers?
+
+==> Feynman (cryptology) <==
+What are the Feynman ciphers?
+
+==> Voynich (cryptology) <==
+What are the Voynich ciphers?
+
+==> swiss.colony (cryptology) <==
+What are the 1987 Swiss Colony ciphers?
+
+==> vcrplus (cryptology) <==
+What is the code used by VCR+?
+
+==> allais (decision) <==
+The Allais Paradox involves the choice between two alternatives:
+
+==> division (decision) <==
+N-Person Fair Division
+
+==> dowry (decision) <==
+Sultan's Dowry
+
+==> envelope (decision) <==
+Someone has prepared two envelopes containing money.  One contains twice as
+
+==> exchange (decision) <==
+At one time, the Canadian and US dollars were discounted by 10 cents on
+
+==> high.or.low (decision) <==
+I pick two numbers, randomly, and tell you one of them. You are supposed
+
+==> monty.hall (decision) <==
+You are a participant on "Let's Make a Deal." Monty Hall shows you
+
+==> newcomb (decision) <==
+Newcomb's Problem
+
+==> prisoners (decision) <==
+Three prisoners on death row are told that one of them has been chosen
+
+==> red (decision) <==
+I show you a shuffled deck of standard playing cards, one card at a
+
+==> rotating.table (decision) <==
+Four glasses are placed upside down in the four corners of a square
+
+==> stpetersburg (decision) <==
+What should you be willing to pay to play a game in which the payoff is
+
+==> truel (decision) <==
+A, B, and C are to fight a three-cornered pistol duel.  All know that
+
+==> K3,3 (geometry/part1) <==
+Can three houses be connected to three utilities without the pipes crossing?
+
+==> bear (geometry/part1) <==
+If a hunter goes out his front door, goes 50 miles south, then goes 50 
+
+==> bisector (geometry/part1) <==
+Prove if two angle bisectors of a triangle are equal, then the triangle is
+
+==> calendar (geometry/part1) <==
+Build a calendar from two sets of cubes.  On the first set, spell the
+
+==> circles.and.triangles (geometry/part1) <==
+Find the radius of the inscribed and circumscribed circles for a triangle.
+
+==> coloring/cheese.cube (geometry/part1) <==
+A cube of cheese is divided into 27 subcubes.  A mouse starts at one
+
+==> coloring/triominoes (geometry/part1) <==
+There is a chess board (of course with 64 squares). You are given 21
+
+==> construction/4.triangles.6.lines (geometry/part1) <==
+Can you construct 4 equilateral triangles with 6 toothpicks?
+
+==> construction/5.lines.with.4.points (geometry/part1) <==
+Arrange 10 points so that they form 5 rows of 4 each.
+
+==> construction/square.with.compass (geometry/part1) <==
+Construct a square with only a compass and a straight edge.
+
+==> corner (geometry/part1) <==
+A hallway of width A turns through 90 degrees into a hallway of width
+
+==> cover.earth (geometry/part1) <==
+A thin membrane covers the surface of the (spherical) earth.  One
+
+==> cycle.polynomial (geometry/part1) <==
+What are the cycle polynomials for the Platonic solids?
+
+==> dissections/disk (geometry/part1) <==
+Can a disk be cut into similar pieces without point symmetry about the
+
+==> dissections/hexagon (geometry/part1) <==
+Divide the hexagon into:
+
+==> dissections/largest.circle (geometry/part1) <==
+What is the largest circle that can be assembled from two semicircles cut from
+
+==> dissections/square.70 (geometry/part1) <==
+Since 1^2 + 2^2 + 3^2 + ... + 24^2 = 70^2, can a 70x70 square be dissected into
+
+==> dissections/square.five (geometry/part1) <==
+Can you dissect a square into 5 parts of equal area with just a straight edge?
+
+==> dissections/tesseract (geometry/part1) <==
+If you suspend a cube by one corner and slice it in half with a
+
+==> duck.and.fox (geometry/part1) <==
+A duck is swimming about in a circular pond.  A ravenous fox (who cannot 
+
+==> earth.band (geometry/part1) <==
+How much will a band around the equator rise above the surface if it is
+
+==> fence (geometry/part1) <==
+A farmer wishes to enclose the maximum possible area with 100 meters of fence.
+
+==> ham.sandwich (geometry/part1) <==
+Consider a ham sandwich, consisting of two pieces of bread and one of
+
+==> hike (geometry/part1) <==
+You are hiking in a half-planar woods, exactly 1 mile from the edge,
+
+==> hole.in.sphere (geometry/part1) <==
+Old Boniface he took his cheer,
+
+==> hypercube (geometry/part1) <==
+How many vertices, edges, faces, etc. does a hypercube have?
+
+==> kissing.number (geometry/part1) <==
+How many n-dimensional unit spheres can be packed around one unit sphere?
+
+==> konigsberg (geometry/part1) <==
+Can you draw a line through each edge on the diagram below without crossing
+
+==> ladders (geometry/part1) <==
+Two ladders form a rough X in an alley.  The ladders are 11 and 13 meters
+
+==> lattice/area (geometry/part1) <==
+Prove that the area of a triangle formed by three lattice points is integer/2.
+
+==> lattice/equilateral (geometry/part1) <==
+Can an equlateral triangle have vertices at integer lattice points?
+
+==> manhole.cover (geometry/part1) <==
+Why is a manhole cover round?
+
+==> pentomino (geometry/part1) <==
+Arrange pentominos in 3x20, 4x15, 5x12, 6x10, 2x3x10, 2x5x6 and 3x4x5 forms.
+
+==> points.in.sphere (geometry/part1) <==
+What is the expected distance between two random points inside a sphere?
+
+==> points.on.sphere (geometry/part1) <==
+What are the odds that n random points on a sphere lie in the same hemisphere?
+
+==> revolutions (geometry/part1) <==
+A circle with radius 1 rolls without slipping once around a circle with radius
+
+==> rotation (geometry/part1) <==
+What is the smallest rotation that returns an object to its original state?
+
+==> shephard.piano (geometry/part1) <==
+What's the maximum area shape that will fit around a right-angle corner?
+
+==> smuggler (geometry/part1) <==
+Somewhere on the high sees smuggler S is attempting, without much
+
+==> spiral (geometry/part1) <==
+How far must one travel to reach the North Pole if one starts from the
+
+==> table.in.corner (geometry/part1) <==
+Put a round table into a (perpendicular) corner so that the table top
+
+==> tetrahedron (geometry/part1) <==
+Suppose you have a sphere of radius R and you have four planes that are
+
+==> tiling/count.1x2 (geometry/part1) <==
+Count the ways to tile an MxN rectangle with 1x2 dominos.
+
+==> tiling/rational.sides (geometry/part1) <==
+A rectangular region R is divided into rectangular areas.  Show that if
+
+==> tiling/rectangles.with.squares (geometry/part2) <==
+Given two sorts of squares, (axa) and (bxb), what rectangles can be tiled?
+
+==> tiling/scaling (geometry/part2) <==
+A given rectangle can be entirely covered (i.e. concealed) by an
+
+==> tiling/seven.cubes (geometry/part2) <==
+Consider 7 cubes of equal size arranged as follows. Place 5 cubes so
+
+==> topology/fixed.point (geometry/part2) <==
+A man hikes up a mountain, and starts hiking at 2:00 in the afternoon
+
+==> touching.blocks (geometry/part2) <==
+Can six 1x2x4 blocks be arranged so that each block touches n others, for all n?
+
+==> trigonometry/euclidean.numbers (geometry/part2) <==
+For what numbers x is sin(x) expressible using only integers, +, -, *, / and
+
+==> trigonometry/inequality (geometry/part2) <==
+Show that (sin x)^(sin x) < (cos x)^(cos x) when 0 < x < pi/4.
+
+==> group.01 (group) <==
+AEFHIKLMNTVWXYZ BCDGJOPQRSU
+
+==> group.01a (group) <==
+147 0235689
+
+==> group.02 (group) <==
+ABEHIKMNOTXZ CDFGJLPQRSUVWY
+
+==> group.03 (group) <==
+BEJQXYZ DFGHLPRU KSTV CO AIW MN
+
+==> group.04 (group) <==
+BDO P ACGIJLMNQRSUVWZ EFTY HKX
+
+==> group.05 (group) <==
+CEFGHIJKLMNSTUVWXYZ ADOPQR B
+
+==> group.06 (group) <==
+BCEGKMQSW DFHIJLNOPRTUVXYZ
+
+==> group.07 (group) <==
+CDEFLOPTZ ABGHIJKMNQRSUVWXY
+
+==> group.08 (group) <==
+COS ABDEFGHIJKLMNPQRTUVWXYZ
+
+==> group.09 (group) <==
+CDILMVX ABEFGHJKNOPQRSTUWYZ
+
+==> group.10 (group) <==
+AHIMOTUVWXY BCDEFGJKLNPQRSZ
+
+==> group.11 (group) <==
+BCDIJLMNOPQRSUVWZ AEFGHKTXY
+
+==> group.12 (group) <==
+COPSUVWXZ ABDEFGHIJKLMNQRTY
+
+==> group.13 (group) <==
+BCDEHIKOX AFGJLMNPQRSTUVWYZ
+
+==> group.14 (group) <==
+EHIS MOT ABCDFGJKLNPQRUVWXYZ
+
+==> group.15 (group) <==
+HIOX ABCDEFGJKLMNPQRSTUVWYZ
+
+==> group.16 (group) <==
+IJ ABCDEFGHKLMNOPQRSTUVWXYZ
+
+==> group.17 (group) <==
+J BDFHIKLT GPQY ACEMNORSUVWXZ
+
+==> handshake (induction) <==
+A married couple organizes a party. They only invite other married
+
+==> hanoi (induction) <==
+Is there an algorithm for solving the Hanoi tower puzzle for any number
+
+==> n-sphere (induction) <==
+With what odds do three random points on an n-sphere form an acute triangle?
+
+==> paradox (induction) <==
+Is there a non-trivial property that holds for the first 10,000 positive
+
+==> party (induction) <==
+You're at a party.  Any two (different) people at the party have exactly one
+
+==> roll (induction) <==
+An ordinary die is thrown until the running total of the throws first
+
+==> takeover (induction) <==
+After graduating from college, you have taken an important managing position
+
+==> close.antonyms (language/part1) <==
+What words are similar to their antonyms in other langauges?
+
+==> dutch/dutch.record (language/part1) <==
+What are some Dutch words with unusual properties?
+
+==> english/equations (language/part1) <==
+1 = E. on a C.
+
+==> english/etymology/acronym (language/part1) <==
+What acronyms have become common words or are otherwise interesting?
+
+==> english/etymology/fossil (language/part1) <==
+What are some examples of idioms that include obsolete words?
+
+==> english/etymology/portmanteau (language/part1) <==
+What are some words formed by combining together parts of other words?
+
+==> english/frequency (language/part1) <==
+In the English language, what are the most frequently appearing:
+
+==> english/idioms (language/part1) <==
+List some idioms that say the opposite of what they mean.
+
+==> english/less.ness (language/part1) <==
+Find a word that forms two other words, unrelated in meaning, when "less"
+
+==> english/letter.rebus (language/part1) <==
+Define the letters of the alphabet using self-referential common phrases (e.g.,
+
+==> english/malaprop (language/part1) <==
+List some phrases with the same meaning that differ by one sound.
+
+==> english/piglatin (language/part1) <==
+What words in pig latin also are words?
+
+==> english/pleonasm (language/part1) <==
+What are some redundant terms that occur frequently (like "ABM missile")?
+
+==> english/plurals/collision (language/part1) <==
+Two words, spelled and pronounced differently, have plurals spelled
+
+==> english/plurals/doubtful.number (language/part1) <==
+A little word of doubtful number,
+
+==> english/plurals/drop.terminal (language/part1) <==
+What words have their plurals formed by dropping the final letter?
+
+==> english/plurals/endings (language/part1) <==
+List a plural ending with each letter of the alphabet.
+
+==> english/plurals/man (language/part1) <==
+Words ending with "man" make their plurals by adding "s".
+
+==> english/plurals/switch.first (language/part1) <==
+What plural is formed by switching the first two letters?
+
+==> english/potable.color (language/part1) <==
+Find words that are both beverages and colors.
+
+==> english/pronunciation/autonym (language/part1) <==
+What is the longest word whose phonetic and normal spellings are the same?
+
+==> english/pronunciation/homograph/different.pronunciation (language/part1) <==
+What sequence of letters has the most different pronunciations?
+
+==> english/pronunciation/homograph/homographs (language/part1) <==
+List some homographs (words spelled the same but pronounced differently)
+
+==> english/pronunciation/homophone/homophones.alphabet (language/part1) <==
+Homophones can be confusing when used to exemplify a letter.  For example,
+
+==> english/pronunciation/homophone/homophones.letter (language/part1) <==
+For each letter, list homophones that differ by that letter.
+
+==> english/pronunciation/homophone/homophones.most (language/part1) <==
+What words have four or more spellings that sound alike?
+
+==> english/pronunciation/homophone/trivial (language/part2) <==
+Consider the free non-abelian group on the twenty-six letters of the
+
+==> english/pronunciation/oronym (language/part2) <==
+List some oronyms (phrases or sentences that can be read in two ways
+
+==> english/pronunciation/phonetic.letters (language/part2) <==
+What does "FUNEX" mean?
+
+==> english/pronunciation/rhyme (language/part2) <==
+What English words are hard to rhyme?
+
+==> english/pronunciation/silent.letter (language/part2) <==
+For each letter, what word contains that letter silent?
+
+==> english/pronunciation/silent.most (language/part2) <==
+What word has the most silent letters in a row?
+
+==> english/pronunciation/syllable (language/part2) <==
+What words have an exceptional number of letters per syllable?
+
+==> english/pronunciation/telegrams (language/part2) <==
+Since telegrams cost by the word, phonetically similar messages can be cheaper.
+
+==> english/puns (language/part2) <==
+Where can I find a collection of puns?
+
+==> english/rare.trigraphs (language/part2) <==
+What trigraphs (three-letter combinations) occur in only one word?
+
+==> english/self.ref/self.ref.letters (language/part2) <==
+Construct a true sentence of the form: "This sentence contains _ a's, _ b's,
+
+==> english/self.ref/self.ref.numbers (language/part2) <==
+What true sentence has the form: "There are _ 0's, _ 1's, _ 2's, ...,
+
+==> english/self.ref/self.ref.words (language/part2) <==
+What sentence describes its own word, syllable and letter count?
+
+==> english/sentences/behead (language/part2) <==
+Is there a sentence that remains a sentence when all its words are beheaded?
+
+==> english/sentences/charades (language/part2) <==
+A ....... surgeon was ....... to operate because he had .......
+
+==> english/sentences/emphasis (language/part2) <==
+List some sentences that change meaning when the emphasis is moved.
+
+==> english/sentences/pangram (language/part2) <==
+A "pangram" is a sentence containing all 26 letters.
+
+==> english/sentences/repeated.words (language/part2) <==
+What is a sentence with the same word several times repeated?  Do not use
+
+==> english/sentences/sentence (language/part2) <==
+Find a sentence with words beginning with the letters of the alphabet, in order.
+
+==> english/sentences/snowball (language/part2) <==
+Construct the longest coherent sentence you can such that the nth word
+
+==> english/sentences/weird (language/part2) <==
+Make a sentence containing only words that violate the "i before e" rule.
+
+==> english/sentences/word.boundaries (language/part2) <==
+List some sentences that can be radically altered by changing word boundaries
+
+==> english/spelling/gry (language/part2) <==
+Find three completely different words ending in "gry."
+
+==> english/spelling/j.ending (language/part2) <==
+What words and names end in j?
+
+==> english/spelling/lipograms (language/part2) <==
+What books have been written without specific letters, vowels, etc.?
+
+==> english/spelling/longest (language/part2) <==
+What is the longest word in the English language?
+
+==> english/spelling/most (language/part2) <==
+What word has the most variant spellings?
+
+==> english/spelling/near.palindrome (language/part2) <==
+What are some long near palindromes, i.e., words that except for one
+
+==> english/spelling/operations.on.words/deletion (language/part2) <==
+What exceptional words turn into other words by deletion of letters?
+
+==> english/spelling/operations.on.words/insertion.and.deletion (language/part2) <==
+What exceptional words turn into other words by both insertion and 
+
+==> english/spelling/operations.on.words/insertion (language/part2) <==
+What exceptional words turn into other words by insertion of letters?
+
+==> english/spelling/operations.on.words/movement (language/part2) <==
+What exceptional words turn into other words by movement of letters?
+
+==> english/spelling/operations.on.words/substitution (language/part2) <==
+What exceptional words turn into other words by substitution of letters?
+
+==> english/spelling/operations.on.words/transposition (language/part3) <==
+What exceptional words turn into other words by transposition of letters?
+
+==> english/spelling/operations.on.words/words.within.words (language/part3) <==
+What exceptional words contain other words?
+
+==> english/spelling/palindromes (language/part3) <==
+What are some long palindromes?
+
+==> english/spelling/sets.of.words/ladder (language/part3) <==
+Find the shortest word ladders stretching between the following pairs:
+
+==> english/spelling/sets.of.words/nots.and.crosses (language/part3) <==
+What is the most number of letters that can be fit into a three by three grid
+
+==> english/spelling/sets.of.words/perfect.ladder (language/part3) <==
+A "perfect" ladder comprises five-letter words where every letter is
+
+==> english/spelling/sets.of.words/squares (language/part3) <==
+What are some exceptional word squares (square crosswords with no blanks)?
+
+==> english/spelling/sets.of.words/variogram (language/part3) <==
+What is the largest known variogram (word square where repeated letters count
+
+==> english/spelling/sets.of.words/word.torture (language/part3) <==
+What is the longest word all of whose contiguous subsequences are words?
+
+==> english/spelling/single.words (language/part3) <==
+What words have exceptional lengths, patterns, etc.?
+
+==> english/spoonerisms (language/part3) <==
+List some exceptional spoonerisms.
+
+==> english/synonyms/ambiguous (language/part3) <==
+What word in the English language is the most ambiguous?
+
+==> english/synonyms/antonym (language/part3) <==
+What words, when a single letter is added, reverse their meanings?
+
+==> english/synonyms/contradictory.proverbs (language/part3) <==
+What are some proverbs that contradict one another?
+
+==> english/synonyms/contranym (language/part3) <==
+What words are their own antonym?
+
+==> english/synonyms/double.synonyms (language/part3) <==
+What words have two different synonymous meanings?
+
+==> finnish/finnish.plural (language/part3) <==
+What Finnish word is the anagram of its plural?
+
+==> finnish/finnish.record (language/part4) <==
+What are some Finnish words with unusual properties?
+
+==> french/french.palindromes (language/part4) <==
+List some French palindromes.
+
+==> french/french.record (language/part4) <==
+What are some French words with unusual properties?
+
+==> german/german.palindromes (language/part4) <==
+List some German palindromes.
+
+==> german/german.record (language/part4) <==
+What are some German words with unusual properties?
+
+==> italian/italian.record (language/part5) <==
+What are some Italian words with unusual properties?
+
+==> multi.palindromes (language/part5) <==
+List some multi-lingual palindromes.
+
+==> norwegian/norwegian.record (language/part5) <==
+What are some Norwegian words with unusual properties?
+
+==> repeated.word (language/part5) <==
+In any language, construct a sentence by repeating one word four times.
+
+==> swedish/swedish.record (language/part5) <==
+What are some Swedish words with unusual properties?
+
+==> synonymous.reversals (language/part5) <==
+What words are synonymous with their reversals in other langauges?
+
+==> vowels.repeated (language/part5) <==
+In any language, what word contains the same vowel repeated four times in a row?
+
+==> 29 (logic/part1) <==
+Three people check into a hotel.  They pay $30 to the manager and go
+
+==> ages (logic/part1) <==
+1) Ten years from now Tim will be twice as old as Jane was when Mary was 
+
+==> attribute (logic/part1) <==
+All the items in the first list share a particular attribute.  The second
+
+==> bookworm (logic/part1) <==
+A bookworm eats from the first page of an encyclopedia to the last
+
+==> boxes (logic/part1) <==
+Which Box Contains the Gold?
+
+==> camel (logic/part1) <==
+An Arab sheikh tells his two sons to race their camels to a distant
+
+==> centrifuge (logic/part1) <==
+You are a biochemist, working with a 12-slot centrifuge.  This is a gadget
+
+==> chain (logic/part1) <==
+What is the least number of links you can cut in a chain of 21 links to be able
+
+==> children (logic/part1) <==
+A man walks into a bar, orders a drink, and starts chatting with the
+
+==> condoms (logic/part1) <==
+How can a man have mutually safe sex with three women with only two condoms?
+
+==> dell (logic/part1) <==
+How can I solve logic puzzles (e.g., as published by Dell) automatically?
+
+==> elimination (logic/part1) <==
+97 baseball teams participate in an annual state tournament.
+
+==> flip (logic/part1) <==
+How can a toss be called over the phone (without requiring trust)?
+
+==> flowers (logic/part1) <==
+How many flowers do I have if all of them are roses except two, all of
+
+==> friends (logic/part1) <==
+Any group of 6 or more contains either 3 mutual friends or 3 mutual strangers.
+
+==> hofstadter (logic/part1) <==
+In first-order logic, find a predicate P(x) which means "x is a power of 10."
+
+==> hundred (logic/part1) <==
+A sheet of paper has statements numbered from 1 to 100.  Statement n says
+
+==> inverter (logic/part1) <==
+Can a digital logic circuit with two inverters invert N independent inputs?
+
+==> josephine (logic/part1) <==
+The recent expedition to the lost city of Atlantis discovered scrolls
+
+==> locks.and.boxes (logic/part1) <==
+You want to send a valuable object to a friend.  You have a box which
+
+==> min.max (logic/part1) <==
+In a rectangular array of people, which will be taller, the tallest of the
+
+==> mixing (logic/part1) <==
+Start with a half cup of tea and a half cup of coffee. Take one tablespoon
+
+==> monty.52 (logic/part1) <==
+Monty and Waldo play a game with N closed boxes.  Monty hides a
+
+==> number (logic/part1) <==
+Mr. S. and Mr. P. are both perfect logicians, being able to correctly deduce
+
+==> riddle (logic/part2) <==
+Who makes it, has no need of it.  Who buys it, has no use for it.  Who
+
+==> river.crossing (logic/part2) <==
+Three humans, one big monkey and two small monkeys are to cross a river:
+
+==> ropes (logic/part2) <==
+Two fifty foot ropes are suspended from a forty foot ceiling, about
+
+==> same.street (logic/part2) <==
+Sally and Sue have a strong desire to date Sam.  They all live on the
+
+==> self.ref (logic/part2) <==
+Find a number ABCDEFGHIJ such that A is the count of how many 0's are in the
+
+==> situation.puzzles (logic/part3) <==
+                      Jed's List of Situation Puzzles
+
+==> smullyan/black.hat (logic/part4) <==
+Three logicians, A, B, and C, are wearing hats, which they know are either
+
+==> smullyan/fork.three.men (logic/part4) <==
+Three men stand at a fork in the road.  One fork leads to Someplaceorother;
+
+==> smullyan/fork.two.men (logic/part4) <==
+Two men stand at a fork in the road.  One fork leads to Someplaceorother; the
+
+==> smullyan/integers (logic/part4) <==
+Two logicians place cards on their foreheads so that what is written on the
+
+==> smullyan/painted.heads (logic/part4) <==
+While three logicians were sleeping under a tree, a malicious child painted
+
+==> smullyan/priest (logic/part5) <==
+In a small town there are N married couples in which one of the pair
+
+==> smullyan/stamps (logic/part5) <==
+The moderator takes a set of 8 stamps, 4 red and 4 green, known to the
+
+==> supertasks (logic/part5) <==
+You have an empty urn, and an infinite number of labeled balls.  Each
+
+==> timezone (logic/part5) <==
+Two people are talking long distance on the phone; one is in an East-
+
+==> unexpected (logic/part5) <==
+Swedish civil defense authorities announced that a civil defense drill would
+
+==> verger (logic/part5) <==
+A very bright and sunny Day
+
+==> weighing/balance (logic/part5) <==
+You are given 12 identical-looking coins, one of which is counterfeit
+
+==> weighing/box (logic/part5) <==
+You have ten boxes; each contains nine balls.  The balls in one box
+
+==> weighing/find.median (logic/part5) <==
+What is the least number of pairwise comparisons needed to find the median of
+
+==> weighing/gummy.bears (logic/part5) <==
+Real gummy drop bears have a mass of 10 grams, while imitation gummy
+
+==> weighing/optimal.weights (logic/part5) <==
+What is the smallest set of weights that allow you to weigh on a
+
+==> weighing/weighings (logic/part5) <==
+Some of the supervisors of Scandalvania's n mints are producing bogus coins.
+
+==> zoo (logic/part5) <==
+ I took some nephews and nieces to the Zoo, and we halted at a cage marked
+
+==> balloon (physics) <==
+A helium-filled balloon is tied to the floor of a car that makes a
+
+==> brick (physics) <==
+What is the maximum overhang you can create with an infinite supply of bricks? 
+
+==> bubbles (physics) <==
+In a universe with the same physical laws, but which is mostly water
+
+==> cannonball (physics) <==
+A person in a boat drops a cannonball overboard; does the water level change?
+
+==> magnets (physics) <==
+You have two bars of iron.  One is magnetized along its length, the
+
+==> milk.and.coffee (physics) <==
+You are just served a hot cup of coffee and want it to be as hot as
+
+==> mirror (physics) <==
+Why does a mirror appear to invert the left-right directions, but not up-down?
+
+==> monkey (physics) <==
+Hanging over a pulley there is a rope, with a weight at one end.
+
+==> pole.in.barn (physics) <==
+Accelerate a pole of length l to a constant speed of 90% of the speed of
+
+==> resistors (physics) <==
+What is the resistance between various pairs of vertices on a lattice
+
+==> sail (physics) <==
+A sailor is in a sailboat on a river.  The current is 3 knots with respect
+
+==> shoot.sun (physics) <==
+If you are standing at the equator at sunrise, where must you point a laser
+
+==> skid (physics) <==
+What is the fastest way to make a 90 degree turn on a slippery road?
+
+==> spheres (physics) <==
+Two spheres are the same size and weight, but one is hollow.  They are
+
+==> wind (physics) <==
+Is a round-trip by airplane longer or shorter if there is wind blowing?
+
+==> pickover.01 (pickover/part1) <==
+Title: Cliff Puzzle 1: Can you beat the numbers game?
+
+==> pickover.02 (pickover/part1) <==
+Title: Cliff Puzzle 2: Grid of the Gods
+
+==> pickover.03 (pickover/part1) <==
+Title: Cliff Puzzle 3: Too many 3's
+
+==> pickover.04 (pickover/part1) <==
+Title: Cliff Puzzle 4: Time in a Bottle
+
+==> pickover.05 (pickover/part1) <==
+Title: Cliff Puzzle 5: Mystery Sequence
+
+==> pickover.06 (pickover/part1) <==
+Title: Cliff Puzzle 6: Star Chambers
+
+==> pickover.07 (pickover/part2) <==
+Title: Cliff Puzzle 7: 3x3 Recursion
+
+==> pickover.08 (pickover/part2) <==
+Title: Cliff Puzzle 8: Squares and Squares and Squares ....
+
+==> pickover.09 (pickover/part2) <==
+Title: Cliff Puzzle 9: 3-Atoms and Growth
+
+==> pickover.10 (pickover/part2) <==
+Title: Cliff Puzzle 10: The Ark Series
+
+==> pickover.11 (pickover/part2) <==
+Title: Cliff Puzzle 11: The Leviathan Number
+
+==> pickover.12 (pickover/part3) <==
+Title: Cliff Puzzle 12: Slides in Hell
+
+==> pickover.13 (pickover/part3) <==
+Title: Cliff Puzzle 13: Ladders to Heaven
+
+==> pickover.14 (pickover/part3) <==
+Title: Cliff Puzzle 14: Geography Genuflection
+
+==> pickover.15 (pickover/part3) <==
+Title: Cliff Puzzle 15: Cherries in Wine Glasses
+
+==> pickover.16 (pickover/part3) <==
+Title: Cliff Puzzle 16: Undulating Squares
+
+==> pickover.17 (pickover/part3) <==
+Title: Cliff Puzzle 17: Weird Recursive Sequence
+
+==> pickover.18 (pickover/part3) <==
+Title: Cliff Puzzle 18: Difficult Nested Roots
+
+==> amoeba (probability) <==
+A jar begins with one amoeba.  Every minute, every amoeba
+
+==> apriori (probability) <==
+An urn contains one hundred white and black balls.  You sample one hundred
+
+==> bayes (probability) <==
+One urn contains black marbles, and the other contains white or black
+
+==> birthday/line (probability) <==
+At a movie theater, the manager announces that they will give a free ticket
+
+==> birthday/same.day (probability) <==
+How many people must be at a party before you have even odds or better
+
+==> cab (probability) <==
+A cab was involved in a hit and run accident at night.  Two cab companies,
+
+==> coupon (probability) <==
+There is a free gift in my breakfast cereal. The manufacturers say that
+
+==> darts (probability) <==
+Peter throws two darts at a dartboard, aiming for the center.  The
+
+==> derangement (probability) <==
+12 men leave their hats with the hat check.  If the hats are randomly
+
+==> family (probability) <==
+Suppose that it is equally likely for a pregnancy to deliver
+
+==> flips/once.in.run (probability) <==
+What are the odds that a run of one H or T (i.e., THT or HTH) will occur
+
+==> flips/twice.in.run (probability) <==
+What is the probability in n flips of a fair coin that there will be two
+
+==> flips/unfair (probability) <==
+Generate even odds from an unfair coin.  For example, if you
+
+==> flips/waiting.time (probability) <==
+Compute the expected waiting time for a sequence of coin flips, or the
+
+==> flush (probability) <==
+Which set contains proportionately more flushes than the set of all
+
+==> hospital (probability) <==
+A town has two hospitals, one big and one small.  Every day the big
+
+==> icos (probability) <==
+The "house" rolls two 20-sided dice and the "player" rolls one
+
+==> intervals (probability) <==
+Given two random points x and y on the interval 0..1, what is the average
+
+==> killers.and.pacifists (probability) <==
+You enter a town that has K killers and P pacifists.  When a
+
+==> leading.digit (probability) <==
+What is the probability that the ratio of two random reals starts with a 1?
+
+==> lights (probability) <==
+Waldo and Basil are exactly m blocks west and n blocks north from
+
+==> lottery (probability) <==
+There n tickets in the lottery, k winners and m allowing you to pick another
+
+==> oldest.girl (probability) <==
+You meet a stranger on the street, and ask how many children he has.  He
+
+==> particle.in.box (probability) <==
+A particle is bouncing randomly in a two-dimensional box.  How far does it
+
+==> pi (probability) <==
+Are the digits of pi random (i.e., can you make money betting on them)?
+
+==> random.walk (probability) <==
+Waldo has lost his car keys!  He's not using a very efficient search;
+
+==> reactor (probability) <==
+There is a reactor in which a reaction is to take place. This reaction
+
+==> roulette (probability) <==
+You are in a game of Russian roulette, but this time the gun (a 6
+
+==> transitivity (probability) <==
+Can you number dice so that die A beats die B beats die C beats die A?
+
+==> icecubes (real-life) <==
+You have an old-fashioned refrigerator with a small freezer compartment
+
+==> microwave (real-life) <==
+Every morning when I warm my milk for breakfast, I put one cup of milk
+
+==> books/bloopers (references) <==
+What are some errors made in puzzle books?
+
+==> books/masquerade (references) <==
+What is the solution to _Masquerade_ by Kit Williams?
+
+==> books/maze (references) <==
+What is the solution to _Maze_ by Christopher Manson?
+
+==> books/treasure (references) <==
+What is the solution to _Treasure_ by Dr. Crypton?
+
+==> books/unnamed (references) <==
+What is the solution to the unnamed book by Kit Williams?
+
+==> faq (references) <==
+Where should I look if I can't find the answer here?
+
+==> magazines (references) <==
+What magazines and journals contain puzzles?
+
+==> organizations (references) <==
+What organizations exist for puzzle lovers?
+
+==> series.00 (series) <==
+Are "complete this series" problems well defined?
+
+==> series.01 (series) <==
+M, N, B, D, P ?
+
+==> series.02 (series) <==
+H, H, L, B, B, C, N, O, F ?
+
+==> series.03 (series) <==
+W, A, J, M, M, A, J?
+
+==> series.03a (series) <==
+G, J, T, J, J, J, A, M, W, J, J, Z, M, F, J, ?
+
+==> series.03b (series) <==
+A, J, B, C, G, T, C, V, J, T, D, F, K, B, H, ?
+
+==> series.03c (series) <==
+M, A, M, D, E, L, R, H, ?
+
+==> series.04 (series) <==
+A, E, H, I, K, L, ?
+
+==> series.05 (series) <==
+A B C D E F G H?
+
+==> series.06 (series) <==
+Z, O, T, T, F, F, S, S, E, N?
+
+==> series.06a (series) <==
+F, S, T, F, F, S, ?
+
+==> series.07 (series) <==
+1, 1 1, 2 1, 1 2 1 1, ...
+
+==> series.08a (series) <==
+G, L, M, B, C, L, M, C, F, S, ?
+
+==> series.08b (series) <==
+A, V, R, R, C, C, L, L, L, E, ?
+
+==> series.09a (series) <==
+S, M, S, S, S, C, P, P, P, ?
+
+==> series.09b (series) <==
+M, S, C, P, P, P, S, S, S, ?
+
+==> series.10 (series) <==
+D, P, N, G, C, M, M, S, ?
+
+==> series.11 (series) <==
+R O Y G B ?
+
+==> series.12 (series) <==
+A, T, G, C, L, ?
+
+==> series.13 (series) <==
+M, V, E, M, J, S, ?
+
+==> series.14 (series) <==
+A, B, D, O, P, ?
+
+==> series.14a (series) <==
+A, B, D, E, G, O, P, ?
+
+==> series.15 (series) <==
+A, E, F, H, I, ?
+
+==> series.16 (series) <==
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, X, Y?
+
+==> series.17 (series) <==
+T, P, O, F, O, F, N, T, S, F, T, F, E, N, S, N?
+
+==> series.18 (series) <==
+10, 11, 12, 13, 14, 15, 16, 17, 20, 22, 24, ___ , 100, 121, 10000
+
+==> series.19 (series) <==
+0 01 01011 0101101011011 0101101011011010110101101101011011 etc.
+
+==> series.20 (series) <==
+1 2 5 16 64 312 1812 12288
+
+==> series.21 (series) <==
+5, 6, 5, 6, 5, 5, 7, 5, ?
+
+==> series.22 (series) <==
+3 1 1 0 3 7 5 5 2 ?
+
+==> series.23 (series) <==
+22 22 30 13 13 16 16 28 28 11 ?
+
+==> series.24 (series) <==
+What is the next letter in the sequence: W, I, T, N, L, I, T?
+
+==> series.25 (series) <==
+1 3 4 9 10 12 13 27 28 30 31 36 37 39 40 ?
+
+==> series.26 (series) <==
+1 3 2 6 7 5 4 12 13 15 14 10 11 9 8 24 25 27 26 ?
+
+==> series.27 (series) <==
+0 1 1 2 1 2 1 3 2 2 1 3 1 2 2 4 1 3 1 3 2 2 1 4 2 ?
+
+==> series.28 (series) <==
+0 2 3 4 5 5 7 6 6 7 11 7 13 9 8 8 17 8 19 9 10 13 23 9 10 ?
+
+==> series.29 (series) <==
+1 1 2 1 2 2 3 1 2 2 3 2 3 3 4 1 2 2 3 2 3 3 4 2 3 3 4 3 4 ?
+
+==> series.30 (series) <==
+I I T Y W I M W Y B M A D 
+
+==> series.31 (series) <==
+6 2 5 5 4 5 6 3 7 
+
+==> series.32 (series) <==
+0 1 1 0 1 0 0 1 1 0 0 1 0 1 1 0 1
+
+==> series.33 (series) <==
+2 12 360 75600
+
+==> series.34 (series) <==
+3 5 4 4 3 5 5 4 3
+
+==> series.35 (series) <==
+1 2 3 2 1 2 3 4 2 1 2 3 4 2 2 3
+
+==> series.36 (series) <==
+ETIANMSURWDKGO
+
+==> series.37 (series) <==
+10^3 10^9 10^27 10^2 0 4 8 3
+
+==> area.codes (trivia) <==
+When looking at a map of the distribution of telephone area codes for
+
+==> body.parts (trivia) <==
+Name ten body parts that are spelled with three letters.  No slang words.
+
+==> coincidence (trivia) <==
+Name some amazing coincidences.
+
+==> eskimo.snow (trivia) <==
+How many words do the Eskimo have for snow?
+
+==> federal.reserve (trivia) <==
+What is the pattern to this list:
+
+==> jokes.self-referential (trivia) <==
+What are some self-referential jokes?
+
+==> memory.tricks (trivia) <==
+When asked to name a color, many people answer "red."  What are some other
+
+==> quotations (trivia) <==
+Where can I find the source for a quotation?
+

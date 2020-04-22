@@ -1,0 +1,1503 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA00679; Sat, 20 Apr 1996 14:17:01 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07942; Sat, 20 Apr 96 14:13:01 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25270; Sat, 20 Apr 1996 11:13:50 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (geometry), part 13 of 35
+Message-Id: <puzzles/archive/geometry/part1_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:22 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1475
+Xref: senator-bedfellow.mit.edu rec.puzzles:24997 news.answers:11517 rec.answers:1917
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/geometry/part1
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> geometry/K3,3.p <==
+Can three houses be connected to three utilities without the pipes crossing?
+
+            _______          _______          _______
+            | oil |          |water|          | gas |
+            |_____|          |_____|          |_____|
+
+
+            _______          _______          _______
+            |HOUSE|          |HOUSE|          |HOUSE|
+            | one |          | two |          |three|
+
+==> geometry/K3,3.s <==
+The problem you describe is to draw a bipartite graph of 3 nodes
+connected in all ways to 3 nodes, all embedded in the plane.  The graph
+is called K3,3.  A famous theorem of Kuratowsky says that all graphs
+can be embedded in the plane, EXCEPT those containing a subgraph that
+is topologically equivalent to K3,3 or K5 (the complete graph on 5
+vertices, i.e., the graph with 5 nodes and 10 edges).  So your problem
+is a minimal example of a graph that cannot be embedded in the plane.
+
+The proofs that K5 and K3,3 are non-planar are really quite easy, and
+only depend on Euler's Theorem that F-E+V=2 for a planar graph.  For
+K3,3 V is 6 and E is 9, so F would have to be 5. But each face has at
+least 4 edges, so E >= (F*4)/2 = 10, contradiction.  For K5 V is 5 and
+E is 10, so F = 7. In this case each face has at least 3 edges, so E >=
+(F*3)/2 = 10.5, contradiction.
+
+The difficult part of Kuratowsky is the proof in the other direction!
+
+A quick, informal proof by contradiction without assuming Euler's Theorem:
+Using a map in which the houses are 1, 2, and 3 and the utilities are
+A, B, and C, there must be continuous lines that connect the buildings and
+divide the area into three sections bounded by the loops A-1-B-2-A,
+A-1-B-3-A, and A-2-B-3-A.  (One of the areas is the infinite plane *around*
+whichever loop is the outer edge of the network.)  C must be in one of these
+three areas; whichever area it is in, either 1, or 2, or 3, is *not* part of
+the loop that rings its area and hence is inaccessible to C.
+
+The usual quibble is to solve the puzzle by running one of the pipes
+underneath one of houses on its way to another house; the puzzle's
+instructions forbid crossing other *pipes*, but not crossing other *houses*.
+
+==> geometry/bear.p <==
+If a hunter goes out his front door, goes 50 miles south, then goes 50 
+miles west, shoots a bear, goes 50 miles north and ends up in front of
+his house.  What color was the bear?
+
+==> geometry/bear.s <==
+The hunter's door is in one of two locations.  One is a foot or so from the
+North Pole, facing north, such that his position in front of the door is
+precisely upon the North Pole.  Since that's a ridiculous place to build a
+house and since bears do not roam within fifty miles of the pole, the bear
+is either imaginary or imported, and there is no telling what color it is.
+
+There is another place (actually a whole set) on earth from which one
+can go fifty miles south, fifty miles west, and fifty miles north and
+end up where one started.  Consider the parallel of latitude close
+enough to the South Pole that its length is 50/n miles, for some
+integer n.
+
+Take any point on that parallel of latitude and pick the point fifty miles
+north of it.  Situate the hunter's front porch there.  The hunter goes fifty
+miles south from his porch and is at a point we'll call A.  He travels fifty
+miles west, circling the South Pole n times, and is at A again, where he shoots
+the bear.  Fifty miles north from A he is back home.  Since bears are not
+indigenous to the Antarctic, again the bear is either imaginary or imported
+and there is no telling what color it might be.
+
+==> geometry/bisector.p <==
+Prove if two angle bisectors of a triangle are equal, then the triangle is
+isosceles (more specifically, the sides opposite to the two angles
+being bisected are equal).
+
+==> geometry/bisector.s <==
+PROVE: <ABC = <BCA (i.e. triangle ABC is an isosceles triangle)
+
+                       A
+                      / \
+                     /   \
+                    D     E            XP normal to AB
+                   / \   / \           XQ normal to AC
+                P /----X----\ Q
+                 /   /   \   \
+                /  /       \  \
+               / /           \ \
+              B/_______________\C
+
+
+PROOF :
+  Let XP and XQ be normals to AC and AB.
+  Since the three angle bisectors are concurrent, AX bisects angle A
+  also and therefore XP = XQ.
+
+  Let's assume XD > XE.
+  Then ang(PDX) < ang(QEX)
+  Now considering triangles BXD and CXE,
+    the last condition requires that
+       ang(DBX) > ang(ECX)
+OR     ang(XBC) > ang(XCB)
+OR        XC    >  XB
+
+   Thus our assumption leads to :
+        XC + XD >  XE + XB
+OR         CD  > BE
+  which is a contradiction.
+
+
+  Similarly, one can show that XD < XE leads to a contradiction too.
+
+Hence  XD = XE  => CX = BX
+From which it is easy to prove that the triangle is isosceles.
+
+--  Manish S Prabhu (mprabhu@magnus.acs.ohio-state.edu)
+
+==> geometry/calendar.p <==
+Build a calendar from two sets of cubes.  On the first set, spell the
+months with a letter on each face of three cubes.  Use lowercase
+three-letter English abbreviations for the names of all twelve months
+(e.g., "jan", "feb", "mar").  On the second set, number the days with a
+digit on each face of two cubes (e.g., "01", "02", etc.).
+
+==> geometry/calendar.s <==
+	First note that there are *nineteen* different letters in the
+month abbreviations (abcdef gjlmno prstuv y) so to get them all on the
+eighteen faces of 3 cubes, you know right away you're going to have to
+resort to trickery.
+
+	So I wrote them all down and looked at which ones could be
+reversed to make another letter in the set.  The only pair that jumped
+out at me was the d/p pair.  Now I knew that it was at least feasible,
+as long as it wasn't necessary to duplicate any letters.
+
+	Then I scanned the abbreviations to find ones that had a lot of
+common letters.  The jan-jun-jul series looked like a good place to
+start:
+	j	a	n
+		u	l
+				was a good beginning but I realized
+right away that I had no room for duplicate letters and the second cube
+had both a and u so aug was going to be impossible.  In fact I almost
+posted that answer.  Then I realized that if Martin Gardner wrote about
+it, it must have a solution.  :-)  So I went back to the letter list.
+
+	I don't put tails on my u's so it didn't strike me the first
+time through that n and u could be combined.
+      Cube 1  Cube 2  Cube 3
+	j	a	n/u
+		n/u	l
+				would let me get away with putting the g
+on the first cube to get aug, so I did.
+	j	a	n/u
+	g	n/u	l	(1)
+
+	Now came the fun part.  The a was placed so I had to work around
+it for the other months that had an a in them (mar, apr, may).
+	m	a	r
+	d/p		y	(2)
+
+	Now the d/p was placed so I had to work around that for sep and dec.
+This one was easy since they shared an e as well.
+	d/p	e	s
+			c	(3)
+
+	Now the e was placed so feb had to be worked in.
+	f	e	b	(4)
+
+	The two months left (oct, nov) were far more complex.  Not only
+did they have two "set" letters (c, n/u), there were two possible n/u's
+to be set with.  That's why I left them for last.
+	o	t	c
+		n/u	v	(5)
+
+	So now I had five pieces to fit together, so that no set would
+have more than six letters in it.  Trial and error provided:
+
+	j	a	n/u			a	b	e
+	g	n/u	l	or,		c	d/p	g
+	r	s	m	alphabetically:	f	l	j
+	y	c	d/p			n/u	m	o
+	e	v	t			s	n/u	r
+	o	f	b			v	t	y
+
+
+  Without some gimmick the days cannot be done.  Because of the dates 11 and
+22, there must be a 1 and a 2 on each cube. Thus there are 8 remaining spaces
+for the 8 remaining numbers, and because of 30, we put 3 and 0 on different
+cubes. I don't think the way you allocate the others matter. Now 6 numbers on
+each cube can produce at most 36 distinct pairs, and we need 31 distinct pairs
+to represent all possible dates. But since 3 each of {4,5,6,7,8,9} are on each
+cube, there are at least 9 representable numbers which can't be dates.
+Therefore there are at most 27 distinct numbers which are dates on the two
+cubes, and it can't be done. In particular, not all of {04,05,06,07,08,09} can
+be represented.
+
+  The gimmick solution would be to represent the numbers in a stylised format
+(like say, on a digital clock or on a computer screen) such that the 6 can be
+turned upside down to be a 9. Then you can have 012 on both cubes, and three
+each of {3,4,5,6,7,8} on the other faces. Done.
+  
+  Example: 012468 012357
+
+==> geometry/circles.and.triangles.p <==
+Find the radius of the inscribed and circumscribed circles for a triangle.
+
+==> geometry/circles.and.triangles.s <==
+Let a, b, and c be the sides of the triangle.  Let s be the
+semiperimeter, i.e. s = (a + b + c) / 2.  Let A be the area
+of the triangle, and let x be the radius of the incircle.
+
+Divide the triangle into three smaller triangles by drawing
+a line segment from each vertex to the incenter.  The areas
+of the smaller triangles are ax/2, bx/2, and cx/2.  Thus,
+A = ax/2 + bx/2 + cx/2, or A = sx. 
+
+We use Heron's formula, which is A = sqrt(s(s-a)(s-b)(s-c)).
+This gives us x = sqrt((s-a)(s-b)(s-c)/s).
+
+The radius of the circumscribed circle is given by R = abc/4A.
+
+==> geometry/coloring/cheese.cube.p <==
+A cube of cheese is divided into 27 subcubes.  A mouse starts at one
+corner and eats each subcube, one at a time.  Can it finish in the middle?
+
+==> geometry/coloring/cheese.cube.s <==
+Give the subcubes a checkerboard-like coloring so that no two adjacent
+subcubes have the same color.  If the corner subcubes are black, the
+cube will have 14 black subcubes and 13 white ones.  The mouse always
+alternates colors and so must end in a black subcube.  But the center
+subcube is white, so the mouse can't end there.
+
+==> geometry/coloring/triominoes.p <==
+There is a chess board (of course with 64 squares). You are given 21
+"triominoes" of size 3-by-1 (the size of an individual square on a
+chess board is 1-by-1). Which square on the chess board can you cut out
+so that the 21 triominoes exactly cover the remaining 63 squares? Or is
+it impossible?
+
+==> geometry/coloring/triominoes.s <==
+||||||||
+||||||||
+||||||||
+---***+*
+---...+*
+---*+O+*
+---*+...
+---*+***
+
+There is only one way to remove a square, aside from rotations and
+reflections.  To see that there is at most one way, do this:  Label
+all the squares of the chessboard with A, B or C in sequence by rows
+starting from the top:
+
+		ABCABCAB
+		CABCABCA
+		BCABCABC
+		ABCABCAB
+		CABCABCA
+		BCABCABC
+		ABCABCAB
+		CABCABCA
+
+Every triomino must cover one A, one B and one C.  There is one extra
+A square, so an A must be removed.  Now label the board again by
+rows starting from the bottom:
+
+		CABCABCA
+		ABCABCAB
+		BCABCABC
+		CABCABCA
+		ABCABCAB
+		BCABCABC
+		CABCABCA
+		ABCABCAB
+
+The square removed must still be an A.  The only squares that got
+marked with A both times are these:
+
+		........
+		........
+		..A..A..
+		........
+		........
+		..A..A..
+		........
+		........
+
+==> geometry/construction/4.triangles.6.lines.p <==
+Can you construct 4 equilateral triangles with 6 toothpicks?
+
+==> geometry/construction/4.triangles.6.lines.s <==
+Use the toothpicks as the edges of a tetrahedron.
+
+==> geometry/construction/5.lines.with.4.points.p <==
+Arrange 10 points so that they form 5 rows of 4 each.
+
+==> geometry/construction/5.lines.with.4.points.s <==
+Draw a 5 pointed star, put a point where any two lines meet.
+
+==> geometry/construction/square.with.compass.p <==
+Construct a square with only a compass and a straight edge.
+
+==> geometry/construction/square.with.compass.s <==
+Draw a circle (C1 at P1).  Now draw a diameter D1 (intersects at P2 and
+P3).  Set the compass larger than before.  From each of points P2 and
+P3 draw another larger circle (C2 and C3).  Where these two circles
+cross, draw a line (D2).  This line should go through the center of
+circle C1 at a right angle to the original diameter line.  This line
+should cross circle C1 at P4 and P5.  Points P2, P4, P3, P5 form a
+square.
+
+For extra credit:
+
+Reset the compass to its original size.  From P2 and P4 draw a circle
+(C4 and C5).  These circles intersect at P6 and P1.  Connect P6, P2,
+P1, P4 for a square of the same size as the original compass setting.
+
+==> geometry/corner.p <==
+A hallway of width A turns through 90 degrees into a hallway of width
+B. A ladder is to be passed around the corner. If the movement is
+within the horizontal plane, what is the maximum length of the ladder?
+
+==> geometry/corner.s <==
+------\---------
+B   /  \.......|..B/sin(theta)
+   theta\      |
+---|-----X     |
+	 |\    |
+	 | \...|..A/cos(theta)
+	 |  \  |
+	 |   \ |
+	 | A  \|
+
+
+Theta is the angle off horizontal.
+
+Minimize length = A/cos(theta) + B/sin(theta)
+
+    d(length)/d(theta)
+	   = A*sin(theta)/cos(theta)^2 - B*cos(theta)/sin(theta)^2 (?)
+	   = 0
+    A*sin(theta)/cos(theta)^2 = B*cos(theta)/sin(theta)^2
+
+    B/A = sin(theta)^3/cos(theta()^3 = tan(theta)^3
+
+    theta = inverse_tan(cube_root(B/A))
+
+If you use the trigonometric formulas  cos^2 x = 1/(1 + tan^2 x)
+and  sin x = tan x cos x, and plug through the algebra, I believe
+that the formula for the length reduces to
+
+(A^(2/3) + B^(2/3))^(3/2)
+
+At any rate this is symmetric in A and B as one would expect, and
+has the right values at A=B and as either A-->0 or B-->0.
+
+==> geometry/cover.earth.p <==
+A thin membrane covers the surface of the (spherical) earth.  One
+square meter is added to the area of this membrane to form a larger
+sphere.  How much is added to the radius and volume of this membrane?
+
+==> geometry/cover.earth.s <==
+We know that V = (4/3)*pi*r^3 and A = 4*pi*r^2.
+We need to find out how much V increases if A increases by 1 m^2.
+
+  dV / dr = 4 * pi * r^2
+  dA / dr = 8 * pi * r
+  dV / dA = (dV / dr) / (dA / dr)
+	  = (4 * pi * r^2) / (8 * pi * r)
+	  = r/2
+          = 3,250,000 m
+
+If the area of the cover is increased by 1 square meter,
+then the volume it contains is increased by about 3.25 million cubic meters.
+
+We seem to be getting a lot of mileage out of such a small square of cotton.
+However, the new cover would not be very high above the surface of the
+planet -- about 6 nanometers (calculate dr/dA).
+
+==> geometry/cycle.polynomial.p <==
+What are the cycle polynomials for the Platonic solids?
+
+==> geometry/cycle.polynomial.s <==
+For future reference, here are the cycle polynomials for the five platonic
+solids (and I threw in the tesseract for good measure).  Most combinatoric
+coloring problems are simple plug-ins to these polynomials.  For details,
+see any book on combinatorics that presents Polya counting theory.
+
+tetrahedron: (x1^4+3x2^2+8x1*x3)/12
+cube: (x1^6+6x2^3+3x1^2*x2^2+8x3^2+6x1^2*x4)/24
+octahedron: (x1^8+9x2^4+8x1^2*x3^2+6x4^2)/24
+dodecahedron: (x1^12+15x2^6+20x3^4+24x1^2*x5^2)/60
+icosahedron: (x1^20+15x2^10+20x1^2*x3^6+24x5^4)/60
+tesseract: (32x6^4+x2^12+48x8^3+x1^24+24x1^2*x2^11+12x2^2*x4^5+32x3^8+12x4^6
+    +18x1^4*x2^10+12x1^4*x4^5)/192
+
+
+
+
+==> geometry/dissections/disk.p <==
+Can a disk be cut into similar pieces without point symmetry about the
+midpoint?  Can it be done with a finite number of pieces?
+
+==> geometry/dissections/disk.s <==
+Yes.  Draw a circle inside the circumference of the disk, sharing a
+common point on the right.  Now draw another circle inside the second,
+sharing a point at the left.  Now draw another inside the third,
+sharing a point at the right.  Continue in this way, coloring in every
+other region thus generated.  Now, all the colored regions touch, so
+count this as one piece and the uncolored regions as a second piece.
+So the circle has been divided into two similar pieces and there is no
+point symmetry about the midpoint.  Maybe it is cheating to call these
+single pieces, though.
+
+==> geometry/dissections/hexagon.p <==
+Divide the hexagon into:
+1) 3 identical rhombuses.
+2) 6 identical kites(?).
+3) 4 identical trapezoids (trapeziums in Britain).
+4) 8 identical shapes (any shape).
+5) 12 identical shapes (any shape).
+
+==> geometry/dissections/hexagon.s <==
+What is considered 'identical' for these questions?  If mirror-image shapes
+are allowed, these are all pretty trivial.  If not, the problems are rather
+more difficult...
+
+	1. Connect the center to every second vertex.
+	2. Connect the center to the midpoint of each side.
+	3. This is the hard one.  If you allow mirror images, it's trivial:
+	   bisect the hexagon from vertex to vertex, then bisect with a 
+	   perpendicular to that, from midpoint of side to midpoint of side.
+	4. This one's neat.  Let the side length of the hexagon be 2 (WLOG).
+	   We can easily partition the hexagon into equilateral triangles 
+	   with side 2 (6 of them), which can in turn be quartered into 
+	   equilateral triangles with side 1.  Thus, our original hexagon
+	   is partitioned into 24 unit equilateral triangles.  Take the
+	   trapezoid formed by 3 of these little triangles.  Place one such
+	   trapezoid on the inside of each face of the original hexagon, so
+	   that the long side of the trapezoid coincides with the side of the
+	   hexagon.  This uses 6 trapezoids, and leaves a unit hexagon in the
+	   center as yet uncovered.  Cover this little hexagon with two of
+	   the trapezoids.  Voila.  An 8-identical-trapezoid partition.
+	5. Easy.  Do the rhombus partition in #1.  Quarter each rhombus by
+	   connecting midpoints of opposite sides.  This produces 12 small
+	   rhombi, each of which is equivalent to two adjacent small triangles
+	   as in #4.
+
+Except for #3, all of these partitions can be achieved by breaking up the
+hexagon into unit equilateral triangles, and then building these into the
+shapes desired.  For #3, though, this would require (since there are 24 small
+triangles) trapezoids formed from 6 triangles each.  The only trapezoid that
+can be built from 6 identical triangles is a parallelogram; I assume that the
+poster wouldn't have asked for a trapezoid if you could do it with a special
+case of trapezoid.  At any rate, that parallelogram doesn't work.
+
+==> geometry/dissections/largest.circle.p <==
+What is the largest circle that can be assembled from two semicircles cut from
+a rectangle with edges a and b?
+
+==> geometry/dissections/largest.circle.s <==
+There are two methods:
+
+Method M1:
+The  diameters of the semicircles have to be on the longer sides,
+starting at an endpoint of the rectangle.  The two semicircles touch
+each other in the middle M of the rectangle.
+
+		    a
+       D._______________________.C
+	|			|
+	|			|
+      b	|	    . M		|
+	|			|
+	|			|
+	|_______.___.___________|
+	A       R   X		B
+
+R should be the center of the semicircle, and because of RA = RM,
+it holds that:
+		r^2 = (a/2 - r)^2 + (b/2)^2
+
+Solving for r gives:
+
+		r = min[b,(a^2+b^2)/(4a)], where a >= b.
+
+Method M2:
+We'll cut on the line y = c x, where c will turn out to be slightly
+less than d, the slope of the diagonal.  We describe the semicircle
+lying above the line y = c x, having this line as the straight part of
+the semi-circle.  The center P of the semicircle will be taken on the
+line y = d - x, and will be tangent to the left and top of the
+rectangle.  Clearly the lower down P is on this line, the better.  The
+naive solution is not optimal because the upper place where the
+semicircle meets the diagonal is interior to the rectangle.  So we try
+to determine c in such a way that this latter point actually lies
+slightly down from the top, on the right side of the rectangle.  This
+involves solving the quartic:
+4r^4 - (4a+16b)r^3 + (16b^2+a^2+8ab)r^2 - (6b^3+4ab^2+2ba^2)r + b^4+(ab)^2 = 0,
+where r < b, the details of which will be left to the reader.
+
+The other semicircle is the reflection of the first through the origin.
+
+After a few calculations, we find that the value of r given
+by M2 is greater than the one given by M1 only if 1 < a/b < 2.472434.
+
+==> geometry/dissections/square.70.p <==
+Since 1^2 + 2^2 + 3^2 + ... + 24^2 = 70^2, can a 70x70 square be dissected into
+24 squares of size 1x1, 2x2, 3x3, etc.?
+
+==> geometry/dissections/square.70.s <==
+Martin Gardner asked this in his Mathematical Games column in the
+September 1966 issue of Scientific American.  William Cutler was the first
+of 24 readers who reduced the uncovered area to 49, using all but the 7x7
+square.  All the patterns were the same except for interchanging the
+squares of orders 17 and 18 and rearranging the squares of orders 1, ...,
+6, 8, 9, and 10.  Nobody proved that the solution is minimal.
+
++----------------+-------------+----------------------+---------------------+
+|                |             |                      |                     |
+|                |             |                      |                     |
+|                |      11     |                      |                     |
+|                |             |                      |                     |
+|       16       |             |                      |                     |
+|                +-----+--+----+         22           |         21          |
+|                |     | 2|    |                      |                     |
+|                |  5  +--+----+                      |                     |
+|                |     |       |                      |                     |
++----------------+--+--+   6   |                      |                     |
+|                   | 3|       |                      |                     |
+|                   ++-+-------+                      |                     |
+|                   ||         |                      ++--------------------+
+|                   ||    8    +----------------------++                    |
+|        18         ||         |                       |                    |
+|                   ||         |                       |                    |
+|                   ++---------+                       |                    |
+|                   |          |                       |         20         |
+|                   |     9    |                       |                    |
++------------------++          |          23           |                    |
+|                  ||          |                       |                    |
+|                  ++----------+                       |                    |
+|                  |           |                       +---++---------------+
+|                  |           |                       |   ||               |
+|        17        |     10    |                       | 4 ||               |
+|                  |           +---------------+-------+---++               |
+|                  +-+---------+---------------+            |      15       |
+|                  | |                         |            |               |
+|                  | |                         |     12     |               |
++------------------+-+                         |            +-+-------------+
+|                    |                         |            |1|             |
+|                    |                         +------------+-+             |
+|                    |           24            |              |             |
+|                    |                         |              |             |
+|        19          |                         |     13       |     14      |
+|                    |                         |              |             |
+|                    |                         |              |             |
+|                    |                         |              |             |
++--------------------+-------------------------+--------------+-------------+
+
+==> geometry/dissections/square.five.p <==
+Can you dissect a square into 5 parts of equal area with just a straight edge?
+
+==> geometry/dissections/square.five.s <==
+1. Prove you can reflect points which lie on the sides of the square
+about the diagonals.
+
+2. Construct two different rectangles whose vertices lie on the square
+and whose sides are parallel to the diagonals.
+
+3. Construct points A, A', B, B' on one (extended) side of the square
+such that A/A' and B/B' are mirror image pairs with respect to another
+side of the square.
+
+4. Construct the mirror image of the center of the square in one
+of the sides.
+
+5. Divide the original square into 4 equal squares whose sides are
+parallel to the sides of the original square.
+
+6. Divide one side of the square into 8 equal segments.
+
+7. Construct a trapezoid in which one base is a square side and one
+base is 5/8 of the opposite square side.
+
+8. Divide one side of the square into 5 equal segments.
+
+9. Divide the square into 5 equal rectangles.
+
+==> geometry/dissections/tesseract.p <==
+If you suspend a cube by one corner and slice it in half with a
+horizontal plane through its centre of gravity, the section face is a
+hexagon.  Now suspend a tesseract (a four dimensional hypercube) by one
+corner and slice it in half with a hyper-horizontal hyperplane through
+its centre of hypergravity.  What is the shape of the section
+hyper-face?
+
+==> geometry/dissections/tesseract.s <==
+The 4-cube is the set of all points in [-1,1]^4 .
+The hyperplane { (x,y,z,w) : x + y + z + w = 0 } cuts the 4-cube
+in the desired manner.
+
+Now, { (.5,.5,-.5,-.5), (.5,-.5,.5,-.5), (.5,-.5,-.5,.5) } is an
+orthonormal basis for the hyperplane.  Let (a,b,c) be a point on the
+hyperplane with respect to this basis.  (a,b,c) is in the 4-cube if and
+only if |a| + |b| + |c| <= 2.   The shape of the intersection is a
+regular octahedron.
+
+==> geometry/duck.and.fox.p <==
+A duck is swimming about in a circular pond.  A ravenous fox (who cannot 
+swim) is roaming the edges of the pond, waiting for the duck to come close.  
+The fox can run faster than the duck can swim.  In order to escape, 
+the duck must swim to the edge of the pond before flying away.  Assume that 
+the duck can't fly until it has reached the edge of the pond.
+
+How much faster must the fox run that the duck swims in order to be always
+able to catch the duck?
+
+==> geometry/duck.and.fox.s <==
+Assume the ratio of the fox's speed to the duck's is a, and the radius
+of the pond is r.  The duck's best strategy is:
+
+1.  Swim around a circle of radius (r/a - delta) concentric with the
+pond until you are diametrically opposite the fox (you, the fox, and
+the center of the pond are colinear).
+
+2.  Swim a distance delta along a radial line toward the bank opposite
+the fox.
+
+3.  Observe which way the fox has started to run around the circle.
+Turn at a RIGHT ANGLE in the opposite direction (i.e. if you started
+swimming due south in step 2 and the fox started running to the east,
+i.e. clockwise around the pond, then start swimming due west).  (Note:
+If at the beginning of step 3 the fox is still in the same location as
+at the start of step 2, i.e.  directly opposite you, repeat step 2
+instead of turning.)
+
+4.  While on your new course, keep track of the fox.  If the fox slows
+down or reverses direction, so that you again become diametrically
+opposite the fox, go back to step 2.  Otherwise continue in a straight
+line until you reach the bank.
+
+5.  Fly away.
+
+The duck should make delta as small as necessary in order to be able
+to escape the fox.
+
+The key to this strategy is that the duck initially follows a
+radial path away from the fox until the fox commits to running either
+clockwise or counterclockwise around the pond.  The duck then turns onto
+a new course that intersects the circle at a point MORE than halfway
+around the circle from the fox's starting position.  In fact, the duck
+swims along a tangent of the circle of radius r/a.  Let 
+
+  theta = arc cos (1/a)
+
+then the duck swims a path of length
+
+  r sin theta + delta
+
+but the fox has to run a path of length
+
+  r*(pi + theta) - a*delta
+
+around the circle.  In the limit as delta goes to 0, the duck will
+escape as long as
+
+  r*(pi + theta) < a*r sin theta
+
+that is,
+
+  pi + arc cos (1/a) - a * sqrt(a^2 - 1) < 0
+
+Maximize a in the above:  a = 4.6033388487517003525565820291030165130674...
+The fox can catch the duck as long as he can run about 4.6 times as fast as
+the duck can swim.
+
+"But wait," I hear you cry, "When the duck heads off to that spot
+'more than halfway' around the circle, why doesn't the fox just double
+back?  That way he'll reach that spot much quicker."  That is why the
+duck's strategy has instructions to repeat step 2 under certain
+circumstances.  Note that at the end of step 2, if the fox has started
+to run to head off the duck, say in a clockwise direction, he and the
+duck are now on the same side of some diameter of the circle.  This
+continues to be true as long as both travel along their chosen paths
+at full speed.  But if the fox were now to try to reach the duck's
+destination in a counterclockwise direction, then at some instant he
+and the duck must be on a diameter of the pond.  At that instant, they
+have exactly returned to the situation that existed at the end of step
+1, except that the duck is a little closer to the edge than she was
+before.  That's why the duck always repeats step 2 if the fox is ever
+diametrically opposite her.  Then the fox must commit again to go one
+way or the other.  Every time the fox fails to commit, or reverses his
+commitment, the duck gets a distance delta closer to the edge.  This
+is a losing strategy for the fox.
+
+The limiting ratio of velocities that this strategy works against
+cannot be improved by any other strategy, i.e., if the ratio of
+the duck's speed to the fox's speed is less than a then the duck
+cannot escape given the best fox strategy.
+
+Given a ratio R of speeds less than the above a, the fox is sure to
+catch the duck (or keep it in water indefinitely) by pursuing the
+following strategy: 
+Do nothing so long as the duck is in a radius of R around the centre.
+As soon as it emerges from this circle, run at top speed around the
+circumference. If the duck is foolish enough not to position itself
+across from the center when it comes out of this circle, run "the short
+way around", otherwise run in either direction.
+
+To see this it is enough to verify that at the circumference of the
+circle of radius R, all straight lines connecting the duck to points
+on the circumference (in the smaller segment of the circle cut out
+by the tangent to the smaller circle) bear a ratio greater than R
+with the corresponding arc the fox must follow. That this is enough
+follows from the observation that the shortest curve from a point on
+a circle to a point on a larger concentric circle (shortest among all
+curves that don't intersect the interior of the smaller circle) is
+either a straight line or an arc of the smaller circle followed by a
+tangential straight line.
+
+==> geometry/earth.band.p <==
+How much will a band around the equator rise above the surface if it is
+made one meter longer?  Assume the equator is a circle.
+
+==> geometry/earth.band.s <==
+The formula for the circumference of a circle is 2 * pi * radius.  Therefore,
+if you increase the circumference by 1 meter, you increase the radius by
+1/(2 * pi) meters, or about 0.16 meters.
+
+==> geometry/fence.p <==
+A farmer wishes to enclose the maximum possible area with 100 meters of fence.
+The pasture is bordered by a straight cliff, which may be used as part of the
+fence.  What is the maximum area that can be enclosed?
+
+
+==> geometry/fence.s <==
+A circle is the plane figure with highest ratio of area to perimeter.
+The cliff can be used to bisect a circle of radius 100/pi meters.  By
+symmetry, this will form the pen of largest area.  The resulting pen
+will contain 5000/pi meters squared.
+
+
+==> geometry/ham.sandwich.p <==
+Consider a ham sandwich, consisting of two pieces of bread and one of
+ham.  Suppose the sandwich was dropped into a machine and spindled,
+torn and mutilated.  Is it still possible to divide the ham sandwich
+with a straight knife cut such that both the ham and each slice of
+bread are divided in two parts of equal volume?
+
+==> geometry/ham.sandwich.s <==
+Yes.  There is a theorem in topology called the Ham Sandwich Theorem,
+which says: Given 3 (finite) volumes (each may be of any shape, and in
+several pieces), there is a plane that cuts each volume in half.  You
+would learn about it typically in a first course in algebraic topology,
+or maybe in a course on introductory topology (if you studied the
+fundamental group).
+
+==> geometry/hike.p <==
+You are hiking in a half-planar woods, exactly 1 mile from the edge,
+when you suddenly trip and lose your sense of direction.  What's the
+shortest path that's guaranteed to take you out of the woods?  Assume
+that you can navigate perfectly relative to your current location and
+(unknown) heading.
+
+==> geometry/hike.s <==
+Go 2/sqrt(3) away from the starting point, turn 120 degrees and head
+1/sqrt(3) along a tangent to the unit circle, then traverse an arc of
+length 7*pi/6 along this circle, then head off on a tangent 1 mile.
+
+This gives a minimum of sqrt(3) + 7*pi/6 + 1 = 6.397...
+
+It remains to prove this is the optimal answer.
+
+==> geometry/hole.in.sphere.p <==
+Old Boniface he took his cheer,
+Then he bored a hole through a solid sphere,
+Clear through the center, straight and strong,
+And the hole was just six inches long.
+
+Now tell me, when the end was gained,
+What volume in the sphere remained?
+Sounds like I haven't told enough,
+But I have, and the answer isn't tough!
+
+==> geometry/hole.in.sphere.s <==
+The volume of the leftover material is equal to the volume of a 6" sphere.
+
+First, lets look at the 2 dimensional equivalent of this problem.  Two
+concentric circles where the chord of the outer circle that is tangent
+to the inner circle has length D.  What is the annular area between the
+circles?
+
+It is pi * (D/2)^2. The same area as a circle with that diameter.
+Proof:
+	big circle radius is R
+	little circle radius is r
+	
+			      2		 2
+	area of donut = pi * R   - pi * r
+
+			       2    2
+	=		pi * (R	 - r )
+
+
+Draw a right triangle and apply the Pythagorean Theorem to see that
+		 2      2	   2
+		R  -   r   =  (D/2)
+so the area is
+			          2
+	=		pi * (D/2)
+
+
+Start with a sphere of radius R (where R > 6"), drill out the 6"
+high hole.  We will now place this large "ring" on a plane.  Next to it 
+place a 6" high sphere.  By Archemedes' theorem, it suffices
+to show that for any plane parallel to the base plane, the cross-
+sectional area of these two solids is the same.
+
+Take a general plane at height h above (or below) the center
+of the solids. The radius of the circle of intersection on the sphere is 
+
+	radius = srqt(3^2 - h^2)
+
+so the area is 	
+
+	pi * ( 3^2  - h^2 ) 
+
+
+For the ring, once again we are looking at the area between two concentric 
+circles.  The outer circle has radius sqrt(R^2 - h^2), 
+The area of the outer circle is therefore
+
+		pi (R^2 - h^2)
+
+The inner circle has
+radius sqrt(R^2 - 3^2).  So the area  of the inner circle is
+
+	pi * ( R^2  - 3^2 ) 
+
+the area of the doughnut is therefore
+
+		pi(R^2 - h^2)  - pi( R^2  - 3^2 ) 
+		
+	=	pi (R^2 - h^2 - R^2 + 3^2)
+
+	=	pi (3^2  - h^2)
+
+Therefore the areas are the same for every plane intersecting the solids.
+Therefore their volumes are the same.
+QED
+
+There also is a meta-theoretic answer to this puzzle.  Assume the puzzle
+can be solved.  Then it must be solvable with a hole of any diameter, even
+zero.  But if you drill a hole of zero diameter that is six inches long,
+you leave behind the volume of a six inch diameter sphere.
+
+
+==> geometry/hypercube.p <==
+How many vertices, edges, faces, etc. does a hypercube have?
+
+==> geometry/hypercube.s <==
+Take any vertex of the hypercube, and ask how many k-V's it
+participates in.  To make a k-V it needs to combine with k adjacent and
+orthogonal vertices, and there are (nCk) distinct ways of doing this
+[that is, choose k directions out of n possible ones].  Then multiply
+by 2^n, the total number of vertices.  But this involves multiple
+counting, since each k-V is shared by 2^k vertices.  So divide by 2^k,
+and this yields the answer: (nCk)*2^{n-k}.
+
+
+For example, 12d hypercube:
+
+ 0-v:   4,096
+ 1-v:  24,576
+ 2-v:  67,584
+ 3-v: 112,640
+ 4-v: 126,720
+ 5-v: 101,376
+ 6-v:  59,136
+ 7-v:  25,344
+ 8-v:   7,920
+ 9-v:   1,760
+10-v:     264
+11-v:      24
+12-v:       1
+
+
+==> geometry/kissing.number.p <==
+How many n-dimensional unit spheres can be packed around one unit sphere?
+
+==> geometry/kissing.number.s <==
+From the Feb. 1992 issue of Scientific American:
+
+          Kissing Numbers
+
+Dimension    Lower limit   Upper limit
+   1*            2             2
+   2*            6             6
+   3*           12            12
+   4            24            25
+   5            40            46
+   6            72            82
+   7           126           140
+   8*          240           240
+   9           306           380
+  10           500           595
+  11           582           915
+  12           840         1,416
+  13         1,130         2,233
+  14         1,582         3,492
+  15         2,564         5,431
+  16         4,320         8,313
+  17         5,346        12,215
+  18         7,398        17,877
+  19        10,688        25,901
+  20        17,400        37,974
+  21        27,720        56,852
+  22        49,896        86,537
+  23        93,150       128,096
+  24*      196,560       196,560
+
+* = dimensions for which the answer is known.
+
+REFERENCES (from the Sci. Am. article)
+
+The Problem of the Thirteen Spheres. John Leech in Mathematical Gazette,
+  Vol. 40, No. 331, pages 22-23; February 1956
+Sphere Packings, Lattics and Groups.  John Horton Conway and Neil J. A.
+  Sloane.  Springer-Verlag, 1988.
+Sphere Packings and Spherical Geometry--Kepler's Conjecture and Beyond,
+  preprint.  Wu-Yi Hsiang.  Center for Pure and Applied Mathematics,
+  University of California, Berkeley, July 1991.
+--
+David Radcliffe                                
+radcliff@csd4.csd.uwm.edu            
+
+==> geometry/konigsberg.p <==
+Can you draw a line through each edge on the diagram below without crossing
+any edge twice and without lifting your pencil from the paper?
+
+             +---+---+---+
+             |   |   |   |
+             +---+-+-+---+
+             |     |     |
+             +-----+-----+
+
+
+==> geometry/konigsberg.s <==
+This is solved in the same way as the famous "Seven Bridges of
+Konigsberg" problem first solved by Euler.  In that problem, the task
+was to find a closed path that crossed each of the seven bridges of
+Konigsberg (now Kaliningrad, Russia) exactly once.  For reasons given
+below, no such path existed.  In this version, you cannot draw such a
+line without cheating by:
+
+(1) drawing a line along one of the edges, or
+(2) inscribing the diagram on a torus, or
+(3) defining a line segment as the entire length of each straight line, or
+(4) adding a vertex on one of the line segemnts, or
+(5) defining "crossing" as touching the endpoint of a segment.
+
+The method for determining if paths exist in all similar problems is
+given below.
+
+Turn each "room" into a point. Turn each line segment into a line
+connecting the two points representing the rooms it abuts.  You should
+be able to see that drawing one continuous line across all segments in
+your drawing is equivalent to traversing all the edges in the resulting
+graph.  Euler's Theorem states that for a graph to be traversable, the
+number of vertices with an odd number of edges proceeding from them
+must be either zero or two.  For this graph, that number is four, and it
+cannot be traversed.
+
+             +---+---+---+
+             | 1 | 2 | 3 |
+             +---+-+-+---+ 6 (outside)
+             |  4  |  5  |
+             +-----+-----+
+
+Number of edges proceeding from each vertex:
+
+   1: 4
+   2: 5  (*odd*)
+   3: 4
+   4: 5  (*odd*)
+   5: 5  (*odd*)
+   6: 9  (*odd*)
+
+To prove Euler's Theorem, think of walking along the graph from vertex to
+vertex.  Each vertex must be entered as many times as it is exited, except
+for where you start and where you end.  So, each vertex must have an
+even number of edges, except possibly for two vertices.  And if there are
+two vertices with an odd number of edges, the path must start at one and
+end at the other.
+
+==> geometry/ladders.p <==
+Two ladders form a rough X in an alley.  The ladders are 11 and 13 meters
+long and they cross 4 meters off the ground.  How wide is the alley?
+
+==> geometry/ladders.s <==
+Ladders 1 and 2, denoted L1 and L2, respectively, will rest along two
+walls (taken to be perpendicular to the ground), and they will
+intersect at a point O = (a,s), a height s from the ground.  Find the
+largest s such that this is possible.  Then find the width of the
+alley, w = a+b, in terms of L1, L2, and s.  This diagram is not to
+scale.
+
+                 B                     D
+                  |\ L1           L2 /|
+                  |  \             /  |           BC = length of L1  
+                  |    \         /    |           AD = length of L2
+                  |      \  O  /      |            s = height of intersection
+                 x|        \ /        |y           A = (0,0)
+                  |        /|\        |           AE = a 
+                  |    m /  |  \ n    |           EC = b
+                  |    /    |s   \    |           AO = m
+                  |  /      |      \  |           CO = n
+                  |/________|________\|     
+         (0,0) = A    a     E    b     C
+
+-----------------------------------------------------------------------------
+Without loss of generality, let L2 >= L1.
+
+Observe that triangles AOB and DOC are similar.  Let r be the ratio of
+similitude, so that x=ry.  Consider right triangles CAB and ACD.  By
+the Pythagorean theorem, L1^2 - x^2 = L2^2 - y^2.  Substituting x=ry,
+this becomes y^2(1-r^2) = L2^2 - L1^2.  Letting L= L2^2 -L1^2 (L>=0),
+and factoring, this becomes
+
+    (*)   y^2 (1+r)(1-r) = L
+
+Now, because parallel lines cut L1 (a transversal) in proportion, r =
+x/y = (L1-n)/n, and so  L1/n = r+1.  Now, x/s = L1/n = r+1, so ry = x =
+s(r+1).  Solving for r, one obtains the formula r = s/(y-s).
+Substitute this into (*) to get
+
+    (**)  y^2 (y) (y-2s) = L (y-s)^2
+
+NOTE:  Observe that, since L>=0, it must be true that y-2s>=0.
+
+Now, (**) defines a fourth degree polynomial in y.  It can be written in the
+form (by simply expanding (**))
+
+    (***)  y^4 - 2s_y^3 - L_y^2 + 2sL_y - Ls^2 = 0
+
+L1 and L2 are given, and so L is a constant.  How large can s be?  Given L,
+the value s=k is possible if and only if there exists a real solution, y',
+to (***), such that 2k <= y' < L2.  Now that s has been chosen, L and s are
+constants, and (***) gives the desired value of y.  (Make sure to choose the
+value satisfying 2s <= y' < L2.  If the value of s is "admissible" (i.e.,
+feasible), then there will exist exactly one such solution.)
+Now, w = sqrt(L2^2 - y^2), so this concludes the solution.
+
+L1 = 11, L2 = 13, s = 4.  L = 13^2-11^2 = 48, so (***) becomes
+
+	   y^4 - 8_y^3 - 48_y^2 + 384_y - 768 = 0
+
+Numerically find root y ~= 9.70940555, which yields w ~= 8.644504.
+
+==> geometry/lattice/area.p <==
+Prove that the area of a triangle formed by three lattice points is integer/2.
+
+==> geometry/lattice/area.s <==
+The formula for the area is
+
+	A = | x1*y2 + x2*y3 + x3*y1 - x1*y3 - x2*y1 - x3*y2 | / 2
+
+If the xi and yi are integers, A is of the form (integer/2)
+
+==> geometry/lattice/equilateral.p <==
+Can an equlateral triangle have vertices at integer lattice points?
+
+==> geometry/lattice/equilateral.s <==
+No.  
+
+Suppose 2 of the vertices are (a,b) and (c,d), where a,b,c,d are integers.
+Then the 3rd vertex lies on the line defined by
+
+	(x,y) = 1/2 (a+c,b+d) + t ((d-b)/(c-a),-1)    (t any real number)
+
+and since the triangle is equilateral, we must have
+
+	||t ((d-b)/(c-a),-1)|| = sqrt(3)/2 ||(c,d)-(a,b)||
+
+which yields t = +/- sqrt(3)/2 (c-a).  Thus the 3rd vertex is
+
+	1/2 (a+c,b+d) +/- sqrt(3)/2 (d-b,a-c)
+
+which must be irrational in at least one coordinate.
+
+==> geometry/manhole.cover.p <==
+Why is a manhole cover round?
+
+==> geometry/manhole.cover.s <==
+It will not fall into the hole, even if rotated, tipped, etc.
+It gives maximal area for a given amount of material.
+It does not have to be carried, but can be rolled.
+Human beings are roughly round in horizontal cross section.
+Orientation of the cover with the access hole is not of concern.
+Orientation of the access hole with the ladder in the pipe below is not
+    of concern.
+
+==> geometry/pentomino.p <==
+Arrange pentominos in 3x20, 4x15, 5x12, 6x10, 2x3x10, 2x5x6 and 3x4x5 forms.
+
+==> geometry/pentomino.s <==
+I've seen several different naming schemes used for pentominoes. This is
+the system I'm using (I think only F & N require a bit of imagination):
+
+ FF  I  L    N  PP  TTT  U U  V   V  W W W  X X   Y  ZZ
+FF   I  L   NN  PP   T   UUU   V V    W W    X   YY   Z
+ F   I  L   N   P    T          V           X X   Y   ZZ
+     I  LL  N                                     Y
+
+A 3x20 solution (the other solution is easily obtained by a rotation of 
+the section from the Z to the L inclusive):
+
+  UUXPPPZYYYYWTFNNNVVV
+  UXXXPPZZZYWWTFFFNNLV
+  UUXIIIIIZWWTTTFLLLLV
+
+A 4x15 solution:
+
+  IIIIINNLLLLTVVV
+  UUXNNNFZZWLTTTV
+  UXXXYFFFZWWTPPV
+  UUXYYYYFZZWWPPP
+
+2 5x6 rectangles. Joined side-to-side, end-to-end, or stacked, these
+enable construction of the 6x10 & 5x12 rectangles, and the 2x5x6 prism:
+
+  NFVVV  YYYYI
+  NFFFV  LLYZI
+  NNFXV  LZZZI
+  PNXXX  LZWTI
+  PPUXU  LWWTI
+  PPUUU  WWTTT
+
+
+The 2x3x10 and 3x4x5 solutions are tricky to show - I hope these diagrams
+make sense:
+
+A 2x3x10 solution (shown as 2 layers; Y and L are shared between the
+2 layers):
+
+  VVVZIIIIIF    UUXTTTWWPP
+  VZZZNNNFFF    UXXXTWWPPP
+  VZYYYYNNFL    UUXYTWLLLL
+
+A 3x4x5 solution (3 layers, V F W & L shared between 2 or more layers): 
+
+  VUUXF   VZFFF   VNYFW
+  VUXXX   TZZZW   NNYPW
+  VUUXW   TTTZW   NYYPP
+  IIIII   TLLLL   NLYPP
+
+
+
+--
+ +-------------------  pete@bignode.equinox.gen.nz  -------------------+
+ | The effort to understand the universe is one of the very few things |
+ | that lifts human life above the level of farce, and gives it some   |  
+ | of the grace of tragedy   -  Steven Weinberg                        |
+ +---------------------------------------------------------------------+
+
+==> geometry/points.in.sphere.p <==
+What is the expected distance between two random points inside a sphere?
+Assume the points are uniformly and independently distributed.
+
+==> geometry/points.in.sphere.s <==
+Use spherical polar coordinates, and w.l.o.g. choose the polar axis
+through one of the points. Now the distance between the two points is
+
+     sqrt ( r1^2 + r2^2 - 2 r1 r2 cos(theta))
+
+and cos(theta) is (conveniently) uniformly distributed between -1 and
++1, while r1 and r2 have densities 3 r1^2 d(r1) and 3 r2^2 d(r2). Split
+the total integral into two (equal) parts with r1 < r2 and r1 > r2, and
+it all comes down to integrating polynomials.
+
+More generally, the expectation of the n'th power of the distance
+between the two points is
+
+         2^n . 72 / ((n+3)(n+4)(n+6))
+
+So the various means are:
+
+     the (arithmetic) mean distance is  36/35      = 1.028571...
+     the root mean square distance is   sqrt(6/5)  = 1.095445...
+     the geometric mean distance is     2exp(-3/4) = 0.944733...
+     the harmonic mean distance is      5/6        = 0.833333...
+     the inverse root mean inverse square distance is
+                                        2/3        = 0.666666...
+
+==> geometry/points.on.sphere.p <==
+What are the odds that n random points on a sphere lie in the same hemisphere?
+
+==> geometry/points.on.sphere.s <==
+1 - [1-(1/2)^(n-2)]^n
+
+where n is the # of points on the sphere.
+
+The question will become a lot easier if you restate it as the following:
+
+What is the probability in finding at least one point such that all the other
+points on the sphere are on one side of the great circle going through this
+point. 
+
+When n=2, the probability= 1 ,
+when n=infinity, it becomes 0.
+
+In his Scientific American column which was titled "Curious Maps",
+Martin Gardner ponders the fact that most of the land mass of the Earth
+is in one hemisphere and refers to a paper which models continents
+by small circular caps. He gives the above result.
+
+See "The Probability of Covering a Sphere With N Circular Caps" by
+E. N. Gilbert in Biometrika 52, 1965, p323.
+
+==> geometry/revolutions.p <==
+A circle with radius 1 rolls without slipping once around a circle with radius
+3.  How many revolutions does the smaller circle make?
+
+==> geometry/revolutions.s <==
+4 if the smaller circle rolls on the outside of the larger circle; 2 if
+it rolls on the inside.
+
+Imagine you are rolling a wheel by pushing it along the equator of the
+earth. Suppose the circumference of the wheel is one third of that of
+the earth. By the time you return to your starting point, the wheel
+finishes 3 revolutions relative to you. But do not forget you yourself
+also finishes 1 revolution in the same direction. As a result, the
+number of absolute revolutions is 3+1=4.
+
+But if the small circle is rolling inside the large circle, the answer
+is then 3-1=2, because in this case the wheel makes a counter-revolution
+as you walk once around.
+
+==> geometry/rotation.p <==
+What is the smallest rotation that returns an object to its original state?
+
+==> geometry/rotation.s <==
+720 degrees.
+
+Objects are made of bosons (integer-spin particles) and fermions
+(half-odd-integer spin particles), and the wave function of a fermion
+changes sign upon being rotated by 360 degrees.  To get it back to its
+original state you must rotate by another 360 degrees, for a total of
+720 degrees.  This fact is the basis of Fermi-Dirac statistics, the
+Pauli Exclusion Principle, electron orbits, chemistry, and life.
+
+Mathematically, this is due to the continuous double cover of SO(2) by
+SO(3), where SO(2) is the internal symmetry group of fermions and SO(3)
+is the group of rotations in three dimensional space.
+
+A fermion can be modeled by a sphere with strings attached.  It is
+possible to see that a 360 degree rotation will entangle the strings,
+which another 360 degree rotation will disentangle.  You can also
+demonstrate this with a tray, which you hold in your right hand with
+the arm lowered, then rotate twice as you raise your arm and end up
+with the tray above your head, rotated twice about its vertical axis,
+but without having twisted your arm.
+
+Hospitals have machines which take out your blood, centrifuge it to take out
+certain parts, then return it to your veins. Because of AIDS they must never
+let your blood touch the inside of the machine which has touched others'
+blood. So the inside is lined with a single piece of disposable branched
+plastic tubing. This tube must rotate rapidly in the centrifuge where
+several branches come out. Thus the tube should twist and tangle up the
+branches. But the machine untwists the branches as in the above discussion.
+At several hundred rounds per minute!
+
+References
+    R. Penrose and W.  Rindler
+    Spinors and Space-time, vol. 1, p. 43
+    Cambridge University Press, 1984
+
+    R. Feynman and S. Weinberg
+    Elementary Particles and the Laws of Physics, p. 29
+    Cambridge University Press, 1987
+
+    M. Gardner
+    The New Ambidextrous Universe, Revised (Third) Edition, pp. 329-332
+    W. H. Freeman, 1990
+
+==> geometry/shephard.piano.p <==
+What's the maximum area shape that will fit around a right-angle corner?
+
+==> geometry/shephard.piano.s <==
+This problem is unsolved.  A simple solution called the "Shephard
+piano" has area 2.2074+, but this can be improved upon with local
+modifications.  A solution exists with area 2.215649+.  It is known
+that a maximum area exists, but not whether the shape achieving it is
+symmetric, smooth, or even unique.
+
+See Problem G5 in Croft, Falconer, and Guy, _Unsolved Porblems in
+Geometry_, Springer-Verlag, 1991.
+
+==> geometry/smuggler.p <==
+Somewhere on the high sees smuggler S is attempting, without much
+luck, to outspeed coast guard G, whose boat can go faster than S's. G
+is one mile east of S when a heavy fog descends. It's so heavy that
+nobody can see or hear anything further than a few feet. Immediately
+after the fog descends, S changes course and attempts to escape at
+constant speed under a new, fixed course. Meanwhile, G has lost track
+of S. But G happens to know S's speed, that it is constant, and that S
+is sticking to some fixed heading, unknown to G.
+
+How does G catch S? 
+
+G may change course and speed at will. He knows his own speed and
+course at all times. There is no wind, G does not have radio or radar,
+there is enough space for maneuvering, etc.
+
+==> geometry/smuggler.s <==
+One way G can catch S is as follows (it is not the fastest way). 
+
+G waits until he knows that S has traveled for one mile. At that time, both
+S and G are somewhere on a circle with radius one mile, and with its center
+at the original position of S. G then begins to travel with a velocity that
+has a radially outward component equal to that of S, and with a tangential
+component as large as possible, given G's own limitation of total speed. By
+doing so, G and S will always both be on an identical circle having its
+center at the original position of S. Because G has a tangential component
+whereas S does not, G will always catch S (actually, this is not proven
+until you solve the o.d.e. associated with the problem).
+
+If G can go at 40 mph and S goes at 20 mph, you can work out that it will
+take G at most 1h 49m 52s to catch S.  On average, G will catch S in:
+
+( -2pi + sqrt(3) ( exp(2pi/sqrt(3)) - 1 )) / 40pi    hours,
+
+which is, 27 min and 17 sec.
+
+==> geometry/spiral.p <==
+How far must one travel to reach the North Pole if one starts from the
+equator and always heads northwest?
+
+==> geometry/spiral.s <==
+One can't reach the North Pole by going northwest.  If one could, then
+one could leave the North Pole by going southeast.  But from the Pole
+all directions are due south.
+
+If one heads northwest continuously, one will spiral closer and closer
+to the North Pole, until finally one can't turn that sharply.
+
+==> geometry/table.in.corner.p <==
+Put a round table into a (perpendicular) corner so that the table top
+touches both walls and the feet are firmly on the ground.  If there is
+a point on the perimeter of the table, in the quarter circle between
+the two points of contact, which is 10 cm from one wall and 5 cm from
+the other, what's the diameter of the table?
+
+==> geometry/table.in.corner.s <==
+Consider the +X axis and the +Y axis to be the corner.  The table has
+radius r which puts the center of the circle at (r,r) and makes the
+circle tangent to both axis.  The equation of the circle (table's
+perimeter) is
+
+    (x-r)^2 + (y-r)^2 = r^2 .
+
+This leads to 
+
+     r^2 - 2(x+y) + x^2 + y^2 = 0
+
+Using x = 10, y = 5 we get the solutions 25 and 5.  The former is the
+radius of the table.  It's diameter is 50 cm.
+
+The latter number is the radius of a table that has a point which
+satisfies the conditions but is not on the quarter circle nearest
+the corner.
+
+==> geometry/tetrahedron.p <==
+Suppose you have a sphere of radius R and you have four planes that are
+all tangent to the sphere such that they form an arbitrary tetrahedron
+(it can be irregular).  What is the ratio of the surface area of the
+tetrahedron to its volume?
+
+==> geometry/tetrahedron.s <==
+For each face of the tetrahedron, construct a new tetrahedron with that
+face as the base and the center of the sphere as the fourth vertex.
+Now the original tetrahedron is divided into four smaller ones, each of
+height R.  The volume of a tetrahedron is Ah/3 where A is the area of
+the base and h the height; in this case h=R.  Combine the four
+tetrahedra algebraically to find that the volume of the original
+tetrahedron is R/3 times its surface area.
+
+==> geometry/tiling/count.1x2.p <==
+Count the ways to tile an MxN rectangle with 1x2 dominos.
+
+==> geometry/tiling/count.1x2.s <==
+The number of ways to tile an MxN rectangle with 1x2 dominos is
+2^(M*N/2) times the product of
+
+{ cos^2(m*pi/(M+1)) + cos^2(n*pi/(N+1)) } ^ (1/4)
+
+over all m,n in the range 0<m<M+1, 0<n<N+1.
+
+[Exercises:
+ 0) Why does this work for M*N odd?
+ 1) When M<3 the count can be determined directly;
+   check that it agrees with the above formula.
+ 2) Prove directly this formula gives an integer for all M,N, and
+   further show that if M=N it is a perfect square when 4|N and
+   twice a square otherwise.
+]
+
+Where does this come from?  For starters note that, with the usual checker-
+board coloring, each domino must cover one light and one dark square.  Assume
+that M*N is even (but as it happens our formula will work also when both
+M,N are odd --- see exercise 0 above).  Form a square matrix of size
+M*N/2 whose rows and columns are indexed by the light and dark squares,
+and whose (j,k) entry is 1 if the j-th light and k-th dark square are
+adjacent and zero otherwise.  There are now three key ideas:
+
+First, the number of tilings is the number of ways to match each light
+square with an adjacent dark square; thus it is the _permanent_ of our
+matrix (recall that the permanent of a rxr matrix is a sum of the same
+r! terms that occur in its determinant, except without the usual +1/-1
+sign factors).
+
+Second, that by modifying this matrix slightly we can convert the
+permanent to a determinant; this is nice because determinants are generally
+much easier to evaluate than permanents.  One way to do this is to replace
+all the 1's that correspond to vertical adjacency to i's, and multiply the
+whole thing by a suitable power of i (which will disappear when we raise
+it to a fourth power).
+
+[Exercise 3: check that this transformation actually works as advertised!]
+
+Third, that we can diagonalize the resulting matrix A --- or, more
+conveniently, the square matrix of A' order M*N whose order-(M*N/2)
+blocks are 0,A;A-transpose,0 , whence det(A') = +-(det(A))^2.  Then
+the rows and columns of A' are indexed by squares of either hue on our
+generalized checkerboard, and its entries are 1 for horizontally adjacent
+squares, i for vertically adjacent ones, and 0 for nonadjacent (including
+coincident) squares.  This A' can be diagonalized by using the trigonometric
+basis of vectors v_ab (a,b as in the formula above) whose coordinate at
+the (m,n)-th square is  sin(a*m*pi/(M+1)) * sin(b*n*pi/(N+1)).
+
+Exercise 4: verify that these are in fact orthogonal eigenvectors of A',
+determine their eigenvalues, and complete the proof of the above formula.
+
+
+(None of this is new, but it does not seem to be well-known: indeed
+each of the above steps seems to have been discovered independently
+several times, and I'm not sure whom to credit with the first discovery
+of this particular application of the method.  For different approaches
+to exactly solvable problems involving the enumeration of domino tilings,
+see the two papers of G.Kuperberg, Larsen, Propp and myself on
+"Alternating-Sign Matrices and Domino Tilings" in the first volume of
+the _Journal of Algebraic Combinatorics_.)
+
+--Noam D. Elkies (elkies@zariski.harvard.edu)
+  Dept. of Mathematics, Harvard University
+
+
+
+
+
+==> geometry/tiling/rational.sides.p <==
+A rectangular region R is divided into rectangular areas.  Show that if
+each of the rectangles in the region has at least one side with
+rational length then the same can be said of R.
+
+==> geometry/tiling/rational.sides.s <==
+"Fourteen proofs of a result about tiling a rectangle" (Stan Wagon)
+_The American Mathematical Monthly_, Aug-Sep 1987, Vol 94 #7.  There
+was also a fifteenth proof published a few issues later, attributed to
+a (University of Kentucky?) student.
+

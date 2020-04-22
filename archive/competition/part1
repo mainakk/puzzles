@@ -1,0 +1,1295 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA04446; Sat, 20 Apr 1996 15:02:40 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15645; Sat, 20 Apr 96 14:10:58 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25192; Sat, 20 Apr 1996 11:11:56 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (competition), part 06 of 35
+Message-Id: <puzzles/archive/competition/part1_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:40 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1267
+Xref: senator-bedfellow.mit.edu rec.puzzles:24992 news.answers:11512 rec.answers:1912
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/competition/part1
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> competition/contests/games.magazine.p <==
+What are the best answers to various contests run by _Games_ magazine?
+
+==> competition/contests/games.magazine.s <==
+Contest			Date		Archive Entry
+----------------------	--------------	-----------------------------
+Equations		? 1981		equations
+National Puzzle 1993	1993		npc.1993
+Nots and Crosses	? 1992		nots.and.crosses
+Perfect Ladder		July 1993	perfect.ladder
+Telegrams		?		telegrams
+
+==> competition/contests/national.puzzle/npc.1993.p <==
+What are the solutions to the Games magazine 1993 National Puzzle Contest?
+
+==> competition/contests/national.puzzle/npc.1993.s <==
+1. 6, 10, 11, and 12 are in one group, and everything else is in the other.
+2. 20
+3. The upper-right segment of the first 8.
+4. 6
+5. d (ball point pen, analog watch, mattress, pogo stick): springs
+6. a (Fire Engine, strawberry, lobster, lips): red
+7. h (Icicle, paint, nose, faucet): drip
+8. f (piggy bank, basketball, jack o' lantern, drum): hollow
+9. g (horseshoe, goal post, stethoscope, fish hook): shaped like letters
+10. e (flying bat, Xmas tree ornament, framed picture, trapeze artist): hang
+11. b (candle, owl, vampire, pajamas): all associated with night
+12. 4, 7, 2, 10, 5, 8, 1, 9, 6, 3
+13. 152954
+14. LIMA PERU
+15. 44
+16. 160
+17. A
+18. Flo Lisa Amy Joyce Kim. 
+19. Top: AJKQ, 2nd Row: JKAQ, 3rd Row: KQAJ, 4th Row: JQAK
+20. Joan Miro, Paavo Nurmi, Blaise Pascal
+21. Top: 1, 8, 4  Middle: 6, 9, 3  Bottom: 2, 7, 5
+22. d and g
+23. Brenda: 87, Carrie: 85, Dick: 86, Harry: 84, Laura: 88, Tom: 83
+24. If you number the columns 1-6 and letter the rows a-f, the first group
+    consists of 1a, 2a, 3a, 4a, 1b, 2b, 2c, 3c, 2d.  Other groups are
+    similarly shaped, rotated around the center point of the grid.
+25. 2, 6, 5
+26. Top: R O M  Middle: Q T A   Bottom: U E D S
+27. 3 X 58 = 174 = 6 X 29
+28. 5 (the number of enclosed areas in the letters of each month name)
+29. too hard to describe -- easier than it looked
+30. 80
+31. 16
+32. 4 (ADBECF ADBFCE ADFCBE BFDCAE)
+33. 8 (delete 3,5,7,9,12,14,17,18)
+34.  CONKP VALEY GSRCW TUIBI LANZS
+
+
+==> competition/games/bridge.p <==
+Are there any programs for solving double-dummy Bridge?
+
+
+==> competition/games/bridge.s <==
+I'll enclose my Double-Dummy solver for bridge.  I like this program
+because it contains a wildly unstructured "goto" -- which I claim is the
+most readable way to write the program.
+	Included are two test problems for the bridge-solver: a 6-card
+ending and a complete 13-card position.  The former should be very fast;
+the latter about 20 minutes on Sparcstation-2.  Each is *very*
+challenging for humans.
+
+Regards, James
+
+=============== clip; chmod +x; execute =============
+#!/bin/sh
+cat > bridge.c << 'EOF'
+/*
+ * DOUBLE_DUMMY
+ * Copyright (c) 1990 by
+ *	James D. Allen
+ *	19785 Stanton Ave
+ *	Castro Valley, CA
+ * Permission granted to use for any non-commercial purpose
+ *	as long as this notice is not removed.
+ *
+ * This program will solve double-dummy bridge problems.
+ * The algorithm is trivial: brute-force alpha-beta search (also known
+ *	as "backtracking").  The alpha-beta is trivial since we do not
+ *	consider overtricks or extra undertricks.
+ * The control flow is neat; this is a rare exception where software is
+ *	more readable with a "goto".  (Although I've tersified this to
+ *	the point where it is perhaps unreadable anyway :-)
+ */
+
+#define	NUMP	4	/* The Players:  N, E, S, W */
+#define		NORTH	0
+#define		IS_CONT(x)	(!((x) & 1))	/* Is x on N/S team? */
+#define		LHO(x)		(((x) + 1) % NUMP)
+#define		RHO(x)		(((x) + NUMP - 1) % NUMP)
+char	*Playername[] = { "North", "East", "South", "West" };
+
+#define	NUMS	4	/* The Suits:   S, H, D, C */
+char	Suitname[] = "SHDC";
+char	*Fullname[] = { "Spades\t", "Hearts\t", "Diamonds", "Clubs\t" };
+
+/*
+ * Rank indices are 2 (Ace), 3 (King), ... 14 (Deuce)
+ * There is also a CARD Index which can be converted to from Rank and Suit.
+ */
+#define	CARD(Suit, Rank)	(((Suit) << 4) | (Rank))
+#define	SUIT(Card)		((Card) >> 4)
+#define	RANK(Card)		((Card) & 0xf)
+char	Rankname[] = "??AKQJT98765432";
+#define	INDEX(s, c)	((char *)index(s, c) - (s))
+
+/* A "SuitSet" is used to cope with more than one card at once: */
+typedef	unsigned short SuitSet;
+#define	MASK(Card)		(1 << RANK(Card))
+#define	REMOVE(Set, Card)	((Set) &= ~(MASK(Card)))
+
+/* And a CardSet copes with one SuitSet for each suit: */
+typedef struct cards {
+	SuitSet cc[NUMS];
+} CardSet;
+
+/* Everything we wish to remember about a trick: */
+struct status {
+	CardSet st_hold[NUMP];	/* The players' holdings */
+	CardSet st_lgl[NUMP];	/* The players' remaining legal plays */
+	short	st_play[NUMP];	/* What the players played */
+	SuitSet st_trick;	/* Led-suit Cards eligible to win trick */
+	SuitSet st_trump;	/* Trump Cards eligible to win trick */
+	short	st_leader;	/* Who led to the trick */
+	short	st_suitled;	/* Which suit was led */
+}
+Status[14]; /* Status of 13 tricks and a red zone" */
+#define	Hold	Statp->st_hold
+#define	Resid	(Statp+1)->st_hold
+#define	Lgl	Statp->st_lgl
+#define	Play	Statp->st_play
+#define	Trick	Statp->st_trick
+#define	Trtrick	Statp->st_trump
+#define	Leader	Statp->st_leader
+#define	Suitled	Statp->st_suitled
+
+/* Pick a card from the set and return its index */
+pick(set)
+	SuitSet set;
+{
+	return set & 0xff ? set &  1 ? 0 : set &  2 ? 1 : set &  4 ? 2
+			  : set &  8 ? 3 : set & 16 ? 4 : set & 32 ? 5
+			  : set & 64 ? 6 : 7 : pick(set >> 8) + 8;
+}
+
+#define	highcard(set)	pick(set) /* Pick happens to return the best card */
+
+main()
+{
+	register struct status *Statp = Status;	/* Point to current status */
+	int	tnum;	/* trick number */
+	int	won;	/* Total tricks won by North/South */
+	int	nc;	/* cards on trick */
+	int	ohsize;	/* original size of hands */
+	int	mask;
+	int	trump;
+	int	player;	/* player */
+	int	pwin;	/* player who won trick */
+	int	suit;	/* suit to play */
+	int	wincard; /* card which won the trick */
+	int	need;	/* Total tricks needed by North/South */
+	int	cardx;	/* Index of a card under consideration */
+	int	success; /* Was the trick or contract won by North/South ? */
+	int	last_t;	/* Decisive trick number */
+	char	asciicard[60];
+	SuitSet inplay;	/* cards still in play for suit */
+	SuitSet pr_set;	/* Temp for printing */
+
+	/* Read in the problem */
+	printf("Enter trump suit (0-S,1-H,2-D,3-C,4-NT): ");
+	scanf("%d", &trump);
+	printf("Enter how many tricks remain to be played: ");
+	scanf("%d", &ohsize);
+	printf("Enter how many tricks North/South need to win: ");
+	scanf("%d", &need);
+	printf("Enter who is on lead now (0=North,etc.): ");
+	scanf("%d", &pwin);
+	printf("Enter the %d cards beginning with North:\n", NUMP * ohsize);
+	for (player = NORTH; player < NUMP; player++) {
+		for (tnum = 0; tnum < ohsize; tnum++) {
+			scanf("%s", asciicard);
+			cardx = CARD(INDEX(Suitname, asciicard[1]),
+					INDEX(Rankname, asciicard[0]));
+			Hold[player].cc[SUIT(cardx)] |= MASK(cardx);
+		}
+	}
+
+	/* Handle the opening lead */
+	printf("Enter the directed opening lead or XX if none:\n");
+	Lgl[pwin] = Hold[pwin];
+	scanf("%s", asciicard);
+	if (asciicard[0] == 'X') {
+		strcpy(asciicard, "anything");
+	} else {
+		cardx = CARD(INDEX(Suitname, asciicard[1]),
+				INDEX(Rankname, asciicard[0]));
+		for (suit = 0; suit < NUMS; suit++)
+			if (suit != SUIT(cardx))
+				Lgl[pwin].cc[suit] = 0;
+			else if (!(Lgl[pwin].cc[suit] &= MASK(cardx))) {
+				printf("He can't lead card he doesn't have\n");
+				exit(1);
+			}
+	}
+
+	/* Print the problem */
+	for (player = NORTH; player < NUMP; player++) {
+		printf("\n---- %s Hand ----:\n", Playername[player]);
+		for (suit = 0; suit < NUMS; suit++) {
+			printf("\t%s\t", Fullname[suit]);
+			for (pr_set = Hold[player].cc[suit]; pr_set;
+					REMOVE(pr_set, pick(pr_set)))
+				printf("%c ", Rankname[RANK(pick(pr_set))]);
+			printf("\n");
+		}
+	}
+	printf("\n%s%s Trumps; %s leads %s; N-S want %d tricks; E-W want %d\n",
+		trump < NUMS ? Fullname[trump] : "",
+		trump < NUMS ? " are" : "No",
+		Playername[pwin], asciicard, need, ohsize + 1 - need);
+
+      /* Loop to play tricks forward until the outcome is conclusive */
+	for (tnum = won = success = 0;
+			success ? ++won < need : won + ohsize >= need + tnum;
+			tnum++, Statp++, success = IS_CONT(pwin)) {
+		for (nc = 0, player = Leader = pwin; nc < NUMP;
+					nc++, player = LHO(player)) {
+		      /* Generate legal plays except opening lead */
+			if (nc || tnum)
+				Lgl[player] = Hold[player];
+		      /* Must follow suit unless void */
+			if (nc && Lgl[player].cc[Suitled])
+				for (suit = 0; suit < NUMS; suit++)
+					if (suit != Suitled)
+						Lgl[player].cc[suit] = 0;
+			goto choose_suit; /* this goto is easily eliminated */
+		      /* Comes back right away after choosing "suit"  */
+			make_play:
+			Play[player] = cardx =
+				CARD(suit, pick(Lgl[player].cc[suit]));
+			if (nc == 0) {
+				Suitled = suit;
+				Trick = Trtrick = 0;
+			}
+		      /* Set the play into "Trick" if it is win-eligible */
+			if (suit == Suitled)
+				Trick |= MASK(cardx);
+			if (suit == trump)
+				Trtrick |= MASK(cardx);
+
+		      /* Remove card played from player's holding */
+			Resid[player] = Hold[player];
+			REMOVE(Resid[player].cc[suit], cardx);
+		}
+
+	      /* Finish processing the trick ... who won? */
+		if (Trtrick)
+			wincard = CARD(trump, highcard(Trtrick));
+		else
+			wincard = CARD(Suitled, highcard(Trick));
+		for (pwin = 0; Play[pwin] != wincard; pwin++)
+			;
+	}
+
+      /* Loop to back up and let the players try alternatives */
+	for (last_t = tnum--, Statp--; tnum >= 0; tnum--, Statp--) {
+		won -= IS_CONT(pwin);
+		pwin = Leader;
+		for (player = RHO(Leader), nc = NUMP-1; nc >= 0;
+					player = RHO(player), nc--) {
+		      /* What was the play? */
+			cardx = Play[player];
+			suit = SUIT(cardx);
+		      /* Retract the played card */
+			if (suit == Suitled)
+				REMOVE(Trick, cardx);
+			if (suit == trump)
+				REMOVE(Trtrick, cardx);
+		      /* We also want to remove any redundant adjacent plays */
+			inplay =  Hold[0].cc[suit] | Hold[1].cc[suit]
+				| Hold[2].cc[suit] | Hold[3].cc[suit];
+			for (mask = MASK(cardx); mask <= 0x8000; mask <<= 1)
+				if (Lgl[player].cc[suit] & mask)
+					Lgl[player].cc[suit] &= ~mask;
+				else if (inplay & mask)
+					break;
+		      /* If the card was played by a loser, try again */
+			if (success ? !(IS_CONT(player)) : IS_CONT(player)) {
+				choose_suit:
+			      /* Pick a suit if any untried plays remain */
+				for (suit = 0; suit < NUMS; suit++)
+					if (Lgl[player].cc[suit])
+						/* This goto is really nice!! */
+						goto make_play;
+			}
+		}
+	}
+
+	/*
+	 * We're done.  We know the answer.
+	 * We can't remember all the variations; fortunately the
+	 *  succeeders played correctly in the last variation examined,
+	 * so we'll just print it.
+	 */
+	printf("Contract %s, for example:\n",
+			success ? "made" : "defeated");
+	for (tnum = 0, Statp = Status; tnum < last_t; tnum++, Statp++) {
+		printf("Trick %d:", tnum + 1);
+		for (player = 0; player < Leader; player++)
+			printf("\t");
+		for (nc = 0; nc < NUMP; nc++, player = LHO(player))
+			printf("\t%c of %c",
+				Rankname[RANK(Play[player])],
+				Suitname[SUIT(Play[player])]);
+		printf("\n");
+	}
+	return 0;
+}
+EOF
+cc -O -o bridge bridge.c
+bridge << EOF
+4 6 5 2
+AS JS 4S QD 8D 2C
+KS QS 9H 8H AD 2D
+AH 2H KD 9D 7D AC
+TS 3S 2S TH TD TC
+XX
+EOF
+bridge << EOF
+1 13 13 3
+3C		  3H 2H			  AD KD 2D	AS KS 7S 6S 5S 4S 3S
+8C 7C 6C 5C 4C    QH TH 8H 7H		  8D 7D 6D	2S
+AC QC JC 9C	  AH KH JH 9H 6H 5H	  5D 4D 3D
+KC TC 2C	  4H			  QD JD TD 9D	QS JS TS 9S 8S
+QS
+EOF
+
+
+
+==> competition/games/chess/knight.control.p <==
+How many knights does it take to attack or control the board?
+
+==> competition/games/chess/knight.control.s <==
+Fourteen knights are required to attack every square:
+
+    1   2   3   4   5   6   7   8
+   ___ ___ ___ ___ ___ ___ ___ ___
+h |   |   |   |   |   |   |   |   |  
+   --- --- --- --- --- --- --- ---
+g |   |   | N | N | N | N |   |   |
+   --- --- --- --- --- --- --- ---
+f |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+e |   | N | N |   |   | N | N |   |
+   --- --- --- --- --- --- --- ---
+d |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+c |   | N | N | N | N | N | N |   |
+   --- --- --- --- --- --- --- ---
+b |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+a |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+
+Three knights are needed to attack h1, g2, and a8; two more for b1, a2,
+and b3, and another two for h7, g8, and f7.
+
+The only alternative pattern is:
+
+    1   2   3   4   5   6   7   8
+   ___ ___ ___ ___ ___ ___ ___ ___
+h |   |   |   |   |   |   |   |   |  
+   --- --- --- --- --- --- --- ---
+g |   |   | N |   |   | N |   |   |
+   --- --- --- --- --- --- --- ---
+f |   |   | N | N | N | N |   |   |
+   --- --- --- --- --- --- --- ---
+e |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+d |   |   | N | N | N | N |   |   |
+   --- --- --- --- --- --- --- ---
+c |   | N | N |   |   | N | N |   |
+   --- --- --- --- --- --- --- ---
+b |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+a |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+
+Twelve knights are needed to control (attack or occupy) the board:
+
+    1   2   3   4   5   6   7   8
+   ___ ___ ___ ___ ___ ___ ___ ___
+a |   |   |   |   |   |   |   |   |  
+   --- --- --- --- --- --- --- ---
+b |   |   | N |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+c |   |   | N | N |   | N | N |   |
+   --- --- --- --- --- --- --- ---
+d |   |   |   |   |   | N |   |   |
+   --- --- --- --- --- --- --- ---
+e |   |   | N |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+f |   | N | N |   | N | N |   |   |
+   --- --- --- --- --- --- --- ---
+g |   |   |   |   |   | N |   |   |
+   --- --- --- --- --- --- --- ---
+h |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+
+Each knight can control at most one of the twelve squares a1, b1, b2,
+h1, g1, g2, a8, b8, b7, h8, g8, g7.  This position is unique up to
+reflection.
+
+References
+    Martin Gardner, _Mathematical Magic Show_.
+
+==> competition/games/chess/knight.most.p <==
+What is the maximum number of knights that can be put on n x n chessboard
+without threatening each other?
+
+==> competition/games/chess/knight.most.s <==
+n^2/2 for n even >= 4.
+
+Divide the board in parts of 2x4 squares. The squares within
+each part are paired as follows:
+
+-----
+|A|B|
+-----
+|C|D|
+-----
+|B|A|
+-----
+|D|C|
+-----
+
+Clearly, not more than one square per pair can be occupied by a knight.
+
+==> competition/games/chess/knight.tour.p <==
+For what size boards are knight tours possible?
+
+==> competition/games/chess/knight.tour.s <==
+A tour exists for boards of size 1x1, 3x4, 3xN with N >= 7, 4xN with N >= 5,
+and MxN with N >= M >= 5.  In other words, for all rectangles except 1xN
+(excluding the trivial 1x1), 2xN, 3x3, 3x5, 3x6, 4x4.
+
+With the exception of 3x8 and 4xN, any even-sized board which allows a tour
+will also allow a closed (reentrant) tour.
+
+On an odd-sided board, there is one more square of one color than
+of the other.  Every time a knight moves, it moves to a square of
+the other color than the one it is on.  Therefore, on an odd-sided
+board, it must end the last move but one of the complete, reentrant
+tour on a square of the same color as that on which it started.
+It is then impossible to make the last move, for that move would end
+on a square of the same color as it begins on.
+
+Here is a solution for the 7x7 board (which is not reentrant).
+     ------------------------------------
+     | 17 |  6 | 33 | 42 | 15 |  4 | 25 |
+     ------------------------------------
+     | 32 | 47 | 16 |  5 | 26 | 35 | 14 |
+     ------------------------------------
+     |  7 | 18 | 43 | 34 | 41 | 24 |  3 |
+     ------------------------------------
+     | 46 | 31 | 48 | 27 | 44 | 13 | 36 |
+     ------------------------------------
+     | 19 |  8 | 45 | 40 | 49 |  2 | 23 |
+     ------------------------------------
+     | 30 | 39 | 10 | 21 | 28 | 37 | 12 |
+     ------------------------------------
+     |  9 | 20 | 29 | 38 | 11 | 22 |  1 |
+     ------------------------------------
+
+Here is a solution for the 5x5 board (which is not reentrant).
+     --------------------------
+     |  5 | 10 | 15 | 20 |  3 |
+     --------------------------
+     | 16 | 21 |  4 |  9 | 14 |
+     --------------------------
+     | 11 |  6 | 25 |  2 | 19 |
+     --------------------------
+     | 22 | 17 |  8 | 13 | 24 |
+     --------------------------
+     |  7 | 12 | 23 | 18 |  1 |
+     --------------------------
+
+Here is a reentrant 2x4x4 tour:
+	 0 11 16  3    15  4  1 22
+	19 26  9 24     8 23 14 27
+	10  5 30 17    31 12 21  2
+	29 18 25  6    20  7 28 13
+A reentrant 4x4x4 tour can be constructed by splicing two copies.
+
+It shouldn't be much more work now to completely solve the problem of which 3D
+rectangular boards allow tours.
+
+Warnsdorff's rule: at each stage of the knight's tour, choose the
+square with the fewest remaining exits:
+
+ 1 12 23 44  3 14 25
+22 43  2 13 24 35  4
+11 28 45 40 47 26 15
+42 21 48 27 34  5 36
+29 10 41 46 39 16 33
+20 49  8 31 18 37  6
+ 9 30 19 38  7 32 17
+
+Mr. Beverley published in the Philosophical Magazine in 1848 this
+knight's tour that is also a magic square:
+
+ 1 30 47 52  5 28 43 54
+48 51  2 29 44 53  6 27
+31 46 49  4 25  8 55 42
+50  3 32 45 56 41 26  7
+33 62 15 20  9 24 39 58
+16 19 34 61 40 57 10 23
+63 14 17 36 21 12 59 38
+18 35 64 13 60 37 22 11 
+
+References:
+``The Construction of Magic Knight Tours,'' by T. H. Willcocks,
+J. Rec. Math. 1:225-233 (1968).
+
+"Games Ancient and Oriental and How to Play Them"
+by Edward Falkener published by Dover in 1961 (first published 1892)
+
+"Mathematical Magic Show", Martin Gardner, ch. 14
+
+==> competition/games/chess/mutual.stalemate.p <==
+What's the minimal number of pieces in a legal mutual stalemate?
+
+==> competition/games/chess/mutual.stalemate.s <==
+6.  Here are three mutual stalemate positions.  Black is lower case
+in the diagrams.
+
+W Kh8 e6 f7 h7  B Kf8 e7
+
+	--+--+--+--+--+
+	  |  | k|  | K|
+	--+--+--+--+--+
+	  | p| P|  | P|
+	--+--+--+--+--+
+	  | P|  |  |  |
+	--+--+--+--+--+
+	  |  |  |  |  |
+
+W Kb1  B Ka3 b2 b3 b4 a4
+
+	|  |  |  
+	+--+--+--
+	| p| p|  
+	+--+--+--
+	| k| p|  
+	+--+--+--
+	|  | p|  
+	+--+--+--
+	|  | K|
+	+--+--+--
+  
+W Kf1  B Kh1 Bg1 f2 f3 h2
+
+	  |  |  |  |
+	--+--+--+--+
+	  | p|  |  |
+	--+--+--+--+
+	  | p|  | p|
+	--+--+--+--+
+	  | K| b| k|
+	--+--+--+--+
+  
+
+==> competition/games/chess/queen.control.p <==
+How many queens does it take to attack or control the board?
+
+
+==> competition/games/chess/queen.control.s <==
+Five queens are required to attack every square:
+
+    1   2   3   4   5   6   7   8
+   ___ ___ ___ ___ ___ ___ ___ ___
+h |   |   |   |   |   |   |   |   |  
+   --- --- --- --- --- --- --- ---
+g |   |   |   | Q |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+f |   |   |   | Q |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+e |   |   |   | Q |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+d |   |   |   | Q |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+c |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+b |   |   |   |   |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+a |   |   |   | Q |   |   |   |   |
+   --- --- --- --- --- --- --- ---
+
+There are other positions with five queens.
+
+==> competition/games/chess/queen.most.p <==
+How many non-mutually-attacking queens can be placed on various sized boards?
+
+==> competition/games/chess/queen.most.s <==
+On an regular chess board, at most eight queens of one color can be
+placed so that there are no mutual attacks.
+
+Here is one configuration:
+-----------------
+|Q| | | | | | | |
+-----------------
+| | |Q| | | | | |
+-----------------
+| | | | |Q| | | |
+-----------------
+| | | | | | |Q| |
+-----------------
+| |Q| | | | | | |
+-----------------
+| | | | | | | |Q|
+-----------------
+| | | | | |Q| | |
+-----------------
+| | | |Q| | | | |
+-----------------
+
+On an nxn board, if n is not divisible by 2 or 3, n^2 queens can be placed
+such that no two queens of the same color attack each other.
+
+The proof is via a straightforward construction.  For n=1, the result
+is obviously true, so assume n>1 and n is not divisible by 2 or 3 (thus n>=5).
+Assume we are given n queens in each of these n "colors" (numbers):
+	0 1 2 ... n-1
+
+The proof is by construction.  The construction is easier to see then to
+describe, we do both.  Here is what it looks like:
+
+	0	1	2	3	4	...	n-2	n-1
+	n-2	n-1	0	1	2	...	n-4	n-3
+	n-4	n-3	n-2	n-1	0	...	n-6	n-5
+	...(move one row down => sub 2 (mod n); one col right => add 1 (mod n))
+	2	3	4	5	6	...	0	1
+
+People who know how a knight moves in chess will note the repetitive knight
+move theme connecting queens of the same color (especially after joining
+opposite edges of the board).
+
+Now to describe this: place in each cell a queen whose "color" (number) is:
+	j - 2*i + 1 (mod n),
+	where i is the # of the row, and j is the # of the column.
+
+Then no 2 queens of the same color are in the same:
+	row, column, or diagonal.
+
+Actually, we will prove something stronger, namely that no 2 queens of the
+same color are on the same row, column, or "hyperdiagonal".  (The concept, if
+not the term, hyperdiagonal, goes back to 19th century.)  There are n
+hyperdiagonals of negative slope (one of them being a main diagonal) and n
+hyperdiagonals of positive slope (one of them being the other main diagonal).
+Definition:  for k in 0..n-1:
+	the k-th negative hyperdiagonal consists of cells (i,j),
+		where i-j=k (mod n)
+	the k-th positive hyperdiagonal consists of cells (i,j),
+		where i+j=k (mod n)
+	Then 0-th negative hyperdiagonal is simply the NW-SE main diagonal.
+	Then "1-th" positive hyperdiagonal is simply the SW-NE main diagonal.
+
+	The other 2*(n-1) hyperdiagonals appear as 2 disconnected diagonal
+		fragments of cells, but if you join opposite edges of an nxn
+		board to each other, forming a sphere, these 2 fragments
+		become linearly connected forming a great circle.
+
+Now to the proof:
+  1) First note that the above color assignment does indeed uniquely define the
+	color of a queen in each of the n^2 cells.
+
+  2) no row contains 2 queens of the same color:
+	cells (i, a) and (i, b) contain queens of the same color =>
+		a-2i-1 = b-2i-1 (mod n) =>
+		a      = b (mod n) =>
+		a = b (since a,b are within 1..n)
+
+  3) no column contains 2 queens of the same color:
+	cells (a, j) and (b, j) contain queens of the same color =>
+		j-2a-1 = j-2b-1 (mod n) =>
+		2a     = 2b (mod n) =>
+		a      = b  (mod n)  (since n and 2 have no common factor) =>
+		a = b (since a,b are within 1..n)
+
+  4) no negative hyperdiagonal contains 2 queens of the same color:
+	cells (a, j) and (b, k) on the same negative hyperdiagonal contain
+	    queens of the same color =>
+		a-j    = b-k   (mod n) AND j-2a-1 = k-2b-1 (mod n) =>
+		2a-2j  = 2b-2k (mod n) AND j-2a = k-2b (mod n) =>
+		(adding corresponding sides:)
+		-j     = -k (mod n) =>
+		j = k.
+	    And thus a = b, as well (see first equality, 5th line up)
+		
+  5) no positive hyperdiagonal contains 2 queens of the same color:
+	cells (a, j) and (b, k) on the same positive hyperdiagonal contain
+	    queens of the same color =>
+		a+j    = b+k   (mod n) AND j-2a-1 = k-2b-1 (mod n) =>
+		2a+2j  = 2b+2k (mod n) AND j-2a = k-2b (mod n) =>
+		(adding corresponding sides:)
+		3j     = 3k (mod n) =>
+		j      = k (mod n)  (since n and 3 have no common factor) =>
+		j = k.  Likewise a = b.
+		
+As special cases with the 0th negative hyperdiagonal and 1st positive
+hyperdiagonal, no 2 queens on the same main diagonal are colored the same.
+
+Now is this condition, than n be not divisible by 2 and 3 also *necessary*?
+
+Mike Konrad
+mdk@sei.cmu.edu
+
+******
+
+ . . . o .  This is a solution for the 5-queen problem
+ o . . . .  at the torus. It has the 90 degree rotation symmetry.
+ . . o . .
+ . . . . o
+ . o . . .
+
+ According to T. Klove, The modular n-queen problem II,
+              Discrete Math. 36 (1981) 33
+ it is unknown how to construct symmetric (90 rot) solutions for 
+ n = 1 or 5 (mod 12) and n has prime factors = 3 (mod 4).
+ He solved the smallest cases 49 and 77.
+ Try the next cases 121 and 133 or find a general solution.
+
+A further reference for modular or reflected queen problems is:
+Martin Gardner, Fractal Music, Hypercards and More ..., Freeman (1991)
+
+********
+
+For the 3-D N-queens problem the answer is four, at (1,1,2), (1,3,3),
+(2,3,1), and (3,2,3).
+
+You can't have more because with four, you must have at least two in
+at least one of the three horizontal slices of the cube.  For the
+two-or-more-queen slice you must solve the n-queens problem for a 3x3
+planar board, which allows you to place at most 2 queens, and one must
+be in a corner.  The two queens cover all but one spot in the adjacent
+slice, so if the two-queen slice is the middle one we're already 
+limited to no more than 4 queens.  But if we put the 2-queen slice at
+the bottom or top, then the corner queen has line of sight to all 
+corners of the opposite slice, so it can contain at most one queen,
+and so can the middle slice.
+
+If they sit in a 4x4x4 cube, the maximum is 7.  Here is a sample.
+
+1. 4 4 3
+2. 2 3 4
+3. 1 2 2
+4. 2 4 2
+5. 3 2 1
+6. 1 1 4
+7. 3 1 3
+
+If they sit in a 5x5x5 cube, the maximum is 13.  Here is a sample.
+
+1. 4 5 4
+2. 3 5 1
+3. 5 4 2
+4. 3 1 2
+5. 2 1 4
+6. 2 5 5
+7. 4 1 5
+8. 1 5 2
+9. 5 2 1
+10. 2 3 1
+11. 1 3 5
+12. 1 1 1
+13. 5 1 3
+
+==> competition/games/chess/queens.p <==
+How many ways can eight queens be placed so that they control the board?
+
+==> competition/games/chess/queens.s <==
+92.  The following program uses a backtracking algorithm to count positions:
+
+#include <stdio.h>
+
+static int count = 0;
+
+void try(int row, int left, int right) {
+   int poss, place;
+   if (row == 0xFF) ++count;
+   else {
+      poss = ~(row|left|right) & 0xFF;
+      while (poss != 0) {
+         place = poss & -poss;
+         try(row|place, (left|place)<<1, (right|place)>>1);
+         poss &= ~place;
+         }
+      }
+   }
+
+void main() {   
+   try(0,0,0);
+   printf("There are %d solutions.\n", count);
+   }
+--
+Tony Lezard IS tony@mantis.co.uk OR tony%mantis.co.uk@uknet.ac.uk
+OR EVEN arl10@phx.cam.ac.uk if all else fails.
+
+==> competition/games/chess/rook.paths.p <==
+How many non-overlapping paths can a rook take from one corner to the opposite
+on an MxN chess board?
+
+==> competition/games/chess/rook.paths.s <==
+For a 1 x 1 chessboard, there are 1 unique paths.
+For a 1 x 2 chessboard, there are 1 unique paths.
+For a 1 x 3 chessboard, there are 1 unique paths.
+For a 1 x 4 chessboard, there are 1 unique paths.
+For a 1 x 5 chessboard, there are 1 unique paths.
+For a 1 x 6 chessboard, there are 1 unique paths.
+For a 1 x 7 chessboard, there are 1 unique paths.
+For a 1 x 8 chessboard, there are 1 unique paths.
+For a 2 x 2 chessboard, there are 2 unique paths.
+For a 2 x 3 chessboard, there are 4 unique paths.
+For a 2 x 4 chessboard, there are 8 unique paths.
+For a 2 x 5 chessboard, there are 16 unique paths.
+For a 2 x 6 chessboard, there are 32 unique paths.
+For a 2 x 7 chessboard, there are 64 unique paths.
+For a 2 x 8 chessboard, there are 128 unique paths.
+For a 3 x 3 chessboard, there are 12 unique paths.
+For a 3 x 4 chessboard, there are 38 unique paths.
+For a 3 x 5 chessboard, there are 125 unique paths.
+For a 3 x 6 chessboard, there are 414 unique paths.
+For a 3 x 7 chessboard, there are 1369 unique paths.
+For a 3 x 8 chessboard, there are 4522 unique paths.
+For a 4 x 4 chessboard, there are 184 unique paths.
+For a 4 x 5 chessboard, there are 976 unique paths.
+For a 4 x 6 chessboard, there are 5382 unique paths.
+For a 4 x 7 chessboard, there are 29739 unique paths.
+For a 4 x 8 chessboard, there are 163496 unique paths.
+For a 5 x 5 chessboard, there are 8512 unique paths.
+For a 5 x 6 chessboard, there are 79384 unique paths.
+For a 5 x 7 chessboard, there are 752061 unique paths.
+
+/***********************
+ * RookPaths.c
+ * By: David Blume
+ * dcb@wdl1.wdl.loral.com (Predecrement David)
+ *
+ * How many unique ways can a rook move from the bottom left corner
+ * of a m * n chess board to the top right right?
+ *
+ * Contraints: The rook may not passover a square it has already visited.
+ *             What if we don't allow Down & Left moves? (much easier)
+ *
+ * This software is provided *as is.*  It is not guaranteed to work on
+ * any platform at any time anywhere. :-)  Enjoy.
+ ***********************/
+
+#include <stdio.h>
+
+#define kColumns 8			/* The maximum number of columns */
+#define kRows	 8			/* The maximum number of rows */
+
+/* The following rule is for you to play with. */
+#define kAllowDownLeft		/* Whether or not to allow the rook to move D or L */
+
+/* Visual feedback defines... */
+#undef kShowTraversals		/* Whether or nor to show each successful graph */
+#define kListResults		/* Whether or not to list each n * m result */
+#define kShowMatrix			/* Display the final results in a matrix? */
+
+char gmatrix[kColumns][kRows];				/* the working matrix */
+long result[kColumns][kRows];				/* the result array */
+
+/*********************
+ * traverse
+ *
+ * This is the recursive function
+ *********************/
+traverse (short c, short r, short i, short j )
+{
+	
+	/* made it to the top left! increase result, retract move, and return */
+	if (i == c && j == r) {
+
+#ifdef kShowTraversals	
+		short ti, tj;
+		gmatrix[i][j] = 5;
+		for (ti = c; ti >= 0; ti--) {
+			for (tj = 0; tj <= r; tj++) {
+				if (gmatrix[ti][tj] == 0)
+					printf(". ");
+				else if (gmatrix[ti][tj] == 1)
+					printf("D ");
+				else if (gmatrix[ti][tj] == 2)
+					printf("R ");
+				else if (gmatrix[ti][tj] == 3)
+					printf("L ");
+				else if (gmatrix[ti][tj] == 4)
+					printf("U ");
+				else if (gmatrix[ti][tj] == 5)
+					printf("* ");
+				}
+			printf("\n");
+			}
+		printf("\n");
+#endif
+
+		result[i][j] = result[i][j] + 1;
+		gmatrix[i][j] = 0;
+		return;
+		}
+	
+	/* try to move, left up down right */
+#ifdef kAllowDownLeft
+	if (i != 0 && gmatrix[i-1][j] == 0) {		/* left turn */
+		gmatrix[i][j] = 1;
+		traverse(c, r, i-1, j);
+		}
+#endif
+	if (j != r && gmatrix[i][j+1] == 0) {		/* turn up */
+		gmatrix[i][j] = 2;
+		traverse(c, r, i, j+1);
+		}
+#ifdef kAllowDownLeft
+	if (j != 0 && gmatrix[i][j-1] == 0) {		/* turn down */
+		gmatrix[i][j] = 3;
+		traverse(c, r, i, j-1);
+		}
+#endif
+	if (i != c && gmatrix[i+1][j] == 0) {		/* turn right */
+		gmatrix[i][j] = 4;
+		traverse(c, r, i+1, j);
+		}
+	
+	/* remove the marking on this square */
+	gmatrix[i][j] = 0;
+
+}
+
+main()
+{
+	short i, j;
+	
+	/* initialize the matrix to 0 */
+	for (i = 0; i < kColumns; i++) {
+		for (j = 0; j < kRows; j++) {
+			gmatrix[i][j] = 0;
+			}
+		}
+	
+	/* call the recursive function */
+	for (i = 0; i < kColumns; i++) {
+		for (j = 0; j < kRows; j++) {
+			if (j >= i) {
+				result[i][j] = 0;
+				traverse (i, j, 0, 0);
+#ifdef kListResults
+				printf("For a %d x %d chessboard, there are %d unique paths.\n",
+						i+1, j+1, result[i][j]); fflush(stdout);
+#endif
+				}
+			}
+		}
+	/* print out the results */
+#ifdef kShowMatrix
+	printf("\n");
+	for (i = 0; i < kColumns; i++) {
+		for (j = 0; j < kRows; j++) {
+			short min = (i < j) ? i : j ;
+			short max = (i < j) ? j : i ;
+			printf("%6d", result[min][max]);
+			}
+		printf("\n");
+		}
+#endif
+}
+
+==> competition/games/chess/size.of.game.tree.p <==
+How many different positions are there in the game tree of chess?
+
+==> competition/games/chess/size.of.game.tree.s <==
+Consider the following assignment of bit strings to square states:
+
+	Square State		Bit String
+	------ -----		--- ------
+
+	Empty			0
+	White Pawn		100
+	Black Pawn		101
+	White Rook		11111
+	Black Rook		11110
+	White Knight		11101
+	Black Knight		11100
+	White Bishop		11011
+	Black Bishop		11010
+	White Queen		110011
+	Black Queen		110010
+	White King		110001
+	Black King		110000
+
+Record a position by listing the bit string for each of the 64 squares.
+For a position with all the pieces still on the board, this will take
+164 bits.  As pieces are captured, the number of bits needed goes down.
+As pawns promote, the number of bits go up.  For positions where a King
+and Rook are in position to castle if castling is legal, we will need
+a bit to indicate if in fact castling is legal.  Same for positions
+where an en-passant capture may be possible.  I'm going to ignore these
+on the grounds that a more clever encoding of a position than the one
+that I am proposing could probably save as many bits as I need for these
+considerations, and thus conjecture that 164 bits is enough to encode a
+chess position.
+
+This gives an upper bound of 2^164 positions, or 2.3x10^49 positions.
+
+Jurg Nievergelt, of ETH Zurich, quoted the number 2^70 (or about 10^21) in
+e-mail, and referred to his paper "Information content of chess positions",
+ACM SIGART Newsletter 62, 13-14, April 1977, to be reprinted in "Machine
+Intelligence" (ed Michie), to appear 1990.
+
+Note that this latest estimate, 10^21, is not too intractable:
+10^7 computers running at 10^7 positions per second could scan those
+in 10^7 seconds, which is less than 6 months.
+
+In fact, suppose there is a winning strategy in chess for white.
+Suppose further that the strategy starts from a strong book opening,
+proceeds through middle game with only moves that Deep Thought (DT)
+would pick using the singular extension technique, and finally ends in
+an endgame that DT can analyze completely.  The book opening might take
+you ten moves into the game and DT has demonstrated its ability to
+analyze mates-in-20, so how many nodes would DT really have to visit?
+I suggest that by using external storage such a optical WORM memory,
+you could easily build up a transposition table for such a midgame.  If
+DT did not find a mate, you could progressively expand the width of the
+search window and add to the table until it did.  Of course there would
+be no guarantee of success, but the table built would be useful
+regardless.  Also, you could change the book opening and add to the
+table.  This project could continue indefinitely until finally it must
+solve the game (possibly using denser and denser storage media as
+technology advances).
+
+What do you think?
+
+-------
+
+I think you are a little bit too optimistic about the feasibility.  Solving
+mate-in-19 when the moves are forcing is one thing, but solving mate-in-19
+when the moves are not forcing is another.  Of course, human beings are no
+better at the latter task.  But to solve the game in the way you described
+would seem to require the ability to handle the latter task.  Anyway, we
+cannot really think about doing the sort of thing you described; DT is just a
+poor man's chess machine project (relatively speaking).
+						--Hsu
+
+i dont think that you understand the numbers involved.
+the size of the tree is still VERY large compared to all
+the advances that you cite. (speed of DT, size of worms,
+endgame projects, etc) even starting a project will probably
+be a waste of time since the next advance will overtake it
+rather than augment it. (if you start on a journey to the
+stars today, you will be met there by humans)
+ken
+
+==> competition/games/cigarettes.p <==
+The game of cigarettes is played as follows:
+Two players take turns placing a cigarette on a circular table.  The cigarettes
+can be placed upright (on end) or lying flat, but not so that it touches any
+other cigarette on the table.  This continues until one person loses by not
+having a valid position on the table to place a cigarette.
+
+Is there a way for either of the players to guarantee a win?
+
+==> competition/games/cigarettes.s <==
+The first person wins by placing a cigarette at the center of the table,
+and then placing each of his cigarettes in a position symmetric (with
+respect to the center) to the place the second player just moved.  If the
+second player could move, then symmetrically, so can the first player.
+
+==> competition/games/connect.four.p <==
+Is there a winning strategy for Connect Four?
+
+==> competition/games/connect.four.s <==
+An AI program has solved Connect Four for the standard 7 x 6 board.
+The conclusion: White wins, was confirmed by the brute force check made by
+James D. Allen, which has been published in rec.games.programmer.
+
+The program called VICTOR consists of a pure knowledge-based evaluation
+function which can give three values to a position: 
+ 1 won by white,
+ 0 still unclear.
+-1 at least a draw for Black,
+
+This evaluation function is based on 9 strategic rules concerning the game,
+which all nine have been (mathematically) proven to be correct.
+This means that a claim made about the game-theoretical value of a position
+by VICTOR, is correct, although no search tree is built.
+If the result 1 or -1 is given, the program outputs a set of rules applied,
+indicating the way the result can be achieved.
+This way one evaluation can be used to play the game to the end without any
+extra calculation (unless the position was still unclear, of course).
+
+Using the evaluation function alone, it has been shown that Black can at least
+draw the game on any 6 x (2n) board. VICTOR found an easy strategy for
+these boardsizes, which can be taught to anyone within 5 minutes. Nevertheless,
+this strategy had not been encountered before by any humans, as far as I know.
+
+For 7 x (2n) boards a similar strategy was found, in case White does not
+start the game in the middle column. In these cases Black can therefore at
+least draw the game.
+
+Furthermore, VICTOR needed only to check a few dozen positions to show
+that Black can at least draw the game on the 7 x 4 board.
+
+Evaluation of a position on a 7 x 4 or 7 x 6 board costs between 0.01 and 10
+CPU seconds on a Sun4.
+
+For the 7 x 6 board too many positions were unclear. For that reason a
+combination of Conspiracy-Number Search and Depth First Search was used
+to determine the game-theoretical value. This took several hundreds of hours
+on a Sun4.
+
+The main reason for the large amount of search needed, was the fact that in 
+many variations, the win for White was very difficult to achieve. 
+This caused many positions to be unclear for the evaluation function.
+
+Using the results of the search, a database will be constructed
+of roughly 500.000 positions with their game-theoretical value. 
+Using this datebase, VICTOR can play against humans or other programs, 
+winning all the time (playing White).  The average move takes less 
+than a second of calculation (search in the database or evaluation 
+of the position by the evaluation function).
+
+Some variations are given below (columns and rows are numbered as is customary
+in chess):
+
+1. d1, ..  The only winning move.
+
+After 1. .., a1 wins 2. e1. Other second moves for White has not been
+checked yet.
+After 1. .., b1 wins 2. f1. Other second moves for White has not been
+checked yet.
+After 1. .., c1 wins 2. f1. Only 2 g1 has not been checked yet. All other
+second moves for White give Black at least a draw.
+After 1. .., d2 wins 2. d3. All other second moves for White give black
+at least a draw.
+
+A nice example of the difficulty White has to win:
+
+1. d1, d2 
+2. d3, d4
+3. d5, b1
+4. b2!
+
+The first three moves for White are forced, while alternatives at the
+fourth moves of White are not checked yet.
+
+A variation which took much time to check and eventually turned out
+to be at least a draw for Black, was:
+
+1. d1, c1
+2. c2?, .. f1 wins, while c2 does not.
+2. .., c3 Only move which gives Black the draw.
+3. c4, .. White's best chance.
+3. .., g1!! Only 3 .., d2 has not been checked completely, while all
+	    other third moves for Black have been shown to lose.
+
+The project has been described in my 'doctoraalscriptie' (Master thesis)
+which has been supervised by Prof.Dr H.J. van den Herik of the
+Rijksuniversiteit Limburg (The Netherlands).
+
+I will give more details if requested.
+
+Victor Allis.
+Vrije Universiteit van Amsterdam.
+The Netherlands.
+victor@cs.vu.nl
+
+==> competition/games/craps.p <==
+What are the odds in craps?
+
+==> competition/games/craps.s <==
+The game of craps:
+There is a person who rolls the two dice, and then there is the house.
+1) On the first roll, if a 7 or 11 comes up, the roller wins.
+   If a 2, 3, or 12 comes up the house wins.
+   Anything else is a POINT, and more rolling is necessary, as per rule 2.
+2) If a POINT appears on the first roll, keep rolling the dice.
+   At each roll, if the POINT appears again, the roller wins.
+   At each roll, if a 7 comes up, the house wins.
+   Keep rolling until the POINT or a 7 comes up.
+
+Then there are the players, and they are allowed to place their bets with
+either the roller or with the house.
+
+-----
+My computations:
+
+
+
+
+
+On the first roll, P.roller.trial(1) = 2/9, and P.house.trial(1) = 1/9.
+Let  P(x) stand for the probability of a 4,5,6,8,9,10 appearing.
+Then on the second and onwards rolls, the probability is:
+
+Roller:
+                         ---                        (i - 2)
+P.roller.trial(i) =      \   P(x)   *   ((5/6 - P(x))         *   P(x)
+(i > 1)                  /
+		         ---
+		         x = 4,5,6,8,9,10
+
+House:
+                        ---                        (i - 2)
+P.house.trial(i) =      \   P(x)   *   ((5/6 - P(x))         *   1/6
+(i > 1)                 /
+		        ---
+		        x = 4,5,6,8,9,10
+
+Reasoning (roller): For the roller to win on the ith trial, a POINT
+should have appeared on the first trial (the first P(x) term), and the
+same POINT should appear on the ith trial (the last P(x) term). All the in
+between trials should come up with a number other than 7 or the POINT
+(hence the (5/6 - P(x)) term).
+Similar reasoning holds for the house.
+
+The numbers are:
+P.roller.trial(i) (i > 1) =
+
+                (i-1)                 (i-1)                     (i-1)  
+ 1/72 * (27/36)      + 2/81 * (26/36)        + 25/648 * (25/36)
+
+
+P.house.trial(i) (i > 1) =
+
+                (i-1)                 (i-1)                     (i-1)  
+ 2/72 * (27/36)      + 3/81 * (26/36)        + 30/648 * (25/36)
+
+
+-------------------------------------------------
+The total probability comes to:
+P.roller = 2/9   +   (1/18 + 4/45 + 25/198)  = 0.4929292929292929..
+P.house  = 1/9   +   (1/9  + 2/15 + 15/99)  =  0.5070707070707070..
+
+which is not even.
+===========================================================================
+
+==
+Avinash Chopde				 (with standard disclaimer)
+abc@unhcs.unh.edu, abc@unh.unh.edu            {.....}!uunet!unh!abc
+
+==> competition/games/crosswords.p <==
+Are there programs to make crosswords?  What are the rules for cluing cryptic
+crosswords?  Is there an on-line competition for cryptic cluers?
+
+==> competition/games/crosswords.s <==
+You need to read the rec.puzzles.crosswords FAQL.
+

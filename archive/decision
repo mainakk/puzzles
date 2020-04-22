@@ -1,0 +1,1270 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03566; Sat, 20 Apr 1996 14:53:50 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07808; Sat, 20 Apr 96 14:11:13 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25210; Sat, 20 Apr 1996 11:12:02 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (decision), part 12 of 35
+Message-Id: <puzzles/archive/decision_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:17 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1243
+Xref: senator-bedfellow.mit.edu rec.puzzles:25000 news.answers:11520 rec.answers:1920
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/decision
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> decision/allais.p <==
+The Allais Paradox involves the choice between two alternatives:
+
+	A. 89% chance of an unknown amount
+	   10% chance of $1 million
+	   1% chance of $1 million
+	B. 89% chance of an unknown amount (the same amount as in A)
+	   10% chance of $2.5 million
+	   1% chance of nothing
+
+What is the rational choice?  Does this choice remain the same if the
+unknown amount is $1 million?  If it is nothing?
+
+==> decision/allais.s <==
+This is "Allais' Paradox".
+
+Which choice is rational depends upon the subjective value of money.
+Many people are risk averse, and prefer the better chance of $1
+million of option A.  This choice is firm when the unknown amount is
+$1 million, but seems to waver as the amount falls to nothing.  In the
+latter case, the risk averse person favors B because there is not much
+difference between 10% and 11%, but there is a big difference between
+$1 million and $2.5 million.
+
+Thus the choice between A and B depends upon the unknown amount, even
+though it is the same unknown amount independent of the choice.  This
+violates the "independence axiom" that rational choice between two
+alternatives should depend only upon how those two alternatives
+differ.
+
+However, if the amounts involved in the problem are reduced to tens of
+dollars instead of millions of dollars, people's behavior tends to
+fall back in line with the axioms of rational choice.  People tend to
+choose option B regardless of the unknown amount.  Perhaps when
+presented with such huge numbers, people begin to calculate
+qualitatively.  For example, if the unknown amount is $1 million the
+options are:
+
+	A. a fortune, guaranteed
+	B. a fortune, almost guaranteed
+	   a tiny chance of nothing
+
+Then the choice of A is rational.  However, if the unknown amount is
+nothing, the options are:
+
+	A. small chance of a fortune ($1 million)
+	   large chance of nothing
+	B. small chance of a larger fortune ($2.5 million)
+	   large chance of nothing
+
+In this case, the choice of B is rational.  The Allais Paradox then
+results from the limited ability to rationally calculate with such
+unusual quantities.  The brain is not a calculator and rational
+calculations may rely on things like training, experience, and
+analogy, none of which would be help in this case.  This hypothesis
+could be tested by studying the correlation between paradoxical
+behavior and "unusualness" of the amounts involved.
+
+If this explanation is correct, then the Paradox amounts to little
+more than the observation that the brain is an imperfect rational
+engine.
+
+==> decision/division.p <==
+N-Person Fair Division
+
+If two people want to divide a pie but do not trust each other, they can
+still ensure that each gets a fair share by using the technique that one
+person cuts and the other person chooses. Generalize this technique
+to more than two people. Take care to ensure that no one can be cheated
+by a coalition of the others.
+
+
+==> decision/division.s <==
+N-Person Fair Division
+
+Number the people from 1 to N. Person 1 cuts off a piece of the pie.
+Person 2 can either diminish the size of the cut off piece or pass.
+The same for persons 3 through N. The last person to touch the piece
+must take it and is removed from the process. Repeat this procedure
+with the remaining N - 1 people, until everyone has a piece.
+
+References:
+Luce and Raiffa, "Games and Decisions", Wiley, 1957, p. 366
+Kenneth Rebman, "How To Get (At Least) A Fair Share of the Cake",
+    in Mathematical Plums, Ross Honsberger, ed, Dolciani Mathematical
+    Expostions Number 4, published by the MAA.
+
+There is a cute result in combinatorics called the Marriage Theorem.
+A village has n men and n women, such that for all 0 < k <= n and for any
+set of k men there are at least k women, each of whom is in love with at least
+one of the k men.  All of the men are in love with all of the women :-}.
+The theorem asserts that there is a way to arrange the village into n
+monogamous couplings.
+
+The Marriage Theorem can be applied to the Fair Pie-Cutting Problem.
+
+One player cuts the pie into n pieces.  Each of the players labels
+some non-null subset of the pieces as acceptable to him.  For reasons
+given below he should "accept" each piece of size > 1/n, not just the
+best piece(s).  The pie-cutter is required to "accept" all of the pieces.
+
+Given a set S of players let S' denote the set of pie-pieces
+acceptable to at least one player in S.  Let t be the size of the largest
+set (T) of players satisfying  |T| > |T'|.  If there is no such set, the
+Marriage Theorem can be applied directly.  Since the pie-cutter accepts
+every piece we know that  t < n.
+
+Choose  |T| - |T'|  pieces at random from outside T', glue them
+together with the pieces in T' and let the players in T repeat the game
+with this smaller (t/n)-size pie.  This is fair since they all rejected
+the other n-t pieces, so they believe this pie is larger than t/n.
+
+The remaining n-t players can each be assigned one of the remaining
+n-t pie-pieces without further ado due to the Marriage Theorem.  (Otherwise
+the set T above was not maximal.)
+
+The problem of getting not just a fair solution, but an envy-free solution,
+is not solved.  A reference to this problem:
+David Gale, "Dividing a Cake," in Mathematical Entertainments,
+    Mathematical Intelligencer, Vol. 15, No. 1, Winter 1993, p. 50,
+    contains references to work by Steven Breams and Alan Taylor.
+
+==> decision/dowry.p <==
+Sultan's Dowry
+
+A sultan has granted a commoner a chance to marry one of his hundred
+daughters. The commoner will be presented the daughters one at a time.
+When a daughter is presented, the commoner will be told the daughter's
+dowry. The commoner has only one chance to accept or reject each
+daughter; he cannot return to a previously rejected daughter.
+The sultan's catch is that the commoner may only marry the daughter with
+the highest dowry. What is the commoner's best strategy assuming
+he knows nothing about the distribution of dowries?
+
+
+==> decision/dowry.s <==
+Solution
+
+Since the commoner knows nothing about the distribution of the dowries,
+the best strategy is to wait until a certain number of daughters have
+been presented then pick the highest dowry thereafter. The exact number to
+skip is determined by the condition that the odds that the highest dowry
+has already been seen is just greater than the odds that it remains to be
+seen AND THAT IF IT IS SEEN IT WILL BE PICKED. This amounts to finding the
+smallest x such that:
+	x/n > x/n * (1/(x+1) + ... + 1/(n-1)).
+Working out the math for n=100 and calculating the probability gives:
+The commoner should wait until he has seen 37 of the daughters,
+then pick the first daughter with a dowry that is bigger than any
+preceding dowry. With this strategy, his odds of choosing the daughter
+with the highest dowry are surprisingly high: about 37%.
+(cf. F. Mosteller, "Fifty Challenging Problems in Probability with Solutions",
+Addison-Wesley, 1965, #47; "Mathematical Plums", edited by Ross Honsberger,
+pp. 104-110)
+
+Here's a twist on the sultan's dowry problem I hope hasn't been posted yet.
+I became interested in an iterated version of this problem, which goes as
+follows:
+
+There's a long line of suitors outside the sultan's palace, and one by one
+they come in.  If a suitor gets the right girl, he marries her, as before.
+Unfortunately (for the suitor, at least), if he doesn't, he gets his head
+lopped off, and the next suitor comes in.
+
+Anyway, the first few dozen guys all know their probability theory, so they
+know that the best strategy is to skip the first 37 girls, and then pick
+the first girl who is the best up to that point.  Alas, each one assumes
+that he's the only one who knows that strategy, so one by one, these few
+dozen guys get their heads lopped off.
+
+After the 49th head has just rolled down the hill, and the sultan's vizier
+has just cried out, "Next!" the next guy in line says, "This isn't working
+out.  We might all be doing the same thing.  It doesn't hurt any of us to
+tell the rest what strategy we'll be using, so that none of us sets out to
+pick the same girl over and over again.  I might as well just tell you,
+though, that I'm going to get her!  I know this great strategy where you
+skip the first 37 blah blah blah..."  Naturally, a few moments later, head
+number 50 comes rolling down.
+
+"Next!" cries the vizier.
+
+Well, suitor number 51 is in a quandary.  He's all set to skip 37, etc, etc,
+except now he knows, that's not the right strategy.  But he doesn't know if
+the last guy skipped the right girl because she was in the first 37, or if
+he didn't meet her yet because he stopped too early.
+
+QUESTION 1: What is his best strategy?
+
+ANSWER 1: His best strategy is:
+
+    "Skip the first 14.  Take the first girl in [15,37] who is better
+    than the first 14.  If there isn't one, take the SECOND girl in [38,100]
+    who is the best up to that point."
+
+Unfortunately, head number 51 rolls down the hill.  "Next!" cries the vizier,
+who is getting a little hoarse, and wishes he didn't have this job.
+
+QUESTION 2: What is suitor number 52's best strategy?
+
+ANSWER 2: His best strategy is:
+
+    "Skip the first 5.  Take the first girl in [6,14] who is better than
+    the first 5.  If there isn't one, take the SECOND girl in [15,37]
+    who is the best up to that point.  If there isn't one, take the THIRD
+    girl in [38,100] who is the best up to that point."
+
+By the end of the day, of course, a wedding will be set, won't it?
+
+MORE QUESTIONS: If each suitor uses the best strategy at that point, how
+    many suitors will it take before the right girl is certain to be found?
+    Does each succeeding suitor always have a better chance of winning
+    than the preceding one?
+    
+SPECULATION: The last strategy is "Pick the last girl."  Its probability
+    of success is 1.  And it is strategy number 100.  (The corresponding
+    conditions hold for 3, 4, and 5 daughters.)
+
+Does anyone have any observations on this one?
+
+byron elbows
+(mail to brian@cs.ucla.edu)
+
+
+
+==> decision/envelope.p <==
+Someone has prepared two envelopes containing money.  One contains twice as
+much money as the other.  You have decided to pick one envelope, but then the
+following argument occurs to you:  Suppose my chosen envelope contains $X,
+then the other envelope either contains $X/2 or $2X.  Both cases are
+equally likely, so my expectation if I take the other envelope is
+.5 * $X/2 + .5 * $2X = $1.25X, which is higher than my current $X, so I
+should change my mind and take the other envelope.  But then I can apply the
+argument all over again.  Something is wrong here!  Where did I go wrong?
+
+In a variant of this problem, you are allowed to peek into the envelope
+you chose before finally settling on it.  Suppose that when you peek you
+see $100.  Should you switch now?
+
+==> decision/envelope.s <==
+Let's follow the argument carefully, substituting real numbers for
+variables, to see where we went wrong.  In the following, we will assume
+the envelopes contain $100 and $200.  We will consider the two equally
+likely cases separately, then average the results.
+
+First, take the case that X=$100.
+
+"I have $100 in my hand.  If I exchange I get $200.  The value of the exchange
+is $200.  The value from not exchanging is $100.  Therefore, I gain $100
+by exchanging."
+
+Second, take the case that X=$200.
+
+"I have $200 in my hand.  If I exchange I get $100.  The value of the exchange
+is $100.  The value from not exchanging is $200.  Therefore, I lose $100
+by exchanging."
+
+Now, averaging the two cases, I see that the expected gain is zero.
+
+So where is the slip up?  In one case, switching gets X/2 ($100), in the
+other case, switching gets 2X ($200), but X is different in the two
+cases, and I can't simply average the two different X's to get 1.25X.
+I can average the two numbers ($100 and $200) to get $150, the expected
+value of switching, which is also the expected value of not switching,
+but I cannot under any circumstances average X/2 and 2X.
+
+This is a classic case of confusing variables with constants.
+
+OK, so let's consider the case in which I looked into the envelope and
+found that it contained $100.  This pins down what X is: a constant.
+
+Now the argument is that the odds of $50 is .5 and the odds of $200
+is .5, so the expected value of switching is $125, so we should switch.
+However, the only way the odds of $50 could be .5 and the odds of $200
+could be .5 is if all integer values are equally likely.  But any
+probability distribution that is finite and equal for all integers
+would sum to infinity, not one as it must to be a probability distribution.
+Thus, the assumption of equal likelihood for all integer values is
+self-contradictory, and leads to the invalid proof that you should
+always switch.  This is reminiscent of the plethora of proofs that 0=1;
+they always involve some illegitimate assumption, such as the validity
+of division by zero.
+
+Limiting the maximum value in the envelopes removes the self-contradiction
+and the argument for switching.  Let's see how this works.
+
+Suppose all amounts up to $1 trillion were equally likely to be
+found in the first envelope, and all amounts beyond that would never
+appear.  Then for small amounts one should indeed switch, but not for
+amounts above $500 billion.  The strategy of always switching would pay
+off for most reasonable amounts but would lead to disastrous losses for
+large amounts, and the two would balance each other out.
+
+For those who would prefer to see this worked out in detail:
+Assume the smaller envelope is uniform on [$0,$M], for some value
+of $M.  What is the expectation value of always switching?  A quarter of
+the time $100 >= $M (i.e. 50% chance $X is in [$M/2,$M] and 50% chance
+the larger envelope is chosen).  In this case the expected switching
+gain is -$50 (a loss).  Thus overall the always switch policy has an
+expected (relative to $100) gain of (3/4)*$50 + (1/4)*(-$50) = $25.
+However the expected absolute gain (in terms of M) is:
+  / M 
+  |    g f(g) dg,   [ where f(g) = (1/2)*Uniform[0,M)(g) +
+  /-M                              (1/2)*Uniform(-M,0](g). ]
+
+  = 0.  QED.
+
+OK, so always switching is not the optimal switching strategy.  Surely
+there must be some strategy that takes advantage of the fact that we
+looked into the envelope and we know something we did not know before
+we looked.
+
+Well, if we know the maximum value $M that can be in the smaller envelope,
+then the optimal decision criterion is to switch if $100 < $M, otherwise stick.
+The reason for the stick case is straightforward. The reason for the
+switch case is due to the pdf of the smaller envelope being twice as
+high as that of the larger envelope over the range [0,$M). That is, the
+expected gain in switching is (2/3)*$100 + (1/3)*(-$50) = $50.
+
+What if we do not know the maximum value of the pdf?  You can exploit
+the "test value" technique to improve your chances.  The trick here is
+to pick a test value T.  If the amount in the envelope is less than the
+test value, switch; if it is more, do not.  This works in that if T happens
+to be in the range [M,2M] you will make the correct decision.  Therefore,
+assuming the unknown pdf is uniform on [0,M], you are slightly better off
+with this technique.
+
+Of course, the pdf may not even be uniform, so the "test value" technique
+may not offer much of an advantage.  If you are allowed to play the game
+repeatedly, you can estimate the pdf, but that is another story...
+
+==> decision/exchange.p <==
+At one time, the Canadian and US dollars were discounted by 10 cents on
+each side of the border (i.e., a Canadian dollar was worth 90 US cents
+in the US, and a US dollar was worth 90 Canadian cents in Canada).  A
+man walks into a bar on the US side of the border, orders 10 US cents
+worth of beer, pays with a US dollar and receives a Canadian dollar in
+change.  He then walks across the border to Canada, orders 10 Canadian
+cents worth of beer, pays with a Canadian dollar and receives a US
+dollar in change.  He continues this throughout the day, and ends up
+dead drunk with the original dollar in his pocket.
+
+Who pays for the drinks?
+
+==> decision/exchange.s <==
+The man paid for all the drinks.  But, you say, he ended up with the
+same amount of money that he started with!  However, as he transported
+Canadian dollars into Canada and US dollars into the US, he performed
+"economic work" by moving the currency to a location where it was in
+greater demand (and thus valued higher).  The earnings from this work
+were spent on the drinks.
+
+Note that he can only continue to do this until the Canadian bar runs
+out of US dollars, or the US bar runs out of Canadian dollars, i.e.,
+until he runs out of "work" to do.
+
+==> decision/high.or.low.p <==
+I pick two numbers, randomly, and tell you one of them. You are supposed
+to guess whether this is the lower or higher one of the two numbers I
+picked. Can you come up with a method of guessing that does better than
+picking the response "low" or "high" randomly (i.e. probability to guess
+right > .5) ?
+
+==> decision/high.or.low.s <==
+Pick any cumulative probability function P(x) such that a > b ==> P(a)
+> P(b).  Now if the number shown is y, guess "low" with probability
+P(y) and "high" with probability 1-P(y).  This strategy yields a
+probability of > 1/2 of winning since the probability of being correct
+is 1/2*( (1-P(a)) + P(b) ) = 1/2 + (P(b)-P(a)), which is > 1/2 by
+assumption.
+
+==> decision/monty.hall.p <==
+You are a participant on "Let's Make a Deal." Monty Hall shows you
+three closed doors.  He tells you that two of the closed doors have a
+goat behind them and that one of the doors has a new car behind it.
+You pick one door, but before you open it, Monty opens one of the two
+remaining doors and shows that it hides a goat.  He then offers you a
+chance to switch doors with the remaining closed door.  Is it to your
+advantage to do so?
+
+==> decision/monty.hall.s <==
+Under reasonable assumptions about Monty Hall's motivation, your chance
+of picking the car doubles when you switch.
+
+The problem is confusing for two reasons:  first,  there are hidden
+assumptions about Monty's motivation that cloud the issue; and second,
+novice probability students do not see that the opening of the door
+gave them any new information.
+
+Monty can have one of three basic motives:
+1.  He randomly opens doors.
+2.  He always opens the door he knows contains nothing.
+3.  He only opens a door when the contestant has picked the grand prize.
+
+These result in very different strategies:
+1.  No improvement when switching.
+2.  Double your odds by switching.
+3.  Don't switch!
+
+Most people, myself included, think that (2) is the intended
+interpretation of Monty's motive.  Interviews with Monty Hall
+indicate that he did indeed try to lure the contestant who had picked
+the car with cash incentives to switch.  However, if Monty always
+adopted this strategy, contestants would soon learn never to switch,
+so one presumes that occasionally Monty offered another door even when
+the contestant had picked a goat.  At any rate, analyzing the problem
+with this strategy is difficult, since it requires knowing something
+about Monty's probability of bluffing.
+
+A good way to see that Monty is giving you information by opening doors
+that he knows are valueless is to increase the number of doors from
+three to 100.  If there are 100 doors, and Monty shows that 98 of them
+are valueless, isn't it pretty clear that the chance the prize is behind
+the remaining door is 99/100?
+
+The original Monty Hall problem (and solution) appears to be due to
+Steve Selvin, and appears in American Statistician, Feb 1975, V. 29,
+No. 1, p. 67 under the title ``A Problem in Probability.''  It should
+be of no surprise to readers of this group that he received several
+letters contesting the accuracy of his solution, so he responded two
+issues later (American Statistician, Aug 1975, V. 29, No. 3, p. 134).
+However, the principles that underlie the problem date back at least to
+the fifties, and probably are timeless.  See the references below for
+details.
+
+Reference (too numerous to mention, but these contain bibliographies):
+    Leonard Gillman, "The Car and the Goats", AMM 99:1 (Jan 1992), p. 3
+    Ed Barbeau, "The Problem of the Car and Goats", CMJ 24:2 (Mar 1993), p. 149
+
+The second reference contains a list of equivalent or related problems.
+
+==> decision/newcomb.p <==
+Newcomb's Problem
+
+A being put one thousand dollars in box A and either zero or one million
+dollars in box B and presents you with two choices:
+	(1) Open box B only.
+	(2) Open both box A and B.
+The being put money in box B only if it predicted you will choose option (1).
+The being put nothing in box B if it predicted you will do anything other than
+choose option (1) (including choosing option (2), flipping a coin, etc.).
+
+Assuming that you have never known the being to be wrong in predicting your
+actions, which option should you choose to maximize the amount of money you
+get?
+
+
+==> decision/newcomb.s <==
+This is "Newcomb's Paradox".
+
+You are presented with two boxes: one certainly contains $1000 and the
+other might contain $1 million.  You can either take one box or both.
+You cannot change what is in the boxes.  Therefore, to maximize your
+gain you should take both boxes.
+
+However, it might be argued that you can change the probability that
+the $1 million is there.  Since there is no way to change whether the
+million is in the box or not, what does it mean that you can change
+the probability that the million is in the box?  It means that your
+choice is correlated with the state of the box.
+
+Events which proceed from a common cause are correlated.  My mental
+states lead to my choice and, very probably, to the state of the box.
+Therefore my choice and the state of the box are highly correlated.
+In this sense, my choice changes the "probability" that the money is
+in the box.  However, since your choice cannot change the state of the
+box, this correlation is irrelevant.
+
+The following argument might be made: your expected gain if you take
+both boxes is (nearly) $1000, whereas your expected gain if you take
+one box is (nearly) $1 million, therefore you should take one box.
+However, this argument is fallacious.  In order to compute the
+expected gain, one would use the formulas:
+
+	E(take one) =	$0 * P(predict take both | take one) + 
+				$1,000,000 * P(predict take one | take one)
+	E(take both) =	$1,000 * P(predict take both | take both) +
+				$1,001,000 * P(predict take one | take both)
+
+While you are given that P(do X | predict X) is high, it is not given
+that P(predict X | do X) is high.  Indeed, specifying that P(predict X
+| do X) is high would be equivalent to specifying that the being could
+use magic (or reverse causality) to fill the boxes.  Therefore, the
+expected gain from either action cannot be determined from the
+information given.
+
+
+==> decision/prisoners.p <==
+Three prisoners on death row are told that one of them has been chosen
+at random for execution the next day, but the other two are to be
+freed.  One privately begs the warden to at least tell him the name of
+one other prisoner who will be freed.  The warden relents: 'Susie will
+go free.'  Horrified, the first prisoner says that because he is now
+one of only two remaining prisoners at risk, his chances of execution
+have risen from one-third to one-half!  Should the warden have kept his
+mouth shut?
+
+==> decision/prisoners.s <==
+Each prisoner had an equal chance of being the one chosen to be
+executed.  So we have three cases:
+
+Prisoner executed:         A    B    C
+Probability of this case: 1/3  1/3  1/3
+
+Now, if A is to be executed, the warden will randomly choose either B or C,
+and tell A that name.  When B or C is the one to be executed, there is only
+one prisoner other than A who will not be executed, and the warden will always
+give that name.  So now we have:
+
+Prisoner executed:  A    A    B    C
+Name given to A:    B    C    C    B
+Probability:       1/6  1/6  1/3  1/3
+
+We can calculate all this without knowing the warden's answer.
+When he tells us B will not be executed, we eliminate the middle two
+choices above.  Now, among the two remaining cases, C is twice
+as likely as A to be the one executed.  Thus, the probability that
+A will be executed is still 1/3, and C's chances are 2/3.
+
+==> decision/red.p <==
+I show you a shuffled deck of standard playing cards, one card at a
+time.  At any point before I run out of cards, you must say "RED!".
+If the next card I show is red (i.e. diamonds or hearts), you win.  We
+assume I the "dealer" don't have any control over what the order of
+cards is.
+
+The question is, what's the best strategy, and what is your
+probability of winning ?
+
+==> decision/red.s <==
+If a deck has n cards, r red and b black, the best strategy wins
+with a probability of r/n.  Thus, you can say "red" on the first card,
+the last card, or any other card you wish.
+Proof by induction on n.  The statement is clearly true for one-card decks.
+Suppose it is true for n-card decks, and add a red card.
+I will even allow a nondeterministic strategy, meaning you say "red"
+on the first card with probability p.  With probability 1-p,
+you watch the first card go by, and then apply the "optimal" strategy
+to the remaining n-card deck, since you now know its composition.
+The odds of winning are therefore: p * (r+1)/(n+1)  +
+        (1-p) * ((r+1)/(n+1) * r/n  +  b/(n+1) * (r+1)/n).
+After some algebra, this becomes (r+1)/(n+1) as expected.
+Adding a black card yields: p * r/(n+1)  +
+        (1-p) * (r/(n+1) * (r-1)/n  +  (b+1)/(n+1) * r/n).
+This becomes r/(n+1) as expected.
+
+==> decision/rotating.table.p <==
+Four glasses are placed upside down in the four corners of a square
+rotating table.  You wish to turn them all in the same direction,
+either all up or all down.  You may do so by grasping any two glasses
+and, optionally, turning either over.  There are two catches:  you are
+blindfolded and the table is spun after each time you touch the
+glasses.  Assuming that a bell rings when you have all the glasses up,
+how do you do it?
+
+==> decision/rotating.table.s <==
+1.  Turn two adjacent glasses up.
+2.  Turn two diagonal glasses up.
+3.  Pull out two diagonal glasses.  If one is down, turn it up and you're done.
+    If not, turn one down and replace.
+4.  Take two adjacent glasses.  Invert them both.
+5.  Take two diagonal glasses.  Invert them both.
+
+References
+    "Probing the Rotating Table"
+    W. T. Laaser and L. Ramshaw
+    _The Mathematical Gardner_,
+    Wadsworth International, Belmont CA 1981.
+
+	... we will see that such a procedure exists if and
+	only if the parameters k and n satisfy the inequality
+	k >= (1-1/p)n, where p is the largest prime factor
+	of n.
+
+The paper mentions (without discussing) two other generalizations:
+more than two orientations of the glasses (Graham and Diaconis)
+and more symmetries in the table, e.g. those of a cube (Kim).
+
+==> decision/stpetersburg.p <==
+What should you be willing to pay to play a game in which the payoff is
+calculated as follows:  a coin is flipped until it comes up heads on the
+nth toss and the payoff is set at 2^n dollars?
+
+==> decision/stpetersburg.s <==
+Classical decision theory says that you should be willing to pay any
+amount up to the expected value of the wager.  Let's calculate the
+expected value:  The probability of winning at step n is 2^-n, and the
+payoff at step n is 2^n, so the sum of the products of the
+probabilities and the payoffs is:
+
+    E = sum over n (2^-n * 2^n) = sum over n (1) = infinity
+
+So you should be willing to pay any amount to play this game.  This is
+called the "St. Petersburg Paradox."
+
+The classical solution to this problem was given by Bernoulli.  He
+noted that people's desire for money is not linear in the amount of
+money involved.  In other words, people do not desire $2 million twice
+as much as they desire $1 million.  Suppose, for example, that people's
+desire for money is a logarithmic function of the amount of money.
+Then the expected VALUE of the game is:
+
+    E = sum over n (2^-n * C * log(2^n)) = sum over n (2^-n * C' * n) =  C''
+
+Here the C's are constants that depend upon the risk aversion of the
+player, but at least the expected value is finite.  However, it turns
+out that these constants are usually much higher than people are really
+willing to pay to play, and in fact it can be shown that any
+non-bounded utility function (map from amount of money to value of
+money) is prey to a generalization of the St. Petersburg paradox.  So
+the classical solution of Bernoulli is only part of the story.
+
+The rest of the story lies in the observation that bankrolls are always
+finite, and this dramatically reduces the amount you are willing to bet
+in the St. Petersburg game.
+
+To figure out what would be a fair value to charge for playing the game
+we must know the bank's resources.  Assume that the bank has 1 million
+dollars (1*K*K = 2^20).  I cannot possibly win more than $1 million
+whether I toss 20 tails in a row or 2000.
+
+Therefore my expected amount of winning is 
+
+    E = sum n up to 20 (2^-n * 2^n) = sum n up to 20 (1) = $20
+
+and my expected value of winning is 
+
+    E = sum n up to 20 (2^-n * C * log(2^n)) = some small number
+
+This is much more in keeping with what people would really pay to
+play the game.
+
+Incidentally, T.C. Fry suggested this change to the problem in 1928
+(see W.W.R. Ball, Mathematical Recreations and Essays, N.Y.: Macmillan,
+1960, pp.  44-45).
+
+The problem remains interesting when modified in this way,
+for the following reason. For a particular value of the bank's
+resources, let
+
+      e denote the expected value of the player's winnings; and let
+      p denote the probability that the player profits from the game, assuming
+        the price of getting into the game is 0.8e (20% discount).
+
+Note that the expected value of the player's profit is 0.2e.  Now
+let's vary the bank's resources and observe how e and p change.  It
+will be seen that as e (and hence the expected value of the profit)
+increases, p diminishes.  The more the game is to the player's
+advantage in terms of expected value of profit, the less likely it is
+that the player will come away with any profit at all.  This 
+is mildly counterintuitive.
+
+==> decision/truel.p <==
+A, B, and C are to fight a three-cornered pistol duel.  All know that
+A's chance of hitting his target is 0.3, C's is 0.5, and B never misses.
+They are to fire at their choice of target in succession in the order
+A, B, C, cyclically (but a hit man loses further turns and is no longer
+shot at) until only one man is left.  What should A's strategy be?
+
+==> decision/truel.s <==
+This is problem 20 in Mosteller _Fifty Challenging Problems in Probability_
+and it also appears (with an almost identical solution) on page 82 in
+Larsen & Marx _An Introduction to Probability and Its Applications_.
+
+Here's Mosteller's solution:
+
+  A is naturally not feeling cheery about this enterprise.  Having the
+first shot he sees that, if he hits C, B will then surely hit him, and
+so he is not going to shoot at C.  If he shoots at B and misses him,
+then B clearly {I disagree; this is not at all clear!} shoots the more
+dangerous C first, and A gets one shot at B with probability 0.3 of
+succeeding.  If he misses this time, the less said the better.  On the
+other hand, suppose A hits B.  Then C and A shoot alternately until one
+hits.  A's chance of winning is (.5)(.3) + (.5)^2(.7)(.3) +
+(.5)^3(.7)^2(.3) + ... .  Each term corresponds to a sequence of misses
+by both C and A ending with a final hit by A.  Summing the geometric
+series we get ... 3/13 < 3/10.  Thus hitting B and finishing off with
+C has less probability of winning for A than just missing the first shot.
+So A fires his first shot into the ground and then tries to hit B with
+his next shot.  C is out of luck.
+
+As much as I respect Mosteller, I have some serious problems with this
+solution.  If we allow the option of firing into the ground, then if
+all fire into the ground with every shot, each will survive with
+probability 1.  Now, the argument could be made that a certain
+strategy for X that both allows them to survive with probability 1
+*and* gives less than a probability of survival of less than 1 for
+at least one of their foes would be preferred by X.  However, if
+X pulls the trigger and actually hits someone what would the remaining
+person, say Y, do?  If P(X hits)=1, clearly Y must try to hit X, since
+X firing at Y with intent to hit dominates any other strategy for X.
+If P(X hits)<1 and X fires at Y with intent to hit, then
+P(Y survives)<1 (since X could have hit Y).  Thus, Y must insure that
+X can not follow this strategy by shooting back at X (thus insuring
+that P(X survives)<1).  Therefore, I would conclude that the ideal
+strategy for all three players, assuming that they are rational and
+value survival above killing their enemies, would be to keep firing
+into the ground.  If they don't value survival above killing their
+enemies (which is the only a priori assumption that I feel can be
+safely made in the absence of more information), then the problem
+can't be solved unless the function each player is trying to maximize
+is explicitly given.
+-- 
+    -- clong@remus.rutgers.edu (Chris Long)
+
+OK - I'll have a go at this.
+
+How about the payoff function being 1 if you win the "duel" (i.e. if at some
+point you are still standing and both the others have been shot) and 0
+otherwise? This should ensure that an infinite sequence of deliberate misses
+is not to anyone's advantage. Furthermore, I don't think simple survival
+makes a realistic payoff function, since people with such a payoff function
+would not get involved in the fight in the first place!
+
+[ I.e. I am presupposing a form of irrationality on the part of the
+  fighters: they're only interested in survival if they win the duel. Come
+  to think of it, this may be quite rational - spending the rest of my life
+  firing a gun into the ground would be a very unattractive proposition to
+  me :-)
+]
+
+Now, denote each position in the game by the list of people left standing,
+in the order in which they get their turns (so the initial position is
+(A,B,C), and the position after A misses the first shot (B,C,A)). We need to
+know the value of each possible position for each person.
+
+By definition:
+
+    valA(A) = 1            valB(A) = 0            valC(A) = 0
+    valA(B) = 0            valB(B) = 1            valC(B) = 0
+    valA(C) = 0            valB(C) = 0            valC(C) = 1
+
+Consider the two player position (X,Y). An infinite sequence of misses has
+value zero to both players, and each player can ensure a positive payoff by
+trying to shoot the other player. So both players deliberately missing is a
+sub-optimal result for both players. The question is then whether both
+players should try to shoot the other first, or whether one should let the
+other take the first shot. Since having the first shot is always an
+advantage, given that some real shots are going to be fired, both players
+should try to shoot the other first. It is then easy to establish that:
+
+    valA(A,B) = 3/10       valB(A,B) = 7/10       valC(A,B) = 0
+    valA(B,A) = 0          valB(B,A) = 1          valC(B,A) = 0
+    valA(B,C) = 0          valB(B,C) = 1          valC(B,C) = 0
+    valA(C,B) = 0          valB(C,B) = 5/10       valC(C,B) = 5/10
+    valA(C,A) = 3/13       valB(C,A) = 0          valC(C,A) = 10/13
+    valA(A,C) = 6/13       valB(A,C) = 0          valC(A,C) = 7/13
+
+Now for the three player positions (A,B,C), (B,C,A) and (C,A,B). Again, the
+fact that an infinite sequence of misses is sub-optimal for all three
+players means that at least one player is going to decide to fire. However,
+it is less clear than in the 2 player case that any particular player is
+going to fire. In the 2 player case, each player knew that *if* it was
+sub-optimal for him to fire, then it was optimal for the other player to
+fire *at him* and that he would be at a disadvantage in the ensuing duel
+because of not having got the first shot. This is not necessarily true in
+the 3 player case.
+
+Consider the payoff to A in the position (A,B,C). If he shoots at B, his
+expected payoff is:
+
+    0.3*valA(C,A) + 0.7*valA(B,C,A) = 9/130 + 0.7*valA(B,C,A)
+
+If he shoots at C, his expected payoff is:
+
+    0.3*valA(B,A) + 0.7*valA(B,C,A) = 0.7*valA(B,C,A)
+
+And if he deliberately misses, his expected payoff is:
+
+    valA(B,C,A)
+
+Since he tries to maximise his payoff, we can immediately eliminate shooting
+at C as a strategy - it is strictly dominated by shooting at B. So A's
+expected payoff is:
+
+    valA(A,B,C) = MAX(valA(B,C,A), 9/130 + 0.7*valA(B,C,A))
+
+A similar argument shows that C's expected payoffs in the (C,A,B) position are:
+
+    For shooting at A: 0.5*valC(A,B,C)
+    For shooting at B: 35/130 + 0.5*valC(A,B,C)
+    For missing:       valC(A,B,C)
+
+So C either shoots at B or deliberately misses, and:
+
+    valC(C,A,B) = MAX(valC(A,B,C), 35/130 + 0.5*valC(A,B,C))
+
+Each player can obtain a positive expected payoff by shooting at one of the
+other players, and it is known that an infinite sequence of misses will
+result in a zero payoff for all players. So it is known that some player's
+strategy must involve shooting at another player rather than deliberately
+missing.
+
+Now look at this from the point of view of player B. He knows that *if* it
+is sub-optimal for him to shoot at another player, then it is optimal for at
+least one of the other players to shoot. He also knows that if the other
+players choose to shoot, they will shoot *at him*. If he deliberately
+misses, therefore, the best that he can hope for is that they miss him and
+he is presented with the same situation again. This is clearly less good for
+him than getting his shot in first. So in position (B,C,A), he must shoot at
+another player rather than deliberately miss.
+
+B's expected payoffs are:
+
+    For shooting at A: valB(C,B) = 5/10
+    For shooting at C: valB(A,B) = 7/10
+
+So in position (B,C,A), B shoots at C for an expected payoff of 7/10. This
+gives us:
+
+    valA(B,C,A) = 3/10     valB(B,C,A) = 7/10     valC(B,C,A) = 0
+
+So valA(A,B,C) = MAX(3/10, 9/130 + 21/100) = 3/10, and A's best strategy is
+position (A,B,C) is to deliberately miss, giving us:
+
+    valA(A,B,C) = 3/10     valB(A,B,C) = 7/10     valC(A,B,C) = 0
+
+And finally, valC(C,A,B) = MAX(0, 35/130 + 0) = 7/26, and C's best strategy
+in position (C,A,B) is to shoot at B, giving us:
+
+    valA(C,A,B) = 57/260   valB(C,A,B) = 133/260  valC(C,A,B) = 7/26
+
+I suspect that, with this payoff function, all positions with 3 players can
+be resolved. For each player, we can establish that if their correct
+strategy is to fire at another player, then it is to fire at whichever of
+the other players is more dangerous. The most dangerous of the three players
+then finds that he has nothing to lose by firing at the second most
+dangerous.
+
+Questions:
+
+(a) In the general case, what are the optimal strategies for the other two
+    players, possibly as functions of the hit probabilities and the cyclic
+    order of the three players?
+
+(b) What happens in the 4 or more player case?
+
+    -- David Seal <dseal@armltd.co.uk>
+
+In article <1993Mar25.022459.10269@cs.cornell.edu>, karr@cs.cornell.edu (David Karr) writes:
+> The Good, the Bad, and the Ugly are standing at three equidistant
+      "P"       "Q"          "R"      -- allow me these alternate names.
+> points around a very large circle, about to fight a three-way duel to
+> see who gets the treasure.  They all know that the Good hits with
+> probability p=.9, the Bad hits with probability q=.7, and the Ugly
+> hits with probability r=.5.
+> 
+> Yes, I know this sounds like decision/truel from the rec.puzzles
+> archive.  But here's the difference:
+> 
+> At some instant, all three will fire simultaneously, each at a target
+> of his choice.  Then any who survive that round fire simultaneously
+> again, until at most one remains.  Note that there are then four
+> possible outcomes: the Good wins, the Bad wins, the Ugly wins, or all
+> are killed.
+
+	A multi-round multi-person game can get complicated if implicit
+	alliances are formed or the players deduce each other's strategies.
+	For simplicity let's disallow communication and assume the players
+	forget who shot at whom after each round.
+> 
+> Now the questions:
+
+	These are not easy questions, even with the simplifying
+	assumptions I've made.
+
+> 
+> 1. What is each shooter's strategy?
+
+	Each player has two possible strategies so there are eight cases
+	to consider; unfortunately none of the players has a strictly
+	dominant strategy:
+
+P aims at Q aims at R aims at	P survival Q survival R survival Noone lives
+--------- --------- ---------   ---------- ---------- ---------- -----------
+    Q         P         P         0.0649     0.0355     0.7991     0.1005
+    Q         P         Q         0.1371     0.0146     0.6966     0.1517
+ *  Q         R         P         0.3946     0.0444     0.1470     0.4140
+    Q         R         Q         0.8221     0.0026     0.0152     0.1601
+    R         P         P         0.0381     0.8221     0.0152     0.1246
+ *  R         P         Q         0.1824     0.3443     0.0426     0.4307
+    R         R         P         0.1371     0.5342     0.0027     0.3260
+    R         R         Q         0.6367     0.0355     0.0008     0.3270
+
+	(The similarity of, say, the 4th and 5th lines here looks wrong:
+	the intermediate expressions are quite different.  I can't
+	explain *why* P_survival(q,r,q) = Q_survival(r,p,p) = 0.8221
+	but I *have* double-checked this result.)
+
+	If I *know* who my opponents are going to aim at, I should shoot
+	at the better shooter if they're both aiming at me or neither is
+	aiming at me.  Otherwise I should aim at whoever is *not* aiming
+	at me.  There are two equilibrium points (marked "*" above):
+		Good aims at Bad; Bad aims at Ugly; Ugly aims at Good.
+	and
+		Good aims at Ugly; Bad aims at Good; Ugly aims at Bad.
+	Here, unlike for zero-sum two-person games, the equilibria
+	are *not* equivalent and "solution", if any, may lie elsewhere.
+	Perhaps a game-theorist lurking in r.p can offer a better comment.
+
+	Note that the probability all three shooters die is highest at
+	the equilibria!  This seems rather paradoxical and rather sad :-(
+> 
+> 2. Who is most likely to survive?
+
+	Good, Bad, or Ugly, depending on the strategies.
+> 
+> 3. Who is least likely to survive?
+> 
+	Bad or Ugly, depending on the strategies.
+
+> 4. Can you change p, q, and r under the constraint p > q > r so that
+>    the answers to questions 2 and 3 are reversed?  Which of the six
+>    possible permutations of the three shooters is a possible ordering
+>    of probability of survival under the constraint p > q > r?
+
+	Yes.  Of the six possible survival-probability orderings,
+	five can be obtained readily:
+		p	q	r	P_surv	Q_surv	R_surv	Order
+		---	---	---	------	------	------	-------
+		0.255	0.25	0.01	0.408	0.413	0.172	Q P R
+		0.26	0.25	0.01	0.412	0.406	0.173	P Q R
+		0.75	0.25	0.01	0.675	0.076	0.242	P R Q
+		0.505	0.50	0.01	0.325	0.324	0.344	R P Q
+		0.505	0.50	0.02	0.314	0.320	0.353	R Q P
+
+	Unlike the p=.9, q=.7, r=.5 case we are given, the five cases
+	in this table *do* have simple pure solutions: in each case
+	p shoots at q, while q and r each shoot at p.  (I've found no
+	case with a "simple pure" solution other than this "obvious"
+	p aims at q, q aims at p, r aims at p choice.)
+
+> 
+> 5. Are there any value of p, q, and r for which it is ever in the
+>    interest of one of the shooters to fire into the ground?
+
+	No.  It can't hurt to shoot at one's stronger opponent.
+	This is the easiest of the questions ... but it's still
+	not easy enough for me to construct an elegant proof
+	in English.
+
+> 
+> -- David Karr (karr@cs.cornell.edu)
+> 
+	Speaking of decision/truel, I recall a *very* interesting
+	analysis (I *might* have seen it here in rec.puzzles) suggesting
+	that the N-person "truel" (N-uel?) has a Cooperative Solution
+	(ceasefire) if and only if N = 3.  But I don't see this in the
+	FAQL; anyone care to repost it?
+
+-- James Allen
+
+In article <1993Apr1.123404.18039@vax5.cit.cornell.edu> mkt@vax5.cit.cornell.edu writes:
+>In article <1993Mar25.022459.10269@cs.cornell.edu>, karr@cs.cornell.edu (David Karr) writes:
+[...]
+>> 5. Are there any value of p, q, and r for which it is ever in the
+>>    interest of one of the shooters to fire into the ground?
+>> 
+>     Yes, p=1, q=1, r=1.  The only way for one to survive is to have the other
+>     two shoot at eachother.  Shooting at anyone has no effect on ones personal
+>     survival.
+
+I assume by "has no effect on" you mean "does not improve."
+
+>  If all follow the same logic, they will keep shooting into the
+>     ground and thus all live.
+
+I was very pleased by this answer but I had to think about it.  First
+of all, it assumes that continuing the fight forever has a positive
+value for each shooter.  My preferred assumption is that it doesn't.
+But even if each shooter is simply trying to maximize his probability
+of never being shot, I wonder about the "has no effect" statement.
+
+Suppose that in round 1 the Good fires into the ground and the Bad
+shoots at the Good.  Then the Ugly lives if he shoots the Bad and dies
+if he does anything else.  (The Bad will surely shoot at the Ugly if
+he can in round 2, since this dominates any other strategy.)  So it
+definitely makes a difference to the Ugly in this case to shoot at the
+Bad.
+
+But all this is under the assumption that no shooter can tell what
+the others are about to do until after all have shot.  This isn't
+entirely unreasonable--we can certainly set up a game that plays
+this way--but suppose we assume instead:
+
+  All three start out with guns initially holstered.
+  Each one is a blindingly fast shot: he can grab his holstered gun,
+    aim, and fire in 0.6 second.
+  A shooter can redirect his unholstered gun at a different target and 
+    fire in just 0.4 second.
+  The reaction time of each shooter is just 0.2 second.  That is, any
+    decision he makes to act can be based only on the actions of the 
+    other two up to 0.2 second before he initiates his own action.
+  The bullets travel between shooters in less than 0.1 second and
+    stop any further action when they hit.
+
+Then I *think* the conclusion holds for p=q=r=1: The best strategy is
+to wait for someone else to grab for their gun, then shoot that
+person, therefore nobody will shoot at anyone.  At least I haven't yet
+thought of a case in which you improve your survival by shooting at
+anyone.  Of course this is only good if you don't mind waiting around
+the circle forever.
+
+-- David Karr (karr@cs.cornell.edu)
+
+In article <1993Apr5.210749.2657@cs.cornell.edu>,
+karr@cs.cornell.edu (David Karr) writes: 
+> In article <1993Apr1.123404.18039@vax5.cit.cornell.edu> mkt@vax5.cit.cornell.edu writes:
+>>In article <1993Mar25.022459.10269@cs.cornell.edu>, karr@cs.cornell.edu (David Karr) writes:
+> [...]
+>>> 5. Are there any value of p, q, and r for which it is ever in the
+>>>    interest of one of the shooters to fire into the ground?
+>>> 
+>>     Yes, p=1, q=1, r=1.  The only way for one to survive is to have the other
+>>     two shoot at eachother.  Shooting at anyone has no effect on ones personal
+>>     survival.
+
+> 
+> I assume by "has no effect on" you mean "does not improve."
+> 
+>>  If all follow the same logic, they will keep shooting into the
+>>     ground and thus all live.
+> 
+> I was very pleased by this answer but I had to think about it.  First
+> of all, it assumes that continuing the fight forever has a positive
+> value for each shooter.  My preferred assumption is that it doesn't.
+> But even if each shooter is simply trying to maximize his probability
+> of never being shot, I wonder about the "has no effect" statement.
+> 
+> Suppose that in round 1 the Good fires into the ground and the Bad
+> shoots at the Good.  Then the Ugly lives if he shoots the Bad and dies
+> if he does anything else.  (The Bad will surely shoot at the Ugly if
+> he can in round 2, since this dominates any other strategy.)  So it
+> definitely makes a difference to the Ugly in this case to shoot at the
+> Bad.
+> 
+
+Here's where the clincher comes in!  If we "assume" the object of the game
+is to survive, and that there exists _one_ unique method for survival, then
+all the shooters will behave in the same fashion.  Obviously the above case
+will not hold.  How do we distinguish between the good, the bad and the ugly?
+If the command is "Shoot" then all will shoot and somebody is going to wind up
+lucky (Prob that it is you is 1/3).  If the command is "No Shoot", then all
+will fire into the ground (or just give up and go home--no sense waitin' around
+wastin' time, ya know)...
+
+But wait, you cry!  What if there exists _more than one_ solution for optimal
+survival.  Then what?  Will the Good the Bad and the Ugly each randomly decide
+between "Shoot" and "No Shoot" with .5 probability?  If this is true, then is
+it in your best interest to shoot someone?  If it is, then we arrive back at
+square one:  since we assume all shooters are geniouses, then all will shoot--
+arriving at an optimal solution of "Shooting".  If the answer is "No Shooting",
+we arrive at an optimal solution of "No Shooting".  If there is no effect on
+your personal survival, then do we analyze this with another .5 probability
+between the chances of soemone shooting or not shooting?  If the answer to this
+is "Shoot" then we arrive at square one:  all will Shoot; if no, then all will 
+withold.  If there is no effect, then we arrive at another .5 probability...
+Obviously you can see the recursion of this process.
+
+Perhaps this would be easier to discuss if we let p=1, q=1, r=0.  Obviously, in
+terms of survival, shooting at the ugly would be wasting a shot.  Thus we have 
+made a complex problem more simple but retaining the essence of the paradox:
+
+ If there are two gunmen who shoot and think with perfect logic and are kept
+ inside a room and are allowed to shoot at discrete time intervals without
+ being able to "see" what your opponent will do, what will happen?
+
+Let's say that you are one of the gunmen (the Good).  You reason "My probability
+to survive the next round is independent on whether or not I fire at him."  So
+you say to yourself, "Fire at the opponent!  I'll get to stop playing this
+blasted game." But then you realize that your opponent will also think the same
+way...so you might think that you might as well not shoot.  But if your
+opponent thinks that way, then you know that:  1.  You can survive the next
+round.  2.  You can shoot him if you wish on this round (if you like).  So you
+say to yourself, "Fire at the opponent!".  But you know the opponent thinks the
+same way so... you're dead.  But really, you say.  Is there a way of "knowing"
+what the opponent thinks?  Of course not.  You reason that you can know your
+probability of shooting your opponent (either 1 or 0).  You reason that your
+opponent has a variable probability of shooting you.  Thus from your
+perspective, p=1 and r<1.  We already discussed this case and said "Shoot!". 
+But wait you cry!  What if the opponent figures this out too:  p<1, r=1?  Sorry,
+you're both dead.  'nuff said!  This applies to the p=r=q=1 case as well.
+
+> But all this is under the assumption that no shooter can tell what
+> the others are about to do until after all have shot.  
+
+Ay, there's the rub!
+
+>This isn't entirely unreasonable--we can certainly set up a game that plays
+> this way--but suppose we assume instead:
+> 
+>   All three start out with guns initially holstered.
+>   Each one is a blindingly fast shot: he can grab his holstered gun,
+>     aim, and fire in 0.6 second.
+>   A shooter can redirect his unholstered gun at a different target and 
+>     fire in just 0.4 second.
+>   The reaction time of each shooter is just 0.2 second.  That is, any
+>     decision he makes to act can be based only on the actions of the 
+>     other two up to 0.2 second before he initiates his own action.
+>   The bullets travel between shooters in less than 0.1 second and
+>     stop any further action when they hit.
+> 
+> Then I *think* the conclusion holds for p=q=r=1: The best strategy is
+> to wait for someone else to grab for their gun, then shoot that
+> person, therefore nobody will shoot at anyone.  At least I haven't yet
+> thought of a case in which you improve your survival by shooting at
+> anyone.  Of course this is only good if you don't mind waiting around
+> the circle forever.
+
+Hmmn...alternate ploy:
+
+0.0  You begin to unholster your gun
+0.2  Opponents begin unholstering guns.  You aim into the ground for .2 sec.
+0.4  Opponents are unholstered you are unholstered.  They note you aren't
+     aiming at them.  They haven't aimed at anyone yet.
+
+What happens now?  I'll have to think about it, but I haven't seen anything
+fundamentally different between this and the above case yet.
+
+More ideas to consider:
+
+You begin unholstering your gun but only for .1  sec (you place it by .2 )
+You begin unholstering your gun but only for .09 sec (you place it by .19)
+
+You start to aim for .1  sec and then stop aiming.
+You start to aim for .1  sec and then turn and aim at another.
+You start to aim for .09 sec and then stop aiming (or aim at another)
+
+-Greg
+
+Looking at the answer for decision/truel, I came across the following:
+
+>Each player can obtain a positive expected payoff by shooting at one of the
+>other players, and it is known that an infinite sequence of misses will
+>result in a zero payoff for all players. So it is known that some player's
+>strategy must involve shooting at another player rather than deliberately
+>missing.
+
+This may be true but it's not obvious to me.  For example, suppose A, B,
+and C are passengers in a lifeboat in a storm.  If they all stay aboard,
+the lifeboat is certain to sink eventually, taking all three to the 
+bottom with it.  If anyone jumps overboard, the two remaining in the
+boat are guaranteed to survive, while the person who jumped has a 1%
+chance of survival.
+
+It seems to me the lifeboat satisfies the quoted conditions, in the
+sense that if nobody jumps then the payoff for all is zero, and the
+payoff for jumping is 0.01 which is positive.  But it is not clear to
+me that the three shouldn't just all sit still until someone goes nuts
+and jumps overboard despite everything, for this strategy gives a 67%
+chance of survival (assuming everyone is equally likely to "crack"
+first) vs. only 1% for jumping by choice.  Even if there is a wave
+about to swamp the boat, I'd wonder if the situation wouldn't just
+reduce to a game of "chicken," with each person waiting until the last
+minute and jumping only if it seems the other two have decided to sink
+with the boat if you don't jump.
+
+On the other hand, this situation is set up so it is always worse to
+be the first person to jump.  In the truel I don't think this is true,
+but only because of the asymmetry of the odds, and to determine
+whether *anyone* shoots, it is easiest to proceed directly to
+considering B's point of view.
+
+Whenever it is B's turn to shoot, B can divide the possible courses of
+action into four possibilities (actually there are seven, but three
+are ruled out a priori by obvious optimizations of each individual's
+strategy):
+
+Nobody ever shoots (expected value 0)
+A shoots first (at B, expected value <= .7)
+C shoots first (at B, expected value <= .5)
+B shoots first (at C, expected value .7)
+
+In fact the value of "A shoots first" is strictly less than .7 because
+in case A misses, the same four possibilities recur, and all have
+expected payoff < 1.
+
+So the value of "B shoots first" uniquely maximizes B's value function,
+ergo B will always shoot as soon as possible.
+
+The rest of the analysis then follows as in the archive.
+
+-- David Karr (karr@cs.cornell.edu)
+
+> Looking at the answer for decision/truel, I came across the following:
+>
+> >Each player can obtain a positive expected payoff by shooting at one of the
+> >other players, and it is known that an infinite sequence of misses will
+> >result in a zero payoff for all players. So it is known that some player's
+> >strategy must involve shooting at another player rather than deliberately
+> >missing.
+>
+> This may be true but it's not obvious to me.  For example, suppose A, B,
+> and C are passengers in a lifeboat in a storm.  If they all stay aboard,
+> the lifeboat is certain to sink eventually, taking all three to the 
+> bottom with it.  If anyone jumps overboard, the two remaining in the
+> boat are guaranteed to survive, while the person who jumped has a 1%
+> chance of survival.
+>
+> It seems to me the lifeboat satisfies the quoted conditions, in the
+> sense that if nobody jumps then the payoff for all is zero, and the
+> payoff for jumping is 0.01 which is positive.  But it is not clear to
+> me that the three shouldn't just all sit still until someone goes nuts
+> and jumps overboard despite everything, for this strategy gives a 67%
+> chance of survival (assuming everyone is equally likely to "crack"
+> first) vs. only 1% for jumping by choice.  ...
+
+Yes and no. Yes in the sense that if you treat the game as a psychological
+one, the best strategy is as you say. But treating it as a mathematical
+game, you've got to adhere to your strategy and you've got to assume that
+others will adhere to theirs.
+
+I.e. as a mathematical game, "Don't jump at all" and "Don't jump unless I
+crack" are different strategies, and the first one is often (not always)
+superior - e.g. if I take "Don't jump at all" and the others take "Don't
+jump unless I crack", I'm certain to survive and the others each have a
+50.5% chance, which is better from my point of view than a 67% chance of
+survival for all of us. As a psychological game, some of the mathematical
+strategies may simply not be available - i.e. you cannot control what you
+will do if you crack, and so we commonly use "Don't jump" to mean "Don't
+jump unless I crack", since "Don't jump at all" is not an available strategy
+for most real humans. But for mathematical analysis, the problem has to tell
+you what strategies you are not allowed to take.
+
+What the argument above shows is that "Don't jump at all" is not a stable
+strategy, in the sense that if everyone takes it, it is in everyone's
+interest to change strategy. I.e. it shows that someone will jump
+eventually, even if it's only the result of someone actually having taken
+"Don't jump unless I crack".
+
+Applied to the truel, the argument above *does* show that someone's strategy
+will involve shooting at another player: the strategy "Don't shoot at all"
+is unstable in exactly the same way as "Don't jump at all" was. But I agree
+it allows for a lot of leeway about how and when the deadlock gets broken,
+and your argument showing that it is always in B's interest to shoot is more
+satisfactory.
+
+David Seal
+

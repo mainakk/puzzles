@@ -1,0 +1,1487 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05094; Sat, 20 Apr 1996 15:09:17 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15741; Sat, 20 Apr 96 14:11:50 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25231; Sat, 20 Apr 1996 11:12:40 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (pickover), part 28 of 35
+Message-Id: <puzzles/archive/pickover/part1_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:35 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1460
+Xref: senator-bedfellow.mit.edu rec.puzzles:25011 news.answers:11531 rec.answers:1931
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/pickover/part1
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> pickover/pickover.01.p <==
+Title: Cliff Puzzle 1: Can you beat the numbers game?
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please include your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself.  You might also directly mail me a copy of your response
+in addition to any responding you do in the newsgroup.  I will assume it
+is OK to describe your answer in any article or publication I may write
+in the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+At a recent trip to the Ontario Science Center in Toronto, Canada I came
+across an interesting puzzle.  The center is located minutes from
+downtown Toronto and it's a vast playground of science with hundreds of
+exhibits inviting you to touch, try, test, and titillate your curiosity.
+The puzzle I saw there can be stated as follows.  In the 10 boxes below,
+write a 10-digit number.  The digit in the first box indicates the total
+number of zeros in the entire number.  The box marked "1" indicates the
+total number of 1's in the number.  The box marked "2" indicates the
+total number of 2's in the number, and so on.  For example, the "3" in
+the box labeled "0" would indicate that there must be exactly three 0's
+in the 10-digit number.
+
+-------------------------------
+| 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|
+| 3|  |  |  |  |  |  |  |  |  |
+-------------------------------
+
+
+Stop And Think
+
+1. Is there a solution to this problem?  Are there many solutions to this
+problem?
+
+2. A more advanced an interesting problem is to continue to
+generate a sequence in a recursive fashion such that each row becomes
+the sequence for the previous.  For example, start with the usual
+0 through 9 digits in row 1:
+
+Row 1: 0 1 2 3 4 5 6 7 8 9
+
+Assume Row 2 is your solution to the puzzle.  I've just inserted random
+digits below so as not to give away the solution:
+
+
+Row 1: 0 1 2 3 4 5 6 7 8 9   S(1)
+Row 2: 9 3 2 3 3 1 6 7 8 9   S(2)
+Row 3:                       S(3)
+
+Row 2 is now the starting point, and your next job is to form row 3, row 4,
+etc. using the same rules.  In the previous example, a digit in the
+first box would indicate how many 9's there are in the next 10-digit number,
+and so forth.
+
+Contest: I am looking for the longest sequence of numbers users can come
+up with using these rules.  Can you find a Row 2 or Row 3?
+Is it even possible to generate a "row 2" or "row 3"?
+
+
+==> pickover/pickover.01.s <==
+1) 0 1 2 3 4 5 6 7 8 9
+2) 6 2 1 0 0 0 1 0 0 0
+3) 0 0 0 4 4 4 0 4 4 4
+4) 6 6 6 0 0 0 6 0 0 0
+5) 0 0 0 4 4 4 0 4 4 4
+           .
+           .
+           .
+
+and so on, repeating rows 3 and 4.
+I don't know yet whether there are multiple solutions, but
+I'll keep looking.
+
+Mark Hayes
+Goddard Space Flight Center (GSFC) / Interferometrics, Inc.
+mwh@gemini.gsfc.nasa.gov
+
+GSFC Code 926.9
+Greenbelt, MD 20771
+
+-------------------------
+
+
+In article <1992Sep14.133741.34561@watson.ibm.com>, you write:
+|> The puzzle I saw there can be stated as follows.  In the 10 boxes below,
+|> write a 10-digit number.  The digit in the first box indicates the total
+|> number of zeros in the entire number.  The box marked "1" indicates the
+|> total number of 1's in the number.  The box marked "2" indicates the
+|> total number of 2's in the number, and so on.  For example, the "3" in
+|> the box labeled "0" would indicate that there must be exactly three 0's
+|> in the 10-digit number.
+|>
+|> -------------------------------
+|> | 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|
+|> | 3|  |  |  |  |  |  |  |  |  |
+|> -------------------------------
+|>
+|>
+|> Stop And Think
+|>
+|> 1. Is there a solution to this problem?  Are there many solutions to this
+|> problem?
+
+This is an old puzzle, but I'll solve it as if it was new because I
+find your extension below to be interesting.
+Since all possible digits must be "counted" once, the ten digits must
+add up to 10.  Consider the first digit (= the amount of zeroes used):
+
+9: Impossible, since all the other digits would have to be zero.
+8: Also impossible, since we must mark a 1 under the 8, and the other
+   digits then must be zeroes.
+7: We must mark a 1 under the 7, and we have one more non-zero digit
+   to assign.  We've used a 1, so we must put a non-zero digit under the 1.
+   However, if we put a 1 there, it's wrong because we've used two ones,
+   and if we put a two that's also wrong.  So 7 zeroes doesn't work.
+6: Begin as before, putting a 1 under the 6.  Now we must mark under the 1,
+   but putting a 1 is wrong, so put a 2.  Now we have one non-zero digit
+   left to assign, and marking a 1 under the two works.  6210001000 works.
+5: Now we take a different approach to analyze this.  If there are only
+   five zeroes, then there are five non-zeroes, one of which is the 5 we
+   marked under the zero.  Obviously a 1 must be marked under the 5 and
+   zeroes under 6-9, so we have 5----10000, where the dashes contain one
+   zero and three other numbers, which must add up to four (since all
+   ten digits must add up to ten) - so we have two ones and a two.  But then
+   the digits we have are described by 5310010000, which is not the set of
+   digits we have, so there is no solution.  Similar proofs show that there
+   cannot be 4,3,2, or 1 zero.
+0: Impossible, since you would have to use a zero to indicate you didn't have
+   a zero.
+
+|> 2. A more advanced an interesting problem is to continue to
+|> generate a sequence in a recursive fashion such that each row becomes
+|> the sequence for the previous.  For example, start with the usual
+|> 0 through 9 digits in row 1:
+|>
+|> Row 1: 0 1 2 3 4 5 6 7 8 9
+|>
+|> Assume Row 2 is your solution to the puzzle.  I've just inserted random
+|> digits below so as not to give away the solution:
+|>
+|>
+|> Row 1: 0 1 2 3 4 5 6 7 8 9   S(1)
+|> Row 2: 9 3 2 3 3 1 6 7 8 9   S(2)
+|> Row 3:                       S(3)
+|>
+|> Row 2 is now the starting point, and your next job is to form row 3, row 4,
+|> etc. using the same rules.  In the previous example, a digit in the
+|> first box would indicate how many 9's there are in the next 10-digit number,
+|> and so forth.
+|>
+|> Contest: I am looking for the longest sequence of numbers users can come
+|> up with using these rules.  Can you find a Row 2 or Row 3?
+|> Is it even possible to generate a "row 2" or "row 3"?
+
+Well, first off, our handy rule about all the digits adding up to ten no
+longer applies.  Let's see if we can find an answer:
+
+Row 1: 0 1 2 3 4 5 6 7 8 9
+Row 2: 6 2 1 0 0 0 1 0 0 0
+Row 3: ?
+
+All the same digits must be placed under all the zeroes in row 2, or some
+of them would be wrong, and this digit cannot be larger than 4 since six
+non-zeroes are used under the zeroes in row 2.  So, consider the cases:
+
+4: If we put 4's under all the zeroes, we must put zeroes everywhere else.
+   0004440444 works.
+3: Now we must place one non-zero digit under either the 6 or the 2, since
+   there are two 1's that must stay alike.  Putting any non-zero digit under
+   the 6 is wrong since there aren't any sixes, unless you put a 6 under
+   the 6, which is still wrong.  Similarly no digit works under the two.
+2: Now we must put a non-zero digit under the 2, since we already used 6 of
+   them.  We must also have two zeroes, which can only go under the ones.
+   This gives us --02220222.  However, we must put a non-zero under the 6,
+   and we can't put a one, since we must have zeroes under the ones.  Any
+   number greater than one is wrong, because we don't have that many 6's.
+1: OK, we start with ---111-111, and one of the -'s must be a zero.  This
+   zero must go under the 2 or the 6, because the ones must be alike (and
+   we've already used some ones).  Suppose we put 6's under the ones, and
+   don't use any more ones.  Then we need a 2 under the 6, and we need
+   a one under the 2, which breaks what we did before.  So, instead put
+   7's under the ones.  Now we must put a 1 and a 0 in the other two spots,
+   but either arrangement is wrong.  We can't put a higher number under the
+   ones because there aren't enough spaces left, so there is no solution
+   with 1 zero.
+0: Self-contradiction, as in the original problem.
+
+So now we have a unique third row.  Can we make a fourth?
+
+Row 1: 0 1 2 3 4 5 6 7 8 9
+Row 2: 6 2 1 0 0 0 1 0 0 0
+Row 3: 0 0 0 4 4 4 0 4 4 4
+
+Now there can only be two different digits used in the next number.  Consider
+the possibilities:
+
+No zero is used: We need to mark this by putting zeroes under the zeroes
+   Self-contradiction.
+Some zeroes are used:  They can't go under the zeroes, so put zeroes under
+   the fours.  Now six zeroes are used, so put 6's under the zeroes.
+   6660006000 works.
+
+The same logic used to find row four shows that row five must be 0004440444
+again, and we get into an infinite cycle alternating between these two.
+
+
+--
+----w-w--------------Joseph  De Vincentis--jwd2@owlnet.rice.edu----------------
+   ( ^ )   Disclaimer: My opinions do not represent those of Owlnet.
+   (O O)   Owlnet: George R. Brown School of Engineering Educational Network.
+    v-v    (Unauthorized use is prohibited.)  (Being uwop-ap!sdn is allowed.)
+           Snail mail: Rice U., 6100 S. Main, Houston TX 77005.
+-------------------------
+
+In rec.puzzles you write:
+
+>Title: Cliff Puzzle 1: Can you beat the numbers game?
+>From: cliff@watson.ibm.com
+
+[...]
+>1. Is there a solution to this problem?  Are there many solutions to this
+>problem?
+
+Yes.  No.
+
+
+>2. A more advanced an interesting problem is to continue to
+>generate a sequence in a recursive fashion such that each row becomes
+>the sequence for the previous.  For example, start with the usual
+>0 through 9 digits in row 1:
+
+[...]
+
+>Contest: I am looking for the longest sequence of numbers users can come
+>up with using these rules.  Can you find a Row 2 or Row 3?
+>Is it even possible to generate a "row 2" or "row 3"?
+
+My program produces the following output:
+	0123456789
+	6210001000
+	no solutions found
+
+So I believe that the result for row 2 is unique and that there is no
+result for row 3.
+
+[ I am including the program at the end of this message just for your interest ]
+
+
+
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+
+The name, address etc should appear in my signature.  As for myself,
+I'm a PhD student due to finish much too shortly who likes solving
+puzzles.
+
+
+
+
+
+
+        						Pauli
+
+Paul Dale                       | grue@cs.uq.oz.au
+Department of Computer Science  | +61 7 365 2445
+University of Queensland        |
+Australia, 4072                 | Did you know that there are 41 two letter
+                                |     words containing the letter 'a'?
+
+The program I used follows:
+--------------------------------------8<------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+#define START(in) for(in=0;in<9;in++) {			\
+			if(sum+in > 10)			\
+				break;			\
+			else				\
+				sum = sum+in;		\
+			counts[digits[in]]++;
+
+#define STOP(in) 	counts[digits[in]]--;		\
+			sum -= in;			\
+		  }
+
+main() {
+short counts[10];
+short i, sum;
+short i0,i1,i2,i3,i4,i5,i6,i7,i8,i9;
+static short digits[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+short solns[10][100];
+short solcnt=0;
+
+	printf("0123456789\n");
+
+again:
+	for(i=0;i<10;i++) counts[i]=0;
+	sum = 0;
+	START(i0)
+	  START(i1)
+	    START(i2)
+	      START(i3)
+		START(i4)
+		  START(i5)
+		    START(i6)
+		      START(i7)
+			START(i8)
+			  START(i9)
+if(counts[0]==digits[i0] && counts[1]==digits[i1] && counts[2]==digits[i2] &&
+			counts[3]==digits[i3] && counts[4]==digits[i4] &&
+			counts[5]==digits[i5] && counts[6]==digits[i6] &&
+			counts[7]==digits[i7] && counts[8]==digits[i8] &&
+			counts[9]==digits[i9]) {
+		printf("%d%d%d%d%d%d%d%d%d%d\n", i0,i1,i2,i3,i4,i5,
+			i6,i7,i8,i9);
+		for(i=0;i<10;i++)
+			solns[0][solcnt] = i0;
+			solns[1][solcnt] = i1;
+			solns[2][solcnt] = i2;
+			solns[3][solcnt] = i3;
+			solns[4][solcnt] = i4;
+			solns[5][solcnt] = i5;
+			solns[6][solcnt] = i6;
+			solns[7][solcnt] = i7;
+			solns[8][solcnt] = i8;
+			solns[9][solcnt] = i9;
+			solcnt++;
+		}
+			  STOP(i9)
+			STOP(i8)
+		      STOP(i7)
+		    STOP(i6)
+		  STOP(i5)
+		STOP(i4)
+	      STOP(i3)
+	    STOP(i2)
+	  STOP(i1)
+	STOP(i0)
+	if(solcnt == 0) {
+		printf("no solutions found\n");
+	} else if(solcnt == 1) {
+		for(i=0;i<10;i++)
+			digits[i] = solns[i][0];
+		solcnt = 0;
+		goto again;
+	} else
+		printf("multiple solutions found\n");
+}
+--------------------------------------8<------------------------------
+
+-------------------------
+
+In article <1992Sep14.133741.34561@watson.ibm.com> you write:
+>Title: Cliff Puzzle 1: Can you beat the numbers game?
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+>
+>* * *
+>At a recent trip to the Ontario Science Center in Toronto, Canada I came
+>across an interesting puzzle.  The center is located minutes from
+>downtown Toronto and it's a vast playground of science with hundreds of
+>exhibits inviting you to touch, try, test, and titillate your curiosity.
+>The puzzle I saw there can be stated as follows.  In the 10 boxes below,
+>write a 10-digit number.  The digit in the first box indicates the total
+>number of zeros in the entire number.  The box marked "1" indicates the
+>total number of 1's in the number.  The box marked "2" indicates the
+>total number of 2's in the number, and so on.  For example, the "3" in
+>the box labeled "0" would indicate that there must be exactly three 0's
+>in the 10-digit number.
+>
+>-------------------------------
+>| 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|
+>| 3|  |  |  |  |  |  |  |  |  |
+>-------------------------------
+>
+>
+>Stop And Think
+>
+>1. Is there a solution to this problem?  Are there many solutions to this
+>problem?
+
+A. Since there are ten digits in the number, the sum of the digits in the bottom
+row must be 10.
+
+B. If x appears under y there must be x appearences of y, hence x*y<10
+So, the MAXIMUM that can appear under each number is:
+---------------------
+|0|1|2|3|4|5|6|7|8|9|
+|9|9|4|3|2|1|1|1|1|1| max
+---------------------
+
+C. In fact, under the numbers 5..9 there can be AT MOST one non-zero (1) answer
+since otherwise two numbers of the 5..9 veriaty would appear and violate rule A.
+
+D. So there must be at least 4 zeros. If there were exactly 4 zeros, then the
+numbers 1..4 will all have under them non-zeros (as the zeros are used up for
+the 5..9 group). There is also at least one number that is 5 or greater. Well,
+there is a 5 (or more), a 4 (under zero), a 1 (under the 5..9 category) and
+something above zero under the other 1..4 digits for a total above 10. This
+violates rule A.
+
+E. So there must be at least 5 zeros. So a (exactly one) number that is at
+least 5 has a 1 under it. (since under zero would appear a >=5 number).
+
+F. Under 1 there must be at least 1 since the solution has at least one 1 (the
+one under a 5..9 number). However it could not be exactly 1 as then there would
+be 2 (or more) 1's in the solution.
+
+G. If there were 3 or more ones, then they must be under 2..9 . But then there
+would be a 5 (or more) under zero + a 3 (or more) under one + a 1 under three
+(or more) other places for a total above 10.
+
+H. So there must be at exactly 2 ones in the solution. And hence, at least 1
+under two.
+
+We can summerize:
+
+---------------------
+|0|1|2|3|4|5|6|7|8|9|
+|5|2|1|0|0|----1----| min
+|6|2|2|1|1|----1----| max
+---------------------
+where the maximum under each digit is 10 - SUM(minimum of all others)
+
+I. Since no 3 or 4 is now possible, those two numbers must have a zero under
+them.
+
+J. So there are six zeros. Hence:
+---------------------
+|0|1|2|3|4|5|6|7|8|9|
+|6|2|1|0|0|0|1|0|0|0| min
+|6|2|2|0|0|0|1|0|0|0| max
+---------------------
+
+K. Notice that "min" is a solution, while "max" is not. Hence, "min is the
+*ONLY* solution!
+
+
+My name is Dan Shoham. This is the only fact about me I care to make public.
+You are free to attribute it, but provide me a note when you do so.
+
+shoham@ll.mit.edu
+-------------------------
+
+>From clong@romulus.rutgers.edu (Chris Long) Tue Sep 15 06:08:45 1992
+Path: igor.rutgers.edu!romulus.rutgers.edu!clong
+From: clong@romulus.rutgers.edu (Chris Long)
+Newsgroups: rec.puzzles
+Subject: Re: Puzzle 1 (SPOILER)
+Message-ID: <Sep.15.06.08.45.1992.9569@romulus.rutgers.edu>
+Date: 15 Sep 92 10:08:45 GMT
+References: <1992Sep14.133741.34561@watson.ibm.com> <1992Sep15.052438.12478@questrel.com>
+Organization: Rutgers Univ., New Brunswick, N.J.
+Lines: 62
+
+In article <1992Sep15.052438.12478@questrel.com>, Chris Cole writes:
+
+Chris, don't forget to include my name on my solutions in the FAQ,
+please.  My old article should be replaced with the following in the
+FAQ, anyway:
+
+--Cut here--
+Solution prepared by Chris Long.
+
+Unfortunately, this isn't completely new, since I believe a similar
+puzzle I posted and answered are in the FAQ.  However, it *is* different
+enough to be interesting.
+
+In article <1992Mar3.164702.428@hls.com>, ravi@hls.com writes:
+
+> Here's a small number puzzle :
+
+> 	Generate numbers such that the each digit in the number specifies
+> the number of the occurences of the position of the digit ( postions starting
+> with 0 from the left ). Example
+
+> 	The number 1210
+...
+
+My guess is only:
+
+1210
+21200
+
+3211000
+42101000
+521001000
+6210001000
+
+No 1, 2, or 3 digit numbers are possible.  Letting x_i be the ith
+digit, starting with 0, we see that (1) x_0 + ... + x_n = n+1 and
+(2) 0*x_0 + ... + n*x_n = n+1, where n+1 is the number of digits.
+
+I'll first prove that x_0 > n-3 if n>4.  Assume not, then this
+implies that at least four of the x_i with i>0 are non-zero.  But
+then we would have \sum_i i*x_i >= 10 by (2), impossible unless n=9,
+but it isn't possible in this case (51111100000 isn't valid).
+
+Now I'll prove that x_0 < n-1.  x_0 clearly can't equal n; assume
+x_0 = n-1 ==> x_{n-1} = 1 by (2) if n>3.  Now only one of the
+remaining x_i may be non-zero, and we must have that x_0 + ... + x_n
+= n+1, but since x_0 + x_{n-1} = n ==> the remaining x_i = 1 ==> by
+(2) that x_2 = 1.  But this can't be, since x_{n-1} = 1 ==> x_1>0.
+Now assuming x_0 = n-2 we conclude that x_{n-2} = 1 by (2) if n>5
+==> x_1 + ... + x_{n-3} + x_{n-1} + x_n = 2 and 1*x_1 + ... +
+(n-3)*x_{n-3} + (n-1)*x_{n-1} + n*x_n = 3 ==> x_1=1 and x_2=1,
+contradiction.
+
+Case n>5:
+
+We have that x_0 = n-3 and if n>=7 ==> x_{n-3}=1 ==> x_1=2 and
+x_2=1 by (1) and (2).  For the case n=6 we see that x_{n-3}=2
+leads to an easy contradiction, and we get the same result.  The
+cases n=4,5 are easy enough to handle, and lead to the two solutions
+above.
+--
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+--
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+-------------------------
+
+
+The number "2020" was left off my list by mistake ... sorry.
+
+-Chris
+-------------------------
+
+
+> * * *
+> At a recent trip to the Ontario Science Center in Toronto, Canada I came
+> across an interesting puzzle.  The center is located minutes from
+> downtown Toronto and it's a vast playground of science with hundreds of
+> exhibits inviting you to touch, try, test, and titillate your curiosity.
+> The puzzle I saw there can be stated as follows.  In the 10 boxes below,
+> write a 10-digit number.  The digit in the first box indicates the total
+> number of zeros in the entire number.  The box marked "1" indicates the
+> total number of 1's in the number.  The box marked "2" indicates the
+> total number of 2's in the number, and so on.  For example, the "3" in
+> the box labeled "0" would indicate that there must be exactly three 0's
+> in the 10-digit number.
+>
+> -------------------------------
+> | 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|
+> | 3|  |  |  |  |  |  |  |  |  |
+> -------------------------------
+>
+>
+> Stop And Think
+>
+> 1. Is there a solution to this problem?  Are there many solutions to this
+> problem?
+>
+[Second question and contest problem omitted]
+
+
+Good puzzle!  I am wondering though whether the second question (which
+I have not tried to solve yet) is moe amenable to computer search.
+It seems to me that there should not be so many cases to consider, so
+that even exhaustive search should work.
+
+So, here is my ten minutes work on the first question.
+I think there is a unique solution which is:  6210001000.
+Here is the reasoning.
+Let the number be (in Tex notation)
+		d_0 d_1 d_2 d_3 d_4 d_5 d_6 d_7 d_8 d_9.
+By definition
+	d_0 + d_1 + d_2 + d_3 + d_4 + d_5 + d_6 + d_7 + d_8 + d_9 = 10.  (1)
+Moreover, d_0 > 0, since d_0 = 0 contradicts itself.
+Let d_0 = c for some integer 9 >= c >= 1.
+If c = 9, then d_9 = 1, contradiction since d_1 should both be 0 and 1 then.
+If 9 > c >= 1, we rewrite (1) removing all d_i s that are zeros
+	    c + d_(i_1) + d_(i_2) + ... + d_(i_(9-c)) = 10
+	<=> d_(i_1) + d_(i_2) + ... + d_(i_(9-c)) = 10 -c	(2)
+where all the d_(i_j) >= 1,  j=1,...,9-c			(3)
+(2) & (3) imply that the d_(i_j)s are 8-c 1s and one 2.
+Since there exists ONE 2, then there exists at least one 1.
+So the only digits in the number are 0, 1, 2, and c (if different than 1 and 2).
+If c is either 1 or 2, we have 3 different digits in the number, which
+implies d_1 <= 3, impossible since d_1 = 8 - c >= 6.
+If c> 2, we have four different digits in the number, and in fact
+d_0 = c, d_1 = 8-c, d_2 = 1, d_c = 1, which leaves us with 6 0s.  QED
+
+I hope I did not miss any other cases.
+
+Do you plan to post answers or comments later?
+Leonidas
+
+--------------------------------------------------------------------------------
+Leonidas Palios				The Geometry Center
+					1300 South Second Str
+palios@geom.umn.edu			Minneapolis, Minnesota 55454
+-------------------------
+
+-------------------------------
+| 0| 1| 2| 3| 4| 5| 6| 7| 8| 9|
+-------------------------------
+| 6| 2| 1| 0| 0| 0| 1| 0| 0| 0|
+| 0| 0| 0| 4| 4| 4| 0| 4| 4| 4|  <-
+| 6| 6| 6| 0| 0| 0| 6| 0| 0| 0|    |
+| 0| 0| 0| 4| 4| 4| 0| 4| 4| 4|  <-
+  .
+  .
+  .
+
+
+I must be missing something in my understanding of your rules.
+I found the second row by imagining that I'd need lots of zeros
+and putting nine in the 0 column, then skipping back and forth
+adjusting things.  I had to put a tic in the 9 column, then
+I had to put one in the 1 column, then I realized that had to
+change that to a two since now there were two ones, and at the
+same time another required tic in the 2 column balanced the
+change of one to two in the 1 column, and then of course there
+weren't nine zeros anymore, but there were still six and so by
+changing the nine in the 1 column to a six, the one in the 9
+column sould just migrate down to the 6 column.  But it almost
+seems like cheating to use fours in the second row when there
+were none in the second row to necessitate this kind of adjusting.
+*shrug*  If this is right, the series is infinite, obviously.
+
+Please let me know if I'm interpreting something wrong.
+
+Thanks, and nice puzzle. :)
+
+Grant Culbertson
+grant@minos.nmt.edu
+dgray@sirius.nmt.edu
+
+
+==> pickover/pickover.02.p <==
+Title: Cliff Puzzle 2: Grid of the Gods
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please include your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself.  You might also directly mail me a copy of your response
+in addition to any responding you do in the newsgroup.  I will assume it
+is OK to describe your answer in any article or publication I may write
+in the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+
+Consider a grid of infinitesimal dots spaced 1 inch apart in a cube with
+an edge equal in length to the diameter of the sun (4.5x10**9 feet).
+For conceptual purposes, you can think of the dots as having unit
+spacing, being precisely placed at 1.00000...., 2.00000....,
+3.00000...., etc. Next choose one of the dots and draw a line through it
+which extends from that dot to the edge of the huge cube in both
+directions.
+
+Stop And Think
+
+1. What is the probability that your line will intersect another dot
+in the fine grid of dots within the cube the size of the sun?
+Would your answer be different if the cube were the size of the
+solar system?
+
+2. Could a computer program be written to simulate this process?
+
+3. Answer the two questions above, but this time assume the line
+to have some finite thickness, T.
+
+
+==> pickover/pickover.02.s <==
+-------------------------
+
+In article <1992Sep14.141551.42075@watson.ibm.com> you write:
+>Title: Cliff Puzzle 2: Grid of the Gods
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+>
+>* * *
+>
+>Consider a grid of infinitesimal dots spaced 1 inch apart in a cube with
+>an edge equal in length to the diameter of the sun (4.5x10**9 feet).
+>For conceptual purposes, you can think of the dots as having unit
+>spacing, being precisely placed at 1.00000...., 2.00000....,
+>3.00000...., etc. Next choose one of the dots and draw a line through it
+>which extends from that dot to the edge of the huge cube in both
+>directions.
+>
+>Stop And Think
+>
+>1. What is the probability that your line will intersect another dot
+>in the fine grid of dots within the cube the size of the sun?
+>Would your answer be different if the cube were the size of the
+>solar system?
+
+That depends on the manner the dot and the direction of the line were choosen.
+If both process used uniform (or any other continous) distribution, then - of
+course - the probability would be zero. If, for instance, the direction of
+the line is always choosen to be parallel to one of the cube's edges, then the
+probability is one.
+
+>
+>2. Could a computer program be written to simulate this process?
+
+Not a meaningfull question. Simple minded programs could never simulate
+infinitesimal points, but well thought out algorithm could express anything
+that can be shown analytically.
+>
+>3. Answer the two questions above, but this time assume the line
+>to have some finite thickness, T.
+>
+
+This is equivelent to making each dot of diameter T, and keeping the line thin.
+For T> (1 inch / 4.5*10^9 ft) inches, the probability -> 1.
+
+A simple minded computer program could simulate this.
+
+Dan Shoham
+shoham@ll.mit.edu
+-------------------------
+
+In article <1992Sep14.141551.42075@watson.ibm.com> you write:
+>1. What is the probability that your line will intersect another dot
+>in the fine grid of dots within the cube the size of the sun?
+
+About 50%, because I usually draw horizontal lines.
+
+I.e., YOU DIDN'T GIVE THE DISTRIBUTION OF "lines".
+
+cf the puzzle of "what is the probability that a randomly selected
+chord of a circle is longer than the radius of that circle."  The
+answer depends on how you "randomly select."
+_________________________________________________________
+Matt Crawford       crawdad@fncent.fnal.gov      Fermilab
+
+
+==> pickover/pickover.03.p <==
+Title: Cliff Puzzle 3: Too many 3's
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please include your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself.  You might also directly mail me a copy of your response
+in addition to any responding you do in the newsgroup.  I will assume it
+is OK to describe your answer in any article or publication I may write
+in the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+
+How many numbers have at least one digit -- a three?
+
+In the first 10 numbers, 1,2,3,4,5,6,7,8,9,10 there is only one number
+which contain the digit 3.  This means that 1/10 or 10% of the numbers
+have the number 1 in the first 10 numbers.  In the first 100 numbers the
+occurrence of numbers with at least one three seems to be growing.  In
+fact there are 19 numbers:  3,13,23,33,43,53,63,73,83,93,
+30,31,32,34,35,36,37,38,39.  This means that about 19% of the digits
+contain the number 3 in the first 100 numbers.
+
+We can make a table showing the percentage of numbers with
+at least one 3-digit for the first N numbers.
+N        %
+10       1
+100      19
+1000     27
+10000    34
+
+The percentages rapidly increase to 100% indicating that almost all of
+the numbers have a 3 in them!  In fact, a formula describing the
+proportion of 3's can be written:  1-(9/10)**N.  The proportion gets
+very close to 1 as N increases.
+
+Stop And Think
+
+1. How can it be that almost all of the numbers have a 3 in them?
+
+
+==> pickover/pickover.03.s <==
+-------------------------
+
+You wrote (in article <1992Sep14.141704.26532@watson.ibm.com>):
+>Title: Cliff Puzzle 3: Too many 3's
+>1. How can it be that almost all of the numbers have a 3 in them?
+
+Because as the numbers get larger, they contain more digits,
+increasing the probability that one of the digits in them might be a
+3.  In fact, the probability that a 3 will _not_ appear in a very long
+number is very low.
+
+I like this puzzle.  Simple, but it made me think for a moment.
+A three in every number?  Preposterous!  ;)
+
+As for the other information you requested from responders: You have
+my name and email address now, I don't give out my home address unless
+it's necessary, and what sort of 'affiliation' are you seeking --
+religious, business, or what?
+
+     << Brian >>
+
+--
+_/_/_/       Brian Kendig  Macintosh Jedi           Live never to be ashamed
+ _/_/   Starfleet Captain  Oracle Employee         if anything you do or say
+  _/  Intrepid Adventurer  Saturn SL2 Owner    is published around the world
+      bskendig@netcom.com  Wizard of Frobozz    -- even if what is published
+    Princeton '92! BSE/CS  Writer/Actor/Singer                   is not true.
+-------------------------
+
+In article <1992Sep14.141704.26532@watson.ibm.com> you write:
+>Title: Cliff Puzzle 3: Too many 3's
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+>
+>* * *
+>
+>How many numbers have at least one digit -- a three?
+>
+>In the first 10 numbers, 1,2,3,4,5,6,7,8,9,10 there is only one number
+>which contains the digit 3.  This means that 1/10 or 10% of the numbers
+>have the number 1 in the first 10 numbers.  In the first 100 numbers the
+>occurrence of numbers with at least one three seems to be growing.  In
+>fact there are 19 numbers:  3,13,23,33,43,53,63,73,83,93,
+>30,31,32,34,35,36,37,38,39.  This means that about 19% of the digits
+>contain the number 3 in the first 100 numbers.
+>
+>We can make a table showing the percentage of numbers with
+>at least one 3-digit for the first N numbers.
+>N        %
+>10       1
+>100      19
+>1000     27
+>10000    34
+>
+>The percentages rapidly increase to 100% indicating that almost all of
+>the numbers have a 3 in them!  In fact, a formula describing the
+>proportion of 3's can be written:  1-(9/10)**N.  The proportion gets
+>very close to 1 as N increases.
+>
+>Stop And Think
+>
+>1. How can it be that almost all of the numbers have a 3 in them?
+>
+
+Thaddeus Crews, 509 Windsor Green Blvd., Goodlettsville, TN, 37072
+Graduate Student (Ph.D.) @ Vanderbilt University, Computer Science
+thaddeus@vuse.vanderbilt.edu
+
+This problem seems a little bit simple to me, but I was never that
+great at math problems so I am not betting the farm on this answer.
+
+The percentages you show for # of the first N numbers with at least
+one 3-digit is also true (about) for the # of the first N numbers
+with at least one 4-digit, at least one 5-digit, etc...
+
+Basically, as N increases, so does the number of digits in N, and
+therefore so does the number of chances for the digit 3 to appear
+(as well as all other digits).  Given a number N with enough (?)
+digits, there is a 100% chance of all digits 0-9 appearing in that
+number (of course, 1.0E10000000000) does not have a 3 in it, but
+if you take the next 1.0E10000000000 numbers the percent that has
+a 3 will be (I suspect) 100%.
+
+My proof is clearly weak, but the claim is this: as N increases,
+the number of digits in N also increases.  As N approaches
+infinity, the number of digits in N approaches infinity (at a
+slower rate, however).  As the number of digits approaches infinity,
+the likelyhood of any specific digit appearing at least once
+approaches 100%.
+
+I think the real question (to be answered by someone with a better
+math training) would be "At what number N does the statistical
+likelyhood become 100% of at least one 3-digit appearing in the
+first N numbers."
+
+Hope this helps....
+--
+-- Thad Crews                         (email thaddeus@vuse.vanderbilt.edu)
+--------------------------------------------------------------------------
+"Some people have a way with words, and some people, ... oh ... *not* have
+a way, I suppose..."  -- Steve Martin
+-------------------------
+
+	Heh.  As the numbers get larger, they have more digits.  Assuming a random occu
+various digits in the larger numbers (not unreasonable when n-> infinity) the pr
+number NOT having a 3 is very low.
+
+	-john 'I know it's not a proof...' karakash-
+-------------------------
+
+>Title: Cliff Puzzle 3: Too many 3's
+
+Seth Breidbart
+PO Box 5157
+New York, NY 10185
+
+Morgan Stanley & Co.
+
+>1. How can it be that almost all of the numbers have a 3 in them?
+
+The probability that a random sequence of n digits does not contain a
+3 is .9^n; as n->infinity, this probability -> 0.  Since almost all
+numbers have a lot of digits (there are only a finite number of
+integers with <n digits, and infinitely many with >n), the limiting
+probability is 0.
+
+
+-------------------------
+
+In article <1992Sep14.141704.26532@watson.ibm.com> you write:
+>Title: Cliff Puzzle 3: Too many 3's
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+>
+>* * *
+>
+>How many numbers have at least one digit -- a three?
+>
+>In the first 10 numbers, 1,2,3,4,5,6,7,8,9,10 there is only one number
+>which contains the digit 3.  This means that 1/10 or 10% of the numbers
+>have the number 1 in the first 10 numbers.  In the first 100 numbers the
+>occurrence of numbers with at least one three seems to be growing.  In
+>fact there are 19 numbers:  3,13,23,33,43,53,63,73,83,93,
+>30,31,32,34,35,36,37,38,39.  This means that about 19% of the digits
+>contain the number 3 in the first 100 numbers.
+>
+>We can make a table showing the percentage of numbers with
+>at least one 3-digit for the first N numbers.
+>N        %
+>10       1
+>100      19
+>1000     27
+>10000    34
+>
+>The percentages rapidly increase to 100% indicating that almost all of
+>the numbers have a 3 in them!  In fact, a formula describing the
+>proportion of 3's can be written:  1-(9/10)**N.  The proportion gets
+>very close to 1 as N increases.
+>
+>Stop And Think
+>
+>1. How can it be that almost all of the numbers have a 3 in them?
+>
+
+No problem. In fact almost all very large numbers have all digits in them.
+It is rather hard for a number with zillions of digits to avoid "3"s (or any
+other digit).
+
+It fact, the sequences "15", "172", and "666" (and any other finite sequence)
+are also contained (in order) within almost all numbers.
+
+Dan Shoham
+shoham@ll.mit.edu
+
+-------------------------
+
+Before I forget:
+
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+clong@remus.rutgers.edu
+--
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+-------------------------
+
+>Title: Cliff Puzzle 3: Too many 3's
+>From: cliff@watson.ibm.com
+
+>If you respond to this puzzle, if possible please include your name,
+>address, affiliation, e-mail address.  If you like, tell me a little bit
+>about yourself.  You might also directly mail me a copy of your response
+>in addition to any responding you do in the newsgroup.  I will assume it
+>is OK to describe your answer in any article or publication I may write
+>in the future, with attribution to you, unless you state otherwise.
+>Thanks, Cliff Pickover
+
+>* * *
+
+>How many numbers have at least one digit -- a three?
+
+>In the first 10 numbers, 1,2,3,4,5,6,7,8,9,10 there is only one number
+>which contains the digit 3.  This means that 1/10 or 10% of the numbers
+>have the number 1 in the first 10 numbers.  In the first 100 numbers the
+>occurrence of numbers with at least one three seems to be growing.  In
+>fact there are 19 numbers:  3,13,23,33,43,53,63,73,83,93,
+>30,31,32,34,35,36,37,38,39.  This means that about 19% of the digits
+>contain the number 3 in the first 100 numbers.
+>
+>We can make a table showing the percentage of numbers with
+>at least one 3-digit for the first N numbers.
+>N        %
+>10       1
+>100      19
+>1000     27
+>10000    34
+
+>The percentages rapidly increase to 100% indicating that almost all of
+>the numbers have a 3 in them!  In fact, a formula describing the
+>proportion of 3's can be written:  1-(9/10)**N.  The proportion gets
+>very close to 1 as N increases.
+
+>Stop And Think
+
+>1. How can it be that almost all of the numbers have a 3 in them?
+
+
+
+	I'm not sure this is the answer you are looking for, but:
+
+
+	9		=	9
+	9*9		=      81
+	9*9*9		=     729
+	9*9*9*9		=    6561
+		etc.
+
+The probability of having 3 as the digit in a one-digit number is 1/10.
+	"	of not having 3 		"	       is 9/10.
+
+In a two-digit number, the prob. of NOT having 3 as the first digit or
+the second digit, ie. not having 3 in the two-digit number, is simply
+the product of (NOT having 3 in first digit) times (NOT having 3 in second):
+		(9/10)*(9/10) = 81/100
+			      = 0.81
+
+For a three-digit number:  (9/10)*(9/10)*(9/10) = 729/1000
+						= 0.729
+
+For an n-digit number:	(9/10)**n = probability.
+
+	We can see that as "n" becomes larger and larger, the
+	probability of NOT having a three at all in the number
+	becomes smaller and smaller.  Indeed, as "n" approaches
+	infinity, this probability approaches zero.  In other
+	words, it is very rare for a large number NOT to have 3
+	as one of its digits. In fact, it is very rare for a
+	large number NOT to have any of the ten possible integers
+	represented at least once.
+
+
+
+[Aside,  N	%
+	10	1  = (10 - 9)/1			times 100
+	100	19 = (100 - 81)/100 	 	times 100
+	1000	27 = (1000 - 729)/1000 	 	times 100
+	10000	34 = (10000 - 6561)/10000	times 100		
+			etc.					]	
+
+	
+		Kumar
+		kumar@ug.cs.dal.ca	
+
+ps:	I'll leave it as a small exercise to tie up the loose ends.
+
+
+==> pickover/pickover.04.p <==
+Title: Cliff Puzzle 4: Time in a Bottle
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please include your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself.  PLEASE ALSO directly mail me a copy of your response
+in addition to any responding you do in the newsgroup.  I will assume it
+is OK to describe your answer in any article or publication I may write
+in the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+
+Consider a chain of bottles (B) each connected to one another by a thin
+tube. A marble is placed in bottle 1.
+Each tube contains a one-way valve so marbles can only
+go from left to right in the tubes which are symbolized with "-" marks:
+
+1   2   3   4
+B - B - B - B -
+
+
+The tubes are thin so it takes
+1 hour of constant random shaking to get the marble from B1 to B2.
+Likewise for each bottle.
+
+I have not fully described the bottle collection.  Each bottle
+has a backward 1-way tube to bottle 1.  I've tried to diagram these
+with "*" symbols.  Each time the marble enters bottle B(N) it has
+a 50% probability of going back to bottle 1 via these tubes.
+
+
+****<********
+*           *
+***<*****   *
+*       *   *
+* * *   *   *
+1   2   3   4
+B - B - B - B -
+
+Stop And Think
+
+1.  In how many hours will you expect to get the marble out of bottle 10
+after placing the marble in bottle 1?
+
+2. Is there a general formula for the amount of time
+required to get the ball out of bottle N into bottle N+1 given
+a probability P of backwards motion (given as 50% in this problem)?
+
+3.  In how many hours will you expect to get the marble out of bottle 10
+after placing the marble in bottle 1 given two backward tubes for each
+bottle instead of one backward tube?
+
+==> pickover/pickover.04.s <==
+-------------------------
+
+Subject: Re: Cliff Puzzle 4 (SPOILER)
+Newsgroups: rec.puzzles
+References: <1992Sep15.205532.4172@watson.ibm.com>
+
+In article <1992Sep15.205532.4172@watson.ibm.com>, Cliff writes:
+
+> 1.  In how many hours will you expect to get the marble out of bottle 10
+> after placing the marble in bottle 1?
+
+The expected amount of time to go from state n-1 to n (state 11 is an
+absorbing state) is
+
+E(n-1,n) = 1 + E(1,n)/2 for 1<n<11;
+
+also
+
+E(n-1,n+1) = E(n-1,n) + E(n,n+1) for 1<n<11.
+
+If n=2 then E(1,2) = 1 + E(1,2)/2 ==> E(1,2) = 2 (it should be clear
+that no E is infinite for this problem).
+
+E(2,3) = 1 + E(1,3)/2 = 1 + E(1,2)/2 + E(2,3)/2 ==> E(2,3)/2 = 2
+==> E(1,3) = 6.
+
+I claim that in general E(1,n) = 2^n - 2 and E(n-1,n) = 2^(n-1).
+Assume true for n, then E(n,n+1) = 1 + E(1,n+1)/2 = 1 + E(1,n)/2 +
+E(n,n+1)/2 ==> E(n,n+1)/2 = 1 + E(1,n)/2 ==> E(n,n+1) = 2 + E(1,n)
+==> E(n,n+1) = 2 + 2^n - 2 = 2^n.  Furthermore E(1,n+1) = E(1,n) +
+E(n,n+1) = 2^n - 2 + 2^n = 2^(n+1) - 2.  Therefore by induction the
+result is established.
+
+Now E(1,11) = E(1,10) + 1 (ball can't go back to bottle 1 after
+leaving bottle 10) = 2^10 - 1.
+
+> 2. Is there a general formula for the amount of time
+> required to get the ball out of bottle N into bottle N+1 given
+> a probability P of backwards motion (given as 50% in this problem)?
+
+I'd have to check my work, but I get E(n,n+1) = q^n, where q = 1/(1-p).
+
+> 3.  In how many hours will you expect to get the marble out of bottle 10
+> after placing the marble in bottle 1 given two backward tubes for each
+> bottle instead of one backward tube?
+
+I get E(1,n) = (q^n - q)/(q-1), so E(1,11) = E(1,10) + 1 =
+(3^10 - 3)/2 + 1.
+-------------------------
+
+
+In regards to your fourth problem, the following comments (marked
+with a ">") should be added.  I thought the answer was quite surprising!
+---
+
+The expected amount of time to go from state n-1 to n (state 11 is an
+absorbing state) is
+
+E(n-1,n) = 1 + E(1,n)/2 for 1<n<11
+
+> since we expect it'll take an hour for the ball to leave bottle n-1,
+> and it then has a probability of 1/2 of returning to the first bottle;
+
+also
+
+E(n-1,n+1) = E(n-1,n) + E(n,n+1) for 1<n<11
+
+> since the only way of getting to state n+1 from n-1 is to first
+> go from state n-1 to n, and then from n to n+1; the total expected
+> time is the sum of the two.
+
+
+==> pickover/pickover.05.p <==
+Title: Cliff Puzzle 5: Mystery Sequence
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself so I can cite you appropriately if you provide unique
+information.  PLEASE ALSO directly mail me a copy of your response in
+addition to any responding you do in the newsgroup.  I will assume it is
+OK to describe your answer in any article or publication I may write in
+the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+
+What is the next term in the Mystery Sequence:
+
+22.45906, 17600.22, 0.34714E+12,
+
+
+==> pickover/pickover.05.s <==
+-------------------------
+
+Some serious roundoff error going on here, but...
+
+The sequence 22.45906, 17600.22, 0.34714E+22 is clearly meant to be:
+
+Pi^e, (Pi^e)^Pi, ((Pi^e)^Pi)^e,
+
+so the next term should be (((Pi^e)^pi)^e)^pi = 1.80169E36.
+
+Actually, it looks like you were using "pi" = 3.14159 and "e" = 2.71828, possibl
+with other intermediate rounding off, so you may have been looking for something
+more like 1.8011E36.
+
+James
+jlayland@grissom.jpl.nasa.gov
+-------------------------
+
+In article <+M_UUYZ8!@linac.fnal.gov> you write:
+>cliff@watson.ibm.com (cliff) writes:
+>>What is the next term in the Mystery Sequence:
+>>
+>>22.45906, 17600.22, 0.34714E+12,
+>
+>I disagree about the last couple of significant digits, but otherwise
+>the series is pi^e, (pi^e)^pi, ((pi^e)^pi)^e, ... and the next term
+>is about 1.8017E+36.
+>_________________________________________________________
+>Matt Crawford       crawdad@fncent.fnal.gov      Fermilab
+>
+>
+
+
+Background:
+
+I recognized the approximate value of the first term from figuring
+out (during high school, about 20 years ago) the old question of
+which is larger, e^pi or pi^e.  After that it was a mater of taking
+ratios of logs of the terms.
+
+_________________________________________________________
+Matt Crawford       crawdad@fncent.fnal.gov      Fermilab
+     BS 1978 Applied Math & Physics; PhD 1985 Physics
+-------------------------
+
+Before I go barking up a wrong tree, I notice that
+
+     e
+   Pi   = 22.45916
+
+>22.45906, 17600.22, 0.34714E+12,
+which seems suspiciously close to your first constant. Which should I assume?
+
+   "Typo. It should read 22.45916",
+   "Coincidence.",
+or "No Comment -- no clues."
+
+ ???
+
+   /Alan Paeth
+-------------------------
+
+In article <1992Sep17.132745.21035@watson.ibm.com> you write:
+>What is the next term in the Mystery Sequence:
+>22.45906, 17600.22, 0.34714E+12,
+
+As a one-time math major, I thought I recognized that telltale 22.45906 ...
+
+The sequence continues with 1.8016851E+36
+
+Steve
+--
+-- monson@diablo.amd.com -- (512) 462-4013
+ __     | signature designed by | One thing about kneading that pizza dough by
+(_      | (and ripped off from) | hand -- it sure gets your fingernails clean!
+__)teve | Stephen Wayne Miller  |         Pizzaria Friend of Danny
+
+==> pickover/pickover.06.p <==
+Title: Cliff Puzzle 6: Star Chambers
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address.  If you like, tell me a little bit
+about yourself so I can cite you appropriately if you provide unique
+information.  PLEASE ALSO directly mail me a copy of your response in
+addition to any responding you do in the newsgroup.  I will assume it is
+OK to describe your answer in any article or publication I may write in
+the future, with attribution to you, unless you state otherwise.
+Thanks, Cliff Pickover
+
+* * *
+
+As many of you probably know, 5-sided stars produced by drawing a
+continuous line with your pencil can nest inside each other.  (One star
+can sit inside the pentagon produced by the larger star.  Each of the
+5 points of the small star coincide with the 5 points of the
+internal pentagon of the large star.)
+
+Start with a five sided star formed with 5 line segments, each 1 inch
+long.  Continually nest stars so that the assembly of stars gets bigger
+and bigger.
+
+Questions:
+1.  How many nestings N are required to make star N
+have an edge-length equal to the diameter of the sun (4.5E9 feet)?
+
+2. How many nestings N are required to make the cumulative length
+of lines of all the nested stars equal to the diameter of the sun?
+
+
+==> pickover/pickover.06.s <==
+-------------------------
+
+Cliff Pickover,
+
+So here I am, waiting to see if one of my long Grobner basis
+calculations is going to finish before the machine goes down.
+This is a good time to read news, and I came across this trivial
+problem in rec.games.puzzles.  I'm not sure why I'm responding,
+perhaps the hour, or perhaps curiousity to see what will come
+of this, but I could have done this the day in high school
+when I learned how to compute cos(pi/5).  The ratio between
+side lengths of successive pentagrams is  r = (3+sqrt(5))/2
+= 1 + golden ratio = 2.618... .   The smallest  N  for which
+r^N > 5.48e10 (slightly more accurate value for sun's diameter
+in inches) is 26, with r^26 = 7.37e10.  The smallest  N  for which
+5[r^(N+1)-1]/(r-1) > 5.48e10 is 24, with 5(r^25 - 1)/(r-1) = 8.70e10.
+This seems too trivial to post, but do with this response as you like.
+
+Bob Holt
+
+-------------------------
+
+
+   I just started reading 'rec.puzzles', so have just seen this one and
+the one before (#5)...  and to be honest I'm not sure why you put this one
+out, since it is pretty straightforward.
+
+>Start with a five sided star formed with 5 line segments, each 1 inch
+>long.  Continually nest stars so that the assembly of stars gets bigger
+>and bigger.
+
+   The analytical (and general) answer to this problem comes from the
+basic relationship of a "chord" of a regular pentagon, which is defined
+as follows:
+
+               _=*=_
+            _=/ /   \=_
+         _=/   |       \=_
+      _=/      |          \=_
+     *        /              *
+     |       |  <-- "chord"  |
+      \      |              /
+       |    /              |
+        \  |              /
+         | /             |
+          *-------------*
+
+compared to the length of one of the sides is the golden ratio, i.e.
+                  _
+            1 + \/5
+           ---------  .
+               2
+
+   It can then be derived that the length of the "chord" (i.e. segment
+length) of the next bigger Star compared to the length of the "chord"
+of its incribed Star is the square of the golden ratio, or the golden
+ratio plus one, same thing.
+
+>Questions:
+
+>1.  How many nestings N are required to make star N
+>have an edge-length equal to the diameter of the sun (4.5E9 feet)?
+
+   Back-of-envelope calculations as follows:
+
+	4.5E9 * 12 = total of 5.22E10 inches.
+
+	ratio of Star sizes approx. 2.618.
+
+   The best answer is 27 nested Stars, although it produces a Star with
+a "chord" length of 7.366E10 inches, i.e. a bit bigger.  The first, and
+smallest Star, is assumed to be the one with "chord" length of 1 inch.
+
+>2. How many nestings N are required to make the cumulative length
+>of lines of all the nested stars equal to the diameter of the sun?
+
+   This is just the sum of a geometric sequence with the ratio being
+the golden ratio squared (or the golden ratio plus one).
+                                          _
+                                  / 1 + \/5 \ 2
+   So, S = 1 inch, and S = S     | --------- |
+        0               n   n-1   \    2    /
+
+   The sum is just the standard geometric summation, which I can't remember
+offhand, but the contributing terms in the sum (other than the last term),
+are less than one 1.6th of the total (by conincidence the inverse of the
+golden ratio ;-).  This means that the 25th Star (term) is the determining
+factor, and in this case is the answer with a total length of 8.694E10
+inches amoung all of them, and 5.373E10 inches for just the sum of the
+segments of the 25th Star (again, counting the first one as side length
+of 1 inch, or sum of 5 inches).
+
+   Well, that's it, I guess.  Sorry to be so exhaustive, but I like to
+use analytical methods to be sure I have the right answer.
+
+   My .signature explains most of what you need to know.  What I mean
+by "Honorary Grad Student" is that I have been taking Grad math classes
+since my sophomore year, and for all intensive purposes might as well
+be one.  My Snail-mail address is 1521 S.W. 66th Ave., Portland, OR
+97225.  As to info about myself...  I love learning about things, and
+mathematics and consequently computers tend to be a great focus.
+
+   Anyway, if you have any more puzzles, pass them along...  I am still
+pondering on that sequence (puzzle #5) that you posted.
+
+   Thanks for your time.
+
+   Erich
+--
+             "I haven't lost my mind; I know exactly where it is."
+   / --  Erich Stefan Boleyn  -- \        --=> *Mad Genius wanna-be* <=--
+  { Honorary Grad. Student (Math) } Internet E-mail: <erich@gemini.mth.pdx.edu>
+   \  Portland State University  /       WARNING: INTERESTED AND EXCITABLE
+

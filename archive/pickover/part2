@@ -1,0 +1,1002 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA02531; Sat, 20 Apr 1996 14:42:45 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07854; Sat, 20 Apr 96 14:11:51 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25234; Sat, 20 Apr 1996 11:12:41 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (pickover), part 29 of 35
+Message-Id: <puzzles/archive/pickover/part2_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:42 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1575
+Xref: senator-bedfellow.mit.edu rec.puzzles:25022 news.answers:11542 rec.answers:1942
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/pickover/part2
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> pickover/pickover.07.p <==
+Title: Cliff Puzzle 7: 3x3 Recursion
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+* * *
+
+Consider the 3x3 array below.  All nine digits are used exactly once.
+
+1 9 2
+3 8 4
+5 7 6
+
+Notice that "384" is twice the number in the first row, and that
+"576" is three times the number in the first row.
+
+Questions:
+1.  Are there other ways of arranging the number to produce the same
+result using each digit only once and the same rules?
+Remember, the second row must be twice the first.  The third row
+must be 3 times the first row.
+
+2.  Start with the number in the last row (e.g "576" or any other
+solution you may find) and continue to form another 3x3 matrix using the
+same rules with the new starting number.  In other words, the number in
+the second row must be twice the first.  The third row must be three
+times the first.  (For this problem you may truncate any digits in the
+beginning.  For example, 1384 would become 384.)
+
+Keep going.  How many matrices can you create before it is impossible
+to continue.  Again, each digit must be used only once
+in each matrix.
+
+==> pickover/pickover.07.s <==
+-------------------------
+
+> Title: Cliff Puzzle 7: 3x3 Recursion
+> Consider the 3x3 array below.  All nine digits are used exactly once.
+> 1 9 2
+> 3 8 4
+> 5 7 6
+> Questions:
+> 1.  Are there other ways of arranging the numbers to produce the same
+> result using each digit only once and the same rules?
+
+YES .
+
+ 2 1 9       2 7 3        3 2 7
+ 4 3 8       5 4 6        6 5 4
+ 6 5 7       8 1 9        9 8 1
+
+> same rules with the new starting number.  In other words,
+> the last number becomes the first, and the number in
+> the new second row must be twice the first.  The third row must be three
+> times the first.  (For this problem you may truncate any digits in the
+> beginning.  For example, 1384 would become 384.)
+NONE. There is no solution to the continuation problem.
+
+
+Bye.
+
+Amit Agarwal
+> to continue?  Again, each digit must be used only once
+> in each matrix.
+>
+>
+
+-------------------------
+
+By exhaustive search I found that there are only four such arrays.
+Here they are:
+
+  1 9 2        2 1 9        2 7 3        3 2 7
+  3 8 4        4 3 8        5 4 6        6 5 4
+  5 7 6        6 5 7        8 1 9        9 8 1
+
+Since these are the only four it is clear from inspection that
+none of the last numbers ever begin another array with the desired
+properties.
+
+Bob Murphy (rmurphy@aludra.usc.edu)
+
+-------------------------
+
+
+
+Well, I think I have an answer to both parts.  I did what should have been
+a complete analysis of all possible column combinations, but it is
+certainly possible that I missed a point somewhere.  If you don't get any
+answers contradicting this one, I'd be happy to send you my analysis.
+Anyway - for part 1, I found the following three matrices (in additionn
+to the one you gave):
+			2 1 9    2 7 3   3 2 7
+			4 3 8    5 4 6   6 5 4
+			6 5 7    8 1 9   9 8 1
+
+Note that the first one of these can be generated from yours by moving
+the third column to the first position, and the third one can be generated
+from the second similarly.  In both cases, one column does not receive
+or produce any carryovers, so it can be placed at either end.
+
+For part 2, there is obviously no solution, assuming that these are indeed
+the only four matrices satisfying the requirements.  In my analysis, I
+included columns with carryovers in all positions, so if there were any
+matrices that would satisfy the relaxed condition of part 2 I should
+have found them.
+
+							Dan Blum
+							Institute for the
+							Learning Sciences
+							Northwestern U.
+							blum@ils.nwu.edu
+-------------------------
+
+
+Cliff,
+
+In article <1blrk9INN10s@aludra.usc.edu> (Bob Murphy) writes:
+
+>By exhaustive search I found that there are only 4 starting numbers
+>which produce a 3x3 array with the desired property.  Here they are:
+>
+>   1 9 2        2 1 9        2 7 3        3 2 7
+>   3 8 4        4 3 8        5 4 6        6 5 4
+>   5 7 6        6 5 7        8 1 9        9 8 1
+
+
+For each of these solutions I happened to notice that the sum of each row
+is a constant:
+
+	sum(row1) = 12
+	sum(row2) = 15
+	sum(row3) = 18
+
+(necessary but not sufficient condition)
+
+And the sums all differ by the same constant (3).  I wonder if this
+property may somehow be generalized to matrices of higher degree?
+
+
+Regards,
+
+
+-- Greg Schmidt		schmidtg@iccgcc.decnet.ab.com
+
+-------------------------
+
+
+> If you respond to this puzzle, if possible please send me your name, address,
+> affiliation, and e-mail address so I can credit you in the future if needed.
+> If you like, tell me a little bit about yourself so I can cite you
+> appropriately if you provide unique information.  PLEASE ALSO directly mail
+> me a copy of your response in addition to any responding you do in the
+> newsgroup.  I will assume it is OK to describe your answer in any article or
+> publication I may write in the future, with attribution to you, unless you
+> state otherwise.
+> Thanks, Cliff Pickover
+>
+> Consider the 3x3 array below.  All nine digits are used exactly once.
+>
+> 1 9 2
+> 3 8 4
+> 5 7 6
+>
+> Notice that "384" is twice the number in the first row, and that
+> "576" is three times the number in the first row.
+>
+> Questions:
+> 1.  Are there other ways of arranging the numbers to produce the same
+> result using each digit only once and the same rules?
+> Remember, the second row must be twice the first.  The third row
+> must be 3 times the first row.
+>
+> 2.  Start with the number in the last row (e.g "576" or any other
+> solution you may find) and continue to form another 3x3 matrix using the
+> same rules with the new starting number.  In other words,
+> the last number becomes the first, and the number in
+> the new second row must be twice the first.  The third row must be three
+> times the first.  (For this problem you may truncate any digits in the
+> beginning.  For example, 1384 would become 384.)
+>
+> Keep going.  How many matrices can you create before it is impossible
+> to continue?  Again, each digit must be used only once
+> in each matrix.
+
+Well, this is probably not news to you by now, but I only get four solutions
+to the original problem:
+
+1 9 2      2 1 9      2 7 3      3 2 7
+3 8 4      4 3 8      5 4 6      6 5 4
+5 7 6      6 5 7      8 1 9      9 8 1
+
+If we relax the rules slightly and allow zeroes, and just specify that the nine
+numbers only have to be different, then we get two more solutions:
+
+0 7 8      2 6 7
+1 5 6      5 3 4
+2 3 4      8 0 1
+
+both of which use the digits 0-8, which may be of interest.
+
+The second problem (in either form) has only the above solutions, with only one
+matrix in each solution.
+
+If we switch to base 9 (where we must use a zero), there is no solution to the
+first, and only one solution to the second (with only one matrix):
+
+4 8 1
+0 7 2
+5 6 3
+
+In fact, I considered 3 versions of problem 2.  In all cases zeroes were
+allowed, but the 9 numbers had to be different.  For each of them the first 3x3
+matrix has to meet the original specifications; where they differ is in how the
+succeeding matrices are constructed.  In the ensuing discussion, the original
+number is called 'n'.  So in the example given with the problem, n is 192.
+
+Version A:  The second matrix consists of rows with n*2, n*3 and n*4 in them.
+           (The last three digits of those, anyway.)  The next would have n*3,
+           n*4, and n*5, then n*4, n*5, n*6, etc.
+
+Version B:  The second matrix consists of n*3, n*6, n*9.  (This is essentially
+            the second problem as given.)
+
+Version C:  The second matrix consists of n*4, n*5, n*6.  The next would have
+            n*7, n*8, n*9 etc.
+
+Results for various bases:
+
+Base 9:
+  A, B, C:   4 8 1
+             0 7 2
+             5 6 3
+
+Base 10:
+  A, B, C:   0 7 8    1 9 2    2 1 9    2 6 7    2 7 3    3 2 7
+             1 5 6    3 8 4    4 3 8    5 3 4    5 4 6    6 5 4
+             2 3 4    5 7 6    6 5 7    8 0 1    8 1 9    9 8 1
+
+  In addition, with version C, we get a second matrix for 219.
+
+     2 1 9     8 7 6
+     4 3 8 ==> 0 9 5
+     6 5 7     3 1 4
+
+Base 11:   (A, B, etc. represent 10, 11, etc..)
+  A, B, C: 18 solutions.  From now on, I'll only show the multiple matrix ones.
+
+  A:  5 A 1     0 9 2    6 7 4     2 3 8
+      0 9 2 ==> 6 8 3    2 3 8 ==> 9 0 1
+      6 8 3     1 7 4    9 0 1     4 7 5
+
+  B:  9 3 4     5 A 1
+      7 6 8 ==> 0 9 2
+      5 A 1     6 8 3
+
+  C:  8 9 1     2 3 4
+      6 7 2 ==> 0 1 5
+      4 5 3     8 A 6
+
+  (Note that the B solution ends in an A solution matrix!)
+
+Base 12:   19 solutions
+
+  A:  7 3 4     2 6 8
+      2 6 8 ==> 9 A 0
+      9 A 0     5 1 4
+
+  B:  None
+
+  C:  3 5 7     1 A 4
+      6 B 2 ==> 5 3 B
+      A 4 9     8 9 6
+
+Base 13:   71 solutions...and it rapidly increases from here....
+
+The number of solutions rises rapidly, as we might expect, as the more possible
+values for digits there are in the base, the more likely the set of 9 will be
+distinct.  If we look at solutions which only involve the digits 1-9, then the
+following is a list of all solutions (for all bases):
+
+Base 10:  1 9 2    2 1 9    2 7 3    3 2 7
+          3 8 4    4 3 8    5 4 6    6 5 4
+          5 7 6    6 5 7    8 1 9    9 8 1
+
+Base 11:  7 8 3    8 4 6    8 9 1
+          4 5 6    5 9 1    6 7 2
+          1 2 9    3 2 7    4 5 3
+
+(Tested all cases until base 17.  After that, no solution can involve a carry.
+But there are no solutions without carries.  So, no more solutions.)
+
+I hope this is of some interest.
+
+Cheers,
+Geoff.
+
+-------------------------------------------------------------------------------
+Geoff Bailey (Fred the Wonder Worm)   |   Programmer by trade --
+ftww@cs.su.oz.au                      |       Gameplayer by vocation.
+-------------------------------------------------------------------------------
+
+
+-------------------------
+
+
+> Ref:  Your note of Mon, 19 Oct 92 22:24:47 EST
+>
+> Where are you from?
+
+Whoops, knew I forgot to put something in.  I'm currently a student at the
+University of Sydney (Australia), doing Computer Science (Honours).
+
+Cheers,
+Geoff.
+
+-------------------------------------------------------------------------------
+Geoff Bailey (Fred the Wonder Worm)   |   Programmer by trade --
+ftww@cs.su.oz.au                      |       Gameplayer by vocation.
+-------------------------------------------------------------------------------
+
+
+-------------------------
+
+
+By the way, I tried searching for analogous solutions for other sizes and other
+bases.  So the new problems become:
+
+Consider an n by n matrix containing the 'digits' from 1 to n^2 in a base b,
+where b > n^2.  The i'th row of the matrix consists of the last n 'digits' of
+i*(first row).  The versions differ in how succeeding matrices may be
+constructed.  Let f be the first row.
+
+Version A:  The next matrix has rows with 2*f, 3*f, ... , (n+1)*f
+           The j'th matrix has rows j*f, (j+1)*f, ... , (n+1-j)*f
+
+Version B:  The next matrix has rows with n*f, 2*n*f, ... , n*n*f
+           The j'th matrix has rows (n^(j-1))*f, 2*(n^(j-1))*f, .... , (n^j)*f
+
+Version C:  The next matrix has rows with (n+1)*f, (n+2)*f, ... , 2*n*f
+           The j'th matrix has rows (1+n*(j-1))*f, (2+n*(j-1))*f, ..., j*n*f
+
+Basically these are analogies of the three versions I wrote to you about
+before.  The results I get are:
+
+n: 1    base: any above 1
+
+    A, B, C:     1
+
+n: 2    base: 5
+
+    A, B, C:      3  2             4  1
+                  1  4             3  2
+
+    In case B, the second one extends:
+
+                  4  1 ==> 3  2
+                  3  2     1  4
+
+    In case C, the second one also extends:
+
+                  4  1 ==> 2  3
+                  3  2     1  4
+
+        base: 6
+
+    A, B, C:      1  4             3  4
+                  3  2             1  2
+
+  Note that the only solution to the first problem (no overflow allowed) is
+                  1  4     (in base 6)
+                  3  2
+
+n: 3    base: 10
+
+    A, B, C:  1  9  2     2  1  9     2  7  3     3  2  7
+              3  8  4     4  3  8     5  4  6     6  5  4
+              5  7  6     6  5  7     8  1  9     9  8  1
+
+        base: 11
+
+    A, B, C:  7  8  3     8  4  6     8  9  1
+              4  5  6     5  9  1     6  7  2
+              1  2  9     3  2  7     4  5  3
+
+  Note the base 10 solutions all solve the first problem, while none of the
+  base 11 solutions do, and there is no second matrix for any of them.
+
+n: 4    base: 18
+
+    A, B, C:  1 15 14  4    1 15 16  2    2  1 15 16    2  3 13 16
+              3 13 10  8    3 13 14  4    4  3 13 14    4  7  9 14
+              5 11  6 12    5 11 12  6    6  5 11 12    6 11  5 12
+              7  9  2 16    7  9 10  8    8  7  9 10    8 15  1 10
+
+
+              3 13 14  4    3 13 16  2    4  1 15 14    4  3 13 14
+              7  9 10  8    7  9 14  4    8  3 13 10    8  7  9 10
+             11  5  6 12   11  5 12  6   12  5 11  6   12 11  5  6
+             15  1  2 16   15  1 10  8   16  7  9  2   16 15  1  2
+
+
+    In case C, two of them extend:
+
+   1 15 16  2      9  7  8 10      2  1 15 16     10  9  7  8
+   3 13 14  4 ==> 11  5  6 12      4  3 13 14 ==> 12 11  5  6
+   5 11 12  6     13  3  4 14      6  5 11 12     14 13  3  4
+   7  9 10  8     15  1  2 16      8  7  9 10     16 15  1  2
+
+  Note all of these solutions solve the first problem (no overflow).
+
+Unfortunately, my algorithm is O((n!)^2), so any results for n = 5 are not
+going to be forthcoming soon.
+
+Cheers,
+Geoff.
+
+-------------------------------------------------------------------------------
+Geoff Bailey (Fred the Wonder Worm)   |   Programmer by trade --
+ftww@cs.su.oz.au                      |       Gameplayer by vocation.
+-------------------------------------------------------------------------------
+
+
+
+==> pickover/pickover.08.p <==
+Title: Cliff Puzzle 8: Squares and Squares and Squares ....
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+* * *
+
+1.  What is the smallest square with leading digit 1 which remains a
+square when the leading 1 is replaced by a 2?
+
+In other words, if x**2 = 1.........., is there a y**2 = 2.........  ?
+
+2.  What is the smallest square with leading digit 1 which remains a
+square when the leading 1 is replaced by a 2 and also remains a square
+when the leading digit is replaced by a 3?
+
+3.  What is the smallest square with leading digit 1 which remains a
+square when the leading 1 is replaced by a 2, and also remains a square
+when the leading digit is replaced by a 3, and also remains a square
+when the leading digit is replaced by a 4?
+
+==> pickover/pickover.08.s <==
+-------------------------
+
+
+> 1.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2?
+>
+    11025 ( 105 * 105 )      ----       21025 ( 145 * 145 )
+
+>
+> 2.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2 and also remains a square
+> when the leading digit is replaced by a 3?
+>
+    No solution till 1,000,000,000.
+
+> 3.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2, and also remains a square
+> when the leading digit is replaced by a 3, and also remains a square
+> when the leading digit is replaced by a 4?
+>
+>
+   No solution till 1,000,000,000.
+
+
+The property that you are looking for ( however with different leading
+
+digits ) is owned by the following numbers.
+
+
+2025    3025
+-------------
+11025   21025
+57600   67600
+---------------
+202500   302500
+342225   442225
+------------------
+1102500   2102500
+3515625   4515625
+5760000   6760000
+-------------------
+11390625   21390625
+20250000   30250000
+34222500   44222500
+----------------------
+110250000     210250000
+196700625     296700625
+351562500     451562500
+576000000     676000000
+-------------------------
+
+This is probably of no use to you, but, anyway.
+
+-------------------------
+
+In article <1992Oct20.184149.51596@watson.ibm.com> you write:
+>Title: Cliff Puzzle 8: Squares and Squares and Squares ....
+>1.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2?
+
+>In other words, if x**2 = 1.........., is there a y**2 = 2.........  ?
+
+(Isn't this first part an old puzzle?)
+
+105^2=11025; 145^2=21025.  In general we want 10^k=(y-x)(y+x) and
+1.5 < (y/x)^2 < 2.  Thus y+x and y-x must be factors of 10^k of
+the same parity whose ratio is between 5.828... and 9.899...
+(these are (t+1)/(t-1) for t^2=2 and 1.5 respectively).  The
+smallest solution (x,y)=(105,145) corresponds to the factorization
+10^4=40*250; gp/pari's "fordiv" function allows one to easily list
+all primitive solutions [i.e. not obtained from a smaller solution
+by multiplying x,y by the same power of 10] with x^2 and y^2 each
+having at most (say) 50 digits:
+
+[x,y]=
+
+[145, 105]
+[17225, 14025]
+[454625, 326625]
+[53948125, 43708125]
+[1425503125, 1015903125]
+[168971890625, 136203890625]
+[529265958203125, 424408358203125]
+[1657888279384765625, 1322343959384765625]
+[5193483785077392578125, 4119741961077392578125]
+
+In fact it can be seen that the primitive solutions correspond to
+integer linear combinations of log(2) and log(5) lying in a certain
+fixed interval (determined by the bounds 5.828... and 9.899...),
+which probably explains the regular growth of this list.
+
+>2.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2 and also remains a square
+>when the leading digit is replaced by a 3?
+
+There is no such beast, since the three squares would constitute an
+arithmetic progression of integer squares of common difference 10^k,
+and so give an A.P. of 3 rational squares of common difference 1 or 10 ---
+which is known to be impossible by a "2-descent" argument (the case of
+common difference 1 is already due to Fermat).  [We were lucky here:
+in a different number system this argument might fail; for instance the
+squares of 7/2, 17/2, 23/2 are an A.P. of common difference 60, the
+sexagesimal base.  (Some numerology: 7,17,23 are the first three primes
+of which 2 is a quadratic residue.)  Still, given the base b, the general
+theory of elliptic curves indicates that the rational solutions of
+Y^2-X^2=Z^2-X^2=b are rather sparsely distributed (the number of d-digit
+solutions growing as some power of d), and the extra condition that they
+arise by changing only the initial digits of three integer squares is
+strong enough to ensure that there are at most finitely many solutions;
+with yet more powerful methods one can even provably list them all.]
+
+>3.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2, and also remains a square
+>when the leading digit is replaced by a 3, and also remains a square
+>when the leading digit is replaced by a 4?
+
+Of course the above solution to part 2 also disposes of this part;
+alternatively I could apeal to another classic result of Fermat:
+there is no 4-term A.P. of rational squares.
+
+My question: why all the blank spaces at the end of every line?
+
+--Noam D. Elkies (elkies@zariski.harvard.edu)
+  Dept. of Math., Harvard Univ., Cambridge, MA 02138
+-------------------------
+
+I dunno the direct answer to your squares problem.  I do know,
+however, that phi (from the Golden Ratio--approx 0.61), which is
+defined as the number x such that  x + 1 = x^2.  It just so happens
+that phi+1 and (phi+1)^2 differ by only 1.  (1.61 and 2.61)  The
+rest of the digits are the SAME!  Phi = (Sqrt(5)-1)/2.
+
+Phi+1 = (Sqrt(5)+1)/2    phi+2 = (Sqrt(5)+3)/2
+(Phi+1)^2= (5+2*Sqrt(5)*1+1)/4 = (2*Sqrt(x)+6)/4 = (Sqrt(x) + 3)/2
+
+Notice how that all works out?  Perhaps this property will bring you
+closer to an answer.  I just sent you all my personal data in
+a previous letter concerning your 123 problem.  Let me know
+what you think of this approach, ok?  Thanks in advance!
+
+--Joseph Zbiciak  im14u2c@camelot.bradley.edu
+
+
+-------------------------
+
+In article <1992Oct20.184149.51596@watson.ibm.com> you write:
+: 2.  What is the smallest square with leading digit 1 which remains a
+: square when the leading 1 is replaced by a 2 and also remains a square
+: when the leading digit is replaced by a 3?
+
+This is not possible.  One of these numbers would leave a remainder
+of 2 when divided by 3, and no square is congruent to 2 modulo 3.
+
+--
+David Radcliffe
+radcliff@csd4.csd.uwm.edu
+-------------------------
+
+
+In article <1992Oct20.184149.51596@watson.ibm.com> you write:
+: 1.  What is the smallest square with leading digit 1 which remains a
+: square when the leading 1 is replaced by a 2?
+
+11025.  I found, by hand, all integral solutions to
+(x+y)(x-y) = 10000.  The solution (145,105) is the only
+one with 10000 < y^2 < 20000.
+
+You have permission to use my solution, but not my name.
+
+--
+David Radcliffe
+radcliff@csd4.csd.uwm.edu
+-------------------------
+
+Well, as a previous poster already mentioned on Rec.puzzles, there are only 4
+solutions to the initial problem. They are 192, 219, 293, and 327. None of
+these solutions can be connected to others as in part 2 of your problem.
+
+I first extended the problem to allow any multipliers. So the second row must
+be some multiple of the first and the third some other multiple of the first.
+I found 19 solutions to this problem. However, there is still no way to chain
+a second solution to the first.
+
+Then I allowed 0s. Now there are 134 solutions. There are also 17 2-chains.
+There are two 3-chains which I will list here:
+    192     394
+*2= 384 *3=1182
+*3= 576 *4=1576
+*7=4032  now the same as the other solution.
+*9=5184
+*4= 736
+*5= 920
+
+I will be more than happy to send you all 134 solutions if you really want
+them! I also have Pascal source code.
+
+Comments on some of your other problems will follow.
+
+Dan Cory
+Senior, Stanford
+
+perm. address:
+55 Cedar St.
+Chapel Hill, NC 27514
+
+school address:
+PO Box 13113
+Stanford, CA 94309
+
+Should you use any of my results, please send a copy of the work to the
+permanent address above.
+-------------------------
+
+
+In article <1992Oct20.184149.51596@watson.ibm.com>, you write:
+|> Title: Cliff Puzzle 8: Squares and Squares and Squares ....
+|> 1.  What is the smallest square with leading digit 1 which remains a
+|> square when the leading 1 is replaced by a 2?
+
+11025 = 105^2, 21025 = 145^2.
+
+|> 2.  What is the smallest square with leading digit 1 which remains a
+|> square when the leading 1 is replaced by a 2 and also remains a square
+|> when the leading digit is replaced by a 3?
+|>
+|> 3.  What is the smallest square with leading digit 1 which remains a
+|> square when the leading 1 is replaced by a 2, and also remains a square
+|> when the leading digit is replaced by a 3, and also remains a square
+|> when the leading digit is replaced by a 4?
+
+These two cases never occur.
+
+Proof: (This was a LOT harder than I thought it would be when I started!)
+The original problem can be reduced to:
+ "Find positive integers x,y,n such that
+    y^2-x^2 = 10^n  and  10^n < x^2 < 2*10^n." [1]
+
+The second problem amounts to finding x,y,z,n which meet the above
+conditions, plus z^2-y^2=10^n.
+
+For the second problem, look at the set of solutions to
+  z^2-y^2 = 10^n,  2*10^n < y^2 < 3*10^n.  [2]
+
+A solution to the second problem consists of x,y,z,n, where x,y,n solve
+the original problem and y,z,n solve the above system.
+
+The first equation in [1] can be factored into (y-x)(y+x) = 10^n = 2^n * 5^n.
+Similarly (z-y)(z+y) = 10^n.  Since x,y,z are integers, we must have
+y+x = 2^a * 5^b,  y-x = 2^(n-a) * 5^(n-b)
+z+y = 2^c * 5^d,  z-y = 2^(n-c) * 5^(n-d)
+where a,b,c,d are integers.  When a=c and b=d, y+x = z+y and y-x = z-y,
+which leads to a contradiction.
+
+Then 2y = 2^a * 5^b + 2^(n-a) * 5^(n-b) = 2^c * 5^d + 2^(n-c) * 5^(n-d)
+However, in the last equality above, divide both sides by 2^f, where f is
+the smallest of a, c, n-a, and n-c. The result is:
+
+2^(a-f) * 5^b + 2^(n-a-f) * 5^(n-b) = 2^(c-f) * 5^d + 2^(n-c-f) * 5^(n-d)   [3]
+
+Now, at least one of the four products above is a product of only 5's, and
+is odd.  Only one is odd unless a=c, 2a=n, or 2c=n.
+    If a=c, then either b=d (contradiction) or z+y is at least
+  a factor of 5 larger than y+x.  However, considering
+    sqrt(3)*sqrt(10^n) < z < 2*sqrt(10^n)
+    sqrt(2)*sqrt(10^n) < y < sqrt(3)*sqrt(10^n)
+	    sqrt(10^n) < x < sqrt(2)*sqrt(10^n)
+  we have:
+    (sqrt(3)+sqrt(2))*sqrt(10^n) < z+y <       (2+sqrt(3))*sqrt(10^n)
+	  (1+sqrt(2))*sqrt(10^n) < y+x < (sqrt(3)+sqrt(2))*sqrt(10^n)
+  and then (z+y)/(y+x) < (2+sqrt(3))/(1+sqrt(2)) < 5.
+    If a exactly equals n/2:
+  In the case that b=a=n/2, y+x = y-x, so x=0 (not possible).
+  If b<n/2, y-x>y+x, but we want x to be positive, so b>n/2.  Since b and
+  n/2 are integers (remember n/2=a), b-(n-b) >= 2, and (y+x)/(y-x) >= 25.
+  This gives     (y+x) >= 25(y-x),
+	(y+x+y-x) = 2y >= 26(y-x),
+		     y >= 13y-13x,
+		   13x >= 12y,
+		   x/y >= 12/13
+	       x^2/y^2 >= 144/169
+
+  However, we know 10^n < x^2 < 2*10^n, and y^2 = x^2 + 10^n, so x^2/y^2
+  varies between 1/2 and 2/3, and cannot be greater than 144/169.
+    Similarly, when c=n/2, the same argument applies, and in the final step
+  we know y^2/z^2 varies between 2/3 and 3/4.
+Finally, we've eliminated all cases where more than one of the terms in [3]
+is odd.  With exactly one term odd, we have odd=even, a contradiction,
+so there is no solution.
+
+--
+----w-w--------------Joseph  De Vincentis--jwd2@owlnet.rice.edu----------------
+   ( ^ )   Disclaimer: My opinions do not represent those of Owlnet.
+   (O O)   Owlnet: George R. Brown School of Engineering Educational Network.
+    v-v    (Unauthorized use is prohibited.)  (Being uwop-ap!sdn is allowed.)
+-------------------------
+
+
+G'day Cliff!
+
+> * * *
+>
+> 1.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2?
+>
+> In other words, if x**2 = 1.........., is there a y**2 = 2.........  ?
+
+The smallest I could find was 105**2 = 11025
+                              145**2 = 21025
+
+Indeed, an exhaustive search shows that this is the smallest.
+
+The other pairs I found (after a few minutes playing with pen and paper - I
+could probably write a program to generate them ad nauseum, but I've got a
+draft thesis to write...) were:
+
+    3375**2 = 11390625,       4625**2 = 21390625
+   14025**2 = 196700625,     17225**2 = 296700625
+  326625**2 = 106683890625, 454625**2 = 206683890625
+
+I don't know what pattern there is in them.  Of course, if x is a solution,
+then so is 10*x.  So these give solutions for 1050*1050 = 1102500, etc.
+
+> 2.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2 and also remains a square
+> when the leading digit is replaced by a 3?
+>
+> 3.  What is the smallest square with leading digit 1 which remains a
+> square when the leading 1 is replaced by a 2, and also remains a square
+> when the leading digit is replaced by a 3, and also remains a square
+> when the leading digit is replaced by a 4?
+
+I'll answer part 3 first.  If such a square exists, then observe that we have
+4 squares in arithmetic progression (common difference a power of 10).  There
+is a well known theorem that there is no set of four squares in arithmetic
+progression, so there is no solution to part 3.
+
+Now, for part 2.  We have 3 squares in arithmetic progression.  Another well
+known (and not too hard to derive) theorem states that for three squares in
+arithmetic progression, their common difference is of the form:
+
+D = 4 * K^2 * m * n * (m^2 - n^2) = 4 * K^2 * m * n * (m + n) * (m - n)
+
+Now, this value is a power of 10.  So the only primes in its factorisation are
+2 and 5.  Hence neither m nor n is divisible by 3.  So (m^2 - n^2) is
+divisible by 3.  Hence a power of 10 is divisible by 3.  Contradiction.  So
+now such set of three squares exist (which also proves part 3).
+
+Cheers,
+Geoff.
+
+PS: I assume you still have whatever details of mine you care about.
+
+-------------------------------------------------------------------------------
+Geoff Bailey (Fred the Wonder Worm)   |   Programmer by trade --
+ftww@cs.su.oz.au                      |       Gameplayer by vocation.
+-------------------------------------------------------------------------------
+
+
+-------------------------
+
+Here is the solution I just posted to rec.puzzles. Note that I changed my mind
+on this puzzle!
+
+Dan Cory
+Senior, Stanford
+PO Box 13113
+Stanford, CA 94309
+ypay@leland.stanford.edu
+
+Newsgroups: rec.puzzles
+Subject: Re: Cliff Puzzle 8: Squares and Squares ... (SPOILER)
+Approved: news-answers-request@MIT.Edu
+Summary: solutions to part 1, no solutions to parts 2 or 3
+Expires:
+References: <1992Oct20.184149.51596@watson.ibm.com>
+Sender:
+Followup-To:
+Distribution:
+Organization: DSG, Stanford University, CA 94305, USA
+Keywords: squares, cliff, 8, gcd
+
+In article <1992Oct20.184149.51596@watson.ibm.com> cliff@watson.ibm.com (cliff)
+>1.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2?
+>In other words, if x**2 = 1.........., is there a y**2 = 2.........  ?
+
+We write this condition as the following equations with x,y,a integers:
+y^2-x^2=10^a
+1*10^a<=x^2<=2*10^a
+2*10^a<=y^2<=3*10^a
+We factor the first equation:
+(y-x)(y+x)=10^a.
+Let u=x+y. Then 10^a/u=x-y. Since x+y>x-y, u>10^a/u so u>10^(a/2)
+Then x=(u-10^a/u)/2 and y=(u+10^a/u)/2.
+
+Subsitute these equations into the inequalities above.
+For x we get:
+10^a<=((u-10^a/u)/2)^2<=2*10^a
+Take the square root of both (all three?) sides:
+10^(a/2)<=(u-10^a/u)/2<=sqrt(2)*10^(a/2)
+Multiply through by 2 and divide through by 10^(a/2).
+2<=u/10^(a/2)-10^(a/2)/u<=2*sqrt(2)
+Let v=u/10^(a/2). So v>1. Then:
+2<=v-1/v<=2*sqrt(2).
+
+We solve these two inequalities. First the left:
+v-1/v>=2
+v^2-2v-1>=0
+v>=(1+sqrt(2)) or v<=(1-sqrt(2)).
+v-1/v<=2*sqrt(2)
+v>=(sqrt(2)+sqrt(3)) or v<=(sqrt(2)-sqrt(3)).
+Since v>1, we drop the negative solutions and find:
+1+sqrt(2) <= v <= sqrt(2)+sqrt(3).
+or
+1+sqrt(2) <= u/10^(a/2) <= sqrt(2)+sqrt(3).
+
+We can do the same for y but we will find the same restriction on u.
+
+Now we remember that u|10^a (u divides 10^a). Therefore u must be a power of
+2 times a power of 5. Let u=5^b*2^c with b,c integers less than or equal to a.
+Since we are going to divide it by 2, we must have c>=1.
+Then we need to find a,b,c such that:
+1+sqrt(2) <= 5^b*2^c/10^(a/2) <= sqrt(2)+sqrt(3)
+These will give us u which will in turn determine x and y.
+So take the log base 10 of all three sides. Since log is increasing, we do not
+change the direction of inequality. Thus:
+log(1+sqrt(2)) <= b*log(5)+c*log(2)-a/2 <= log(sqrt(2)+sqrt(3))
+Multiply through by 2:
+2*log(1+sqrt(2)) <= 2*b*log(5)+2*c*log(2)-a <= 2*log(sqrt(2)+sqrt(3))
+
+If we approximate log(5) and log(2), this is sort of a Diophantine equation.
+Since log(5) is very very close to 0.7 and log(2) is very very close to 0.3,
+our approximations will be okay to find low solutions. If we want big solutions
+then we need to use better convergents. We can calculate the boundary logs
+as accurately as necessary. So:
+0.77 <= 7/5*b+3/5*c-a <= 0.99
+Multiply through by 5:
+3.8 <= 7*b+3*c-5*a <= 4.9
+So we must find a,b,c such that 7*b+3*c-5*a = 4, with a>b>=0 and a>=c>0.
+There are many good ways to solve this but we will just pick a small solution.
+b=3, c=1, a=4 (7*3+3-5*4=21+3-20=4)
+Then u=5^3*2^1=250.
+So y+x=250 and y-x=10^a/u=10^4/250=40.
+Then y=145 and x=105.
+y^2=21025 and x^2=11025.
+
+This is, in fact, the smallest solution (it is easy to show that there is no
+solution to the 7*b+3*c-5*a with a<4 and a>b>=0,a>=c>0).
+
+>2.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2 and also remains a square
+>when the leading digit is replaced by a 3?
+
+We note from above that y=(5^b*2^c+10^a/(5^b*2^c)/2 or
+2y=5^b*2^c+5^(a-b)*2^(a-c).
+
+Should we now repeat the problem for a square with leading digit 2 that is
+replaced by a 3, everything is the same except that y is now the smaller of the
+pair. Thus:
+2y=5^B*2^C-5^(a-B)*2^(a-C)
+where B and C are different from b and c above but a is necessarily the same
+(since we want the difference to be the same power of 10 for each transition).
+
+Combining the two we get:
+5^b*5^c+5^(a-b)*2^(a-b)=5^B*2^C-5^(a-B)*2^(a-C).
+The proof that this has no solutions is too small to fit in the margin of this
+posting.
+
+>3.  What is the smallest square with leading digit 1 which remains a
+>square when the leading 1 is replaced by a 2, and also remains a square
+>when the leading digit is replaced by a 3, and also remains a square
+>when the leading digit is replaced by a 4?
+There is no solution since there is no solution to part 2.
+
+Dan Cory
+
+
+==> pickover/pickover.09.p <==
+Title: Cliff Puzzle 9: 3-Atoms and Growth
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+    Start with 3 digits: 1, 2, and 3.
+Each succeding row repeats the previous three rows, in order,
+as you can see from the following diagram.
+
+1
+2
+3
+123
+23123
+312323123
+12323123312323123
+2312331232312312323123312323123
+
+1. What is the sum of digits in the 100th row?
+
+2. Get rid of all the twos.  Here I've replaced each of them with a "."
+
+1
+

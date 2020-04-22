@@ -1,0 +1,1190 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03385; Sat, 20 Apr 1996 14:52:27 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07864; Sat, 20 Apr 96 14:12:03 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25237; Sat, 20 Apr 1996 11:12:53 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (pickover), part 30 of 35
+Message-Id: <puzzles/archive/pickover/part3_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:43 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1163
+Xref: senator-bedfellow.mit.edu rec.puzzles:25019 news.answers:11539 rec.answers:1939
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/pickover/part3
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> pickover/pickover.12.p <==
+Title: Cliff Puzzle 12: Slides in Hell
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+Consider a metallic slide with 10 large holes in it equally spaced from
+top to bottom.  If you attempt to slide down the slide you have a 50%
+probability of sliding through each hole in the slide into an oleaginous
+substance beneath the slide during each encounter with a hole.
+
+1.  If you were a gambling person, which hole would you bet a person
+would fall through?
+
+2.  If you were a gambling person, how many attempts would it require
+for a person to slide from the top of the slide to the bottom without
+falling through a single hole.
+
+3.  If all the people on earth lined up to go down the slide, and they
+slid down a more horrifying slide with 100 holes at a rate of 1 person
+per second, when would you expect the first person to arrive at the
+bottom of the slide without falling through.
+An hour? A day? A decade? ...
+Received: from uoft02.utoledo.edu by watson.ibm.com (IBM VM SMTP V2R2) with TCP;
+Title: Cliff Puzzle 12: Slides in Hell
+>Consider a metallic slide with 10 large holes in it equally spaced from
+>top to bottom.  If you attempt to slide down the slide you have a 50%
+>probability of sliding through each hole in the slide into an
+>oleaginous substance beneath the slide during each encounter with a
+>hole.
+>
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+None.  The best chance is the first hole but I got a 50-50 chance.  Why
+bother?  (2nd hole is 1/4, 3rd 2**-3, ...)
+
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+No gurantee.  Each slide is an independent event.  Now, if you are
+talking mere probability, on the average, one in 1024 slides may make
+it through all 10 holes.
+
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.  An hour? A day? A decade?
+
+Again, can't tell.  It could be the first one, it could be none.  Probablity
+can not foretell actual events.  But if you have infinite number of people
+sliding down till eternity, on the average, you may see 1 person slide over
+all holes every (2**100)/(365*24*69*6) years.  This number is many times
+bigger than the world population for now.
+
+==> pickover/pickover.12.s <==
+-------------------------
+
+In article <1992Oct23.160130.166012@watson.ibm.com> you write:
+: Consider a metallic slide with 10 large holes in it equally spaced from
+: top to bottom.  If you attempt to slide down the slide you have a 50%
+: probability of sliding through each hole in the slide into an oleaginous
+: substance beneath the slide during each encounter with a hole.
+:
+: 1.  If you were a gambling person, which hole would you bet a person
+: would fall through?
+The chance of falling thru the first hole is 50%.  For the second hole, it
+is (.5)(.5) = 25%, the thrid is (.5)^3 = .125.  The chance by the tenth
+hole is about .0097 %.  Obviously, since I am limited to one hole, I would
+place my money on hole #1 (best chance).
+
+: 2.  If you were a gambling person, how many attempts would it require
+: for a person to slide from the top of the slide to the bottom without
+: falling through a single hole.
+The sum of the prob for falling thru a hole is .5 + .5^2 + .5^3 +...+.5^10.
+This is about 99.902% = .99902.  So about 98 times out of 100000, someone
+will make it through without falling.  This is about 1 time out of 1020.
+So give or take about 1020 tries....
+:
+: 3.  If all the people on earth lined up to go down the slide, and they
+: slid down a more horrifying slide with 100 holes at a rate of 1 person
+: per second, when would you expect the first person to arrive at the
+: bottom of the slide without falling through.
+: An hour? A day? A decade? ...
+The prob for falling thru the last hole is .5^100 = 7.88x10^-31.  There must
+be some chance less than this that one WILL make it thru the slide.  The MIN
+number of tries that it must take is 1/.5^100 = 1.26x10^30.  At the given rate
+this is about 9.647 x 10^23 years, much older than the universe if I remeber
+correctly.
+Also, the chance of making it must be GREATER than .5^101.  or with
+all the math, the MAX amount of time is 1.929x10^24 years.  So give or
+take about 1.5x10^24 years....
+
+
+
+--
+Michael Neylon   aka Masem the Great and Almighty Thermodynamics GOD!
+      //         | Senior, Chemical Engineering, Univ. of Toledo
+  \\ // Only the |   Summer Intern, NASA Lewis Research Center
+\  \X/   AMIGA!  |         mneylon@jupiter.cse.utoledo.edu           /
+ --------+ How do YOU spell 'potato'?  How 'bout 'lousy'? +----------
+    "Me and Spike are big Malcolm 10 supporters." - J.S.,P.L.C.L
+-------------------------
+
+In rec.puzzles you write:
+
+>Title: Cliff Puzzle 12: Slides in Hell
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please send me your name,
+>address, affiliation, e-mail address, so I can properly credit you if
+Jeff Rogers
+Rensselaer Polytechnic institute
+rogerj@rpi.edu
+
+>Consider a metallic slide with 10 large holes in it equally spaced from
+>top to bottom.  If you attempt to slide down the slide you have a 50%
+>probability of sliding through each hole in the slide into an oleaginous
+>substance beneath the slide during each encounter with a hole.
+>
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+The first one. There's only a 50% chance of them getting past it, and a
+small chance of them falling into each succeeding hole.
+hole #     percent chance of reaching and falling into
+1            50
+2            25
+3            12.5
+4            6.25
+5            3.125
+6            1.5625
+7            0.78125
+8            0.390625
+9            0.1953125
+10           0.09765625
+
+>
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+The chances for reaching each succeeding hole are the same as reaching and
+falling into the previous one. Therefore, the chances of passing all the
+holes are the same as reaching and falling into the last hole  (see previous
+answer for stats), which makes the probability .0009765625, so
+statistically, 1024 slides would be required to guarantee reaching the
+bottom. If I was a gambling person, I'd probably bet about half this,
+because the actual events can happen in any order, and on average, I'd guess
+that he'd get down in about 512 slides.
+
+>
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.
+>An hour? A day? A decade? ...
+
+This is solved similarly; it is represented by powers of 2. To successfully
+get past the last hole, it would require (statistically, at least) 2^100
+or (by my trusty pocket calculator) 1.2676506 *10^30 slides.
+More significant figures? dc! Which gives 1267650600228229401496703205376.
+In similar logic as the last problem, I'd expect about half that, or
+633825300114114700748351602688 slides. How much time would this be? Excluding
+leap years, I calculate 20098468420665737593491 years. That's 20 sextillion
+years, significantly more than the age of the universe, by about 11 orders
+of magnitude. So I'd guess that no one will ever reach the bottom, they'll
+all try and fail (assuming everyone only gets to go once), or die waiting in
+line.
+
+Diversion
+
+--
+"I can see 'em                          | "Want me to create a diversion?"
+    I can see 'em                       | Diversion
+        Someone wake me when it's over" | rogerj@rpi.edu
+-------------------------
+
+In article <1992Oct23.160130.166012@watson.ibm.com> you write:
+Title: Cliff Puzzle 12: Slides in Hell
+>Consider a metallic slide with 10 large holes in it equally spaced from
+>top to bottom.  If you attempt to slide down the slide you have a 50%
+>probability of sliding through each hole in the slide into an
+>oleaginous substance beneath the slide during each encounter with a
+>hole.
+>
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+None.  The best chance is the first hole but I got a 50-50 chance.  Why
+bother?  (2nd hole is 1/4, 3rd 2**-3, ...)
+
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+No gurantee.  Each slide is an independent event.  Now, if you are
+talking mere probability, on the average, one in 1024 slides may make
+it through all 10 holes.
+
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.  An hour? A day? A decade?
+
+Again, can't tell.  It could be the first one, it could be none.  Probablity
+can not foretell actual events.  But if you have infinite number of people
+sliding down till eternity, on the average, you may see 1 person slide over
+all holes every (2**100)/(365*24*69*6) years.  This number is many times
+bigger than the world population for now.
+-------------------------
+
+Some answers to your questions:
+
+1. As the puzzle states there is a 50% chance of falling into each
+hole, I would bet a person would fall into the first hole -- in a large
+enough sample, 1/2 of the people will fall through the first hole, 1/4
+through the second, 1/8 through the third, etc.
+
+2. In a large sample, 1/(2^10) people would make it all the way down
+the slide without falling through any of the holes (1/1024). This means
+that 1023 out of 1024 people would fall through a hole. Using the
+formula (1023/1024)^x=1/2, we can determine out of the first x people
+to go down the slide, there is a 50% chance that one person will make
+it down without falling through a hole.  The answer to this equation is
+x=709.4 Thus I would bet that a person would make it all the way down
+on one of the first 710 attempts.
+
+3. As 2^100=1.2676*10^30 (roughly), and (including leaps years under
+the Gregorian calendar) there are 31556952 seconds in the average year,
+then statistically one person should make it down the slide every
+4.017*10^22 YEARS. However, and this is a very rough estimate, I figure
+the log of (1-1/(1.2676*10^30)) to be about -5.5*10^(-29). [I'm doing
+the calculations on a scientific calculator which only has 10 places.]
+Thus, using the formula xlog(1-1/2^100)=log(1/2), I get x=5.5*10^27.
+Thus, there's about a 50% chance that after 5.5*10^27 seconds, someone
+will have made it down the slide. To be on the safe side, I'd bet only
+if I were given at least 6*10^27 seconds, a value which equals
+1.901*10^20 YEARS.
+
+I hope this answers the questions.
+
+Ted Schuerzinger
+
+email: J.Theodore.Schuerzinger@Dartmouth.EDU
+snailmail: HB 3819
+Dartmouth College
+Hanover, NH 03755
+USA
+
+In case you're wondering, I'm just a junior at Dartmouth who's
+interested in puzzles like these. I'm not even a math major -- I'm a
+double major in government and Russian.
+-------------------------
+
+In article <1992Oct23.160130.166012@watson.ibm.com> you write:
+>Title: Cliff Puzzle 12: Slides in Hell
+>From: cliff@watson.ibm.com
+
+>Consider a metallic slide with 10 large holes in it equally spaced from
+>top to bottom.  If you attempt to slide down the slide you have a 50%
+>probability of sliding through each hole in the slide into an oleaginous
+>substance beneath the slide during each encounter with a hole.
+>
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+There's a 50% chance of falling through the first hole, 25% the
+second, 2^-n the n'th.  If the odds offered were the same, I'd go for
+the first hole.
+
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+You expect to make it 1 out of 1024 times; after 710 tries, the chance
+of someone succeeding exceeds 1/2.  (Log base (1023/1024) of 1/2 is
+709.4).
+
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.
+>An hour? A day? A decade? ...
+
+Never.  OK, 1/2^100 will make it.  There being under 2^33 people on
+the planet, ...
+
+After 4.2e22 years, the expected number of people who succeeded is 1;
+after about 2.9e22 years, the chance of someone having succeeded is
+about 1/2.
+
+Like I said, never.
+
+Seth		sethb@fid.morgan.com
+-------------------------
+
+In rec.puzzles you write:
+
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+If the pay-back odds were the same regardless of the hole, then obviously,
+I'd bet on the first hole!  There's a 1:2 chance the person falls through
+the first hole, a 1:4 combined chance of the person falling though the
+second hole, etc...
+
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+1024 is the median value for this case...  There's a 1:2**n chance of
+a person falling through the nth hole, having missed all of the holes
+before n.  Since the probability of falling through = the probability
+passing over the hole safely (vs not ever getting there), the
+probability that a person makes it to the end is also 1:1024.
+
+
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.
+>An hour? A day? A decade? ...
+There is a 1:2**(100-Log2(5 billion people)) chance that somebody makes
+it through...  Given a finite # of people on the planet (approx 5 bil.)
+I think we'll run out first...
+
+
+--Joseph Zbiciak   im14u2c@camelot.bradley.edu
+
+
+-------------------------
+
+Subject: Re: Cliff Puzzle 12: Slides in Hell (SPOILER)
+Newsgroups: rec.puzzles
+References: <1992Oct23.160130.166012@watson.ibm.com>
+
+In article <1992Oct23.160130.166012@watson.ibm.com>, Cliff Pickover writes:
+
+> Consider a metallic slide with 10 large holes in it equally spaced from
+> top to bottom.  If you attempt to slide down the slide you have a 50%
+> probability of sliding through each hole in the slide into an oleaginous
+> substance beneath the slide during each encounter with a hole.
+
+> 1.  If you were a gambling person, which hole would you bet a person
+> would fall through?
+
+The probability of falling into hole i is (1/2)^i, so your best bet
+would be hole 1.
+
+> 2.  If you were a gambling person, how many attempts would it require
+> for a person to slide from the top of the slide to the bottom without
+> falling through a single hole.
+
+The probability of success is p = (1/2)^10, and as each trial is
+independant the expected number of trials before success is 1/p or
+2^10.
+
+> 3.  If all the people on earth lined up to go down the slide, and they
+> slid down a more horrifying slide with 100 holes at a rate of 1 person
+> per second, when would you expect the first person to arrive at the
+> bottom of the slide without falling through.
+
+In this case the number of expected trials is 2^100, which is much
+larger than the total number of people.
+
+> An hour? A day? A decade? ...
+
+Try about 10^24 years.  As another problem, assuming a large enough
+supply of sliders estimate when the slide will wear through from
+friction.
+-------------------------
+
+In article <1992Oct23.160130.166012@watson.ibm.com> you write:
+>Title: Cliff Puzzle 12: Slides in Hell
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please send me your name,
+>address, affiliation, e-mail address, so I can properly credit you if
+>you provide unique information.  PLEASE ALSO directly mail me a copy of
+>your response in addition to any responding you do in the newsgroup.  I
+>will assume it is OK to describe your answer in any article or
+>publication I may write in the future, with attribution to you, unless
+>you state otherwise.  Thanks, Cliff Pickover
+>
+>      * * *
+>
+>Consider a metallic slide with 10 large holes in it equally spaced from
+>top to bottom.  If you attempt to slide down the slide you have a 50%
+>probability of sliding through each hole in the slide into an oleaginous
+>substance beneath the slide during each encounter with a hole.
+>
+>1.  If you were a gambling person, which hole would you bet a person
+>would fall through?
+
+I'd bet that they fell through the first hole.  The probability of that
+happening is 50%.  The probability of them falling through the second
+hole is:
+P(didn't fall through the first)*P(fell through the second) = 50%*50% = 25%
+
+In general, P(falls through hole n)=
+P(no fall through 1)*P(no fall through 2)*...*P(no fall through n-1)
+ *P(fell through hole n).
+For this problem, P(falls through hole n) is (50%)^n, where n is the hole #
+from the top.
+
+>2.  If you were a gambling person, how many attempts would it require
+>for a person to slide from the top of the slide to the bottom without
+>falling through a single hole.
+
+(Hey, after the first failed attempt, they're screwed, no?)
+P(success)=P(no fail)=P(no fall 1)P(no fall 2)...P(no fall 10)
+ =50%^10
+ =1/1024
+They should make it at least one time in 1024.
+
+>3.  If all the people on earth lined up to go down the slide, and they
+>slid down a more horrifying slide with 100 holes at a rate of 1 person
+>per second, when would you expect the first person to arrive at the
+>bottom of the slide without falling through.
+>An hour? A day? A decade? ...
+
+Oh, one in about 4.02*10^22 years...  I wouldn't hold my breath.
+
+
+-Richard
+-------------------------
+
+1. I would bet on the first hole, as there is a 0.5 probability of a person's
+   falling into it, which is the highest such probability.
+
+2. The probability of reaching the end of the slide on a particular try is
+   1/2^10 = 1/1024.  In 709 tries, there is an approximately 0.5 probability of
+
+3. Beats me - the even money bet is for a number of tries (approximately) equal
+          ((2^100 - 1)/(2^100))
+   calculate it.
+
+
+
+--
+_______________________________________________________________________
+Dan Blum           Institute for the Learning Sciences   Room 327
+blum@ils.nwu.edu   1890 Maple Ave., Evanston, IL 60201   708-467-2306
+
+"Let it be granted that a controversy may be raised about any question,
+ and at any distance from that question."
+					  Lewis Carroll
+_______________________________________________________________________
+
+
+==> pickover/pickover.13.p <==
+Title: Cliff Puzzle 13: Ladders to Heaven
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+Consider the following scenario.  A standard ladder stretches from each
+country on the earth upward a distance equal to the distance from the
+earth to the moon.
+
+Assume:
+1. the ladder is made out of a strong metal such as
+titanium, which will not break.
+2. the ladder is inclined at a very steep angle, 70 degrees, for
+each country.
+3. there is a breathable atmosphere.
+4. the people (or teams of people) are allowed to use standard
+mountain climbing and camping gear, e.g. ropes, backpacks, etc. but not
+sophisticated electrical mechanisms, engines, etc.
+5. a reward is given to whomever reaches the top of the ladder
+first: 1 million dollars to that person.  In addition the country's
+national debt is wiped out.
+
+Questions:
+1.  Approximate how long it would take a person (or team of people) to
+reach the top of the ladder.  Days?  Weeks?  Years?
+
+2. Which country would be the first?
+
+3. Is there any novel method you would suggest to achieve this goal?
+
+4. Is this task impossible to carry out.
+
+==> pickover/pickover.13.s <==
+-------------------------
+
+Interesting puzzle... Just one question though: Is there a moon,
+i.e. is it possible to use the gravitational field of the moon to your
+advantage by "falling upwards" once you have reached the point where
+the moon's gravity is bigger than the erath's (and do we also assume that
+the the climber(s) must survive the fall?? :-) or shall we assume that the
+earth is alone in the universe?
+
+
+Spyros Potamianos
+potamian@hpl.hp.com
+-------------------------
+
+Newsgroups: rec.puzzles
+Subject: Re: Cliff Puzzle 13: Ladders to Heaven
+References: <1992Oct23.193252.108077@watson.ibm.com>
+Organization: The Chrome Plated Megaphone of Destiny
+
+>1.  Approximate how long it would take a person (or team of people) to
+>reach the top of the ladder.  Days?  Weeks?  Years?
+
+Note that after you're 22,300 miles from the earth's axis, you get to
+"fall" the rest of the way, as long as you don't lose contact with
+the ladder.
+	
+>2. Which country would be the first?
+
+It has already been pointed out that countries on the equator have an
+advantage.  I suppose you could consider that countries with a large
+national debt have extra motivation.  :-)
+
+>3. Is there any novel method you would suggest to achieve this goal?
+
+I would suggest a bicycle-like vehicle clamped to the ladder.  By
+pulling a light but strong rope on a pulley (perhaps obtained form
+the same source as this fantastic ladder material), riders could be
+changed fairly quickly, thanks to a crew of brawny pulley-pullers
+with a variable-geared linkage to the rope.
+
+For the rider to pull this ever-longer rope seems impossible, but I
+think shorter segments could be lifted and linked.  Or the ground
+crew could help the rider by pulling down rope from a hub of lesser
+diameter than the wheels of the vehicle.
+
+>4. Is this task impossible to carry out.
+
+No.  I thought it might be impossible to halt at the far end of the
+ladder and return, due to centrifugal acceleration, but that
+acceleration turns out to be only about 5 cm/s^2.
+__________________________________________________________
+Matt Crawford       matt@severian.chi.il.us       Java Man
+
+
+-------------------------
+
+> How do we get food to the people?
+
+I would have the riders change so often that they'd only need some
+high-carbohydrate snacks and a couple quarts of fluid.  I think the
+brawny ground crew could pull up the next rider, with his supplies
+and another pulley and segment of rope, at an acceleration of about
+0.5 g or better.  That would be under 90 minutes for each shift-
+change up to the synchronous orbit level.
+
+I haven't figured out yet how to link each new piece of rope that's
+pulled up with a rider to the pulley that's at the high point reached
+by the previous rider.  Linking is easy, but it would be nice to find
+a way that lets the next pulled-up rider go from one segment to the
+other without interruption.  Well, since the sky-buckets at
+Disneyland do this trick at each end, I know it can be done.
+
+I didn't know you'd written any books, but it was clear you're
+working on one now.  Sure, send a list, but I have access to some
+on-line catalogs, so maybe I can find them anyway.
+
+			Matt Crawford
+-------------------------
+
+> Consider the following scenario.  A standard ladder stretches from each
+> country on the earth upward a distance equal to the distance from the
+> earth to the moon.
+>
+> Assume:
+> 1. the ladder is made out of a strong metal such as
+> titanium, which will not break.
+> 2. the ladder is inclined at a very steep angle, 70 degrees, for
+> each country.
+> 3. there is a breathable atmosphere.
+> 4. the people (or teams of people) are allowed to use standard
+> mountain climbing and camping gear, e.g. ropes, backpacks, etc. but not
+> sophisticated electrical mechanisms, engines, etc.
+> 5. a reward is given to whomever reaches the top of the ladder
+> first: 1 million dollars to that person.  In addition the country's
+> national debt is wiped out.
+
+I would imagine that one would be able to fashion a hot air balloon given
+condition 4.  Also, given condition 3, the hot air balloon would be able
+to cover the entire distance.  One would then only need to attach a sliding
+hookup between the ladder and the balloon and wait.
+
+===M.Graf==graf@island.com==================================================
+
+
+==> pickover/pickover.14.p <==
+Title: Cliff Puzzle 14: Geography Genuflection
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+1.  How would the world be different today, geopolitically speaking, if
+the ancient land masses had never drifted apart and, therefore,
+today's world consisted of a single supercontintent?
+
+2.  What would today's world be like if the land mass which formed the
+Greek peninsula never existed?
+
+3.  What would today's world be like if the land bridge which joined
+Alaska to Asia never existed?
+
+4.  Why do all the major peninsulas on earth point south?  See for
+example:  Italy, Greece, Florida, and Baja, and the tips of Africa,
+South America, India, Norway, Sweden, Greenland, and many other
+landmasses.
+
+==> pickover/pickover.14.s <==
+-------------------------
+
+In rec.puzzles you write:
+
+>If you respond to this puzzle, if possible please send me your name,
+>address, affiliation, e-mail address, so I can properly credit you if
+>you provide unique information.
+>
+Mike Neergaard
+University of Wisconsin
+neergaar@math.wisc.edu
+
+I'm not a professional at this sort of thing, so I just summarized my
+conclusions.  I'm sure they would be ripped to shreds by any competent
+whatsit-type-individual-who-knows-all-about-this-kind-of-stuff.
+
+>1.  How would the world be different today, geopolitically speaking, if
+>the ancient land masses had never drifted apart and, therefore,
+>today's world consisted of a single supercontintent?
+We would all speak German.
+
+>2.  What would today's world be like if the land mass which formed the
+>Greek peninsula never existed?
+>
+We would know a low more about fluid dynamics.
+
+>3.  What would today's world be like if the land bridge which joined
+>Alaska to Asia never existed?
+Christopher Columbus would be a national hero, instead of being vulnerable
+to counter-claims of genocide.  America would have been settled several
+decades later, due to a dearth of demonstrable natural resources.
+
+>4.  Why do all the major peninsulas on earth point south?  See for
+>example:  Italy, Greece, Florida, and Baja, and the tips of Africa,
+>South America, India, Norway, Sweden, Greenland, and many other
+>landmasses.
+I just work here . . .
+--
+I really don't make any claim at all to know what I'm talking about.
+Actually, I make no claim to know what YOU'RE talking about, either.
+In fact, now I've forgotten what we were talking about . . .
+
+-------------------------
+
+In article <1992Oct26.140330.142282@watson.ibm.com> you write:
+>Title: Cliff Puzzle 14: Geography Genuflection
+>From: cliff@watson.ibm.com
+>
+>If you respond to this puzzle, if possible please send me your name,
+>address, affiliation, e-mail address, so I can properly credit you if
+>you provide unique information.  PLEASE ALSO directly mail me a copy of
+>your response in addition to any responding you do in the newsgroup.  I
+>will assume it is OK to describe your answer in any article or
+>publication I may write in the future, with attribution to you, unless
+>you state otherwise.  Thanks, Cliff Pickover
+>
+>      * * *
+>
+
+Okay, administrative trivia first.  My name is Martin Eiger, you don't
+need my address (home or business?), I don't want you citing my
+affiliation if you quote me, and my e-mail address is
+mie@thumper.bellcore.com.
+
+>1.  How would the world be different today, geopolitically speaking, if
+>the ancient land masses had never drifted apart and, therefore,
+>today's world consisted of a single supercontintent?
+
+My theory is that mankind would never have evolved.  The dominant
+species would still be some sort of mammal, but not us.  This renders
+a large number of geopolitical questions irrelevant.  For example,
+elephant-like creatures are unlikely to care whether there is one or
+two Germanys.
+
+
+>2.  What would today's world be like if the land mass which formed the
+>Greek peninsula never existed?
+
+A tough one, since I'm not up on my Greek influences in the evolution
+of civilization.  My guess is that civilization would have evolved
+anyway, probably not too differently than it did.  It might not have
+evolved as fast, i.e., we might now be where we were a thousand years
+ago or so, but over the long haul, human history would follow a
+similar course.
+
+
+>3.  What would today's world be like if the land bridge which joined
+>Alaska to Asia never existed?
+
+Pretty much the same, I bet.  People would have colonized North
+America anyway.  After all, they got to Hawaii, so somebody could
+probably have gotten to North America.  And whether or not people
+colonized North America from across the Pacific, people from Europe
+would have paved the place over just the same.
+
+
+>4.  Why do all the major peninsulas on earth point south?  See for
+>example:  Italy, Greece, Florida, and Baja, and the tips of Africa,
+>South America, India, Norway, Sweden, Greenland, and many other
+>landmasses.
+
+First of all, you have to define what's a major peninsula.  Secondly,
+I don't like your list.  Norway and Sweden are on the same peninsula,
+and Greenland is an island, not a peninsula.  And third, there are
+plenty of perfectly fine peninsulas that don't point south:  Alaska,
+Siberia, Michigan (two peninsulas for the price of one), Yucatan,
+Arabia (points kind of southeast), and Iberia, for instance.  And
+fourth, you missed a few good southern-pointing ones, such as Korea,
+Crimea, the Sinai, and the one that kind of points from eastern
+Siberia toward Japan that I'm sure has a name but I don't know it.  So
+while there are lots of peninsulas pointing lots of directions, a
+majority of them do seem to point south, and I have no idea why.
+
+==> pickover/pickover.15.p <==
+Title: Cliff Puzzle 15: Cherries in Wine Glasses
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+Consider a 9x9 grid of beautiful crystal wineglasses.  Throw 32 cherries
+at the grid.  A glass is considered occupied if it contains at least one
+cherry.  (With each throw a cherry goes into one of the glasses.)  How
+many different patterns of occupied glasses can you make?  (A glass with
+more than one cherry is considered the same as a glass with one cherry
+in the pattern).
+
+2.  Same as above except that you place 8 cherries in glasses (x,y) and
+then determine the other positions by placing cherries at (x,-y),
+(-x,y), (-x,-y) leading to 32 cherries in the grid.  Consider the array
+of glasses centered at the origin.  How many different patterns of
+occupied glasses can you make?  (A glass with more than one cherry is
+considered the same as a glass with one cherry in the pattern).
+
+3. Can your results be extrapolated to an NxN grid with M cherries
+thrown at it for both problems?
+
+
+==> pickover/pickover.15.s <==
+In article <1992Oct30.173903.108937@watson.ibm.com> you write:
+: Consider a 9x9 grid of beautiful crystal wineglasses.  Throw 32 cherries
+: at the grid.  A glass is considered occupied if it contains at least one
+: cherry.  (With each throw a cherry goes into one of the glasses.)  How
+: many different patterns of occupied glasses can you make?  (A glass with
+: more than one cherry is considered the same as a glass with one cherry
+: in the pattern).
+Assuming that rotated patterns are allowed, then it is (simply)
+sum( 81!/(81-n)! , n=1->32) . Since, if a total of n different classes are
+filled, then the number of combinations is 81!/(81-n)!.  Since there can
+be from 1 to 32 glasses filled, the total # is just the sum of these...
+
+:
+: 2.  Same as above except that you place 8 cherries in glasses (x,y) and
+: then determine the other positions by placing cherries at (x,-y),
+: (-x,y), (-x,-y) leading to 32 cherries in the grid.  Consider the array
+: of glasses centered at the origin.  How many different patterns of
+: occupied glasses can you make?  (A glass with more than one cherry is
+: considered the same as a glass with one cherry in the pattern).
+This limitation basically reduces the number of available spots, from 9x9
+to 5x5.  Also, I only have to worry about 8 occupied spaces.  Soo...
+#of comb. = sum( (25!/(25-n)!, n=1->8)
+:
+: 3. Can your results be extrapolated to an NxN grid with M cherries
+: thrown at it for both problems?
+With a odd N, and M = 4k (evenly divs by 4), then
+for 1....
+#of comb = sum( (N^2)!/(N^2-n)!  , n=1->M)
+for 2....
+#of comb = sum( (((N+1)/2)^2)!/(((N+1)/2)^2-n)! , n=1->M/4)
+
+--
+Michael Neylon   aka Masem the Great and Almighty Thermodynamics GOD!
+      //         | Senior, Chemical Engineering, Univ. of Toledo
+  \\ // Only the |   Summer Intern, NASA Lewis Research Center
+\  \X/   AMIGA!  |         mneylon@jupiter.cse.utoledo.edu           /
+ --------+ How do YOU spell 'potato'?  How 'bout 'lousy'? +----------
+    "Me and Spike are big Malcolm 10 supporters." - J.S.,P.L.C.L
+
+==> pickover/pickover.16.p <==
+Title: Cliff Puzzle 16: Undulating Squares
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+A square number is of the form y=x**2.  For example, 25 is a square
+number.
+
+Undulating numbers are of the form:  ababababab... For example, the
+following are undulating numbers:  1717171, 282828, etc.
+
+1. Are there any undulating square numbers?
+
+2. Are there any undulating cube numbers?
+
+
+==> pickover/pickover.16.s <==
+-------------------------
+
+In article <1992Oct30.175102.142177@watson.ibm.com> you write:
+: 1. Are there any undulating square numbers?
+11^2 = 121
+
+: 2. Are there any undulating cube numbers?
+7^3 = 343
+
+(yes, I know they're short, but they qualify!)
+
+--
+Michael Neylon   aka Masem the Great and Almighty Thermodynamics GOD!
+      //         | Senior, Chemical Engineering, Univ. of Toledo
+  \\ // Only the |   Summer Intern, NASA Lewis Research Center
+\  \X/   AMIGA!  |         mneylon@jupiter.cse.utoledo.edu           /
+ --------+ How do YOU spell 'potato'?  How 'bout 'lousy'? +----------
+    "Me and Spike are big Malcolm 10 supporters." - J.S.,P.L.C.L
+-------------------------
+
+In article <1992Oct30.204134.97881@watson.ibm.com> you write:
+>Hi, I was interested in non-trivial cases.  Those with greater	
+>than 3 digits.  Award goes to the person who finds the largest
+>undulating square or cube number.  Thanks, Cliff
+
+343 and 676 aren't trivial (unlike 121 and 484 it doesn't come from
+obvious algebraic identities).  The chance that a "random"
+number around x should be a perfect square is about 1/sqrt(x);
+more generally, x^(-1+1/d) for a perfect d-th power.  Since
+there are for each k only 90 k-digit undulants you expect
+to find only finitely many of these that are perfect powers,
+and none that are very large.  But provably listing all cases
+is probably only barely, if at all, possible by present-day
+methods for treating exponential Diophantine equations, unless
+(as was shown in a rec.puzzles posting re your puzzles on
+arith. prog. of squares with common difference 10^k) there is
+some ad-hoc trick available.  At any rate the largest undulating
+power is probably 69696=264^2, though 211^3=9393931 comes
+remarkably close.
+
+--Noam D. Elkies
+-------------------------
+
+In article <1992Oct30.175102.142177@watson.ibm.com>, you write...
+>1. Are there any undulating square numbers?
+>
+    Other than the obvious 11**2, 22**2, and 26**2, there is 264**2
+which equals 69696.
+
+>2. Are there any undulating cube numbers?
+>
+    Just 7**3 as far as I can tell, though I'm limited to IEEE computational
+reals.
+
+PauL M SchwartZ  (-Z-)  |  Follow men's eyes as they look to the skies
+v206gb6c@ubvms.BitNet   |         the shifting shafts of shining
+pms@geog.buffalo.edu    |        weave the fabric of their dreams
+pms@acsu.buffalo.edu    |                    - RUSH -
+
+
+==> pickover/pickover.17.p <==
+Title: Cliff Puzzle 17: Weird Recursive Sequence
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+
+Consider the simple yet weird recursive formula
+
+a(n) = a(a(n-1)) + a(n-a(n-1))
+
+The sequences starts with a(1) = 1, and a(2) = 1.  The "future" values
+at higher values of n depend on past values in intricate recursive ways.
+Can you determined the third member of the sequence?  At first, this may
+seem a little complicated to evaluate, but you can being slowly, by
+inserting values for n, as in the following:
+
+a(3) = a(a(2)) + a(3-a(2))
+a(3) = a(1) + a(3-1) =
+a(3) = 1+1 = 2
+
+Therefore, the 3rd value of the sequence a(3) is 2.
+
+The sequence a(n) seems simple enough: 1, 1, 2, 2, 3, 4, 4, 4, 5, ...
+Try computing a few additional numbers.  Can you find any interesting
+patterns?  The prolific mathematician John H Conway presented this
+recursive sequence at a recent talk entitled "Some Crazy Sequences."  He
+noticed that the value a(n)/n approaches 1/2 as the sequence grows and n
+becomes larger.  Can you find a value, N, above which the sequence the
+value of a(n)/n is always within 0.05 of the value 1/2?  (In other
+words,
+.eq vbar a(n)/n -1/2 vbar lt 0.05.
+The bars indicate the absolute value.)
+
+   A difficult problem? you ask.
+John Conway offered $10,000 to the person to find the s-m-a-l-l-e-s-t
+such N. A month after Conway made the offer, Colin Mallows of AT&T
+solved the $10,000 question:  N = 3,173,375,556.  Manfred Shroeder has
+noted that the sequence is "replete with appealing self-similarities
+that contain the clue to the problem's solution."  Can you find any
+self-similarities?  As I write this, no-one on the planet has found a
+value for the smallest N such that a(n)/n is always within 0.01 of the
+value 1/2.
+.eq (vbar a(n)/n -1/2 vbar lt 0.01. )
+
+
+
+==> pickover/pickover.17.s <==
+-------------------------
+
+In article <1992Nov06.160358.101157@watson.ibm.com> you write:
+: Title: Cliff Puzzle 17: Weird Recursive Sequence
+: Consider the simple yet weird recursive formula
+: a(n) = a(a(n-1)) + a(n-a(n-1))
+
+The first 32 terms, and the ratio a(n)/n for each is as follows...
+
+n   a(n)     a(n)/n
+1   1        1.0
+2   1        1.0
+3   2        .666
+4   2        .5
+5   3        .6
+6   4        .666
+7   4        .5714
+8   4        .5
+9   5        .5555
+10  6        .6
+11  7        .6363
+12  7        .5833
+13  8        .6153
+14  8        .5714
+15  8        .5333
+16  8        .5
+17  9        .5294
+18  10       .5555
+19  11       .5789
+20  12       .6
+21  12       .5714
+22  13       .5909
+23  14       .6086
+24  14       .5833
+25  15       .6
+26  15       .5769
+27  15       .5555
+28  16       .5714
+29  16       .5517
+30  16       .5333
+31  16       .5161
+32  16       .5
+33  17 .... and so and....
+
+off the top, we can see that on the 2^k (k a pos. int) terms, the
+ratio goes to .5
+
+between each of these, the ratio goes up and then drops back to .5
+(ignoring the variances due to integer arithmatic)
+
+the value of n at the maximum in each jump is halfway between the two
+2^k points.  The value of a(n) at those points seems to be
+2^(k-1) - f(k), where f(k) is some function that I cannot determine
+without more computing power.... *sniff*
+
+Therefore, we must find a value of x such that...
+(2^(x-1)-f(x))/2^x - .5 <.05 (or whatever)
+or
+f(x)/2^x < .05
+
+and then N would be .5*(2^x-2^(x-1))
+
+if I could see the next terms up to 128, I might be able to calculate it...
+
+
+--
+Michael Neylon   aka Masem the Great and Almighty Thermodynamics GOD!
+      //         | Senior, Chemical Engineering, Univ. of Toledo
+  \\ // Only the |   Summer Intern, NASA Lewis Research Center
+\  \X/   AMIGA!  |         mneylon@jupiter.cse.utoledo.edu           /
+ --------+ How do YOU spell 'potato'?  How 'bout 'lousy'? +----------
+    "Me and Spike are big Malcolm 10 supporters." - J.S.,P.L.C.L
+-------------------------
+
+In article <1992Nov06.160358.101157@watson.ibm.com> you write:
+
+>John Conway offered $10,000 to the person to find the s-m-a-l-l-e-s-t
+>such N. A month after Conway made the offer, Colin Mallows of AT&T
+>solved the $10,000 question:  N = 3,173,375,556.
+
+As I pointed out in my posting, this is incorrect, and differs from
+Mallows' correct answer published in his article. But a bit of
+investigation shows that the above N is hardly a random guess, either.
+Conway's sequence is best understood by analyzing it on "levels",
+where the   k'th level is the set of integers between  2^k  and 2^(k+1).
+It turns out that Mallows' correct answer, 6083008742, lies on level 32,
+and the largest candidate answer on level 31 is  N=3173375556, the
+number quoted above.
+
+Where did you see the above value of N given as the answer to Conway's
+question?
+
+-tal    kubo@math.harvard.edu
+
+p.s.  As I found out when I edited my posted response to your message,
+      you either use lines longer than 80 characters in your postings,
+      or else your editor appends extra linefeeds to each line.  Since
+      both conditions could be problematic for a lot of people who read
+      your messages on rec.puzzles, you might want to correct this
+      condition.
+
+
+==> pickover/pickover.18.p <==
+Title: Cliff Puzzle 18: Difficult Nested Roots
+From: cliff@watson.ibm.com
+
+If you respond to this puzzle, if possible please send me your name,
+address, affiliation, e-mail address, so I can properly credit you if
+you provide unique information.  PLEASE ALSO directly mail me a copy of
+your response in addition to any responding you do in the newsgroup.  I
+will assume it is OK to describe your answer in any article or
+publication I may write in the future, with attribution to you, unless
+you state otherwise.  Thanks, Cliff Pickover
+
+      * * *
+
+Consider the following nested set of square roots.
+
+.eq ? = sqrt <1 + G sqrt <1+(G+1) sqrt < 1 + ... >>>
+
+Here, G indicates "Googol" or  10**100.
+The "<" and ">" symbols indicate where the beginning and ends of the
+the nested roots.
+
+1. What is the value for in this infinite set of nested roots.
+2. What is the next term under the root?
+
+Hint:
+In 1911, the famous mathematical prodigy Srinivasa Ramanujan posed the
+following question (#298) in a new mathematical journal called the
+:Journal of the Indian Mathematical Society.
+
+.eq ? = sqrt <1 + 2 sqrt <1+3 sqrt <1 + ... >>>
+
+
+==> pickover/pickover.18.s <==
+-------------------------
+
+In article <1992Nov11.221749.129578@watson.ibm.com> you write:
+: Title: Cliff Puzzle 18: Difficult Nested Roots
+: From: cliff@watson.ibm.com
+: Consider the following nested set of square roots.
+:
+:  ? = sqrt <1 + G sqrt <1+(G+1) sqrt < 1 + ... >>>
+:
+: Here, G indicates "Googol" or  10**100.
+: The "<" and ">" symbols indicate where the beginning and ends of the
+: the nested roots.
+:
+: 1. What is the value for in this infinite set of nested roots.
+: 2. What is the next term under the root?
+: Hint:
+: In 1911, a twenty-three-year-old Indian clerk named Srinivasa Ramanujan
+: posed the following question (#298) in a new mathematical journal called
+: the Journal of the Indian Mathematical Society.
+:
+:  ? = sqrt <1 + 2 sqrt <1+3 sqrt <1 + ... >>>
+:
+Doing a n-depth thing-a-ding on this.....
+n=1   v=1
+2     1.732
+3     2.236
+4     2.5598
+5     2.7551
+6     2.867
+....
+20    2.99999376
+....
+so I expect that the sum is actually 3.  Or in the general case when the
+2 (or the G from above) is replaced by m, then the evaluation of the series
+is m+1.  This CAN be shown as follows....
+
+m+1 = sqrt(1+m sqrt(1+(m+1)*sqrt(....))
+m^2 + 2m +1 = 1 + m *sqrt(1 + (m+1)*sqrt(...))
+m^2 + 2m = m*sqrt(1+(m+1)*sqrt(...))
+m+2 = sqrt(1+(m+1)*sqrt(1+(m+2)*sqrt(...))
+
+Thus if m+1 is then sum when the series is based off m, then m+2 is then
+sum when the series is based off m+1.  Since this works for m=2 (as shown
+above), then it must work for all whole numbers (mathematical induction is
+such a wonderful thing...)
+
+Therefore, the sum with m=G is G+1.
+
+The next term, as show above, is (1+(m+2)*sqrt(1+....))
+
+
+--
+Michael Neylon   aka Masem the Great and Almighty Thermodynamics GOD!
+      //         | Senior, Chemical Engineering, Univ. of Toledo
+  \\ // Only the |   Summer Intern, NASA Lewis Research Center
+\  \X/   AMIGA!  |         mneylon@jupiter.cse.utoledo.edu           /
+ --------+ How do YOU spell 'potato'?  How 'bout 'lousy'? +----------
+    "Me and Spike are big Malcolm 10 supporters." - J.S.,P.L.C.L
+

@@ -1,0 +1,1425 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id AAA22841; Sat, 27 Apr 1996 00:40:26 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA14101; Sat, 27 Apr 96 00:38:23 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id VAA20259; Fri, 26 Apr 1996 21:39:29 -0700
+Date: Fri, 26 Apr 1996 21:39:29 -0700
+X-Mail-Submission-From: chris@questrel.questrel.com (Chris Cole)
+Message-Id: <199604270439.VAA20259@questrel.questrel.com>
+To: news-answers-request@MIT.EDU
+Reply-To: chris@questrel.questrel.com
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (logic), part 22 of 35
+Message-ID: <puzzles/archive/logic/part1_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:09 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1393
+Xref: senator-bedfellow.mit.edu rec.puzzles:25006 news.answers:11526 rec.answers:1926
+
+Archive-name: puzzles/archive/logic/part1
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> logic/29.p <==
+Three people check into a hotel.  They pay $30 to the manager and go
+to their room.  The manager finds out that the room rate is $25 and
+gives $5 to the bellboy to return.  On the way to the room the bellboy
+reasons that $5 would be difficult to share among three people so
+he pockets $2 and gives $1 to each person.
+
+Now each person paid $10 and got back $1.  So they paid $9 each,
+totalling $27.  The bellboy has $2, totalling $29.
+
+Where is the remaining dollar?
+
+==> logic/29.s <==
+Each person paid $9, totalling $27.  The manager has $25 and the bellboy $2.
+The bellboy's $2 should be added to the manager's $25 or subtracted from
+the tenants' $27, not added to the tenants' $27.
+
+==> logic/ages.p <==
+1) Ten years from now Tim will be twice as old as Jane was when Mary was 
+   nine times as old as Tim.
+
+2) Eight years ago, Mary was half as old as Jane will be when Jane is one year
+   older than Tim will be at the time when Mary will be five times as old as 
+   Tim will be two years from now.
+
+3) When Tim was one year old, Mary was three years older than Tim will be when 
+   Jane is three times as old as Mary was six years before the time when Jane 
+   was half as old as Tim will be when Mary will be ten years older than Mary 
+   was when Jane was one-third as old as Tim will be when Mary will be three 
+   times as old as she was when Jane was born.
+
+                             HOW OLD ARE THEY NOW?
+
+==> logic/ages.s <==
+The solution: Tim is 3, Jane is 8, and Mary is 15.  A little grumbling
+is in order here, as clue number 1 leads to the situation a year and a
+half ago, when Tim was 1 1/2, Jane was 6 1/2, and Mary was 13 1/2.
+
+This sort of problem is easy if you write down a set of equations.  Let
+t be the year that Tim was born, j be the year that Jane was born, m be
+the year that Mary was born, and y be the current year.  As indefinite
+years come up, let y1, y2, ... be the indefinite years.  Then the
+equations are
+
+
+y + 10 - t = 2 (y1 - j)
+y1 - m = 9 (y1 - t)
+
+y - 8 - m = 1/2 (y2 - j)
+y2 - j = 1 + y3 - t
+y3 - m = 5 (y + 2 - t)
+
+t + 1 - m = 3 + y4 - t
+y4 - j = 3 (y5 - 6 - m)
+y5 - j = 1/2 (y6 - t)
+y6 - m = 10 + y7 - m
+y7 - j = 1/3 (y8 - t)
+y8 - m = 3 (j - m)
+
+t = y - 3
+j = y - 8
+m = y - 15
+
+==> logic/attribute.p <==
+All the items in the first list share a particular attribute.  The second
+list is of some items lacking the attribute.
+
+Set#1
+    with:  battery, key, yeast, bookmark
+    w/out: stapler, match, Rubik's cube, pill bottle
+
+Set#2
+    with:  Rubik's cube, chess set, electrical wiring, compass needle
+    w/out: clock, rope, tic-tac-toe, pencil sharpener
+
+Set#3:
+    with:  koosh, small intestine, Yorkshire Terrier, Christmas Tree
+    w/out: toothbrush, oak chair, soccer ball, icicle
+
+Points to realize:
+1.
+ There may be exceptions to any item on the list, for instance a particular
+ clock may share the properties of the 'with' list of problem two, BUT MOST
+ ORDINARY clocks do not.  All the properties apply the vast majority of the
+ the items mentioned.  Extraordinary exceptions should be ignored.
+
+2.
+ Pay the most attention to the 'with' list.  The 'without' list is only
+ present to eliminate various 'stupid' answers.
+
+==> logic/attribute.s <==
+The attribute puzzle format is a traditional format in math education.
+It occurs in logic materials developed in the sixties by EDC in Boston,
+with visual objects. Example:
+
+these are gloops: A B C D E 
+these are not gloops: F G J L N
+which of these are gloops? O P Q R S
+
+Set#1
+    with:  battery, key, yeast, bookmark
+    w/out: stapler, match, Rubik's cube, pill bottle
+
+Needs to be placed inside something else when used for its usual purpose.
+
+Set#2
+    with:  Rubik's cube, chess set, electrical wiring, compass needle
+    w/out: clock, rope, tic-tac-toe, pencil sharpener
+
+Uses color to distinguish between otherwise identical parts.
+
+Set#3:
+    with:  koosh, small intestine, Yorkshire Terrier, Christmas Tree
+    w/out: toothbrush, oak chair, soccer ball, icicle
+
+Villiform.
+
+==> logic/bookworm.p <==
+A bookworm eats from the first page of an encyclopedia to the last
+page.  The bookworm eats in a straight line.  The encyclopedia consists
+of ten 1000-page volumes and is sitting on a bookshelf in the usual
+order.  Not counting covers, title pages, etc., how many pages does the
+bookworm eat through?
+
+==> logic/bookworm.s <==
+On a book shelf the first page of the first volume is on the "inside"
+  __                             __
+B|  |                           |  |F
+A|1 |...........................|10|R
+C|  |                           |  |O
+K|  |                           |  |N
+ |  |                           |  |T
+  ----------------------------------
+so the bookworm eats only through the cover of the first volume, then 8 times
+1000 pages of Volumes 2 - 9, then through the cover to the 1st page of Vol 10.
+He eats 8,000 pages.
+
+If the bookworm ate the first page and the last page, it ate 8,004 pages.
+
+==> logic/boxes.p <==
+Which Box Contains the Gold?
+
+Two boxes are labeled "A" and "B".  A sign on box A says "The sign
+on box B is true and the gold is in box A".  A sign on box B says
+"The sign on box A is false and the gold is in box A".  Assuming there
+is gold in one of the boxes, which box contains the gold?
+
+==> logic/boxes.s <==
+The problem cannot be solved with the information given.
+
+The sign on box A says "The sign on box B is true and the gold is in box A".
+The sign on box B says "The sign on box A is false and the gold is in box A".
+The following argument can be made: If the statement on box A is true, then
+the statement on box B is true, since that is what the statement on box A
+says.  But the statement on box B states that the statement on box A is false,
+which contradicts the original assumption.  Therefore, the statement on box A
+must be false.  This implies that either the statement on box B is false or
+that the gold is in box B.  If the statement on box B is false, then either
+the statement on box A is true (which it cannot be) or the gold is in box B.
+Either way, the gold is in box B.
+
+However, there is a hidden assumption in this argument: namely, that
+each statement must be either true or false.  This assumption leads to
+paradoxes, for example, consider the statement: "This statement is
+false."  If it is true, it is false; if it is false, it is true.  The
+only way out of the paradox is to deny that the statement is either true
+or false and label it meaningless instead.  Both of the statements on the
+boxes are therefore meaningless and nothing can be concluded from them.
+
+In general, statements about the truth of other statements lead to
+contradictions.  Tarski invented metalanguages to avoid this problem.
+To avoid paradox, a statement about the truth of a statement in a language
+must be made in the metalanguage of the language.
+
+Common sense dictates that this problem cannot be solved with the information
+given.  After all, how can we deduce which box contains the gold simply by
+reading statements written on the outside of the box?  Suppose we deduce that
+the gold is in box B by whatever line of reasoning we choose.  What is to stop
+us from simply putting the gold in box A, regardless of what we deduced?
+(cf. Smullyan, "What Is the Name of This Book?", Prentice-Hall, 1978,	#70)
+
+==> logic/camel.p <==
+An Arab sheikh tells his two sons to race their camels to a distant
+city to see who will inherit his fortune.  The one whose camel is
+slower will win.  The brothers, after wandering aimlessly for days, ask
+a wise man for advise.  After hearing the advice they jump on the
+camels and race as fast as they can to the city.  What does the wise
+man say?
+
+==> logic/camel.s <==
+The wiseman tells them to switch camels.
+
+==> logic/centrifuge.p <==
+You are a biochemist, working with a 12-slot centrifuge.  This is a gadget
+that has 12 equally spaced slots around a central axis, in which you can
+place chemical samples you want centrifuged.  When the machine is turned on,
+the samples whirl around the central axis and do their thing.
+
+To ensure that the samples are evenly mixed, they must be distributed in the
+12 slots such that the centrifuge is balanced evenly.  For example, if you
+wanted to mix 4 samples, you could place them in slots 12, 3, 6 and 9
+(assuming the slots are numbered from 1 to 12 like a clock).
+
+Problem:  Can you use the centrifuge to mix 5 samples?
+
+==> logic/centrifuge.s <==
+The superposition of any two solutions is yet another solution, so given
+that the factors > 1 of 12 (2, 3, 4, 6, 12) are all solutions, the
+only thing to check about, for example, the proposed solution 2+3 is
+that not all ways of combining 2 & 3 would have centrifuge tubes
+from one subsolution occupying the slot for one of the tubes in
+another solution.  For the case 2+3, there is no problem:  Place 3
+tubes, one in every 4th position, then place the 4th and 5th
+diametrically opposed (each will end up in a slot adjacent to one of
+the first 3 tubes).  The obvious generalization is, what are the
+numbers of tubes that cannot be balanced?  Observing that there are
+solutions for 2,3,4,5,6 tubes and that if X has a solution, 12-X has
+also one (obtained by swapping tubes and holes), it is obvious that
+1 and 11 are the only cases without solutions.
+
+Here is how this problem is often solved in practice:  A dummy tube
+is added to produce a total number of tubes that is easy to balance.
+For example, if you had to centrifuge just one sample, you'd add a
+second tube opposite it for balance.
+
+==> logic/chain.p <==
+What is the least number of links you can cut in a chain of 21 links to be able
+to give someone all possible number of links up to 21?
+
+==> logic/chain.s <==
+Two.
+
+	OOO C OOOOO C OOOOOOOOOOO
+(where Os are chained unbroken links, and the Cs are the unchained broken links)
+
+And equivalently:
+
+	OOO C OOOOOO C OOOOOOOOOO
+
+==> logic/children.p <==
+A man walks into a bar, orders a drink, and starts chatting with the
+bartender.  After a while, he learns that the bartender has three
+children.  "How old are your children?" he asks.  "Well," replies the
+bartender, "the product of their ages is 72."  The man thinks for a
+moment and then says, "that's not enough information."  "All right,"
+continues the bartender, "if you go outside and look at the building
+number posted over the door to the bar, you'll see the sum of the
+ages."  The man steps outside, and after a few moments he reenters and
+declares, "Still not enough!"  The bartender smiles and says, "My
+youngest just loves strawberry ice cream."
+
+How old are the children?
+
+A variant of the problem is for the sum of the ages to be 13 and the
+product of the ages to be the number posted over the door.  In this
+case, it is the oldest that loves ice cream.
+
+Then how old are they?
+
+
+==> logic/children.s <==
+First, determine all the ways that three ages can multiply together to get 72:
+
+72  1  1        (quite a feat for the bartender)
+36  2  1
+24  3  1
+18  4  1
+18  2  2
+12  6  1
+12  3  2
+9  4  2
+9  8  1
+8  3  3
+6  6  2
+6  4  3
+
+As the man says, that's not enough information; there are many possibilities.
+So the bartender tells him where to find the sum of the ages--the man now knows
+the sum even though we don't.  Yet he still insists that there isn't enough
+info.  This must mean that there are two permutations with the same sum;
+otherwise the man could have easily deduced the ages.
+
+The only pair of permutations with the same sum are 8 3 3 and 6 6 2, which both
+add up to 14 (the bar's address).  Now the bartender mentions his
+"youngest"--telling us that there is one child who is younger than the other
+two.  This is impossible with 8 3 3--there are two 3 year olds.  Therefore the
+ages of the children are 6, 6, and 2.
+
+Pedants have objected that the problem is insoluble because there could be
+a youngest between two three year olds (even twins are not born exactly at
+the same time).  However, the word "age" is frequently used to denote the
+number of years since birth.  For example, I am the same age as my wife,
+even though technically she is a few months older than I am.  And using the
+word "youngest" to mean "of lesser age" is also in keeping with common parlance.
+So I think the solution is fine as stated.
+
+In the sum-13 variant, the possibilities are:
+
+11  1  1
+10  2  1
+9  3  1
+9  2  2
+8  4  1
+8  3  2
+7  5  1
+7  4  2
+7  3  3
+6  6  1
+6  5  2
+6  4  3
+
+The two that remain are 9 2 2 and 6 6 1 (both products equal 36).  The
+final bit of info (oldest child) indicates that there is only one
+child with the highest age.  This cancels out the 6 6 1 combination, leaving
+the childern with ages of 9, 2, and 2.
+
+==> logic/condoms.p <==
+How can a man have mutually safe sex with three women with only two condoms?
+How can three men have mutually safe sex with one woman with two condoms?
+
+==> logic/condoms.s <==
+Use both condoms on the first woman.  Take off the outer condom (turning it
+inside-out in the process) and set it aside.  Use the inner condom alone on
+the second woman.  Put the outer condom back on.  Use it on the third woman.
+
+First man uses both condoms.  Take off the outer condom (do NOT reverse
+it) and have second man use it.  First man takes off the inner condom
+(turning it inside-out).  Third man puts on this condom, followed by
+second man's condom.
+
+==> logic/dell.p <==
+How can I solve logic puzzles (e.g., as published by Dell) automatically?
+
+==> logic/dell.s <==
+#include	<setjmp.h>
+
+#define	EITHER		if (S[1] = S[0], ! setjmp((S++)->jb)) {
+#define	OR		} else EITHER
+#define	REJECT		longjmp((--S)->jb, 1)
+#define	END_EITHER	} else REJECT;
+
+/* values in tmat: */
+#define	T_UNK	0
+#define	T_YES	1
+#define	T_NO	2
+
+#define	Val(t1,t2)	(S->tmat[t1][t2])
+#define	CLASS(x)		\
+		(((x) / NUM_ITEM) * NUM_ITEM)
+#define	EVERY_TOKEN(x)		\
+		(x = 0; x < TOT_TOKEN; x++)
+#define	EVERY_ITEM(x, class)	\
+		(x = CLASS(class); x < CLASS(class) + NUM_ITEM; x++)
+
+#define	BEGIN						\
+struct state {						\
+	char	tmat[TOT_TOKEN][TOT_TOKEN];		\
+	jmp_buf jb;					\
+} States[100], *S = States;				\
+							\
+main()							\
+{							\
+	int	token;					\
+							\
+	for EVERY_TOKEN(token)				\
+		yes(token, token);			\
+	EITHER
+
+/* Here is the problem-specific data */
+#define	NUM_ITEM	5
+#define	NUM_CLASS	6
+#define	TOT_TOKEN	(NUM_ITEM * NUM_CLASS)
+
+#define	HOUSE_0		0
+#define	HOUSE_1		1
+#define	HOUSE_2		2
+#define	HOUSE_3		3
+#define	HOUSE_4		4
+
+#define	ENGLISH		5
+#define	SPANISH		6
+#define	NORWEG		7
+#define	UKRAIN		8
+#define	JAPAN		9
+
+#define	GREEN		10
+#define	RED		11
+#define	IVORY		12
+#define	YELLOW		13
+#define	BLUE		14
+
+#define	COFFEE		15
+#define	TEA		16
+#define	MILK		17
+#define	OJUICE		18
+#define	WATER		19
+
+#define	DOG		20
+#define	SNAIL		21
+#define	FOX		22
+#define	HORSE		23
+#define	ZEBRA		24
+
+#define	OGOLD		25
+#define	PLAYER		26
+#define	CHESTER		27
+#define	LSTRIKE		28
+#define	PARLIA		29
+
+char *names[] = {
+	"HOUSE_0", "HOUSE_1", "HOUSE_2", "HOUSE_3", "HOUSE_4",
+	"ENGLISH", "SPANISH", "NORWEG", "UKRAIN", "JAPAN",
+	"GREEN", "RED", "IVORY", "YELLOW", "BLUE",
+	"COFFEE", "TEA", "MILK", "OJUICE", "WATER",
+	"DOG", "SNAIL", "FOX", "HORSE", "ZEBRA",
+	"OGOLD", "PLAYER", "CHESTER", "LSTRIKE", "PARLIA",
+};
+
+	BEGIN
+
+	yes(ENGLISH, RED);	/* Clue 1 */
+	yes(SPANISH, DOG);	/* Clue 2 */
+	yes(COFFEE, GREEN);	/* Clue 3 */
+	yes(UKRAIN, TEA);	/* Clue 4 */
+
+	EITHER			/* Clue 5 */
+		yes(IVORY, HOUSE_0);
+		yes(GREEN, HOUSE_1);
+	OR
+		yes(IVORY, HOUSE_1);
+		yes(GREEN, HOUSE_2);
+	OR
+		yes(IVORY, HOUSE_2);
+		yes(GREEN, HOUSE_3);
+	OR
+		yes(IVORY, HOUSE_3);
+		yes(GREEN, HOUSE_4);
+	END_EITHER
+
+	yes(OGOLD, SNAIL);	/* Clue 6 */
+	yes(PLAYER, YELLOW);	/* Clue 7 */
+	yes(MILK, HOUSE_2);	/* Clue 8 */
+	yes(NORWEG, HOUSE_0);	/* Clue 9 */
+
+	EITHER			/* Clue 10 */
+		yes(CHESTER, HOUSE_0);
+		yes(FOX, HOUSE_1);
+	OR
+		yes(CHESTER, HOUSE_4);
+		yes(FOX, HOUSE_3);
+	OR
+		yes(CHESTER, HOUSE_1);
+		EITHER	yes(FOX, HOUSE_0);
+		OR	yes(FOX, HOUSE_2);
+		END_EITHER
+	OR
+		yes(CHESTER, HOUSE_2);
+		EITHER	yes(FOX, HOUSE_1);
+		OR	yes(FOX, HOUSE_3);
+		END_EITHER
+	OR
+		yes(CHESTER, HOUSE_3);
+		EITHER	yes(FOX, HOUSE_2);
+		OR	yes(FOX, HOUSE_4);
+		END_EITHER
+	END_EITHER
+
+	EITHER			/* Clue 11 */
+		yes(PLAYER, HOUSE_0);
+		yes(HORSE, HOUSE_1);
+	OR
+		yes(PLAYER, HOUSE_4);
+		yes(HORSE, HOUSE_3);
+	OR
+		yes(PLAYER, HOUSE_1);
+		EITHER	yes(HORSE, HOUSE_0);
+		OR	yes(HORSE, HOUSE_2);
+		END_EITHER
+	OR
+		yes(PLAYER, HOUSE_2);
+		EITHER	yes(HORSE, HOUSE_1);
+		OR	yes(HORSE, HOUSE_3);
+		END_EITHER
+	OR
+		yes(PLAYER, HOUSE_3);
+		EITHER	yes(HORSE, HOUSE_2);
+		OR	yes(HORSE, HOUSE_4);
+		END_EITHER
+	END_EITHER
+
+	yes(LSTRIKE, OJUICE);	/* Clue 12 */
+	yes(JAPAN, PARLIA);	/* Clue 13 */
+
+	EITHER			/* Clue 14 */
+		yes(NORWEG, HOUSE_0);
+		yes(BLUE, HOUSE_1);
+	OR
+		yes(NORWEG, HOUSE_4);
+		yes(BLUE, HOUSE_3);
+	OR
+		yes(NORWEG, HOUSE_1);
+		EITHER	yes(BLUE, HOUSE_0);
+		OR	yes(BLUE, HOUSE_2);
+		END_EITHER
+	OR
+		yes(NORWEG, HOUSE_2);
+		EITHER	yes(BLUE, HOUSE_1);
+		OR	yes(BLUE, HOUSE_3);
+		END_EITHER
+	OR
+		yes(NORWEG, HOUSE_3);
+		EITHER	yes(BLUE, HOUSE_2);
+		OR	yes(BLUE, HOUSE_4);
+		END_EITHER
+	END_EITHER
+
+/* End of problem-specific data */
+
+		solveit();
+	OR
+		printf("All solutions found\n");
+		exit(0);
+	END_EITHER
+}
+
+no(a1, a2)
+{
+	int	non1, non2, token;
+
+	if (Val(a1, a2) == T_YES)
+		REJECT;
+	else if (Val(a1, a2) == T_UNK) {
+		Val(a1, a2) = T_NO;
+		no(a2, a1);
+		non1 = non2 = -1;
+
+		for EVERY_ITEM(token, a1)
+			if (Val(token, a2) != T_NO)
+				if (non1 == -1)
+					non1 = token;
+				else
+					break;
+		if (non1 == -1)
+			REJECT;
+		else if (token == CLASS(a1) + NUM_ITEM)
+			yes(non1, a2);
+
+		for EVERY_TOKEN(token)
+			if (Val(token, a1) == T_YES)
+				no(a2, token);
+	}
+}
+
+yes(a1, a2)
+{
+	int	token;
+
+	if (Val(a1, a2) == T_NO)
+		REJECT;
+	else if (Val(a1, a2) == T_UNK) {
+		Val(a1, a2) = T_YES;
+		yes(a2, a1);
+		for EVERY_ITEM(token, a1)
+			if (token != a1)
+				no(token, a2);
+		for EVERY_TOKEN(token)
+			if (Val(token, a1) == T_YES)
+				yes(a2, token);
+			else if (Val(token, a1) == T_NO)
+				no(a2, token);
+	}
+}
+
+solveit()
+{
+	int	token, tok2;
+
+	for EVERY_TOKEN(token)
+		for (tok2 = token; tok2 < TOT_TOKEN; tok2++)
+			if (Val(token, tok2) == T_UNK) {
+				EITHER
+					yes(token, tok2);
+				OR
+					no(token, tok2);
+				END_EITHER;
+				return solveit();
+			}
+	printf("Solution:\n");
+	for EVERY_ITEM(token, 0) {
+		for (tok2 = NUM_ITEM; tok2 < TOT_TOKEN; tok2++)
+			if (Val(token, tok2) == T_YES)
+				printf("\t%s %s\n",names[token],names[tok2]);
+		printf("\n");
+	}
+	REJECT;
+}
+
+---
+james@crc.ricoh.com (James Allen)
+
+==> logic/elimination.p <==
+97 baseball teams participate in an annual state tournament.
+The way the champion is chosen for this tournament is by the same old
+elimination schedule. That is, the 97 teams are to be divided into
+pairs, and the two teams of each pair play against each other.
+After a team is eliminated from each pair, the winners would
+be again divided into pairs, etc.  How many games must be played
+to determine a champion?
+
+==> logic/elimination.s <==
+In order to determine a winner all but one team must lose.
+Therefore there must be at least 96 games.
+
+==> logic/flip.p <==
+How can a toss be called over the phone (without requiring trust)?
+
+==> logic/flip.s <==
+A flips a coin.  If the result is heads, A multiplies 2 prime numbers
+containing about 90 digits; if the result is tails, A multiplies 3
+prime numbers containing about 60 digits.  A tells B the result of the
+multiplication.  B now calls either heads or tails and tells A.  A then
+supplies B with the original numbers to verify the flip.
+
+Consider what is involved in multiplying 90 digit numbers.  Using the method
+of long multiplication that we all learned in grade school, you have maybe
+90 or so strings of 90 characters (or "digits") each.  That's no problem for
+a computer to deal with.  The magnitude of the number represented isn't
+much of a factor; we're only manipulating the string of digits.
+
+Consider what is involved in factoring 90 digit numbers.  There are of course,
+little tricks for determining factorability by small integers which we all
+learned in grade school.  (Is the last digit even?  Is the sum of all the
+digits divisible by 9?  And so on.)  But these are of little use in factoring
+large numbers with large factors.  In fact, there is no essentially better
+method than checking every number smaller that the number to be factored and
+seeing if it one divides the other evenly.  We means we could be checking some
+100,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000
+nummbers.  This is very hard to do, even for a supercomputer.  Here, the
+number of digits this number has is of little consequence.  It is the
+magnitude of the number that we have to worry about, and there just isn't 
+enough time in the world to do this properly.
+
+Where does A find a list of 60- and 90- digit prime numbers?  Well, that's not
+to hard to come by.  The simplest method to find a few prime numbers is simply
+to choose a 90-digit number (or 60-digit number, as the case warrants)
+randomly, and check to see if it is prime.  You won't have to wait too long
+before you stumble across a prime number.
+
+"But wait!" you cry.  "I thought you just said it was incredibly difficult
+to factor large numbers.  If that's the case, then how are you going to know
+if the number you randomly choose is prime?"  A good question.  Here we enter
+into the strange an wacky world of number theory.  It turns out (and I won't
+explain how unless someone asks) there are "probabalistic" algorithms,
+which depend on us choosing numbers at random.  There are probablistic
+algorithms that when given a prime number, will quickly tell us that it is
+a prime number, and when given a composite number, will either tell us that
+it is a composite number (with very, very high probability) or will tell us
+that it is a prime number (with very, very low probability.)  What's the use
+of an algorithm that only returns the right answer "with very, very high
+probability?"  Well, we can make this probability as high as we want, just by
+running the algorithm longer.  In fact, it is within our technological
+abilities to quickly run this algorithm for 90-digit numbers so that the
+probability of it giving a wrong answer is less than the probability of a
+cosmic ray striking a vital part of the computer at some vital time and causing
+the computer to spit out the wrong answer anyway.  That's what I mean by "very,
+very high."
+
+==> logic/flowers.p <==
+How many flowers do I have if all of them are roses except two, all of
+them are tulips except two, and all of them are daisies except two?
+
+==> logic/flowers.s <==
+There are two solutions:
+
+Three flowers: rose, tulip, daisy
+Two flowers:   carnation, geranium
+
+==> logic/friends.p <==
+Any group of 6 or more contains either 3 mutual friends or 3 mutual strangers.
+Prove it.
+
+==> logic/friends.s <==
+Take a person X.  Of the five other people, there must either be at least three
+acquaintances of X or at least three strangers of X.  Assume wlog that X has
+three strangers A,B,C.  Unless A,B,C is the required triad of acquaintances,
+they must include a pair of strangers, wlog A,B.  Then X,A,B is the required
+triad of strangers, QED.
+
+==> logic/hofstadter.p <==
+In first-order logic, find a predicate P(x) which means "x is a power of 10."
+
+==> logic/hofstadter.s <==
+Well, one summer, I decided to tackle the problem. Not having any great
+knowledge of number theory, I used a more brute force approach. Note
+that for greater comprehensibility, I have broken the resulting formula
+up into several stages, but it would not be difficult to put it
+back together into one vast formula:
+
+{e is prime:}
+PRIME(e) := 
+   ~Eb:Ec:((b+2)*(c+2) = e)
+
+{if e is a prime, true iff a is a power of e:}
+PPOWER(a,e) :=
+   Ab:Ac:((b*c = a) -> ((b = 1) or (Ed: (e*d) = b)))
+
+{if e is a prime, and a is a power of e, true iff d is the
+ (log_e a)th digit (counting from the right, starting with 0)
+ in the base-e expansion of n:}
+DIG(a,e,d,n) :=
+   (d < e) & Eb:Ec:((c < a) & (n = (b*e*a) + (d*a) + c))
+
+{if e is prime, and a is a power of e, true iff n has exactly
+ (log_e a) digits in its base-e expansion (0 is counted as having 0
+ digits:}
+LENGTH(e,a,n):=
+   (n < a) & Ab:((PPOWER(b,e) & (b < a)) -> (b <= n))
+
+POWER_OF_TEN(x):=
+   Ee:(PRIME(e) & (e > x) &
+       En:Ea:(LENGTH(e,a,n) &
+              DIG(1,e,1,n) &
+              Ai:Aj:Au:(  (PPOWER(u,e) & ((e*u) < a)
+			   & DIG(u,e,i,n) & DIG(e*u,e,j,n))
+                          -> j = (10 * i)  ) &
+              Eu:(PPOWER(u,e) & (e*u = a) & DIG(u,e,x,n))
+       )     )
+
+The basic idea is that you are asserting that for some prime e greater
+than x, we can find a number n which, when expressed in base-e notation,
+will have 1 in its units place, 10 in its e's place, 100 in its (e^2)'s
+place, and in general have the "digit" in each place be 10 times
+greater than the one to its right, such that the leftmost digit is our x.
+
+To translate into Hofstadter's notation, of course, we must use horse-shoes
+instead of ->'s, big carets instead of &'s, letters a through e (followed
+by however many ''s) exclusively, and so forth. (We must also replace <'s
+and <= with appropriate expansions, and substitute in for our capitalized
+formula abbreviations.) This is left as an exercise to the reader.
+
+Kevin Wald
+wald2@husc.harvard.edu
+
+==> logic/hundred.p <==
+A sheet of paper has statements numbered from 1 to 100.  Statement n says
+"exactly n of the statements on this sheet are false."  Which statements are
+true and which are false?  What if we replace "exactly" by "at least"?
+
+==> logic/hundred.s <==
+From _Litton's Problematical Recreations_
+
+It is tempting to argue as follows:
+
+At most one statement can be true (they are mutually contradictory).
+If they are all false, statement 100 would be true, which is no good.
+So 99 are false, and statement 99 is true.
+
+If replaced by "at least", and the "real" number of false statements is
+x, then statements x+1 to 100 will be false (since they falsely claim
+that there are more false statements than there actually are). So, 100-x are 
+false, ie.  x=100-x, so x=50. The first 50 statements are true, and statements
+51 to 100 are false. 
+
+However, there is a hidden and incorrect assumption in this argument.
+To see this, suppose that there is one statement on the sheet and it
+says "One statement is false"  or "At least one statement is false,"
+either way it implies "this statement is false," which is a familiar
+paradoxical statement.  We have learned that this paradox arises because
+of the false assumption that all statements are either true or false.
+This is the hidden assumption in the above reasoning.
+
+If it is acknowledged that some of the statements on the page may be
+neither true nor false (i.e., meaningless), then nothing whatsoever can
+be concluded about which statements are true or false.
+
+This problem has been carefully contrived to appear to be solvable (like
+the vacuous statement "this statement is true").  By changing the
+numbers in some statements and changing "true" to "false," various
+circular forms of the liar's paradox can be constructed.  A much
+more complicated version of the same problem is:
+
+ 1) At least one of the last two statements in this list is true.
+
+ 2) This is either the first true or the first false statement in the
+    list.
+
+ 3) There exist three consecutive false statements.
+
+ 4) The difference beween the numbers of the last true statement and
+    the first true statement is a factor of the unknown number.
+
+ 5) The sum of the numbers of the true statements is the unknown
+    number.
+
+ 6) This is not the last true statement.
+
+ 7) Each true statement's number is a factor of the unknown number.
+
+ 8) The unknown number equals the percentage of these statements which
+   are true.
+
+ 9) The number of different factors which the unknown number has
+   (excluding 1 and itself) is more than the sum of the numbers of the
+   true statements.
+
+10) There are no three cosecutive true statements.
+
+What is the number?
+
+The incorrect but plausible solution is:
+
+By 2, either way 1 must be false, and then so must both 9 and 10.
+
+6, if false, says "This is the last true statement", which gives
+a paradox, thus 6 must be true, and so must 7 and/or 8.
+
+7 and 8 cannot both be true, as the number had to be a multiple
+of 6,7,8 , that is a multiple of 168 (by 7), and less than 100 (by 8)
+
+If 8 is false, then 3 is true (8,9,10 is false), if 8 is true, then
+3 is false (3 cannot be true when both 6 and 8 are true, then there
+are no three consecutive statements left).
+
+So we have either
+
+A) F X F X X T F T F F
+or
+B) F X T X X T T F F F
+
+In A), 4 and 5 must be true (by false 10), and 2 may be true or false.
+So by 5 the number shall be either 27 (2+3+4+5+6+7) or 25 (3+4+5+6+7).
+None of these can fullfill 8, though, so A) is out leaving us with B)
+
+Now, (by 7) 3,6 and 7 are factors, the number must be a multiple of
+42, as 2+3+4+5+6+7=27, 5 must be false. 
+
+By false 10, 2 and 4 must be true, that is 5 shall be a multiple
+of the number. Now the number must be a multiple of 2,3,4,5,6 and 7,
+that is a multiple of 3*4*5*7=420. 420 has 22 different factors
+(2,3,4,5,6,7,10,12,14,15,20,21,28,30,35,42,60,70,84,105,140,210)
+and the sum 2+3+4+6+7 = 22, so the only multiple of 420 that
+fulfills false 9 is 420.
+
+==> logic/inverter.p <==
+Can a digital logic circuit with two inverters invert N independent inputs?
+The circuit may contain any number of AND or OR gates.
+
+==> logic/inverter.s <==
+It can be shown that N inverters can invert 2^N-1 independent inputs,
+given an unlimited supply of AND and OR gates. The classic version of
+this puzzle is to invert 3 independent inputs using AND gates, OR
+gates, and only 2 inverters.
+
+This is solved by:
+        n1 = not(i1 and i2 or i1 and i3 or i2 and i3);
+        n2 = not((i1 or i2 or i3) and n1  or  i1 and i2 and i3);
+        o1 = (i2 or i3 or n2) and n1  or  i2 and i3 and n2;
+        o2 = (i1 or i3 or n2) and n1  or  i1 and i3 and n2;
+        o3 = (i1 or i2 or n2) and n1  or  i1 and i2 and n2;
+
+i1, i2, and i3 are the inputs, n1 and n2 are the inverted signals, and
+o1, o2, and o3 are the outputs.  "and" has higher precedence than "or".
+
+So, start with N inverters.  Replace 3 of them with 2.
+Keep doing that until you're down to 2 inverters.
+
+I was skeptical at first, because such a design requires so much feedback
+that I was sure the system would oscillate when switching between two
+particular states.  But after writing a program to test every possible state 
+change (32^2), it appears that this system settles after a maximum of
+3 feedback logic iterations. I did not include gate delays in the simulation,
+however, which could increase the number of iterations before the system
+settles.
+
+In any case, it appears that the world needs only 2 inverters! :-)
+
+==> logic/josephine.p <==
+The recent expedition to the lost city of Atlantis discovered scrolls
+attributted to the great poet, scholar, philosopher Josephine. They
+number eight in all, and here is the first.
+
+THE KINGDOM OF MAMAJORCA, WAS RULED BY QUEEN HENRIETTA I. IN MAMAJORCA
+WOMEN HAVE TO PASS AN EXTENSIVE LOGIC EXAM BEFORE THEY ARE ALLOWED TO
+GET MARRIED. QUEENS DO NOT HAVE TO TAKE THIS EXAM. ALL THE WOMEN IN
+MAMAJORCA ARE LOYAL TO THEIR QUEEN AND DO WHATEVER SHE TELLS THEM TO.
+THE QUEENS OF MAMAJORCA ARE TRUTHFUL. ALL SHOTS FIRED IN MAMAJORCA CAN
+BE HEARD IN EVERY HOUSE. ALL ABOVE FACTS ARE KNOWN TO BE COMMON
+KNOWLEDGE.
+
+HENRIETTA WAS WORRIED ABOUT THE INFIDELITY OF THE MARRIED MEN IN
+MAMAJORCA.  SHE SUMMONED ALL THE WIVES TO THE TOWN SQUARE, AND MADE
+THE FOLLOWING ANNOUNCEMENT. "THERE IS AT LEAST ONE UNFAITHFUL HUSBAND
+IN MAMAJORCA. ALL WIVES KNOW WHICH HUSBANDS ARE UNFAITHFUL, BUT HAVE
+NO KNOWLEDGE ABOUT THE FIDELITY OF THEIR OWN HUSBAND. YOU ARE
+FORBIDDEN TO DISCUSS YOUR HUSBAND'S FAITHFULNESS WITH ANY OTHER WOMAN.
+IF YOU DISCOVER THAT YOUR HUSBAND IS UNFAITHFUL, YOU MUST SHOOT HIM AT
+PRECISELY MIDNIGHT OF THE DAY YOU FIND THAT OUT."
+
+THIRTY-NINE SILENT NIGHTS FOLLOWED THE QUEEN'S ANNOUNCEMENT. ON THE
+FORTIETH NIGHT, SHOTS WERE HEARD. QUEEN HENRIETTA I IS REVERED IN
+MAMAJORCAN HISTORY.
+
+As with all philosophers Josephine doesn't provide the question, but leaves
+it implicit in his document. So figure out the questions - there are two -
+and answer them.
+
+Here is Josephine's second scroll.
+
+QUEEN HENRIETTA I WAS SUCCEEDED BY DAUGHTER QUEEN HENRIETTA II. AFTER
+A WHILE HENRIETTA LIKE HER FAMOUS MOTHER BECAME WORRIED ABOUT THE
+INFIDELITY PROBLEM. SHE DECIDED TO ACT, AND SENT A LETTER TO HER
+SUBJECTS (WIVES) THAT CONTAINED THE EXACT WORDS OF HENRIETTA I'S
+FAMOUS SPEECH.  SHE ADDED THAT THE LETTERS WERE GUARENTEED TO REACH
+ALL WIVES EVENTUALLY.
+
+QUEEN HENRIETTA II IS REMEMBERED AS A FOOLISH AND UNJUST QUEEN.
+
+What is the question and answer implied by this scroll?
+
+==> logic/josephine.s <==
+The two questions for scroll #1 were:
+
+1. How many husbands were shot on that fateful night?
+2. Why is Queen Henrietta I revered in Mamajorca?
+
+The answers are:
+
+If there are n unfaithful husbands (UHs), every wife of an UH knows of
+n-1 UH's while every wife of a faithful husband knows of n UHs.  [this
+because everyone has perfect information about everything except the
+fidelity of their own husband].  Now we do a simple induction: Assume
+that there is only one UH.  Then all the wives but one know that there
+is just one UH, but the wife of the UH thinks that everyone is
+faithful.  Upon hearing that "there is at least one UH", the wife
+realizes that the only husband it can be is her own, and so shoots
+him.  Now, imagine that there are just two UH's.  Each wife of an UH
+assumes that the situation is "only one UH in town" and so waits to
+hear the other wife (she knows who it is, of course) shoot her husband
+on the first night.  When no one is shot, that can only be because her
+OWN husband was a second UH.  The wife of the second UH makes the same
+deduction when no shot is fired the first night (she was waiting, and
+expecting the other to shoot, too).  So they both figure it out after
+the first night, and shoot their husbands the second night.  It is
+easy to tidy up the induction to show that the n UHs will all be shot
+just on the n'th midnight.
+
+The question for scroll #2 is:
+
+3. Why is Queen Henrietta II not?
+
+The answer is:
+
+The problem now is that QHII didn't realize that it is *critical* that
+all of the wives, of faithful and UH's alike, to
+*BEGIN*AT*THE*SAME*MOMENT*.  The uncertainty of having a particular
+wife's notice come a day or two late makes the whole logic path fall
+apart.  That's why she's foolish.  She is unjust, because some wives,
+honed and crack logicians all, remember, will *incorrectly* shoot
+faithful husbands.  Let us imagine the situation with just a SINGLE UH
+in the whole country.  And, wouldn't you know it, the notice to the
+wife of the UH just happens to be held up a day, whereas everyone
+else's arrived the first day.  Now, all of the wives that got the
+notice the first day know that there is just one UH in the country.
+And they know that the wife of that UH will think that everyone is
+faithful, and so they'll expect her to figure it out and shoot her
+husband the first night.  BUT SHE DIDN"T GET THE NOTICE THE FIRST
+NIGHT....  BUT THE OTHER WIVES HAVE NO WAY OF KNOWING THAT.  So, the
+wife of the UH doesn't know that anything is going on and so (of
+course) doesn't do anything the first night.  The next day she gets
+the notice, figures it all out, and her husband will be history come
+that midnight.  BUT... *every* other wife thought that there should
+have been a shooting the first night, and since there wasn't there
+must have been an additional UH, and it can only have been _her_
+husband.  So on the second night **ALL** of the husbands are shot.
+Things are much more complicated if the mix of who gets the notice
+when is less simple than the one I mentioned above, but it is always
+wrong and/or tragic.
+
+NOTE: if the wives *know* that the country courier service (or however
+these things get delivered) is flaky, then they can avoid the
+massacre, but unless the wives exchange notes no one will ever be shot
+(since there is always a chance that rather than _your_ husband being
+an UH, you could reason that it might be that the wife of one of the
+UH's that you know about just hasn't gotten her copy of the scroll
+yet).  I guess you could call this case "unjust", too, since the UH's
+evade punishment, despite the perfect logic of the wives.
+
+==> logic/locks.and.boxes.p <==
+You want to send a valuable object to a friend.  You have a box which
+is more than large enough to contain the object.  You have several
+locks with keys.  The box has a locking ring which is more than large enough
+to have a lock attached.  But your friend does not have the key to any
+lock that you have.  How do you do it?  Note that you cannot send a key
+in an unlocked box, since it might be copied.
+
+
+==> logic/locks.and.boxes.s <==
+Attach a lock to the ring.  Send it to her.  She attaches her own lock
+and sends it back.  You remove your lock and send it back to her.  She
+removes her lock.
+
+==> logic/min.max.p <==
+In a rectangular array of people, which will be taller, the tallest of the
+shortest people in each column, or the shortest of the tallest people in each row?
+
+==> logic/min.max.s <==
+Let T denote shortest of tall
+Let S denote tallest of short
+
+-------------------------------
+|                             |
+|                             |
+|                S            |
+|                             |
+|                             |
+|    T           X            |
+|                             |
+|                             |
+|                             |
+|                             |
+-------------------------------
+
+So T >= X >= S.
+
+
+==> logic/mixing.p <==
+Start with a half cup of tea and a half cup of coffee. Take one tablespoon
+of the tea and mix it in with the coffee. Take one tablespoon of this mixture
+and mix it back in with the tea. Which of the two cups contains more of its
+original contents?
+
+==> logic/mixing.s <==
+Mixing Liquids
+
+The two cups end up with the same volume of liquid they started with. The same
+amount of tea was moved to the coffee cup as coffee to the teacup. Therefore
+each cup contains the same amount of its original contents.
+
+==> logic/monty.52.p <==
+Monty and Waldo play a game with N closed boxes.  Monty hides a
+dollar in one box; the others are empty.  Monty opens the empty boxes
+one by one.  When there are only two boxes left Waldo opens either box;
+he wins if it contains the dollar.  Prior to each of the N-2 box
+openings Waldo chooses one box and locks it, preventing Monty from opening
+it next.  That box is then unlocked and cannot be so locked twice in a row.
+
+What are the optimal strategies for Monty and Waldo and what is the
+fair price for Waldo to pay to play the game?
+
+==> logic/monty.52.s <==
+The fair price for large N is $0.6321205588285576784; I will offer
+a proof along with optimal strategies.
+
+Denote the game as G_N().  After (N-M) rounds of play, the game will have
+the same form as G_M().  Depending on the strategies each of the M boxes
+will have a probability p_i of containing the dollar.  Let Waldo lock
+the M'th box (renumbering the boxes if necessary).  Denote the game and
+Waldo's expected winnings in the game by
+		G_M(p_1, p_2, ..., p_M)
+where
+		p_1 + p_2 + ... + p_M = 1
+
+When
+		p_2 = p_3 = p_4 = ... = p_M
+we adopt the abbreviation
+		G_M(b) = G_M(1 + b - Mb, b, b, b, b, ..., b)
+and note that since probabilities are never negative:
+		1 + b - Mb >= 0, or
+		0 <= b <= 1 / (M-1)
+
+Various G_M(p_1, p_2, ..., p_M) have difficult solutions but we are asked
+only to solve G_M(1/M) and it turns out we can accomplish this by
+considering only the games
+		G_M(b)  where	1/M  <=  b  <=  1/(M-1)		[1]
+Games of this form will be said to satisfy constraint [1].
+
+Induction is used for one of the theorems, so we'd better solve G_2 and G_3
+for our basis.
+		G_2(p_1, p_2) = max (p_1, p_2)
+		G_3(p_1, p_2, p_3) = max (p_1 + p_2, p_3)
+since after Monty opens box #1, box #2 will have probability (p_1 + p_2)
+and vice versa.  When the probabilities satisfy constraint [1]: 
+		G_2(b) = G_2(1-b, b) = b
+		G_3(b) = G_3(1-2b, b, b) = 1 - b
+
+The proof of Theorem 1 is based on the probability p_i that box #i
+contains the dollar.  (Of course this is Waldo's perceived probability:
+Monty's probability would be 0 or 1.)  It may seem wrong for Waldo to
+"forget" the game history and remember only the computed p_i.  For
+example he may have previously locked some but not all of the boxes
+and this fact is ignored except in the calculation of p_i.  Or Monty may
+have some higher level "plan" which mightn't seem to translate directly
+into probabilities.  But probability algebra obeys some simplifying
+linearity rules and, if Monty keeps a "poker face", the probability model
+is the only thing Waldo has to act on.
+
+Especially paradoxical is the derivation of Waldo's p_i in his trivial
+strategy below: he can adopt inferior but "correct" p_i to simplify the
+analysis.
+
+Theorem 1)
+	If   b >= 1/M   then
+	G_M(b) = G_[M-1]( (1-b) / (M-2) )
+
+Proof)
+	We will show that Monty and Waldo each have a strategy in G_M(b) to
+	reduce the game to G_[M-1](b, q, q, ..., q) where q = (1-b) / (M-2)
+	and where the boxes have been renumbered so that box #1 was box #M
+	(the one Waldo locked) from the prior round and the new box #(M-1)
+	is the one Waldo locks next.  Note that if Monty indeed arranges
+	the probability mixture G_[M-1](b, q, q, q, q, ..., q) it won't
+	matter which box Waldo locks (Box #1 has the only non-equal
+	probability but Waldo cannot lock the same box twice in a row);
+	this is a typical property of "saddlepoint" strategy.
+
+	We will derive the necessary and sufficient condition for Monty to
+	reduce any game G_M(p_1, p_2, p_3, ..., p_M) to a single game with
+	the form G_[M-1](b, q, q, ..., q).  Using the numbering of G_M()
+	let R(i,j) be the joint probability that Box #i contains the dollar
+	and Box #j is opened by Monty in G_M().  We need consider only
+		M >= 3
+	Clearly,
+		R(i, j) >= 0
+		R(i, i) = 0
+		R(i, M) = 0, i < M
+		sum_over_j R(i,j) = p_i
+	and to achieve q_2 = q_3 = ... = q_[M-1] in G_[M-1],
+		R(1, j) = R(k, j)
+			for 1 < j,k < M and j != k
+		R(2, 1) = R(k, 1)
+			for 2 < k < M
+	and to make G_[M-1] be independent of Monty's play
+		R(M, j)/R(1, j) = R(M, 2)/R(1, 2)
+			for 2 < j < M
+		R(M, 2)/R(1, 2) = R(M, 1)/R(2, 1)
+
+	The above have a simple unique solution:
+		R(i, j) = (1 - p_M) / (M - 2)  - p_j		[2]
+			for i,j < M and i != j
+		R(M, j) = p_M - p_j * p_M / (1 - p_M)		[3]
+			for j < M
+		p_j * (M-2) + p_M <= 1				[4]
+
+	For the theorem we are given that G_M(b) satisfies constraint [1]
+		1 / M  <=  b  <=  1 / (M - 1)
+	which implies the weaker inequality
+		(M - 3) / (M^2 - 3M + 1)  <=  b  <=  1 / (M - 1)
+	and since for the constraint-[1] compliant G_M()
+		p_j = b   or   p_j = (1+b-Mb)   for all j
+	the inequality [4] follows directly.
+
+	Hence Monty can transpose G_M(b) into G_[M-1]( (1-b) / (M-2) )
+	whenever b >= 1/M and M >= 3.  (This G_[M-1] also happens to
+	satisfy constraint [1] as needed for the next theorem.)
+
+	It should be easy to argue that this strategy is optimal for Monty,
+	but we want to derive Waldo's best strategy anyway and if it
+	guarantees the same value we know we're at the "saddlepoint".
+	If Waldo knows Monty has a non-optimal strategy he can take
+	advantage of it, but we will just derive a strategy good enough
+	to achieve the saddle-point value.
+
+	Monty must transform G_M(b) into some
+		G_[M-1](b, q_2, q_3, ..., q_[M-1])
+	where Waldo has the choice of locking any of boxes #2 through #(M-1).
+	If Waldo locks each of the (M-2) available boxes with probability
+	1/(M-2) it is easily seen that the average probability that he
+	locks the box with the dollar is (1-b) / (M-2) and the probabilities
+	q_2, q_3, ..., q_[M-2] will also have the average value (1-b)/(M-2).
+	If Waldo pretends to "forget" which box he picked before, he can
+	take q_2 = q_3 = ... = (1-b)/(M-2) thereby constructing the same
+	game Monty constructed with his saddlepoint strategy!
+
+	In the above Waldo in effect "degraded" the accuracy of his
+	probability estimates with the substitutions
+		q_2' = (q_2 + q_3 + ... + q_[M-1]) / (M - 2)
+		q_3' = (q_2 + q_3 + ... + q_[M-1]) / (M - 2)
+		  et cetera
+	If Waldo "knows" more than this, he can pretend he doesn't!
+	For example he can ask Monty to secretly shuffle the boxes.
+
+	Thus either player can reduce
+		G_M(b), b >= 1/M
+	to
+		G_[M-1]((1-b)/(M-2))
+	so this must be the saddlepoint.
+	Q.E.D.
+
+Theorem 2)
+	If   b >= 1/M   then
+	G_M(b) = 1 - 1/2! + 1/3! - ... - (1-b)(-1)^M/(M-2)!
+		= - sum (-1)^i/i! - (1-b)(-1)^M/(M-2)!
+	where the sum is over i = 1, 2, 3, ..., M-3
+
+Proof)
+	The proof is by induction.  We know the theorem holds for M = 3
+	and we will assume it holds for (M-1).  Set
+		c = (1-b) / (M-2)
+	We noted earlier that b <= 1/(M-1): otherwise p_1 = (1 + b - Mb)
+	is negative; hence we obtain
+		c = (1-b)/(M-2) >= (1 - 1/(M-1)) / (M-2)
+	or simply
+		c >= 1/(M-1)
+	Thus the condition of the inductive hypothesis is satisfied and
+		G_[M-1](c) = 1 - 1/2! + 1/3! - ... + (1-c)(-1)^M/(M-3)!
+	But from Theorem 1
+		G_M(b) = G_[M-1](c)
+	and from the definition of c,
+		c/(M-3)! = (1-b)/(M-2)!
+	which establishes the theorem.
+
+Theorem 3)
+	G_M(1/M) = G_M(1/M, ..., 1/M) = 1 - 1/2! + 1/3! - ... -(-1)^M/M!
+
+Proof)
+	This follows directly from Theorem 2 and the observation that
+		(1/M)/(M-2)! = 1/(M-1)! - 1/M!
+
+For large M, G_M(1/M) approaches (1 - 1/e).  It will be a little bigger
+when M is odd and a little smaller when M is even.  I've appended the
+numeric values below.
+
+% dc
+[[Solution for M =]Plb1+pdsb]sy
+65k1sa1sblyx2sc[la1lc/-dsaplclyx*scla1lc/+dsaplclyx*sclzx]dszx
+Solution for M =2
+0.50000000000000000000000000000000000000000000000000000000000000000
+Solution for M =3
+0.66666666666666666666666666666666666666666666666666666666666666666
+Solution for M =4
+0.62500000000000000000000000000000000000000000000000000000000000000
+Solution for M =5
+0.63333333333333333333333333333333333333333333333333333333333333333
+Solution for M =6
+0.63194444444444444444444444444444444444444444444444444444444444445
+Solution for M =7
+0.63214285714285714285714285714285714285714285714285714285714285714
+Solution for M =8
+0.63211805555555555555555555555555555555555555555555555555555555556
+Solution for M =9
+0.63212081128747795414462081128747795414462081128747795414462081129
+Solution for M =10
+0.63212053571428571428571428571428571428571428571428571428571428572
+	. . .
+Solution for M =52
+0.63212055882855767840447622983853913255418886896823216549216319831
+
+P. S. There are related unsolved problems:
+(a) what about G_M(p_1, p_2, ..., p_M) that do not fit the pattern used
+in the above solution?
+(b) what if two boxes contain dollars?  (first, what should the rules be?)
+
+-- james@crc.ricoh.com (James Allen)
+
+==> logic/number.p <==
+Mr. S. and Mr. P. are both perfect logicians, being able to correctly deduce
+any truth from any set of axioms.  Two integers (not necessarily unique) are
+somehow chosen such that each is within some specified range.  Mr. S.
+is given the sum of these two integers; Mr. P. is given the product of these
+two integers.  After receiving these numbers, the two logicians do not
+have any communication at all except the following dialogue:
+<<1>>   Mr. P.:  I do not know the two numbers.
+<<2>>   Mr. S.:  I knew that you didn't know the two numbers.
+<<3>>   Mr. P.:  Now I know the two numbers.
+<<4>>   Mr. S.:  Now I know the two numbers.
+
+Given that the above statements are absolutely truthful, what are the two
+numbers?
+
+==> logic/number.s <==
+The answer depends upon the ranges from which the numbers are chosen.
+
+The unique solution for the ranges [2,62] through [2,500+] is:
+
+  SUM   PRODUCT   X   Y
+   17      52     4  13
+
+The unique solution for the ranges [3,94] through [3,500+] is:
+
+  SUM   PRODUCT   X   Y
+   29     208    13  16
+
+There are no unique solutions for the ranges starting with 1,
+and there are no solutions for ranges starting with numbers above 3.
+
+A program to compute the possible pairs is included below.
+
+#include <stdio.h>
+
+/*
+
+BEGINNING OF PROBLEM STATEMENT:
+Mr. S. and Mr. P. are both perfect logicians, being able to correctly deduce
+any truth from any set of axioms.  Two integers (not necessarily unique) are
+somehow chosen such that each is within some specified range.  Mr. S.
+is given the sum of these two integers; Mr. P. is given the product of these
+two integers.  After receiving these numbers, the two logicians do not
+have any communication at all except the following dialogue:
+<<1>>   Mr. P.:  I do not know the two numbers.
+<<2>>   Mr. S.:  I knew that you didn't know the two numbers.
+<<3>>   Mr. P.:  Now I know the two numbers.
+<<4>>   Mr. S.:  Now I know the two numbers.
+
+Given that the above statements are absolutely truthful, what are the two
+numbers?
+
+END OF PROBLEM STATEMENT
+
+ */
+
+#define SMALLEST_MIN	1
+#define LARGEST_MIN	10
+#define SMALLEST_MAX	50
+#define LARGEST_MAX	500
+
+long P[(LARGEST_MAX + 1) * (LARGEST_MAX + 1)];		/* products */
+long S[(LARGEST_MAX + 1) + (LARGEST_MAX + 1)];		/*   sums   */
+
+find(long min, long max)
+{
+	long i, j;
+	/*
+	 *	count factorizations in P[]
+	 *	all P[n] > 1 satisfy <<1>>.
+	 */
+	for(i = 0; i <= max * max; ++i)
+		P[i] = 0;
+
+	for(i = min; i <= max; ++i)
+		for(j = i; j <= max; ++j)
+			++P[i * j];
+
+	/*
+	 *	decompose possible SUMs and check factorizations
+	 *		all S[n] == min - 1 satisfy <<2>>.
+	 */
+	for(i = min + min; i <= max + max; ++i) {
+
+		for(j = i / 2; j >= min; --j)
+			if(P[j * (i - j)] < 2)
+				break;
+
+		S[i] = j;
+	}
+
+	/*
+	 *	decompose SUMs which satisfy <<2>> and see which products
+	 *	they produce.  All (P[n] / 1000 == 1) satisfy <<3>>.
+	 */
+	for(i = min + min; i <= max + max; ++i)
+		if(S[i] == min - 1)
+			for(j = i / 2; j >= min; --j)
+				if(P[j * (i - j)] > 1)
+					P[j * (i - j)] += 1000;
+	/*
+	 *	decompose SUMs which satisfy <<2>> again and see which products
+	 *	satisfy <<3>>.  Any (S[n] == 999 + min) satisfies <<4>>
+	 */
+	for(i = min + min; i <= max + max; ++i)
+		if(S[i] == min - 1)
+			for(j = i / 2; j >= min; --j)
+				if(P[j * (i - j)] / 1000 == 1)
+					S[i] += 1000;
+	/*
+	 *	find the answer(s) and print them
+	 */
+	printf("[%d,%d]\n",min,max);
+	for(i = min + min; i <= max + max; ++i)
+		if(S[i] == 999 + min)
+			for(j = i / 2; j >= min; --j)
+				if(P[j * (i - j)] / 1000 == 1)
+					printf("{ %d %d }: S = %d, P = %d\n",
+						i - j, j, i, (i - j)  * j);
+}
+
+main()
+{
+	long min, max;
+
+	for (min = SMALLEST_MIN; min <= LARGEST_MIN; min ++)
+	    for (max = SMALLEST_MAX; max <= LARGEST_MAX; max++)
+		find(min,max);
+}
+
+-------------------------------------------------------------------------
+=			Jeff Kenton	(617) 894-4508			=
+=			    jkenton@world.std.com			=
+-------------------------------------------------------------------------
+

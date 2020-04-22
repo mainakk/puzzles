@@ -1,0 +1,100 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03553; Sat, 20 Apr 1996 14:53:49 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15884; Sat, 20 Apr 96 14:13:19 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25279; Sat, 20 Apr 1996 11:13:59 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (induction), part 16 of 35
+Message-Id: <puzzles/archive/induction_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:34 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 394
+Xref: senator-bedfellow.mit.edu rec.puzzles:24998 news.answers:11518 rec.answers:1918
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/induction
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> induction/handshake.p <==
+A married couple organizes a party. They only invite other married
+couples. At least one person of an invited couple is acquainted to
+at least the host or the hostess (so between sets {host,hostess} and
+{male of invited couple, female of invited couple} there exists at 
+least one relation, but two, three or four relations is also possible).
+Upon arrival at the party, each person shakes hands with all other
+guests he/she doesn't know yet (it is assumed everybody knows 
+him/herself and his/her partner). 
+
+When all couples have arrived and all the handshaking has been done,
+the host mingles between the guests and ask everybody (including his
+wife): "How many hands did you shake?". To his surprise, all responses
+are different.
+
+With the above information, you must be able to determine how many
+hands the host and hostess each shook.
+
+==> induction/handshake.s <==
+Assume there were 2n people (including host and hostess)
+in the party.
+
+1. When the host asked the question he must have got
+   2n-1 responses (including from his wife).
+
+2. All of the responses were different.
+
+The responses have to be (0, 1, 2, 3, ..., 2n-2)
+to satisfy the above requirements. As 2n-2 is the maximum
+possible handshakes any person in this party could have made.
+
+/**   Below,
+      P{x} - means a person who shook x hands.
+      H    - means the host
+ **/
+
+H: <-------->2n-2   0
+	   2n-3        1
+          2n-4          2
+	  2n-5          3
+          .             .
+           .           .
+             .       .
+	      n  n-1 n-2
+
+		(There are 2n-1 on the circle.)
+
+P{2n-2} must have handshaked with H (because in the circle he
+can handshake with only 2n-3. He has to exclude himself also.)
+
+P{2n-3} must have handshaked with H (because in the circle he
+can handshake with only 2n-4.)
+
+P{2n-4} must have handshaked with H (because in the circle he
+can handshake with only 2n-5.)
+
+P{n} must have handshaked with H (because in the circle he
+can handshake with only n-1.)
+
+from P{n-1} to P{0} nobody  handshakes with H, because, for them
+the handshake numbers are satisfied on the circle itself.
+
+This leaves H with (n-1) handshakes.
+----------------------------------
+
+P{0} must be the spouse of P{2n-2} (since P{2n-2} handshakes with
+everbody else.)
+

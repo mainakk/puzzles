@@ -1,0 +1,1385 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05153; Sat, 20 Apr 1996 15:09:45 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15861; Sat, 20 Apr 96 14:13:01 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25258; Sat, 20 Apr 1996 11:13:27 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (language), part 19 of 35
+Message-Id: <puzzles/archive/language/part3_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:49 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1357
+Xref: senator-bedfellow.mit.edu rec.puzzles:25001 news.answers:11521 rec.answers:1921
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/language/part3
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> language/english/spelling/operations.on.words/transposition.p <==
+What exceptional words turn into other words by transposition of letters?
+
+==> language/english/spelling/operations.on.words/transposition.s <==
+   longest reversal  DESSERTS,STRESSED (8)
+   longest well-mixed transposal 
+    CINEMATOGRAPHER, MEGACHIROPTERAN  (15)
+   longest transposition list
+    APERS, APRES, ASPER, PARES, PARSE, PEARS, PRASE, PRESA, RAPES, REAPS, SPARE,
+    SPEAR (12)
+    ANGRIEST, ANGRITES, ASTRINGE, GAIRTENS, GANISTER, GANTRIES, GRANITES,
+    INGRATES, RANGIEST, TEARINGS  (10) [SATING(ER), SIGNATE(R), TANGIER(S) (3)]
+    ANORETICS, ATROSCINE, CANOTIERS, CERTOSINA, CONARITES, CREATIONS, REACTIONS,
+    TRICOSANE (8)
+
+  transposition with deletion, insertion, or substitution 
+   longest well-mixed transdeletion 
+    SONOLUMINESCENCES, UNECONOMICALNESSES (17/18)
+   longest word transdeletable to a single letter
+    CONCENTRATIONS-CONSTERNATION-CONTORNIATES-TRANSECTION-
+    STENTORIAN-TRANSIENT-ENTRAINS-NASTIER-ASTERN-TEARS-SATE-TEA-AT-A (14)
+   longest Baltimore transdeletion (word transdeletable on every letter)
+     IDOLATERS: DELATORS, SOTERIAL, DILATERS, ASTEROID,
+    STOLIDER, SOREDIAL, DILATORS, DIASTOLE, TAILORED  (9)
+   shortest word that cannot be transadded to another word  SYZYGY (6)
+   longest well-mixed transubstitution 
+    MICROELECTROPHORESIS, SPECTROCOLORIMETRIES (20)
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/operations.on.words/words.within.words.p <==
+What exceptional words contain other words?
+
+==> language/english/spelling/operations.on.words/words.within.words.s <==
+   longest non-trivial charade  IN-DISC-RIM-IN-A-TI-ON (16)
+    longest forward and reverse charade 
+     MAT-HE-MA-TI-CAL, LAC-IT-AM-EH-TAM 
+   longest snowball or rhopalic  T-EM-PER-AMEN-TALLY (15)
+   longest reverse rhopalic  HETERO-TRANS-PLAN-TAT-IO-N (21)
+   highest ratio of subwords/length (logogram) 
+    FIRESTONE: RE, TO, ON, NO, IF, FIR, IRE, RES, TON, ONE, NOT, RIF, FIRE,
+    IRES, REST, TONE, FIRES, STONE, SERIF (20/9)
+   longest charlinkade  FORESTALL: FOREST, ALL; FORE, REST, TALL (9)
+   longest alternade  TRIENNIALLY: TINILY, RENAL (11)
+   shortest three-letter-minimum word deletions 
+    PILGRIMAGE: RIM, GAG, PILE; GRIM, LAG, PIE 
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/palindromes.p <==
+What are some long palindromes?
+
+==> language/english/spelling/palindromes.s <==
+The first words spoken were a palindrome:
+    Madam, I'm Adam.
+or perhaps:
+    Madam in Eden, I'm Adam.
+The response, of course, must have been:
+    Eve
+
+Napolean's lament:
+    Able was I ere I saw Elba.
+Has been improved with:
+    Unremarkable was I ere I saw Elba, Kramer, nu?
+
+A fish is a:
+    laminar animal
+
+The timeless classic:
+    A man, a plan, a canal; Panama?
+Has been improved by:
+    A dog, a plan, a canal: pagoda!
+	-- Roger Angell
+
+    A man, a plan, a cat, a canal; Panama?
+	-- Jim Saxe, plan file @ CMU, 9 October 1983
+
+    A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal--Panama!
+	-- Guy Jacobson, plan file @ CMU late 1983
+
+    A man, a plan, a caret, a ban, a myriad, a sum, a lac, a liar, a hoop, a
+pint, a catalpa, a gas, an oil, a bird, a yell, a vat, a caw, a pax, a wag,
+a tax, a nay, a ram, a cap, a yam, a gay, a tsar, a wall, a car, a luger, a
+ward, a bin, a woman, a vassal, a wolf, a tuna, a nit, a pall, a fret, a
+watt, a bay, a daub, a tan, a cab, a datum, a gall, a hat, a fag, a zap, a
+say, a jaw, a lay, a wet, a gallop, a tug, a trot, a trap, a tram, a torr, a
+caper, a top, a tonk, a toll, a ball, a fair, a sax, a minim, a tenor, a
+bass, a passer, a capital, a rut, an amen, a ted, a cabal, a tang, a sun, an
+ass, a maw, a sag, a jam, a dam, a sub, a salt, an axon, a sail, an ad, a
+wadi, a radian, a room, a rood, a rip, a tad, a pariah, a revel, a reel, a
+reed, a pool, a plug, a pin, a peek, a parabola, a dog, a pat, a cud, a nu,
+a fan, a pal, a rum, a nod, an eta, a lag, an eel, a batik, a mug, a mot, a
+nap, a maxim, a mood, a leek, a grub, a gob, a gel, a drab, a citadel, a
+total, a cedar, a tap, a gag, a rat, a manor, a bar, a gal, a cola, a pap, a
+yaw, a tab, a raj, a gab, a nag, a pagan, a bag, a jar, a bat, a way, a
+papa, a local, a gar, a baron, a mat, a rag, a gap, a tar, a decal, a tot, a
+led, a tic, a bard, a leg, a bog, a burg, a keel, a doom, a mix, a map, an
+atom, a gum, a kit, a baleen, a gala, a ten, a don, a mural, a pan, a faun,
+a ducat, a pagoda, a lob, a rap, a keep, a nip, a gulp, a loop, a deer, a
+leer, a lever, a hair, a pad, a tapir, a door, a moor, an aid, a raid, a
+wad, an alias, an ox, an atlas, a bus, a madam, a jag, a saw, a mass, an
+anus, a gnat, a lab, a cadet, an em, a natural, a tip, a caress, a pass, a
+baronet, a minimax, a sari, a fall, a ballot, a knot, a pot, a rep, a
+carrot, a mart, a part, a tort, a gut, a poll, a gateway, a law, a jay, a
+sap, a zag, a fat, a hall, a gamut, a dab, a can, a tabu, a day, a batt, a
+waterfall, a patina, a nut, a flow, a lass, a van, a mow, a nib, a draw, a
+regular, a call, a war, a stay, a gam, a yap, a cam, a ray, an ax, a tag, a
+wax, a paw, a cat, a valley, a drib, a lion, a saga, a plat, a catnip, a
+pooh, a rail, a calamus, a dairyman, a bater, a canal--Panama.
+		--Dan Hoey, 'discovered' in 1984.
+
+Dan goes on to say "...a little work on the search algorithm could make
+it several times as long."
+
+Those wonderful proper names:
+    Dennis, Nell, Edna, Leon, Nedra, Anita, Rolf, Nora, Alice, Carol, Leo,
+    Jane, Reed, Dena, Dale, Basil, Rae, Penny, Lana, Dave, Denny, Lena,
+    Ida, Bernadette, Ben, Ray, Lila, Nina, Jo, Ira, Mara, Sara, Mario, Jan,
+    Ina, Lily, Arne, Bette, Dan, Reba, Diane, Lynn, Ed, Eva, Dana, Lynne,
+    Pearl, Isabel, Ada, Ned, Dee, Rena, Joel, Lora, Cecil, Aaron, Flora,
+    Tina, Arden, Noel, and Ellen sinned.
+
+A poem:
+Mood's mode!
+Pallas, I won!
+(Diaper pane, sold entire.)
+Melt till ever sere, hide it.
+Drown a more vile note;
+(Tar of rennet.)
+Ah, trowel, baton, eras ago.
+The reward? A "nisi." Two nag.
+
+Otary tastes putrid, yam was green.
+Odes up and on; stare we.
+Rats nod. Nap used one-erg saw.
+(May dirt upset satyr?)
+
+A toga now; 'tis in a drawer, eh?
+Togas are notable.
+(Worth a tenner for Ate`.)
+Tone liver. O Man, word-tied I.
+
+Here's revel!
+Little merit, Ned? Lose, Nap?
+Repaid now is all apedom's doom.
+    -- Hubert Phillips:
+
+     Headmaster's Palindromic List on his Memo Pad:
+ 
+Test on Erasmus                       Dr of Law
+Deliver slap                          Stop dynamo (OTC)
+Royal: phone no.?                     Tel: Law re Kate Race
+Ref. Football.                        Caps on for prep
+Is sofa sitable on?                   Pots- no tops
+XI--Staff over                        Knit up ties ('U')
+Sub-edit Nurse's order                Ned (re paper)
+Caning is on test (snub slip-up)      Eve's simple hot dish (crib)
+Birch (Sid) to help Miss Eve          Pupil's buns
+Repaper den                            T-set: no sign in a/c
+Use it                                Red roses
+Put inkspot on stopper                Run Tide Bus?
+Prof.--no space                       Rev off at six
+Caretaker (wall, etc.)                Noel Bat is a fossil
+Too many d*** pots                    Lab to offer one 'Noh' play--
+Wal for duo?  (I'd name Dr. O)           or 'Pals Reviled'?
+See few owe fees (or demand IOU?)     Sums are not set.
+    -- Joyce Johnson
+	(_New_Statesman_ competition in 1967.  126 words, 467 letters)
+ 
+The entire book _Satire: Veritas_ is a palindrome, it starts
+"Sir, I stra..." and ends "...  Art, sir, is Satire: Veritas."
+
+Other palindromes in ascending length (drum roll please):
+    O, no!
+    Do God!
+    We few.
+    Go, dog!
+    Old? Lo!
+    Top pot.
+    A Toyota.
+    Redivider
+    Top spot.
+    Live evil.
+    Semi limes
+    Stun nuts.
+    Taft: fat!
+    Go do, dog.
+    Never even.
+    Stop spots.
+    Regal lager.
+    Dot sees Tod.
+    Lepers repel.
+    Ma has a ham.
+    Dennis sinned.
+    Sir, I'm Iris.
+    Dee saw a seed.
+    Del saw a sled.
+    I met System I.
+    Lee had a heel.
+    Lonely Tylenol.
+    Not so, Boston.
+    Senile felines.
+    Sup not on pus.
+    "Naomi," I Moan.
+    He won snow, eh?
+    Laid on no dial.
+    Name no one man.
+    Peel Sam asleep.
+    Redraw a warder.
+    Step on no pets.
+    Do geese see God?
+    Ed is on no side.
+    Emil saw a slime.
+    Dot saw I was Tod.
+    Eros' sis is sore.
+    Gateman's nametag.
+    God saw I was dog!
+    Lem saw I was Mel.
+    Naomi, did I moan?
+    Never odd or even.
+    Rise to vote, sir.
+    Sleep on no peels.
+    Enid and Edna dine.
+    He stops spots, eh?
+    Revenge Meg? Never!
+    Sleep not on peels.
+    Was it a rat I saw?
+    Wendel's sled: new?
+    A Toyota's a Toyota.
+    No lemons, no melon.
+    O, stone, be not so.
+    God, a saw was a dog!
+    Ma is a nun, as I am.
+    No, I met System Ion.
+    No, it is opposition.
+    Now I see bees I won.
+    Delia saw I was ailed.
+    Dr. Lime, 121 Emil Rd.
+    He goddam mad dog, eh?
+    He harasses Sarah, eh?
+    Niagara, O roar again!
+    No evil shah lives on.
+    Dennis and Edna sinned.
+    Rats drown in WordStar.
+    Star comedy: Democrats!
+    Drat Saddam mad dastard.
+    He lived as a devil, eh?
+    He won a Toyota now, eh?
+    Red rum, sir, is murder.
+    Sit on a potato pan Otis!
+    A slut nixes sex in Tulsa.
+    A slut nixes sex in Tulsa.
+    Ma is as selfless as I am.
+    Nurse, I spy gupsies, run!
+    Rats live on no evil star.
+    Slap a ham on Omaha, pals!
+    Top step's pup's pet spot.
+    A dog! A panic in a pagoda!
+    Go deliver a dare, vile dog.
+    I won, Karen, an era know I.
+    May a moody baby doom a yam?
+    Murder for a jar of red rum.
+    No "x" in "Mr. R. M. Nixon"?
+    Swen, on gnus, sung no news.
+    Ten animals I slam in a net.
+    Was it Eliot's toilet I saw?
+    Was it a car or a cat I saw?
+    Al lets Della call Ed Stella.
+    No, she stops spots, eh, son?
+    Eros?  Sidney, my end is sore!
+    Devil Natasha, ah, Satan lived.
+    Draw, O Caeser, erase a coward.
+    Emil's Nip eels sleep in slime!
+    Did Eve salt an atlas?  Eve did.
+    I, man, am regal; a German am I.
+    Golf? No sir, prefer prison flog.
+    No pinot noir on Orion to nip on.
+    O, memsahib Bart, rabbi has memo.
+    Trap all afoot; I too fall apart.
+    Evil I did dwell; lewd did I live.
+    Norma is as selfless as I am, Ron.
+    "Naomi, sex at noon taxes," I moan.
+    Yo, bad anaconda had no Canada boy.
+    "Asi, Buenos Dias!" said Son Eubisa.
+    Egad! A base tone denotes a bad age.
+    Egad, a base life defiles a bad age.
+    Kay, a red nude, peeped under a yak.
+    Satan, oscillate my metallic sonatas.
+    Sums are not set as a test on Erasmus.
+    Marge lets Norah see Sharon's telegram.
+    Red dude kill lion. No ill-liked udder.
+    Anna: "Did Otto peep?" Otto: "Did Anna?"
+    Address of Emil Otto Lime: Fosse Rd., DA.
+    Aim a Toyota tatami mat at a Toyota, Mia.
+    Did I draw Della too tall, Edward? I did?
+    I roamed under it as a tired, nude Maori.
+    He won't, ah, wander, Edna.  What now, eh?
+    To Peru, named llama mall 'De Manure Pot'.
+    Anne, I vote more cars race Rome to Vienna.
+    Stop, Syrian! I start at rats in airy spots.
+    I roamed under rats as a starred, nude Maori.
+    Paget saw an Irish tooth, Sir, in a waste gap.
+    We few erase cares, Al; laser aces are we few.
+    Level? No, I tan, I'm at no contamination level.
+    Straw? No, too stupid a fad; I put soot on warts.
+    Live dirt up a side track carted is a putrid evil.
+    No gnu have never after fret far, even Eva hung on.
+    Now, Ned, I am a maiden nun; Ned, I am a maiden won.
+    We repaid a no name Pacific ape man on a diaper, ew!
+    Here we no got conical ill lilac in octogon ewer, eh?
+    Salamander a ton now. Raw war won not, a Red Nam, alas.
+    I prevent U-boats, tar, evil live rats, Tao but never pi.
+    Fool! A dog lives sad a boxer, Rex. O bad ass evil god aloof!
+    'Tenor Octopus Night' netted a cadet tenth ginsu pot, coronet.
+    Won total, I am a pro. Bali radar I labor. Pa, mail a tot now!
+    Yo, boy! Trap gnus, nude. 'Kangaroo Rag' naked unsung party, O boy!
+    Did I strap red nude, red rump, also slap murdered underparts? I did!
+    Doc, note: I dissent.  A fast never prevents a fatness.  I diet on cod.
+    So regards Rat's Lib: regrets no more hero monster gerbil stars' drag Eros.
+    Degas, are we not drawn onward, we freer few, drawn onward to new eras aged?
+    Garret, I ogle. Enemy democrats party; trap star comedy men, eel goiter rag.
+    Named undenominationally rebel, I rile Beryl?  La, no! I tan.  I'm, O Ned, nude, man!
+    Sagas emit taxes, rat snot, or pastrami. I'm Arts, a proton star - sex at times a gas.
+    Dr. Ana, Cataracts. Uranium enema smarts if fist rams, Amen! Emu in a rust car at a canard.
+    T. Eliot, top bard, notes putrid tang emanating, is sad; I'd assign it a name: gnat dirt upset on drab pot toilet.
+
+Some word (not letter) palindromes:
+
+    So patient a doctor to try to doctor a patient so.
+    You can cage a swallow, can't you, but you can't swallow a cage, can you?
+    Girl, bathing on Bikini, eyeing boy, finds boy eyeing
+      bikini on bathing girl.
+    Amusing is that company of fond people bores people fond of
+      company that is amusing.
+
+Line palindrome poems:
+
+    As I was passing near the jail
+    I met a man, but hurried by.
+    His face was ghastly, grimly pale.
+    He had a gun.  I wondered why
+    He had.  A gun?  I wondered... why,
+    His face was *ghastly*!  Grimly pale,
+    I met a man, but hurried by,
+    As I was passing near the jail.
+
+		DOPPELGANGER  (umlaut on the A)
+
+    Entering the lonely house with my wife,
+      I saw him for the first time
+    Peering furtively from behind a bush--
+	    Blackness that moved,
+      A shape amid the shadows,
+    A momentary glimpse of gleaming eyes
+      Revealed in the ragged moon.
+    A closer look (he seemed to turn) might have
+    Put him to flight forever--
+      I dared not
+    (For reasons that I failed to understand),
+      Though I knew I should act at once.
+
+    I puzzled over it, hiding alone,
+    Watching the woman as she neared the gate.
+      He came, and I saw him crouching
+	    Night after night.
+	    Night after night
+      He came, and I saw him crouching,
+    Watching the woman as she neared the gate.
+
+    I puzzled over it, hiding alone--
+      Though I knew I should act at once,
+    For reasons that I failed to understand
+		I dared not
+	    Put him to flight forever.
+    A closer look (he seemed to turn) might have
+      Revealed in the ragged moon
+    A momentary glimpse of gleaming eyes,
+      A shape amid the shadows,
+	    Blackness that moved.
+
+    Peering furtively from behind a bush,
+      I saw him, for the first time,
+    Entering the lonely house with my wife.
+
+Some palindromic names:
+
+    Lon Nol	
+    (former premier of Cambodia)
+
+    U Nu
+    (former premier of Burma)
+
+    Revilo P. Oliver
+    (professor at U. of Illinois; his father and grandfather have/had
+     the same name, which was deliberately contrived)
+
+    Wassamassaw
+    (a swamp north of Charleston SC)
+
+    Yreka Bakery
+    (a former business in Yreka CA)
+
+    Yrella Gallery
+    (a business which later occupied the same premises)
+
+References:
+    Palindromes and Anagrams
+    Howard W. Bergerson
+    Dover Publications
+    New York, 1973
+    ISBN 0-486-20664-5.
+
+    The Oxford Guide to Word Games, chapter 11, titled "Palindromes"
+    Tony Augarde
+
+    Lid Off a Daffodil
+    John Pool
+    Holt, Rinehart and Wilson
+    1982
+
+    The Palindromicon
+    Jeff Grant
+    Word Ways
+    Spring Valley Road
+    Morristown, NJ 07960
+
+    From A to Zotamorf: The Dictionary of Palindromes
+    Stephen Chism
+    Word Ways
+    Spring Valley Road
+    Morristown, NJ 07960
+
+==> language/english/spelling/sets.of.words/ladder.p <==
+Find the shortest word ladders stretching between the following pairs:
+hit - ace
+pig - sty
+four - five
+play - game
+green - grass
+wheat - bread
+order - chaos
+order - impel
+sixth - hubby
+speedy - comedy
+chasing - robbers
+effaces - cabaret
+griming - goblets
+vainest - injects
+vainest - infulae
+
+==> language/english/spelling/sets.of.words/ladder.s <==
+Using every unabridged dictionary available, the best yet found are:
+hit ait act ace
+pig peg seg sey sty
+four foud fond find fine five
+play blay bray bras baas bams gams game
+green grees greys grays grass
+wheat theat treat tread bread
+order older elder eider cider cides codes coles colls coals chals chaos
+order ormer armer ammer amper imper impel
+sixth sixty silty silly sally sably sabby nabby nubby hubby
+speedy speeds steeds steers sheers shyers sayers payers papers papery popery
+popely pomely comely comedy
+griming priming prising poising toising toiling coiling colling collins collies
+dollies doilies dailies bailies bailees bailers failers fablers gablers gabbers
+gibbers gibbets gobbets goblets
+chasing ceasing cessing messing massing masting marting martins martens martels
+cartels carpels carpers campers cambers combers cobbers combers robbers
+vainest fainest fairest sairest saidest saddest maddest middest mildest wildest
+wiliest winiest waniest caniest cantest contest confest confess confers conners
+canners fanners fawners pawners pawnees pawnces paunces jaunces jaunced jaunted
+saunted stunted stented stenned steined stained spained splined splines salines
+savines savings pavings parings earings enrings endings ondings ondines undines
+unlines unlives unwives unwires unwares unbares unbared unpared unpaged uncaged
+incaged incased incised incises incites indites indices indicts inducts indults
+insults insulas insulae infulae
+
+This is not another travelling salesman - it is merely finding the diameter of 
+connected components of that graph.  The simple algorithm for this is to do 
+one depth first search from each word, resulting in an O(n*m) worst case 
+algorithm (where n is the number of words, and m is the number of arcs).  In 
+practice, it is actually somewhat better, since the graph breaks down into 
+many connected components.  However, the diameters (and solutions) depend on 
+what dictionary is used.  Here are the results from various dictionaries:
+
+From /usr/dict/words (restricted to words all lower case alphabetical) (19,694 
+words): sixth - hubby (46 steps)
+
+From the official scrabble players dictionary (94,276 words): effaces - 
+cabaret (57 steps)
+
+From the british official scrabble words (134,051 words): vainest - infulae 
+(73 steps)
+
+From webster's ninth new collegiate dictionary (abridged) (78, 167 words): 
+griming - goblets (56 steps)
+
+From all of the above, merged  (180,676 words): vainest - injects (58 steps)
+
+To see the effect the dictionary has on paths, here are the lengths of the 
+shortest paths these pairs, and for the ones mentioned in previous posts, for 
+each dictionary (a - means that there is no path using only words from that 
+dictionary):
+
+                  UDW OSPD OSW  W9 ALL
+    hit - ace      5    3   3   5   3
+    pig - sty      -    5   4   5   4
+   four - five     6    6   5   7   5
+   play - game     8    7   7   8   7
+  green - grass   13    4   4   7   4
+  wheat - bread    6    6   6   6   6
+  sixth - hubby   46    9   9   -   9
+effaces - cabaret  -   57   -   -  33
+vainest - infulae  -    -  73   -  52
+griming - goblets  -   22  19  56  15
+vainest - injects  -    -  72   -  58
+
+==> language/english/spelling/sets.of.words/nots.and.crosses.p <==
+What is the most number of letters that can be fit into a three by three grid
+of words, such that no letter is repeated in any row, column or diagonal?
+
+==> language/english/spelling/sets.of.words/nots.and.crosses.s <==
+Games magazine ran a contest on this.  The winner had 62:
+
+		proxying|   buckwash  |   veldt
+		------------------------------------
+		stumbled|      j      |  zincography
+		------------------------------------
+		whack   | providently |   bumfs
+
+Here are some good tries:
+
+		backsword |thumpingly |   fez
+		----------------------------------
+		vexingly  |      q    | throwbacks = 61
+		----------------------------------
+		thump     | beadworks |   jingly
+
+		backsword | thumpingly|  vex
+		----------------------------------
+		vexingly  |      q    | throwbacks = 60
+		----------------------------------
+		thump     |  bedrocks |   flying
+
+		subjack   |downrightly|    fez
+		----------------------------------
+		novelwright|     q    |  backups   = 59
+		---------------------------------- 
+		pyx       |  subface  | downright
+
+		krafts    | exhuming  | blowzy
+		----------+-----------+-----------
+		phylum    |     j     | transfixed = 56
+		----------+-----------+-----------
+		vexing    | folkways  | chump
+
+		klutz     | cymograph |   fend
+		----------+-----------+-----------
+		exscind   |     j     | kymograph = 54
+		----------+-----------+-----------
+		myograph  |flunked    |   vibs
+****
+Unless noted otherwise, all words occur in Webster's Third New International
+Dictionary, Merriam-Webster, Springfield, MA, 1961.
+
+==> language/english/spelling/sets.of.words/perfect.ladder.p <==
+A "perfect" ladder comprises five-letter words where every letter is
+the new letter once, no position is changed twice in a row, and fifth
+letter changes are better than fourth letter changes are better than
+third letter changes, etc. (as defined by "Games" magazine, July 1993)
+
+==> language/english/spelling/sets.of.words/perfect.ladder.s <==
+The winning entry:
+
+Score: 9, 4, 8, 1, 4
+
+SOAPS
+SOUPS	U	3
+COUPS	C	1
+COMPS	M	3
+COMBS	B	4
+COMBO	O	5
+COMPO	P	4
+COMPT	T	5
+COMET	E	4
+COMES	S	5
+COXES	X	3
+COXEY	Y	5
+COZEY	Z	3
+COZEN	N	5
+COVEN	V	3
+COVED	D	5
+CAVED	A	2
+CAVEL	L	5
+JAVEL	J	1
+JAVER	R	5
+JAGER	G	3
+WAGER	W	1
+WAKER	K	3
+FAKER	F	1
+FAKIR	I	4
+FAQIR	Q	3
+FAQIH	H	5
+
+==> language/english/spelling/sets.of.words/squares.p <==
+What are some exceptional word squares (square crosswords with no blanks)?
+
+==> language/english/spelling/sets.of.words/squares.s <==
+Word squares are a particular example of a type of crossword known
+as "forms".  They were more popular early in the late 19th and early
+20th century than they are now, but people still like to compose and
+solve them.  Forms appear every month in the _Enigma_ (as well as many
+other puzzle types), which is the monthly publication of the National
+Puzzlers' League.  The membership fee is $13 for the first year, $11
+a year thereafter.  Information (or a free sample) may be obtained from:
+
+  Joseph J. Adamski
+  2507 Almar
+  Jenison, MI 49428
+
+All members have the option of choosing a nom de plume ("nom"); for
+example, I go by the nom "Cubist".  Another good place to find information
+on forms is in _Word Ways_, which is a quarterly journal of recreational
+linguistics:
+
+  Word Ways
+  Faith and Ross Eckler, editors
+  Spring Valley Road
+  Morristown, NJ  07960
+
+I had a paper appear in the February 1993 issue (Vol. 26 Num. 1) on the
+mathematics of word squares, and the ideas extend to more general forms.
+
+Word squares come in two traditional types, regular and double.  In
+regular word squares the words are the same across and down; in double
+word squares all words are different.  The largest "legitimate" word
+square has order 9 (although Jeff Grant has come close to the 10), and
+what is considered to be one of the finest examples was discovered by
+Eric Albert via computer search:
+
+  necessism
+  existence
+  circumfer
+  escarping
+  sturnidae
+  sempitern
+  infidelic
+  scenarize
+  mergences
+
+All words appear in from Webster's New International Dictionary, Second
+Edition.  It's the *only* single-source 9-square known, and the only
+(minor) flaw is that "Sturnidae" is a proper (capitalized) word.  All
+words are also solid-form (no phrases, spaces, punctuation marks, etc.).
+
+Eric was using about 63,000 words when he discovered his square.  Using
+about 78,500 9-letter words, I found the square on the left; adding
+another 4,000 I found the square on the right:
+
+             bortsches           karatekas
+             overtrust           apocopate
+             reparence           rosecolor
+             trabeatae           acetoxime  
+             strestell           tokokinin
+             creatural           epoxidize
+             hunterite           kalinites
+             escalates           atomizers
+             steelless           serenesse
+
+For the left square, all are in the OED, except for "trabeatae", which
+is in NI2.  This makes this square arguably the second-best ever
+discovered.  All words are uncapitalized and solid-form, and it is the
+only known 9-square that uses only uncapitalized, solid-form dictionary
+words.  I consider the square on the right to be one of the most
+interesting ever found, as it has two rare letters ("x" and "z") not on
+the main diagonal.  Since then I've found four additional squares, which
+will be appearing in a _Word Ways_ article sometime in the near future.
+
+There are about 1000 9-squares known, all of which were constructed
+by hand except for the seven noted above.  Almost all of these use
+very obscure sources of words.  As a general rule of thumb, if you
+discover a new square via computer search, it is probably going to
+be of high quality, since it is hard to obtain computer-readable word
+lists that contain very obscure words.
+
+The largest known double word-squares are of order 8.  They are
+considered to be about as hard to construct as a regular word
+square of order-9, and this is substantiated by the work I've
+done on the mathematics of square construction.   The following
+fine example was constructed by Jeff Grant (see his article in
+_Word Ways_, Vol. 25 Num. 1, pp. 9-12):
+
+  trattled
+  hemerine
+  apotomes
+  metapore
+  nailings
+  aloisias
+  tentmate
+  assessed
+
+All are dictionary terms, but there are some weak entries, e.g.
+
+  Aloisias: individuals named Aloisia, a feminine form of Aloysius
+  occurring in the 16th and 17th century in parish registers of
+  Hinton Charterhouse, England (The Oxford Dictionary of English
+  Christian Names, 3rd Edition, E.G. Withycombe, 1977)
+
+Such words are, however, dear to the heart of logologists!  For
+other examples of double squares see the article mentioned above.
+One addition to this article is that I've discovered a new double-7
+square which may be the best found to date:
+
+  smashes
+  pontine
+  ingrate
+  relater
+  asinine
+  lingots
+  sagenes
+
+A new type of form which is in a certain sense as natural as the
+regular and double square is the inversion square (so named by
+Frank Rubin).  So far I've discovered the only known proper
+inversion 10-square:
+
+  detasseled
+  exercitate
+  tectonical
+  arthrolite
+  scorpionis
+  sinoiprocs
+  etilorhtra
+  lacinotcet
+  etaticrexe
+  delessated
+
+Based on analysis I've done inversion 10-squares are about as rare as
+regular 9-squares.
+
+Some interesting foreign language squares I've discovered include:
+
+   Dutch      German    Italian    Norwegian    Swedish
+
+  zaklamp    waelzte    accosto    kaskade      apropaa
+  acribie    abhauen    ciascun    apparat      primaer
+  krijsen    ehrtest    campato    spinett      riddare
+  lijmers    latente    ospiter    kantate      omdomen
+  absente    zuenden    scatola    arealer      paamind
+  miertje    testest    tuteler    dattera      aerende
+  penseel    entente    onorare    etterat      arenden
+
+And an 8-square:
+
+   French
+
+  marbrier
+  amarante
+  rabattes
+  brasiers
+  rationna
+  intenses
+  eternels
+  ressassa
+
+These aren't the largest known.  For example, a French 10-square has
+been constructed.
+
+Polyglot 9-square that uses 6 different languages:
+
+  absorbera Swedish
+  betoertem German
+  storpiavo Italian
+  oorhanger Dutch
+  repandent French
+  brinderai Italian
+  etagerons French
+  revenants English
+  amortisse French
+
+Polyglot double 5-square that uses 10 different languages:
+
+  a a g j e  Dutch
+  f a l o t  French
+  f l i r t  English
+  y t t r a  Swedish
+  r o t o l  Italian
+
+  D F G S N
+  a i e p o
+  n n r a r
+  i n m n w
+  s i a i e
+  h s n s g
+    h   h i
+          a
+          n
+
+There are also many other types of forms.  Some of the most common
+are pyramids, stars, and diamonds, and some come in regular and double
+varieties, and some are inherently double (e.g. rectangles).
+
+How hard is it to discover a square, anyway, and how many are there?
+As a data point, my program using the main (Air Force) entries in
+NI2 (26,332 words), found only seven 8x8 squares.  This took an hour
+to run.  They are:
+
+outtease  appetite  unabated  acetated  interact  repeated  repeated
+unweaned  prenaris  nopinene  cadinene  neomenia  evenmete  evenmete
+twigsome  perscent  apostate  edentate  toxicant  pectosic  pectosic
+teguexin  ensconce  bistered  tindered  emittent  entresol  entresol
+easement  taconite  antehall  antehall  rectoral  amoebula  amoebula
+anoxemia  irenicum  tearable  tearable  anaerobe  tessular  tessular
+seminist  tincture  entellus  entellus  cinnabar  etiolate  etiolate
+edentate  esteemer  deedless  deedless  tattlery  declarer  declared
+
+If the heuristic mathematics are worked out, the number of different
+words in your word-list before you'd expect to find a regular word
+square of order-n (the "support") is about e^{(n-1)/2}, where e ~ 15.8.
+For a double word square of order-n the support is about e^{n/2}.
+There is a simple algorithm which is more precise, and this gives a
+support of 75,641 for a regular 9-square, and a support of 272,976
+for a double 9-square (using my 9-letter word list).
+
+Bibliography:
+
+  Albert, E. "The Best 9x9 Square Yet" _Word Ways_ Vol. 24 Num. 4
+  Borgmann, D. "More Quality Word Squares" _Word Ways_ Vol. 21 Num. 1
+  Brooke, M. "A Word Square Update" _Word Ways_ Vol. 16 Num. 4
+  Grant, J. "9x9 Word Squares" _Word Ways_ Vol. 13 Num. 4
+  Grant, J. "Ars Magna: The Ten-Square" _Word Ways_ Vol. 18 Num. 4
+  Grant, J. "Double Word Squares"_Word Ways_, Vol. 25 Num. 1
+  Grant, J. "In Search of the Ten-Square" _Word Ways_ Vol. 23 Num. 4
+  Long, C. "Mathematics of Square Construction" _Word Ways_ Vol. 26 Num. 1
+  Ropes, G. H. "Further Struggles with a 10-Square" _Word Ways_ Vol. 23 Num. 1
+  Rubin, F. "Inversion Squares" _Word Ways_ Vol. 23 Num. 3
+
+Chris Long
+265 Old York Road
+Bridgewater, NJ 08807
+clong@remus.rutgers.edu
+
+
+==> language/english/spelling/sets.of.words/variogram.p <==
+What is the largest known variogram (word square where repeated letters count
+as one square)?
+
+==> language/english/spelling/sets.of.words/variogram.s <==
+  o  c  c  u  p  a  t  e  s
+  c  h  i  n  a  m  i  n  e
+  c  i  g  a  r  e  t  t  e
+  u  n  a ll  o  t  t  e  d
+  p  a  r  o  c  h  i  n  e
+  a  m  e  t  h  y  s  t  a
+  t  i  t  t  i  s  h  e  r
+  e  n  t  e  n  t  e  s  t
+  s  e  e  d  e  a  r  t  h
+-- 
+Chris Long, 265 Old York Rd., Bridgewater, NJ 08807-2618
+
+==> language/english/spelling/sets.of.words/word.torture.p <==
+What is the longest word all of whose contiguous subsequences are words?
+
+==> language/english/spelling/sets.of.words/word.torture.s <==
+This problem was discussed in _Word Ways_ in 1974-5.  In August 1974,
+Ralph Beaman, in an article titled "Word Torture", offered the word 
+SHADES, from which one obtains HADES, SHADE; ADES, HADE, SHAD; DES, ADE,
+HAD, SHA; ES, DE, AD, HA, SH; S, E, D, A, H.  All of these are words
+given in Webster's Third.
+
+Since that time, a serious search has been launched for a seven-letter
+word.  The near misses so far are:
+Date    Person           Word     Missing
+Aug 74  Ralph Beaman     GAMINES  INES, GAMI, NES, INE
+Nov 74  Dmitri Borgmann  ABASHED  INE, NES, ABASHE, BASHE, ASHE (all in OED)
+May 75  David Robinson   GUNITES  GU, GUNIT (using Webster's Second)
+May 75  David Robinson   ETAMINE  ETAMI, TAMI (using Webster's Second)
+May 75  Ralph Beaman     MORALES  RAL (using Webster's Second)
+Aug 75  Tom Pulliam      SHEAVES  EAV (using Webster's Second)
+
+Webster's Second has been used for most of the attempts since it
+contains so many more words than Webster's Third.  The seven-letter
+plateau remains to be achieved.
+
+==> language/english/spelling/single.words.p <==
+What words have exceptional lengths, patterns, etc.?
+
+==> language/english/spelling/single.words.s <==
+
+Spelling
+
+Letter Patterns
+
+Entire Word
+longest word trinitrophenylmethylnitramine (29,1)  
+longest palindrome kinnikinnik (11,1)  
+longest beginning with a palindrome adinida (7,1)  
+longest beginning with b palindrome boob (4,1)  
+longest beginning with c palindrome carac civic (5,2)  
+longest beginning with d palindrome deified devoved (7,2)  
+longest beginning with e palindrome ecce esse (4,2)  
+longest beginning with f palindrome FF (2,1) !
+longest beginning with g palindrome goog (4,1)  
+longest beginning with h palindrome hagigah halalah (7,2)  
+longest beginning with i palindrome igigi imami (5,2)  
+longest beginning with j palindrome j (1,1)  
+longest beginning with k palindrome kinnikinnik (11,1)  
+longest beginning with l palindrome lemel level lysyl (5,3)  
+longest beginning with m palindrome malayalam (9,1)  
+longest beginning with n palindrome nauruan (7,1)  
+longest beginning with o palindrome oppo otto (4,2)  
+longest beginning with p palindrome peeweep (7,1)  
+longest beginning with q palindrome qazaq (5,1)  
+longest beginning with r palindrome reviver rotator (7,2)  
+longest beginning with s palindrome sawbwas seesees seities sememes (7,4)  
+longest beginning with t palindrome terret tibbit tippit (6,3)  
+longest beginning with u palindrome uku ulu utu (3,3)  
+longest beginning with v palindrome vav (3,1)  
+longest beginning with w palindrome waw wow (3,2)  
+longest beginning with x palindrome x (1,1)  
+longest beginning with y palindrome yaray (5,1)  
+longest beginning with z palindrome z (1,1)  
+longest with middle a palindrome halalah rotator (7,2)  
+longest with middle b palindrome sawbwas (7,1)  
+longest with middle c palindrome soccos succus (6,2)  
+longest with middle d palindrome murdrum (7,1)  
+longest with middle e palindrome sememes (7,1)  
+longest with middle f palindrome deified (7,1)  
+longest with middle g palindrome degged (6,1)  
+longest with middle h palindrome aha ihi oho (3,3)  
+longest with middle i palindrome hagigah reviver (7,2)  
+longest with middle j palindrome kajak (5,1)  
+longest with middle k palindrome kinnikinnik (11,1)  
+longest with middle l palindrome hallah selles (6,2)  
+longest with middle m palindrome sammas (6,1)  
+longest with middle n palindrome adinida (7,1)  
+longest with middle o palindrome devoved (7,1)  
+longest with middle p palindrome tippit (6,1)  
+longest with middle q palindrome q (1,1)  
+longest with middle r palindrome nauruan (7,1)  
+longest with middle s palindrome seesees (7,1)  
+longest with middle t palindrome seities (7,1)  
+longest with middle u palindrome alula arura (5,2)  
+longest with middle v palindrome civic level rever tevet (5,4)  
+longest with middle w palindrome peeweep (7,1)  
+longest with middle x palindrome sexes (5,1)  
+longest with middle y palindrome malayalam (9,1)  
+longest with middle z palindrome kazak qazaq (5,2)  
+longest tautonym tangantangan (12,1)  
+longest beginning with a tautonym akeake atlatl (6,2)  
+longest beginning with b tautonym bellabella (10,1)  
+longest beginning with c tautonym caracara chowchow couscous (8,3)  
+longest beginning with d tautonym dugdug dumdum (6,2)  
+longest beginning with e tautonym EE ee (2,2)  
+longest beginning with f tautonym froufrou (8,1)  
+longest beginning with g tautonym ganggang greegree guitguit (8,3)  
+longest beginning with h tautonym hotshots (8,0) ?
+longest beginning with i tautonym ipilipil (8,1)  
+longest beginning with j tautonym juju (4,1)  
+longest beginning with k tautonym kavakava kawakawa khuskhus kohekohe kouskous kukukuku (8,6)  
+longest beginning with l tautonym lapulapu lavalava lomilomi (8,3)  
+longest beginning with m tautonym mahimahi makomako matamata murumuru (8,4)  
+longest beginning with n tautonym nagnag (6,1)  
+longest beginning with o tautonym oo (2,1)  
+longest beginning with p tautonym palapala pioupiou piripiri poroporo (8,4)  
+longest beginning with q tautonym quiaquia (8,1)  
+longest beginning with r tautonym riroriro (8,1)  
+longest beginning with s tautonym sweeswee (8,1)  
+longest beginning with t tautonym tangantangan (12,1)  
+longest beginning with u tautonym ulaula (6,1)  
+longest beginning with v tautonym valval verver (6,2)  
+longest beginning with w tautonym wallawalla (10,1)  
+longest beginning with x tautonym ? (0,0) ?
+longest beginning with y tautonym yariyari (8,1)  
+longest beginning with z tautonym zoozoo (6,1)  
+longest head 'n' tail einsteins muckamuck okeydokey overcover pungapung tarantara trinitrin (9,7)  
+longest with middle a head 'n' tail muckamuck pungapung (9,2)  
+longest with middle b head 'n' tail SBs aba (3,2)  
+longest with middle c head 'n' tail overcover (9,1)  
+longest with middle d head 'n' tail okeydokey (9,1)  
+longest with middle e head 'n' tail arear caeca (5,2)  
+longest with middle f head 'n' tail efe ofo (3,2)  
+longest with middle g head 'n' tail aggag algal edged magma (5,4)  
+longest with middle h head 'n' tail outshouts (9,0) ?
+longest with middle i head 'n' tail trinitrin (9,1)  
+longest with middle j head 'n' tail anjan (5,1)  
+longest with middle k head 'n' tail arkar kokko (5,2)  
+longest with middle l head 'n' tail ingling khalkha (7,2)  
+longest with middle m head 'n' tail bamba bombo mamma pampa (5,4)  
+longest with middle n head 'n' tail tarantara (9,1)  
+longest with middle o head 'n' tail ingoing mesomes (7,2)  
+longest with middle p head 'n' tail SPs apa (3,2)  
+longest with middle q head 'n' tail q (1,1)  
+longest with middle r head 'n' tail adrad kurku ugrug verve (5,4)  
+longest with middle s head 'n' tail hotshot (7,1)  
+longest with middle t head 'n' tail einsteins (9,1)  
+longest with middle u head 'n' tail mauma shush siusi veuve (5,4)  
+longest with middle v head 'n' tail ava eve (3,2)  
+longest with middle w head 'n' tail abwab (5,1)  
+longest with middle x head 'n' tail manxman (7,1)  
+longest with middle y head 'n' tail calycal (7,1)  
+longest with middle z head 'n' tail z (1,1)  
+
+Subset of Word
+longest internal palindrome kinnikinniks sensuousness sensuousnesses (11,3)  
+longest internal tautonym anhydrohydroxyprogesterone anhydrohydroxyprogesterones kinnikinnick kinnikinnicks kinnikinnics kinnikinniks magnetophotophoresis methylethylpyridine micromicrofarad neuroneuronal ... (10,11)  
+longest repeated prefix kinnikinnick kinnikinnicks kinnikinnics kinnikinniks micromicrofarad neuroneuronal (10,6)  
+most consecutive doubled letters bookkeeper bookkeeping (3,2)  
+most doubled letters possessionlessness possessionlessnesses successlessness successlessnesses (4,4)  
+longest two cadence humuhumunukunukuapuaa humuhumunukunukuapuaas (8,2)  
+longest three cadence effervescence effervescences extendednesses neglectednesses pervertednesses redheadednesses reflectednesses unexpectednesses vallabhacharya vallabhacharyas (5,10)  
+longest four cadence alveolopalatal coproporphyrinuria coproporphyrinurias distributivities gastroschisises humuhumunukunukuapuaa humuhumunukunukuapuaas inevitabilities roentgenometries somesthesises ... (4,12)  
+longest five cadence indecipherablenesses recollectivenesses (4,2)  
+
+Letter Counts
+
+Lipograms
+longest letters from first half hamamelidaceae (14,1)  
+longest letters from second half nonsupports (11,0) ?
+longest without ab hydroxydesoxycorticosterone (27,1)  
+longest without abcd philoprogenitivenesses (22,1)  
+longest without a to h supposititiously (16,1)  
+longest without a to k monotonously synonymously tumultuously voluptuously (12,4)  
+longest without a to n prototropy zoosporous (10,2)  
+longest without a to q susurrus (8,1)  
+longest without a to s tutty (5,1)  
+longest without e humuhumunukunukuapuaas macracanthorhynchiasis phonocardiographically prorhipidoglossomorpha supradiaphragmatically (22,5)  
+longest without et humuhumunukunukuapuaas phonocardiographically prorhipidoglossomorpha (22,3)  
+longest without eta coccidioidomycosis (18,1)  
+longest without etai phyllospondylous (16,1)  
+longest without etain chlorophyllous chromosomology chrysochlorous phyllomorphous polymorphously scolopophorous (14,6)  
+longest without etains promorphology (13,1)  
+
+Letter Choices
+
+Vowels
+longest all vowels aiee ieie (4,2)  
+longest each vowel once entwicklungsroman (17,1)  
+longest each extended vowel once cylindrocellular phosphuranylites ventriculography (16,3)  
+shortest each vowel once eulogia eutocia eutopia isourea sequoia (7,5)  
+shortest each extended vowel once oxyuridae (9,1)  
+shortest vowels in order caesious (8,1)  
+shortest extended vowels in order facetiously (11,1)  
+longest vowels in order abstentious (11,1)  
+longest extended vowels in order abstemiously (12,1)  
+shortest vowels in reverse order muroidea (8,1)  
+shortest extended vowels in reverse order ? (80,0) ?
+longest vowels in reverse order subcontinental (14,1)  
+longest extended vowels in reverse order ? (0,0) ?
+longest one vowel strengths (9,1)  
+longest two vowels schwartzbrots (13,1)  
+longest containing a univocalic tathagatagarbhas (16,1)  
+longest containing e univocalic strengthlessnesses (18,1)  
+longest containing i univocalic instinctivistic (15,1)  
+longest containing o univocalic loxolophodonts (14,1)  
+longest containing u univocalic struldbrugs (11,1)  
+longest containing y univocalic glycyls gypsyfy khlysts khlysty phytyls pyrryls qyrghyz rhythms styryls thymyls ... (7,11)  
+longest alternating extended vowel-consonant hypovitaminosises (17,1)  
+longest alternating vowel-consonant aluminosilicates diketopiperazine epicoracohumeral (16,3)  
+
+Consonants
+longest consonant string bergschrund bergschrunds catchphrase eschscholtzia eschscholtzias festschrift festschriften festschrifts goldschmidtine goldschmidtines ... (6,24)  
+longest one consonant assessees coccaceae (9,2)  
+longest two consonant nauseousnesses sensuousnesses (14,2)  
+
+Isograms
+longest isogram dermatoglyphics (15,1)  
+longest pair isogram scintillescent (14,1)  
+longest trio isogram deeded (6,1)  
+longest tetrad isogram kukukuku (8,1)  
+longest polygram unprosperousnesses (18,0) ?
+longest pyramid chachalaca deadheaded disseisees evennesses keennesses kinnikinic rememberer sassanians sereneness sleeveless ... (10,11)  
+most repeated letters dihydroxycholecalciferol hydroxydesoxycorticosterone hysterosalpingographies methyldihydromorphinone microspectrophotometrically octamethylpyrophosphoramide phosphatidylethanolamine pseudohermaphroditism tetrabromophenolphthalein tetraiodophenolphthalein ... (9,11)  
+highest containing a repeated palaeacanthocephala tathagatagarbha tathagatagarbhas (6,3)  
+highest containing b repeated bubbybush flibbertigibbet flibbertigibbets flibbertigibbety (4,4)  
+highest containing c repeated chroococcaceae chroococcaceous circumcrescence circumcrescences echinococcic micrococcaceae (5,6)  
+highest containing d repeated condiddled dadded deadheaded dendrodendritic diddered diddled diddledees didodecahedron disbudded dodded ... (4,32)  
+highest containing e repeated ethylenediaminetetraacetate (7,1)  
+highest containing f repeated chiffchaff chiffchaffs giffgaff giffgaffed giffgaffing giffgaffs riffraff (4,7)  
+highest containing g repeated aggregating aggreging chugalugging gagging gaggling ganggang ganggangs gigging giggling gigglingly ... (4,18)  
+highest containing h repeated ichthyophthiriasis ichthyophthirius ichthyophthiriuses rhamphorhynchid rhamphorhynchids rhamphorhynchoid rhamphorhynchus (4,7)  
+highest containing i repeated dirigibilities discriminabilities distinguishabilities divisibilities ignitibilities indiscernibilities indiscerptibilities indistinguishability indivisibility infinitesimalities ... (6,12)  
+highest containing j repeated ajonjoli ajonjolis avijja avijjas djokjakarta gastrojejunal gastrojejunostomy hajj hajjes hajji ... (2,53)  
+highest containing k repeated kakkak kakkaks knickknack knickknackatories knickknackatory knickknackeries knickknackery knickknacky kukukuku kukukukus (4,10)  
+highest containing l repeated allochlorophyll allochlorophylls alloplastically intellectualistically lillypillies lillypilly polysyllabically (5,7)  
+highest containing m repeated dynamometamorphism hamamelidanthemum immunocompromised mammatocumulus mammectomies mammectomy mammiform mammilliform mammogram mammonism ... (4,23)  
+highest containing n repeated inconvenientness inconvenientnesses nannoplankton nannoplanktonic nondenominational nondenominationalism nonentanglement nonintervention noninterventionist syngenesiotransplantation ... (5,12)  
+highest containing o repeated monogonoporous pseudomonocotyledonous (6,2)  
+highest containing p repeated aplopappus haplopappus hyperleptoprosopic hyperleptoprosopy snippersnapper whippersnapper (4,6)  
+highest containing q repeated qaraqalpaq qaraqalpaqs (3,2)  
+highest containing r repeated ferriprotoporphyrin ferroprotoporphyrin (5,2)  
+highest containing s repeated possessionlessnesses (9,1)  
+highest containing t repeated ethylenediaminetetraacetate tetrasubstituted throttlebottom totipotentiality yttrotantalite (5,5)  
+highest containing u repeated humuhumunukunukuapuaa humuhumunukunukuapuaas (9,2)  
+highest containing v repeated overconservative ovoviviparity ovoviviparous ovoviviparously ovoviviparousness vulvovaginitis (3,6)  
+highest containing w repeated bowwow bowwows powwow powwowed powwowing powwows swallowwort whillywhaw whillywhaws whitlowwort ... (3,17)  
+highest containing x repeated dextropropoxyphene executrix executrixes exlex exlexes exonarthex exotoxic exotoxin hexachlorocyclohexane hexahydroxy ... (2,37)  
+highest containing y repeated acetylphenylhydrazine acetylphenylhydrazines anhydrohydroxyprogesterone anhydrohydroxyprogesterones brachydactyly chylophylly cryptozygy cystopyelography cytophysiologically cytophysiology ... (3,91)  
+highest containing z repeated pizzazz pizzazzes razzmatazz razzmatazzes (4,4)  
+most different letters blepharoconjunctivitis pseudolamellibranchiata pseudolamellibranchiate psychogalvanometric (16,4)  
+highest ratio length/letters kukukuku (400,1)  
+highest ratio length/letters (no tautonyms) senselessnesses (375,1)  
+lowest length 16 ratio length/letters ventriculography (106,1)  
+lowest length 17 ratio length/letters entwicklungsroman hydrobasaluminite pterygomandibular (113,3)  
+lowest length 18 ratio length/letters carboxyhemoglobins entwicklungsromane hyperglobulinemias psychogalvanometer ventriculographies (120,5)  
+lowest length 19 ratio length/letters psychogalvanometric (118,1)  
+lowest length 20 ratio length/letters brachycephalizations dimethyltubocurarine encephalomyocarditis magnetofluiddynamics moschellandsbergites (133,5)  
+lowest length 21 ratio length/letters diphenylthiocarbazone pseudolamellibranchia sphygmomanometrically (140,3)  
+lowest length 22 ratio length/letters blepharoconjunctivitis (137,1)  
+lowest length 23 ratio length/letters pseudolamellibranchiata pseudolamellibranchiate (143,2)  
+lowest length 24 ratio length/letters diphenylaminechlorarsine laryngotracheobronchitis meningoencephalomyelitis (171,3)  
+lowest length 25 ratio length/letters spectroheliokinematograph (166,1)  
+
+Letter Appearance
+longest short letters erroneousnesses verrucosenesses (15,2)  
+longest tall letters lighttight lillypilly (10,2)  
+longest vertical-symmetry letters homotaxia thymomata (9,2)  
+longest horizontal-symmetry letters checkbook checkhook chookchie (9,3)  
+longest full-symmetry letters ohio (4,1)  
+highest ratio of dotted letters jinjili (71,1)  
+
+Typewriter
+longest top row proprietory proterotype rupturewort (11,3)  
+longest middle row shakalshas (10,1)  
+longest bottom row MNC (3,1) !
+longest in order wettish (7,1)  
+longest in reverse order bourree chapote chappie chappow gouttee (7,5)  
+longest left hand tesseradecades (14,0) ?
+longest right hand hypolimnion kinnikinnik (11,2)  
+longest alternating hands leucocytozoans (14,1)  
+longest one finger deeded humhum hummum muhuhu muumuu (6,5)  
+longest adjacent keys assessees redresser redresses seeresses sweeswees (9,5)  
+
+Puzzle
+longest palindrome in Morse code footstool (9,1)  
+longest formed with chemical symbols nonrepresentationalism (22,1)  
+longest formed with US postal codes convallarias (12,1)  
+longest formed with amino acid abbreviations hisser proser serval valval (6,4)  
+longest formed with piano notes cabbaged fabaceae fagaceae (8,3)  
+
+Letter Order
+
+Alphabetical
+longest letters in order aegilops (8,1)  
+longest letters in order with repeats aegilops (8,1)  
+longest letters in reverse order sponged wronged (7,2)  
+longest letters in reverse order with repeats trollied (8,1)  
+longest roller-coaster decriminalizations provincializations (18,2)  
+longest no letters in place trinitrophenylmethylnitramine (29,1)  
+most letters in place abudefduf agammaglobulinemias archencephalon archetypical archetypically syngenesiotransplantation (5,6)  
+most letters in place shifted cooperatively daughterlinesses definitivenesses gymnoplast gymnoplasts inoperative inoperativeness inopportunely intraoperatively neighborlinesses ... (6,16)  
+most consecutive letters in order consecutively bierstube bierstuben bierstubes gymnopaedia gymnopaedias gymnopaedic gymnopedia gymnopedias gymnophiona gymnoplast ... (4,27)  
+most consecutive letters in order aborticide aborticides abscinded absconded abscondence abscondences alimentotherapy aluminographies aluminography aluminotype ... (5,38)  
+most consecutive letters appropinquates appropinquations appropinquities equiponderates equiponderations perquisition perquisitions preconquest propinquities quadruplications ... (8,12)  
+highest ratio of consecutive letters to length klompen (85,1)  
+
+==> language/english/spoonerisms.p <==
+List some exceptional spoonerisms.
+
+==> language/english/spoonerisms.s <==
+Original by Spooner himself:
+
+I am afraid you have tasted the whole worm, and must
+therefore take the next town drain.
+
+Some years ago in the Parliament, a certain member known for his quick and
+rapier wit, cut across a certain other member who was trying to make some
+bad joke.  He called him a "Shining Wit" then apologized for making a
+Spoonerism.
+
+Another famous broadcast fluff was on the Canadian Broadcasting
+Corporation, which an announcer identified as the "Canadian
+Broadcorping Castration."
+
+Oh yes, another radio announcer one that has sort of crept into
+common English usage is "one swell foop".
+
+A friend of mine had just eaten dinner in the school
+cafeteria, and he didn't look very happy. Another of
+my friends said, "John, what's wrong?" Knowing exactly
+what he was saying, he said, "It's the bound grief I
+had for dinner!"
+
+A radio announcer, talking about a royal visit (or some such) said the
+visitor would be greeted with a "twenty one sun galoot".
+
+There are several fractured fables based on spoonerisms, such as:
+
+A king on a desert island was so beloved by his people, they decided to
+give him a very special gift for the anniversary of his coronation.  So
+after much thought, they decided to make him a throne out of seashells,
+which were plentiful on the island.  And when it was finished, they
+presented it to the king, who loved it.  But he soon discovered it was
+very uncomfortable to sit on.  So he told his subjects it was too
+special to use everyday (so as not to hurt their feelings) and put it in
+the attic of his palace (which was, of course, a hut like all the other
+dwellings on the island), planning to use it just for special occasions.
+But that night, it fell through the ceiling of his bedroom and landed
+on top of him, killing him instantly.  And the moral of the story is: 
+Those who live in grass houses shouldn't stow thrones!
+
+==> language/english/synonyms/ambiguous.p <==
+What word in the English language is the most ambiguous?
+What is the greatest number of parts of speech that a single word
+can be used for?
+
+==> language/english/synonyms/ambiguous.s <==
+In Webster's Ninth, "set" occupies 1.2 columns, has 25 vb entries, 11 vi
+entries, 23 noun entries, 7 adjective entries; "take" occupies 1.3 columns,
+has 19 vb entries, 8 vi entries, 4 noun entries.
+
+The word "like" occupies eight parts of speech:
+	verb			"Fruit flies like a banana."
+	noun			"We may never see its like again."
+	adjective		"People of like tastes agree."
+	adverb			"The rate is more like 12 percent."
+	preposition		"Time flies like an arrow."
+	conjunction		"They acted like they were scared."
+	interjection		"Like, man, that was far out."
+	verbal auxiliary	"So loud I like to fell out of bed."
+
+==> language/english/synonyms/antonym.p <==
+What words, when a single letter is added, reverse their meanings?
+
+Exclude words that are obtained by adding an "a-" to the beginning.
+
+==> language/english/synonyms/antonym.s <==
+e: fast -> feast, fiancee -> fiance
+h: treat -> threat
+r: fiend -> friend
+s: he -> she
+t: here -> there
+
+==> language/english/synonyms/contradictory.proverbs.p <==
+What are some proverbs that contradict one another?
+
+==> language/english/synonyms/contradictory.proverbs.s <==
+Beware of Greeks bearing gifts.
+Never look a gift horse in the mouth.
+
+Look before you leap.
+He who hesitates is lost.
+
+Nothing venture, nothing gain.
+Fools rush in where angels fear to tread.
+
+Seek and ye shall find.
+Curiosity killed the cat.
+
+Save for a rainy day.
+Tomorrow will take care of itself.
+
+Life is what we make it.
+What is to be will be.
+
+Too many cooks spoil the broth.
+Many hands make light work.
+
+One man's meat is another man's poison.
+Sauce for the goose is sauce for the gander.
+
+With age comes wisdom.
+Out of the mouths of babes and sucklings come all wise sayings.
+
+Bear ye one another's burdens. (Gal. 6:2)
+For every man shall bear his own burden. (Gal. 6:5)
+
+Great minds run in the same channel.
+Fools think alike.
+
+A rolling stone gathers no moss.
+A setting hen never lays.
+
+A hollow pot makes the most noise.
+The squeaky wheel gets the grease.
+
+Faint heart never won fair lady.
+The meek shall inherit the Earth.
+
+To thine own self be true.
+The nail that stands out gets hammered down.
+
+==> language/english/synonyms/contranym.p <==
+What words are their own antonym?
+
+==> language/english/synonyms/contranym.s <==
+In his 1989 book _Crazy English_, Richard Lederer calls such words
+contranyms and lists more than 35, although some are phrases instead of
+words.  These can be divided into homographs (same spelling) and
+homophones (same pronunciation).
+
+A partial list of homographs:
+aught = all, nothing
+bill = invoice, money
+cleave = to separate, to join
+clip = cut apart, fasten together
+comprise = contain, compose
+custom = usual, special
+dust = to remove, add fine particles
+fast = rapid, unmoving
+literally = actually, figuratively
+model = archetype, copy
+moot = debatable, academic
+note = promise to pay, money
+oversight = care, error
+peep = look quietly, beep
+peer = noble, person of equal rank
+put = lay, throw
+puzzle = pose problem, solve problem
+quantum = very small, very large (quantum leap)
+ravel = entangle, disentangle
+resign = to quit, to sign up again
+sanction = to approve of, to punish
+sanguine = murderous, optimistic
+scan = to examine closely, to glance at quickly
+set = fix, flow
+skin = to cover with, remove outer covering
+speak = express verbally, express nonverbally
+stipulate = request explicitly, agree to
+strike = miss (baseball), hit
+table = propose [British], set aside
+temper = calmness, passion
+trim = cut things off, put things on
+
+A very short list of homophones:
+aural, oral = heard, spoken
+fiance, fiancee = female betrothed, male betrothed
+raise, raze = erect, tear down
+
+A pair of French words which can be very confusing:
+La symetrie (symmetry) and L'asymetrie (asymmetry).
+
+Latin:
+immo = yes, no
+
+Possibilities:
+draw (curtains, open or close) (money, withdraw, accumulate interest)
+eke
+
+==> language/english/synonyms/double.synonyms.p <==
+What words have two different synonymous meanings?
+
+==> language/english/synonyms/double.synonyms.s <==
+list, roll: set of names (noun), tilt (verb)
+
+==> language/finnish/finnish.plural.p <==
+What Finnish word is the anagram of its plural?
+
+==> language/finnish/finnish.plural.s <==
+matto/matot (Finnish for "carpet"/"carpets").
+

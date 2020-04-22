@@ -1,0 +1,546 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA00436; Sat, 20 Apr 1996 14:13:29 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07835; Sat, 20 Apr 96 14:11:38 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25225; Sat, 20 Apr 1996 11:12:28 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (series), part 34 of 35
+Message-Id: <puzzles/archive/series_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:07:01 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 518
+Xref: senator-bedfellow.mit.edu rec.puzzles:25021 news.answers:11541 rec.answers:1941
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/series
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> series/series.00.p <==
+Are "complete this series" problems well defined?
+
+==> series/series.00.s <==
+Since there are infinitely many formulas that will fit any finite
+series, many people object that such problems have no good answer.
+But isn't this a special case of the general observation that theory
+is underdetermined by experience (in other words, that there are a
+lot of world views that are consistent with all the facts that we
+know)?  And if so, doesn't this objection really apply to all puzzles?
+Isn't it just more obvious in the case of series puzzles?
+
+As a long-time observer of rec.puzzles nit-picking, I have never seen
+a puzzle answer that could not be challenged.  The list of assumptions
+made in solving any puzzle is neverending.  Luckily, most of us share
+all or nearly all of these assumptions, so that we can agree on an
+answer when we see it.
+
+All of this has a lot to do with topics such as computational
+complexity, algorithmic compressibility, Church's thesis, intelligence
+and life.
+
+
+==> series/series.01.p <==
+M, N, B, D, P ?
+
+==> series/series.01.s <==
+T.  If you say the sounds these letters make out loud, you will see
+that the next letter is T.  The letters are in the order of where the
+sounds are formed in the mouth, from back to front.
+
+==> series/series.02.p <==
+H, H, L, B, B, C, N, O, F ?
+
+==> series/series.02.s <==
+Answer 1:  N, N, M, A  The first letters of the symbols for the elements.
+Answer 2:  N, S, M, A  The first letters of the names of the elements.
+
+==> series/series.03.p <==
+W, A, J, M, M, A, J?
+
+==> series/series.03.s <==
+J, V, H, T, P, T, F, P, B, L.  Presidents of the US.
+
+==> series/series.03a.p <==
+G, J, T, J, J, J, A, M, W, J, J, Z, M, F, J, ?
+
+
+==> series/series.03a.s <==
+G, J, T, J, J, J, A, M, W, J, J, Z, M, F, J, A.  US Presidents' first names.
+
+==> series/series.03b.p <==
+A, J, B, C, G, T, C, V, J, T, D, F, K, B, H, ?
+
+
+==> series/series.03b.s <==
+A, J, B, C, G, T, C, V, J, T, D, F, K, B, H, J.  US Vice Presidents.
+
+==> series/series.03c.p <==
+M, A, M, D, E, L, R, H, ?
+
+
+==> series/series.03c.s <==
+M, A, M, D, E, L, R, H, A.  US Presidents' wives' first names.
+
+==> series/series.04.p <==
+A, E, H, I, K, L, ?
+
+==> series/series.04.s <==
+M, N, O, P, U, W.  Letters in the Hawaiian alphabet.
+
+==> series/series.05.p <==
+A B C D E F G H?
+
+==> series/series.05.s <==
+M.  The names of the cross-streets travelling west on (say)
+Commonwealth Avenue from Boston's Public Garden: Arlington, Berkeley,
+Clarendon, Dartmouth, Exeter, Fairfield, Gloucester, Hereford,
+Massachusetts Ave.  The alphabet does continue in the Fenway; after
+Massachuetts Ave., there is Charlesgate, and then Ipswich, Jersey,
+Kilmarnock.
+
+==> series/series.06.p <==
+Z, O, T, T, F, F, S, S, E, N?
+
+==> series/series.06.s <==
+T.  The name of the integers starting with zero.
+
+==> series/series.06a.p <==
+F, S, T, F, F, S, ?
+
+==> series/series.06a.s <==
+The words "first", "second", "third", etc.  The same as the previous from this
+point on.
+
+==> series/series.07.p <==
+1, 1 1, 2 1, 1 2 1 1, ...
+
+What is the pattern and asymptotics of this series?
+
+==> series/series.07.s <==
+Each line is derived from the last by the transformation (for example)
+
+... z z z x x y y y ... ->
+... 3 z 2 x 3 y ...
+
+John Horton Conway analyzed this in "The Weird and Wonderful Chemistry
+of Audioactive Decay" (T M Cover & B Gopinath (eds) OPEN PROBLEMS IN
+COMMUNICATION AND COMPUTATION, Springer-Verlag (1987)).  You can also
+find his most complete FRACTRAN paper in this collection.
+
+First, he points out that under this sequence, you frequently get
+adjacent subsequences XY which cannot influence each other in any
+future derivation of the sequence rule.  The smallest such are
+called "atoms" or "elements".  As Conway claims to have proved,
+there are 92 atoms which show up eventually in every sequence, no
+matter what the starting value (besides <> and <22>), and always in
+the same non-zero limiting proportions.
+
+Conway named them after some other list of 92 atoms.  As a puzzle,
+see if you can recreate the list from the following, in decreasing
+atomic number:
+
+U Pa Th Ac Ra Fr Rn Ho.AT Po Bi Pm.PB Tl Hg Au Pt Ir Os Re Ge.Ca.W Ta
+HF.Pa.H.Ca.W Lu Yb Tm ER.Ca.Co HO.Pm Dy Tb Ho.GD EU.Ca.Co Sm PM.Ca.Zn
+Nd Pr Ce LA.H.Ca.Co Ba Cs Xe I Ho.TE Eu.Ca.SB Pm.SN In Cd Ag Pd Rh
+Ho.RU Eu.Ca.TC Mo Nb Er.ZR Y.H.Ca.Tc SR.U Rb Kr Br Se As GE.Na Ho.GA
+Eu.Ca.Ac.H.Ca.ZN Cu Ni Zn.CO Fe Mn CR.Si V Ti Sc Ho.Pa.H.CA.Co K Ar
+Cl S P Ho.SI Al Mg Pm.NA Ne F O N C B Be Ge.Ca.LI He Hf.Pa.H.Ca.Li
+
+Uranium is 3, Protactinium is 13, etc.  Rn => Ho.AT means the following:
+Radon forms a string that consists of two atoms, Holmium on the left,
+and Astatine on the right.  I capitalize the symbol for At to remind
+you that Astatine, and not Holmium, is one less than Radon in atomic
+number.  As a check, against you or me making a mistake, Hf is 111xx,
+Nd is 111xxx, In and Ni are 111xxxxx, K is 111x, and H is 22.
+
+Next see if you can at least prove that any atom other than Hydrogen,
+eventually (and always thereafter) forms strings containing all 92 atoms.
+
+The grand Conway theorem here is that every string eventually forms (within
+a universal time limit) strings containing all the 92 atoms in certain
+specific non-zero limiting proportions, and that digits N greater than 3
+are eventually restricted to one of two atomic patterns (ie, abc...N and
+def...N for some {1,2,3} sequences abc... and def...), which Conway calls
+isotopes of Np and Pu.  (For N=2, these are He and Li), and that these
+transuranic atoms have a zero limiting proportion.
+
+The longest lived exotic element is Methuselum (2233322211N) which takes
+about 25 applications to reduce to the periodic table.
+
+-Matthew P Wiener (weemba@libra.wistar.upenn.edu)
+
+Conway gives many results on the ultimate behavior of strings under
+this transformation: for example, taking the sequence derived from 1
+(or any other string except 2 2), the limit of the ratio of length of
+the (n+1)th term to the length of the nth term as n->infinity is a 
+fixed constant, namely
+
+            1.30357726903429639125709911215255189073070250465940...
+
+This number is from Ilan Vardi, "Computational Recreations in Mathematica",
+Addison Wesley 1991, page 13.
+
+Another sequence that is related but not nearly as interesting is:
+
+1, 11, 21, 1112, 3112, 211213, 312213, 212223, 114213, 31121314, 41122314,
+    31221324, 21322314,
+
+and 21322314 generates itself, so we have a cycle.
+
+==> series/series.08a.p <==
+G, L, M, B, C, L, M, C, F, S, ?
+
+==> series/series.08a.s <==
+US Army officer ranks, descending.
+
+==> series/series.08b.p <==
+A, V, R, R, C, C, L, L, L, E, ?
+
+==> series/series.08b.s <==
+US Navy officer ranks, descending.
+
+==> series/series.09a.p <==
+S, M, S, S, S, C, P, P, P, ?
+
+==> series/series.09a.s <==
+Army non-comm ranks, descending.
+
+==> series/series.09b.p <==
+M, S, C, P, P, P, S, S, S, ?
+
+==> series/series.09b.s <==
+Navy non-comm ranks, descending.
+
+==> series/series.10.p <==
+D, P, N, G, C, M, M, S, ?
+
+==> series/series.10.s <==
+N, V, N, N, R.  US States in Constitution ratification order.
+
+==> series/series.11.p <==
+R O Y G B ?
+
+==> series/series.11.s <==
+V or I V.  Colors.
+
+==> series/series.12.p <==
+A, T, G, C, L, ?
+
+==> series/series.12.s <==
+V, L, S, S, C, A, P.  Zodiacal signs.
+
+==> series/series.13.p <==
+M, V, E, M, J, S, ?
+
+==> series/series.13.s <==
+U, N, P or U, P, N.  Names of the Planets.
+
+==> series/series.14.p <==
+A, B, D, O, P, ?
+
+==> series/series.14.s <==
+Q, R.  Only letters with an inside as printed. 
+
+==> series/series.14a.p <==
+A, B, D, E, G, O, P, ?
+
+==> series/series.14a.s <==
+Q.  Letters with insides in cursive form.
+
+==> series/series.15.p <==
+A, E, F, H, I, ?
+
+==> series/series.15.s <==
+L, M, N, O, R, S, U, X.  Letters whose English names start with vowels.
+
+==> series/series.16.p <==
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, X, Y?
+
+==> series/series.16.s <==
+Z.  Letters whose English names have one syllable.
+
+==> series/series.17.p <==
+T, P, O, F, O, F, N, T, S, F, T, F, E, N, S, N?
+
+==> series/series.17.s <==
+T, T, T, E, F, S.  Digits of Pi.
+
+==> series/series.18.p <==
+10, 11, 12, 13, 14, 15, 16, 17, 20, 22, 24, ___ , 100, 121, 10000
+
+==> series/series.18.s <==
+ 10, 11, 12, 13, 14, 15, 16, 17, 20, 22, 24, 31 , 100, 121, 10000
+
+Sixteen in base n for n=16, 15, ..., 2.
+
+==> series/series.19.p <==
+0 01 01011 0101101011011 0101101011011010110101101101011011 etc.
+
+Each string is formed from the previous string by substituting '01' for '0'
+and '011' for '1' simultaneously at each occurance.
+Notice that each string is an initial substring of the previous string so
+that we may consider them all as initial substrings of an infinite string.
+The puzzle then is, given n, determine if the nth digit is 0 or 1 without
+having to construct all the previous digits.  That is, give a non-recursive
+formula for the nth digit.
+
+==> series/series.19.s <==
+Let G equal the limit string generated by the above process and define
+the string F by
+
+F[0] = "0",
+F[n] = "1" if n = floor(phi*m) for some positive integer m,
+F[n] = "0" if n = floor(phi^2*m) for some positive integer m,
+
+where floor(x) is the greatest integer =< x and phi = (1 + \/5)/2;
+I claim that F = G.
+
+
+I will try to motivate my solution.  Let g[0]="0" and define g[n+1]
+to be the string that results from replacing "0" in g[n] with "01"
+and "1" with "011"; furthermore, let s(n) and t(n) be the number of
+"0"'s and "1"'s in g[n], respectively.  Note that we have the
+following recursive formulas : s(n+1) = s(n) + t(n) and t(n+1) =
+s(n) + 2t(n).  I claim that s(n) = Fib(2n-1) and t(n) = Fib(2n),
+where Fib(m) is the mth Fibonacci number (defined by Fib(-1) = 1,
+Fib(0) = 0, Fib(n+1) = Fib(n) + Fib(n-1) for n>=0); this is easily
+established by induction.  Now noting that Fib(2n)/Fib(2n-1) -> phi
+as n -> infinity, we see that if the density of the "0"'s and "1"'s
+exists, they must be be 1/phi^2 and 1/phi, respectively.  What is
+the simplest generating sequence which has this property?  Answer:
+the one given above.
+
+
+Proof:  We start with
+
+Beatty's Theorem: if a and b are positive irrational numbers such
+that 1/a + 1/b = 1, then every positive integer has a representation
+of the form floor(am) or floor(bm) (m a positive integer), and this
+representation is unique.
+
+This shows that F is well-defined.  I now claim that
+
+Lemma: If S(n) and T(n) (yes, two more functions; apparently today's
+the day that functions have their picnic) represent the number of
+"0"'s and "1"'s in the initial string of F of length n, then S(n)
+= ceil(n/phi^2) and T(n) = floor(n/phi) (ceil(x) is the smallest
+integer >= x).
+
+Proof of lemma: using the identity phi^2 = phi + 1 we see that S(n)
++ T(n) = n, hence for a given n either S(n) = S(n-1) + 1 or T(n) =
+T(n-1) + 1.  Now note that if F[n-1]="1" ==> n-1 = floor(phi*m) for
+some positive integer m and since phi*m-1 < floor(phi*m) < phi*m ==>
+m-1/phi < (n-1)/phi < m ==> T(n) = T(n-1) + 1.   To finish, note that
+if F[n-1]="0" ==> n-1 = floor(phi^2*m) for some positive integer m
+and since phi^2*m-1 < floor(phi^2*m) < phi^2*m ==> m-1/phi^2 <
+(n-1)/phi^2 < m ==> S(n) = S(n-1) + 1.  Q.E.D.
+
+I will now show that F is invariant under the operation of replacing
+"0" with "01" and "1" with "011"; it will then follow that F=G.
+Note that this is equivalent to showing that F[2S(n) + 3T(n)]
+= "0", F[2S(n) + 3T(n) + 1] = "1", and that if n = [phi*m] for some
+positive integer m, then F[2S(n) + 3T(n) + 2] = "1".  One could
+waste hours trying to prove some fiendish identities; watch how
+I sidestep this trap.  For the first part, note that by the above
+lemma F[2S(n) + 3T(n)] = F[2*ceil(n/phi^2) + 3*floor(n/phi)] =
+F[2n + floor(n/phi)] = F[2n + floor(n*phi-n)] = F[floor(phi*n+n)]
+= F[floor(phi^2*n)] ==> F[2S(n) + 3T(n)] = "0".  For the second, it
+is easy to see that since phi^2>2, if F[m]="0" ==> F[m]="1" hence
+the first part implies the second part.  Finally, note that if n =
+[phi*m] for some positive integer m, then F[2S(n) + 3T(n) + 3] =
+F[2S(n+1) + 3T(n+1)] = "0", hence by the same reasoning as above
+F[2S(n) + 3T(n) + 2] = "1".
+
+Q.E.D.
+
+    -- clong@remus.rutgers.edu (Chris Long)
+
+==> series/series.20.p <==
+1 2 5 16 64 312 1812 12288
+
+==> series/series.20.s <==
+ANSWER: 95616
+	The sum of factorial(k)*factorial(n-k) for k=0,...,n.
+
+==> series/series.21.p <==
+5, 6, 5, 6, 5, 5, 7, 5, ?
+
+==> series/series.21.s <==
+The number of letters in the ordinal numbers.
+
+First   5
+Second  6
+Third   5
+Fourth  6
+Fifth   5
+Sixth   5
+Seventh 7
+Eighth  6
+Ninth   5
+etc.
+
+==> series/series.22.p <==
+3 1 1 0 3 7 5 5 2 ?
+
+==> series/series.22.s <==
+ANSWER: 4
+	The digits of pi expressed in base eight.
+
+==> series/series.23.p <==
+22 22 30 13 13 16 16 28 28 11 ?
+
+==> series/series.23.s <==
+ANSWER: 15
+	The birthdays of the Presidents of the United States.
+
+
+==> series/series.24.p <==
+What is the next letter in the sequence: W, I, T, N, L, I, T?
+
+==> series/series.24.s <==
+S.  First letters of words in question.
+
+==> series/series.25.p <==
+1 3 4 9 10 12 13 27 28 30 31 36 37 39 40 ?
+
+==> series/series.25.s <==
+1 3 4 9 10 12 13 27 28 30 31 36 37 39 40 ...
+Positive integers in binary, treated as a base 3 number and converted
+to decimal.
+
+==> series/series.26.p <==
+1 3 2 6 7 5 4 12 13 15 14 10 11 9 8 24 25 27 26 ?
+
+==> series/series.26.s <==
+1 3 2 6 7 5 4 12 13 15 14 10 11 9 8 24 25 27 26 ...
+Positive integers in binary, for each 1 bit (not changed) flip the next bit.
+This can also be phrased in reversing sequences of numbers.
+More simply, just the integers in reflective-Gray-code order.
+
+==> series/series.27.p <==
+0 1 1 2 1 2 1 3 2 2 1 3 1 2 2 4 1 3 1 3 2 2 1 4 2 ?
+
+==> series/series.27.s <==
+2 3 3 1 3 1 5 2 2 2 4 1 2 2 4 1 3 1 3 3 2 1 5 2 3 2 3 1 4 2 4 2 2 1 ...
+
+Number of factors in prime factorization of positive integers.
+
+==> series/series.28.p <==
+0 2 3 4 5 5 7 6 6 7 11 7 13 9 8 8 17 8 19 9 10 13 23 9 10 ?
+
+==> series/series.28.s <==
+15 9 11 29 10 31 10 14 19 12 10 37 21 16 11 41 12 43 15 11 25 47 11 14 12 ...
+
+Sum of factors in prime factorization of positive integers.
+
+==> series/series.29.p <==
+1 1 2 1 2 2 3 1 2 2 3 2 3 3 4 1 2 2 3 2 3 3 4 2 3 3 4 3 4 ?
+
+==> series/series.29.s <==
+1 1 2 1 2 2 3 1 2 2 3 2 3 3 4 1 2 2 3 2 3 3 4 2 3 3 4 3 4 ...
+The number of 1s in the binary expansion of the positive integers.
+
+==> series/series.30.p <==
+I I T Y W I M W Y B M A D 
+
+==> series/series.30.s <==
+? (first letters of "If I tell you what it means will you buy me a drink?")
+
+==> series/series.31.p <==
+6 2 5 5 4 5 6 3 7 
+
+==> series/series.31.s <==
+6. The number of segments on a standard calculator display it takes
+to represent the digits starting with 0.
+  _       _   _       _   _   _   _   _
+ | |   |  _|  _| |_| |_  |_    | |_| |_|
+ |_|   | |_   _|   |  _| |_|   | |_|  _|
+
+==> series/series.32.p <==
+0 1 1 0 1 0 0 1 1 0 0 1 0 1 1 0 1
+
+==> series/series.32.s <==
+0 -> 1   01 -> 10   0110 -> 1001   01101001 ->  10010110
+Recursively append the inverse.
+
+This sequence is known as the Morse-Thue sequence.  It can be defined
+non-recursively as the nth term is the mod 2 count of 1s in n written
+in binary:
+        0->0 1->1 10->1 11->0 100->1 101->0 110->0 111->1 etc. 
+
+Reference:
+    Dekking, et. al., "Folds! I,II,III"
+    The Mathematical Intelligencer, v4,#3,#4,#4.
+
+==> series/series.33.p <==
+2 12 360 75600
+
+==> series/series.33.s <==
+2         = 2^1
+12        = 2^2 * 3^1
+360       = 2^3 * 3^2 * 5^1
+75600     = 2^4 * 3^3 * 5^2 * 7^1
+174636000 = 2^5 * 3^4 * 5^3 * 7^2 * 11^1
+
+==> series/series.34.p <==
+3 5 4 4 3 5 5 4 3
+
+==> series/series.34.s <==
+The number of letters in the English words for the counting numbers.
+
+==> series/series.35.p <==
+1 2 3 2 1 2 3 4 2 1 2 3 4 2 2 3
+
+==> series/series.35.s <==
+The number of letters in the Roman numeral representation of the numbers.
+
+==> series/series.36.p <==
+ETIANMSURWDKGO
+
+==> series/series.36.s <==
+HVF and U with an umlaut.
+
+The letters are sorted by their international Morse code representations:
+
+E .
+T -
+
+I ..
+A .-
+N -.
+M --
+
+S ...
+U ..-
+etc.
+
+
+==> series/series.37.p <==
+10^3 10^9 10^27 10^2 0 4 8 3
+
+
+==> series/series.37.s <==
+10^3  = one thousAnd
+10^9  = one Billion
+10^27 = one oCtillion
+10^2  = one hunDreD
+0     = zEro 
+4     = Four
+8     = eiGht
+3     = tHree 
+5     = fIve
+

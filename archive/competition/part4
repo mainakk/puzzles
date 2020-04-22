@@ -1,0 +1,1392 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05103; Sat, 20 Apr 1996 15:09:20 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15646; Sat, 20 Apr 96 14:10:58 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25201; Sat, 20 Apr 1996 11:11:59 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (competition), part 09 of 35
+Message-Id: <puzzles/archive/competition/part4_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:57 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1364
+Xref: senator-bedfellow.mit.edu rec.puzzles:25004 news.answers:11524 rec.answers:1924
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/competition/part4
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> competition/tests/math/putnam/putnam.1987.p <==
+WILLIAM LOWELL PUTNAM MATHEMATICAL COMPETITION
+
+FORTY EIGHTH ANNUAL   Saturday, December 5, 1987
+
+Examination A;
+
+Problem A-1
+------- ---
+
+Curves A, B, C, and D, are defined in the plane as follows:
+
+A = { (x,y) : x^2 - y^2 = x/(x^2 + y^2) },
+
+B = { (x,y) : 2xy + y/(x^2 + y^2) = 3 },
+
+C = { (x,y) : x^3 - 3xy^2 + 3y = 1 },
+
+D = { (x,y) : 3yx^2 - 3x - y^3 = 0 }.
+
+Prove that the intersection of A and B is equal to the intersection of
+C and D.
+
+
+Problem A-2
+------- ---
+
+The sequence of digits
+
+1 2 3 4 5 6 7 8 9 1 0 1 1 1 3 1 4 1 5 1 6 1 7 1 8 1 9 2 0 2 1 ...
+
+is obtained by writing the positive integers in order.  If the 10^n th
+digit in this sequence occurs in the part of the sequence in which the
+m-digit numbers are placed, define f(n) to be m.  For example f(2) = 2
+because the 100th digit enters the sequence in the placement of the
+two-digit integer 55.  Find, with proof, f(1987).
+
+
+Problem A-3
+------- ---
+
+For all real x, the real valued function y = f(x) satisfies
+
+		y'' - 2y' + y = 2e^x.
+
+(a)  If f(x) > 0 for all real x, must f'(x) > 0 for all real x?  Explain.
+
+(b)  If f'(x) > 0 for all real x, must f(x) > 0 for all real x?  Explain.
+
+
+Problem A-4
+------- ---
+
+Let P be a polynomial, with real coefficients, in three variables and F
+be a function of two variables such that
+
+	P(ux,uy,uz) = u^2*F(y-x,z-x) for all real x,y,z,u,
+
+and such that P(1,0,0) = 4, P(0,1,0) = 5, and P(0,0,1) = 6.  Also let
+A,B,C be complex numbers with P(A,B,C) = 0 and |B-A| = 10.  Find
+|C-A|.
+
+
+Problem A-5
+------- ---
+
+    ^
+Let G(x,y) = ( -y/(x^2 + 4y^2) , x/(x^2 + 4y^2), 0 ).  Prove or disprove
+that there is a vector-valued function
+
+	^
+	F(x,y,z) = ( M(x,y,z) , N(x,y,z) , P(x,y,z) )
+
+with the following properties:
+
+
+	(1)  M,N,P have continuous partial derivatives for all
+	       (x,y,z) <> (0,0,0) ;
+
+	          ^   ^
+	(2)  Curl F = 0 for all (x,y,z) <> (0,0,0) ;
+
+	     ^          ^
+	(3)  F(x,y,0) = G(x,y).
+
+
+Problem A-6
+------- ---
+
+For each positive integer n, let a(n) be the number of zeros in the
+base 3 representation of n.  For which positive real numbers x does
+the series
+
+			 inf
+			-----
+			\     x^a(n)
+			 >    ------
+			/      n^3
+			-----
+			n = 1
+
+converge?
+--
+
+
+Examination B;
+
+Problem B-1
+------- ---
+
+	 4/        (ln(9-x))^(1/2)  dx
+Evaluate  | --------------------------------- .
+	 2/ (ln(9-x))^(1/2) + (ln(x+3))^(1/2)
+
+
+Problem B-2
+------- ---
+
+Let r, s, and t be integers with 0 =< r, 0 =< s, and r+s =< t.
+
+Prove that
+
+	( s )     ( s )     ( s )           ( s )
+	( 0 )     ( 1 )     ( 2 )           ( s )          t+1
+	----- +  ------- + ------- + ... + ------- = ---------------- .
+	( t )    (  t  )   (  t  )         (  t  )   ( t+1-s )( t-s )
+	( r )    ( r+1 )   ( r+2 )         ( r+s )            (  r  )
+
+
+        ( n )                                  n(n-1)...(n+1-k)
+( Note: ( k ) denotes the binomial coefficient ---------------- .)
+                                                k(k-1)...3*2*1
+
+
+Problem B-3
+------- ---
+
+Let F be a field in which 1+1 <> 0.  Show that the set of solutions to
+the equation x^2 + y^2 = 1 with x and y in F is given by
+
+			    (x,y) = (1,0)
+
+			              r^2 - 1     2r
+			and (x,y) = ( ------- , ------- ),
+			              r^2 + 1   r^2 + 1
+
+where r runs through the elements of F such that r^2 <> -1.
+
+
+Problem B-4
+------- ---
+
+Let ( x(1), y(1) ) = (0.8,0.6) and let
+
+		    x(n+1) = x(n)*cos(y(n)) - y(n)*sin(y(n))
+
+		and y(n+1) = x(n)*sin(y(n)) + y(n)*cos(y(n))
+
+for n = 1,2,3,...  .  For each of the limits as n --> infinity of
+x(n) and y(n), prove that the limit exists and find it or prove that
+the limit does not exist.
+
+
+Problem B-5
+------- ---
+
+Let O(n) be the n-dimensional zero vector (0,0,...,0).  Let M be a
+2n x n matrix of complex numbers such that whenever
+( z(1), z(2), ..., z(2n)*M = O(n), with complex z(i), not all zero,
+then at least one of the z(i) is not real.  Prove that for arbitrary
+real number r(1), r(2), ..., r(2n), there are complex numbers w(1),
+w(2), ..., w(n) such that
+
+		   (   ( w(1) ) )   ( r(1)  )
+		   (   (  .   ) )   (   .   )
+		Re ( M*(  .   ) ) = (   .   )  .
+		   (   (  .   ) )   (   .   )
+		   (   ( w(n) ) )   ( r(2n) )
+
+(Note:  If C is a matrix of complex numbers, Re(C) is the matrix whose
+entries are the real parts of entries of C.)
+
+
+Problem B-6
+------- ---
+
+Let F be the field of p^2 elements where p is an odd prime.  Suppose S
+is a set of (p^2-1)/2 distinct nonzero elements of F with the property
+that for each a <> 0 in F, exactly one of a and -a is in S.  Let N be
+the number of elements in the intersection of S with { 2a : a e S }.
+Prove that N is even.
+--
+
+==> competition/tests/math/putnam/putnam.1987.s <==
+Problem A-1
+------- ---
+
+Let z=x+i*y.  Then A and B are the real and imaginary parts of
+z^2=3i+1/z, and C, D are likewise Re and Im of z^3-3iz=1, and
+the two equations are plainly equivalent.  Alternatively, having
+seen this, we can formulate a solution that avoids explicitly
+invoking the complex numbers, starting with C=xA-yB, D=yA+xB.
+
+Problem A-2
+------- ---
+
+Counting, we see that the numbers from 1 to n digits take
+up (10^n*(9n-1)+1)/9 spaces in the above sequence.  Hence we need
+to find the least n for which 10^n*(9n-1)+1 > 9*10^1987, but it
+is easy to see that n = 1984 is the minimum such.  Therefore
+f(1987) = 1984.
+
+In general, I believe, f(n) = n + 1 - g(n), where g(n) equals
+the largest value of m such that (10^m-1)/9 + 1 =< n if n>1,
+and g(0) = g(1) is defined to be 0.
+
+Hence, of course, g(n) = [log(9n-8)] if n>0.  Therefore
+
+
+		f(0) = 1,
+
+		f(n) = n + 1 - [log(9n-8)] for n>0.
+Q.E.D.
+
+
+Problem A-3
+------- ---
+
+We have a differential equation, solve it.  The general solution is
+
+		y = f(x) = e^x*(x^2 + a*x + b),
+
+where a and b are arbitrary real constants.  Now use completing the
+square and the fact that e^x > 0 for all real x to deduce that
+
+
+	(1)  f(x) > 0 for all real x iff 4b > a^2.
+
+	(2)  f'(x) > 0 for all real x iff 4b > a^2 + 4.
+
+
+It is now obvious that (2) ==> (1) but (1) /==> (2).
+
+Q.E.D.
+
+Problem A-4
+------- ---
+
+Setting x=0, u=1 we find F(y,z)=P(0,y,z) so F is a polynomial; keeping
+x=0 but varying u we find F(uy,uz)=u^2*F(y,z), so F is homogeneous of
+degree 2, i.e. of the form Ay^2+Byz+Cz^2, so
+        P(x,y,z)=R(y-x)^2+S(y-x)(z-x)+T(z-x)^2
+for some real R,S,T.  The three given values of P now specify three
+linear equations on R,S,T, easily solved to give (A,B,C)=(5,-7,6).
+If now P(A,B,C)=0 then (C-A)=r(B-A), r one of the two roots of
+5-7r+6r^2.  This quadratic has negative discrminant (=-71) so its
+roots are complex conjugates; since their product is 5/6, each
+one has absolute value sqrt(5/6).  (Yes, you can also use the
+Quadratic Equation.)  So if B-A has absolute value 10, C-A must
+have absolute value 10*sqrt(5/6)=5*sqrt(30)/3.
+
+Problem A-5
+------- ---
+
+There is no such F.  Proof: assume on the contrary that G extends
+to a curl-free vector field on R^3-{0}.  Then the integral of G
+around any closed path in R^3-{0} vanishes because such a path
+bounds some surface [algebraic topologists, read: because
+H^2(R^3-{0},Z)=0 :-) ].  But we easily see that the integral 
+of F around the closed path z=0, x^2+4y^2=1 (any closed path
+in the xy-plane that goes around the origin will do) is nonzero---
+contradiction.
+
+Problem A-6
+------- ---
+
+For n>0 let
+
+T(n) = x^a(n)/n^3	and 	U(n) = T(3n) + T(3n+1) + T(3n+2)
+
+and for k>=0 let
+
+Z(k) = sum {n=3^k to 3^(k+1)-1} T(n)
+
+We have
+
+Z(k+1)	= sum {n=3^(k+1) to 3^(k+2)-1} T(n)
+	= sum {n=3^k to 3^(k+1)-1} [T(3n) + T(3n+1) + T(3n+2)]
+	= sum {n=3^k to 3^(k+1)-1} U(n)
+
+Let us compare U(n) to T(n). We have a(3n)=a(n)+1 and a(3n+1)=a(3n+2)=a(n).
+Thus
+
+U(n) = x^[a(n)+1]/(3n)^3 + x^a(n)/(3n+1)^3 + x^a(n)/(3n+2)^3
+
+and so U(n) has as upper bound
+
+x^a(n) * (x+2)/(3n)^3 = T(n) * (x+2)/27
+
+and as lower bound
+
+x^a(n) * (x+2)/(3n+2)^3 = T(n) * (x+2)/(3+2/n)^3
+
+in other words U(n) = T(n) * (x+2)/(27+e(n)), where e(n)<(3+2/n)^3-27 tends to
+0 when n tends to infinity. It follows then that
+
+Z(k+1)= Z(k)*(x+2)/(27+f(k))
+
+where f(k)<(3+2/3^k)^3-27 tends to 0 for n tending to infinity.
+
+Now the series is the sum of all Z(k). Thus for x>25 we have Z(k+1)>Z(k) for k
+large enough, and the series diverges; for x<25 we have Z(k+1)< r * Z(k) (with
+r=(x+2)/27<1) for every k, and the series converges. For x=25 the series
+diverges too (I think so), because Z(k+1)/Z(k) tends to 1 for k tending to
+infinity.
+
+Another proof:
+
+I would say,for x<25.  Let S(m) be the sum above taken over 3^m <= n < 3^(m+1).
+Then for the n's in S(m), the base 3 representation of n has m+1 digits.
+Hence we can count the number of n's with a(n)=k as being the number
+of ways to choose a leading nonzero digit, times the number of ways
+to choose k positions out of the m other digits for the k zeroes, times
+the number of ways to choose nonzero digits for the m-k remaining positions,
+namely
+
+  ( m )  m-k
+2 (   ) 2   .
+  ( k )
+
+Hence we have
+
+3^(m+1)-1                m
+-----                  -----
+\            a(n)      \        ( m )  m-k k
+ >          x      =    >     2 (   ) 2   x
+/                      /        ( k )
+-----                  -----
+n=3^m                   k=0
+
+                            m
+                   = 2 (x+2)  .
+                                       m  -3m             m -3(m+1)
+Hence we can bound S(m) between 2 (x+2)  3     and 2 (x+2) 3       .
+It is then clear that the original sum converges just when
+
+ inf
+-----
+\           m -3m
+ >     (x+2) 3                converges, or when x<25.
+/       
+-----
+ m=0
+
+Problem B-1
+------- ---
+
+Write the integrand as
+
+		             (ln(x+3))^(1/2)
+		1 - --------------------------------- .
+		    (ln(9-x))^(1/2) + (ln(x+3))^(1/2)
+
+Use the change of variables x = 6-t on the above and the fact that
+the two are equal to deduce that the original is equal to 1.
+
+QED.
+
+Problem B-3
+------- ---
+
+First note that the above values for x and y imply that
+x^2 + y^2 = 1.  On the other foot note that if x<>1 ,x^2 + y^2 = 1,
+and 2 <> 0, then (x,y) is of the required form, with r = y/(1-x).
+Also note that r^2 <> -1, since this would imply x = 1.
+
+Derivation of r:  We want x = (r^2-1)/(r^2+1) ==> 1-x = 2/(r^2+1),
+and also y = 2r/(r^2+1) ==> 1-x = (2y)/(2r) if 2<>0.  Hence if
+2<>0, r = y/(1-x).
+
+The above statement is false in some cases if 1+1 = 0 in F.  For
+example, in Z(2) the solution (0,1) is not represented.
+
+QED.
+
+Problem B-4
+------- ---
+
+Observe that the vector (x(n+1), y(n+1)) is obtained from (x(n), y(n))
+by a rotation through an angle of y(n).  So if Theta(n) is the inclination
+of (x(n), y(n)), then for all n,
+
+	Theta(n+1) = Theta(n) + y(n)
+
+Furthermore, all vectors have the same length, namely that of (x1, y1),
+which is 1.  Therefore y(n) = sin (Theta(n)) and x(n) = cos (Theta(n)).
+
+Thus the recursion formula becomes
+
+(*)	Theta(n+1) = Theta(n) + sin (Theta(n))
+
+Now 0 < Theta(1) < pi.  By induction 0 < sin(Theta(n)) = sin(pi - Theta(n))
+< pi - Theta(n), so 0 < Theta(n+1) < Theta(n) + (pi - Theta(n)) = pi.
+
+Consequently, {Theta(n)} is an increasing sequence bounded above by pi, so
+it has a limit, Theta.  From (*) we get Theta = Theta + sin(Theta),
+so with Theta in the interval (0,pi], the solution is Theta = pi.
+
+Thus lim (x(n),y(n)) = (cos(Theta), sin(Theta)) = (-1, 0).
+
+Problem B-5
+------- ---
+
+First note that M has rank n, else its left nullspace N has C-dimension >n
+and so R-dimension >2n, and thus nontrivially intersects the R-codimension
+2n subspace of vectors all of whose coordinates are real.  Thus the
+subspace V of C^(2n) spanned by M's columns has C-dimsension n and so
+R-dimension 2n, and to prove the R-linear map Re: V-->R^(2n) surjective,
+we need only prove it injective.  So assume on the contrary that v is
+a nonzero vector in V all of whose coordinates are purely imaginary,
+and let W be the orthogonal complement of <v>; this is a subspace of
+C^(2n) of C-dim. 2n-1 and R-dim. 4n-2 .  W contains N,
+which we've seen has R-dimension 2n; it also contains the
+orthogonal complement of <i*v> in R^(2n), which has R-dimension 2n-1.
+Since (2n)+(2n-1) > (4n-2), these two real subspaces of W intersect
+nontrivially, producing a nonzero real vector in N---contradiction.
+So Re: V-->R^(2n) indeed has zero kernel and cokernel, Q.E.D. .
+
+Problem B-6
+------- ---
+
+Let P be the product of elements of S; then P'=2^|S|*P, the product of
+the elements of 2S, is either P or -P according to whether |2S-S| is
+even or odd.  (each element of 2S is either in S or in -S, so match
+the factors in the products for P and P'.)  But by Fermat's little
+theorem, 2^(p-1)=1, and since |S|=(p^2-1)/2=(p-1)*(p+1)/2 is a multiple
+of p-1, also 2^|S|=1 and P=P', Q.E.D. .
+
+This solution--analogous to one of Gauss' proof of Quadratic
+Reciprocity--is undoubtedly what the proposers had in mind, and had
+it been the only solution, B-6 would be a difficult problem on a par
+with B-6 problems of previous years.  Unfortunately, just knowing
+that F* is a cyclic group of order |F|-1 for any finite field F,
+one can split F* into cosets of the subgroup generated by 2 and -1
+and produce a straightforward, albeit plodding and uninspired, proof.
+I wonder how many of the contestants' answers to B-6 went this way
+and how many found the intended solution.
+
+Another proof:
+
+Given such a set S, it is immediate to verify that for any a in S, if
+one deletes a and adjoins -a to obtain a new set S' then the number
+of elements in the intersection of S' and 2S' is congruent (modulo 2)
+to the number of elements in the intersection of S and 2S.  If S and
+S' are any two sets meeting the condition of this problem, then S can
+be changed to S' by repeating this operation several times.  So, it
+suffices to prove the result for any one set S meeting the condition of
+the problem.  A simple candidate for such an S is obtained by letting
+(u, v) be a basis for F over the field of p elements and letting S
+be the unions of the sets {au + bv: 1 <= u <= (p-1)/2, 0 <= b < p} and
+{bv: 0 <= b < (p-1)/2}.  An elementary counting argument completes the
+proof.
+
+==> competition/tests/math/putnam/putnam.1988.p <==
+Problem A-1: Let R be the region consisting of the points (x,y) of the
+cartesian plane satisfying both |x| - |y| <= 1 and |y| <= 1.  Sketch
+the region R and find its area.
+
+Problem A-2: A not uncommon calculus mistake is to believe that the
+product rule for derivatives says that (fg)' = f'g'.  If f(x) =
+exp(x^2), determine, with proof, whether there exists an open interval
+(a,b) and a non-zero function g defined on (a,b) such that the wrong
+product rule is true for x in (a,b).
+
+Problem A-3: Determine, with proof, the set of real numbers x for
+which  sum from n=1 to infinity of ((1/n)csc(1/n) - 1)^x  converges.
+
+Problem A-4:
+(a) If every point on the plane is painted one of three colors, do
+there necessarily exist two points of the same color exactly one inch
+apart?
+(b) What if "three" is replaced by "nine"?
+Justify your answers.
+
+Problem A-5: Prove that there exists a *unique* function f from the
+set R+ of positive real numbers to R+ such that
+	f(f(x)) = 6x - f(x)  and  f(x) > 0  for all x > 0.
+
+Problem A-6: If a linear transformation A on an n-dimensional vector
+space has n + 1 eigenvectors such that any n of them are linearly
+independent, does it follow that A is a scalar multiple of the
+identity?  Prove your answer.
+
+---------------------------------------------------------------------------
+
+Problem B-1: A *composite* (positive integer) is a product ab with a
+and b not necessarily distinct integers in {2,3,4,...}.  Show that
+every composite is expressible as xy + xz + yz + 1, with x, y, and z
+positive integers.
+
+Problem B-2: Prove or disprove: If x and y are real numbers with y >= 0
+and y(y+1) <= (x+1)^2, then y(y-1) <= x^2.
+
+Problem B-3: For every n in the set Z+ = {1,2,...} of positive
+integers, let r(n) be the minimum value of |c-d sqrt(3)| for all
+nonnegative integers c and d with c + d = n.  Find, with proof, the
+smallest positive real number g with r(n) <= g for all n in Z+.
+
+Problem B-4: Prove that if  sum from n=1 to infinity a(n)  is a
+convergent series of positive real numbers, then so is
+sum from n=1 to infinity (a(n))^(n/(n+1)).
+
+Problem B-5: For positive integers n, let M(n) be the 2n + 1 by 2n + 1
+skew-symmetric matrix for which each entry in the first n subdiagonals
+below the main diagonal is 1 and each of the remaining entries below
+the main diagonal is -1.  Find, with proof, the rank of M(n).
+(According to the definition the rank of a matrix is the largest k
+such that there is a k x k submatrix with non-zero determinant.)
+
+One may note that M(1) = (  0 -1  1 ) and M(2) = (  0 -1 -1  1  1 )
+                         (  1  0 -1 )            (  1  0 -1 -1  1 )
+                         ( -1  1  0 )            (  1  1  0 -1 -1 )
+                                                 ( -1  1  1  0 -1 )
+                                                 ( -1 -1  1  1  0 )
+
+Problem B-6: Prove that there exist an infinite number of ordered
+pairs (a,b) of integers such that for every positive integer t the
+number at + b is a triangular number if and only if t is a triangular
+number.  (The triangular numbers are the t(n) = n(n + 1)/2 with n in
+{0,1,2,...}.)
+
+==> competition/tests/math/putnam/putnam.1988.s <==
+%
+%  Layout
+%
+\def\layout{\hsize 150truemm  % 210mm - 1in * 2 for margins
+                \vsize 246truemm  % 297mm - 1in * 2 for margins
+                \advance \vsize by -24 pt
+                \topskip=10pt plus 1 pt}
+\magnification=1200
+\layout
+\parindent=0pt
+\parskip=\medskipamount
+\newdimen\digitindent \digitindent=16truemm
+\newdimen\solindent \solindent=24truemm
+\newdimen\problemskip\newdimen\subproblemskip
+\problemskip=\bigskipamount \subproblemskip=\medskipamount
+\hoffset=\digitindent
+\def\problem #1 { \vskip \problemskip\hskip-\digitindent\hbox to\digitindent
+                  {\bf #1\hfill}\ignorespaces}
+\def\solution #1 { \vskip \problemskip\hskip-\solindent\hbox to\solindent
+                  {\bf #1\hfill}\ignorespaces}
+\def\notes #1 { \vskip \problemskip\hskip-\solindent\hbox to\solindent
+                  {\bf #1\hfill}\ignorespaces}
+\def\subproblem #1 {\vskip \subproblemskip\hskip-\digitindent
+                     \hbox to\digitindent{\hfill{\bf #1}\hfill}\ignorespaces}
+\def\endpage {\vfill\supereject\dosupereject}
+\headline={\headlinemacro}
+\footline={\hfil}
+\def\activeheadline{\hglue -\digitindent
+                     Chris Long, Rutgers University \hfill January 22, 1989}
+\let\headlinemacro=\activeheadline
+\advance \baselineskip by 6pt
+%
+% Aliases
+%
+\def\streck{\hbox {\vbox {\vfill \hrule width 0.5pt height 6pt \vskip 0.7pt}}}
+\def\C{\hbox{\hskip 1.5pt \streck \hskip -3.2pt {\rm C}}}
+\def\Q{\hbox{ \streck \hskip -3pt {\rm Q}}}
+\def\negativethinspace{\mskip-\thinmuskip}
+\def\R{\hbox{$\rm I \negativethinspace R $}}
+\def\Z{\hbox{$\rm Z \negativethinspace  \negativethinspace Z $}}
+\def\N{\hbox{$\rm I \negativethinspace N $}}
+\def\H{\hbox{$\rm I \negativethinspace H $}}
+\def\adj{\rm adj}
+\def\det{\rm det}
+\def\Matrix#1{\left\lgroup\matrix{#1}\rgroup\right}
+\def\mod #1 {({\rm mod~}#1)}
+\def\Mod #1 {\ ({\rm mod~}#1)}
+\def\ceil#1{\lceil #1 \rceil}
+\def\floor#1{\lfloor #1 \rfloor}
+%
+%  Body of article
+%
+\problem {A-1:}
+Let $R$ be the region consisting of the points $(x,y)$ of the cartesian
+plane satisfying both $|x| - |y| \le 1$ and $|y| \le 1$.  Sketch the
+region $R$ and find its area.
+
+\solution {Solution:}
+The area is $6$; the graph I leave to the reader.
+
+\problem {A-2:}
+A not uncommon calculus mistake is to believe that the product rule for
+derivatives says that $(fg)' = f'g'$.  If $f(x) = e^{x^{2}}$, determine,
+with proof, whether there exists an open interval $(a,b)$ and a non-zero
+function $g$ defined on $(a,b)$ such that the wrong product rule
+is true for $x$ in $(a,b)$.
+
+\solution {Solution:}
+We find all such functions.  Note that $(fg)' = f'g' \Rightarrow f'g'
+= f'g + fg'$ hence if $g(x), f'(x) - f(x) \neq 0$ we get that $g'(x)/g(x)
+= f'(x)/(f'(x) - f(x))$.  For the particular $f$ given, we then get that
+$g'(x)/g(x) = (2x)e^{x^2}/( (2x-1) (e^{x^2}) ) \Rightarrow g'(x)/g(x) =
+2x/(2x-1)$ (since $e^{x^2} > 0$).  Integrating, we deduce that $\ln{|g(x)|}
+= x + (1/2)\ln{|2x-1|} + c$ (an arbitrary constant) $\Rightarrow |g(x)|
+= e^{c} \sqrt{|2x-1|} e^{x} \Rightarrow g(x) = C \sqrt{|2x-1|} e^{x}, C$
+arbitrary $\neq 0$.  We finish by noting that any $g(x)$ so defined is
+differentiable on any open interval that does not contain $1/2$.
+
+Q.E.D.
+
+\problem {A-3:}
+Determine, with proof, the set of real numbers $x$ for which
+$\sum_{n=1}^{\infty} {( {1\over n} \csc ({1\over n}) - 1)}^{x}$
+converges.
+
+\solution {Solution:}
+The answer is $x > {1\over 2}$.  To see this, note that by Taylor's
+theorem with remainder $\sin( {1\over{n}} ) = \sum_{i=1}^{k-1}
+{ {(-1)}^{i-1} {n}^{-(2i+1)} } + c { {(-1)}^{k-1} {n}^{-(2k+1)} }$,
+where $0 \leq c \leq {1\over n}$.  Hence for $n\geq 1 ( 1/n )/( 1/n -
+1/(3! n^{3}) + 1/(5! n^{5}) - 1 < (1/n) \csc(1/n) - 1 < ( 1/n )/( 1/n
+- 1/(3! n^{3}) ) - 1 \Rightarrow$ for $n$ large enough, $ (1/2) 1/(3! n^{2})
+< (1/n) \csc(1/n) - 1 < 2\cdot 1/(3! n^{2})$.  Applying the p-test and the
+comparison test, we see that $\sum_{n=1}^{\infty} {( {1\over n}
+\csc({1\over n}) - 1)}^{x}$ converges iff $x > {1\over 2}$.
+
+Q.E.D.
+
+\problem {A-4:}
+Justify your answers.
+
+\subproblem {(a)}
+If every point on the plane is painted one of three colors, do there
+necessarily exist two points of the same color exactly one inch apart?
+
+\solution {Solution:}
+The answer is yes.  Assume not and consider two equilateral
+triangles with side one that have exactly one common face $\Rightarrow$
+all points a distance of $\sqrt{3}$ apart are the same color; now
+considering a triangle with sides $\sqrt{3}, \sqrt{3}, 1$ we reach the
+desired contradiction.
+
+Here is a pretty good list of references for the chromatic number of
+the plane (i.e., how many colors do you need so that no two points 1
+away are the same color) up to around 1982 (though the publication
+dates are up to 1985). This asks for the chromatic number of the graph
+where two points in R^2 are connected if they are distance 1 apart.
+Let this chromatic number be chi(2) and in general let chi(n) be the
+chromatic number of R^n. By a theorem in [2] this is equivalent to
+finding what the maximum chromatic number of a finite subgraph of this
+infinite graph is.
+
+[1]  H. Hadwiger, ``Ein Ueberdeckungssatz f\"ur den 
+      Euklidischen Raum,'' Portugal. Math. #4 (1944), p.140-144
+
+      This seems to be the original reference for the problem
+
+[2] N.G. de Bruijn and P. Erd\"os, ``A Color Problem for Infinite
+    Graphs and a Problem in the Theory of Relations,'' Nederl. Akad.
+    Wetensch. (Indag Math) #13 (1951), p. 371-373.
+
+[3] H. Hadwiger, ``Ungel\"oste Probleme No. 40,'' Elemente der Math.
+    #16 (1961), p. 103-104.
+
+    Gives the upper bound of 7 with the hexagonal tiling and also
+    a reference to a Portugese journal where it appeared.
+
+[4] L. Moser and W. Moser, ``Solution to Problem 10,'' Canad. Math.
+    Bull. #4 (1961), p. 187-189.
+
+    Shows that any 6 points in the plane only need 3 colors but
+    gives 7 points that require 4 (``the  Moser Graph'' see [7]).
+
+[5] Paul Erd\"os, Frank Harary, and William T. Tutte, ``On the 
+    Dimension of a Graph,'' Mathematika #12 (1965), p. 118-122.
+
+    States that 3<chi(2)<8. Proves that chi(n) is finite for all n.
+
+[6] P. Erd\"os, ``Problems and Results in Combinatorial Geometry,''
+    in ``Discrete Geometry and Convexity,'' Edited by Jacob E. Goodman,
+    Erwin Lutwak, Joseph Malkevitch, and Richard Pollack, Annals of
+    the New York Academy of Sciences Vol. 440, New York Academy of 
+    Sciences 1985, Pages 1-11.
+ 
+    States that 3<chi(n)<8 and ``I am almost sure that chi(2)>4.''
+    States a question of L. Moser: Let R be large and S a measurable
+    set in the circle of radius R so that no two points of S have
+    distance 1. Denote by m(S) the measure of S. Determine
+
+           Lim_{R => infty} max m(S)/R^2.
+
+    Erd\"os conjectures that this limit is less than 1/4.
+
+    Erd\"os asks the following: ``Let S be a subset of the plane. Join
+    two points of S if their distances is 1. This gives a graph G(S).
+    Assume that the girth (shortest circuit) of G(S) is k. Can its
+    chromatic number be greater than 3? Wormald proved that such 
+    a graph exists for k<6. The problem is open for k>5. Wormald
+    suggested that this method may work for k=6, but probably a 
+    new idea is needed for k>6. A related (perhaps identical)
+    question is: `Does G(S) have a subgraph that has girth k and
+    chromatic number 4?' ''
+
+[7] N. Wormald, ``A 4-chromatic graph with a special plane drawing,''
+    J. Austr.  Math. Soc. Ser. A #28 (1970), p. 1-8.
+
+    The reference for the above question.
+
+[8] R.L. Graham, ``Old and New Euclidean Ramsey Theorems,''
+    in ``Discrete Geometry and Convexity,'' Edited by Jacob E. Goodman,
+    Erwin Lutwak, Joseph Malkevitch, and Richard Pollack, Annals of
+    the New York Academy of Sciences Vol. 440, New York Academy of 
+    Sciences 1985, Pages 20-30.
+
+    States that the best current bounds are 3<chi(2)<8. Calls the
+    graph in [3] the Moser graph. Quotes the result of Frankl and 
+    Wilson [8] that chi(n) grows exponentially in n settling an 
+    earlier conjecture of Erd\"os (I don't know the reference for 
+    this). The best available bounds for this are
+
+    (1+ o(1)) (1.2)^n \le chi(n) \le (3+ o(1))^n.
+
+[9] P. Frankl and R.M. Wilson, ``Intersection Theorems with Geometric
+    Consequences,'' Combinatorica #1 (1981), p. 357-368.
+
+[10]  H. Hadwiger, H. Debrunner, and V.L. Klee, ``Combinatorial
+      Geometry in the Plane,'' Holt, Rinehart & Winston, New York
+      (English edition, 1964).
+
+[11]  D.R. Woodall, ``Distances Realized by Sets Covering the Plane,''
+      Journal of Combinatorial Theory (A) #14 (1973), p. 187-200.
+
+      Among other things, shows that rational points in the plane can
+      be two colored.
+
+[12]  L. A. Sz\'ekely, ``Measurable Chromatic Number of Geometric
+      Graphs and Sets without some Distances in Euclidean Space,''
+      Combinatorica #4 (1984), p.213-218.
+
+      Considers \chi_m(R^2), the measurable chromatic number,
+      where sets of one color must be Lebesgue measurable. 
+      He conjectures that \chi_m(R^2) is not equal to 
+      \chi(R^2) (if the Axiom of Choice is false).
+
+[13]  Martin Gardner, ``Scientific American,'' October 1960, p. 160.
+
+[14]  Martin Gardner, ``Wheels, Life and other Mathematical Amusements,''
+      W.H. Freeman and Co., New York 1983, pages 195-196.
+
+      This occurs in a chapter on mathematical problems including
+      the 3x+1 problem. I think that his references are wrong, including
+      attributing the problem to Erd\"os and claiming that Charles Trigg
+      had original solutions in ``Problem 133,'' Crux Mathematicorum,
+      Vol. 2, 1976, pages 144-150.
+
+Q.E.D.
+
+\subproblem {(b)}
+What if "three" is replaced by "nine"?
+
+In this case, there does not necessarily exist two points of the same
+color exactly one inch apart; this can be demonstrated by considering
+a tessellation of the plane by a $3\times 3$ checkboard with side $2$,
+with each component square a different color (color of boundary points
+chosen in an obvious manner).
+
+Q.E.D.
+
+The length of the side of the checkerboard is not critical (the reader
+my enjoy showing that $3/2 <$ side $< 3\sqrt{2}/2$ works).
+
+\problem {A-5:}
+Prove that there exists a {\it unique} function $f$ from the set
+${\R}^{+}$ of positive real numbers to ${\R}^{+}$ such that $f(f(x))
+= 6x - f(x)$ and $f(x) > 0$ for all $x > 0$.
+
+\solution {Solution 1:}
+
+Clearly $f(x) = 2x$ is one such solution; we need to show that it is the
+{\it only} solution.  Let $f^{1}(x) = f(x), f^{n}(x) = f(f^{n-1}(x))$ and
+notice that $f^{n}(x)$ is defined for all $x>0$.  An easy induction
+establishes that for $n>0 f^{n}(x) = a_{n} x + b_{n} f(x)$, where $a_{0}
+= 0, b_{0} = 1$ and $a_{n+1} = 6 b_{n}, b_{n+1} = a_{n} - b_{n}
+\Rightarrow b_{n+1} = 6 b_{n-1} - b_{n}$.  Solving this latter equation
+in the standard manner, we deduce that $\lim_{n\to \infty} a_{n}/b_{n}
+= -2$, and since we have that $f^{n}(x) > 0$ and since $b_{n}$ is
+alternately negative and positive; we conclude that $2x \leq f(x) \leq 2x$
+by letting $n \rightarrow \infty$.
+
+Q.E.D.
+
+\solution {Solution 2:}
+(Dan Bernstein, Princeton)
+
+As before, $f(x) = 2x$ works.  We must show that if $f(x) = 2x + g(x)$
+and $f$ satisfies the conditions then $g(x) = 0$ on ${\R}^{+}$.
+Now $f(f(x)) = 6x - f(x)$ means that $2f(x) + g(f(x)) = 6x - 2x - g(x)$,
+i.e., $4x + 2g(x) + g(f(x)) = 4x - g(x)$, i.e., $3g(x) + g(f(x)) = 0$.
+This then implies $g(f(f(x))) = 9g(x)$.  Also note that $f(x) > 0$
+implies $g(x) > -2x$.  Suppose $g(x)$ is not $0$ everywhere.  Pick $y$
+at which $g(y) \neq 0$.  If $g(y) > 0$, observe $g(f(y)) = -3g(y) < 0$,
+so in any case there is a $y_{0}$ with $g(y_{0}) < 0$.  Now define $y_{1}
+= f(f(y_{0})), y_{2} = f(f(y_{1}))$, etc.  We know $g(y_{n+1})$ equals
+$g(f(f(y_{n}))) = 9g(y_{n})$.  But $y(n+1) = f(f(y_{n})) = 6y_{n} -
+f(y_{n}) < 6y_{n}$ since $f>0$.  Hence for each $n$ there exists
+$y_{n} < 6^{n} y_{0}$ such that $g(y_{n}) = 9^{n} g(y_{0})$.
+The rest is obvious: $0 > g(y_{0}) = 9^{-n} g(y_{n}) > -2\cdot 9^{-n}
+y_{n} > -2 (6/9)^{n} y_{0}$, and we observe that as $n$ goes to infinity
+we have a contradiction.
+
+Q.E.D.
+
+\problem {A-6:}
+If a linear transformation $A$ on an $n$-dimensional vector space has
+$n+1$ eigenvectors such that any $n$ of them are linearly independent,
+does it follow that $A$ is a scalar multiple of the identity?  Prove your
+answer.
+
+\solution {Solution:}
+The answer is yes.  First note that if $x_{1}, \ldots, x_{n+1}$ are the
+eigenvectors, then we must have that $a_{n+1} x_{n+1} = a_{1} x_{1}
++ \cdots + a_{n} x_{n}$ for some non-zero scalars $a_{1}, \ldots, a_{n+1}$.
+Multiplying by $A$ on the left we see that $\lambda_{n+1} a_{n+1} x_{n+1}
+= \lambda_{1} a_{1} x_{1} + \cdots + \lambda_{n} a_{n} x_{n}$, where
+$\lambda_{i}$ is the eigenvalue corresponding to the eigenvectors $x_{i}$.
+But since we also have that $\lambda_{n+1} a_{n+1} x_{n+1} = \lambda_{n+1}
+a_{1} x_{1} + \cdots + \lambda_{n+1} a_{n} x_{n}$ we conclude that
+$\lambda_{1} a_{1} x_{1} + \cdots + \lambda_{n} a_{n} x_{n} = \lambda_{n+1}
+ a_{1} x_{1} + \cdots + \lambda_{n+1} a_{n} x_{n} \Rightarrow a_{1}
+(\lambda_{1} - \lambda_{n+1}) x_{1} + \cdots + a_{n} (\lambda_{n} -
+\lambda_{n+1}) x_{1} = 0 \Rightarrow \lambda_{1} = \cdots = \lambda_{n+1}
+= \lambda$ since $x_{1}, \ldots, x_{n}$ are linearly independent.  To
+finish, note that the dimension of the eigenspace of $\lambda$ is equal
+to $n$, and since this equals the dimension of the nullspace of $A -
+\lambda I$ we conclude that the rank of $A - \lambda I$ equals $n - n =
+0 \Rightarrow A - \lambda I = 0$.
+
+Q.E.D.
+
+\problem {B-1:}
+A {\it composite} (positive integer) is a product $ab$ with $a$ and $b$
+not necessarily distinct integers in $\{ 2,3,4,\ldots \}$.  Show that
+every composite is expressible as $xy + xz + yz + 1$, with $x, y$, and
+$z$ positive integers.
+
+\solution {Solution:}
+Let $x = a-1, y = b-1, z = 1$; we then get that $xy + xz + yz + 1
+= (a-1)(b-1) + a-1 + b-1 + 1 = ab$.
+
+Q.E.D.
+
+\problem {B-2:}
+Prove or disprove:  If $x$ and $y$ are real numbers with $y \geq 0$
+and $y(y+1) \leq {(x+1)}^2$, then $y(y-1) \leq x^2$.
+
+\solution {Solution:}
+The statement is true.  If $x+1 \geq 0$ we have that $\sqrt{y(y+1)}
+- 1 \leq x \Rightarrow x^{2} \geq y^{2} + y + 1 - 2 \sqrt{y^{2}+y} \geq
+y^{2} - y$ since $2y + 1 \geq 2 \sqrt{y^{2}+y}$ since ${(2y + 1)}^{2}
+\geq 4 (y^{2}+y)$ if $y\geq 0$.  If $x+1 < 0$, we see that $\sqrt{y(y+1)}
+\leq -x - 1 \Rightarrow x^{2} \geq y^{2} + y + 1 + 2 \sqrt{y^{2}+y}
+\geq y^{2} - y$.
+
+Q.E.D.
+
+\problem {B-3:}
+For every $n$ in the set ${\Z}^{+} = \{ 1,2,\ldots \}$ of positive
+integers, let $r(n)$ be the minimum value of $|c-d \sqrt{3}|$ for all
+nonnegative integers $c$ and $d$ with $c + d = n$.  Find, with proof,
+the smallest positive real number $g$ with $r(n) \leq g$ for all $n$
+in ${\Z}^{+}$.
+
+\solution  {Solution:}
+The answer is $(1 + \sqrt{3})/2$.  We write $|c-d\sqrt{3}|$ as
+$|(n-d) - d\sqrt{3}|$; I claim that the minimum over all $d, 0 \leq d
+\leq n$, occurs when $d = e = \floor{n/(1+\sqrt{3})}$ or when $d = f =
+e+1 = \floor{n/(1+\sqrt{3})} + 1$.  To see this, note that $(n-e) - e
+\sqrt{3} > 0$ and if $e'<e$, then $(n-e') - e' \sqrt{3} > (n-e) - e
+\sqrt{3}$, and similarly for $f'>f$.  Now let $r = n/(1+\sqrt{3}) -
+\floor{n/(1+\sqrt{3})}$ and note that $|(n-e) - e \sqrt{3}| = r
+(1+\sqrt{3})$ and $|(n-f) - f \sqrt{3}| = (1-r) (1+\sqrt{3})$.  Clearly
+one of these will be $\leq (1+\sqrt{3})/2$.  To see that $(1+\leq{3})/2$
+cannot be lowered, note that since $1+\sqrt{3}$ is irrational, $r$ is
+uniformly distributed $\mod{1} $.
+
+Q.E.D.
+
+\notes {Notes:}
+We do not really need the result that $x$ irrational $\Rightarrow x n
+- \floor{x n}$ u. d. $\mod{1} $, it would suffice to show that $x$
+irrational $\Rightarrow x n - \floor{x n}$ is dense in $(0,1)$.  But
+this is obvious, since if $x$ is irrational there exists arbitrarily
+large $q$ such that there exists $p$ with $(p,q) = 1$ such that $p/q <
+x < (p+1)/q$.  The nifty thing about the u. d. result is that it answers
+the question:  what number $x$ should we choose such that the density
+of $\{ n : r(n) < x \}$ equals $t, 0 < t < 1$?  The u. d. result implies
+that the answer is $t (1+\sqrt{3})/2$.  The u. d. result also provides
+the key to the question:  what is the average value of $r(n)$?  The
+answer is $(1+\sqrt{3})/4$.
+
+\problem {B-4:}
+Prove that if $\sum_{n=1}^{\infty} a(n)$ is a convergent series of
+positive real numbers, then so is $\sum_{n=1}^{\infty} {(a(n))}^{n/(n+1)}$.
+
+\solution {Solution:}
+Note that the subseries of terms ${a(n)}^{n\over{n+1}}$ with
+${a(n)}^{1\over{n+1}} \leq {1\over 2}$ converges since then
+${a(n)}^{n\over{n+1}}$ is dominated by $1/2^{n}$, the subseries of
+terms ${a(n)}^{n\over{n+1}}$ with ${a(n)}^{1\over{n+1}} > {1\over 2}$
+converges since then ${a(n)}^{n\over{n+1}}$ is dominated by $2 a(n)$,
+hence $\sum_{n=1}^{\infty} {a(n)}^{n\over{n+1}}$ converges.
+
+Q.E.D.
+
+\problem {B-5:}
+For positive integers $n$, let $M(n)$ be the $2n + 1$ by $2n + 1$
+skew-symmetric matrix for which each entry in the first $n$ subdiagonals
+below the main diagonal is $1$ and each of the remaining entries below
+the main diagonal is $-1$.  Find, with proof, the rank of $M(n)$.
+(According to the definition the rank of a matrix is the largest $k$
+such that there is a $k \times k$ submatrix with non-zero determinant.)
+
+One may note that \break\hfill
+$M(1) = \left( \matrix{0&-1&1 \cr 1&0&-1
+\cr -1&1&0} \right)$ and $M(2) = \left( \matrix{0&-1&-1&1&1
+\cr 1&0&-1&-1&1 \cr 1&1&0&-1&-1 \cr -1&1&1&0&-1 \cr -1&-1&1&1&0}
+\right)$.
+
+\solution {Solution 1:}
+Since $M(n)$ is skew-symmetric, $M(n)$ is singular for all $n$, hence
+the rank can be at most $2n$.  To see that this is indeed the answer,
+consider the submatrix $M_{i}(n)$ obtained by deleting row $i$ and column
+$i$ from $M(n)$.  From the definition of the determinant we have that
+$\det(M_{i}(n)) = \sum {(-1)}^{\delta(k)} a_{1 k(1)} \cdots a_{(2n) k(2n)}$,
+where $k$ is member of $S_{2n}$ (the group of permutations on
+$\{1,\ldots,2n\}$) and $\delta(k)$ is $0$ if $k$ is an even permutation or
+$1$ if $k$ is an odd permutation.  Now note that ${(-1)}^{\delta(k)}
+a_{1 k(1)} \cdots a_{(2n) k(2n)}$ equals either $0$ or $\pm 1$, and is
+non-zero iff $k(i) \neq i$ for all $i$, i.e. iff $k$ has no fixed points.
+If we can now show that the set of all elements $k$ of $S_{2n}$, with
+$k(i) \neq i$ for all $i$, has odd order, we win since this would imply that
+$\det(M_{i}(n))$ is odd $\Rightarrow \det(M_{i}) \neq 0$.  To show this,
+let $f(n)$ equal the set of all elements $k$ of $S_n$ with $k(i) \neq
+i$ for all $i$.  We have that $f(1) = 0, f(2) = 1$ and we see that
+$f(n) = (n-1) ( f(n-1) + f(n-2) )$ by considering the possible values of
+$f(1)$ and whether or not $f(f(1)) = 1$; an easy induction now establishes
+that $f(2n)$ is odd for all $n$.
+
+Q.E.D.
+
+\notes {Notes:}
+In fact, it is a well-known result that $f(n) = n! ( 1/2! - 1/3! + \cdots
++ {(-1)}^{n}/n! )$.
+
+\solution {Solution 2:}
+As before, since $M(n)$ is skew-symmetric $M(n)$ is singular for all $n$
+and hence can have rank at most $2n$.  To see that this is the rank,
+let $M_{i}(n)$ be the submatrix obtained by deleting row $i$ and column
+$i$ from $M(n)$.  We finish by noting that ${M_{i}(n)}^{2} \equiv
+I_{2n} \Mod{2} $, hence $M_{i}(n)$ is nonsingular.
+
+Q.E.D.
+
+\problem {B-6:}
+Prove that there exist an infinite number of ordered pairs $(a,b)$ of
+integers such that for every positive integer $t$ the number $at + b$
+is a triangular number if and only if $t$ is a triangular number.
+(The triangular numbers are the $t(n) = n(n + 1)/2$ with $n$ in
+$ \{ 0,1,2,\ldots \}$ ).
+
+\solution {Solution:}
+Call a pair of integers $(a,b)$ a {\it triangular pair} if $at + b$
+is a triangular number iff $t$ is a triangular number.  I claim that
+$(9,1)$ is a triangular pair.  Note that $9 (n(n+1)/2) + 1 =
+(3n+1)(3n+2)/2$ hence $9t+1$ is triangular if $t$ is.  For the other
+direction, note that if $ 9t+1 = n(n+1)/2 \Rightarrow n = 3k+1$
+hence $ 9t+1 = n(n+1)/2 = 9(k(k+1)/2)+1 \Rightarrow t = k(k+1)/2$,
+therefore $t$ is triangular.  Now note that if $(a,b)$ is a triangular
+pair then so is $(a^{2},(a+1)b)$, hence we can generate an infinite
+number of triangular pairs starting with $(9,1)$.
+
+Q.E.D.
+
+\notes {Notes:}
+The following is a proof of necessary and sufficient conditions for $(a,b)$
+to be a triangular pair.
+
+I claim that $(a,b)$ is a triangular pair iff for some odd integer $o$
+we have that $a = o^{2}, b = (o^{2}-1)/8$.  I will first prove the
+direction $\Leftarrow$.  Assume we have $a = o^{2}, b = (o^{2}-1)/8$.
+If $t = n(n+1)/2$ is any triangular number, then the identity $o^{2}
+n(n+1)/2 + (o^{2}-1)/8 = (on + (o-1)/2) (on + (o+1)/2)/2$ shows that
+$at + b$ is also a triangular number.  On the other hand if $o^{2} t +
+(o^{2}-1)/8 = n(n+1)/2$, the above identity implies we win if we can show
+that $( n - (o-1)/2 )/o$ is an integer, but this is true since $o^{2} t +
+(o^{2}-1)/8 \equiv n(n+1)/2 \Mod{o^{2}} \Rightarrow 4n^{2} + 4n \equiv -1
+\Mod{o^{2}} \Rightarrow {(2n + 1)}^{2} \equiv 0 \Mod{o^{2}} \Rightarrow 2n + 1
+\equiv 0 \Mod{o} \Rightarrow n \equiv (o-1)/2 \Mod{o} $.  For the direction
+$\Rightarrow$ assume that $(a,b)$ and $(a,c), c\ge b$, are both triangular
+pairs; to see that $b = c$ notice that if $at + b$ is triangular for all
+triangular numbers $t$, then we can choose $t$ so large that if $c>b$ then
+$at + c$ falls between two consecutive triangular numbers; contradiction hence
+$b = c$.  Now assume that $(a,c)$ and $(b,c)$ are both triangular pairs;
+I claim that $a = b$.  But this is clear since if $(a,c)$ and $(b,c)$
+are triangular pairs $\Rightarrow (ab,bc+c)$ and $(ab,ac+c)$ are
+triangular pairs $\Rightarrow bc+c = ac+c$ by the above reasoning
+$\Rightarrow bc=ac \Rightarrow$ either $a=b$ or $c=0 \Rightarrow a=b$
+since $c=0 \Rightarrow a=b=1$.  For a proof of this last assertion,
+assume $(a,0), a>1$, is a triangular pair; to see that this gives a
+contradiction note that if $(a,0)$ is a triangular pair $\Rightarrow
+(a^{2},0)$ is also triangular pair, but this is impossible since then
+we must have that $a(a^{3}+1)/2$ is triangular (since $a^{2} a (a^{3}+1)/2$
+is triangular) but $(a^{2}-1)a^{2}/2 < a(a^{3}+1)/2 < a^{2}(a^{2}+1)/2$
+(if $a>1$).  We are now done, since if $(a,b)$ is a triangular pair
+$\Rightarrow a 0 + b = n(n+1)/2$ for some $n\geq 0 \Rightarrow b =
+({(2n+1)}^{2} - 1)/8$.
+
+Q.E.D.
+
+\bye
+
+==> competition/tests/math/putnam/putnam.1990.p <==
+Problem A-1
+How many primes among the positive integers, written as usual in base
+10, are such that their digits are alternating 1's and 0's, beginning
+and ending with 1?
+
+Problem A-2
+Evaluate \int_0^a \int_0^b \exp(\max{b^2 x^2, a^2 y^2}) dy dx where a and
+b are positive.
+
+Problem A-3
+Prove that if 11z^10 + 10iz^9 + 10iz - 11 = 0, then |z| = 1. (Here z is
+a complex number and i^2 = -1.)
+
+Problem A-4
+If \alpha is an irrational number, 0 < \alpha < 1, is there a finite
+game with an honest coin such that the probability of one player winning
+the game is \alpha? (An honest coin is one for which the probability of
+heads and the probability of tails are both 1/2. A game is finite if
+with probability 1 it must end in a finite number of moves.)
+
+Problem A-5
+Let m be a positive integer and let G be a regular (2m + 1)-gon
+inscribed in the unit circle. Show that there is a positive constant A,
+independent of m, with the following property. For any point p inside G
+there are two distinct vertices v_1 and v_2 of G such that
+                             1     A
+| |p - v_1| - |p - v_2| | < --- - ---.
+                             m    m^3
+Here |s - t| denotes the distance between the points s and t.
+
+Problem A-6
+Let \alpha = 1 + a_1 x + a_2 x^2 + ... be a formal power series with
+coefficients in the field of two elements. Let
+          / 1 if every block of zeros in the binary expansion of n
+	 /    has an even number of zeros in the block,
+  a_n = {
+	 \ 0 otherwise.
+(For example, a_36 = 1 because 36 = 100100_2 and a_20 = 0 because 20 =
+10100_2.) Prove that \alpha^3 + x \alpha + 1 = 0.
+
+Problem B-1
+A dart, thrown at random, hits a square target. Assuming that any two
+points of the target of equal area are equally likely to be hit, find
+the probability that the point hit is nearer to the center than to any
+edge. Express your answer in the form (a \sqrt(b) + c) / d, where a, b,
+c, d are integers.
+
+Problem B-2
+Let S be a non-empty set with an associative operation that is left and
+right cancellative (xy = xz implies y = z, and yx = zx implies y = z).
+Assume that for every a in S the set { a^n : n = 1, 2, 3, ... } is
+finite. Must S be a group?
+
+Problem B-3
+Let f be a function on [0,\infty), differentiable and satisfying
+  f'(x) = -3 f(x) + 6 f(2x)
+for x > 0. Assume that |f(x)| <= \exp(-\sqrt(x)) for x >= 0 (so that
+f(x) tends rapidly to 0 as x increases). For n a non-negative integer,
+define
+  \mu_n = \int_0^\infty x^n f(x) dx
+(sometimes called the nth moment of f).
+a. Express \mu_n in terms of \mu_0.
+b. Prove that the sequence { \mu_n 3^n / n! } always converges, and that
+   the limit is 0 only if \mu_0 = 0.
+
+Problem B-4
+Can a countably infinite set have an uncountable collection of non-empty
+subsets such that the intersection of any two of them is finite?
+
+Problem B-5
+Label the vertices of a trapezoid T (quadrilateral with two parallel
+sides) inscribed in the unit circle as A, B, C, D so that AB is parallel
+to CD and A, B, C, D are in counterclockwise order. Let s_1, s_2, and d
+denote the lengths of the line segments AB, CD, and OE, where E is the
+point of intersection of the diagonals of T, and O is the center of the
+circle. Determine the least upper bound of (s_1 - s_2) / d over all such
+T for which d \ne 0, and describe all cases, if any, in which it is
+attained.
+
+Problem B-6
+Let (x_1, x_2, ..., x_n) be a point chosen at random from the
+n-dimensional region defined by 0 < x_1 < x_2 < ... < x_n < 1.
+Let f be a continuous function on [0, 1] with f(1) = 0. Set x_0 = 0 and
+x_{n+1} = 1. Show that the expected value of the Riemann sum
+  \sum_{i = 0}^n (x_{i+1} - x_i) f(x_{i+1})
+is \int_0^1 f(t)P(t) dt, where P is a polynomial of degree n,
+independent of f, with 0 \le P(t) \le 1 for 0 \le t \le 1.
+
+==> competition/tests/math/putnam/putnam.1990.s <==
+Problem A-1
+How many primes among the positive integers, written as usual in base
+10, are such that their digits are alternating 1's and 0's, beginning
+and ending with 1?
+
+Solution:
+Exactly one, namely 101. 1 is not prime; 101 is prime. The sum
+100^n + 100^{n - 1} + ... + 1 is divisible by 101 if n is odd,
+10^n + 10^{n - 1} + ... + 1 if n is even. (To see the second part,
+think about 101010101 = 102030201 - 1020100 = 10101^2 - 1010^2.)
+
+Problem A-2
+Evaluate \int_0^a \int_0^b \exp(\max{b^2 x^2, a^2 y^2}) dy dx where a and
+b are positive.
+
+Solution:
+Split the inner integral according to the max{}. The easy term becomes
+an integral of t e^{t^2}. The other term becomes an easy term after you
+switch the order of integration. Your answer should have an e^{(ab)^2}.
+
+Problem A-3
+Prove that if 11z^10 + 10iz^9 + 10iz - 11 = 0, then |z| = 1. (Here z is
+a complex number and i^2 = -1.)
+
+Solution:
+z is not zero, so divide by z^5 to make things a bit more symmetric.
+Now write z = e^{i \theta} and watch the formula dissolve into a simple
+trigonometric sum. The 11 sin 5 \theta term dominates the sum when that
+sine is at its maximum; by this and similar considerations, just *write
+down* enough maxima and minima of the function that it must have ten
+real roots for \theta. (This cute solution is due to Melvin Hausner,
+an NYU math professor.)
+
+Problem A-4
+If \alpha is an irrational number, 0 < \alpha < 1, is there a finite
+game with an honest coin such that the probability of one player winning
+the game is \alpha? (An honest coin is one for which the probability of
+heads and the probability of tails are both 1/2. A game is finite if
+with probability 1 it must end in a finite number of moves.)
+
+Solution:
+Yes. Write \alpha in binary---there's no ambiguity since it's irrational.
+At the nth step (n >= 0), flip the coin. If it comes up heads, go to the
+next step. If it comes up tails, you win if the nth bit of \alpha is 1.
+Otherwise you lose. The probability of continuing forever is zero. The
+probability of winning is \alpha.
+
+This problem could have been better stated. Repeated flips of the coin
+must produce independent results. The note that ``finite'' means only
+``finite with probability 1'' is hidden inside parentheses, even though
+it is crucial to the result. In any case, this problem is not very
+original: I know I've seen similar problems many times, and no serious
+student of probability can take more than ten minutes on the question.
+
+Problem A-5
+Let m be a positive integer and let G be a regular (2m + 1)-gon
+inscribed in the unit circle. Show that there is a positive constant A,
+independent of m, with the following property. For any point p inside G
+there are two distinct vertices v_1 and v_2 of G such that
+                             1     A
+| |p - v_1| - |p - v_2| | < --- - ---.
+                             m    m^3
+Here |s - t| denotes the distance between the points s and t.
+
+Solution:
+Place G at the usual roots of unity. Without loss of generality assume
+that p = re^{i\theta} is as close to 1 as to any other vertex; in other
+words, assume |\theta| <= 2\pi / (4m + 2) = \pi / (2m + 1). Now take the
+distance between p and the two farthest (not closest!) vertices. Make
+sure to write | |X| - |Y| | as the ratio of | |X|^2 - |Y|^2 | to |X| + |Y|.
+I may have miscalculated, but I get a final result inversely proportional 
+to (4m + 2)^2, from which the given inequality follows easily with, say,
+A = 0.01.
+
+Alternate solution:
+The maximum distance between p and a point of G is achieved between two
+almost-opposite corners, with a distance squared of double 1 + \cos\theta
+for an appropriately small \theta, or something smaller than 2 - A/m^2
+for an appropriate A. Now consider the set of distances between p and
+the vertices; this set is 2m + 1 values >= 0 and < 2 - A/m^2, so that
+there are two values at distance less than 1/m - A/m^3 as desired.
+
+Problem A-6
+Let \alpha = 1 + a_1 x + a_2 x^2 + ... be a formal power series with
+coefficients in the field of two elements. Let
+          / 1 if every block of zeros in the binary expansion of n
+	 /    has an even number of zeros in the block,
+  a_n = {
+	 \ 0 otherwise.
+(For example, a_36 = 1 because 36 = 100100_2 and a_20 = 0 because 20 =
+10100_2.) Prove that \alpha^3 + x \alpha + 1 = 0.
+
+Solution:
+(Put a_0 = 1, of course.) Observe that a_{4n} = a_n since adding two zeros
+on the right end does not affect the defining property; a_{4n + 2} = 0
+since the rightmost zero is isolated; and a_{2n + 1} = a_n since adding
+a one on the right does not affect the defining property. Now work in the
+formal power series ring Z_2[[x]]. For any z in that ring that is a
+multiple of x, define f(z) as a_0 + a_1 z + a_2 z^2 + ... . Clearly
+f(z) = f(z^4) + z f(z^2) by the relations between a's. Now over Z_2,
+(a + b)^2 = a^2 + b^2, so f(z) = f(z)^4 + z f(z)^2. Plug in x for z and
+cancel the f(x) to get 1 = \alpha^3 + x \alpha as desired.
+
+Problem B-1
+A dart, thrown at random, hits a square target. Assuming that any two
+points of the target of equal area are equally likely to be hit, find
+the probability that the point hit is nearer to the center than to any
+edge. Express your answer in the form (a \sqrt(b) + c) / d, where a, b,
+c, d are integers.
+
+Solution:
+This is straightforward. The closer-to-the-center region is centered on
+a square of side length \sqrt 2 - 1; surrounding the square and meeting
+it at its corners are parabolic sections extending out halfway to the
+edge. b is 2 and d is 6; have fun.
+
+Problem B-2
+Let S be a non-empty set with an associative operation that is left and
+right cancellative (xy = xz implies y = z, and yx = zx implies y = z).
+Assume that for every a in S the set { a^n : n = 1, 2, 3, ... } is
+finite. Must S be a group?
+
+Solution:
+Yes. There is a minimal m >= 1 for which a^m = a^n for some n with n > m;
+by cancellation, m must be 1. We claim that a^{n-1} is an identity in S.
+For ba = ba^n = ba^{n-1}a, so by cancellation b = ba^{n-1}, and similarly
+on the other side. Now a has an inverse, a^{n-2}. This problem is not new.
+
+Problem B-3
+Let f be a function on [0,\infty), differentiable and satisfying
+  f'(x) = -3 f(x) + 6 f(2x)
+for x > 0. Assume that |f(x)| <= \exp(-\sqrt(x)) for x >= 0 (so that
+f(x) tends rapidly to 0 as x increases). For n a non-negative integer,
+define
+  \mu_n = \int_0^\infty x^n f(x) dx
+(sometimes called the nth moment of f).
+a. Express \mu_n in terms of \mu_0.
+b. Prove that the sequence { \mu_n 3^n / n! } always converges, and that
+   the limit is 0 only if \mu_0 = 0.
+
+Solution:
+The only trick here is to integrate \mu_n by parts the ``wrong way,''
+towards a higher power of x. A bit of manipulation gives the formula for
+\mu_n as \mu_0 times n! / 3^n times the product of 2^k / (2^k - 1) for
+1 <= k <= n. Part b is straightforward; the product converges since the
+sum of 1 / (2^k - 1) converges (absolutely---it's positive).
+
+Problem B-4
+Can a countably infinite set have an uncountable collection of non-empty
+subsets such that the intersection of any two of them is finite?
+
+Solution:
+Yes. A common example for this very well-known problem is the set of
+rationals embedded in the set of reals. For each real take a Cauchy
+sequence converging to that real; those sequences form the subsets of
+the countably infinite rationals, and the intersection of any two of
+them had better be finite since the reals are Archimedian. Another
+example, from p-adics: Consider all binary sequences. With sequence
+a_0 a_1 a_2 ... associate the set a_0, a_0 + 2a_1, a_0 + 2a_1 + 4a_2,
+etc.; or stick 1 bits in all the odd positions to simplify housekeeping
+(most importantly, to make the set infinite). Certainly different
+sequences give different sets, and the intersection of two such sets
+is finite.
+
+Alternative solution:
+Let C be a countable collection of non-empty subsets of A with the property
+that any two subsets have finite intersection (from now
+on we call this property, countable intersection property). Clearly
+such a collection exists. We will show that C is not maximal, that is,
+there exists a set which does not belong to C and it intersects finitely
+with any set in C. Hence by Zorn's lemma, C can be extended to an
+uncountable collection.
+
+Let A1, A2, .... be an enumeration of sets in C. Then by axiom of choice,
+pick an element b sub i from each of A sub i - Union {from j=1 to i-1} of
+A sub j. It is easy to see that each such set is non-empty. Let B be the
+set of all b sub i's. Then clearly B is different from each of the A sub i's
+and its intersection with each A sub i is finite. 
+
+Yet another alternative solution:
+Let the countable set be the lattice points of the plane.  For each t in
+[0,pi) let  s(t) be the lattice points in a strip with angle of inclination
+t and width greater than 1.  Then the set of these strips is uncountable.
+The intersection of any two is bounded, hence finite. 
+
+More solutions:
+The problem (in effect) asks for an uncountable collection of
+sets of natural numbers that are "almost disjoint," i.e., any two
+have a finite intersection.  Here are two elementary ways to
+get such a collection.
+
+1. For any set A={a, b, c, ...} of primes, let A'={a, ab, abc, ...}.
+If A differs from B then A' has only a finite intersection with B'.
+
+2.  For each real number, e.g. x=0.3488012... form the set
+S_x={3, 34, 348, 3488, ...}.  Different reals give almost disjoint sets.
+
+
+Problem B-5
+Label the vertices of a trapezoid T (quadrilateral with two parallel
+sides) inscribed in the unit circle as A, B, C, D so that AB is parallel
+to CD and A, B, C, D are in counterclockwise order. Let s_1, s_2, and d
+denote the lengths of the line segments AB, CD, and OE, where E is the
+point of intersection of the diagonals of T, and O is the center of the
+circle. Determine the least upper bound of (s_1 - s_2) / d over all such
+T for which d \ne 0, and describe all cases, if any, in which it is
+attained.
+
+Solution:
+Center the circle at the origin and rotate the trapezoid so that AB and
+CD are horizontal. Assign coordinates to A and D, polar or rectangular
+depending on your taste. Now play with s_1 - s_2 / d for a while;
+eventually you'll find the simple form, after which maximization is
+easy. The answer, if I've calculated right, is 2, achieved when rotating
+the trapezoid by 90 degrees around the circle would take one vertex into
+another. (A right triangle, with the hypoteneuse the length-two diamater
+and d = 1, is a degenerate example.)
+
+Alternative solution:
+Let a be the distance from O (the center of the circle) to AB (that is
+the side with length s1), and b the distance from O to CD. Clearly,
+a = sqrt(1-s1*s1/4) and b = sqrt(1-s2*s2/4). Then with some mathematical
+jugglery, one can show that (s1-s2)/d = (s1*s1-s2*s2)/(b*s1-a*s2).
+Then differentiating this with respect to s1 and s2 and equating to
+0 yields s1*s1+s2*s2=4, and hence s1=2*b and s2=2*a. The value of (s1-s2)/d
+for these values is then 2. Hence (s1-s1)/d achieves its extremeum when
+s1*s1+s2*s2=4 (that this value is actually a maximum is then easily seen),
+and the lub is 2.
+
+Problem B-6
+Let (x_1, x_2, ..., x_n) be a point chosen at random from the
+n-dimensional region defined by 0 < x_1 < x_2 < ... < x_n < 1.
+Let f be a continuous function on [0, 1] with f(1) = 0. Set x_0 = 0 and
+x_{n+1} = 1. Show that the expected value of the Riemann sum
+  \sum_{i = 0}^n (x_{i+1} - x_i) f(x_{i+1})
+is \int_0^1 f(t)P(t) dt, where P is a polynomial of degree n,
+independent of f, with 0 \le P(t) \le 1 for 0 \le t \le 1.
+
+Solution:
+Induct right to left. Show that for each k, given x_{k-1}, the
+expected value at a point chosen with x_{k-1} < x_k < ... < x_n < 1
+is a polynomial of the right type with the right degree. It's pretty
+easy once you find the right direction. 0 \le P(t) \le 1 comes for
+free: if P(t) is out of range at a point, it is out of range on an
+open interval, and setting f to the characteristic function of that
+interval produces a contradiction.
+

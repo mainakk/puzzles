@@ -1,0 +1,823 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA02517; Sat, 20 Apr 1996 14:42:42 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07980; Sat, 20 Apr 96 14:13:37 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25288; Sat, 20 Apr 1996 11:14:27 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (analysis), part 02 of 35
+Message-Id: <puzzles/archive/analysis_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:22 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 795
+Xref: senator-bedfellow.mit.edu rec.puzzles:24995 news.answers:11515 rec.answers:1915
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/analysis
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> analysis/bicycle.p <==
+A boy, a girl and a dog go for a 10 mile walk.  The boy and girl can
+walk at 2 mph and the dog can trot at 4 mph.  They also have a bicycle
+which only one of them (including the dog!) can use at a time.  When
+riding, the boy and girl can travel at 12 mph while the dog can pedal
+at 16 mph.  What is the shortest time in which all three can complete
+the trip?
+
+==> analysis/bicycle.s <==
+First note that there's no apparent way to benefit from letting either the
+boy or girl ride the bike longer than the other.  Any solution which gets the
+boy there faster, must involve him using the bike (forward) more; similarly
+for the girl.  Thus the bike must go backwards more for it to remain within
+the 10-mile route.  Thus the dog won't make it there in time.  So the solution
+assumes they ride the bike for the same amount of time.
+
+Also note that there's no apparent way to benefit from letting any of the three
+arrive at the finish ahead of the others.  If they do, they can probably take
+time out to help the others.  So the solution assumes they all finish at the
+same time.
+
+The boy starts off on the bike, and travels 5.4 miles.  At this
+point, he drops the bike and completes the rest of the trip on foot.  The
+dog eventually reaches the bike, and takes it *backward* .8 miles (so the
+girl gets to it sooner) and then returns to trotting.  Finally, the girl makes
+it to the bike and rides it to the end.  The answer is 2.75 hours.
+
+The puzzle is in Vasek Chvatal, Linear Programming, W. H. Freeman & Co.
+The generalized problem (n people, 1 bike, different walking and riding speeds)
+is known as "The Bicycle Problem".  A couple references are
+
+Masuda, S. (1970). "The bicycle problem," University of California, Berkeley:
+  Operations Research Center Technical Report ORC 70-35.
+
+Chvatal, V. (1983). "On the bicycle problem," Discrete Applied Mathematics 5:
+  pp. 165 - 173.
+
+As for the linear program which gives the lower bound of 2.75 hours, let
+t[person, mode, direction] by the amount of time "person" (boy, girl or dog)
+is travelling by "mode" (walk or bike) in "direction" (forward or backwards).
+Define Time[person] to be the total time spent by person doing each of these
+four activities. The objective is to minimize the maximum of T[person], for
+person = boy, girl, dog, e.g.
+
+    minimize T
+    subject to  T >= T[boy], T >= T[girl], T >= T[dog].
+
+Now just think of all the other linear constraints on the variables t[x,y,z],
+such as everyone has to travel 10 miles, etc. In all, there are 8 contraints
+in 18 variables (including slack variables). Solving this program yields the
+lower bound.
+
+==> analysis/boy.girl.dog.p <==
+A boy, a girl and a dog are standing together on a long, straight road.
+Simulataneously, they all start walking in the same direction:
+The boy at 4 mph, the girl at 3 mph, and the dog trots back and forth
+between them at 10 mph.  Assume all reversals of direction instantaneous.
+In one hour, where is the dog and in which direction is he facing?
+
+==> analysis/boy.girl.dog.s <==
+The dog's position and direction are indeterminate, other than that the
+dog must be between the boy and girl (endpoints included).  To see this,
+simply time reverse the problem.  No matter where the dog starts out,
+the three of them wind up together in one hour.
+
+This argument is not quite adequate.  It is possible to construct problems
+where the orientation changes an infinite number of times initially, but for
+which there can be a definite result.  This would be the case if the positions
+at time t are uniformly continuous in the positions at time s, s small. 
+
+But suppose that at time a the dog is with the girl.  Then the boy is at
+4a, and the time it takes the dog to reach the boy is a/6, because
+the relative speed is 6 mph.  So the time b at which the dog reaches the
+boy is proportional to a.  A similar argument shows that the time the 
+dog next reaches the girl is b + b/13, and is hence proportional to b.
+This makes the position of the dog at time (t > a) a periodic function of
+the logarithm of a, and thus does not approach a limit as a -> 0.
+
+==> analysis/bugs.p <==
+Four bugs are placed at the corners of a square.  Each bug walks always
+directly toward the next bug in the clockwise direction.  How far do
+the bugs walk before they meet?
+
+==> analysis/bugs.s <==
+Since the bugs start out walking perpendicularly, and there is nothing
+in the problem to alter this symmetry, the bugs are always walking
+perpendicularly.  Since each bug is walking perpendicularly to the line
+separating it from the bug chasing it, the gap is closing at the speed
+of the chasing bug.  Therefore, each bug walks a distance equal to the
+side of the square before it meets the next bug.
+
+In order to conveniently express the equation of the bugs' motion,
+use standard polar coordinates, and let the first bug's position at
+any instant be (r(t), theta(t)).  Assume the initial square is
+centered at the origin.
+
+Then by symmetry the bugs are always at four corners of some square
+centered at the origin, and if they meet they meet at the origin.
+Also, each bug is always walking in a direction pi/4 (45 degrees) away
+from the radial line to the origin.  This means that in the limit as
+the time step goes to zero, the bug travels sec(pi/4) = sqrt(2) units
+along its path for every unit of progress made good toward the center.
+Since the corners are initially d/sqrt(2) distance from the center,
+each bug travels distance d before they meet, assuming they meet at
+all.
+
+Since a bug's path always crosses radial lines at angle psi = pi/4,
+the path is a logarithmic spiral with angle psi = pi/4 and equation
+
+  r(t) = e^(a*theta(t) + b)
+
+Moreover since the bugs walk clockwise, both r(t) and theta(t)
+decrease as t increases, in other words r increases as theta
+increases, hence a is positive.  Also, psi = pi/4 gives us
+
+  d(r)/d(theta) = r
+
+(this is easiest to see by drawing the path for a small time step
+delta-t and taking the limit as delta-t goes to 0).  The solution is
+
+  r(t) = e^(theta(t) + b)
+
+(that is, a = 1).  As we know, this spiral makes infinitely many
+"wraps" around the origin as the radius approaches zero, but it does
+have finite length from any point inward and its limit point is the
+origin, where the bugs will meet (unless one wants to quibble about
+the behavior at the exact limit point).
+
+How much closer is the bug to the origin after its first complete cycle
+around the origin?  Recall that r(0) = d/sqrt(2).  As the bug walks
+clockwise around the origin, after one full circuit its angle decreases
+from theta(0) to theta(t1), where t1 (the time at which full circuit
+occurs) is defined by
+
+  theta(t1) = theta(0) - 2*pi
+
+Hence
+
+  r(0) = e^(theta(0) + b)
+  r(t1) = e^(theta(0) - 2*pi + b)
+
+  r(t1)/r(0) = e^(-2*pi)
+
+The quantity we want is
+
+  r(0) - r(t1) = r(0)*(1 - e^(-2*pi))
+               = d * (1 - e^(-2*pi))/sqrt(2)
+
+==> analysis/c.infinity.p <==
+What function is zero at zero, strictly positive elsewhere, infinitely
+differentiable at zero and has all zero derivatives at zero?
+
+==> analysis/c.infinity.s <==
+exp(-1/x^2)
+
+There are infinitely many other such functions.
+
+This tells us why Taylor Series are a more limited device than they might be.
+We form a Taylor series by looking at the derivatives of a function at a given
+point; but this example shows us that the derivatives at a point may tell us
+almost nothing about its behavior away from that point.
+
+==> analysis/cache.p <==
+Cache and Ferry (How far can a truck go in a desert?)
+A pick-up truck is in the desert beside N 50-gallon gas drums, all full.
+The truck's gas tank holds 10 gallons and is empty.  The truck can carry
+one drum, whether full or empty, in its bed.  It gets 10 miles to the gallon.
+How far away from the starting point can you drive the truck?
+
+==> analysis/cache.s <==
+If the truck can siphon gas out of its tank and leave it in the cache,
+the answer is:
+        { 1/1 + 1/3 + ... + 1/(2 * N - 1) } x 500 miles.
+
+A much harder problem occurs when the truck can siphon gas, but if it does,
+it must siphon the gas into one of the initial barrels.
+
+Now, remarkably, for initial gas values of 50, 100, 150, 200, 250, 300,
+and 350 gallons, the two problems give identical optimal distances, viz.
+   gal   dist
+   ---   ----
+    50   500
+   100   733.3333
+   150   860
+   200   948.5714
+   250  1016.8254
+   300  1072.3810
+   350  1117.8355
+
+However, for the 8 barrel case (400 gallons), the unlimited cache optimal
+distance is 1157.6957, but limited cache is only 1157.2294.
+
+What happened is that the unlimited cache optimal solution has started to
+siphon out more than 50 gallons (60-80/13 to be exact) of gas on trips
+to the first depot.  With a limited cache, the truck can only leave a
+maximum of 50 gallons (one barrel worth), and does not have a big
+enough gas tank (only ten gallons) to carry around the excess.
+
+The limited cache problem is the same as the "Desert Fox" problem
+described, but not solved, by Dewdney, July '87 "Scientific American".
+
+Dewdney's Oct. '87 Sci. Am. article gives for N=2, the optimal distance
+of 733.33 miles.
+
+In the Nov. issue, Dewdney lists the optimal distance of 860 miles for
+N=3, and gives a better, but not optimal, general distance formula.
+
+Westbrook, in Vol 74, #467, pp 49-50, March '90 "Mathematical Gazette",
+gives an even better formula, for which he incorrectly claims optimality:
+
+  For N = 2,3,4,5,6:
+     Dist = (600/1 + 600/3 + ... + 600/(2N-3))  +  (600-100N)/(2N-1)
+  For N > 6:
+     Dist = (600/1 + 600/3 + ... + 600/9)  +  (500/11 + ... + 500/(2N-3))
+
+The following shows that Westbrook's formula is not optimal for N=8:
+
+   Ferry  7 drums forward   33.3333 miles   (356.6667 gallons remain)
+   Ferry  6 drums forward   51.5151 miles   (300.0000 gallons remain)
+   Ferry  5 drums forward   66.6667 miles   (240.0000 gallons remain)
+   Ferry  4 drums forward   85.7143 miles   (180.0000 gallons remain)
+   Ferry  3 drums forward  120.0000 miles   (120.0000 gallons remain)
+   Ferry  2 drums forward  200.0000 miles   ( 60.0000 gallons remain)
+   Ferry  1 drums forward  600.0000 miles
+                          ---------------
+         Total distance = 1157.2294 miles
+   (Westbrook's formula = 1156.2970 miles)
+
+       ["Ferrying n drums forward x miles" involves (2*n-1) trips,
+         each of distance x.]
+
+Other attainable values I've found:
+   N      Distance
+  ---    ---------  (Ferry distances for each N are omitted for brevity.)
+    5    1016.8254
+    7    1117.8355
+   11    1249.2749
+   13    1296.8939
+   17    1372.8577
+   19    1404.1136  (The N <= 19 distances could be optimal.)
+   31    1541.1550  (I doubt that this N = 31 distance is optimal.)
+  139    1955.5702  (Attainable and probably optimal.)
+
+So...where's MY formula?
+I haven't found one, and believe me, I've looked.
+
+I would be most grateful if someone would end my misery by mailing me
+a formula, a literature reference, or even an efficient algorithm that
+computes the optimal distance.
+
+If you do come up with the solution, you might want to first check it
+against the attainable distances listed above, before sending it out.
+(Not because you might be wrong, but just as a mere formality to check
+ your work.)
+
+[Warning:  the Mathematician General has determined that
+           this problem is as addicting as Twinkies.]
+
+Myron P. Souris
+EDS/Unigraphics
+souris@ug.eds.com
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+The following output comes from some hack programs that I've used to
+empirically verify some proofs I've been working on.
+
+Initial barrels:   12 (600 gallons)
+Attainable distance= 1274.175211
+                  Barrels  Distance      Gas
+                   Moved    covered     left
+>From depot   1:      10     63.1579   480.0000
+>From depot   2:       8     50.0000   405.0000
+>From depot   3:       7     37.5000   356.2500
+>From depot   4:       6     51.1364   300.0000
+>From depot   5:       5     66.6667   240.0000
+>From depot   6:       4     85.7143   180.0000
+>From depot   7:       3    120.0000   120.0000
+>From depot   8:       2    200.0000    60.0000
+>From depot   9:       1    600.0000     0.0000
+
+
+Initial barrels:   40 (2000 gallons)
+Attainable distance= 1611.591484
+                  Barrels  Distance      Gas
+                   Moved    covered     left
+>From depot   1:      40      2.5316  1980.0000
+>From depot   2:      33     50.0000  1655.0000
+>From depot   3:      28     50.0000  1380.0000
+>From depot   4:      23     53.3333  1140.0000
+>From depot   5:      19     50.0000   955.0000
+>From depot   6:      16     56.4516   780.0000
+>From depot   7:      13     50.0000   655.0000
+>From depot   8:      11     54.7619   540.0000
+>From depot   9:       9     50.0000   455.0000
+>From depot  10:       8     32.1429   406.7857
+>From depot  11:       7     38.9881   356.1012
+>From depot  12:       6     51.0011   300.0000
+>From depot  13:       5     66.6667   240.0000
+>From depot  14:       4     85.7143   180.0000
+>From depot  15:       3    120.0000   120.0000
+>From depot  16:       2    200.0000    60.0000
+>From depot  17:       1    600.0000     0.0000
+
+==> analysis/calculate.pi.p <==
+How can I calculate many digits of pi?
+
+==> analysis/calculate.pi.s <==
+long a=10000,
+    b,
+    c=2800,
+    d,e,
+    f[2801],
+    g;
+
+main()
+   {
+    for (;b-c;) f[b++]=a/5;
+
+    for (;
+	d=0,g=c*2;
+	c-=14, printf("%.4d",e+d/a), e=d%a)
+	
+    for (b=c;
+	 d+=f[b]*a,f[b]=d%--g,d/=g--,--b;
+	 d*=b);
+   }
+
+==> analysis/cats.and.rats.p <==
+If 6 cats can kill 6 rats in 6 minutes, how many cats does it take to
+kill one rat in one minute?
+
+==> analysis/cats.and.rats.s <==
+The following piece by Lewis Carroll first appeared in ``The Monthly
+Packet'' of February 1880 and is reprinted in _The_Magic_of_Lewis_Carroll_,
+edited by John Fisher, Bramhall House, 1973.
+
+/Larry Denenberg
+larry@bbn.com
+larry@harvard.edu
+
+
+
+
+
+                                 Cats and Rats
+
+   If 6 cats kill 6 rats in 6 minutes, how many will be needed to kill 100
+   rats in 50 minutes?
+
+   This is a good example of a phenomenon that often occurs in working
+   problems in double proportion; the answer looks all right at first, but,
+   when we come to test it, we find that, owing to peculiar circumstances in
+   the case, the solution is either impossible or else indefinite, and needing
+   further data.  The 'peculiar circumstance' here is that fractional cats or
+   rats are excluded from consideration, and in consequence of this the
+   solution is, as we shall see, indefinite.
+
+   The solution, by the ordinary rules of Double Proportion, is as follows:
+	   6 rats   :  100 rats  \
+				  >   :: 6 cats : ans.
+	  50 min.   :    6 min.  /
+         .
+	. .  ans. = (100)(6)(6)/(50)(6) = 12
+
+   But when we come to trace the history of this sanguinary scene through all
+   its horrid details, we find that at the end of 48 minutes 96 rats are dead,
+   and that there remain 4 live rats and 2 minutes to kill them in: the
+   question is, can this be done?
+
+   Now there are at least *four* different ways in which the original feat,
+   of 6 cats killing 6 rats in 6 minutes, may be achieved.  For the sake of
+   clearness let us tabulate them:
+      A.  All 6 cats are needed to kill a rat; and this they do in one minute,
+          the other rats standing meekly by, waiting for their turn.
+      B.  3 cats are needed to kill a rat, and they do it in 2 minutes.
+      C.  2 cats are needed, and do it in 3 minutes.
+      D.  Each cat kills a rat all by itself, and take 6 minutes to do it.
+
+   In cases A and B it is clear that the 12 cats (who are assumed to come
+   quite fresh from their 48 minutes of slaughter) can finish the affair in
+   the required time; but, in case C, it can only be done by supposing that 2
+   cats could kill two-thirds of a rat in 2 minutes; and in case D, by
+   supposing that a cat could kill one-third of a rat in two minutes.  Neither
+   supposition is warranted by the data; nor could the fractional rats (even
+   if endowed with equal vitality) be fairly assigned to the different cats.
+   For my part, if I were a cat in case D, and did not find my claws in good
+   working order, I should certainly prefer to have my one-third-rat cut off
+   from the tail end.
+
+   In cases C and D, then, it is clear that we must provide extra cat-power.
+   In case C *less* than 2 extra cats would be of no use.  If 2 were supplied,
+   and if they began killing their 4 rats at the beginning of the time, they
+   would finish them in 12 minutes, and have 36 minutes to spare, during which
+   they might weep, like Alexander, because there were not 12 more rats to
+   kill.  In case D, one extra cat would suffice; it would kill its 4 rats in
+   24 minutes, and have 24 minutes to spare, during which it could have killed
+   another 4.  But in neither case could any use be made of the last 2
+   minutes, except to half-kill rats---a barbarity we need not take into
+   consideration.
+
+   To sum up our results.  If the 6 cats kill the 6 rats by method A or B,
+   the answer is 12; if by method C, 14; if by method D, 13.
+
+   This, then, is an instance of a solution made `indefinite' by the
+   circumstances of the case.  If an instance of the `impossible' be desired,
+   take the following: `If a cat can kill a rat in a minute, how many would be
+   needed to kill it in the thousandth part of a second?'  The *mathematical*
+   answer, of course, is `60,000,' and no doubt less than this would *not*
+   suffice; but would 60,000 suffice?  I doubt it very much.  I fancy that at
+   least 50,000 of the cats would never even see the rat, or have any idea of
+   what was going on.
+
+   Or take this: `If a cat can kill a rat in a minute, how long would it be
+   killing 60,000 rats?'  Ah, how long, indeed!  My private opinion is that
+   the rats would kill the cat.
+
+
+
+==> analysis/dog.p <==
+A body of soldiers form a 50m-by-50m square ABCD on the parade ground.
+In a unit of time, they march forward 50m in formation to take up the
+position DCEF. The army's mascot, a small dog, is standing next to its
+                                       handler at location A. When the
+          B----C----E                  soldiers start marching, the dog
+          |    |    |   forward-->     begins to run around the moving
+          A----D----F                  body in a clockwise direction,
+                                       keeping as close to it as possible.
+When one unit of time has elapsed, the dog has made one complete
+circuit and has got back to its handler, who is now at location D. (We
+can assume the dog runs at a constant speed and does not delay when
+turning the corners.)
+
+How far does the dog travel?
+
+==> analysis/dog.s <==
+Let L be the side of the square, 50m, and let D be the distance the
+dog travels.
+
+Let v1 be the soldiers' marching speed and v2 be the speed of the dog.
+Then v1 = L / (1 time unit) and v2 = v1*D/L.
+
+Let t1, t2, t3, t4 be the time the dog takes to traverse each side of
+the square, in order.  Find t1 through t4 in terms of L and D and solve
+t1+t2+t3+t4 = 1 time unit.
+
+While the dog runs along the back edge of the square in time t1, the
+soldiers advance a distance d=t1*v1, so the dog has to cover a distance
+sqrt(L^2 + (t1*v1)^2), which takes a time t1=sqrt(L^2 + (t1*v1)^2)/v2.
+Solving for t1 gives t1=L/sqrt(v2^2 - v1^2).
+
+The rest of the times are t2 = L/(v2-v1), t3 = t1, and t4 = L/(v2+v1).
+
+In t1+t2+t3+t4, eliminate v2 by using v2=v1*D/L and eliminate v1 by
+using v1=L/(1 time unit), obtaining
+
+	    2 L (D + sqrt(D^2-L^2)) / (D^2 - L^2) = 1
+
+which can be turned into
+
+	    D^4 - 4LD^3 - 2L^2D^2 + 4L^3D + 5L^4 = 0
+
+which has a root D = 4.18113L = 209.056m.
+
+==> analysis/e.and.pi.p <==
+Without finding their numerical values, which is greater, e^(pi) or (pi)^e?
+
+==> analysis/e.and.pi.s <==
+e^(pi).  Put x = pi/e - 1 in the inequality e^x > 1+x  (x>0).
+
+==> analysis/functional/distributed.p <==
+     Find all f: R -> R, f not identically zero, such that
+(*)     f( (x+y)/(x-y) ) = ( f(x)+f(y) )/( f(x)-f(y) ).
+
+==> analysis/functional/distributed.s <==
+1)  Assuming f finite everywhere, (*) ==> x<>y ==> f(x)<>f(y)
+
+2)  Exchanging x and y in (*) we see that f(-x) = -f(x).
+
+3)  a <> 0 ==> f((a-a)/(a+a)) = (f(a)-f(a))/(f(a)+f(a)) ==> f(0) = 0.
+
+4)  a <> 0 ==> f((a+0)/(a-0)) = f(a)/f(a) ==> f(1) = 1.
+
+5)  x<>y, y<>0 ==> f(x/y) =
+f( ((x+y)/(x-y) + (x-y)/(x-y)) / ((x+y)/(x-y) - (x-y)/(x-y)) = f(x)/f(y)
+==> f(xy) = f(x)f(y) by replacing x with xy and by noting that
+f(x*1) = f(x)*1 and f(x*0) = f(x)*f(0).
+
+6)  f(x*x) = f(x)*f(x) ==> f(x) > 0 if x>0.
+
+7)  Let a=1+\/2, b=1-\/2; a,b satisfy (x+1)/(x-1) = x ==>
+f(x) = (f(x)+1)/(f(x)-1) ==> f(a)=a, f(b)=b.  f(1/\/2) = f((a+b)/(a-b))
+= (a+b)/(a-b) = 1/\/2 ==> f(2) = 2.
+
+8)  By induction and the relation f((n+1)/(n-1)) = (f(n)+1)/(f(n)-1)
+we get that f(n)=n for all integer n.  #5 now implies that f fixes
+the rationals.
+
+9)  If x>y>0 (*) ==> f(x) - f(y) = f(x+y)/f((x+y)/(x-y)) > 0 by #6.
+Thus f is order-preserving.
+
+Since f fixes the rationals *and* f is order-preserving, f must be the
+identity function.
+
+This was E2176 in _The American Mathematical Monthly_ (the proposer was
+R. S. Luthar).
+
+==> analysis/functional/linear.p <==
+Suppose f is non-decreasing with
+  f(x+y) = f(x) + f(y) + C   for all real x, y.
+Prove: there is a constant A such that f(x) = Ax - C  for all x.
+(Note: continuity of f is not assumed in advance.)
+
+==> analysis/functional/linear.s <==
+By induction f(mx) = m(f(x)+C)-C.  Let x=1/n, m=n and find that
+f(1/n) = (1/n)(f(1)+C)-C.  Now let x=1/n and find that f(m/n) =
+(m/n)(f(1)+C)-C.  f(-x+x) = f(-x) + f(x) + C ==> f(-x) = -2C - f(x)
+(since f(0) = -C) ==> f(-m/n) = -(m/n)(f(1)+C)-C.  Since f is
+monotonic ==> f(x) = x*(f(1)+C)-C for all real x (Squeeze Theorem).
+
+==> analysis/integral.p <==
+If f is integrable on (0,inf) and differentiable at 0, and a > 0, and:
+
+      inf           f(x)
+   Int        ----------------  dx is defined
+       0             x
+
+show:
+
+      inf     ( f(x) - f(ax) )  
+   Int        ----------------  dx   = f(0) ln(a)
+       0             x
+
+==> analysis/integral.s <==
+First, note that if f(0) is 0, then by substituting u=ax in
+the integral of f(x)/x, our integral is the difference of two
+equal integrals and so is 0 (the integrals are finite because f is
+0 at 0 and differentiable there.  Note I make no requirement of
+continuity).
+
+Second, note that if f is the characteristic function of the
+interval [0, 1]--- i.e.
+
+		1, 0<=x<=1
+	f (x) =
+		0 otherwise
+
+then a little arithmetic reduces our integral to that of
+1/x from 1/a to 1 (assuming a>1; if a <= 1 the reasoning is similar),
+which is ln(a) = f(0)ln(a) as required.  Call this function g.
+
+Finally, note that the operator which takes the function f to the
+value of our integral is linear, and that every function meeting the
+hypotheses (incidentally, I should have said `differentiable from the right',
+or else replaced the characteristic function of [0,1] above by that of
+(-infinity, 1]; but it really doesn't matter) is a linear combination of
+one which is 0 at 0 and g, to wit
+
+	f(x) = f(0)g(x) + (f(x) - g(x)f(0)).
+
+==> analysis/irrational.stamp.p <==
+You have an ink stamp which is so amazingly precise that, when inked
+and pressed down on the plane, it makes every circle of irrational
+radius (centered at the center of the stamp) black.
+
+Question:  Can one use the stamp three times and make every point
+in the plane black?  [assume plane was white to begin with, and
+ignore the fact that no such stamp is physically possible]
+
+==> analysis/irrational.stamp.s <==
+Yes.  Center the stamp at (0,0), (1,0), and (0,pi).
+
+Suppose there is a point (x,y) which is not covered.
+Then there are rational numbers a,b,c satisfying the following equations:
+
+  (1)   x^2   +   y^2     =  a
+  (2) (x-1)^2 +   y^2     =  b
+  (3)   x^2   + (y-pi)^2  =  c
+
+Subtract (2) from (1) and solve for x.  Thus x is rational.
+From equation (2), y is algebraic.  But equation (3) implies
+that y is transcendental, contradiction.
+
+==> analysis/minimum.time.p <==
+N people can walk or drive in a two-seater to go from city A to city B.  What
+is the minimum time required to do so?
+
+==> analysis/minimum.time.s <==
+Let the speed of the car be v, the speed of a walking person be u, and
+the distance between cities by L.  We want to minimize T, the time t
+at which all persons are at displacement x=L (city B), when they all
+start at displacement x=0 (city A) at time t=0.
+
+I'll assume that the solution has everyone starting out from city A at
+the same time t=0 arriving in city B at the same time t=T so nobody is
+standing around idly waiting.  Let's plot everyone's movements on a
+graph showing coordinates (t,x).  Then at time t just after 0, (N-2)
+walkers are on the line L0 through (0,0) with slope dx/dt = u, and 2
+in the car are on a line through (0,0) with slope v, and at t just
+before T, (N-2) walkers are on the line L1 through (T,L) with slope u,
+and 2 in the car are on a line through (T,L) with slope v.  Obviously
+L1 lies "above" L0 (greater x coordinate given the same t coordinate).
+In between t=0 and t=T, the car zigzags between L0 and L1 along lines
+of slope v and -v, picking up people from L0 and dropping them off at
+L1.  I will not prove that this is the optimal strategy; in fact you
+can make an infinite number of variations on it which all come up with
+the same elapsed time.
+
+Now examine the graph again.  Say the car travels distance r between
+picking someone up and dropping that person off, and distance s back
+to pick up the next person.  The car makes (N-1) trips forward and
+(N-2) trips back to pick up and ferry everyone, so its total travel is
+
+	vT = (N - 1)r + (N - 2)s = (N - 2)(r + s) + r
+
+Moreover the car makes (r-s) net displacement on each round trip, plus
+r displacement on the extra forward trip, so
+
+	L = (N - 2)(r - s) + r
+
+Note that a person walks distance (r-s) in the time it takes the car to
+go (r+s), so 
+
+	r - s = (u/v)(r + s)
+
+A little algebraic manipulation of this equation shows us that
+
+	r - s = r * 2u/(v + u)
+	r + s = r * 2v/(v + u)
+
+Plug this into the equation for L, and we get the first important
+piece of information, how far the car should drive before dropping off
+the passenger (once you know this, you tell it to the driver and this
+guarantees the people get to B in minimum time):
+
+	L = r + (N - 2) r * 2u/(v + u)
+	  = r * (v + u + (N - 2)*2u)/(v + u)
+
+	       v + u
+	r = ------------ L
+	    2uN + v - 3u
+
+We can also find out what the elapsed time T will be:
+
+
+	vT = (N - 2)r*2v/(v + u) + r
+	   = r * ((N - 2)*2v + v + u)/(v + u)
+
+	    1   2vN - 3v + u
+	T = - * ------------ r
+	    v      v + u
+
+Therefore
+
+	    2vN - (3v - u)
+	T = -------------- (L/v)
+	     2uN + v - 3u
+
+
+-- David Karr (karr@cs.cornell.edu)
+
+
+==> analysis/particle.p <==
+What is the longest time that a particle can take in travelling between two
+points if it never increases its acceleration along the way and reaches the
+second point with speed V?
+
+==> analysis/particle.s <==
+Assumptions:
+
+1. x(0) = 0; x(T) = X
+
+2. v(0) = 0; v(T) = V
+
+3. d(a)/dt <= 0
+
+Solution:
+
+a(t) = constant = A = V^2/2X which implies T = 2X/V.
+
+Proof:
+
+Consider assumptions as they apply to f(t) = A * t - v(t):
+
+1. integral from 0 to T of f = 0
+
+2. f(0) = f(T) = 0
+
+3. d^2(f)/dt^2 <= 0
+
+From the mean value theorem, f(t) = 0.  QED.
+
+==> analysis/period.p <==
+What is the least possible integral period of the sum of functions
+of periods 3 and 6?
+
+==> analysis/period.s <==
+Period 2.  Clearly, the sum of periodic functions of periods 2 and
+three is 6.  So take the function which is the sum of that function of
+period six and the negative of the function of period three and you
+have a function of period 2.
+
+This proves that a period-2 solution exists, but not that it is minimal.
+Since we're talking about integers, the only lower possibility is 1.
+But the sum or difference of a period-1 and a period-3 function must have
+period 3, not 6, therefore 1 is indeed impossible.
+
+==> analysis/rubberband.p <==
+A bug walks down a rubber band which is attached to a wall at one end and a car
+moving away from the wall at the other end. The car is moving at 1 m/sec while
+the bug is only moving at 1 cm/sec. Assuming the rubber band is uniformly and
+infinitely elastic, will the bug ever reach the car?
+
+==> analysis/rubberband.s <==
+Let w = speed of bug and N = ratio of car speed/bug speed = 100.  Paint N+1
+equally spaced stripes on the rubberband.  When the bug is standing on one
+stripe, the next stripe is moving away from him at a speed slightly < w
+(relative to him).  Since he is walking at w, clearly the bug can reach
+the next stripe.  But once he reaches that stripe, the next one is only
+receeding at < w.  So he walks on down to the car, one stripe at a time.
+
+The bug starts gaining on the car when he is at the next to last stripe.
+
+==> analysis/sequence.p <==
+Show that in the sequence: x, 2x, 3x, .... (n-1)x (x can be any real number)
+there is at least one number which is within 1/n of an integer.
+
+==> analysis/sequence.s <==
+Throw 0 into the sequence; there are now n numbers, so some pair must
+have fractional parts within 1/n of each other; their difference is
+then within 1/n of an integer.
+
+==> analysis/snow.p <==
+Snow starts falling before noon on a cold December day.  At noon a
+snow plow starts plowing a street.  It travels 1 mile in the first hour,
+and 1/2 mile in the second hour.  What time did the snow start
+falling??
+
+You may assume that the plow's rate of travel is inversely proportional
+to the height of the snow, and that the snow falls at a uniform rate.
+
+==> analysis/snow.s <==
+11:22:55.077 am.
+
+Method:
+
+Let b = the depth of the snow at noon, a = the rate of increase in the
+depth.  Then the depth at time t (where noon is t=0) is at+b, the
+snowfall started at t_0=-b/a, and the snowplow's rate of progress is 
+ds/dt = k/(at+b).
+
+If the snowplow starts at s=0 then s(t) = (k/a) log(1+at/b).  Note that
+s(2 hours) = 1.5 s(1 hour), or  log(1+2A/b) = 1.5 log(1+A/b), where
+A = (1 hour)*a.  Letting x = A/b we have (1+2x)^2 = (1+x)^3.  Solve for
+x and t_0 = -(1 hour)/x.
+
+The exact answer is 11:(90-30 Sqrt[5]).
+
+_American Mathematics Monthly_, April 1937, page 245
+E 275.  Proposed by J. A. Benner, Lafayette College, Easton. Pa.
+
+The solution appears, appropriately, in the December 1937 issue,
+pp. 666-667.  Also solved by William Douglas, C. E. Springer,
+E. P. Starke, W. J.  Taylor, and the proposer.
+
+See R.P. Agnew, "Differential Equations," 2nd edition, p. 39 ff.
+
+==> analysis/tower.p <==
+R = N ^ (N ^ (N ^ ...)).  What is the maximum N>0 that will yield a finite R?
+
+==> analysis/tower.s <==
+ANSWER: e^(1/e)
+
+Let N be the number in question and R the result of the process. Then
+R can be defined recursively by the equation:
+	(1) R = N^R
+Taking the logarithm of both sides of (1):
+	(2) ln(R) = R * ln(N)
+Dividing (2) by R and rearranging:
+	(3) ln(N) = ln(R) / R
+Exponentiating (3):
+	(4) N = R^(1/R)
+We wish to find the maximum value of N with respect to R. Find the
+derivative of N with respect to R and set it equal to zero:
+	(5) d(N)/d(R) = (1 - ln(R)) / R^2 = 0
+For finite values of R, (5) is satisfied by R = e. This is a maximum of
+N if the second derivative of N at R = e is less than zero.
+	(6) d2(N)/d2(R) | R=e = (2 * ln(R) - 3) / R^3 | R=e = -1 / e^3 < 0
+The solution therefore is (4) at R = e:
+	(7) Nmax = e^(1/e)
+

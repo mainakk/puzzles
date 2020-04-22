@@ -1,0 +1,1888 @@
+Received: from MIT.EDU ([18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05329; Sat, 20 Apr 1996 15:11:17 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15680; Sat, 20 Apr 96 14:11:19 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25213; Sat, 20 Apr 1996 11:12:14 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (arithmetic), part 03 of 35
+Message-Id: <puzzles/archive/arithmetic/part1_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:31 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1860
+Xref: senator-bedfellow.mit.edu rec.puzzles:24994 news.answers:11514 rec.answers:1914
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/arithmetic/part1
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> arithmetic/7-11.p <==
+A customer at a 7-11 store selected four items to buy, and was told
+that the cost was $7.11.  He was curious that the cost was the same
+as the store name, so he inquired as to how the figure was derived.
+The clerk said that he had simply multiplied the prices of the four
+individual  items.  The customer  protested  that  the four  prices     
+should have been ADDED,  not MULTIPLIED.  The  clerk said that that
+was OK with him, but, the result was still the same: exactly $7.11.
+
+What were the prices of the four items?
+
+==> arithmetic/7-11.s <==
+The prices are: $1.20, $1.25, $1.50, and $3.16
+
+$7.11 is not the only number which works.  Here are the first 160 such
+numbers, preceded by a count of distinct solutions for that price.
+Note that $7.11 has a single, unique solution.
+
+       1 -  $6.44      1 -  $7.83      2 -  $9.20      3 - $10.89 
+       1 -  $6.51      1 -  $7.86      1 -  $9.23      1 - $10.95 
+       1 -  $6.60      3 -  $7.92      1 -  $9.24      2 - $11.00 
+       1 -  $6.63      1 -  $8.00      1 -  $9.27      1 - $11.07 
+       1 -  $6.65      1 -  $8.01      2 -  $9.35      1 - $11.13 
+       1 -  $6.72      1 -  $8.03      3 -  $9.36      1 - $11.16 
+       2 -  $6.75      5 -  $8.10      1 -  $9.38      1 - $11.22 
+       1 -  $6.78      1 -  $8.12      5 -  $9.45      2 - $11.25 
+       1 -  $6.80      1 -  $8.16      2 -  $9.48      2 - $11.27 
+       2 -  $6.84      2 -  $8.19      1 -  $9.54      1 - $11.30 
+       1 -  $6.86      1 -  $8.22      1 -  $9.57      1 - $11.36 
+       1 -  $6.89      1 -  $8.25      1 -  $9.59      1 - $11.40 
+       2 -  $6.93      3 -  $8.28      2 -  $9.60      2 - $11.43 
+       1 -  $7.02      3 -  $8.33      1 -  $9.62      2 - $11.52 
+       1 -  $7.05      1 -  $8.36      2 -  $9.63      2 - $11.55 
+       2 -  $7.07      1 -  $8.37      1 -  $9.66      2 - $11.61 
+       1 -  $7.08      2 -  $8.40      1 -  $9.68      1 - $11.69 
+       1 -  $7.11      1 -  $8.45      2 -  $9.69      1 - $11.70 
+       1 -  $7.13      2 -  $8.46      1 -  $9.78      1 - $11.88 
+       2 -  $7.14      1 -  $8.52      2 -  $9.80      1 - $11.90 
+       3 -  $7.20      5 -  $8.55      1 -  $9.81      1 - $11.99 
+       1 -  $7.25      1 -  $8.60      1 -  $9.87      1 - $12.06 
+       1 -  $7.26      4 -  $8.64      4 -  $9.90      1 - $12.15 
+       2 -  $7.28      1 -  $8.67      1 -  $9.92      1 - $12.18 
+       1 -  $7.29      1 -  $8.69      2 -  $9.99      1 - $12.24 
+       3 -  $7.35      1 -  $8.73      1 - $10.01      1 - $12.30 
+       1 -  $7.37      2 -  $8.75      1 - $10.05      1 - $12.32 
+       1 -  $7.47      1 -  $8.76      2 - $10.08      1 - $12.35 
+       1 -  $7.50      1 -  $8.78      1 - $10.17      2 - $12.42 
+       1 -  $7.52      5 -  $8.82      1 - $10.20      1 - $12.51 
+       4 -  $7.56      1 -  $8.85      2 - $10.26      1 - $12.65 
+       1 -  $7.62      1 -  $8.88      3 - $10.29      2 - $12.69 
+       4 -  $7.65      2 -  $8.91      3 - $10.35      1 - $12.75 
+       1 -  $7.67      1 -  $8.94      2 - $10.44      1 - $12.92 
+       2 -  $7.70      1 -  $8.96      1 - $10.53      1 - $12.96 
+       3 -  $7.74      3 -  $9.00      1 - $10.56      1 - $13.23 
+       1 -  $7.77      1 -  $9.02      1 - $10.64      1 - $13.41 
+       1 -  $7.79      2 -  $9.03      2 - $10.71      1 - $13.56 
+       2 -  $7.80      1 -  $9.12      3 - $10.80      1 - $14.49 
+       1 -  $7.82      2 -  $9.18      1 - $10.85      1 - $15.18 
+
+
+There are plenty of solutions for five summands.  Here are a few:
+
+         $8.28  -- at least two solutions
+         $8.47  -- at least two solutions
+         $8.82  -- at least two solutions
+--
+     Mark Johnson       mark@microunity.com       (408) 734-8100
+
+There may be many approximate solutions, for example: $1.01, $1.15, $2.41,
+and $2.54.  These sum to $7.11 but the product is 7.1100061.
+
+==> arithmetic/arithmetic.progression.p <==
+Is there an arithmetic progression of 20 or more primes?
+
+==> arithmetic/arithmetic.progression.s <==
+There is an arithmetic progression of 21 primes:
+    142072321123 + 1419763024680 i, 0 <= i < 21.
+
+It was discovered on 30 November 1990, by programs running in the background
+on a network of Sun 3 workstations in the Department of Computer Science,
+University of Queensland, Australia.
+
+See: Andrew Moran and Paul Pritchard, The design of a background job
+on a local area network, Procs. 14th Australian Computer Science Conference,
+1991, to appear.
+
+==> arithmetic/clock/day.of.week.p <==
+It's restful sitting in Tom's cosy den, talking quietly and sipping
+a glass of his Madeira.
+
+I was there one Sunday and we had the usual business of his clock.
+When the radio gave the time at the hour, the Ormolu antique was 
+exactly 3 minutes slow.
+
+"It loses 7 minutes every hour", my old friend told me, as he had done
+so many times before.  "No more and no less, but I've gotten used to
+it that way."
+
+When I spent a second evening with him later that same month, I remarked
+on the fact that the clock was dead right by radio time at the hour.
+It was rather late in the evening, but Tom assured me that his treasure
+had not been adjusted nor fixed since my last visit.
+
+What day of the week was the second visit?
+
+From "Mathematical Diversions" by Hunter + Madachy
+
+==> arithmetic/clock/day.of.week.s <==
+The answer is 17 days and 3 hours later, which would have been a Wednesday.
+This is the only other time in the same month when the two would agree at all.
+
+In 17 days the slow clock loses 17*24*7 minutes = 2856 minutes,
+or 47 hours and 36 minutes.  In 3 hours more it loses 21 minutes, so
+it has lost a total of 47 hours and 57 minutes.  Modulo 12 hours, it
+has *gained* 3 minutes so as to make up the 3 minutes it was slow on
+Sunday.  It is now (fortnight plus 3 days) exactly accurate.
+
+Since the clock was not adjusted since the last visit, it's also
+possible that the radio time shifted by one hour due to a change to or
+from summer daylight saving time.  However, it turns out that the only
+additional possibilities that need to be considered are those of 4 days
+15 hours later, when the clock would have lost 12 hours 57 minutes, and
+29 days 15 hours later, when the clock would have lost 3 days 10 hours
+57 minutes.  Without even considering the rules for when in the month the
+clock is changed, these possible solutions are ruled out because we know
+that both visits were in the evening ("I spent a second evening with him").
+and they involve times in a different part of the day.
+
+
+==> arithmetic/clock/palindromic.p <==
+How many times per day does a digital clock display a palindromic number?
+
+
+==> arithmetic/clock/palindromic.s <==
+The problem is underspecified.  Digital clocks may run from
+
+	(a) 1:00 to 12:59
+	(b) 01:00 to 12:59
+	(c) 0:00 to 23:59
+	(d) 00:00 to 23:59
+	(e-h) any of the above with seconds appended, :00 to :59.
+
+I agree that not all of these are common, but I have seen some uncommon
+ones.  For that matter, I've seen ones not on the above list -- the Toronto
+subway stations used to contain digital clocks that ran from 0:00 to 12:59
+(pm), then from 1:00 (pm) to 11:59 (pm), while a computer that I used to
+use had the inverse anomaly -- its time of day command displayed times
+from 12:00:00 to 12:59:59 (am), then 01:00:00 to 23:59:59!
+
+I get the following results for the 8 cases.
+
+	CASE	AM+PM	HOURS pals/hr  TOTAL	OVERALL TOTAL
+	(a)	yes	1-9	 6	 54
+			10-12	 1	  3	114
+  
+	(b)	yes	01-05	 1	  5
+			06-09	 0	  0
+			10-12	 1	  3	16
+
+	(c)	no	0-9	 6	 60
+			10-15	 1	  6
+			16-19	 0	  0
+			20-23	 1	  4	70
+
+	(d)	no	00-05	 1	  6
+			06-09	 0	  0
+			10-15	 1	  6
+			16-19	 0	  0
+			20-23	 1	  4	16
+
+	(e)	yes	1-9	60	540
+			10-12	 6	 18	1116
+
+	(f)	yes	01-05	 6	 30
+			06-09	 0	  0
+			10-12	 6	 18	96
+
+	(g)	no	0-9	60	600
+			10-15	 6	 36
+			16-19	 0	  0
+			20-23	 6	 24	660
+
+	(h)	no	00-05	 6	 36
+			06-09	 0	  0
+			10-15	 6	 36
+			16-19	 0	  0
+			20-23	 6	 24	96
+
+--Mark Brader (msb@sq.com)
+
+==> arithmetic/clock/reversible.p <==
+How many times per day can the hour and minute hands on an analog clock switch
+roles and still signify a valid time, ignoring the second hand?
+
+==> arithmetic/clock/reversible.s <==
+Have 12 clocks C1, C2 ... C12 show 1:00, 2:00, ..., 12:00.  Have a
+clock C0 show 12:00
+
+Now turn C0 around 12 hours, simultaneously turning C1-C12 so their
+hour hands always coincide with the minute hand of C0, i.e., as C0
+spans 12 hours, C1-C12 will span 1 hour, but for each possible placing
+of the hour hand, all 12 possible 'true' placings of the minute hand
+will be represented by one of the 12 clocks.
+
+Each time the hour hand of C0 coincides with the minute hand of a
+C1-C12 clock we have a reversible valid time.  This happens regularly
+12 times each C0 hour, but the first and last time is equal (12:00), so
+the number of reversible true times is 12*12-1 = 143 spaced regularly
+in the 12-hour interval, ie. each 5 min 2.0979+ sec
+
+-- 
+stein.kulseth@tf.tele.no [X.400] stein.kulseth@nta.no [internet]
+
+==> arithmetic/clock/right.angle.p <==
+How many times per day do the hour and minute hands of a clock form a
+right angle?
+
+
+==> arithmetic/clock/right.angle.s <==
+44.  Twice each hour equals 48, less one between 2:00 and 4:00 and one between
+8:00 and 10:00 for both A.M. and P.M.
+
+==> arithmetic/clock/thirds.p <==
+Do the 3 hands on a clock ever divide the face of the clock into 3
+equal segments, i.e. 120 degrees between each hand?       
+
+==> arithmetic/clock/thirds.s <==
+First let us assume that our clock has 60 divisions.  We will show that
+any time the hour hand and the minute hand are 20 divisions (120 degrees)
+apart, the second hand cannot be an integral number of divisions from the
+other hands, unless it is straight up (on the minute).
+
+Let us use h for hours, m for minutes, and s for seconds.
+We will use =n to mean congruent mod n, thus 12 =5 7.
+
+We know that m =60 12h, that is, the minute hand moves 12 times as fast
+as the hour hand, and wraps around at 60.
+We also have s =60 60m. This simplifies to s/60 =1 m, which goes to
+s/60 = frac(m) (assuming s is in the range 0 <= s < 60), which goes to
+s = 60 frac(m).  Thus, if m is 5.5, s is 30.
+
+Now let us assume the minute hand is 20 divisions ahead of the hour hand.
+So m =60 h + 20, thus 12h =60 h + 20, 11h =60 20, and, finally,
+h =60/11 20/11 (read 'h is congruent mod 60/11 to 20/11').
+So all values of m are k + n/11 for some integral k and integral n,
+0 <= n < 11.  s is therefore 60n/11.  If s is to be an integral number of
+units from m and h, we must have 60n =11 n.  But 60 and 11 are relatively
+prime, so this holds only for n = 0.  But if n = 0, m is integral, so
+s is 0.
+
+Now assume, instead, that the minute hand is 20 divisions behind the hour hand.
+So m =60 h - 20, 12h =60 h - 20, 11h =60 -20, h =60/11 -20/11.
+So m is still k + n/11.  Thus s must be 0.
+
+But if s is 0, h must be 20 or 40.  But this translates to 4 o'clock or
+8 o'clock, at both of which the minute hand is at 0, along with the second
+hand.
+
+Thus the 3 hands can never be 120 degrees apart, Q.E.D.
+
+This assumes, of course, that the second hand is synchronized with the
+minute hand.  This is not true on some inexpensive analog watches.  This
+also assumes that the watch is not broken (:^)).
+
+==> arithmetic/consecutive.composites.p <==
+Are there 10,000 consecutive non-prime numbers?
+
+==> arithmetic/consecutive.composites.s <==
+9973!+2 through 9973!+10006 are composite.
+
+==> arithmetic/consecutive.product.p <==
+Prove that the product of three or more consecutive positive integers cannot
+be a perfect square.
+
+==> arithmetic/consecutive.product.s <==
+Three consecutive numbers:
+  If a and b are relatively prime, and ab is a square,
+  then a and b are squares. (This is left as an exercise.)
+
+  Suppose (n - 1)n(n + 1) = k^2, where n > 1.  
+  Then n(n^2 - 1) = k^2.  But n and (n^2 - 1) are relatively prime.
+  Therefore n^2 - 1 is a perfect square, which is a contradiction.
+
+Four consecutive numbers:
+  n(n + 1)(n + 2)(n + 3) = (n^2 + 3n + 1)^2 - 1
+
+Five consecutive numbers:
+  Assume the product is a integer square, call it m.
+
+  The prime factorization of m must have even numbers of each prime factor.
+
+  For each prime factor, p, of m, p >= 5, p^2k must divide one of the
+consecutive naturals in the product.  (Otherwise, the difference between two
+of the naturals in the product would be a positive multiple of a prime >= 5.
+But in this problem, the greatest difference is 4.) So we need only consider
+the primes 2 and 3.
+
+  Each of the consecutive naturals is one of:
+	1)	a perfect square
+	2)	2 times a perfect square
+	3)	3 times a perfect square
+	4)	6 times a perfect square.
+
+  By the shoe box principle, two of the five consecutive numbers must fall into
+the same category.
+
+  If there are two perfect squares, then their difference being less than five
+limits their values to be 1 and 4.  (0 is not a natural number, so 0 and 1
+and 0 and 4 cannot be the perfect squares.)  But 1*2*3*4*5=120!=x*x where x
+is an integer.
+
+  If there are two numbers that are 2 times a perfect square, then their
+difference being less than five implies that the perfect squares (which are
+multiplied by 2) are less than 3 apart, and no two natural squares differ by
+only 1 or 2.
+
+  A similar argument holds for two numbers which are 3 times a perfect square.
+
+  We cannot have the case that two of the 5 consecutive numbers are multiples
+(much less square multiples) of 6, since their difference would be >= 6, and
+our span of five consecutive numbers is only 4.
+
+  Therefore the assumption that m is a perfect square does not hold.
+
+  QED.
+
+In general the equation:
+
+y^2 = x(x+1)(x+2)...(x+n),    n > 3
+
+has only the solution corresponding to y = 0.
+
+This is a theorem of Rigge [O. Rigge, ``Uber ein diophantisches Problem'',
+IX Skan. Math. Kong. Helsingfors (1938)] and Erdos [P. Erdos, ``Note on
+products of consecutive integers,'' J. London Math. Soc. #14 (1939),
+pages 194-198].
+
+A proof can be found on page 276 of [L. Mordell, ``Diophantine
+Equations'', Academic Press 1969].
+
+==> arithmetic/consecutive.sums.p <==
+Find all series of consecutive positive integers whose sum is exactly 10,000.
+
+==> arithmetic/consecutive.sums.s <==
+Generalize to find X (and I) such that
+    (X + X+1 + X+2 + ... + X+I) = T
+for any integer T.
+
+You are asking for all (X,I) s.t. (2X+I)(I+1) = 2T.  The problem is
+(very) slightly easier if we don't restrict X to being positive, so
+we'll solve this first.
+
+Note that 2X+I and I+1 must have different parities, so the answer
+to the relaxed question is N = 2*(o_1+1)*(o_2+1)*...*(o_n+1), where
+2T = 2^o_0*3^o_1*...*p_n^o_n (the prime factorization); this is easily
+seen to be the number of ways we can break 2T up into two positive
+factors of differing parity (with order).
+
+In particular, 20000 = 2^5*5^4, hence there are 2*(4+1) = 10 solutions
+for T = 10000.  These are (2X+I,I+1):
+
+(32*1,5^4)   (32*5,5^3)   (32*5^2,5^2)   (32*5^3,5)   (32*5^4,1)
+(5^4,32*1)   (5^3,32*5)   (5^2,32*5^2)   (5,32*5^3)   (1,32*5^4)
+
+And they give rise to the solutions (X,I):
+
+(-296,624)   (28,124)   (388,24)   (1998,4)     (10000,0)
+(297,31)     (-27,179)  (-387,799) (-1997,3999) (-9999,19999)
+
+If you require that X>0 note that this is true iff 2X+I > I+1 and
+hence the number of solutions to this problem is N/2 (due to the
+symmetry of the above ordered pairs).
+
+==> arithmetic/conway.p <==
+Describe the sequence a(1)=a(2)=1, a(n) = a(a(n-1)) + a(n-a(n-1)) for n>2.
+
+==> arithmetic/conway.s <==
+This sequence and its remarkable properties were discovered, apparently
+independently, by Douglas Hofstadter (circa 1975), John Conway (in the
+early 1980's), B.W. Connoly, and others. Since Conway discovered many of
+the deeper properties, and is the one responsible for popularizing the
+sequence, it seems appropriate to name the sequence after him.
+
+Some properties of a(n):
+
+--  a(n+1) - a(n) = 0 or 1
+
+--  a(2^n) = 2^(n-1)
+
+--  n/2 <= a(n) <= n
+
+--  A(n)= 2a(n) - n    has zeros at the powers of 2 and 
+     positive "humps" in between
+
+--  A(2^n + t) = A(2^(n+1) - t)  for t between 0 and 2^n,
+     i.e. the humps are symmetric
+
+-- a(2n) <= 2a(n)
+
+-- a(n)/n --> 1/2  as  n --> infinity
+
+-- a(n) and A(n) are self-similar, in the sense that their values on the
+   (N+1)'st hump can be obtained by a "magnification" process applied
+   to the values on the N'th hump. They are *not* chaotic sequences,
+   since their asymptotics and combinatorial structure are very regular
+   and rigid.
+
+In a lecture at Bell Labs in 1988, Conway asked for the rate at
+which  a(n)/n converges to 1/2.  In particular, he asked for
+N(epsilon), the last value of  n  such that  |a(n)/n - 1/2|
+exceeds epsilon, in the case  epsilon=1/20.  This problem was
+solved by Colin Mallows of Bell Labs: he found that  N(1/20)=1489
+and N(1/40)=6083008742. These values are reported in his article
+in the American Mathematical Monthly, January 1991, p. 5.
+
+Conway's sequence has a deep combinatorial structure, and is intimately
+connected with all of the following: variants of Pascal's triangle, the
+Gaussian distribution, combinatorial operations on finite sets,
+coin-pushing games, and Fibonacci and Catalan numbers.  All of this is
+explained in my joint paper with Ravi Vakil; anyone who would like to
+receive a copy in LaTex format should contact me at the e-mail address
+listed below.
+
+One byproduct of our work is an algorithm to determine  N(epsilon) for
+given positive epsilon.  Here are some particular values:
+
+ e      Last  n  such that   |a(n)/n - 1/2| > e
+----    ----------------------------------------------------------
+1/20    1489  (found by Mallows in 1988)
+1/30    758765
+1/40    6083008742  (found by Mallows in 1988)
+1/50    809308036481621
+1/60    1684539346496977501739
+1/70    55738373698123373661810220400
+1/80    15088841875190938484828948428612052839
+1/90    127565909103887972767169084026274554426122918035
+1/100   8826608001127077619581589939550531021943059906967127007025
+
+These values were computed by the Mathematica program listed below; the
+algorithm is explained in our paper.  To use the program, load it into
+Mathematica and type   neps[t]  for some numerical value of  t  (which
+should probably be smaller than 1/5 or so). The program will output  N(t),
+e.g.  neps[1/20] = 1489. These numbers grow very fast: N(epsilon) will be
+about 2^((0.138015/epsilon)^2), so  N(1/1000) will have about 5735 digits.
+The program requires very little memory space, but its runtime appears to
+grow rapidly as epsilon decreases (on a Sun 3, it took about one second to
+find the first value listed, and several minutes to find the last).
+
+neps[eps_] := Block[{W}, L = 1 + Floor[(0.138015/eps)^2]; e = eps*2; 
+    W = processvector[L]; While[Length[W] > 0, 
+     nmax = 1 + Last[W][[4]]; L++; W = processvector[L]]; nmax]
+ 
+processvector[L_] := 
+  Block[{V}, V = startvector[L]; While[notfound[V], V = newbody[V]]; V]
+ 
+startvector[L_] := Select[initialvector[L], gt]
+ 
+initialvector[L_] := 
+  Table[{L, b, Binomial[L - 1, b - 1], 
+    2^(L + 1) - Sum[Binomial[L, c], {c, b, L}]}, {b, 0, L - 1}]
+ 
+c[0] = 0
+ 
+c[n_] := c[n] = Sum[Binomial[2*a, a]/(a + 1), {a, 0, n - 1}]
+ 
+gt[x_] := U[x] > e
+ 
+U[x_] := (x[[3]] + M[x[[1]], x[[2]]])/(x[[4]] + incp[x[[1]], x[[2]]])
+ 
+M[n_, n_] = -1
+ 
+M[n_, k_] := Binomial[n - 1, K[n, k]] - Binomial[n - 1, k - 1] + c[K[n, k]]
+ 
+K[n_, k_] := Min[k, n - k]
+ 
+incp[n_, k_] := Max[M[n, k], 1]
+ 
+notfound[V_] := 
+  Length[V] > 0 && Last[V][[2]] > 0 && Last[V][[1]] > Last[V][[2]]
+ 
+newbody[V_] := Join[Drop[V, -1], newtail[V]]
+ 
+newtail[V_] := Select[{vleft[Last[V]], vright[Last[V]]}, gt]
+ 
+vleft[x_] := {x[[1]] - 1, x[[2]] - 1, x[[3]], x[[4]]}
+ 
+vright[x_] := {x[[1]] - 1, x[[2]], x[[3]] + S[x[[1]] - 1, x[[2]] - 1], 
+   x[[4]] + Binomial[x[[1]] - 1, x[[2]] - 1]}
+ 
+S[n_, k_] := Binomial[n - 1, k] - Binomial[n - 1, k - 1]
+
+
+-Tal Kubo     kubo@math.harvard.edu  or   kubo@zariski.harvard.edu
+
+==> arithmetic/digits/6.and.7.p <==
+Does every number which is not divisible by 5 have a multiple whose
+only digits are 6 and 7?
+
+==> arithmetic/digits/6.and.7.s <==
+Yes.  My proof follows:
+
+Claim 1: For every k, there is a k-digit number whose only digits
+are 6 and 7, which is divisible by 2^k.
+
+The proof is by induction.  Suppose N is a k-digit number 
+satisfying the above condition.  Then either N = 0 (mod 2^(k+1))
+or N = 2^k (mod 2^(k+1)). Note that 6(10^k) = 0 (mod 2^(k+1)),
+and 7(10^k) = 2^k (mod 2^(k+1)).  So, either 6*10^k + N or
+7*10^k + N is divisible by 2^(k+1).
+
+Claim 2:  If m and 10 are relatively prime, then for any r,
+there is a number N whose only digits are 6 and 7 such that
+N = r (mod m). 
+
+Proof:  Let K be the (m^2)-digit number whose only digit is 6.
+There is an s, 0 <= s < m, so that K + s = r (mod m).
+Let N = K + 10^(m - 1) + 10^(2m - 2) + . . . + 10^(sm - s).
+Since 10^(im - i) = 1 (mod m), N = K + s (mod m) = r (mod m).
+Clearly, every digit of N is either 6 or 7. 
+
+Claim 3: If n is not divisible by 5, then there is a number N whose
+only digits are 6 and 7, so that N is divisible by n. 
+
+Proof:  We can write n = (2^k)m, with gcd(m,10)=1.
+Use claim 1 to find a k-digit number M, whose only digits are 6 and 7,
+which is divisible by 2^k.  Choose an integer r so that
+(10^k)r + M = 0 (mod m).  Use claim 2 to find a number K whose
+only digits are 6 and 7, so that K = r (mod m).  Let N = 10^k K + M.
+Then N = 0 (mod m) and N = 0 (mod 2^k), so N is divisible by n.
+Finally, the only digits of N are 6 and 7, so we are done.
+
+--
+David Radcliffe                                radcliff@csd4.csd.uwm.edu
+
+==> arithmetic/digits/all.ones.p <==
+Prove that some multiple of any integer ending in 3 contains all 1s.
+
+==> arithmetic/digits/all.ones.s <==
+Let n be our integer; one such desired multiple is then
+(10^(phi(n))-1)/9.  All we need is that (n,10) = 1, and if the last
+digit is 3 this must be the case.  A different proof using the
+pigeonhole principle is to consider the sequence 1, 11, 111, ..., (10^n
+- 1)/9.  We must have at some point that either some member of our
+sequence = 0 (mod n) or else some value (mod n) is duplicated.  Assume
+the latter, with x_a and x_b, x_b>x_a,  possesing the duplicated
+remainders.  We then have that x_b - x-a = 0 (mod n).  Let m be the
+highest power of 10 dividing x_b - x_a.  Now since (10,n) = 1, we can
+divide by 10^m and get that (x_b - x_a)/10^m = 0 (n).  But (x_b -
+x_a)/10^m is a number containing only the digit 1.
+
+Q.E.D.
+
+==> arithmetic/digits/arabian.p <==
+What is the Arabian Nights factorial, the number x such that x! has 1001
+digits?  How about the prime x such that x! has exactly 1001 zeroes on
+the tail end.  (Bonus question, what is the 'rightmost' non-zero digit in x!?)
+
+==> arithmetic/digits/arabian.s <==
+The first answer is 450!.
+
+Determining the number of zeroes at the end of x! is relatively easy once
+you realize that each such zero comes from a factor of 10 in the product
+
+   1 * 2 * 3 * ... * x
+
+Each factor of 10, in turn, comes from a factor of 5 and a factor of 2.
+Since there are many more factors of 2 than factors of 5, the number of 5s
+determines the number of zeroes at the end of the factorial.
+
+The number of 5s in the set of numbers 1 .. x (and therefore the number
+of zeroes at the end of x!) is:
+
+  z(x) = int(x/5) + int(x/25) + int(x/125) + int(x/625) + ...
+
+This series terminates when the powers of 5 exceed x.
+
+I know of no simple way to invert the above formula (i.e., to find x for
+a given z(x)), but I can approximate it by noting that, except for the "int"
+function,
+
+   5*z(x) - x = z(x)
+
+which gives:
+
+   x = 4*z(x) (approximately).
+
+The given problem asked, "For what prime x is z(x)=1001".  By the above forumla,
+this is approximately 4*1001=4004.  However, 4004! has only
+
+  800 + 160 + 32 + 6 + 1 = 999 zeroes at the end of it.
+
+The numbers 4005! through 4009! all have 1000 zeroes at their end and
+the numbers 4010! through 4014! all have 1001 zeroes at their end.
+
+Since the problem asked for a prime x, and 4011 = 3*7*191, the only solution
+is x=4013.
+
+The problem of determining the rightmost nonzero digit in x! is somewhat more
+difficult.  If we took the numbers 1, 2, ... , x and removed all factors of 5
+(and an equal number of factors of 2), the remaining numbers multiplied
+together modulo 10 would be the answer.  Note that since there are still many
+factors of 2 left, the rightmost nonzero digit must be 2, 4, 6, or 8 (x > 1).
+
+Letting r(x) be the rightmost nonzero digit in x!, an expression for r(x) is:
+
+  r(x) = (r(int(x/5)) * w * r(x mod 10)) mod 10, x >= 10.
+
+where w is 4 if int(x/10) is odd and 6 if it is even.
+
+The values of r(x) for 0 <= x <= 9 are 1, 1, 2, 6, 4, 2, 2, 4, 2, and 8.
+
+The way to see this is true is to take the numbers 1, 2, ..., x in groups
+of 10.  In each group, remove 2 factors of 10.  For example, from the
+set 1, 2, ..., 10, choose a factor of 2 from 2 and 6 and a factor of 5 from
+5 and 10.  This leaves 1, 1, 3, 4, 1, 3, 7, 8, 9, 2.  Next, separate all the
+factors that came from multiples of 5.  The rightmost nonzero digit of x!
+can now (hopefully) be seen to be:
+
+  r(x) = (r(int(x/5)) * w * r(x mod 10)) mod 10
+
+where w is the rightmost digit in the number formed by multiplying the numbers
+1, 2, 3, ..., 10*int(x/10) after the factors of 10 and the factors left over
+by the multiples of 5 have been removed.  In the example with x = 10, this
+would be (1 * 1 * 3 * 4 * 3 * 7 * 8 * 9) mod 10 = 4.  The "r(x mod 10)" term
+takes care of the numbers from 10*int(x/10)+1 up to x.
+
+The "w" term can be seen to be 4 or 6 depending on whether int(x/10) is odd or
+even since, after removing 10*n+5 and 10*n+10 and a factor of 2 each from
+10*n+2 and 10*n+6 from the group of numbers 10*n+1 through 10*n+10, the
+remaining factors (mod 10) always equals 4 and 4^t mod 10 = 4 if t is odd and
+6 when t is even (t != 0).
+
+So, finally, the rightmost nonzero digit in 4013! is found as follows:
+
+  r(4013) = (r(802) * 4 * 6) mod 10
+  r(802)  = (r(160) * 6 * 2) mod 10
+  r(160)  = (r(32)  * 6 * 1) mod 10
+  r(32)   = (r(6)   * 4 * 2) mod 10
+
+Using a table of r(x) for 0 <= x <= 9, r(6) = 2.  Then,
+
+  r(32)   = (2 * 4 * 2) mod 10 = 6
+  r(160)  = (6 * 6 * 1) mod 10 = 6
+  r(802)  = (6 * 6 * 2) mod 10 = 2
+  r(4013) = (2 * 4 * 6) mod 10 = 8
+
+Thus, the rightmost nonzero digit in 4013! is 8.
+
+==> arithmetic/digits/circular.p <==
+What 6 digit number, with 6 different digits, when multiplied by all integers
+up to 6, circulates its digits through all 6 possible positions, as follows:
+ABCDEF * 1 = ABCDEF
+ABCDEF * 3 = BCDEFA
+ABCDEF * 2 = CDEFAB
+ABCDEF * 6 = DEFABC
+ABCDEF * 4 = EFABCD
+ABCDEF * 5 = FABCDE
+
+==> arithmetic/digits/circular.s <==
+ABCDEF=142857 (the digits of the expansion of 1/7).
+
+==> arithmetic/digits/divisible.p <==
+Find the least number using 0-9 exactly once that is evenly divisible by each
+of these digits.
+
+==> arithmetic/digits/divisible.s <==
+Since the sum of the digits is 45, any permutation of the digits gives a
+multiple of 9.  To get a multiple of both 2 and 5, the last digit must
+be 0, and thus to get a multiple of 8 (and 4), the tens digit must be
+even, and the hundreds digit must be odd if the tens digit is 2 or 6,
+and even otherwise.  The number will also be divisible by 6, since it is
+divisible by 2 and 3, so 7 is all we need to check.  First, we will look
+for a number whose first five digits are 12345; now, 1234500000 has a
+remainder of 6 when divided by 7, so we have to arrange the remaining
+digits to get a remainder of 1.  The possible arrangements, in
+increasing order, are
+
+78960, remainder 0
+79680, remainder 6
+87960, remainder 5
+89760, remainder 6
+97680, remainder 2
+98760, remainder 4
+
+That didn't work, so try numbers starting with 12346; this is impossible
+because the tens digit must be 8, and the hundreds digit cannot be even.
+Now try 12347, and 1234700000 has remainder 2.  The last five digits can
+be
+
+58960, remainder 6
+59680, remainder 5, so this works, and the number is
+
+1234759680.
+
+==> arithmetic/digits/equations/123456789.p <==
+In how many ways can "." be replaced with "+", "-", or "" (concatenate) in
+.1.2.3.4.5.6.7.8.9=1 to form a correct equation?
+
+==> arithmetic/digits/equations/123456789.s <==
+ 1-2 3+4 5+6 7-8 9 = 1
++1-2 3+4 5+6 7-8 9 = 1
+ 1+2 3+4-5+6 7-8 9 = 1
++1+2 3+4-5+6 7-8 9 = 1
+-1+2 3-4+5+6 7-8 9 = 1
+ 1+2 3-4 5-6 7+8 9 = 1
++1+2 3-4 5-6 7+8 9 = 1
+ 1-2 3-4+5-6 7+8 9 = 1
++1-2 3-4+5-6 7+8 9 = 1
+ 1-2-3-4 5+6 7-8-9 = 1
++1-2-3-4 5+6 7-8-9 = 1
+ 1+2-3 4+5 6-7-8-9 = 1
++1+2-3 4+5 6-7-8-9 = 1
+-1+2 3+4+5-6-7-8-9 = 1
+-1 2+3 4-5-6+7-8-9 = 1
+ 1+2+3+4-5+6+7-8-9 = 1
++1+2+3+4-5+6+7-8-9 = 1
+-1+2+3-4+5+6+7-8-9 = 1
+ 1-2-3+4+5+6+7-8-9 = 1
++1-2-3+4+5+6+7-8-9 = 1
+ 1+2 3+4 5-6 7+8-9 = 1
++1+2 3+4 5-6 7+8-9 = 1
+ 1+2 3-4-5-6-7+8-9 = 1
++1+2 3-4-5-6-7+8-9 = 1
+ 1+2+3+4+5-6-7+8-9 = 1
++1+2+3+4+5-6-7+8-9 = 1
+-1+2+3+4-5+6-7+8-9 = 1
+ 1-2+3-4+5+6-7+8-9 = 1
++1-2+3-4+5+6-7+8-9 = 1
+-1-2-3+4+5+6-7+8-9 = 1
+ 1-2+3+4-5-6+7+8-9 = 1
++1-2+3+4-5-6+7+8-9 = 1
+ 1+2-3-4+5-6+7+8-9 = 1
++1+2-3-4+5-6+7+8-9 = 1
+-1-2+3-4+5-6+7+8-9 = 1
+-1+2-3-4-5+6+7+8-9 = 1
+-1+2 3+4 5-6 7-8+9 = 1
+ 1-2 3-4 5+6 7-8+9 = 1
++1-2 3-4 5+6 7-8+9 = 1
+-1+2 3-4-5-6-7-8+9 = 1
+-1+2+3+4+5-6-7-8+9 = 1
+ 1-2+3+4-5+6-7-8+9 = 1
++1-2+3+4-5+6-7-8+9 = 1
+ 1+2-3-4+5+6-7-8+9 = 1
++1+2-3-4+5+6-7-8+9 = 1
+-1-2+3-4+5+6-7-8+9 = 1
+ 1+2-3+4-5-6+7-8+9 = 1
++1+2-3+4-5-6+7-8+9 = 1
+-1-2+3+4-5-6+7-8+9 = 1
+-1+2-3-4+5-6+7-8+9 = 1
+ 1-2-3-4-5+6+7-8+9 = 1
++1-2-3-4-5+6+7-8+9 = 1
+ 1-2 3+4+5+6+7-8+9 = 1
++1-2 3+4+5+6+7-8+9 = 1
+ 1+2+3+4 5-6 7+8+9 = 1
++1+2+3+4 5-6 7+8+9 = 1
+ 1 2+3 4+5-6 7+8+9 = 1
++1 2+3 4+5-6 7+8+9 = 1
+ 1+2+3-4-5-6-7+8+9 = 1
++1+2+3-4-5-6-7+8+9 = 1
+-1+2-3+4-5-6-7+8+9 = 1
+ 1-2-3-4+5-6-7+8+9 = 1
++1-2-3-4+5-6-7+8+9 = 1
+-1-2-3-4-5+6-7+8+9 = 1
+-1-2 3+4+5+6-7+8+9 = 1
+ 1-2+3 4-5 6+7+8+9 = 1
++1-2+3 4-5 6+7+8+9 = 1
+ 1 2-3 4+5-6+7+8+9 = 1
++1 2-3 4+5-6+7+8+9 = 1
+Total solutions  = 69 (26 of which have a leading "+", which is redundant)
+
+69/19683 = 0.35 %
+
+for those who care (it's not very elegant but it did the trick):
+
+#include <stdio.h>
+#include <math.h>
+
+main (argc,argv)
+     int argc;
+     char *argv[];
+{
+  int sresult, result, operator[10],thisop;
+  char buf[256],ops[3];
+  int i,j,tot=0,temp;
+  
+  ops[0] = ' ';
+  ops[1] = '-';
+  ops[2] = '+';
+
+  for (i=1; i<10; i++) operator[i] = 0;
+  
+  for (j=0; j < 19683; j++) {
+    result = 0;
+    sresult = 0;
+    thisop = 1;
+    for (i=1; i<10; i++) {
+      switch (operator[i]) {
+      case 0:
+	sresult = sresult * 10 + i;
+	break;
+      case 1:
+	result = result + sresult * thisop;
+	sresult = i;
+	thisop = -1;
+	break;
+      case 2:
+	result = result + sresult * thisop;
+	sresult = i;
+	thisop = 1;
+	break;
+      }
+    }
+  
+    result  = result + sresult * thisop;
+    if (result == 1) {
+      tot++;
+      for  (i=1;i<10;i++) 
+	printf("%c%d",ops[operator[i]],i);
+      printf(" = %d\n",result);
+    }
+    temp = 0;
+    operator[1] += 1;
+    for (i=1;i<10;i++) {
+      operator[i] += temp;
+      if (operator[i] > 2) { operator[i] = 0; temp = 1;}
+      else temp = 0;
+    }
+  
+  }
+  
+  printf("Total solutions  = %d\n" , tot);
+}
+
+cwren@media.mit.edu (Christopher Wren)
+
+==> arithmetic/digits/equations/1992.p <==
+1 = -1+9-9+2.  Extend this list to 2 through 100 on the left side of
+the equals sign.
+
+==> arithmetic/digits/equations/1992.s <==
+1 = -1+9-9+2
+2 = 1*9-9+2
+3 = 1+9-9+2
+4 = 1+9/9+2
+5 = 1+9-sqrt(9)-2
+6 = 1^9+sqrt(9)+2
+7 = -1+sqrt(9)+sqrt(9)+2
+8 = 19-9-2
+9 = (1/9)*9^2
+10= 1+(9+9)/2
+11= 1+9+sqrt(9)-2
+12= 19-9+2
+13= (1+sqrt(9))!-9-2
+14= 1+9+sqrt(9)!-2
+15= -1+9+9-2
+16= -1+9+sqrt(9)!+2
+17= 1+9+9-2
+18= 1+9+sqrt(9)!+2
+19= -1+9+9+2
+20= (19-9)*2
+21= 1+9+9+2
+22= (-1+sqrt(9))*(9-2)
+23= (1+sqrt(9))!-sqrt(9)+2
+24= -1+9*sqrt(9)-2
+25= 1*9*sqrt(9)-2
+26= 19+9-2
+27= 1*9+9*2
+28= 1+9+9*2
+29= 1*9*sqrt(9)+2
+30= 19+9+2
+31= (1+sqrt(9))!+9-2
+32= -1+sqrt(9)*(9+2)
+33= 1*sqrt(9)*(9+2)
+34= (-1+9+9)*2
+35= -1+(9+9)*2
+36= 1^9*sqrt(9)!^2
+37= 19+9*2
+38= 1*sqrt(9)!*sqrt(9)!+2
+39= 1+sqrt(9)!*sqrt(9)!+2
+40= (1+sqrt(9)!)*sqrt(9)!-2
+41= -1+sqrt(9)!*(9-2)
+42= (1+sqrt(9))!+9*2
+43= 1+sqrt(9)!*(9-2)
+44= -1+9*(sqrt(9)+2)
+45= 1*9*(sqrt(9)+2)
+46= 1+9*(sqrt(9)+2)
+47= (-1+sqrt(9)!)*9+2
+48= 1*sqrt(9)!*(sqrt(9)!+2)
+49= (1+sqrt(9)!)*(9-2)
+50= (-1+9)*sqrt(9)!+2
+51= -1+9*sqrt(9)!-2
+52= 1*9*sqrt(9)!-2
+53= -1+9*sqrt(9)*2
+54= 1*9*sqrt(9)*2
+55= 1+9*sqrt(9)*2
+56= 1*9*sqrt(9)!+2
+57= 1+9*sqrt(9)!+2
+58= (1+9)*sqrt(9)!-2
+59= 19*sqrt(9)+2
+60= (1+9)*sqrt(9)*2
+61= (1+sqrt(9)!)*9-2
+62= -1+9*(9-2)
+63= 1*9*(9-2)
+64= 1+9*(9-2)
+65= (1+sqrt(9)!)*9+2
+66= 1*sqrt(9)!*(9+2)
+67= 1+sqrt(9)!*(9+2)
+68= -(1+sqrt(9))!+92
+69= (1+sqrt(9))!+(9/.2)
+70= (1+9)*(9-2)
+71= -1-9+9^2
+72= (1+sqrt(9))*9*2
+73= -19+92
+74= (-1+9)*9+2
+75= -1*sqrt(9)!+9^2
+76= 1-sqrt(9)!+9^2
+77= (1+sqrt(9)!)*(9+2)
+78= -1+9*9-2
+79= 1*9*9-2
+80= 1+9*9-2
+81= 1*9*sqrt(9)^2
+82= -1+9*9+2
+83= 1*9*9+2
+84= 1+9*9+2
+85= -1-sqrt(9)!+92
+86= -1*sqrt(9)!+92
+87= 1-sqrt(9)!+92
+88= (1+9)*9-2
+89= -1*sqrt(9)+92
+90= 1-sqrt(9)+92
+91= -1^9+92
+92= (1+9)*9+2
+93= 1^9+92
+94= -1+sqrt(9)+92
+95= 19*(sqrt(9)+2)
+96= -1+99-2
+97= 1*99-2
+98= 1+99-2
+99= 1*9*(9+2)
+100= -1+99+2
+
+==> arithmetic/digits/equations/24.p <==
+Form an expression that evaluates to 24 that contains two 3's, two 7's,
+and zero or more of the operators +, -, *, and /, and parentheses.  What
+about two 4's and two 7's, or three 5's and one 1, or two 3's and two 8's?
+
+==> arithmetic/digits/equations/24.s <==
+7*(3+3/7)
+7*(4-4/7)
+5*(5-1/5)
+8/(3-8/3)
+
+==> arithmetic/digits/equations/383.p <==
+Make 383 out of 1,2,25,50,75,100 using +,-,*,/.
+
+==> arithmetic/digits/equations/383.s <==
+You can get 383 with ((2+50)/25+1)*100+75.
+
+Of course, if you expect / as in C, the above expression is just 375.
+But then you can get 383 with (25*50-100)/(1+2).  Pity there's no way
+to use the 75.
+
+If we had a language that rounded instead of truncating, we could use
+((1+75+100)*50)/(25-2) or (2*75*(25+100))/(50-1).
+
+I imagine your problem lies in not dividing things that aren't
+divisible.
+
+Dan Hoey
+Hoey@AIC.NRL.Navy.Mil
+
+==> arithmetic/digits/equations/find.p <==
+Write a program for finding expressions built out of given numbers and using
+given operators that evaluate to a given value, or listing all possible values.
+
+==> arithmetic/digits/equations/find.s <==
+As set up, it requires recompilation for different sets of numbers;
+it's currently set up for 8,8,3,3; to try in other numbers, stick 'em
+in the 'val' array.  To find all target numbers for which the equation
+is valid, uncomment the 't' loop and 'target = t', and extend the range
+to be checked... you might want to turn off VERBOSE.  I don't bother
+with eliminating symmetries if equal vals are given (like 8 8 3 3), so
+I normally use it like
+
+	numop 24 | sort | uniq
+
+As it stands, this gives the output:
+
+8 / (3 - (8 / 3)) = 24.0
+8 / (3 - (8 / 3)) = 24.0
+8 / (3 - (8 / 3)) = 24.0
+8 / (3 - (8 / 3)) = 24.0
+
+As you can see, there are five different kinds of binary trees with
+exactly four leaf nodes.  The program tries all four operators in each
+place, and all four values in each of the leaves, guaranteeing that each
+is used only once... a fairly quick operation.  A small extract from
+'numop 1' shows the five different shapes of trees:
+
+((3 * 8) / 3) / 8 = 1.0
+(3 * (8 / 3)) / 8 = 1.0
+(3 - 3) + (8 / 8) = 1.0
+3 * ((8 / 3) / 8) = 1.0
+3 * (8 / (3 * 8)) = 1.0
+
+Probably FUDGE ought to be set a little lower, for more confidence that
+the equality isn't fortuitous.  Extensions to other binary operators are
+obvious; unary operators and more values are not.  For a more general
+problem I'd go recursive, use exact rational arithmetic, and have a fine
+old time.
+
+Enjoy...
+
+	Jim Gillogly <uunet!rand.org!James_Gillogly>
+	21 Wedmath S.R. 1993, 10:58
+----------------------------------------------------------------
+
+/* numop: using elementary operations on 4 numbers, find a
+ * desired result; e.g. 24.
+ *
+ * Don't worry about symmetries resulting in multiple correct answers.
+ *
+ * 11 Aug 93, SCRYER
+ */
+
+#include <stdio.h>
+
+#define VERBOSE
+
+
+#define MUL 0
+#define DIV 1
+#define ADD 2
+#define SUB 3
+
+#define FUDGE 0.01
+
+float val[4] = {8, 8, 3, 3};
+float eval(), atof(), fabs();
+char nameop();
+
+int divzero;
+
+main(argc, argv)
+int argc;
+char *argv[];
+{
+    int op1, op2, op3;
+    int iv1, iv2, iv3, iv4;
+    int used[4];
+    int i;
+    float target;
+    float e1, e2, e3;
+    int t, winner;
+
+    if (argc != 2)
+    {
+	fprintf(stderr, "Usage: numop <target>\n");
+	exit(1);
+    }
+    target = atof(argv[1]);
+
+
+/* for (t = -1000; t < 1000; t++) */
+ {
+/*    target = t;*/
+    winner = 0;
+
+    for (i = 0; i < 4; i++) used[i] = 0;
+
+    for (op1 = 0; op1 < 4; op1++)
+	for (op2 = 0; op2 < 4; op2++)
+	    for (op3 = 0; op3 < 4; op3++)
+		for (iv1 = 0; iv1 < 4; iv1++)
+		{
+		    used[iv1] = 1;
+		    for (iv2 = 0; iv2 < 4; iv2++)
+		    {
+			if (used[iv2]) continue;
+			used[iv2] = 1;
+			for (iv3 = 0; iv3 < 4; iv3++)
+			{
+			    if (used[iv3]) continue;
+			    used[iv3] = 1;
+			    for (iv4 = 0; iv4 < 4; iv4++)
+			    {
+				if (used[iv4]) continue;
+
+				/* Case 1 */
+				divzero = 0;
+				e3 = eval(op3, val[iv3], val[iv4]);
+				e2 = eval(op2, val[iv1], val[iv2]);
+				e1 = eval(op1, e2, e3);                         /* (u + v) * (w - x) */
+				if (fabs(e1 - target) < FUDGE && ! divzero)
+#ifdef VERBOSE
+				    printf("(%.0f %c %.0f) %c (%.0f %c %.0f) = %.1f\n",
+					val[iv1], nameop(op2), val[iv2], nameop(op1),
+					val[iv3], nameop(op3), val[iv4], e1);
+#else
+				    winner = 1;
+#endif
+				/* Case 2 */
+				divzero = 0;
+				e3 = eval(op3, val[iv1], val[iv2]);
+				e2 = eval(op2, e3, val[iv3]);
+				e1 = eval(op1, e2, val[iv4]);                   /* ((u + v) * w) - x */
+				if (fabs(e1 - target) < FUDGE && ! divzero)
+#ifdef VERBOSE
+				    printf("((%.0f %c %.0f) %c %.0f) %c %.0f = %.1f\n",
+					val[iv1], nameop(op3), val[iv2], nameop(op2), val[iv3], nameop(op1), val[iv4], e1);
+#else
+				    winner = 1;
+#endif
+
+				/* Case 3 */
+				divzero = 0;
+				e3 = eval(op3, val[iv2], val[iv3]);
+				e2 = eval(op2, val[iv1], e3);
+				e1 = eval(op1, e2, val[iv4]);                   /* (u + (v * w)) - x */
+				if (fabs(e1 - target) < FUDGE && ! divzero)
+#ifdef VERBOSE
+				    printf("(%.0f %c (%.0f %c %.0f)) %c %.0f = %.1f\n",
+					val[iv1], nameop(op2), val[iv2], nameop(op3), val[iv3],
+					nameop(op1), val[iv4], e1);
+#else
+				    winner = 1;
+#endif
+
+				/* Case 4 */
+				divzero = 0;
+				e3 = eval(op3, val[iv2], val[iv3]);
+				e2 = eval(op2, e3, val[iv4]);
+				e1 = eval(op1, val[iv1], e2);                   /* u + ((v * w) - x) */
+				if (fabs(e1 - target) < FUDGE && ! divzero)
+#ifdef VERBOSE
+				    printf("%.0f %c ((%.0f %c %.0f) %c %.0f) = %.1f\n",
+					val[iv1], nameop(op1), val[iv2], nameop(op3), val[iv3],
+					nameop(op2), val[iv4], e1);
+#else
+				    winner = 1;
+#endif
+
+				/* Case 5 */                                    /* u + (v * (w - x)) */
+				divzero = 0;
+				e3 = eval(op3, val[iv3], val[iv4]);
+				e2 = eval(op2, val[iv2], e3);
+				e1 = eval(op1, val[iv1], e2);
+				if (fabs(e1 - target) < FUDGE && ! divzero)
+#ifdef VERBOSE
+				    printf("%.0f %c (%.0f %c (%.0f %c %.0f)) = %.1f\n",
+					val[iv1], nameop(op1), val[iv2], nameop(op2), val[iv3],
+					nameop(op3), val[iv4], e1);
+#else
+				    winner = 1;
+#endif
+
+			    }
+			    used[iv3] = 0;
+			}
+			used[iv2] = 0;
+		    }
+		    used[iv1] = 0;
+		}
+#ifndef VERBOSE
+     if (winner) printf("%d\n", t), fflush(stdout);
+#endif
+  }
+}
+
+char nameop(op)
+int op;
+{
+    switch(op)
+    {
+	case MUL: return '*';
+	case DIV: return '/';
+	case ADD: return '+';
+	case SUB: return '-';
+    }
+    return '?';
+}
+
+float eval(op, val1, val2)
+int op;
+float val1, val2;
+{
+    switch(op)
+    {
+	case MUL: return val1 * val2;
+	case DIV:
+		if (val2 == 0.)
+		{
+			divzero = 1;
+#ifdef EXTREMELYVERBOSE
+			fprintf(stderr, "Division by zero.\n");
+#endif
+		}
+		return val2 == 0.? 0. : val1 / val2;
+	case ADD: return val1 + val2;
+	case SUB: return val1 - val2;
+    }
+    return 0.;
+}
+
+
+
+==> arithmetic/digits/extreme.products.p <==
+What are the extremal products of three three-digit numbers using digits 1-9?
+
+==> arithmetic/digits/extreme.products.s <==
+There is a simple procedure which applies to these types of problems (and
+which can be proven with help from the arithmetic-geometric inequality).
+
+For the first part we use the "first large then equal" procedure.
+This means that are three numbers will be 7**, 8**, and 9**.  Now
+the digits 4,5,6 get distributed so as to make our three number as
+close to each other as possible, i.e. 76*, 85*, 94*.  The same goes
+for the remaining three digits, and we get 763, 852, 941.
+
+For the second part we use the "first small then different" procedure.
+Our three numbers will be of the form 1**, 2**, 3**.  We now place
+the three digits so as to make our three numbers as unequal as possible;
+this gives 14*, 25*, 36*.  Finishing, we get 147, 258, 369.
+
+Now, *prove* that these procedures work for generalizations of this
+problem.
+
+==> arithmetic/digits/labels.p <==
+You have an arbitrary number of model kits (which you assemble for
+fun and profit).  Each kit comes with twenty (20) stickers, two of which
+are labeled "0", two are labeled "1", ..., two are labeled "9".
+You decide to stick a serial number on each model you assemble starting
+with one.  What is the first number you cannot stick.  You may stockpile
+unused numbers on already assembled models, but you may not crack open
+a new model to get at its stickers.  You complete assembling the current
+model before starting the next.
+
+==> arithmetic/digits/labels.s <==
+The method I used for this problem involved first coming up with a
+formula that says how many times a digit has been used in all n models.
+
+n = k*10^i + m for some k,m with 0 <k <10, m < 10^i
+f(d,n) = (number of d's used getting to k*10^i from digits 0 to (i-1)) +
+	(number of d's used by #'s 10^i to n from digit i) + f(d,m)
+f(d,n) = i*k*10^(i-1) + (if (d < k) 10^i else if (d == k) m+1 else 0) + f(d,m)
+
+This doesn't count 0's, which should be ok as they are not used as often
+as other digits.  From the formula, it is clear that f(1,n) is never
+less than f(d,n) for 1<d<10.
+So I just calculated f(1,n) for various n (with some help from bc).
+
+I quickly discovered that for n = 2*10^15, f(1,n) = 2*n.  After further
+trials I determined that for n = 1999919999999981, f(1,n) = 2*n + 1. 
+This appears to be the smallest n with f(1,n) > 2*n.
+
+==> arithmetic/digits/least.significant/factorial.p <==
+What is the least significant non-zero digit in the decimal expansion of n!?
+
+==> arithmetic/digits/least.significant/factorial.s <==
+Reduce mod 10 the numbers 2..n and then cancel out the
+required factors of 10. The final step then involves
+computing 2^i*3^j*7^k mod 10 for suitable i,j and k. 
+
+A small program that performs this calculation is appended. Like the
+other solutions, it takes O(log n) arithmetic operations.
+
+-kym
+===
+
+#include<stdio.h>
+#include<assert.h>
+
+int	p[6][4]={
+	/*2*/	2,	4,	8,	6,
+	/*3*/	3,	9,	7,	1,
+	/*4*/	4,	6,	4,	6,
+	/*5*/	5,	5,	5,	5,
+	/*6*/	6,	6,	6,	6,
+	/*7*/	7,	9,	3,	1,
+	};
+
+main(){
+	int	i;
+	int n;
+
+	for(n=2;n<1000;n++){
+		i=lsdfact(n);
+		printf("%d\n",i);
+		}
+
+	exit(0);
+	}
+
+lsdfact(n){
+	int	a[10];
+	int	i;
+	int	n5;
+	int	tmp;
+
+	for(i=0;i<=9;i++)a[i]=alpha(i,n);
+
+	n5=0;
+/* NOTE: order is important in following */
+l5:;
+	while(tmp=a[5]){	/* cancel factors of 5 */
+		n5+=tmp;
+		a[1]+=(tmp+4)/5;
+		a[3]+=(tmp+3)/5;
+		a[5]=(tmp+2)/5;
+		a[7]+=(tmp+1)/5;
+		a[9]+=(tmp+0)/5;
+		}
+l10:;
+	if(tmp=a[0]){
+		a[0]=0;	/* cancel all factors of 10 */
+		for(i=0;i<=9;i++)a[i]+=alpha(i,tmp);
+		}
+	if(a[5]) goto l5;
+	if(a[0]) goto l10;
+
+/* n5 == number of 5's cancelled; 
+   must now cancel same number of factors of 2 */
+	i=ipow(2,a[2]+2*a[4]+a[6]+3*a[8]-n5)*
+		ipow(3,a[3]+a[6]+2*a[9])*
+		ipow(7,a[7]);
+	assert(i%10);	/* must not be zero */
+	return	i%10;
+	}
+
+alpha(d,n){
+/* number of decimal numbers in [1,n] ending in digit d */
+	int tmp;
+	tmp=(n+10-d)/10;
+	if(d==0)tmp--;	/* forget 0 */
+	return tmp;
+	}
+
+ipow(x,y){
+/* x^y mod 10 */
+	if(y==0) return 1;
+	if(y==1) return x;
+	return p[x-2][(y-1)%4];
+	}
+
+
+
+
+==> arithmetic/digits/least.significant/tower.of.power.p <==
+What are the least significant digits of 9^(8^(7^(6^(5^(4^(3^(2^1))))))) ?
+
+==> arithmetic/digits/least.significant/tower.of.power.s <==
+9^11 = 9 (mod 100), so we need to find 8^...^1 (mod 10).
+8^5 = 8 (mod 10), so we need to find 7^...^1 (mod 4).
+7^3 = 7 (mod 4), so we need to find 6^...^1 (mod 2), but
+this is clearly 0, so 7^...^1 = 1 (mod 4) ==>
+8^...^1 = 8 (mod 10) ==> 9^...^1 = 9^8 (mod 100) = 21 (mod 100).
+
+==> arithmetic/digits/most.significant/googol.p <==
+What digits does googol! start with?
+
+==> arithmetic/digits/most.significant/googol.s <==
+I'm not sure how to calculate the first googol of digits of log10(e), but
+here's the first 150(approximately) of them...
+
+0.43429448190325182765112891891660508229439700580366656611445378316586464920
+8870774729224949338431748318706106744766303733641679287158963906569221064663
+
+We need to deal with the digits immediately after the decimal point in
+googol*log10(e), which are  .187061
+
+frac[log(googol!)] = frac[halflog2pi + 50 + googol(100-log10(e))]
+ = frac{halflog2pi + frac[googol(100-log10(e))]}
+ = frac[.399090 + (1- .187061)]
+ = .212029
+
+10 ** .212029 = 1.629405
+
+Which means that googol! starts with 1629
+
+==> arithmetic/digits/most.significant/powers.p <==
+What is the probability that 2^N begins with the digits 603245?
+
+==> arithmetic/digits/most.significant/powers.s <==
+2^N begins with 603245 iff 603246*10^m > 2^N >= 603245*10^m for some
+positive integer m ==> m+log(603246) > N*log(2) >= m+log(603245);
+so 2^N begins with 603245 iff frac(log(603246)) > frac(N*log(2))
+>= frac(log(603245)).  If we are using natural density then N*log(2)
+is uniformly distributed mod 1 since log(2) is irrational, hence the
+probability is frac(log(603246)) - frac(log(603245)) =
+frac(log(603246)-log(603245)) = frac(log(603246/603245)).
+
+A neat observation is that since it is known p_n*c, where p_n is the
+nth prime and c is irrational, is uniformly distributed mod 1, we get
+the same answer if we replace 2^N with 2^{p_n}.
+-- 
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+
+==> arithmetic/digits/nine.digits.p <==
+Form a number using 0-9 once with its first n digits divisible by n.
+
+==> arithmetic/digits/nine.digits.s <==
+First, reduce the sample set. For each digit of ABCDEFGHI, such that the last
+digit, (current digit), is the same as a multiple of N :
+
+A: Any number 1-9
+B: Even numbers 2,4,6,8 (divisible by 2).
+C: Any number 1-9 (21,12,3,24,15,6,27,18,9).
+D: Even numbers 2,4,6,8 (divisible by 4, every other even).
+E: 5 (divisible by 5 and 0 not allowed).
+F: Even numbers (12,24,6,18)
+G: Any number 1-9 (21,42,63,14,35,56,7,28,49).
+H: Even numbers (32,24,16,8)
+I: Any number 1-9 (81,72,63,54,45,36,27,18,9)
+
+Since E must be 5, I can eliminate it everywhere else.
+Since I will use up all the even digits, (2,4,6,8) filling in those spots
+   that must be even. Any number becomes all odds, except 5.
+
+A: 1,3,7,9
+B: 2,4,6,8
+C: 1,3,7,9
+D: 2,4,6,8
+E: 5
+F: 2,4,6,8
+G: 1,3,7,9
+H: 2,4,6,8
+I: 1,3,7,9
+
+We have that 2C+D=0 (mod 4), and since C is odd,
+this implies that D is 2 or 6; similarly we find that H is 2 or 6 ==>
+{B,F} = {4,8}.  D+5+F=0 (mod 3) ==> if D=2 then F=8, if D=6 then F=4.
+
+We have two cases.
+
+Assume our number is of the form A4C258G6I0.  Now the case n=8 ==>
+G=1,9; case n=3 ==> A+1+C=0 (mod 3) ==> {A,C}={1,7} ==> G=9, I=3.
+The two numbers remaining fail for n=7.
+
+Assume our number is of the form A8C654G2I0.  The case n=8 ==> G=3,7.
+If G=3, we need to check to see which of 1896543, 9816543, 7896543, 
+and 9876543 are divisible by 7; none are.
+
+If G=7, we need to check to see which of 1896547, 9816547, 1836547,
+and 3816547 are divisible by 7; only the last one is, which yields
+the solution 3816547290.
+
+==> arithmetic/digits/palindrome.p <==
+Does the series formed by adding a number to its reversal always end in
+a palindrome?
+
+==> arithmetic/digits/palindrome.s <==
+This is not known.
+
+If you start with 196, after 9480000 iterations you get a 3924257-digit
+non-palindromic number.  However, there is no known proof that you will
+never get a palindrome.
+
+The statement is provably false for binary numbers. Roland Sprague has
+shown that 10110 starts a series that never goes palindromic.
+
+==> arithmetic/digits/palintiples.p <==
+Find all numbers that are multiples of their reversals.
+
+==> arithmetic/digits/palintiples.s <==
+We are asked to find numbers that are integer multiples of their
+reversals, which I call palintiples.  Of course, all the palindromic
+numbers are a trivial example, but if we disregard the unit multiples,
+the field is narrowed considerably.
+
+Rouse Ball (_Mathematical_recreations_and_essays_) originated the
+problem, and G. H. Hardy (_A_mathematician's_apology_) used the result
+that 9801 and 8712 are the only four-digit palintiples as an example
+of a theorem that is not ``serious''.  Martin Beech (_The_mathema-
+tical_gazette_, Vol 74, #467, pp 50-51, March '90) observed that
+989*01 and 879*12 are palintiples, an observation he ``confirmed'' on
+a hand calculator, and conjectured that these are all that exist.
+
+I confirm that Beech's numbers are palintiples, I will show that they
+are not all of the palintiples.  I will show that the palintiples do
+not form a regular language.  And then I will prove that I have found
+all the palintiples, by describing the them with a generalized form
+of regular expression.  The results become more interesting in other
+bases.
+
+First, I have a more reasonable method of confirming that these
+numbers are palintiples:
+
+    Proof:  First, letting "9*" and "0*" refer an arbitrary string of
+    nines and a string of zeroes of the same length, I note that
+
+        879*12 = 879*00 + 12 = (880*00 - 100) + 12 = 880*00 - 88
+        219*78 = 219*00 + 78 = (220*00 - 100) + 78 = 220*00 - 22
+
+        989*01 = 989*00 +  1 = (990*00 - 100) +  1 = 990*00 - 99
+        109*89 = 109*00 + 89 = (110*00 - 100) + 89 = 110*00 - 11
+
+    It is obvious that 4x(220*00 - 22) = 880*00 - 88 and that
+    9x(110*00 - 11) = 990*00 - 99.  QED.
+
+Now, to show that these palintiples are not all that exist, let us
+take the (infinite) language L[4] = (879*12 + 0*), and let Pal(L[4])
+refer to the set of palindromes over the alphabet L[4].  It is
+immediate that the numbers in Pal(L[4]) are palintiples.  For
+instance,
+
+          8712 000 87912 879999912 879999912 87912 000 8712
+    = 4 x 2178 000 21978 219999978 219999978 21978 000 2178
+
+(where I have inserted spaces to enhance readability) is a palintiple.
+Similarly, taking L[9] = (989*01 + 0*), the numbers in Pal(L[9]) are
+palintiples.  We exclude numbers starting with zeroes.
+
+The reason these do not form a regular language is that the
+sub-palintiples on the left end of the number must be the same (in
+reverse order) as the sub-palintiples on the right end of the number:
+
+         8712 8712 87999912 = 4 x 2178 2178 21999978
+
+is not a palintiple, because 8712 8712 87999912 is not the reverse of
+2178 2178 21999978.  The pumping lemma can be used to prove that
+Pal(L[4])+Pal(L[9]) is not a regular language, just as in the familiar
+proof that the palindromes over a non-singleton alphabet do not form a
+regular language.
+
+Now to characterize all the palintiples, let N be a palintiple,
+N=CxR(N), where R(.) signifies reversal, and C>1 is an integer.  (I
+use "x" for multiplication, to avoid confusion with the Kleene star
+"*", which signifies the concatenated closure.)  If D is a digit of N,
+let D' refer to the corresponding digit of R(N).  Since N=CxR(N),
+D+10T = CxD'+S, where S is the carry in to the position occupied by D'
+when R(N) is multiplied by C, and T is the carry out of that position.
+Similarly, D'+10T'=CxD+S', where S', T' are carries in and out of the
+position occupied by D when R(N) is multiplied by C.
+
+Since D and D' are so closely related, I will use the symbol D:D' to
+refer to a digit D on the left side of a string with a corresponding
+digit D' on the right side of the string.  More formally, an
+expression "x[1]:y[1] x[2]:y[2] ... x[n]:y[n] w" will refer to a
+string "x[1] x[2] ... x[n] w y[n] ... y[2] y[1]", where the x[i] and
+y[i] are digits and w is a string of zero or one digits.  So 989901
+may be written as 9:1 8:0 9:9 and 87912 may be written as 8:2 7:1 9.
+Thus Pal(L[4])+Pal(L[9]) (omitting numbers with leading zeroes) can be
+represented as
+
+            (8:2 7:1 9:9* 1:7 2:8 0:0*)*
+              (0:0* + 0 + 8:2 7:1 ( 9:9* + 9:9* 9))
+          + (9:1 8:0 9:9* 0:8 1:9 0:0*)*
+              (0:0* + 0 + 9:1 8:0 ( 9:9* + 9:9* 9)).      (1)
+
+For each pair of digits D:D', there are a very limited--and often
+empty--set of quadruples S,T,S',T' of digits that satisfy the
+equations
+
+                    D +10T =CxD'+S
+                    D'+10T'=CxD +S',                      (2)
+
+yet such a quadruple must exist for "D:D'" to appear in a palintiple
+with multiplier C.  Furthermore, the S and T' of one D:D' must be T
+and S', respectively, of the next pair of digits that appear.  This
+enables us to construct a finite state machine to recognize those
+palintiples.  The states [X#Y] refer to a pair of carries in D and D',
+and we allow a transition from state [T#S'] to state [S#T'] on input
+symbol D:D' exactly when equations (2) are satisfied.  Special
+transitions for a single-digit input symbol (the central digit of
+odd-length palintiples) and the criteria for the initial and the
+accepting states are left as exercises.  The finite state machines
+thus formed are
+
+   State         Symbol  New     Symbol  New      Symbol   New
+        Accept?         State           State             State
+
+--> [0#0]  Y       8:2  [0#3]      0:0  [0#0]         0   [A]
+    [0#3]  N       7:1  [3#3]
+    [3#3]  Y       1:7  [3#0]      9:9  [3#3]         9   [A]
+    [3#0]  N       2:8  [0#0]
+     [A]   Y
+
+for constant C=4, and
+
+   State         Symbol  New     Symbol  New      Symbol   New
+        Accept?         State           State             State
+
+--> [0#0]  Y       1:9  [0#8]      0:0  [0#0]         0   [A]
+    [0#8]  N       8:0  [8#8]
+    [8#8]  Y       0:8  [8#0]      9:9  [8#8]         9   [A]
+    [8#0]  N       9:1  [0#0]
+     [A]   Y
+
+for constant C=9, and the finite state machines for other constants
+accept only strings of zeroes.  It is not hard to verify that the
+proposed regular expression (1) represents the union of the languages
+accepted by these machines, omitting the empty string and strings
+beginning with zero.
+
+I have written a computer program that constructs finite state
+machines for recognizing palintiples for various bases and constants.
+I found that base 10 is actually an unusually boring base for this
+problem.  For instance, the machine for base 8, constant C=5 is
+
+   State         Symbol  New     Symbol  New      Symbol  New
+        Accept?         State           State            State
+
+--> [0#0]  Y       0:0  [0#0]      5:1  [0#3]         0  [A]
+    [0#3]  N       1:0  [1#1]      6:1  [1#4]
+    [1#1]  Y       0:1  [3#0]      5:2  [3#3]
+    [3#0]  N       1:5  [0#0]      6:6  [0#3]         6  [A]
+    [3#3]  Y       2:5  [1#1]      7:6  [1#4]
+    [1#4]  N       1:1  [4#1]      6:2  [4#4]         1  [A]
+    [4#4]  Y       2:6  [4#1]      7:7  [4#4]         7  [A]
+    [4#1]  N       1:6  [3#0]      6:7  [3#3]
+     [A]   Y
+
+for which I invite masochists to write the regular expression.  If
+anyone wants more, I should remark that the base 29 machine for
+constant C=18 has 71 states!
+
+By the way, I did not find any way of predicting the size or form of
+the machines for the various bases, except that the machines for C=B-1
+all seem to be isomorphic to each other.  If anyone investigates the
+general behavior, I would be most happy to hear about it.
+
+Dan Hoey
+Hoey@AIC.NRL.Navy.Mil
+May, 1992
+[ A preliminary version of this message appeared in April, 1991. ]
+================================================================
+Dan
+
+
+
+==> arithmetic/digits/power.two.p <==
+Prove that for any 9-digit number (base 10) there is an integral power
+of 2 whose first 9 digits are that number.
+
+==> arithmetic/digits/power.two.s <==
+Let v = log to base 10 of 2.
+Then v is irrational.
+
+Let w = log to base 10 of these 9 digits.
+
+Since v is irrational, given epsilon > 0, there exists some natural number 
+n such that
+
+   {w} < {nv} < {w} + epsilon
+
+({x} is the fractional part of x.)  Let us pick n for when 
+
+   epsilon = log 1.00000000000000000000001.
+
+Then 2^n does the job.
+
+==> arithmetic/digits/prime/101.p <==
+How many primes are in the sequence 101, 10101, 1010101, ...?
+
+==> arithmetic/digits/prime/101.s <==
+Note that the sequence
+101 , 10101, 1010101, ....
+can be viewed as 
+100**1 +1, 100**2 + 100**1 + 1, 100**3 + 100**2 + 100**1 +1 ....
+that is, 
+the k-th term in the sequence is 
+100**k + 100**(k-1) + 100**(k-2) + ...+ 100**(1) + 1
+= (100)**(k+1) - 1
+  ----------------
+    11 * 9
+= (10)**(2k+2) - 1
+  ----------------
+    11 * 9
+= ((10)**(k+1) - 1)*((10)**(k+1) +1)
+   ---------------------------------
+       11*9
+thus either 11 and 9 divide the numerator. Either they both divide the
+same factor in the numerator or different factors in the numerator. In
+any case, after dividing, they leave the numerators as a product of two
+integers.  Only in the case of k = 1, one of the integers is 1. Thus
+there is exactly one prime in the above sequence: 101.
+
+==> arithmetic/digits/prime/all.prefix.p <==
+What is the longest prime whose every proper prefix is a prime?
+
+==> arithmetic/digits/prime/all.prefix.s <==
+23399339, 29399999, 37337999, 59393339, 73939133
+
+==> arithmetic/digits/prime/change.one.p <==
+What is the smallest number that cannot be made prime by changing a single
+digit?  Are there infinitely many such numbers?
+
+==> arithmetic/digits/prime/change.one.s <==
+200.  Obviously, you would have to change the last digit, but 201, 203,
+207, and 209 are all composite.  For any smaller number, you can change
+the last digit, and get
+2,11,23,31,41,53,61,71,83,97,101,113,127,131,149,151,163,173,181, or 191.
+
+200+2310n gives an infinite family, because changing the last
+digit to 1 or 7 gives a number divisible by 3; to 3, a number divisible
+by 7; to 9, a number divisible by 11.
+
+==> arithmetic/digits/prime/prefix.one.p <==
+2 is prime, but 12, 22, ..., 92 are not.  Similarly, 5 is prime
+whereas 15, 25, ..., 95 are not.  What is the next prime number
+which is composite when any digit is prefixed?
+
+==> arithmetic/digits/prime/prefix.one.s <==
+149
+
+==> arithmetic/digits/reverse.p <==
+Is there an integer that has its digits reversed after dividing it by 2?
+
+==> arithmetic/digits/reverse.s <==
+Assume there's such a positive integer x such that x/2=y and y is the
+reverse of x.
+
+Then x=2y.  Let x = a...b, then y = b...a, and:
+
+                 b...a   (y)
+	       x     2
+               --------
+                 a...b   (x)
+
+From the last digit b of x, we have b = 2a (mod 10), the possible
+values for b are 2, 4, 6, 8 and hence possible values for (a, b) are
+(1,2), (6,2), (2,4), (7,4), (3,6), (8,6), (4,8), (9,8).
+
+From the first digit a of x, we have a = 2b or a = 2b+1.  None of the
+above pairs satisfy this condition.  A contradiction.
+
+Hence there's no such integer.
+
+==> arithmetic/digits/rotate.p <==
+Find integers where multiplying them by single digits rotates their digits
+one position, so that the last digit become the first digit.
+
+==> arithmetic/digits/rotate.s <==
+2 105263157894736842
+3 1034482758620689655172413793
+4 102564 153846 179487 205128 230769
+5 142857 102040816326530612244897959183673469387755
+6 1016949152542372881355932203389830508474576271186440677966
+  1186440677966101694915254237288135593220338983050847457627
+  1355932203389830508474576271186440677966101694915254237288
+  1525423728813559322033898305084745762711864406779661016949
+7 1014492753623188405797 1159420289855072463768 1304347826086956521739
+8 1012658227848 1139240506329
+9 10112359550561797752808988764044943820224719
+
+In base B, suppose you have an N-digit answer A whose digits are
+rotated when multiplied by K.  If D is the low-order digit of A, we
+have
+
+    (A-D)/B + D B^(N-1) = K A .
+
+Solving this for A we have
+
+        D (B^N - 1)
+    A = ----------- .
+          B K - 1
+
+In order for A >= B^(N-1) we must have D >= K.  Now we have to find N
+such that B^N-1 is divisible by R=(BK-1)/gcd(BK-1,D).  This always has
+a minimal solution N0(R,B)<R, and the set of all solutions is the set
+of multiples of N0(R,B).  N0(R,B) is the length of the repeating part
+of the fraction 1/R in base B.
+
+N0(ST,B)=N0(S,B)N0(T,B) when (S,T)=1, and for prime powers, N0(P^X,B)
+divides (P-1)P^(X-1). Determining which divisor is a little more
+complicated but well-known (cf. Hardy & Wright).
+
+So given B and K, there is one minimal solution for each
+D=K,K+1,...,B-1, and you get all the solutions by taking repetitions
+of the minimal solutions.
+
+==> arithmetic/digits/sesqui.p <==
+Find the least number where moving the first digit to the end multiplies by 1.5.
+
+==> arithmetic/digits/sesqui.s <==
+Let's represent this number as  a*10^n+b,  where 1<=a<=9 and
+b < 10^n.  Then the condition to be satisfied is:
+
+3/2(a*10^n+b) = 10b+a
+
+  3(a*10^n+b) = 20b+2a
+
+   3a*10^n+3b = 20b+2a
+
+  (3*10^n-2)a = 17b
+
+            b = a*(3*10^n-2)/17
+
+So we must have 3*10^n-2 = 0 (mod 17) (since a is less than 10, it
+cannot contribute the needed prime 17 to the factorization of 17b).
+(Also, assuming large n, we must have a at most 5 so that b < 10^n will
+be satisfied, but note that we can choose a=1).  Now,
+
+3*10^n-2 = 0 (mod 17)
+
+3*10^n = 2 (mod 17)
+
+10^n = 12 (mod 17)
+
+A quick check shows that the smallest n which satisfies this is 15
+(the fact that one exists was assured to us because 17 is prime).  So,
+setting n=15 and a=1 (obviously) gives us b=176470588235294, so the
+number we are looking for is
+
+                        1176470588235294
+
+and, by the way, we can set a=2 to give us the second smallest such
+number,
+                        2352941176470588
+
+Other things we can infer about these numbers is that there are 5 of
+them less than 10^16, 5 more less than 10^33, etc.
+
+==> arithmetic/digits/squares/change.leading.p <==
+What squares remain squares when their leading digits are incremented?
+
+==> arithmetic/digits/squares/change.leading.s <==
+Omitting solutions that are obtained from smaller solutions by
+multiplying by powers of 10, the squares of these numbers satisfy the
+condition:
+
+1. (105,145), (3375,4625), (14025,17225), (326625,454625),
+    (10846875,14753125), (43708125,53948125), ...
+
+2. (45,55), (144375,175625), (463171875,560828125), ...
+
+7. (2824483699753370361328125,2996282391593370361328125), ...
+
+Here is how to find them. We have (y+x)*(y-x) = 10^n, and so we must have 
+{y+x, y-x} as {5^m*10^a, 2^m*10^b} in some order. It is also necessary (and
+sufficient) that y/x lies in the interval [sqrt(3/2),sqrt(2)], or equivalently
+that (y+x)/(y-x) lies in [3+sqrt(8),5+sqrt(24)] = [5.82842...,9.89897...].
+Thus we need to make (5/2)^m*10^(a-b), or its reciprocal, in this range.
+For each m there is clearly at most one power of 10 that will do. m=2,a=b
+gives (105,145); m=3,b=a+2 gives (3375,4625), and so on.
+
+There are infinitely many non-equivalent solutions, because log(5/2) / log(10)
+is irrational.
+
+One can use exactly the same argument to find squares whose initial 2 can 
+be replaced by a 3, of course, except that the range of (y+x)/(y-x) changes.
+
+==> arithmetic/digits/squares/length.22.p <==
+Is it possible to form two numbers A and B from 22 digits such that
+A = B^2?  Of course, leading digits must be non-zero.
+
+==> arithmetic/digits/squares/length.22.s <==
+No, the number of digits of A^2 must be of the form 3n or 3n-1.
+
+==> arithmetic/digits/squares/length.9.p <==
+Is it possible to make a number and its square, using the digits from 1
+through 9 exactly once?
+
+==> arithmetic/digits/squares/length.9.s <==
+Yes, there are two such pairs: (567, 567^2=321489) and (854,854^2=729316).
+

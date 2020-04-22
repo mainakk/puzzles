@@ -1,0 +1,1339 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03476; Sat, 20 Apr 1996 14:53:15 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07977; Sat, 20 Apr 96 14:13:31 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25285; Sat, 20 Apr 1996 11:14:26 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (probability), part 31 of 35
+Message-Id: <puzzles/archive/probability_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:50 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1312
+Xref: senator-bedfellow.mit.edu rec.puzzles:25020 news.answers:11540 rec.answers:1940
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/probability
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> probability/amoeba.p <==
+A jar begins with one amoeba.  Every minute, every amoeba
+turns into 0, 1, 2, or 3 amoebae with probability 25%
+for each case ( dies, does nothing, splits into 2, or splits 
+into 3).  What is the probability that the amoeba population
+eventually dies out?
+
+==> probability/amoeba.s <==
+If p is the probability that a single amoeba's descendants will die
+out eventually, the probability that N amoebas' descendents will all
+die out eventually must be p^N, since each amoeba is independent of
+every other amoeba.  Also, the probability that a single amoeba's
+descendants will die out must be independent of time when averaged
+over all the possibilities.  At t=0, the probability is p, at t=1 the
+probability is 0.25(p^0+p^1+p^2+p^3), and these probabilities must be
+equal.  Extinction probability p is a root of f(p)=p.  In this case,
+ p = sqrt(2)-1.
+
+The generating function for the sequence P(n,i), which gives the
+probability of i amoebas after n minutes, is f^n(x), where f^n(x) ==
+f^(n-1) ( f(x) ), f^0(x) == x .  That is, f^n is the nth composition
+of f with itself.
+
+Then f^n(0) gives the probability of 0 amoebas after n minutes, since
+f^n(0) = P(n,0). We then note that:
+
+	f^(n+1)(x) = ( 1 + f^n(x) + (f^n(x))^2 + (f^n(x))^3 )/4
+
+so that if f^(n+1)(0) -> f^n(0) we can solve the equation.
+
+The generating function also gives an expression for the expectation
+value of the number of amoebas after n minutes. This is d/dx(f^n(x))
+evaluated at x=1. Using the chain rule we get f'(f^(n-1)(x))*d/dx(f^(n-1)(x))
+and since f'(1) = 1.5  and f(1) = 1, we see that the result is just
+1.5^n, as might be expected.
+
+==> probability/apriori.p <==
+An urn contains one hundred white and black balls.  You sample one hundred
+balls with replacement and they are all white.  What is the probability
+that all the balls are white?
+
+==> probability/apriori.s <==
+This question cannot be answered with the information given.
+
+In general, the following formula gives the conditional probability
+that all the balls are white given you have sampled one hundred balls
+and they are all white:
+
+	P(100 white | 100 white samples) =
+
+			P(100 white samples | 100 white) * P(100 white) 
+		-----------------------------------------------------------
+		sum(i=0 to 100) P(100 white samples | i white) * P(i white)
+
+The probabilities P(i white) are needed to compute this formula.  This
+does not seem helpful, since one of these (P(100 white)) is just what we
+are trying to compute.  However, the following argument can be made:
+Before the experiment, all possible numbers of white balls from zero to
+one hundred are equally likely, so P(i white) = 1/101.  Therefore, the
+odds that all 100 balls are white given 100 white samples is:
+
+	P(100 white | 100 white samples) =
+
+		1 / ( sum(i=0 to 100) (i/100)^100 ) =
+
+		63.6%
+
+This argument is fallacious, however, since we cannot assume that the urn
+was prepared so that all possible numbers of white balls from zero to one
+hundred are equally likely.  In general, we need to know the P(i white)
+in order to calculate the P(100 white | 100 white samples).  Without this
+information, we cannot determine the answer.
+
+This leads to a general "problem": our judgments about the relative
+likelihood of things is based on past experience.  Each experience allows
+us to adjust our likelihood judgment, based on prior probabilities.  This
+is called Bayesian inference.  However, if the prior probabilities are not
+known, then neither are the derived probabilities.  But how are the prior
+probabilities determined?  For example, if we are brains in the vat of a
+diabolical scientist, all of our prior experiences are illusions, and
+therefore all of our prior probabilities are wrong.
+
+All of our probability judgments indeed depend upon the assumption that
+we are not brains in a vat.  If this assumption is wrong, all bets are
+off.
+
+==> probability/bayes.p <==
+One urn contains black marbles, and the other contains white or black
+marbles with even odds.  You pick a marble from an urn; it is black;
+you put it back; what are the odds that you will draw a black marble on
+the next draw?  What are the odds after n black draws?
+
+==> probability/bayes.s <==
+Every time you draw a black marble, you throw out (from your
+probability space) half of those possible urns that contain both
+colors.  So you have 1/2^n times as many ways to have a white marble in
+the urn after n draws, all black, as at the start.  But you have
+exactly the same number of ways to have both marbles black.  The
+numbers (mixed cases vs. all-black cases) go as 1:1, 1:2, 1:4, 1:8,...
+and the chance of having a white marble in the urn goes as 1/2, 1/3,
+1/5, 1/9, ..., 1/(1+2^(n-1)), hence the odds of drawing a white marble
+on the nth try after n-1 consecutive drawings of black are
+
+1/4    the first time
+1/6    the second time
+1/10   the third time
+...
+1/(2+2^n)  the nth time
+
+==> probability/birthday/line.p <==
+At a movie theater, the manager announces that they will give a free ticket
+to the first person in line whose birthday is the same as someone who has
+already bought a ticket.  You have the option of getting in line at any
+time.  Assuming that you don't know anyone else's birthday, that birthdays
+are distributed randomly throughtout the year, etc., what position in line
+gives you the greatest chance of being the first duplicate birthday?
+
+==> probability/birthday/line.s <==
+Suppose you are the Kth person in line.  Then you win if and only if the
+K-1 people ahead all have distinct birtdays AND your birthday matches
+one of theirs.  Let 
+
+A = event that your birthday matches one of the K-1 people ahead
+B = event that those K-1 people all have different birthdays
+
+Then 
+
+Prob(you win) = Prob(B) * Prob(A | B)
+
+(Prob(A | B) is the conditional probability of A given that B occurred.)
+
+Now let P(K) be the probability that the K-th person in line wins,
+Q(K) the probability that the first K people all have distinct
+birthdays (which occurs exactly when none of them wins).  Then
+
+P(1) + P(2) + ... + P(K-1) + P(K) = 1 - Q(K)
+P(1) + P(2) + ... + P(K-1)        = 1 - Q(K-1)
+
+P(K) = Q(K-1) - Q(K)   <--- this is what we want to maximize.
+
+Now if the first K-1 all have distinct birthdays, then assuming
+uniform distribution of birthdays among D days of the year,
+the K-th person has K-1 chances out of D to match, and D-K+1 chances
+not to match (which would produce K distinct birthdays).  So 
+
+Q(K) = Q(K-1)*(D-K+1)/D = Q(K-1) - Q(K-1)*(K-1)/D
+Q(K-1) - Q(K) = Q(K-1)*(K-1)/D = Q(K)*(K-1)/(D-K+1)
+
+Now we want to maximize P(K), which means we need the greatest K such
+that P(K) - P(K-1) > 0.  (Actually, as just given, this only
+guarantees a local maximum, but in fact if we investigate a bit
+farther we'll find that P(K) has only one maximum.)
+For convenience in calculation let's set K = I + 1.  Then
+
+Q(I-1) - Q(I) = Q(I)*(I-1)/(D-I+1)
+Q(I) - Q(I+1) = Q(I)*I/D
+
+P(K) - P(K-1) = P(I+1) - P(I)
+              = (Q(I) - Q(I+1)) - (Q(K-2) - Q(K-1))
+              = Q(I)*(I/D - (I-1)/(D-I+1))
+
+To find out where this is last positive (and next goes negative), solve
+
+x/D - (x-1)/(D-x+1) = 0
+
+Multiply by D*(D+1-x) both sides:
+
+(D+1-x)*x - D*(x-1) = 0
+Dx + x - x^2 - Dx + D = 0
+x^2 - x - D = 0
+
+x = (1 +/- sqrt(1 - 4*(-D)))/2    ... take the positive square root
+  = 0.5 + sqrt(D + 0.25)
+
+Setting D=365 (finally deciding how many days in a year!),
+
+desired I = x = 0.5 + sqrt(365.25) = 19.612 (approx).
+
+The last integer I for which the new probability is greater then the old
+is therefore I=19, and so K = I+1 = 20.  You should try to be the 20th
+person in line.
+
+Computing your chances of actually winning is slightly harder, unless
+you do it numerically by computer.  The recursions you need have already
+been given.
+
+-- David Karr (karr@cs.cornell.edu)
+
+
+
+
+==> probability/birthday/same.day.p <==
+How many people must be at a party before you have even odds or better
+of two having the same bithday (not necessarily the same year, of course)?
+
+==> probability/birthday/same.day.s <==
+23.
+
+See also:
+    archive entry "coupon"
+
+==> probability/cab.p <==
+A cab was involved in a hit and run accident at night.  Two cab companies,
+the Green and the Blue, operate in the city.  Here is some data:
+
+	a)  Although the two companies are equal in size, 85% of cab 
+accidents in the city involve Green cabs and 15% involve Blue cabs.
+
+	b)  A witness identified the cab in this particular accident as Blue.
+The court tested the reliability of the witness under the same circumstances
+that existed on the night of the accident and concluded that the witness 
+correctly identified each one of the two colors 80% of the time and failed
+20% of the time.
+
+What is the probability that the cab involved in the accident was 
+Blue rather than Green?
+
+If it looks like an obvious problem in statistics, then consider the
+following argument:
+
+The probability that the color of the cab was Blue is 80%!  After all,
+the witness is correct 80% of the time, and this time he said it was Blue!
+
+What else need be considered?  Nothing, right?
+
+If we look at Bayes theorem (pretty basic statistical theorem) we 
+should get a much lower probability.  But why should we consider statistical
+theorems when the problem appears so clear cut?  Should we just accept the 
+80% figure as correct?
+
+==> probability/cab.s <==
+The police tests don't apply directly, because according to the
+wording, the witness, given any mix of cabs, would get the right
+answer 80% of the time.  Thus given a mix of 85% green and 15% blue
+cabs, he will say 20% of the green cabs and 80% of the blue cabs are
+blue.  That's 20% of 85% plus 80% of 15%, or 17%+12% = 29% of all the
+cabs that the witness will say are blue.  Of those, only 12/29 are
+actually blue.  Thus P(cab is blue | witness claims blue) = 12/29.
+That's just a little over 40%.
+
+Think of it this way... suppose you had a robot watching parts on a
+conveyor belt to spot defective parts, and suppose the robot made a
+correct determination only 50% of the time (I know, you should
+probably get rid of the robot...).  If one out of a billion parts are
+defective, then to a very good approximation you'd expect half your
+parts to be rejected by the robot.  That's 500 million per billion.
+But you wouldn't expect more than one of those to be genuinely
+defective.  So given the mix of parts, a lot more than 50% of the
+REJECTED parts will be rejected by mistake (even though 50% of ALL the
+parts are correctly identified, and in particular, 50% of the
+defective parts are rejected).
+
+When the biases get so enormous, things starts getting quite a bit
+more in line with intuition.
+
+For a related real-life example of probability in the courtroom see
+People v. Collins, 68 Cal 2d319 (1968).
+
+==> probability/coupon.p <==
+There is a free gift in my breakfast cereal. The manufacturers say that
+the gift comes in four different colors, and encourage one to collect
+all four (& so eat lots of their cereal). Assuming there is an equal
+chance of getting any one of the colors,  what is the expected number
+of boxes I must consume to get all four?  Can you generalise to n
+colors and/or unequal probabilities?
+
+==> probability/coupon.s <==
+The problem is well known under the name of "COUPON COLLECTOR PROBLEM".
+The answer for n equally likely coupons is
+(1)		C(n)=n*H(n)    with H(n)=1+1/2+1/3+...+1/n.
+In the unequal probabilities case, with p_i the probability of coupon i,
+it becomes
+(2)		C(n)=int_0^infty [1-prod_{i=1}^n (1-exp(-p_i*t))] dt
+which reduces to (1) when p_i=1/n (An easy exercise).
+In the equal probabilities case  C(n)~n log(n). For a Zipf law,
+from (2), we have C(n)~n log^2(n).
+
+A related problem is the "BIRTHDAY PARADOX" familiar to people
+interested in hashing algorithms: With a party of 23 persons,
+you are likely (i.e. with probability >50%) to find two with
+the same birthday. The non equiprobable case was solved by:
+	M. Klamkin and D. Newman, Extensions of the birthday
+	surprise, J. Comb. Th. 3 (1967), 279-282.
+
+==> probability/darts.p <==
+Peter throws two darts at a dartboard, aiming for the center.  The
+second dart lands farther from the center than the first.  If Peter now
+throws another dart at the board, aiming for the center, what is the
+probability that this third throw is also worse (i.e., farther from 
+the center) than his first?  Assume Peter's skilfulness is constant.
+
+==> probability/darts.s <==
+Since the three darts are thrown independently,
+they each have a 1/3 chance of being the best throw.  As long as the
+third dart is not the best throw, it will be worse than the first dart.
+Therefore the answer is 2/3.
+
+Ranking the three darts' results from A (best) to C
+(worst), there are, a priori, six equiprobable outcomes.
+
+possibility #	1	2	3	4	5	6
+1st throw	A	A	B	B	C	C
+2nd throw	B	C	A	C	A	B
+3rd throw	C	B	C	A	B	A
+
+The information from the first two throws shows us that the first
+throw will not be the worst, nor the second throw the best.  Thus
+possibilities 3, 5 and 6 are eliminated, leaving three equiprobable
+cases, 1, 2 and 4.  Of these, 1 and 2 have the third throw worse than
+the first; 4 does not.  Again the answer is 2/3.
+
+==> probability/derangement.p <==
+12 men leave their hats with the hat check.  If the hats are randomly
+returned, what is the probability that nobody gets the correct hat?
+
+==> probability/derangement.s <==
+Suppose we are handing out hats to n people.  First we start with all
+the possible outcomes.  Then we subtract off those that assign the
+right hat to a given person, for each of the n people.  But this
+double-counts each outcome that assigned 2 hats correctly, so we have
+to add those outcomes back in.  But now we've counted one net copy of
+each outcome with 3 correct hats in our set, so we have to subtract
+those off again.  But now we've taken away each 4-correct-hat outcome
+once too often, and have to put it back in, and so forth ... until we
+add or subtract the outcome that involves all n people getting the
+correct hats.
+
+Putting it all in probabilities, the measure of the original set is 1.
+For a given subset of k people, the probability that they all get
+their correct hats is (n-k)!/n!, while there are (n choose k) such
+subsets of k people altogether.  But then
+
+   (n choose k)*(n-k)!/n! = (n!/((n-k)!*k!))*(n-k)!/n! = 1/k!
+
+is the total probability measure we get by counting each subset of k
+people once each.  So we end up generating the finite series
+
+   1 - 1/1! + 1/2! - 1/3! +- ... +/- 1/n!
+
+which is of course just the first n+1 terms of the Taylor series
+expansion for f(x) = e^x centered at 0 and evaluated at -1, which
+converges to 1/e quite fast.  You can compute the exact probability for
+any n >= 1 simply by rounding n!/e to the nearest whole number, then
+dividing again by n!.  Moreover I think you will find you are always
+rounding down for odd n and rounding up for even n.
+
+For example,
+
+   12! / e = 176214840.95798...
+
+which is within 0.05 (absolute error, not relative) of the correct
+intermediate result, 176214841.
+
+Another fact is that if you set the probability of no matching hats
+equal to m/n!, then m is an integer divisible by (n-1).  That's
+because the number of ways you can give hat #2 to person #1 is exactly
+the same as the number of ways you can give that person hat #3,
+likewise for hat #4, and so forth.
+
+-- David Karr (karr@cs.cornell.edu)
+
+==> probability/family.p <==
+Suppose that it is equally likely for a pregnancy to deliver
+a baby boy as it is to deliver a baby girl.  Suppose that for a
+large society of people, every family continues to have children
+until they have a boy, then they stop having children.
+After 1,000 generations of families, what is the ratio of males
+to females?
+
+==> probability/family.s <==
+The ratio will be 50-50 in both cases.  We are not killing off any
+fetuses or babies, and half of all conceptions will be male, half
+female.  When a family decides to stop does not affect this fact.
+
+==> probability/flips/once.in.run.p <==
+What are the odds that a run of one H or T (i.e., THT or HTH) will occur
+in n flips of a fair coin?
+
+==> probability/flips/once.in.run.s <==
+References:
+    John P. Robinson, Transition Count and Syndrome are Uncorrelated, IEEE
+    Transactions on Information Theory, Jan 1988.
+
+First we define a function or enumerator P(n,k) as the number of length
+"n" sequences that generate "k" successes.  For example,
+
+     P(4,1)= 4  (HHTH, HTHH, TTHT, and THTT are 4 possible length 4 sequences).
+
+I derived two generating functions g(x) and h(x) in order to enumerate
+P(n,k), they are compactly represented by the following matrix
+polynomial.
+
+
+            _    _      _     _           _   _
+	   | g(x) |    | 1   1 | (n-3)   |  4  |
+	   |      | =  |       |         |     | 
+	   | h(x) |    | 1   x |         |2+2x |    
+           |_    _|    |_     _|         |_   _|
+
+The above is expressed as matrix generating function.  It can be shown
+that P(n,k) is the coefficient of the x^k in the polynomial
+(g(x)+h(x)).
+
+For example, if n=4 we get (g(x)+h(x)) from the matrix generating
+function as (10+4x+2x^2).  Clearly, P(4,1) (coefficient of x) is 4 and
+P(4,2)=2 ( There are two such sequences THTH, and HTHT).
+
+We can show that
+
+   mean(k) = (n-2)/4 and sd= square_root(5n-12)/4
+
+We need to generate "n" samples. This can be done by using sequences of length
+(n+2).  Then our new statistics would be
+
+   mean = n/4
+
+   sd = square_root(5n-2)/4
+
+Similar approach can be followed for higher dimensional cases.
+
+==> probability/flips/twice.in.run.p <==
+What is the probability in n flips of a fair coin that there will be two
+heads in a row?
+
+==> probability/flips/twice.in.run.s <==
+Well, the question is then how many strings of n h's and t's contain
+hh?  I would guess right off hand that its going to be easier to
+calculate the number of strings that _don't_ contain hh and then
+subtract that from the total number of strings.
+
+So we want to count the strings of n h's and t's with no hh in them.
+How many h's and t's can there be? It is fairly clear that there must
+be from 0 to n/2 h's, inclusive. (If there were (n/2+1) then there
+would have to be two touching.)
+
+How many strings are there with 0 h's? 1
+
+How many strings are there with 1 h? Well, there are (n-1) t's, so
+there are a total of n places to put the one h. So the are nC1 such
+strings.  How many strings are there with 2 h's? Well, there are (n-1)
+places to put the two h's, so there are (n-1)C2 such strings.
+
+Finally, with n/2 h's there are (n/2+1) places to put them, so there
+are (n/2+1)C(n/2) such strings.
+
+Therefore the total number of strings is
+Sum (from i=0 to n/2) of (n-i+1)C(i)
+
+Now, here's where it get's interesting. If we play around with Pascal's
+triangle for a while, we see that this sum equals none other than the
+(n+2)th Fibonacci number.
+
+So the probability that n coin tosses will give a hh is:
+
+2^n-f(n+2) 
+----------
+2^n
+
+(where f(x) is the xth Fibanocci number (so that f(1) is and f(2) are both 1))
+
+==> probability/flips/unfair.p <==
+Generate even odds from an unfair coin.  For example, if you
+thought a coin was biased toward heads, how could you get the
+equivalent of a fair coin with several tosses of the unfair coin?
+
+==> probability/flips/unfair.s <==
+Toss twice.  If both tosses give the same result, repeat this process
+(throw out the two tosses and start again).  Otherwise, take the first
+of the two results.
+
+==> probability/flips/waiting.time.p <==
+Compute the expected waiting time for a sequence of coin flips, or the
+probabilty that one sequence of coin flips will occur before another.
+
+
+==> probability/flips/waiting.time.s <==
+Here's a C program I had lying around that is relevant to the
+current discussion of coin-flipping.  The algorithm is N^3 (for N flips)
+but it could certainly be improved.  Compile with 
+
+	cc -o flip flip.c -lm
+
+-- Guy
+
+_________________ Cut here ___________________
+
+#include <stdio.h>
+#include <math.h>
+
+char *progname;              /* Program name */
+
+#define NOT(c) (('H' + 'T') - (c))
+
+
+/* flip.c -- a program to compute the expected waiting time for a sequence
+             of coin flips, or the probabilty that one sequence
+             of coin flips will occur before another.
+
+    Guy Jacobson, 11/1/90
+*/
+
+main (ac, av) int ac; char **av;
+{
+    char *f1, *f2, *parseflips ();
+    double compute ();
+
+    progname = av[0];
+
+    if (ac == 2) {
+	f1 = parseflips (av[1]);
+	printf ("Expected number of flips until %s = %.1f\n",
+		f1, compute (f1, NULL));
+    }
+    else if (ac == 3) {
+
+	f1 = parseflips (av[1]);
+	f2 = parseflips (av[2]);
+
+	if (strcmp (f1, f2) == 0) {
+	    printf ("Can't use the same flip sequence.\n");
+	    exit (1);
+	}
+	printf ("Probability of flipping %s before %s = %.1f%%\n",
+		av[1], av[2], compute (f1, f2) * 100.0);
+    }
+    else
+      usage ();
+}
+
+char *parseflips (s) char *s;
+{
+    char *f = s;
+
+    while (*s)
+      if (*s == 'H' || *s == 'h')
+	*s++ = 'H';
+      else if (*s == 'T' || *s == 't')
+	*s++ = 'T';
+      else
+	usage ();
+
+    return f;
+}
+
+usage ()
+{
+    printf ("usage: %s {HT}^n\n", progname);
+    printf ("\tto get the expected waiting time, or\n");
+    printf ("usage: %s s1 s2\n\t(where s1, s2 in {HT}^n for some fixed n)\n",
+	    progname);
+    printf ("\tto get the probability that s1 will occur before s2\n");
+    exit (1);
+}
+
+/*
+  compute --  if f2 is non-null, compute the probability that flip
+              sequence f1 will occur before f2.  With null f2, compute
+	      the expected waiting time until f1 is flipped
+
+  technique:
+
+    Build a DFA to recognize (H+T)*f1 [or (H+T)*(f1+f2) when f2
+    is non-null].  Randomly flipping coins is a Markov process on the
+    graph of this DFA.  We can solve for the probability that f1 precedes
+    f2 or the expected waiting time for f1 by setting up a linear system
+    of equations relating the values of these unknowns starting from each
+    state of the DFA.  Solve this linear system by Gaussian Elimination.
+*/
+
+typedef struct state {
+    char *s;                /* pointer to substring string matched */
+    int len;                /* length of substring matched */
+    int backup;             /* number of one of the two next states */
+} state;
+
+double compute (f1, f2) char *f1, *f2;
+{
+    double solvex0 ();
+    int i, j, n1, n;
+
+    state *dfa;
+    int nstates;
+
+    char *malloc ();
+
+    n = n1 = strlen (f1);
+    if (f2)
+	n += strlen (f2); /* n + 1 states in the DFA */
+
+    dfa = (state *) malloc ((unsigned) ((n + 1) * sizeof (state)));
+
+    if (!dfa) {
+	printf ("Ouch, out of memory!\n");
+	exit (1);
+    }
+
+    /* set up the backbone of the DFA */
+
+    for (i = 0; i <= n; i++) {
+	dfa[i].s = (i <= n1) ? f1 : f2;
+	dfa[i].len = (i <= n1) ? i : i - n1;
+    }
+ 
+    /* for i not a final state, one next state of i is simply
+       i+1 (this corresponds to another matching character of dfs[i].s
+       The other next state (the backup state) is now computed.
+       It is the state whose substring matches the longest suffix
+       with the last character changed */      
+       
+    for (i = 0; i <= n; i++) {
+	dfa[i].backup = 0;
+	for (j = 1; j <= n; j++)
+	  if ((dfa[j].len > dfa[dfa[i].backup].len)
+	      && dfa[i].s[dfa[i].len] == NOT (dfa[j].s[dfa[j].len - 1])
+	      && strncmp (dfa[j].s, dfa[i].s + dfa[i].len - dfa[j].len + 1,
+			  dfa[j].len - 1) == 0)
+	    dfa[i].backup = j;
+    }
+
+    /* our dfa has n + 1 states, so build a system n + 1 equations
+       in n + 1 unknowns */
+
+    eqsystem (n + 1);
+
+    for (i = 0; i < n; i++)
+      if (i == n1)
+	equation (1.0, n1, 0.0, 0, 0.0, 0, -1.0);
+      else
+	equation (1.0, i, -0.5, i + 1, -0.5, dfa[i].backup, f2 ? 0.0 : -1.0);
+    equation (1.0, n, 0.0, 0, 0.0, 0, 0.0);
+
+    free (dfa);
+
+    return solvex0 ();
+}
+
+
+/* a simple gaussian elimination equation solver */
+
+double *m, **M;
+int rank;
+int neq = 0;
+
+/* create an n by n system of linear equations.  allocate space
+   for the matrix m, filled with zeroes and the dope vector M */
+
+eqsystem (n) int n;
+{
+    char *calloc ();
+    int i;
+
+    m = (double *) calloc (n * (n + 1), sizeof (double));
+    M = (double **) calloc (n, sizeof (double *));
+
+    if (!m || !M) {
+	printf ("Ouch, out of memory!\n");
+	exit (1);
+    }
+
+    for (i = 0; i < n; i++)
+      M[i] = &m[i * (n + 1)];
+    rank = n;
+    neq = 0;
+}
+
+/* add a new equation a * x_na + b * x_nb + c * x_nc + d = 0.0
+   (note that na, nb, and nc are not necessarily all distinct.) */
+
+equation (a, na, b, nb, c, nc, d) double a, b, c, d; int na, nb, nc;
+{
+    double *eq = M[neq++]; /* each row is an equation */
+    eq[na + 1] += a;
+    eq[nb + 1] += b;
+    eq[nc + 1] += c;
+    eq[0] = d;             /* column zero holds the constant term */
+}
+
+/* solve for the value of variable x_0.  This will go nuts if
+   therer are errors (for example, if m is singular) */
+
+double solvex0 ()
+{
+    register i, j, jmax, k;
+    register double  max, val;
+    register double *maxrow, *row;
+
+
+    for (i = rank; i > 0; --i) {      /* for each variable */
+
+        /* find pivot element--largest value in ith column*/
+	max = 0.0;
+	for (j = 0; j < i; j++)
+	    if (fabs (M[j][i]) > fabs (max)) {
+		max = M[j][i];
+		jmax = j;
+	    }
+	/* swap pivot row with last row using dope vectors */
+	maxrow = M[jmax];
+	M[jmax] = M[i - 1];
+	M[i - 1] = maxrow;
+
+	/* normalize pivot row */
+	max = 1.0 / max;
+	for (k = 0; k <= i; k++)
+	  maxrow[k] *= max;
+
+	/* now eliminate variable i by subtracting multiples of pivot row */
+	for (j = 0; j < i - 1; j++) {
+	    row = M[j];
+	    if (val = row[i])              /* if variable i is in this eq */
+		for (k = 0; k <= i; k++)
+		  row[k] -= maxrow[k] * val;
+	}
+    }
+
+    /* the value of x0 is now in constant column of first row
+       we only need x0, so no need to back-substitute */
+
+    val = -M[0][0];
+
+    free (M);
+    free (m);
+
+    return val;
+}
+
+_________________________________________________________________
+Guy Jacobson   (201) 582-6558              AT&T Bell Laboratories
+        uucp:  {att,ucbvax}!ulysses!guy	   600 Mountain Avenue
+    internet:  guy@ulysses.att.com         Murray Hill NJ, 07974
+
+
+
+==> probability/flush.p <==
+Which set contains proportionately more flushes than the set of all
+possible poker hands?
+(1) Hands whose first card is an ace
+(2) Hands whose first card is the ace of spades
+(3) Hands with at least one ace
+(4) Hands with the ace of spades
+
+==> probability/flush.s <==
+An arbitrary hand can have two aces but a flush hand can't.  The
+average number of aces that appear in flush hands is the same as the
+average number of aces in arbitrary hands, but the aces are spread out
+more evenly for the flush hands, so set #3 contains a higher fraction
+of flushes.
+
+Aces of spades, on the other hand, are spread out the same way over
+possible hands as they are over flush hands, since there is only one of
+them in the deck.  Whether or not a hand is flush is based solely on a
+comparison between different cards in the hand, so looking at just one
+card is necessarily uninformative.  So the other sets contain the same
+fraction of flushes as the set of all possible hands.
+
+==> probability/hospital.p <==
+A town has two hospitals, one big and one small.  Every day the big
+hospital delivers 1000 babies and the small hospital delivers 100
+babies.  There's a 50/50 chance of male or female on each birth.
+Which hospital has a better chance of having the same number of boys
+as girls?
+
+==> probability/hospital.s <==
+The small one.  If there are 2N babies born, then the probability of an
+even split is
+
+(2N choose N) / (2 ** 2N) ,
+
+where (2N choose N) = (2N)! / (N! * N!) .
+
+This is a DECREASING function.
+
+If there are two babies born, then the probability of a split is 1/2
+(just have the second baby be different from the first).  With 2N
+babies, If there is a N,N-1 split in the first 2N-1, then there is a
+1/2 chance of the last baby making it an even split.  Otherwise there
+can be no even split.  Therefore the probability is less than 1/2
+overall for an even split.
+
+As N goes to infinity the probability of an even split approaches zero
+(although it is still the most likely event).
+
+==> probability/icos.p <==
+The "house" rolls two 20-sided dice and the "player" rolls one
+20-sided die.  If the player rolls a number on his die between the
+two numbers the house rolled, then the player wins.  Otherwise, the
+house wins (including ties).  What are the probabilities of the player
+winning?
+
+==> probability/icos.s <==
+It is easily seen that if any two of the three dice agree that the
+house wins.  The probability that this does not happen is 19*18/(20*20).
+If the three numbers are different, the probability of winning is 1/3.
+So the chance of winning is 19*18/(20*20*3) = 3*19/200 = 57/200.
+
+==> probability/intervals.p <==
+Given two random points x and y on the interval 0..1, what is the average
+size of the smallest of the three resulting intervals?
+
+==> probability/intervals.s <==
+In between these positions the surface forms a series of planes.
+Thus the volume under it consists of 2 pyramids each with an
+altitude of 1/3 and an (isosceles triangular) base of area 1/2,
+yielding a total volume of 1/9.
+
+==> probability/killers.and.pacifists.p <==
+You enter a town that has K killers and P pacifists.  When a
+pacifist meets a pacifist, nothing happens.  When a pacifist meets a
+killer, the pacifist is killed.  When two killers meet, both die.
+Assume meetings always occur between exactly two persons and the pairs
+involved are completely random.  What are your odds of survival?
+
+==> probability/killers.and.pacifists.s <==
+Regardless of whether you are a pacifist or a killer, you may disregard
+all events in which a pacifist other than yourself is involved and
+consider only events in which you are killed or a pair of killers other
+than yourself is killed.
+
+Thus we may assume that there are N killers and yourself.  If N is odd,
+your odds of surviving are zero.  If N is even, it doesn't matter to
+you whether you are a killer or not.  So WLOG assume you are.  Then your
+probability of survival is 1/(N+1).
+
+==> probability/leading.digit.p <==
+What is the probability that the ratio of two random reals starts with a 1?
+What about 9?
+
+==> probability/leading.digit.s <==
+What is the distribution of y/x for (x,y) chosen with uniform distribution
+from the unit square?
+
+First you want y/x in one of the intervals ... [0.01,0.02), [0.1,0.2),
+[1,2), [10/20), ... .  This corresponds to (x,y) lying in one of
+several triangles with height 1 and bases on either the right or top
+edges of the square.  The bases along the right edge have lengths 0.1
+(for 0.1 <= y/x < 0.2), 0.01, 0.001, ... ; the sum of this series is
+1/9.  The bases along the top edge have lengths 0.5 (for 0.5 < x/y <=
+1), 0.05, 0.005, ... ; the sum of this series is 5/9.  So you have a
+total base length of 6/9 = 2/3, height 1, so the area is 1/3.  The
+total area of the square is 1/3, so the probability that y/x starts
+with a 1 is 1/3 ~= 0.333333.
+
+In the second case you have the same lengths (but in different places)
+on the right edge, total 1/9.  But on the top edge, 9 <= y/x < 10 gives
+you 1/10 < x/y <= 1/9 gives you a base of length 1/9 - 1/10 = 1/90,
+and the series proceeds 1/900, 1/9000, ... ; the sum is 1/81.  Total
+base length then is 9/81 + 1/81 = 10/81, height 1, total area (and
+hence probability of a leading 9) is 5/81 ~= 0.061728.
+
+
+==> probability/lights.p <==
+Waldo and Basil are exactly m blocks west and n blocks north from
+Central Park, and always go with the green light until they run out of
+options.  Assuming that the probability of the light being green is 1/2
+in each direction, that if the light is green in one direction it is
+red in the other, and that the lights are not synchronized, find the
+expected number of red lights that Waldo and Basil will encounter.
+
+==> probability/lights.s <==
+Let E(m,n) be this number, and let (x)C(y) = x!/(y! (x-y)!).  A model
+for this problem is the following nxm grid:
+
+     ^         B---+---+---+ ... +---+---+---+ (m,0)
+     |         |   |   |   |     |   |   |   |
+     N         +---+---+---+ ... +---+---+---+ (m,1)
+<--W + E-->    :   :   :   :     :   :   :   :
+     S         +---+---+---+ ... +---+---+---+ (m,n-1)
+     |         |   |   |   |     |   |   |   |
+     v         +---+---+---+ ... +---+---+---E (m,n)
+
+where each + represents a traffic light.  We can consider each
+traffic light to be a direction pointer, with an equal chance of
+pointing either east or south.
+
+IMHO, the best way to approach this problem is to ask:  what is the
+probability that edge-light (x,y) will be the first red edge-light
+that the pedestrian encounters?  This is easy to answer; since the
+only way to reach (x,y) is by going south x times and east y times,
+in any order, we see that there are (x+y)C(x) possible paths from
+(0,0) to (x,y).  Since each of these has probability (1/2)^(x+y+1)
+of occuring, we see that the the probability we are looking for is
+(1/2)^(x+y+1)*(x+y)C(x).  Multiplying this by the expected number
+of red lights that will be encountered from that point, (n-k+1)/2,
+we see that
+
+            m-1
+           -----
+           \
+E(m,n) =    >    ( 1/2 )^(n+k+1) * (n+k)C(n) * (m-k+1)/2
+           /
+           -----
+            k=0
+
+            n-1
+           -----
+           \
+      +     >    ( 1/2 )^(m+k+1) * (m+k)C(m) * (n-k+1)/2 .
+           /
+           -----
+            k=0
+
+
+Are we done?  No!  Putting on our Captain Clever Cap, we define
+
+            n-1
+           -----
+           \
+f(m,n) =    >    ( 1/2 )^k * (m+k)C(m) * k 
+           /
+           -----
+            k=0
+
+and
+
+            n-1
+           -----
+           \
+g(m,n) =    >    ( 1/2 )^k * (m+k)C(m) .
+           /
+           -----
+            k=0
+
+Now, we know that
+
+             n
+           -----
+           \
+f(m,n)/2 =  >    ( 1/2 )^k * (m+k-1)C(m) * (k-1) 
+           /
+           -----
+            k=1
+
+and since f(m,n)/2 = f(m,n) - f(m,n)/2, we get that
+
+            n-1
+           -----
+           \
+f(m,n)/2 =  >    ( 1/2 )^k * ( (m+k)C(m) * k - (m+k-1)C(m) * (k-1) )
+           /
+           -----
+            k=1
+
+- (1/2)^n * (m+n-1)C(m) * (n-1)
+
+            n-2
+           -----
+           \
+ =          >    ( 1/2 )^(k+1) * (m+k)C(m) * (m+1)
+           /
+           -----
+            k=0
+
+- (1/2)^n * (m+n-1)C(m) * (n-1)
+
+= (m+1)/2 * (g(m,n) - (1/2)^(n-1)*(m+n-1)C(m)) - (1/2)^n*(m+n-1)C(m)*(n-1)
+
+therefore
+
+f(m,n) = (m+1) * g(m,n) - (n+m) * (1/2)^(n-1) * (m+n-1)C(m) .
+
+
+Now, E(m,n) = (n+1) * (1/2)^(m+2) * g(m,n) - (1/2)^(m+2) * f(m,n)
+
++ (m+1) * (1/2)^(n+2) * g(n,m) - (1/2)^(n+2) * f(n,m)
+
+= (m+n) * (1/2)^(n+m+1) * (m+n)C(m) + (m-n) * (1/2)^(n+2) * g(n,m)
+
++ (n-m) * (1/2)^(m+2) * g(m,n) .
+
+
+Setting m=n in this formula, we see that
+
+           E(n,n) = n * (1/2)^(2n) * (2n)C(n),
+
+and applying Stirling's theorem we get the beautiful asymptotic formula
+
+                  E(n,n) ~ sqrt(n/pi).
+
+==> probability/lottery.p <==
+There n tickets in the lottery, k winners and m allowing you to pick another
+ticket. The problem is to determine the probability of winning the lottery
+when you start by picking 1 (one) ticket.
+
+A lottery has N balls in all, and you as a player can choose m numbers
+on each card, and the lottery authorities then choose n balls, define
+L(N,n,m,k) as the minimum number of cards you must purchase to ensure that
+at least one of your cards will have at least k numbers in common with the
+balls chosen in the lottery.
+
+==> probability/lottery.s <==
+This relates to the problem of rolling a random number
+from 1 to 17 given a 20 sided die.  You simply mark the numbers 18,
+19, and 20 as "roll again".
+
+The probability of winning is, of course, k/(n-m) as for every k cases
+in which you get x "draw again"'s before winning, you get n-m-k similar
+cases where you get x "draw again"'s before losing.  The example using
+dice makes it obvious, however.
+
+L(N,k,n,k) >= Ceiling((N-choose-k)/(n-choose-k)*
+                   (n-1-choose-k-1)/(N-1-choose-k-1)*L(N-1,k-1,n-1,k-1))
+            = Ceiling(N/n*L(N-1,k-1,n-1,k-1))
+
+The correct way to see this is as follows:  Suppose you have an
+(N,k,n,k) system of cards.  Look at all of the cards that contain the
+number 1.  They cover all ball sets that contain 1, and therefore these
+cards become an (N-1,k-1,n-1,k-1) covering upon deletion of the number
+1.  Therefore the number 1 must appear at least L(N-1,k-1,n-1,k-1).
+The same is true of all of the other numbers.  There are N of them but
+n appear on each card.  Thus we obtain the bound.
+
+==> probability/oldest.girl.p <==
+You meet a stranger on the street, and ask how many children he has.  He
+truthfully says two.  You ask "Is the older one a girl?"  He truthfully
+says yes.  What is the probability that both children are girls?  What
+would the probability be if your second question had been "Is at least
+one of them a girl?", with the other conditions unchanged?
+
+==> probability/oldest.girl.s <==
+There are four possibilities:
+
+    Oldest child    Youngest child
+1.  Girl            Girl
+2.  Girl            Boy
+3.  Boy             Girl
+4.  Boy             Boy
+
+If your friend says "My oldest child is a girl," he has eliminated cases
+3 and 4, and in the remaining cases both are girls 1/2 of the time.  If
+your friend says "At least one of my children is a girl," he has
+eliminated case 4 only, and in the remaining cases both are girls 1/3
+of the time.
+
+
+==> probability/particle.in.box.p <==
+A particle is bouncing randomly in a two-dimensional box.  How far does it
+travel between bounces, on average?
+
+Suppose the particle is initially at some random position in the box and is
+traveling in a straight line in a random direction and rebounds normally
+at the edges.
+
+==> probability/particle.in.box.s <==
+Let theta be the angle of the point's initial vector.  After traveling a
+distance r, the point has moved r*cos(theta) horizontally and r*sin(theta)
+vertically, and thus has struck r*(sin(theta)+cos(theta))+O(1) walls.  Hence
+the average distance between walls will be 1/(sin(theta)+cos(theta)).  We now
+average this over all angles theta:
+	2/pi * intg from theta=0 to pi/2 (1/(sin(theta)+cos(theta))) dtheta
+which (in a computation which is left as an exercise) reduces to
+	2*sqrt(2)*ln(1+sqrt(2))/pi = 0.793515.
+
+==> probability/pi.p <==
+Are the digits of pi random (i.e., can you make money betting on them)?
+
+==> probability/pi.s <==
+No, the digits of pi are not truly random, therefore you can win money
+playing against a supercomputer that can calculate the digits of pi far
+beyond what we are currently capable of doing.  This computer selects a
+position in the decimal expansion of pi -- say, at 10^100.  Your job is
+to guess what the next digit or digit sequence is.  Specifically, you
+have one dollar to bet.  A bet on the next digit, if correct, returns
+10 times the amount bet; a bet on the next two digits returns 100 times
+the amount bet, and so on.  (The dollar may be divided in any fashion,
+so we could bet 1/3 or 1/10000 of a dollar.)  You may place bets in any
+combination.  The computer will tell you the position number, let you
+examine the digits up to that point, and calculate statistics for you.
+
+It is easy to set up strategies that might win, if the supercomputer
+doesn't know your strategy.  For example, "Always bet on 7" might win,
+if you are lucky.  Also, it is easy to set up bets that will always
+return a dollar.  For example, if you bet a penny on every two-digit
+sequence, you are sure to win back your dollar.  Also, there are
+strategies that might be winning, but we can't prove it.  For example,
+it may be that a certain sequence of digits never occurs in pi, but we
+have no way of proving this.
+
+The problem is to find a strategy that you can prove will always win
+back more than a dollar.
+
+The assumption that the position is beyond the reach of calculation
+means that we must rely on general facts we know about the sequence of
+digits of pi, which is practically nil.  But it is not completely nil,
+and the challenge is to find a strategy that will always win money.
+
+A theorem of Mahler (1953) states that for all integers p, q > 1,
+
+		-42
+  |pi - p/q| > q
+
+This says that pi cannot have a rational approximation that is
+extremely tight.
+
+Now suppose that the computer picks position N.  I know that the next
+41 * N digits cannot be all zero.   For if they were, then the first N
+digits, treated as a fraction with denominator 10^N, satisfies:
+
+  |pi - p / 10^N|  <  10^(-42 N)
+
+which contradicts Mahler's theorem.
+
+So, I split my dollar into 10^(41N) - 1 equal parts, and bet on each of
+the sequences of 41N digits, except the one with all zeroes.  One of
+the bets is sure to win, so my total profit is about 10(^-41N) of a
+dollar!
+
+This strategy can be improved a number of ways, such as looking for
+other repeating patterns, or improvements to the bound of 42 -- but the
+earnings are so pathetic, it hardly seems worth the effort.
+
+Are there other winning strategies, not based on Mahler's theorem?  I
+believe there are algorithms that generate 2N binary digits of pi,
+where the computations are separate for each block of N digits.  Maybe
+from something like this, we can find a simple subsequence of the
+binary digits of pi which is always zero, or which has some simple
+pattern.
+
+==> probability/random.walk.p <==
+Waldo has lost his car keys!  He's not using a very efficient search;
+in fact, he's doing a random walk.  He starts at 0, and moves 1 unit
+to the left or right, with equal probability.  On the next step, he
+moves 2 units to the left or right, again with equal probability.  For
+subsequent turns he follows the pattern 1, 2, 1, etc.
+
+His keys, in truth, were right under his nose at point 0.  Assuming
+that he'll spot them the next time he sees them, what is the
+probability that poor Waldo will eventually return to 0?
+
+==> probability/random.walk.s <==
+I can show the probability that Waldo returns to 0 is 1.  Waldo's
+wanderings map to an integer grid in the plane as follows.  Let
+(X_t,Y_t) be the cumulative sums of the length 1 and length 2 steps
+respectively taken by Waldo through time t.  By looking only at even t,
+we get the ordinary random walk in the plane, which returns to the
+origin (0,0) with probability 1.  In fact, landing at (2n, n) for any n
+will land Waldo on top of his keys too.  There's no need to look at odd
+t.
+
+Similar considerations apply for step sizes of arbitrary (fixed) size.
+
+==> probability/reactor.p <==
+There is a reactor in which a reaction is to take place. This reaction
+stops if an electron is present in the reactor. The reaction is started
+with 18 positrons; the idea being that one of these positrons would
+combine with any incoming electron (thus destroying both). Every second,
+exactly one particle enters the reactor. The probablity that this particle   
+is an electron is 0.49 and that it is a positron is 0.51.
+
+What is the probability that the reaction would go on for ever?
+
+Note: Once the reaction stops, it cannot restart.
+
+==> probability/reactor.s <==
+Let P(n) be the probability that, starting with n positrons, the
+reaction goes on forever.  Clearly P'(n+1)=P'(0)*P'(n), where the
+' indicates probabilistic complementation; also note that
+P'(n) = .51*P'(n+1) + .49*P'(n-1).  Hence we have that P(1)=(P'(0))^2
+and that P'(0) = .51*P'(1) ==> P'(0) equals 1 or 49/51.  We thus get
+that either P'(18) = 1 or (49/51)^19 ==> P(18) = 0 or 1 - (49/51)^19.
+
+The answer is indeed the latter.  A standard result in random walks
+(which can be easily derived using Markov chains) yields that if p>1/2
+then the probability of reaching the absorbing state at +infinity
+as opposed to the absorbing state at -1 is 1-r^(-i), where r=p/(1-p)
+(p is the probability of moving from state n to state n-1, in our
+case .49) and i equals the starting location + 1.  Therefore we have
+that P(18) = 1-(.49/.51)^19.
+
+==> probability/roulette.p <==
+You are in a game of Russian roulette, but this time the gun (a 6
+shooter revolver) has three bullets _in_a_row_ in three of the
+chambers.  The barrel is spun only once.  Each player then points the
+gun at his (her) head and pulls the trigger.  If he (she) is still
+alive, the gun is passed to the other player who then points it at his
+(her) own head and pulls the trigger.  The game stops when one player
+dies.
+
+Now to the point:  would you rather be first or second to shoot?
+
+==> probability/roulette.s <==
+All you need to consider are the six possible bullet configurations
+
+    B B B E E E         -> player 1 dies
+    E B B B E E         -> player 2 dies
+    E E B B B E         -> player 1 dies
+    E E E B B B         -> player 2 dies
+    B E E E B B         -> player 1 dies
+    B B E E E B         -> player 1 dies
+
+One therefore has a 2/3 probability of winning (and a 1/3 probability of
+dying) by shooting second.  I for one would prefer this option.
+
+==> probability/transitivity.p <==
+Can you number dice so that die A beats die B beats die C beats die A?
+What is the largest probability p with which each event can occur?
+
+==> probability/transitivity.s <==
+Yes.  The actual values on the dice faces don't matter, only their
+ordering.  WLOG we may assume that no two faces of the same or
+different dice are equal.  We can assume "generalised dice", where the
+faces need not be equally probable.  These can be approximated by dice
+with equi-probable faces by having enough faces and marking some of
+them the same.
+
+Take the case of three dice, called A, B, and C.  Picture the different
+values on the faces of the A die.  Suppose there are three:
+
+            A       A       A
+
+The values on the B die must lie in between those of the A die:
+
+        B   A   B   A   B   A   B
+
+With three different A values, we need only four different B values.
+
+Similarly, the C values must lie in between these:
+
+      C B C A C B C A C B C A C B C
+      
+Assume we want A to beat B, B to beat C, and C to beat A.  Then the above
+scheme for the ordering of values can be simplified to:
+
+      B C A B C A B C A B C
+
+since for example, the first C in the previous arrangement can be moved
+to the second with the effect that the probability that B beats C is
+increased, and the probabilities that C beats A or A beats B are
+unchanged.  Similarly for the other omitted faces.
+
+In general we obtain for n dice A...Z the arrangement
+
+    B ... Z A B ... Z ...... A B ... Z
+
+where there are k complete cycles of B..ZA followed by B...Z.  k must be
+at least 1.
+
+CONJECTURE:  The optimum can be obtained for k=1.
+
+So the arrangement of face values is B ... Z A B ... Z.  For three dice
+it is BCABC.  Thus one die has just one face, all the other dice have two
+(with in general different probabilities).
+
+CONJECTURE:  At the optimum, the probabilities that each die beats the
+next can be equal.
+
+Now put probabilities into the BCABC arrangement:
+
+    B  C  A  B  C
+    x  y  1  x' y'
+
+Clearly x+x' = y+y' = 1.
+
+Prob. that A beats B = x'
+           B beats C = x + x'y'
+           C beats A = y
+
+Therefore x' = y = x + x'y'
+
+Solving for these gives x = y' = 1-y, x' = y = (-1 + sqrt(5))/2 = prob.
+of each die beating the next = 0.618...
+
+For four dice one obtains the probabilities:
+
+    B  C  D  A  B  C  D
+    x  y  z  1  x' y' z'
+
+A beats B:  x'
+B beats C:  x + x'y'
+C beats D:  y + y'z'
+D beats A:  z
+
+CONJECTURE: for any number of dice, at the optimum, the sequence of
+probabilities abc...z1a'b'c...z' is palindromic.
+
+We thus have the equalities:
+
+    x+x' = 1
+    y+y' = 1
+    z+z' = 1
+    x' = z = x + x'y' = x + x'y'
+    y = y' (hence both = 1/2)
+
+Solving this gives x = 1/3, z = 2/3 = prob. of each die beating the next.
+ Since all the numbers are rational, the limit is attainable with
+finitely many equiprobable faces.  E.g. A has one face, marked 0.  C has
+two faces, marked 2 and -2.  B has three faces, marked 3, -1, -1.  D has
+three faces, marked 1, 1, -3.  Or all four dice can be given six faces,
+marked with numbers in the range 0 to 6.
+
+Finding the solution for 5, 6, or n dice is left as an exercise.
+
+--                                  ____
+Richard Kennaway                  __\_ /    School of Information Systems
+Internet:  jrk@sys.uea.ac.uk      \  X/     University of East Anglia
+uucp:  ...mcsun!ukc!uea-sys!jrk    \/       Norwich NR4 7TJ, U.K.
+
+
+Martin Gardner (of course!) wrote about notransitive dice, see the Oct '74
+issue of Scientific American, or his book "Wheels, Life and Other Mathematical
+Amusements", ISBN 0-7167-1588-0 or ISBN 0-7167-1589-9 (paperback).
+
+In the book, Gardner cites Bradley Efron of Stanford U. as stating that
+the maximum number for three dice is approx .618, requiring dice with more
+than six sides.  He also mentions that .75 is the limit approached as the
+number of dice increases.  The book shows three sets of 6-sided dice, where
+each set has 2/3 as the advantage probability.
+

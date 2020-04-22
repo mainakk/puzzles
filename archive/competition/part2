@@ -1,0 +1,1552 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05233; Sat, 20 Apr 1996 15:10:04 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15729; Sat, 20 Apr 96 14:11:37 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25195; Sat, 20 Apr 1996 11:11:57 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (competition), part 07 of 35
+Message-Id: <puzzles/archive/competition/part2_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:47 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1524
+Xref: senator-bedfellow.mit.edu rec.puzzles:24993 news.answers:11513 rec.answers:1913
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/competition/part2
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> competition/games/cube.p <==
+What are some games involving cubes?
+
+==> competition/games/cube.s <==
+Johan Myrberger's list of 3x3x3 cube puzzles (version 930222)
+
+Comments, corrections and contributions are welcome!
+
+MAIL: myrberger@e.kth.se
+
+Snailmail: Johan Myrberger
+           Hokens gata 8 B
+           S-116 46 STOCKHOLM
+           SWEDEN
+
+A: Block puzzles
+
+
+A.1 The Soma Cube
+
+
+ ______                   ______       ______               ______
+|\     \                 |\     \     |\     \             |\     \
+| \_____\                | \_____\    | \_____\            | \_____\
+| |     |____       _____| |     |    | |     |____        | |     |____
+|\|     |    \     |\     \|     |    |\|     |    \       |\|     |    \
+| *_____|_____\    | \_____*_____|    | *_____|_____\      | *_____|_____\
+| |\     \    |    | |\     \    |    | |     |\     \     | |     |     |
+ \| \_____\   |     \| \_____\   |     \|     | \_____\     \|     |     |
+  * |     |___|      * |     |___|      *_____| |     |      *_____|_____|
+   \|     |           \|     |                 \|     |
+    *_____|            *_____|                  *_____|
+
+ ______                             ______                      ____________
+|\     \                           |\     \                    |\     \     \
+| \_____\                          | \_____\                   | \_____\_____\
+| |     |__________           _____| |     |____          _____| |     |     |
+|\|     |    \     \         |\     \|     |    \        |\     \|     |     |
+| *_____|_____\_____\        | \_____*_____|_____\       | \_____*_____|_____|
+| |     |     |     |        | |     |     |     |       | |     |     |
+ \|     |     |     |         \|     |     |     |        \|     |     |
+  *_____|_____|_____|          *_____|_____|_____|         *_____|_____|
+
+
+A.2 Half Hour Puzzle
+
+
+ ______                        ______            ______
+|\     \                      |\     \          |\     \
+| \_____\                     | \_____\         | \_____\
+| |     |__________      _____| |     |____     | |     |__________
+|\|     |    \     \    |\     \|     |    \    |\|     |    \     \
+| *_____|_____\_____\   | \_____*_____|_____\   | *_____|_____\_____\
+| |     |     |     |   | |     |     |     |   | |     |\     \    |
+ \|     |     |     |    \|     |     |     |    \|     | \_____\   |
+  *_____|_____|_____|     *_____|_____|_____|     *_____| |     |___|
+                                                         \|     |
+                                                          *_____|
+
+       ______            ______                    ______
+      |\     \          |\     \                  |\     \
+      | \_____\         | \_____\                 | \_____\
+ _____| |     |    _____| |     |                 | |     |
+|\     \|     |   |\     \|     |                 |\|     |
+| \_____*_____|   | \_____*_____|______        ___|_*_____|______
+| |\     \    |   | |     |\     \     \      |\     \     \     \
+ \| \_____\   |    \|     | \_____\_____\     | \_____\_____\_____\
+  * |     |___|     *_____| |     |     |     | |     |     |     |
+   \|     |                \|     |     |      \|     |     |     |
+    *_____|                 *_____|_____|       *_____|_____|_____|
+
+
+A.3 Steinhaus's dissected cube
+
+
+ ______                            ______          ______
+|\     \                          |\     \        |\     \
+| \_____\                         | \_____\       | \_____\
+| |     |__________          _____| |     |       | |     |____
+|\|     |    \     \        |\     \|     |       |\|     |    \
+| *_____|_____\_____\       | \_____*_____|       | *_____|_____\
+| |     |     |     |       | |\     \    |       | |     |\     \
+ \|     |     |     |        \| \_____\   |        \|     | \_____\
+  *_____|_____|_____|         * |     |___|         *_____| |     |
+                               \|     |                    \|     |
+                                *_____|                     *_____|
+
+ ____________                          ______                    ______
+|\     \     \                        |\     \                  |\     \
+| \_____\_____\                       | \_____\                 | \_____\
+| |     |     |                       | |     |      ___________| |     |
+ \|     |     |                       |\|     |     |\     \     \|     |
+  *_____|_____|______        _________|_*_____|     | \_____\_____*_____|
+      \ |\     \     \      |\     \     \     \    | |     |\     \    |
+       \| \_____\_____\     | \_____\_____\_____\    \|     | \_____\   |
+        * |     |     |     | |     |     |     |     *_____| |     |___|
+         \|     |     |      \|     |     |     |            \|     |
+          *_____|_____|       *_____|_____|_____|             *_____|
+
+
+A.4
+
+
+ ______
+|\     \
+| \_____\
+| |     |____              Nine of these make a 3x3x3 cube.
+|\|     |    \
+| *_____|_____\
+| |     |     |
+ \|     |     |
+  *_____|_____|
+
+
+A.5
+
+
+                           ______                    ____________
+                          |\     \                  |\     \     \
+                          | \_____\                 | \_____\_____\
+ ____________             | |     |____             | |     |     |
+|\     \     \            |\|     |    \            |\|     |     |
+| \_____\_____\           | *_____|_____\           | *_____|_____|
+| |     |     |           | |     |     |           | |     |     |
+ \|     |     |            \|     |     |            \|     |     |
+  *_____|_____|             *_____|_____|             *_____|_____|
+
+                           ______                    ______
+                          |\     \                  |\     \
+                          | \_____\                 | \_____\
+ ______      ______       | |     |____             | |     |__________
+|\     \    |\     \      |\|     |    \            |\|     |    \     \
+| \_____\   | \_____\     | *_____|_____\           | *_____|_____\_____\
+| |     |___| |     |     | |     |     |____       | |     |     |     |
+|\|     |    \|     |     |\|     |     |    \      |\|     |     |     |
+| *_____|_____*_____|     | *_____|_____|_____\     | *_____|_____|_____|
+| |     |     |     |     | |     |     |     |     | |     |     |     |
+ \|     |     |     |      \|     |     |     |      \|     |     |     |
+  *_____|_____|_____|       *_____|_____|_____|       *_____|_____|_____|
+
+
+A.6
+
+
+ ______                   ______       ______               ______
+|\     \                 |\     \     |\     \             |\     \
+| \_____\                | \_____\    | \_____\            | \_____\
+| |     |____       _____| |     |    | |     |____        | |     |____
+|\|     |    \     |\     \|     |    |\|     |    \       |\|     |    \
+| *_____|_____\    | \_____*_____|    | *_____|_____\      | *_____|_____\
+| |\     \    |    | |\     \    |    | |     |\     \     | |     |     |
+ \| \_____\   |     \| \_____\   |     \|     | \_____\     \|     |     |
+  * |     |___|      * |     |___|      *_____| |     |      *_____|_____|
+   \|     |           \|     |                 \|     |
+    *_____|            *_____|                  *_____|
+
+       ______                      ____________               ____________
+      |\     \                    |\     \     \             |\     \     \
+      | \_____\                   | \_____\_____\            | \_____\_____\
+ _____| |     |____          _____| |     |     |       _____| |     |     |
+|\     \|     |    \        |\     \|     |     |      |\     \|     |     |
+| \_____*_____|_____\       | \_____*_____|_____|      | \_____*_____|_____|
+| |     |     |     |       | |     |     |            | |     |     |
+ \|     |     |     |        \|     |     |             \|     |     |
+  *_____|_____|_____|         *_____|_____|              *_____|_____|
+
+
+A.7
+
+
+ ____________
+|\     \     \
+| \_____\_____\
+| |     |     |
+|\|     |     |  Six of these and three unit cubes make a 3x3x3 cube.
+| *_____|_____|
+| |     |     |
+ \|     |     |
+  *_____|_____|
+
+
+A.8 Oskar's
+
+
+       ____________            ______ 
+      |\     \     \          |\     \
+      | \_____\_____\         | \_____\
+ _____| |     |     |         | |     |__________         __________________
+|\     \|     |     |         |\|     |    \     \       |\     \     \     \
+| \_____*_____|_____|  x 5    | *_____|_____\_____\      | *_____\_____\_____\
+| |     |     |               | |     |     |     |      | |     |     |     |
+ \|     |     |                \|     |     |     |       \|     |     |     |
+  *_____|_____|                 *_____|_____|_____|        *_____|_____|_____|
+
+
+A.9 Trikub
+
+
+ ____________         ______                           ______ 
+|\     \     \       |\     \                         |\     \
+| \_____\_____\      | \_____\                        | \_____\
+| |     |     |      | |     |__________         _____| |     |____
+|\|     |     |      |\|     |    \     \       |\     \|     |    \
+| *_____|_____|      | *_____|_____\_____\      | \_____*_____|_____\
+| |     |     |      | |     |     |     |      | |     |     |     |
+ \|     |     |       \|     |     |     |       \|     |     |     |
+  *_____|_____|        *_____|_____|_____|        *_____|_____|_____|
+
+ ______               ______                       ____________
+|\     \             |\     \                     |\     \     \
+| \_____\            | \_____\                    | \_____\_____\
+| |     |____        | |     |____           _____| |     |     |
+|\|     |    \       |\|     |    \         |\     \|     |     |
+| *_____|_____\      | *_____|_____\        | \_____*_____|_____|
+| |\     \    |      | |     |\     \       | |     |     |
+ \| \_____\   |       \|     | \_____\       \|     |     |
+  * |     |___|        *_____| |     |        *_____|_____|
+   \|     |                   \|     |      
+    *_____|                    *_____|      
+
+and three single cubes in a different colour.
+
+The object is to build 3x3x3 cubes with the three single cubes in various
+positions.
+
+E.g: * * *  as center    * * *  as edge    * *(3)  as          * *(2) as
+     * S *               * * *             *(2)*   space       *(2)*  center
+     * * *               * * S            (1)* *   diagonal   (2)* *  diagonal
+
+(The other two variations with the single cubes in a row are impossible)
+
+
+A.10
+
+
+       ______         ______                     ______
+      |\     \       |\     \                   |\     \
+      | \_____\      | \_____\                  | \_____\
+ _____| |     |      | |     |____              | |     |____
+|\     \|     |      |\|     |    \             |\|     |    \
+| \_____*_____|      | *_____|_____\         ___|_*_____|_____\
+| |\     \    |      | |     |\     \       |\     \     \    |
+ \| \_____\   |       \|     | \_____\      | \_____\_____\   |
+  * |     |___|        *_____| |     |      | |     |     |___|
+   \|     |                   \|     |       \|     |     |
+    *_____|                    *_____|        *_____|_____|
+
+
+ ______                           ______               ______    
+|\     \                         |\     \             |\     \
+| \_____\                        | \_____\            | \_____\
+| |     |__________         _____| |     |____        | |     |____
+|\|     |    \     \       |\     \|     |    \       |\|     |    \
+| *_____|_____\_____\      | \_____*_____|_____\      | *_____|_____\______
+| |\     \    |     |      | |     |     |     |      | |     |\     \     \
+ \| \_____\   |     |       \|     |     |     |       \|     | \_____\_____\
+  * |     |___|_____|        *_____|_____|_____|        *_____| |     |     |
+   \|     |                                                    \|     |     |
+    *_____|                                                     *_____|_____|
+
+
+B: Coloured blocks puzzles
+
+
+B.1 Kolor Kraze
+
+Thirteen pieces.
+Each subcube is coloured with one of nine colours as shown below.
+
+The object is to form a cube with nine colours on each face.
+
+
+ ______
+|\     \
+| \_____\
+| |     |   ______     ______     ______     ______     ______     ______  
+|\|  1  |  |\     \   |\     \   |\     \   |\     \   |\     \   |\     \  
+| *_____|  | \_____\  | \_____\  | \_____\  | \_____\  | \_____\  | \_____\ 
+| |     |  | |     |  | |     |  | |     |  | |     |  | |     |  | |     | 
+|\|  2  |  |\|  2  |  |\|  2  |  |\|  4  |  |\|  4  |  |\|  7  |  |\|  9  |
+| *_____|  | *_____|  | *_____|  | *_____|  | *_____|  | *_____|  | *_____|
+| |     |  | |     |  | |     |  | |     |  | |     |  | |     |  | |     |
+ \|  3  |   \|  3  |   \|  1  |   \|  1  |   \|  5  |   \|  5  |   \|  5  |
+  *_____|    *_____|    *_____|    *_____|    *_____|    *_____|    *_____|
+
+
+ ______     ______     ______     ______     ______     ______
+|\     \   |\     \   |\     \   |\     \   |\     \   |\     \
+| \_____\  | \_____\  | \_____\  | \_____\  | \_____\  | \_____\
+| |     |  | |     |  | |     |  | |     |  | |     |  | |     |
+|\|  9  |  |\|  9  |  |\|  3  |  |\|  6  |  |\|  6  |  |\|  6  |
+| *_____|  | *_____|  | *_____|  | *_____|  | *_____|  | *_____|
+| |     |  | |     |  | |     |  | |     |  | |     |  | |     |
+ \|  7  |   \|  8  |   \|  8  |   \|  8  |   \|  7  |   \|  4  |  
+  *_____|    *_____|    *_____|    *_____|    *_____|    *_____|
+
+
+B.2
+
+Given nine red, nine blue and nine yellow cubes.
+
+Form a 3x3x3 cube in which all three colours appears in each of the 27
+orthogonal rows.
+
+
+B.3
+
+Given nine red, nine blue and nine yellow cubes.
+
+Form a 3x3x3 cube so that every row of three (the 27 orthogonal rows, the 18
+diagonal rows on the nine square cross-sections and the 4 space diagonals)
+contains neither three cubes of like colour nor three of three different
+colours.
+
+
+B.4
+
+Nine pieces, three of each type.
+Each subcube is coloured with one of three colours as shown below.
+
+The object is to build a 3x3x3 cube in which all three colours appears in each
+of the 27 orthogonal rows. (As in B.2)
+
+
+ ______                     ______                     ______
+|\     \                   |\     \                   |\     \
+| \_____\                  | \_____\                  | \_____\
+| |     |____              | |     |____              | |     |____
+|\|  A  |    \   x 3       |\|  B  |    \   x 3       |\|  A  |    \   x 3
+| *_____|_____\            | *_____|_____\            | *_____|_____\
+| |     |     |            | |     |     |            | |     |     |
+ \|  B  |  C  |             \|  A  |  C  |             \|  C  |  B  |
+  *_____|_____|              *_____|_____|              *_____|_____|
+
+
+C: Strings of cubes
+
+
+C.1 Pululahua's dice
+
+27 cubes are joined by an elastic thread through the centers of the cubes
+as shown below.
+
+The object is to fold the structure to a 3x3x3 cube.
+
+
+ ____________________________________
+|\     \     \     \     \     \     \
+| \_____\_____\_____\_____\_____\_____\
+| |     |     |     |     |     |     |
+|\|  :77|77777|77:  |  :77|77777|77:  |
+| *__:__|_____|__:__|__:__|_____|__:__|
+| |  :  |___| |  :  |  :  |___| |  :  |
+|\|  :  |    \|  777|777  |    \|  :  |
+| *__:__|_____*_____|_____|_____*__:__|
+| |  :  |     |     |___| |     |  :  |____
+ \|  777|77777|77:  |    \|  :77|777  |    \
+  *_____|_____|__:__|_____*__:__|_____|_____\
+            | |  :  |     |  :  |     |     |
+            |\|  :  |  +  |  777|77777|77:  |
+            | *__:__|__:__|_____|_____|__:__|
+            | |  :  |  :  |     |     |  :  |
+             \|  +  |  :  |  :77|77777|777  |
+              *_____|__:__|__:__|_____|_____|
+                  | |  :  |  :  |
+                   \|  777|777  |
+                    *_____|_____|
+
+
+C.1.X The C.1 puzzle type exploited by Glenn A. Iba (quoted)
+
+INTRODUCTION
+
+"Chain Cube" Puzzles consist of 27 unit cubies
+with a string running sequentially through them.  The
+string always enters and exits a cubie through the center
+of a face.  The typical cubie has one entry and one exit
+(the ends of the chain only have 1, since the string terminates
+there).  There are two ways for the string to pass through
+any single cubie:
+        1. The string enters and exits non-adjacent faces
+                (i.e. passes straight through the cubie)
+        2. It enters and exits through adjacent faces
+                (i.e. makes a "right angle" turn through
+                 the cubie)
+Thus a chain is defined by its sequence of straight steps and
+right angle turns.  Reversing the sequence (of course) specifies
+the same chain since the chain can be "read" starting from either
+end. Before making a turn, it is possible to "pivot" the next
+cubie to be placed, so there are (in general) 4 choices of
+how to make a "Turn" in 3-space.
+
+The object is to fold the chain into a 3x3x3 cube.
+
+It is possible to prove that any solvable sequence must
+have at least 2 straight steps.  [The smallest odd-dimensioned
+box that can be packed by a chain of all Turns and no Straights
+is 3x5x7. Not a 3x3x3 puzzle, but an interesting challenge.
+The 5x5x5 can be done too, but its not the smallest in volume].
+With the aid of a computer search program I've produced
+a catalog of the number of solutions for all (solvable) sequences.
+
+Here is an example sequence that has a unique solution (up to reflections
+and rotations):
+        (2 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1)
+    the notation is a kind of "run length" coding,
+    where the chain takes the given number of steps in a straight line,
+    then make a right-angle turn. Equivalently, replace
+        1 by Turn,
+        2 by Straight followed by a Turn.
+The above sequence was actually a physical puzzle I saw at
+Roy's house, so I recorded the sequence, and verified (by hand and computer)
+that the solution is unique.
+
+There are always 26 steps in a chain, so the "sum" of the
+1's and 2's in a pattern will always be 26.  For purposes
+of taxonomizing, the "level" of a string pattern is taken
+to be the number of 2's occuring in its specification.
+ 
+
+
+COUNTS OF SOLVABLE AND UNIQUELY SOLVABLE STRING PATTERNS
+ 
+ (recall that Level refers to the number of 2's in the chain spec)
+
+        Level           Solvable        Uniquely
+                        Patterns        Solvable
+
+          0                 0               0
+          1                 0               0
+          2                24               0
+          3               235              15
+          4              1037             144
+          5              2563             589
+          6              3444            1053
+          7              2674            1078
+          8              1159             556
+          9               303             187
+         10                46              34
+         11                 2               2
+         12                 0               0
+         13                 0               0
+                       _______          ______
+
+      Total Patterns:   11487            3658
+
+
+SOME SAMPLE UNIQUELY SOLVABLE CHAINS
+
+  In the following the format is:
+
+  ( #solutions  palindrome? #solutions-by-start-type  chain-pattern-as string )
+
+  where
+
+#solutions is the total number of solutions up to reflections and rotations
+
+palindrome? is T or NIL according to whether or not the chain is a palindrome
+
+#solutions by-start-type lists the 3 separate counts for the number of
+solutions starting the chain of in the 3 distinct possible ways.
+
+chain-pattern-as-string is simply the chain sequence
+
+  My intuition is that the lower level chains are harder to solve,
+  because there are fewer straight steps, and staight steps are generally
+  more constraining.  Another way to view this, is that there are more
+  choices of pivoting for turns because there are more turns in the chains
+  at lower levels.
+
+  Here are the uniquely solvable chains for level 3:
+
+     (note that non-palindrome chains only appear once --
+        I picked a "canonical" ordering)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Level 3 ( 3 straight steps) -- 15 uniquely solvable patterns
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(1 NIL (1 0 0) "21121111112111111111111")
+(1 NIL (1 0 0) "21121111111111111121111")
+(1 NIL (1 0 0) "21111112112111111111111")
+(1 NIL (1 0 0) "21111111211111111111112")
+(1 NIL (1 0 0) "12121111111111112111111")
+(1 NIL (1 0 0) "11211211112111111111111")
+(1 NIL (1 0 0) "11112121111111211111111")
+(1 NIL (1 0 0) "11112112112111111111111")
+(1 NIL (1 0 0) "11112112111111211111111")
+(1 NIL (1 0 0) "11112111121121111111111")
+(1 NIL (1 0 0) "11112111111211211111111")
+(1 NIL (1 0 0) "11112111111112121111111")
+(1 NIL (1 0 0) "11111121122111111111111")
+(1 NIL (1 0 0) "11111112122111111111111")
+(1 NIL (1 0 0) "11111111221121111111111")
+
+
+C.2 Magic Interlocking Cube
+
+(Glenn A. Iba quoted)
+
+This chain problem is marketed as "Magic Interlocking Cube --
+the Ultimate Cube Puzzle".  It has colored cubies, each cubie having
+6 distinctly colored faces (Red, Orange, Yellow, Green, Blue, and White).
+The object is to fold the chain into a 3x3x3 cube with each face
+being all one color (like a solved Rubik's cube).  The string for
+the chain is actually a flexible rubber band, and enters a cubie
+through a (straight) slot that cuts across 3 faces, and exits
+through another slot that cuts the other 3 faces.  Here is a rough
+attempt to picture a cubie:
+
+   (the x's mark the slots cut for the rubber band to enter/exit)
+
+                       __________
+                      /         /|
+                    xxxxxxxxxxx  |
+                  /         / x  |
+                /_________/   x  |
+               |          |   x  |
+               |          |      |
+               |          |      /
+               |    x     |    /
+               |    x     |  /
+               |    x     |/
+               -----x-----
+
+
+Laid out flat the cubie faces would look like this:
+
+                 _________
+                |         |
+                |         |
+                |    x    |
+                |    x    |
+                |____x____|_________ _________ _________
+                |    x    |         |         |         |
+                |    x    |         |         |         |
+                |    x    |    x x x x x x x x x x x    |
+                |    x    |         |         |         |
+                |____x____|_________|_________|_________|
+                |    x    |
+                |    x    |
+                |    x    |
+                |         |
+                |_________|
+
+The structure of the slots gives 3 choices of entry face, and 3 choices
+of exit face for each cube.
+
+It's complicated to specify the topology and coloring but here goes:
+
+  Imagine the chain stretched out in a straight line from left to right.
+  Let the rubber band go straight through each cubie, entering and
+  exiting in the "middle" of each slot.
+
+  It turns out that the cubies are colored so that opposite faces are
+  always colored by the following pairs:
+        Red-Orange
+        Yellow-White
+        Green-Blue
+  So I will specify only the Top, Front, and Left colors of each
+  cubie in the chain. Then I'll specify the slot structure.
+
+        Color sequences from left to right (colors are R,O,Y,G,B,and W):
+           Top:      RRRRRRRRRRRRRRRRRRRRRRRRRRR
+           Front:    YYYYYYYYYYYYWWWYYYYYYYYYYYY
+           Left:     BBBBBGBBBGGGGGGGGGBBGGGGBBB
+
+        For the slots, all the full cuts are hidden, so only
+        the "half-slots" appear.
+        Here is the sequence of "half slots" for the Top (Red) faces:
+                (again left to right)
+
+           Slots:    ><><><><<><><<<><><>>>>><>>
+                Where
+                        > = slot goes to left
+                        < = slot goes to right
+                To be clearer,
+                        > (Left):
+                                 _______
+                                |       |
+                                |       |
+                                xxxxx   |
+                                |       |
+                                |_______|
+
+                        < (Right):
+                                 _______
+                                |       |
+                                |       |
+                                |   xxxxx
+                                |       |
+                                |_______|
+
+                Knowing one slot of a cubie determines all the other slots.
+
+I don't remember whether the solution is unique.  In fact I'm not
+certain whether I actually ever solved it.  I think I did, but I don't
+have a clear recollection.
+
+
+D: Blocks with pins
+
+
+D.1 Holzwurm (Torsten Sillke quoted)
+
+   Inventer: Dieter Matthes
+   Distribution:
+    Pyramo-Spiele-Puzzle
+    Silvia Heinz
+    Sendbuehl 1
+    D-8351 Bernried
+    tel: +49-9905-1613
+ 
+   Pieces:  9 tricubes
+      Each piece has one hole (H) which goes through the entire cube.
+      The following puctures show the tricubes from above. The faces
+      where you see a hole are marked with 'H'. If you see a hole at
+      the top then there is a hole at the bottom too. Each peace has
+      a worm (W) one one face. You have to match the holes and the
+      worms. As a worm fills a hole completely, you can not put two
+      worms at both ends of the hole of the same cube.
+
+        __H__               _____               _____
+       |     |             |     |             |     |
+       |     |             |     |W            |     |
+       |_____|_____        |_____|_____        |_____|_____
+       |     |     |       |     |     |       |     |     |
+       |     |     |W      |     |     |H      |  H  |     |W
+       |_____|_____|       |_____|_____|       |_____|_____|
+
+        __H__               _____               _____
+       |     |             |     |             |     |
+       |     |             |     |             |  W  |
+       |_____|_____        |_____|_____        |_____|_____
+       |     |     |       |     |     |       |     |     |
+       |     |     |       |  W  |  H  |       |     |  H  |
+       |_____|_____|       |_____|_____|       |_____|_____|
+          W
+
+        __W__               _____               _____
+       |     |             |     |             |     |
+       |     |            H|     |H            |     |
+       |_____|_____        |_____|_____        |_____|_____
+       |     |     |       |     |     |       |     |     |
+       |     |  H  |       |     |     |      H|     |  W  |
+       |_____|_____|       |_____|_____|       |_____|_____|
+                              W
+
+   Aim: build a 3*3*3 cube without a worm looking outside.
+        take note, it is no matching problem, as
+                 |     |
+          worm> H|     |H <worm
+                 |     |
+        is not allowed.
+
+
+E: Other
+
+
+E.1 Rubik's cube
+
+
+E.2 Magic cube
+
+Make a magic cube with the numbers 1 - 27.
+
+
+E.3 ==> geometry/coloring/cheese.cube.p <== 
+
+A cube of cheese is divided into 27 subcubes.  A mouse starts at one
+corner and eats through every subcube.  Can it finish in the middle?
+                                                                     
+==> geometry/coloring/cheese.cube.s <== 
+Give the subcubes a checkerboard-like coloring so that no two adjacent
+subcubes have the same color.  If the corner subcubes are black, the
+cube will have 14 black subcubes and 13 white ones.  The mouse always
+alternates colors and so must end in a black subcube.  But the center
+subcube is white, so the mouse can't end there.
+
+
+E.4
+
+Cut the 3*3*3 cube into single cubes. At each slice you can
+rearrange the blocks. Can you do it with fewer than 6 cuts?
+
+==> competition/games/go-moku.p <==
+For a game of k in a row on an n x n board,  for what values of k and n is
+there a win?  Is (the largest such) k eventually constant or does it increase
+with n?
+
+==> competition/games/go-moku.s <==
+Berlekamp, Conway, and Guy's _Winning_Ways_ reports proof that the
+maximum k is between 4 and 7 inclusive, and it appears to be 5 or 6.
+They report:
+
+. 4-in-a-row is a draw on a 5x5 board (C. Y. Lee), but not on a 4x30
+    board (C. Lustenberger).
+
+. N-in-a-row is shown to be a draw on a NxN board for N>4, using a
+    general pairing technique devised by A. W. Hales and R. I. Jewett.
+
+. 9-in-a-row is a draw even on an infinite board, a 1954 result of H. O.
+    Pollak and C. E. Shannon. 
+
+. More recently, the pseudonymous group T. G. L. Zetters showed that
+    8-in-a-row is a draw on an infinite board, and have made some
+    progress on showing infinite 7-in-a-row to be a draw.
+
+Go-moku is 5-in-a-row played on a 19x19 go board.  It is apparently a
+win for the first player, and so the Japanese have introduced several
+'handicaps' for the first player (e.g., he must win with _exactly_
+five: 6-in-a-row doesn't count), but apparently the game is still a win
+for the first player.  None of these apparent results have been
+proven.
+
+==> competition/games/hi-q.p <==
+What is the quickest solution of the game Hi-Q (also called Solitaire)?
+
+For those of you who aren't sure what the game looks like:
+
+32 movable pegs ("+") are arranged on the following board such that
+only the middle position is empty ("-"). Just to be complete: the board
+consists of only these 33 positions.
+
+	  1 2 3 4 5 6 7
+	1     + + +
+	2     + + +
+	3 + + + + + + +
+	4 + + + - + + +
+	5 + + + + + + +
+	6     + + +
+	7     + + +
+
+A piece moves on this board by jumping over one of its immediate
+neighbor (horizontally or vertically) into an empty space opposite.
+The peg that was jumped over, is hit and removed from the board.  A
+move can contain multiple hits if you use the same peg to make the
+hits.
+
+You have to end with one peg exactly in the middle position (44).
+
+==> competition/games/hi-q.s <==
+1:	46*44
+2:	65*45
+3:	57*55
+4:	54*56
+5:	52*54
+6:	73*53
+7:	43*63
+8:	75*73*53
+9:	35*55
+10:	15*35
+11:	23*43*63*65*45*25
+12:	37*57*55*53
+13:	31*33
+14:	34*32
+15:	51*31*33
+16:	13*15*35
+17:	36*34*32*52*54*34
+18:	24*44
+
+Found by Ernest Bergholt in 1912 and was proved to be minimal by John Beasley
+in 1964.
+
+References
+	The Ins and Outs of Peg Solitaire
+	John D Beasley
+	Oxford U press, 1985
+	ISBN 0-19-853203-2
+
+	Winning Ways, Vol. 2, Ch. 23
+	Berlekamp, E.R.
+	Academic Press, 1982
+	ISBN 01-12-091102-7
+
+==> competition/games/jeopardy.p <==
+What are the highest, lowest, and most different scores contestants
+can achieve during a single game of Jeopardy?
+
+==> competition/games/jeopardy.s <==
+highest: $283,200.00, lowest: -$29,000.00, biggest difference: $281,600.00
+
+(1) Our theoretical contestant has an itchy trigger finger, and rings in with
+    an answer before either of his/her opponents.
+
+(2) The daily doubles (1 in the Jeopardy! round, 2 in the Double Jeopardy!
+    round) all appear under an answer in the $100 or $200 rows.
+
+(3) All answers given by our contestant are (will be?) correct.
+
+Therefore:
+
+Round 1 (Jeopardy!): Max. score per category: $1500.
+		     For 6 categories - $100 for the DD, that's $8900.
+		     Our hero bets the farm and wins - score: $17,800.
+
+Round 2 (Double Jeopardy!):
+		     Max. score per category: $3000.
+		     Assume that the DDs are found last, in order.
+		     For 6 categories - $400 for both DDs, that's $17,600.
+		     Added to his/her winnings in Round 1, that's $35,400.
+		     After the 1st DD, where the whole thing is wagered,
+		     the contestant's score is $70,800.  Then the whole 
+		     amount is wagered again, yielding a total of $141,600.
+
+Round 3 (Final Jeopardy!):
+		     Our (very greedy! :) hero now bets the whole thing, to
+		     see just how much s/he can actually win.  Assuming that
+		     his/her answer is right, the final amount would be
+		     $283,200.
+
+But the contestant can only take home $100,000; the rest is donated to
+charity.
+
+To calculate the lowest possible socre:
+
+-1500 x 6 = -9000 + 100 = -8900.
+
+On the Daily Double that appears in the 100 slot, you bet the maximum
+allowed, 500, and lose. So after the first round, you are at -9400.
+
+-3000 x 6 = -18000 + 400 = -17600 
+
+On the two Daily Doubles in the 200 slots, bet the maximum allowed, 1000. So
+after the second round you are at -9400 + -19600 = -29000. This is the
+lowest score you can achieve in Jeopardy before the Final Jeopardy round.
+
+The caveat here is that you *must* be the person sitting in the left-most
+seat (either a returning champion or the luckiest of the three people who
+come in after a five-time champion "retires") at the beginning of the game,
+because otherwise you will not have control of the board when the first
+Daily Double comes along.
+
+The scenario for the maximum difference is the same as the highest
+score, except that on every question that isn't a daily double, the
+worst contestant rings in ahead of the best one, and makes a wrong
+guess, after which the best contestant rings in and gets it right.
+However, since contestants with negative scores are disqualified before
+Final Jeopardy!, it is arguable that the negative score ceases to exist
+at that point.  This also applies to zero scores.  In that case,
+someone else would have to qualify for Final Jeopardy! for the maximum
+difference to exist, taking one $100 or $200 question away from the
+best player.  In that case the best player would score 8*$200 lower, so
+the maximum difference would be $281,600.00.
+
+
+==> competition/games/nim.p <==
+Place 10 piles of 10 $1 bills in a row.  A valid move is to reduce
+the last i>0 piles by the same amount j>0 for some i and j; a pile
+reduced to nothing is considered to have been removed.  The loser
+is the player who picks up the last dollar, and they must forfeit
+half of what they picked up to the winner.
+
+1)  Who is the winner in Waldo Nim, the first or the second player?
+
+2)  How much more money than the loser can the winner obtain with best
+    play on both parties?
+
+==> competition/games/nim.s <==
+For the particular game described we only need to consider positions for
+which the following condition holds for each pile:
+
+	(number of bills in pile k) + k >= (number of piles) + 1
+
+A GOOD position is defined as one in which this condition holds,
+with equality applying only to one pile P, and all piles following P
+having the same number of bills as P.
+( So the initial position is GOOD, the special pile being the first. )
+I now claim that if I leave you a GOOD position, and you make any move,
+I can move back to a GOOD position.
+
+Suppose there are n piles and the special pile is numbered (n-p+1)
+(so that the last p piles each contain p bills).
+(1) You take p bills from p or more piles; 
+  (a) If p = n, you have just taken the last bill and lost.
+  (b) Otherwise I reduce pile (n-p) (which is now the last) to 1 bill.
+(2) You take p bills from r(<p) piles;
+    I take r bills from (p-r) piles.
+(3) You take q(<p) bills from p or more piles;
+    I take (p-q) bills from q piles.
+(4) You take q(<p) bills from r(<p) piles;
+  (a) q+r>p; I take (p-q) bills from (q+r-p) piles
+  (b) q+r<=p; I take (p-q) bills from (q+r) piles
+
+Verifying that each of the resulting positions is GOOD is tedious
+but straightforward.  It is left as an exercise for the reader.
+
+    -- RobH
+
+==> competition/games/online/online.scrabble.p <==
+How can I play Scrabble online on the Internet?
+
+==> competition/games/online/online.scrabble.s <==
+Announcing ScrabbleMOO, a server running at 134.53.14.110, port 7777
+(nextsrv.cas.muohio.edu 7777).  The server software is version 1.7.0
+of the LambdaMOO server code.
+
+To reach it, you can use "telnet 134.53.14.110 7777", and sign on.  You
+will have a unique name and password on the server, and directions are
+provided in the opening screen on how to accomplish signing on.  The
+first time, you will need to type "create YourName YourPassword", and
+each time thereafter, "connect YourName YourPassword".
+
+There are currently 5 Scrabble boards set up, with global individual
+high score and game-cumulative high score lists.  Games can be saved,
+and restored at a later time.  There are complete command instructions
+at each board (via the command "instructions"); usage is simple and
+intuitive.  There are commands to undo turns, exchange tiles, and pass,
+and there are a variety of options available to change the way the
+board and rack are displayed.
+
+We do not yet have a dictionary for challenges installed on-line, and
+that is coming very soon.  I am seriously contemplating using the
+OSPD.shar wordlist that Ross Beresford listed in a recent Usenet
+article.  It seems to have the full wordlist from the 1st edition
+of the OSPD, plus longer words from some other source.  I have
+personal wordlists updating the OSPD to the 2nd edition, for words
+up to 4 letters long, and will have the longer words in the near
+future.
+
+Usage of a certain dictionary for challenges is not enforced, and
+really can't be.  Many of the regular players there have their
+personal copy of the OSPD.  It's all informal, and for fun.  Players
+agree what dictionary to use on a game-by-game basis, though the
+OSPD is encouraged.  There are even commands to enable kibitzing,
+if watching rather than playing is what you're into.
+
+Come by and try it out.  We have all skill levels of players, and
+we welcome more!
+
+==> competition/games/online/unlimited.adventures.p <==
+Where can I find information about unlimited adventures?
+
+==> competition/games/online/unlimited.adventures.s <==
+ccosun.caltech.edu  -- pub/adnd/inbound/UA
+wuarchive.wustl.edu -- pub/msdos_uploads/games/UA
+
+==> competition/games/othello.p <==
+How good are computers at Othello?
+
+==> competition/games/othello.s <==
+("Othello" is a registered trademark of the Anjar Company Inc.)
+
+As of 1992, the best Othello programs may have reached or surpassed the
+best human players [2][3].  As early as 1980 Jonathon Cerf, then World
+Othello Champion, remarked:
+    "In my opinion the top programs [...] are now equal (if not superior)
+     to the best human players." [1]
+
+However, Othello's game theoretic value, unlike checkers, will likely
+remain unknown for quite some time.  Barring some unforeseen shortcut or
+bankroll, a perfect Othello playing program would need to search in the
+neighborhood of 50 plies.  Today, even a general 30 ply search to end the
+game, i.e. 30 remaining empty squares, is beyond reach.
+
+Furthermore, the game of Othello does not lend itself to endgame database
+techniques that have proven so effective in checkers, and in certain chess
+endgames.
+
+
+Progress of the best Othello computer programs:
+
+1980
+     "Iago" (by Rosenbloom) [2]
+
+1990
+    "Bill 3.0" (by Lee and Mahajan) [3] uses:
+       1. sophisticated searching and timing algorithms, e.g. iterative
+	  deepening, hash/killer tables, zero-window search.
+       2. lookup tables to encode positional evaluation knowledge.
+       3. Bayesian learning for the evaluation function.
+    The average middle game search depth is 8 plies.
+    Exhaustive endgame search within tournament-play time constraints, is
+	usually possible with 13 to 15 empty squares remaining.
+    "Bill 3.0" defeated Brian Rose, the highest rated American Othello
+	player, by a score of 56-8.
+
+1992
+    At the 4th AST Computer Olympiad [4][5], the top three programs were:
+	Othel du Nord (France)
+	Aida          (The Netherlands)
+	Jacp'Oth      (France)
+
+References
+----------
+[1] Othello Quarterly 3(1) (1981) 12-16
+[2] P.S. Rosenbloom, A World Championship-Level Othello Program,
+    "Artificial Intelligence" 19 (1982) 279-320
+[3] Kai-Fu Lee and Sanjoy Mahajan, The Development of a World Class
+    Othello Program, "Artificial Intelligence" 43 (1990) 21-36
+[4] D.M. Breuker and J. Gnodde, The AST 4th Computer Olympiad,
+    "International Computer Chess Association Journal 15-3 (1992) 152-153
+[5] Jos Uiterwijk, The AST 4th Conference on Computer Games,
+    "International Computer Chess Association Journal 15-3 (1992) 158-161
+
+
+Myron P. Souris
+EDS/Unigraphics
+St. Louis, Missouri
+souris@ug.eds.com
+
+==> competition/games/pc/best.p <==
+What are the best PC games?
+
+==> competition/games/pc/best.s <==
+Read "net pc games top 100" in newsgroup comp.sys.ibm.pc.games.announce.
+
+==> competition/games/pc/reviews.p <==
+Are reviews of PC games available online?
+
+==> competition/games/pc/reviews.s <==
+Presenting... the Game Bytes Issues Index!   (Issues 1-8)
+
+Game Bytes has covered well over 100 games in the past several issues. 
+Using this index, you can look up the particular games you're interested
+in, find out what issues of Game Bytes cover them, and download those
+issues.  Also included is a list of the interviews GB has done to date -
+- the interviews from several issues ago still contain a lot of current
+material.
+
+The easiest way to use the games index is to employ the search command
+of your favorite word processor to find a distinctive string, such as
+"Ultima","Perfect", or "Lemmings".  The list is alphabetized; series
+have been listed together rather than by individual subtitle.  
+
+All issues of Game Bytes to date are available by anonymous FTP at
+ftp.ulowell.edu in the /msdos/Games/GameByte directory and are
+mirrored on other FTP sites as well.  Contact Ross Erickson, 
+ross@kaos.b11.ingr.com, if you need assistance acquiring Game
+Bytes or have other questions.
+
+
+Game Bytes Interview List, Issues 1 - 7, Chronological Order
+-----------------------------------------------------------------
+Issue     Person(s)           Company   Sample Games
+-----     ---------           -------   ------------
+2         Richard Garriott    Origin    Ultima series
+3         Chris Roberts       Origin    Wing Commander, Strike C.
+4         ID Software team    Apogee*   Wolfenstein 3D, Commander Keen
+5         Damon Slye          Dynamix   Red Baron, Aces of the Pacific
+5         Scott Miller        Apogee    Wolf3D, C. Keen, Duke Nukem
+6         Bob Bates (Part 1)  Legend    Spellcasting 101
+7         Bob Bates (Part 2)  ""        ""
+8         Looking Glass Tech  Origin    Underworld 1 and 2
+
+* distributing/producing company
+
+
+Game Bytes Reviews Index, Issues 1 - 8, Alphabetical by Title
+---------------------------------------------------------------------
+Title                                        Review    Preview   Tips
+-----                                        ------    -------   ----
+A-Train                                      3
+A.T.A.C.                                               5
+Aces of the Pacific                          3         1          8
+Action Stations!                             8
+Air Combat                                   5
+Air Force Commander                          8
+Alien 3 (Sega Genesis)                       7
+Amazon                                       8         6
+Axelay (Super Nintendo)                      8
+B-17 Flying Fortress                         6         4
+B.A.T. II:  The Koshan Conspiracy                      7
+Battlecruiser 3000 A.D.                                8
+Birds of Prey                                7         4
+Carrier Strike                               6
+Carriers at War                              6
+Castle Wolfenstein 3-D                       2
+Challenge of the Five Realms                           4
+Chessmaster 3000                             2
+Civilization                                 5
+Comanche:  Maximum Overkill                            6
+Conflict: Korea                              6
+Conquered Kingdoms                                     7
+Conquests of the Longbow                     3
+Contra 3:  The Alien Wars (Super Nintendo)   5
+Crisis in the Kremlin                        6
+D/Generation                                 2
+Dark Sun:  Shattered Lands                             6
+Darklands                                    7         3         7
+Darkseed                                     5
+Dune                                         3
+Dungeon Master                               7
+Dynamix Football                                       3
+Earl Weaver Baseball 2                       4
+Ecoquest:  The Search for Cetus              2                   5
+Eric the Unready                                       8
+Eye of the Beholder 2                        1
+Eye of the Beholder 3                                  8
+F-117A Stealth Fighter                       3
+F-15 Strike Eagle III                                  5
+Falcon 3.0                                   1                   5,8
+Falcon 3.0:  Operation Flying Tiger          6
+Flight Simulator 4.0 Scenery                 8  
+Front Page Sports:  Football                 8         6
+Galactix                                     6
+Gateway                                      4
+Global Conquest                              3
+Gods                                         6
+Gravis Gamepad                               4
+Great Naval Battles                          8
+Greens!                                                2
+Gunship 2000                                 2
+Hardball 3                                   4,5
+Hardball 3 Statistical Utilities             7
+Harpoon 1.3 Designer Series / IOPG           6
+Heaven and Earth                                       4
+Heimdall                                     7
+Hong Kong Mahjong                                      3
+Indiana Jones and the Fate of Atlantis       5
+Jack Nicklaus Golf:  Signature Edition       2
+Joe and Mac (SNES)                           2
+Johnny Castaway                              8
+King's Quest VI:  Heir Today, Gone Tomorrow            6
+Laura Bow 2:  The Dagger of Amon Ra          4         3
+Legends of Valor                                       8
+Les Manley:  Lost in L.A.                    1
+Links 386 Pro                                5         1
+Links Courses:  Troon North                            2
+Loom -- CD-ROM version                       5
+Lord of the Rings II:  The Two Towers        7         3
+Lost Treasures of Infocom                    5
+Lure of the Temptress                        8
+Mantis:  XF5700 Experimental Space Fighter   7         4
+Martian Memorandum                           5
+Micro League Baseball 4                      6
+Might and Magic: Clouds of Xeen              8
+Mike Ditka's Ultimate Football               6
+Monkey Island 2:  LeChuck's Revenge          5
+NCAA Basketball (Super Nintendo)             8
+NCAA:  The Road to the Final Four            3
+NFL Pro League                               7
+NHLPA Hockey '93 (Sega Genesis)              7
+Nova 9                                       2
+Oh No!  More Lemmings                        3
+Out of This World                            6
+Pirates! Gold                                          2
+Planet's Edge                                3
+Pools of Darkness                            2
+Powermonger                                  5
+Prince of Persia                             4
+Prophecy of the Shadow                       7
+Pursue the Pennant 4.0                       4
+Quest for Glory I (VGA edition)              7
+Quest for Glory III:  The Wages of War       7
+Rampart                                      4
+Rampart (SNES)                               7
+RBI Baseball 4 (Sega Genesis)                7
+Red Baron Mission Builder                    8         4
+Rex Nebular and the Cosmic Gender Bender     8         5
+Risk for Windows                             1
+Robosport for Windows                        8
+Rules of Engagement                          7
+Secret Weapons of the Luftwaffe              4
+Sega CD-ROM (Sega Genesis)                   8
+Sherlock Holmes, Consulting Detective Vol.I  7
+Shining in the Darkness (Sega Genesis)       4
+Siege                                        6
+SimAnt                                       4
+Solitaire's Journey                          5
+Sonic the Hedgehog 2                         8
+Space Megaforce (SNES)                       7
+Space Quest V:  The Next Mutation                      3
+Speedball 2                                  5
+Spellcasting 301: Spring Break               8                   8
+Spellcraft:  Aspects of Valor                          3
+Splatterhouse 2 (Sega Genesis)               5
+S.S.I. Goldbox summary                       8
+Star Control 2                               8
+Star Legions                                           6
+Star Trek:  25th Anniversary                 1
+Street Fighter 2                             8
+Strike Commander                                       3
+Stunt Island                                 8         7
+Summer Challenge                             8         5
+Super Hi-Impact Football (Sega Genesis)      8
+Super Star Wars (SNES)                       7
+Super Tetris                                 3
+Take-a-Break Pinball                                   6
+Tegel's Mercenaries                                    6
+Terminator 2029:  Cybergen                             5
+The 7th Guest                                          5
+The Castle of Dr. Brain                      5
+The Incredible Machine                                 7
+The Legend of Kyrandia                       7
+The Lost Admiral                             6
+The Magic Candle II:  The Four and Forty     5
+The Miracle                                  3
+The Mystical Quest (SNES)                    7
+The Perfect General                          3
+Theatre of War                               6
+Thrustmaster                                 4
+Thunderhawk                                  2
+TimeQuest                                    2
+Tony La Russa's Ultimate Baseball II                   8
+Turbo Science                                          7
+Ultima 1, 2, and 3 (First Trilogy)           7
+Ultima 7:  Forge of Virtue                   6         4
+Ultima 7:  The Black Gate                    3         1         5,6
+Ultima Underworld:  The Stygian Abyss        3                   7
+Ultima Underworld 2: Labyrinth of Worlds               8
+V for Victory:  Utah Beach                   7
+Veil of Darkness                                       8
+WaxWorks                                               7
+Wayne Gretzky Hockey III                               5
+Wing Commander 2                             1
+Wing Commander 2:  Special Operations 2      4
+Winter Challenge                             5
+Wizardry 6:  Bane of the Cosmic Forge        1
+Wizardry 7:  Crusaders of the Dark Savant    8         5
+Wordtris                                     4
+World Circuit                                          7
+X-Wing:  Star Wars Space Combat Simulator              7
+
+==> competition/games/pc/solutions.p <==
+What are the solutions to various popular PC games?
+
+==> competition/games/pc/solutions.s <==
+Solutions, hints, etc. for many games exist at:
+pub/game_solutions directory on sun0.urz.uni-heidelberg.de
+pub/games/solutions directory on risc.ua.edu (130.160.4.7)
+pub/msdos/romulus directory on ftp.uwp.edu (131.210.1.4)
+
+==> competition/games/poker.face.up.p <==
+In Face-Up Poker, two players each select five cards from a face-up deck,
+bet, discard and draw.  Is there a winning strategy for this game?  What if
+the players select cards alternately?
+
+==> competition/games/poker.face.up.s <==
+If the first player draws four aces, the second player draws four
+kings. If the first player keeps the four aces on the draw, the second
+player draws a king-high straight flush, and if the first player
+pitches the aces to draw a straight flush, the second player can always
+make a higher straight flush.
+
+Instead, the winning strategy is for the first player to draw four
+tens.  The second player cannot draw a royal flush, and in order to
+prevent the first player from getting one, the second player must draw
+at least one card higher than the ten from each suit, which means he
+can't do better than four-of-a-kind.  Then the first player wins by
+drawing a straight flush from any suit.
+
+If the cards are dealt alternately as in real poker, the second player
+can always tie with proper strategy.  The second player mirrors the
+first player's selections in rank and color.  For example, if the first
+player picks up a red queen, the second player picks up a red queen.
+When they are done playing, their hands will be identical except one
+will have spades and hearts where the other has clubs and diamonds, and
+vice versa.  Since suits aren't ranked in poker, the hands are tied.
+
+It is unknown if there is a winning strategy if the replacement cards
+are dealt together as in real poker, as opposed to alternately.
+
+==> competition/games/risk.p <==
+What are the odds when tossing dice in Risk?
+
+==> competition/games/risk.s <==
+Odds calculated with program by David Karr (karr@cs.cornell.edu):
+
+Attacker rolls 3 dice, defender rolls 2 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          2       2890/7776  =  0.3716563786
+    1          1       2611/7776  =  0.3357767490
+    2          0       2275/7776  =  0.2925668724
+
+
+Attacker rolls 3 dice, defender rolls 1 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          1        855/1296  =  0.6597222222
+    1          0        441/1296  =  0.3402777778
+
+
+Attacker rolls 2 dice, defender rolls 2 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          2        295/1296  =  0.2276234568
+    1          1        420/1296  =  0.3240740741
+    2          0        581/1296  =  0.4483024691
+
+
+Attacker rolls 2 dice, defender rolls 1 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          1        125/216  =  0.5787037037
+    1          0         91/216  =  0.4212962963
+
+
+Attacker rolls 1 dice, defender rolls 2 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          1         55/216  =  0.2546296296
+    1          0        161/216  =  0.7453703704
+
+
+Attacker rolls 1 dice, defender rolls 1 dice:
+
+Attacker   Defender   Probability
+  loses      loses
+    0          1         15/36  =  0.4166666667
+    1          0         21/36  =  0.5833333333
+
+
+---------------------8<------snip here--------8<--------------------
+/*
+ * riskdice.c  --  prints Risk dice odds
+ *
+ * This program calculates probabilities for one roll of the dice in Risk.
+ * For each possible number of dice that the attacker might roll, for each
+ * possible number of dice that the defender might roll, this program
+ * lists all the possible outcomes (number of armies lost by attacker
+ * and defender) and the probability of each outcome.
+ *
+ * Copyright 1993 by David A. Karr.
+ */
+
+#define MAX_ATTACK	3	/* max # of dice attacker may roll */
+#define MAX_DEFEND	2	/* max # of dice defender may roll */
+#define MAX_DICE	MAX_ATTACK + MAX_DEFEND
+
+void main()
+{
+    int a;	/* number of dice rolled by attacker */
+    int d;	/* number of dice rolled by defender */
+    void calc();
+
+    for (a = MAX_ATTACK; a > 0; --a) {
+    	for (d = MAX_DEFEND; d > 0; --d) {
+	    calc( a, d );
+	}
+    }
+}
+
+void calc( a_dice, d_dice )
+/*
+ * Purpose:  Print odds for the given numbers of dice rolled
+ */
+int a_dice;	/* number of dice rolled by attacker */
+int d_dice;	/* number of dice rolled by defender */
+{
+    int num_dice;	/* total number of dice rolled */
+    int num_armies;	/* # armies that will be lost by both sides, total */
+    int kill_count[MAX_DEFEND + 1];
+		/* entry [i] counts # of times attacker loses i armies */
+    int roll[MAX_DICE + 1];	/* holds one roll of the dice */
+    int a_roll[MAX_ATTACK];	/* holds attacker's dice */
+    int d_roll[MAX_DEFEND];	/* holds defender's dice */
+    int n;		/* cursor into the arrays */
+    int num_lost;	/* # of armies lost by the attacker */
+    int cases;		/* total # of events counted */
+    void dsort();
+
+    /*
+     * The method is pure brute force.  roll[] is set successively to
+     * all possible rolls of the total number of dice; for each roll
+     * the number of armies lost by the attacker (the outcome) is
+     * computed and the event is counted.
+     * Since all the counted events are equiprobable, the count of each
+     * outcome merely needs to be scaled down by the total count to
+     * obtain the probability of that outcome.
+     */
+    /* The number of armies at stake is  min(a_dice, d_dice) */
+    num_armies = a_dice < d_dice ? a_dice : d_dice;
+    /* initialize event counters */
+    for (n = 0; n <= num_armies; ++n)
+    	kill_count[n] = 0;
+    /*
+     * The roll[] array is treated as a funny odometer whose wheels each
+     * go from 1 to 6.  Each roll of the dice appears in roll[0] through
+     * roll[num_dice - 1], starting with all 1s and counting up to all 6s.
+     * roll[num_dice] is used to detect when the other digits have
+     * finished a complete cycle (it is tripped when they go back to 1s).
+     */
+    num_dice = a_dice + d_dice;
+    for (n = 0; n <= num_dice; ++n)
+    	roll[n] = 1;
+    while (roll[num_dice] == 1) {
+    	/* examine a new possible roll of the dice */
+	/*
+	 * copy attacker's and defender's dice so as not to disturb
+	 * the "odometer" reading.
+	 */
+	for (n = 0; n < a_dice; ++n)
+	    a_roll[n] = roll[n];
+	for (n = 0; n < d_dice; ++n)
+	    d_roll[n] = roll[n + a_dice];
+	/*
+	 * sort attacker's and defender's dice, highest first.
+	 */
+	dsort(a_roll, a_dice);
+	dsort(d_roll, d_dice);
+	/*
+	 * compare attacker's and defender's dice, count attacker's loss
+	 */
+	num_lost = 0;
+	for (n = 0; n < num_armies; ++n)
+	    if (d_roll[n] >= a_roll[n]) 
+	    	++num_lost;
+	++kill_count[num_lost];
+    	/*
+	 * Find next roll values (bump the "odometer" up one tick).
+	 */
+	n = 0;
+	roll[0] += 1;
+	while (roll[n] > 6) {
+	    /* place [n] rolled over */
+	    roll[n] = 1;
+	    /* Carry 1 into the next place (which may in turn roll over) */
+	    ++n;
+	    roll[n] += 1;
+	}
+    }
+    cases = 0;
+    for (n = 0; n <= num_armies; ++n)
+	cases += kill_count[n];
+    printf( "Attacker rolls %d dice, defender rolls %d dice:\n\n",
+		a_dice, d_dice );
+    printf( "Attacker   Defender   Probability\n" );
+    printf( "  loses      loses\n" );
+    for (n = 0; n <= num_armies; ++n)
+	printf( "%5d      %5d      %5d/%d  =  %12.10lf\n",
+		n, num_armies - n, kill_count[n], cases,
+		((double) kill_count[n]) / ((double) cases) );
+    printf( "\n\n" );
+}
+
+
+void dsort( array, length )
+/*
+ * Sort the given array in descending order.
+ */
+int *array;
+int length;	/* number of slots in the array */
+{
+    int level, n, tmp;
+
+    /* Use bubble sort since the array will be tiny in this application */
+    for (level = 0; level < length - 1; ++level) {
+	/*
+	 * Slots [0] through [level - 1] are already "stable."
+	 * Bubble up the value that belongs in the [level] slot.
+	 */
+	for (n = length - 1; n > level; --n) {
+	    if (array[n - 1] < array[n]) {
+		/* swap them */
+		tmp = array[n - 1];
+		array[n - 1] = array[n];
+		array[n] = tmp;
+	    }
+	}
+    }
+}
+
+==> competition/games/rubiks/rubiks.clock.p <==
+How do you quickly solve Rubik's clock?
+
+==> competition/games/rubiks/rubiks.clock.s <==
+                          Solution to Rubik's Clock
+
+The solution to Rubik's Clock is very simple and the clock can be
+"worked" in 10-20 seconds once the solution is known.
+
+In this description of how to solve the clock I will describe
+the different clocks as if they were on a map (e.g. N,NE,E,SE,S,SW,W,NW);
+this leaves the middle clock which I will just call M.
+To work the Rubik's clock choose one side to start from; it does 
+not matter from which side you start.  Your initial goal 
+will be to align the N,S,E,W and M clocks.  Use the following algorithm
+to do this:
+
+	[1]  Start with all buttons in the OUT position.
+
+	[2]  Choose a N,S,E,W clock that does not already have the
+	     same time as M (i.e. not aligned with M).
+
+	[3]  Push in the closest two buttons to the clock you chose in [2].
+            
+	[4]  Using the knobs that are farest away from the clock you chose in
+	     [2] rotate the knob until M and the clock you chose are aligned.
+	     The time on the clocks at this point does not matter.
+
+	[5]  Go back to [1] until N,S,E,W and M are in alignment.
+
+	[6]  At this point N,S,E,W and M should all have the same time.
+             Make sure all buttons are out and rotate any knob
+	     until N,S,E,W and M are pointing to 12 oclock.
+
+Now turn the puzzle over and repeat steps [1]-[6] for this side.  DO NOT
+turn any knobs other than the ones described in [1]-[6].  If you have 
+done this correctly then on both sides of the puzzle N,S,E,W and M will
+all be pointing to 12.
+
+Now to align NE,SE,SW,NW.  To finish the puzzle you only need to work from
+one side.  Choose a side and use the following algorithm  to align the 
+corners:
+
+	[1]  Start with all buttons OUT on the side you're working from.
+		
+	[2]  Choose a corner that is not aligned.
+
+	[3]  Press the button closest to that corner in.
+
+	[4]  Using any knob except for that corner's knob rotate all the
+	     clocks until they are in line with the corner clock. 
+	     (Here "all the clocks" means N,S,E,W,M and any other clock
+	     that you have already aligned)
+	     There is no need at this point to return the clocks to 12
+	     although if it is less confusing you can.  Remember to 
+	     return all buttons to their up position before you do so.
+	    
+	[5]  Return to [1] until all clocks are aligned.
+
+	[6]  With all buttons up rotate all the clocks to 12.
+

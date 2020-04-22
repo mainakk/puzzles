@@ -1,0 +1,588 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id AAA22904; Sat, 27 Apr 1996 00:40:54 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA26996; Sat, 27 Apr 96 00:36:29 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id VAA20194; Fri, 26 Apr 1996 21:37:30 -0700
+Date: Fri, 26 Apr 1996 21:37:30 -0700
+X-Mail-Submission-From: chris@questrel.questrel.com (Chris Cole)
+Message-Id: <199604270437.VAA20194@questrel.questrel.com>
+To: news-answers-request@MIT.EDU
+Reply-To: chris@questrel.questrel.com
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (arithmetic), part 04 of 35
+Message-ID: <puzzles/archive/arithmetic/part2_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:29 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 556
+Xref: senator-bedfellow.mit.edu rec.puzzles:24990 news.answers:11510 rec.answers:1910
+
+Archive-name: puzzles/archive/arithmetic/part2
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> arithmetic/digits/squares/three.digits.p <==
+What squares consist entirely of three digits (e.g., 1, 4, and 9)?
+
+==> arithmetic/digits/squares/three.digits.s <==
+The full set of solutions up to 10**12 is
+              1 ->                            1
+              2 ->                            4
+              3 ->                            9
+              7 ->                           49
+             12 ->                          144
+             21 ->                          441
+             38 ->                         1444
+            107 ->                        11449
+            212 ->                        44944
+          31488 ->                   9914 94144
+          70107 ->                  49149 91449
+        3 87288 ->               14 99919 94944
+      956 10729 ->          9 14141 14499 11441
+     4466 53271 ->        199 49914 44949 99441
+    31487 17107 ->       9914 41941 99144 49449
+  2 10810 79479 ->    4 44411 91199 99149 11441
+
+If the algorithm is used in the form I presented it before, generating
+the whole set P_n before starting on P_{n+1}, the store requirements
+begin to become embarassing. For n>8 I switched to a depth-first
+strategy, generating all the elements in P_i (i=9..12) congruent to
+a particular x in P_8 for each x in turn. This means the solutions
+don't come out in any particular order, of course. CPU time was 16.2
+seconds (IBM 3084).
+
+In article <1990Feb6.025205.28153@sun.soe.clarkson.edu>, Steven
+Stadnicki suggests alternate triples of digits, in particular {1,4,6}
+(with many solutions) and {2,4,8} (with few). I ran my program on
+these as well, up to 10**12 again:
+              1 ->                            1
+              2 ->                            4
+              4 ->                           16
+              8 ->                           64
+             12 ->                          144
+             21 ->                          441
+             38 ->                         1444
+            108 ->                        11664
+            119 ->                        14161
+            121 ->                        14641
+            129 ->                        16641
+            204 ->                        41616
+            408 ->                      1 66464
+            804 ->                      6 46416
+           2538 ->                     64 41444
+           3408 ->                    116 14464
+           6642 ->                    441 16164
+          12908 ->                   1666 16464
+          25771 ->                   6641 44441
+          78196 ->                  61146 14416
+          81619 ->                  66616 61161
+        3 33858 ->               11 14611 64164
+     2040 00408 ->         41 61616 64641 66464
+     6681 64962 ->        446 44441 64444 61444
+     8131 18358 ->        661 16146 41166 16164
+    40182 85038 ->      16146 61464 66146 61444  (Steven's last soln.)
+  1 20068 50738 ->    1 44164 46464 46111 44644
+  1 26941 38988 ->    1 61141 16464 66616 64144
+  1 27069 43631 ->    1 61466 41644 14114 64161
+  4 01822 24262 ->   16 14611 14664 16614 44644
+  4 05784 63021 ->   16 46611 66114 66644 46441
+ 78 51539 12392 -> 6164 66666 14446 44111 61664
+and
+              2 ->                            4
+             22 ->                          484
+            168 ->                        28224
+            478 ->                      2 28484
+           2878 ->                     82 82884 (Steven's last soln.)
+     2109 12978 ->         44 48428 42888 28484
+(so the answer to Steven's "Are there any more at all?" is "Yes".)
+
+The CPU times were 42.9 seconds for {1,4,6}, 18.7 for {2,4,8}. This
+corresponds to an interesting point: the abundance of solutions for
+{1,4,6} is associated with abnormally large sets P_n (|P_8| = 16088
+for {1,4,6} compared to |P_8| = 5904 for {1,4,9}) but the deficiency
+of solutions for {2,4,8} is *not* associated with small P_n's (|P_8|
+= 6816 for {2,4,8}). Can anyone wave a hand convincingly to explain
+why the solutions for {2,4,8} are so sparse?
+
+I suspect we are now getting to the point where an improved algorithm
+is called for. The time to determine all the n-digit solutions (i.e.
+2n-digit squares) using this last-significant-digit-first is essentially
+constant * 3**n. Dean Hickerson in <90036.134503HUL@PSUVM.BITNET>, and
+Ilan Vardi in <1990Feb5.214249.22811@Neon.Stanford.EDU>, suggest using
+a most-significant-digit-first strategy, based on the fact that the
+first n digits of the square determine the (integral) square root; this
+also has a running time constant * 3**n. Can one attack both ends at
+once and do better?
+
+Chris Thompson
+JANET:    cet1@uk.ac.cam.phx
+Internet: cet1%phx.cam.ac.uk@nsfnet-relay.ac.uk
+
+Hey guys, what about
+
+648070211589107021 ^ 2 = 419994999149149944149149944191494441
+
+This was found by David Applegate and myself (about 5 minutes on a DEC 3100,
+program in C).
+
+This is the largest square less than 10^42 with the 149-property; checking
+took a bit more than an hour of CPU time.
+
+As somebody suggested, we used a combined most-significant/least-significant
+digits attack.  First we make a table of p-digit prefixes (most significant
+p digits) that could begin a root whose square has the 149 property in its
+first p digits.  We organize this table into buckets by the least
+significant q digits of the prefixes.  Then we enumerate the s digit
+suffixes whose squares have the 149 property in their last s digits.  For
+each such suffix, we look in the table for those prefixes whose last q
+digits match the first q of the suffix.  For each match, we consider the p +
+s - q digit number formed by overlapping the prefix and the suffix by q
+digits.  The squares of these overlap numbers must contain all the squares
+with the 149 property.
+
+The time expended is O(3^p) to generate the prefix table, O(3^s) to
+enumerate the suffixes, and O(3^(p+s) / 10^q) to check the overlaps (being
+very rough and ignoring the polynomial factors) By judiciously chosing p, q,
+and s, we can fix things so that each bucket of the table has around O(1)
+entries: set q = p log10(3).  Setting p = s, we end up looking for squares
+whose roots have n = 2 - log10(3) digits, with an algorithm that takes time
+O( 3 ^ [n / (2 - log10(3)]) ), roughly time O(3^[.66n]).  Compared to the
+O(3^n) performance of either single-ended algorithm, this lets us check 50%
+more digits in the same amount of time (ignoring polynomial factors).  Of
+course, the space cost of the combined-ends method is high.
+
+-- Guy and Dave
+-- 
+Guy Jacobson			  School of Computer Science
+Carnegie Mellon 	arpanet : guy@cs.cmu.edu
+Pittsburgh, PA  15213	csnet   : Guy.Jacobson%a.cs.cmu.edu@csnet-relay
+(412) 268-3056		uucp    : ...!{seismo, ucbvax, harvard}!cs.cmu.edu!guy
+
+Here is an algorithm which takes O(sqrt(n)log(n)) steps to find all perfect
+squares < n whose only digits are 1, 4 and 9.
+
+This doesn't sound too great *but* it doesn't use a lot of memory and only
+requires addition and <.  Also, the actual run time will depend on where the
+first non-{1,4,9} digit appears in each square.
+
+	set n = 1
+	set odd = 1
+
+	while(n < MAXVAL)
+	{
+		if(all digits of n are in {1,4,9})
+		{
+			print n
+		}
+
+		add 2 to odd
+		add odd to n
+	}
+
+This works because (X+1)^2 - x^2 = 2x+1.
+That is, if you start with 0 and add successive odd
+numbers to it you get 0+1=1, 1+3=4, 4+5=9, 9+7=16 etc.
+I've started the algorithm at 1 for convenience.
+
+The "O" value comes from looking at at most all digits
+(log(n)) of all perfect squares < n (sqrt(n) of them)
+at most a constant number of times. 
+
+I didn't save the articles with algorithms claiming to be
+O(3^log(n)) so I don't know if their calculations needed
+to (or did) account for multiplication or sqrt() of large
+numbers.  O(3^log(n)) sounds reasonable so I'm going to
+assume they did unless I hear otherwise.
+
+Any comments? Please email if you just want to refresh my memory
+on the other algorithms.
+
+Andrew Charles
+acgd@ihuxy.ATT.COMM
+
+==> arithmetic/digits/squares/twin.p <==
+Let a twin be a number formed by writing the same number twice,
+for instance, 81708170 or 132132.  What is the smallest square twin?
+
+==> arithmetic/digits/squares/twin.s <==
+1322314049613223140496 = 36363636364 ^ 2.
+
+The key to solving this puzzle is looking at the basic form of these
+"twin" numbers, which is some number k = 1 + 10^n multiplied by some number
+10^(n-1) <= a < 10^n.  If ak is a perfect square, k must have some
+repeated factor, since a<k. Searching the possible values of k for one
+with a repeated factor eventually turns up the number 1 + 10^11 = 11^2
+* 826446281.  So, we set a=826446281 and ak = 9090909091^2 =
+82644628100826446281, but this needs leading zeros to fit the pattern.
+So, we multiply by a suitable small square (in this case 16) to get the
+above answer.
+
+==> arithmetic/digits/sum.of.digits.p <==
+Find sod ( sod ( sod (4444 ^ 4444 ) ) ).
+
+==> arithmetic/digits/sum.of.digits.s <==
+let X = 4444^4444
+
+sod(X) <= 9 * (# of digits) < 145900
+sod(sod(X)) <= sod(99999) = 45
+sod(sod(sod(X))) <= sod(39) = 12
+
+but sod(sod(sod(X))) = 7 (mod 9)
+
+thus sod(sod(sod(X))) = 7
+
+==> arithmetic/digits/zeros/million.p <==
+How many zeros occur in the numbers from 1 to 1,000,000?
+
+==> arithmetic/digits/zeros/million.s <==
+In the numbers from 10^(n-1) through 10^n - 1, there are 9 * 10^(n-1)
+numbers of n digits each, so 9(n-1)10^(n-1) non-leading digits, of
+which one tenth, or 9(n-1)10^(n-2), are zeroes.  When we change the
+range to 10^(n-1) + 1 through 10^n, we remove 10^(n-1) and put in
+10^n, gaining one zero, so
+
+    p(n) = p(n-1) + 9(n-1)10^(n-2) + 1 with p(1)=1.
+
+Solving the recurrence yields the closed form
+
+    p(n) = n(10^(n-1)+1) - (10^n-1)/9.
+
+For n=6, there are 488,895 zeroes, 600,001 ones, and 600,000 of all other
+digits.
+
+==> arithmetic/digits/zeros/trailing.p <==
+How many trailing zeros are in the decimal expansion of n!?
+
+==> arithmetic/digits/zeros/trailing.s <==
+The general answer to the question
+"what power of p divides x!" where p is prime
+is (x-d)/(p-1) where d is the sum of the digits of (x written in base p).
+
+So where p=5, 10 is written as 20 and is divisible by 5^2 (2 = (10-2)/4);
+x to base 10:     100    1000    10000    100000     1000000
+x to base 5:      400   13000   310000  11200000   224000000
+d          :        4       4        4         4           8
+trailing 0s in x!  24     249     2499     24999      249998
+
+==> arithmetic/magic.squares.p <==
+Are there large squares, containing only consecutive integers, all of whose
+rows, columns and diagonals have the same sum?  How about cubes?
+
+==> arithmetic/magic.squares.s <==
+These are called magic squares.  A magic square of order n (integers
+from 1 to n*n) has only one possible sum: (n*n+1)*n/2.
+
+Odd and even order squares must be constructed by different approaches.
+For odd orders, the most common algorithm is a recursive scheme
+devised by de la Loubere about 300 years ago.  For even orders, one
+procedure is the Devedec algorithm, which treats even orders not
+divisible by 4 slightly differently from those which are divisible by
+4 (doubly even).
+
+For squares with odd-length sides, the following algorithm builds a magic
+square:
+
+Put 1 in the middle box in the upper row. From then on, if it's
+possible to put the next number one box diagonally up and to the right
+(wrapping around if the edge of the grid is reached), do so, otherwise,
+put it directly below the last one.
+
+               17 24  1  8 15
+               23  5  7 14 16 
+                4  6 13 20 22
+               10 12 19 21  3 
+               11 18 25  2  9 
+
+...or even
+
+         47 58 69 80  1 12 23 34 45
+         57 68 79  9 11 22 33 44 46
+         67 78  8 10 21 32 43 54 56
+         77  7 18 20 31 42 53 55 66
+          6 17 19 30 41 52 63 65 76
+         16 27 29 40 51 62 64 75  5
+         26 28 39 50 61 72 74  4 15
+         36 38 49 60 71 73  3 14 25
+         37 48 59 70 81  2 13 24 35
+
+See archive entry knight.tour for magic squares that are knight's tours.
+
+To get a 4x4 square, write the numbers in order across each row, filling
+the square...
+
+1  2  3  4
+5  6  7  8
+9  10 11 12
+13 14 15 16
+
+then use the following pattern as a mask:
+
+.  X  X  .
+X  .  .  X
+X  .  .  X
+.  X  X  .
+
+Everywhere there is an X, complement the number (subtract it from
+n*n+1).  For the 4x4 you get:
+
+1  15 14 4
+12 6  7  9
+8  10 11 5
+13 3  2  16
+
+For n even (n>4):
+
+Make an initial magic square by writing an n/2 magic square four times
+(the same one each time).  Now, although this square adds up right we
+have the numbers 1 to n*n/4 written four times each.  To fix this,
+simply add to it n*n/4 times one of the following magic squares:
+
+if n/2 is odd (example: n/2=7),
+
+3 3 3 0 0 0 0 2 2 2 2 2 1 1   (there are int(n/4) 3s, int(n/4-1) 1s on each
+3 3 3 0 0 0 0 2 2 2 2 2 1 1    row)
+3 3 3 0 0 0 0 2 2 2 2 2 1 1
+0 3 3 3 0 0 0 2 2 2 2 2 1 1   (this is row int(n/4)+1.  It starts with just
+3 3 3 0 0 0 0 2 2 2 2 2 1 1    the one 0)
+3 3 3 0 0 0 0 2 2 2 2 2 1 1
+3 3 3 0 0 0 0 2 2 2 2 2 1 1
+0 0 0 3 3 3 3 1 1 1 1 1 2 2   (the lower half is the same as the upper half
+0 0 0 3 3 3 3 1 1 1 1 1 2 2    with 3<->0 and 1<->2 swapped.  This guarantees
+0 0 0 3 3 3 3 1 1 1 1 1 2 2    that each number 1-n*n will appear in the
+3 0 0 0 3 3 3 1 1 1 1 1 2 2    completed square)
+0 0 0 3 3 3 3 1 1 1 1 1 2 2
+0 0 0 3 3 3 3 1 1 1 1 1 2 2
+0 0 0 3 3 3 3 1 1 1 1 1 2 2
+
+if n/2 is even (example: n/2=4),
+
+0 0 3 3 2 2 1 1  (there are n/4 of each number on each row)
+0 0 3 3 2 2 1 1
+0 0 3 3 2 2 1 1
+0 0 3 3 2 2 1 1
+3 3 0 0 1 1 2 2
+3 3 0 0 1 1 2 2
+3 3 0 0 1 1 2 2
+3 3 0 0 1 1 2 2
+
+References:
+    "Magic Squares and Cubes"
+    W.S. Andrews
+    The Open Court Publishing Co.
+    Chicago, 1908
+
+    "Mathematical Recreations"
+    M. Kraitchik
+    Dover
+    New York, 1953
+
+==> arithmetic/pell.p <==
+Find integer solutions to x^2 - 92y^2 = 1.
+
+==> arithmetic/pell.s <==
+x=1        y=0
+x=1151     y=120
+x=2649601  y=276240
+etc.
+
+Each successive solution is about 2300 times the previous
+solution;  they are every 8th partial fraction (x=numerator,
+y=denominator) of the continued fraction for sqrt(92) = 
+[9,  1,1,2,4,2,1,1,18,  1,1,2,4,2,1,1,18,  1,1,2,4,2,1,1,18, ...]
+
+Once you have the smallest positive solution (x1,y1) you
+don't need to "search" for the rest.  You can obtain the nth positive
+solution (xn,yn) by the formula
+
+(x1 + y1 sqrt(92))^n = xn + yn sqrt(92).
+
+See Niven & Zuckerman's An Introduction to the Theory of Numbers.
+Look in the index under Pell's equation.
+
+==> arithmetic/subset.p <==
+Prove that all sets of n integers contain a subset whose sum is divisible by n.
+
+==> arithmetic/subset.s <==
+Consider the set of remainders of the partial sums a(1) + ... + a(i).
+Since there are n such sums, either one has remainder zero (and we're
+thru) or 2 coincide, say the i'th and j'th.  In this case, a(i+1) +
+... + a(j) is divisible by n.  (note this is a stronger result since
+the subsequence constructed is of *adjacent* terms.)  Consider a(1)
+(mod n), a(1)+a(2) (mod n), ..., a(1)+...+a(n) (mod n).  Either at
+some point we have a(1)+...+a(m) = 0 (mod n) or else by the pigeonhole
+principle some value (mod n) will have been duplicated.  We win either
+way.
+
+==> arithmetic/sum.of.cubes.p <==
+Find two fractions whose cubes total 6.
+
+==> arithmetic/sum.of.cubes.s <==
+Restated:  
+Find X, Y, minimum Z (all positive integers) where
+(X/Z)^3 + (Y/Z)^3 = 6
+
+Again, a generalized solution would be nice.
+
+You are asking for the smallest z s.t. x^3 + y^3 = 6*z^3 and x,y,z in Z+.
+In general, questions like these are extremely difficult; if you're
+interested take a look at books covering Diophantine equations
+(especially Baker's work on effective methods of computing solutions).
+
+Dudeney mentions this problem in connection with #20 in _The Canterbury
+Puzzles_; the smallest answer is (17/21)^3 + (37/21)^3 = 6.
+
+For the interest of the readers of this group I'll quote:
+
+   "Given a known case for the expression of a number as the sum or
+difference of two cubes, we can, by formula, derive from it an infinite
+number of other cases alternately positive and negative.  Thus Fermat,
+starting from the known case 1^3 + 2^3 = 9 (which we will call a
+fundamental case), first obtained a negative solution in bigger
+figures, and from this his positive solution in bigger figures still.
+But there is an infinite number of fundamentals, and I found by trial
+a negative fundamental solution in smaller figures than his derived
+negative solution, from which I obtained the result shown above.  That
+is the simple explanation."
+
+In the above paragraph Dudeney is explaining how he derived (*by hand*)
+that (415280564497/348671682660)^3 + (676702467503/348671682660)^3 = 9.
+
+He continues:
+
+"We can say of any number up to 100 whether it is possible or not to
+express it as the sum of two cubes, except 66.  Students should read
+the Introduction to Lucas's _Theorie des Nombres_, p. xxx."
+
+"Some years ago I published a solution for the case 6 = (17/21)^3 +
+(37/21)^3, of which Legendre gave at some length a 'proof' of
+impossibility; but I have since found that Lucas anticipated me in
+a communication to Sylvester."
+
+==> arithmetic/sums.of.powers.p <==
+Partition 1,2,3,...,16 into two equal sets, such that the sums of the
+numbers in each set are equal, as are the sums of their squares and cubes.
+
+==> arithmetic/sums.of.powers.s <==
+The solution is A = {1,4,6,7,10,11,13,16}
+                B = {2,3,5,8,9,12,14,15}                                                         
+
+Let X+k be a set formed by adding k to all elements of X.
+Then A+k and B+k have the property of satisfying i,ii and iii.
+That means, any 16 numbers in A.P can be partioned in such a way to
+satisfy i,ii and iii.
+
+How do we arrive at the above solution without using a computer?
+
+By the preceding discussion,
+
+	A1 = A-1 = {0,3,5,6,9,10,12,15}
+        B1 = B-1 = {1,2,4,7,8,11,13,14}
+
+have the property of satisfying i,ii and iii.
+Notice that all numbers of A1 have even number of 1's in binary and
+all numbers of B1 have odd number of 1's in binary. Essentially the
+above partition is a partition based on parity.
+
+Observation:
+
+	Partition of (n+1) bit numbers based on parity into two
+groups A and B (each consisting of 2^n elements) satisfies
+
+ sum of kth powers of elements of A = sum of kth powers of elements of B
+
+for k=1,2,...,n. (The above puzzle is a special case n=3).
+
+
+The above observation also holds for any radix. In radix r we will have
+r groups.
+
+Infact,
+
+	Any r^(n+1) terms in A.P can be partitioned into r groups (each of
+r^n elements) such that sum of kth powers of all r groups is same (k=1,2,...,n)
+
+Finding such groups with minimal number of elements (less than r^n) appears to
+be more difficult!
+
+ALL THIS APPEARS TO BE INTERESTING. IS IT A CONSEQUENCE OF A SIMPLE THEOREM OF
+NUMBER THEORY? HOW DO I PROVE THIS?
+
+Thanks in advance for any clues,
+
+-- ramana@svl.cdc.com (Mr. Ramana (Indian analyst))
+
+==> arithmetic/tests.for.divisibility/eleven.p <==
+What is the test to see if a number is divisible by eleven?
+
+
+==> arithmetic/tests.for.divisibility/eleven.s <==
+If the alternating sum of the digits is divisible by eleven, so is the number.
+
+For example, 1639 leads to 9 - 3 + 6 - 1 = 11, so 1639 is divisible by 11.
+
+Proof:
+Every integer n can be expressed as 
+n = a1*(10^k) + a2*(10^k-1)+ .....+ a_k+1
+where a1, a2, a3, ...a_k+1 are integers between 0 and 9.
+10 is congruent to -1 mod(11).
+Thus if (-1^k)*a1 + (-1^k-1)*a2 + ...+ (a_k+1) is congruent to 0mod(11) then 
+n is divisible by 11.
+
+==> arithmetic/tests.for.divisibility/nine.p <==
+What is the test to see if a number is divisible by nine?
+
+==> arithmetic/tests.for.divisibility/nine.s <==
+If the sum of the digits is divisible by nine, so is the number.
+
+Proof:
+Every integer n can be expressed as 
+n = a1*(10^k) + a2*(10^k-1)+ .....+ a_k+1
+where a1, a2, a3, ...a_k+1 are integers between 0 and 9.
+Note that 10 is congruent to 1 (mod 9). Thus 10^k is congruent to 1 (mod 9) for
+every k >= 0.
+Thus n is congruent to (a1+a2+a3+....+a_k+1) mod(9).
+Hence (a1+a2+...+a_k+1) is divisible by 9 iff n is divisible by 9.
+
+==> arithmetic/tests.for.divisibility/seven.p <==
+What is the test to see if a number is divisible by seven?
+
+==> arithmetic/tests.for.divisibility/seven.s <==
+Take the last digit (n mod 10) and double it.
+Take the rest of the digits (n div 10) and subtract the doubled last
+    digit from it.
+The resulting number is divisible by 7 iff the original number
+    is divisible by 7.
+
+Example:  Take 53445
+          Subtract (53445 mod 10) * 2 from (53445 div 10)
+                           -  5  * 2   +   5344
+                            = 5334
+	  533 - 2 * 4 = 525
+	  52 - 5 * 2 = 42 which is divisible by 7
+          so 53445 is divisible by 7.
+
+==> arithmetic/tests.for.divisibility/three.p <==
+What is the test to see if a number is divisible by three?
+
+==> arithmetic/tests.for.divisibility/three.s <==
+A number is divisible by three iff the sum of its digits is divisible by three.
+First, prove 10^N = 1 mod 3 for all integers N >= 0.
+1 = 1 mod 3. 10 = 1 mod 3. 10^N = 10^(N-1) * 10 = 10^(N-1) mod 3.
+QED by induction. 
+Now let D[0] be the units digit of N, D[1] the tens digit, etc.
+Now N = Summation From k=0 to k=inf of D[k]*10^k.
+Therefore N mod 3 = Summation from k=0 to k=inf of D[k] mod 3. QED
+

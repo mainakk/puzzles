@@ -1,0 +1,1490 @@
+Received: from MIT.EDU (SOUTH-STATION-ANNEX.MIT.EDU [18.72.1.2]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id OAA03536; Sat, 20 Apr 1996 14:53:39 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA07796; Sat, 20 Apr 96 14:10:57 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25198; Sat, 20 Apr 1996 11:11:58 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (competition), part 08 of 35
+Message-Id: <puzzles/archive/competition/part3_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:04:51 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1462
+Xref: senator-bedfellow.mit.edu rec.puzzles:25012 news.answers:11532 rec.answers:1932
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/competition/part3
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> competition/games/rubiks/rubiks.cube.p <==
+What is known about bounds on solving Rubik's cube?
+
+==> competition/games/rubiks/rubiks.cube.s <==
+The "official" world record was set by Minh Thai at the 1982 World
+Championships in Budapest Hungary, with a time of 22.95 seconds.
+
+Keep in mind mathematicians provided standardized dislocation patterns
+for the cubes to be randomized as much as possible.
+
+The fastest cube solvers from 19 different countries had 3 attempts each
+to solve the cube as quickly as possible.   Minh and several others have
+unofficially solved the cube in times between 16 and 19 seconds.
+However, Minh averages around 25 to 26 seconds after 10 trials, and my
+best average of ten trials is about 27 seconds (although it is usually
+higher).
+
+Consider that in the World Championships 19 of the world's fastest cube
+solvers each solved the cube 3 times and no one solved the cube in less
+than 20 seconds...
+
+God's algorithm is the name given to an as yet (as far as I know)
+undiscovered method to solve the rubik's cube in the least number of
+moves; as opposed to using 'canned' moves.
+
+The known lower bound is 18 moves. This is established by looking at
+things backwards: suppose we can solve a position in N moves. Then by
+running the solution backwards, we can also go from the solved position
+to the position we started with in N moves. Now we count how many
+sequences of N moves there are from the starting position, making
+certain that we don't turn the same face twice in a row:
+
+  N=0: 1 (empty) sequence;
+  N=1: 18 sequences (6 faces can be turned, each in 3 different ways)
+  N=2: 18*15 sequences (take any sequence of length 1, then turn any of the
+       five faces which is not the last face turned, in any of 3
+       different ways); N=3: 18*15*15 sequences (take any sequence of
+       length 2, then turn any of the five faces which is not the last
+       face turned, in any of 3 different ways); :  :  N=i: 18*15^(i-1)
+       sequences.
+
+So there are only 1 + 18 + 18*15 + 18*15^2 + ... + 18*15^(n-1)
+sequences of moves of length n or less. This sequence sums to
+(18/14)*(15^n - 1) + 1.  Trying particular values of n, we find that
+there are about 8.4 * 10^18 sequences of length 16 or less, and about
+1.3 times 10^20 sequences of length 17 or less.
+
+Since there are 2^10 * 3^7 * 8! * 12!, or about 4.3 * 10^19, possible
+positions of the cube, we see that there simply aren't enough sequences
+of length 16 or less to reach every position from the starting
+position. So not every position can be solved in 16 or less moves -
+i.e. some positions require at least 17 moves.
+
+This can be improved to 18 moves by being a bit more careful about
+counting sequences which produce the same position. To do this, note
+that if you turn one face and then turn the opposite face, you get
+exactly the same result as if you'd done the two moves in the opposite
+order. When counting the number of essentially different sequences of N
+moves, therefore, we can split into two cases:
+
+(a) Last two moves were not of opposite faces. All such sequences can be
+    obtained by taking a sequence of length N-1, choosing one of the 4 faces
+    which is neither the face which was last turned nor the face opposite
+    it, and choosing one of 3 possible ways to turn it. (If N=1, so that the
+    sequence of length N-1 is empty and doesn't have a last move, we
+    can choose any of the 6 faces.)
+
+(b) Last two moves were of opposite faces. All such sequences can be
+    obtained by taking a sequence of length N-2, choosing one of the 2
+    opposite face pairs that doesn't include the last face turned, and
+    turning each of the two faces in this pair (3*3 possibilities for how it
+    was turned). (If N=2, so that the sequence of length N-2 is empty and
+    doesn't have a last move, we can choose any of the 3 opposite face
+    pairs.)
+
+This gives us a recurrence relation for the number X_N of sequences of
+length N:
+
+  N=0: X_0                               = 1 (the empty sequence)
+  N=1: X_1 = 18 * X_0                    = 18
+  N=2: X_2 = 12 * X_1     + 27 * X_0     = 243
+  N=3: X_3 = 12 * X_2     + 18 * X_1     = 3240
+  :
+  :
+  N=i: X_i = 12 * X_(i-1) + 18 * X_(i-2)
+
+If you do the calculations, you find that X_0 + X_1 + X_2 + ... + X_17 is
+about 2.0 * 10^19. So there are fewer essentially different sequences of
+moves of length 17 or less than there are positions of the cube, and so some
+positions require at least 18 moves.
+
+The upper bound of 50 moves is I believe due to Morwen Thistlethwaite, who
+developed a technique to solve the cube in a maximum of 50 moves. It
+involved a descent through a chain of subgroups of the full cube group,
+starting with the full cube group and ending with the trivial subgroup
+(i.e.  the one containing the solved position only). Each stage involves a
+careful examination of the cube, essentially to work out which coset of the
+target subgroup it is in, followed by a table look-up to find a sequence to put
+it into that subgroup. Needless to say, it was not a fast technique!
+
+But it was fascinating to watch, because for the first three quarters or
+so of the solution, you couldn't really see anything happening - i.e. the
+position continued to appear random! If I remember correctly, one of the
+final subgroups in the chain was the subgroup generated by all the double
+twists of the faces - so near the end of the solution, you would suddenly
+notice that each face only had two colours on it. A few moves more and the
+solution was complete. Completely different from most cube solutions, in
+which you gradually see order return to chaos: with Morwen's solution, the
+order only re-appeared in the last 10-15 moves.
+
+* Mark's Update/Comments ----------------------------------------------
+
+* Despite some accounts of Thistlethwaite's method, it is possible to
+* follow the progression of his algorithm. Clearly after Stage 2 is
+* completed the L and R faces will have L and R colours on them only.
+* After Stage 3 is complete the characteristics of the square's group
+* is clearly visible on all 6 sides. It is harder to understand what
+* is accomplished in Stage 1.
+*
+* ---------------------------------------------------------------------
+
+With God's algorithm, of course, I would expect this effect to be even more
+pronounced: someone solving the cube with God's algorithm would probably
+look very much like a film of someone scrambling the cube, run in
+reverse!
+
+Finally, something I'd be curious to know in this context: consider the
+position in which every cubelet is in the right position, all the corner
+cubelets are in the correct orientation, and all the edge cubelets are
+"flipped" (i.e. the only change from the solved position is that every edge
+is flipped). What is the shortest sequence of moves known to get the cube
+into this position, or equivalently to solve it from this position? (I know
+of several sequences of 24 moves that do the trick.)
+
+* Mark's Update/Comments ----------------------------------------------
+*
+*  This is from my file cmoves.txt which includes the best known
+*   sequences for interesting patterns:
+*
+* p3  12 flip    R1 L1 D2 B3 L2 F2 R2 U3 D1 R3 D2 F3 B3 D3 F2 D3  (20)
+*                   R2 U3 F2 D3
+*
+* ---------------------------------------------------------------------
+
+The reason I'm interested in this particular position: it is the unique
+element of the centre of the cube group. As a consequence, I vaguely suspect
+(I'd hardly like to call it a conjecture :-) it may lie "opposite" the
+solved position in the cube graph - i.e. the graph with a vertex for each
+position of the cube and edges connecting positions that can be transformed
+into each other with a single move. If this is the case, then it is a good
+candidate to require the maximum possible number of moves in God's
+algorithm.
+
+    -- David Seal dseal@armltd.co.uk
+
+To my knowledge, no one has ever demonstrated a specific cube position
+that takes 15 moves to solve.  Furthermore, the lower bound is known to
+be greater than 15, due to a simple proof.
+
+* ---------------------------------------------------------------------
+* Mark>  Definitely sequences exist in the square's group of length 15
+*     >  e.g. Antipode 2   R2 B2 D2 F2 D2 F2 T2 L2 T2 D2 F2 T2 L2 T2 B2
+* ---------------------------------------------------------------------
+
+The way we know the lower bound is by working backwards counting how
+many positions we can reach in a small number of moves from the solved
+position.  If this is less than 43,252,003,274,489,856,000 (the total
+number of positions of Rubik's cube) then you need more than that
+number of moves to reach the other positions of the cube.  Therefore,
+those positions will require more moves to solve.
+
+The answer depends on what we consider a move.  There are three common
+definitions.  The most restrictive is the QF metric, in which only a
+quarter-turn of a face is allowed as a single move.  More common is
+the HF metric, in which a half-turn of a face is also counted as a
+single move.  The most generous is the HS metric, in which a quarter-
+turn or half-turn of a central slice is also counted as a single move.
+These metrics are sometimes called the 12-generator, 18-generator, and
+27-generator metrics, respectively, for the number of primitive moves.
+The definition does not affect which positions you can get to, or even
+how you get there, only how many moves we count for it.
+
+The answer is that even in the HS metric, the lower bound is 16,
+because at most 17,508,850,688,971,332,784 positions can be reached
+within 15 HS moves.  In the HF metric, the lower bound is 18, because
+at most 19,973,266,111,335,481,264 positions can be reached within 17
+HF moves.  And in the QT metric, the lower bound is 21, because at
+most 39,812,499,178,877,773,072 positions can be reached within 20 QT
+moves.
+
+ -- jjfink@skcla.monsanto.com writes:
+
+
+Lately in this conference I've noted several messages related to Rubik's
+Cube and Square 1. I've been an avid cube fanatic since 1981 and I've
+been gathering cube information since.
+
+Around Feb. 1990 I started to produce the Domain of the Cube Newsletter,
+which focuses on Rubik's Cube and all the cube variants produced to
+date. I include notes on unproduced prototype cubes which don't even
+exist, patent information, cube history (and prehistory), computer
+simulations of puzzles, etc. I'm up to the 4th issue.
+
+Anyways, if you're interested in other puzzles of the scramble by
+rotation type you may be interested in DOTC. It's available free to
+anyone interested. I am especially interested in contributing articles
+for the newsletter, e.g. ideas for new variants, God's Algorithm.
+
+Anyone ever write a Magic Dodecahedron simulation for a computer?
+
+Drop me a SASE (say empire size) if you're interested in DOTC or if you
+would like to exchange notes on Rubik's Cube, Square 1 etc.
+
+I'm also interested in exchanging puzzle simulations, e.g. Rubik's Cube,
+Twisty Torus, NxNxN Simulations, etc, for Amiga and IBM computers. I've
+written several Rubik's Cube solving programs, and I'm trying to make
+the definitive puzzle solving engine. I'm also interested in AI programs
+for Rubik's Cube and the like.
+
+Ideal Toy put out the Rubik's Cube Newsletter, starting with
+issue #1 on May 1982. There were 4 issues in all.
+
+They are:  #1, May    1982
+           #2, Aug    1982
+           #3, Winter 1983
+           #4, Aug    1983
+
+There was another sort of magazine, published in several languages
+called Rubik's Logic and Fantasy in space. I believe there were 8
+issues in all. Unfortunately I don't have any of these! I'm willing
+to buy these off anyone interesting in selling. I would like to get the
+originals if at all possible...
+
+I'm also interested in buying any books on the cube or related puzzles.
+In particular I am _very_ interested in obtaining the following:
+
+Cube Games                               Don Taylor, Leanne Rylands
+Official Solution to Alexander's Star    Adam Alexander
+The Amazing Pyraminx                     Dr. Ronald Turner-Smith
+The Winning Solution                     Minh Thai
+The Winning Solution to Rubik's Revenge  Minh Thai
+Simple Solutions to Cubic Puzzles        James G. Nourse
+
+I'm also interested in buying puzzles of the mechanical type.
+I'm still missing the Pyraminx Star (basically a Pyraminx with more tips
+on it), Pyraminx Ball, and the Puck.
+
+If anyone out here is a fellow collector I'd like to hear from you.
+If you have a cube variant which you think is rare, or an idea for a
+cube variant we could swap notes.
+
+I'm in the middle of compiling an exhaustive library for computer
+simulations of puzzles. This includes simulations of all Uwe Meffert's
+puzzles which he prototyped but _never_ produced. In fact, I'm in the
+middle of working on a Pyraminx Hexagon solver. What? Never heard of it?
+Meffert did a lot of other puzzles which never were made.
+
+I invented some new "scramble by rotation" puzzles myself. My favourite
+creation is the Twisty Torus. It is a torus puzzle with segments (which
+slide around 360 degrees) with multiple rings around the circumference.
+
+The computer puzzle simulation library I'm forming will be described
+in depth in DOTC #4 (The Domain of the Cube Newsletter). So if you
+have any interesting computer puzzle programs please email me and
+tell me all about them!
+
+Also to the people interested in obtaining a subscription to DOTC,
+who are outside of Canada (which it seems is just about all of you!)
+please don't send U.S. or non-Canadian stamps (yeah, I know I said
+Self-Addressed Stamped Envelope before). Instead send me an
+international money order in Canadian funds for $6. I'll send you
+the first 4 issues (issue #4 is almost finished).
+
+Mark Longridge
+Address: 259 Thornton Rd N, Oshawa Ontario Canada, L1J 6T2
+Email:   mark.longridge@canrem.com
+
+One other thing, the six bucks is not for me to make any money. This
+is only to cover the cost of producing it and mailing it. I'm
+just trying to spread the word about DOTC and to encourage other
+mechanical puzzle lovers to share their ideas, books, programs and
+puzzles. Most of the programs I've written and/or collected are
+shareware for C64, Amiga and IBM. I have source for all my programs
+(all in C or Basic) and I am thinking of providing a disk with the
+4th issue of DOTC. If the response is favourable I will continue
+to provide disks with DOTC.
+
+    -- Mark Longridge <mark.longridge@canrem.com> writes:
+
+It may interest people to know that in the latest issue of "Cubism For Fun" %
+(# 28 that I just received yesterday) there is an article by Herbert Kociemba
+from Darmstadt.  He describes a program that solves the cube.  He states that
+until now he has found no configuration that required more than 21 turns to
+solve.
+
+He gives a 20 move manoeuvre to get at the "all edges flipped/
+all corners twisted" position:
+        DF^2U'B^2R^2B^2R^2LB'D'FD^2FB^2UF'RLU^2F'
+or in Varga's parlance:
+        dofitabiribirilobadafodifobitofarolotifa
+
+Other things #28 contains are an analysis of Square 1, an article about
+triangular tilings by Martin Gardner, and a number of articles about other
+puzzles.
+--
+%  CFF is a newsletter published by the Dutch Cubusts Club NKC.
+Secretary:
+        Anneke Treep
+        Postbus 8295
+        6710 AG  Ede
+        The Netherlands
+Membership fee for 1992 is DFL 20 (about$ 11).
+--
+    -- dik t. winter <dik@cwi.nl>
+
+References:
+
+Mathematical Papers
+-------------------
+
+Rubik's Revenge: The Group Theoretical Solution
+Mogens Esrom Larsen   A.M.M. Vol. 92 No. 6, June-July 1985, pages
+381-390
+
+Rubik's Groups
+E. C. Turner & K. F. Gold, American Mathematical Monthly,
+vol. 92 No. 9 November 1985, pp. 617-629.
+
+Cubelike Puzzles - What Are They and How Do You Solve Them?
+J.A. Eidswick   A.M.M. Vol. 93 No. 3 March 1986, pp 157-176
+
+The Slice Group in Rubik's Cube,  David Hecker, Ranan Banerji
+Mathematics Magazine, Vol. 58 No. 4 Sept 1985
+
+The Group of the Hungarian Magic Cube
+Chris Rowley   Proceedings of the First Western Austrialian
+                Conference on Algebra, 1982
+
+Books
+-----
+
+Rubik's Cubic Compendium
+Erno Rubik, Tamas Varga, et al, Edited by David Singmaster
+Oxford University Press, 1987
+Enslow Publishers Inc
+
+
+
+==> competition/games/rubiks/rubiks.magic.p <==
+How do you solve Rubik's Magic?
+
+==> competition/games/rubiks/rubiks.magic.s <==
+The solution is in a 3x3 grid with a corner missing.
+
++---+---+---+          +---+---+---+---+
+| 3 | 5 | 7 |          | 1 | 3 | 5 | 7 |
++---+---+---+          +---+---+---+---+
+| 1 | 6 | 8 |          | 2 | 4 | 6 | 8 |
++---+---+---+          +---+---+---+---+
+| 2 | 4 |              Original Shape
++---+---+
+ 
+To get the 2x4 "standard" shape into this shape, follow this:
+1.  Lie it flat in front of you (4 going across).
+2.  Flip the pair (1,2) up and over on top of (3,4).
+3.  Flip the ONE square (2) up and over (1).
+[Note:  if step 3 won't go, start over, but flip the entire original shape
+        over (exposing the back).]
+4.  Flip the pair (2,4) up and over on top of (5,6).
+5.  Flip the pair (1,2) up and toward you on top of (blank,4).
+6.  Flip the ONE square (2) up and left on top of (1).
+7.  Flip the pair (2,4) up and toward you. 
+ 
+Your puzzle won't be completely solved, but this is how to get the shape.
+Notice that 3,5,6,7,8 don't move.
+
+==> competition/games/scrabble.p <==
+What are some exceptional Scrabble Brand Crossword Game (TM) games?
+
+==> competition/games/scrabble.s <==
+The shortest Scrabble game:
+
+The Scrabble Players News, Vol. XI No. 49, June 1983, contributed by
+Kyle Corbin of Raleigh, NC:
+
+		 [J]
+		J U S
+		  S O X
+		   [X]U
+
+which can be done in 4 moves, JUS, SOX, [J]US, and [X]U.
+
+In SPN Vol. XI, No. 52, December 1983, Alan Frank presented what
+he claimed is the shortest game where no blanks are used, also
+four moves:
+
+                  C
+                 WUD
+                CUKES
+        	 DEY
+        	  S
+
+This was followed in SPN, Vol. XII No. 54, April 1984, by Terry Davis
+of Glasgow, KY:
+
+        	  V
+                V O[X]
+        	 [X]U,
+
+which is three moves.  He noted that the use of two blanks prevents
+such plays as VOLVOX.  Unfortunately, it doesn't prevent SONOVOX.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Record for the highest Scrabble score in a single turn (in a legal position):
+
+According to the Scrabble Players Newspaper (since renamed to 
+Scrabble Players News) issue 44, p13, the highest score for one
+turn yet discovered, using the Official Scrabble Players
+Dictionary, 1st ed. (the 2nd edition is now in use in club and
+tournament play) and the Websters 9th New Collegiate Dictionary,
+was the following:
+
+d i s e q u i l i b r a t e D
+. . . . . . . e . . . . . . e
+. . . . . . . e . . . . . o m
+r a d i o a u t o g r a p(h)Y
+. . . . . . . . . . . w a s T
+. . . . . . . . . . b e . . h
+. . . . . . . . . . a . . g o
+. . . c o n j u n c t i v a L 
+. . . . . . . . . . . . . n o
+. . . . . . . f i n i k i n G
+. . . . . . . a . . . (l) e i
+. . . . . . . d . s p e l t Z
+. . . . . . w e . . . . . . e
+. . . . . . r . . . . . . o r
+m e t h o x y f l u r a n e S
+
+for 1682 points.
+
+
+According to the May 1986 issue of GAMES, the highest known score achievable
+in one turn is 1,962 points.  The word is BENZOXYCAMPHORS formed across the
+three triple-word scores on the bottom of the board.  Apparently it was 
+discovered by Darryl Francis, Ron Jerome, and Jeff Grant.
+
+As for other Scrabble trivia, the highest-scoring first move based on the
+Official Scrabble Players Dictionary is 120 points, with the words JUKEBOX,
+QUIZZED, SQUEEZE, or ZYMURGY.  If Funk & Wagnall's New Standard Dictionary
+is used then ZYXOMMA, worth 130 points, can be formed.
+
+The highest-scoring game, based on Webster's Second and Third and on the
+Oxford English Dictionary, was devised by Ron Jerome and Ralph Beaman and
+totalled 4,142 points for the two players.  The highest-scoring words in
+the game were BENZOXYCAMPHORS, VELVETEEN, and JACKPUDDINGHOOD.
+
+The following example of a SCRABBLE game produced a score of 2448 for one
+player and 1175 for the final word.  It is taken from _Beyond Language_ (1967)
+by Dmitri Borgman (pp. 217-218).  He credits this solution to Mrs. Josefa H.
+Byrne of San Francisco and implies that all words can be found in _Webster's
+Second Edition_.  The two large words (multiplied by 27 as they span 3 triple
+word scores) are ZOOPSYCHOLOGIST (a psychologist who treats animals rather
+than humans) and PREJUDICATENESS (the condition or state of being decided 
+beforehand).  The asterisks (*) represent the blank tiles. (Please excuse
+any typo's).
+
+           Board                        Player1                 Player2
+
+Z O O P S Y C H O L O G I S T    ABILITY             76   ERI, YE     9
+O N         H A   U     R O W    MAN, MI             10   EN          2
+*         R I B   R O V E   I    FEN, FUN            14   MANIA       7
+L           T I K E         G    TABU                12   RIB         6
+O             L                  NEXT                11   AM          4
+G             I                  AX                   9   END         6
+I             T                  IT, TIKE            10   LURE        6
+*             Y E                LEND, LOGIC*AL      79   OO*LOGICAL  8
+A               R                FUND, JUD           27   ATE, MA     7
+L E N D       M I                ROVE                14   LO          2
+    E         A             Q    DARE, DE            13   ES, ES, RE  6 
+W A X     F E N             U    RE, ROW             14   IRE, IS, SO 7
+E   T A B U   I             A    DARED, QUAD         22   ON          4
+E         N   A M   D A R E D    WAX, WEE            27   WIG         9
+P R E J U D I C A T E N E S S    CHIT, HA            14   ON          2
+                                 PREJUDICATENESS,
+                                   AN, MANIAC,
+                                   QUADS, WEEP      911   OOP         8
+                                 ZOOPSYCHOLOGIST,
+                                   HABILITY, TWIG,
+                                   ZOOLOGICAL      1175
+                                 --------------------------------------
+                                 Total:            2438              93
+
+                                 F, N, V, T in 
+                                 loser's hand:      +10             -10
+                                 --------------------------------------
+                                 Final Score:      2448              83
+
+
+---------------------------------------------------------------------------
+It is possible to form the following 14 7-letter OSPD words from the
+non-blank tiles:
+
+HUMANLY
+FATUOUS
+AMAZING
+EERIEST
+ROOFING
+TOILERS
+QUIXOTE
+JEWELRY
+CAPABLE
+PREVIEW
+BIDDERS
+HACKING
+OVATION
+DONATED
+
+==> competition/games/set.p <==
+What is the size of the largest collection of cards from which NO "set"
+can be selected ?
+
+==> competition/games/set.s <==
+I can get 20:
+
+1ROL
+1GDL
+1GDM
+1GOM
+1GSL
+1PDH
+1PDM
+1POL
+1POM
+2RSL
+2PDM
+3ROL
+3ROM
+3RSL
+3RSH
+3GDM
+3GOL
+3GSL
+3GSM
+3POM
+
+This collection of 20 is a local maximum.
+
+The small C progam shown below was used to check for all possible
+extensions to a collection of 21.
+
+Of course this leaves open the question whether there exists a completely
+different collection of 21 from which no "set" can be selected.
+
+-- Gene Miller
+
+------- C Program enclosed -------
+#define N 21
+
+static int data[N][4]= {
+    1, 1, 2, 1, /* 00 */
+    1, 2, 1, 1, /* 01 */
+    1, 2, 1, 2, /* 02 */
+    1, 2, 2, 2, /* 03 */
+    1, 2, 3, 1, /* 04 */
+    1, 3, 1, 3, /* 05 */
+    1, 3, 1, 2, /* 06 */
+    1, 3, 2, 1, /* 07 */
+    1, 3, 2, 2, /* 08 */
+    2, 1, 3, 1, /* 09 */
+    2, 3, 1, 2, /* 10 */
+    3, 1, 2, 1, /* 11 */
+    3, 1, 2, 2, /* 12 */
+    3, 1, 3, 1, /* 13 */
+    3, 1, 3, 3, /* 14 */
+    3, 2, 1, 2, /* 15 */
+    3, 2, 2, 1, /* 16 */
+    3, 2, 3, 1, /* 17 */
+    3, 2, 3, 2, /* 18 */
+    3, 3, 2, 2, /* 19 */
+    0, 0, 0, 0  /* 20 */	/* leave space for Nth combo */
+};
+
+main()
+{	
+    int x, y, z, w;
+
+    for (x=1; x<=3; x++)	/* check all combos */
+	for (y=1; y<=3; y++)
+	    for (z=1; z<=3; z++)
+		for (w=1; w<=3; w++)
+		    printf ("%d %d %d %d -> sets=%d\n", x, y, z, w,
+			check (x, y, z, w));
+}
+
+int check(x,y,z,w)
+int x, y, z, w;
+{
+    int i,j,k,m;
+    int errors, sets;
+
+    for (i=0; i<N; i++)		/* check for pre-existing combos */
+	if (x==data[i][0] &&
+	    y==data[i][1] &&
+	    z==data[i][2] &&
+	    w==data[i][3] ) {
+	return -1;		/* discard pre-existing*/
+    }
+
+    data[N-1][0] = x;	/* make this the Nth combo */
+    data[N-1][1] = y;
+    data[N-1][2] = z;
+    data[N-1][3] = w;
+
+    sets = 0;			/* start counting sets */
+    for (i=0; i<N; i++)		/* look for sets */
+	for (j=i+1; j<N; j++)
+	    for (k=j+1; k<N; k++) {
+		errors = 0;
+		for (m=0; m<4; m++) {
+		    if (data[i][m] == data[j][m]) {
+			if (data[k][m] != data[i][m]) errors++;
+			if (data[k][m] != data[j][m]) errors++;
+		    }
+		    else {
+			if (data[k][m] == data[i][m]) errors++;
+			if (data[k][m] == data[j][m]) errors++;
+		    }
+		}
+		if (errors == 0)	/* no errors means is a set */
+		    sets++; /* increment number of sets */
+	    }
+    return sets;
+}
+-- 
+
+I did some more experimenting. With the enclosed C program, I looked at many
+randomly generated collections. In an earlier version of this program I
+got one collection of 20 from a series of 100 trials. The rest were collections
+ranging in size from 16 to 19. Unfortunately, in an attempt to make this
+program more readable and more general, I changed the algorithm slightly and
+I haven't been able to achieve 20 since then. I can't remember enough about
+my changes to be able to get back to the previous version. In the most recent
+1000 trials all of the maximaml collections range in size from 16 to 18.
+
+I think that this experiment has shed very little light on what is the
+global maximum, since the search space is many orders of magnitude larger
+than what can be tried in a reasonable amount of time through random
+searching.
+
+I assume that Mr. Ring found his collection of 20 by hand. This indicates
+that an intelligent search may be more fruitful than a purely random one.
+
+------------------ Program enclosed -------------
+int n;
+int data[81][4];
+
+main()
+{
+    int i;
+
+    for (i=0; i<1000; i++) {	/* Do 1000 independent trials */
+	printf ("Trial %d:\n", i);
+	try();
+    }
+}
+
+try()
+{	
+    int i;
+    int x, y, z, w;
+
+    n = 0;			/* set collection size to zero */
+    for (i=0; i<100; i++) {	/* try 100 random combos */
+	x = 1 + rand()%3;
+	y = 1 + rand()%3;
+	z = 1 + rand()%3;
+	w = 1 + rand()%3;
+	check (x, y, z, w);
+    }
+
+    for (x=1; x<=3; x++)	/* check all combos */
+	for (y=1; y<=3; y++)
+	    for (z=1; z<=3; z++)
+		for (w=1; w<=3; w++)
+		    check (x, y, z, w);
+
+    printf ("	collection size=%d\n", n);
+}
+
+int check(x, y, z, w)	/* check whether a new combo can be added */
+int x, y, z, w;
+{
+    int i,j,k,m;
+    int errors, sets;
+
+    for (i=0; i<n; i++)		/* check for pre-existing combos */
+	if (x==data[i][0] &&
+	    y==data[i][1] &&
+	    z==data[i][2] &&
+	    w==data[i][3] ) {
+	return -1;		/* discard pre-existing*/
+    }
+
+    data[n][0] = x;	/* make this the nth combo */
+    data[n][1] = y;
+    data[n][2] = z;
+    data[n][3] = w;
+
+    sets = 0;			/* start counting sets */
+    for (i=0; i<=n; i++)		/* look for sets */
+	for (j=i+1; j<=n; j++)
+	    for (k=j+1; k<=n; k++) {
+		errors = 0;
+		for (m=0; m<4; m++) {
+		    if (data[i][m] == data[j][m]) {
+			if (data[k][m] != data[i][m]) errors++;
+			if (data[k][m] != data[j][m]) errors++;
+		    }
+		    else {
+			if (data[k][m] == data[i][m]) errors++;
+			if (data[k][m] == data[j][m]) errors++;
+		    }
+		}
+		if (errors == 0)	/* no errors means is a set */
+		    sets++; /* increment number of sets */
+	    }
+    if (sets == 0) {
+	n++;		/* increment collection size */
+	printf ("%d %d %d %d\n", x, y, z, w);
+    }
+    return sets;
+}
+------------------ end of enclosed program -------------
+-- Gene
+-- 
+Gene Miller			Multimedia Communications
+NYNEX Science & Technology	Phone:  914 644 2834
+500 Westchester Avenue		Fax:    914 997 2997, 914 644 2260
+White Plains, NY 10604		Email:  gene@nynexst.com
+
+==> competition/games/soma.p <==
+What is the solution to Soma Cubes?
+
+==> competition/games/soma.s <==
+The soma cube is dissected in excruciating detail in volume 2 of
+"Winning Ways" by Conway, Berlekamp and Guy, in the same chapter as the
+excruciatingly detailed dissection of Rubik's Cube.
+
+==> competition/games/square-1.p <==
+Does anyone have any hints on how to solve the Square-1 puzzle?
+
+==> competition/games/square-1.s <==
+				SHAPES
+
+1. There are 29 different shapes for a side, counting reflections:
+    1 with 6 corners, 0 edges
+    3 with 5 corners, 2 edges
+   10 with 4 corners, 4 edges
+   10 with 3 corners, 6 edges
+    5 with 2 corners, 8 edges
+
+2. Naturally, a surplus of corners on one side must be compensated
+   by a deficit of corners on the other side.  Thus there are 1*5 +
+   3*10 + C(10,2) = 5 + 30 + 55 = 90 distinct combinations of shapes,
+   not counting the middle layer.
+
+3. You can reach two squares from any other shape in at most 7 transforms,
+   where a transform consists of (1) optionally twisting the top, (2)
+   optionally twisting the bottom, and (3) flipping.
+
+4. Each transform toggles the middle layer between Square and Kite,
+   so you may need 8 transforms to reach a perfect cube.
+
+5. The shapes with 4 corners and 4 edges on each side fall into four
+   mutually separated classes.  Side shapes can be assigned values:
+   0: Square, Mushroom, and Shield; 1: Left Fist and Left Paw; 2:
+   Scallop, Kite, and Barrel; 3. Right Fist and Right Paw.  The top
+   and bottom's sum or difference, depending on how you look at them,
+   is a constant.  Notice that the side shapes with bilateral symmetry
+   are those with even values.
+
+6. To change this constant, and in particular to make it zero, you must
+   attain a position that does not have 4 corners and 4 edges on each
+   side.  Almost any such position will do, but returning to 4 corners
+   and 4 edges with the right constant is left to your ingenuity.
+
+7. If the top and bottom are Squares but the middle is a Kite, just flip
+   with the top and bottom 30deg out of phase and you will get a cube.
+
+				COLORS
+
+1. I do not know the most efficient way to restore the colors.  What
+   follows is my own suboptimal method.  All flips keep the yellow
+   stripe steady and flip the blue stripe.
+
+2. You can permute the corners without changing the edges, so first
+   get the edges right, then the corners.
+
+3. This transformation sends the right top edge to the bottom
+   and the left bottom edge to the top, leaving the other edges
+   on the same side as they started:  Twist top 30deg cl, flip,
+   twist top 30deg ccl, twist bottom 150deg cl, flip, twist bottom
+   30deg cl, twist top 120deg cl, flip, twist top 30deg ccl, twist
+   bottom 150deg cl, flip, twist bottom 30deg cl.  Cl and ccl are
+   defined looking directly at the face.  With this transformation
+   you can eventually get all the white edges on top.
+
+4. Check the parity of the edge sequence on each side.  If either is
+   wrong, you need to fix it.  Sorry -- I don't know how!  (See any
+   standard reference on combinatorics for an explanation of parity.)
+
+5. The following transformation cyclically permutes ccl all the top edges
+   but the right one and cl all the bottom edges but the left one.  Apply
+   the transformation in 3., and turn the whole cube 180deg.  Repeat.
+   This is a useful transformation, though not a cure-all.
+
+6. Varying the transformation in 3. with other twists will produce other
+   results.
+
+7. The following transformation changes a cube into a Comet and Star:
+   Flip to get Kite and Kite.  Twist top and bottom cl 90deg and flip to get
+   Barrel and Barrel.  Twist top cl 30 and bottom cl 60 and flip to get
+   Scallop and Scallop.  Twist top cl 60 and bottom cl 120 and flip to
+   get Comet and Star.  The virtue of the Star is that it contains only
+   corners, so that you can permute the corners without altering the edges.
+
+8. To reach a Lemon and Star instead, replace the final bottom cl 120 with
+   a bottom cl 60.  In both these transformation the Star is on the bottom.
+
+9. The following transformation cyclically permutes all but the bottom
+   left rear.  It sends the top left front to the bottom, and the bottom
+   left front to the top.  Go to Comet and Star.  Twist star cl 60.
+   Go to Lemon and Star -- you need not return all the way to the cube, but
+   do it if you're unsure of yourself by following 7 backwards.  Twist star
+   cl 60.  Return to cube by following 8 backwards.  With this transformation
+   you should be able to get all the white corners on top.
+
+10. Check the parity of the corner sequences on both sides.  If the bottom
+   parity is wrong, here's how to fix it:  Go to Lemon and Star.  The
+   colors on the Star will run WWGWWG.  Twist it 180 and return to cube.
+
+11. If the top parity is wrong, do the same thing, except that when you
+   go from Scallop and Scallop to Lemon and Star, twist the top and bottom
+   ccl instead of cl.  The colors on the Star should now run GGWGGW.
+
+12. Once the parity is right on both sides, the basic method is to
+   go to Comet and Star, twist the star 120 cl (it will be WGWGWG),
+   return to cube, twist one or both sides, go to Comet and Star,
+   undo the star twist, return to cube, undo the side twists.
+   With no side twists, this does nothing.  If you twist the top,
+   you will permute the top corners.  If you twist the bottom,
+   you will permute the bottom corners.  Eventually you will get
+   both the top and the bottom right.  Don't forget to undo the
+   side twists -- you need to have the edges in the right places.
+
+Happy twisting....
+-- 
+Col. G. L. Sicherman
+gls@windmill.att.COM
+
+==> competition/games/think.and.jump.p <==
+THINK & JUMP:  FIRST THINK, THEN JUMP UNTIL YOU
+               ARE LEFT WITH ONE PEG!                      O - O   O - O
+                                                          / \ / \ / \ / \
+                                                         O---O---O---O---O
+BOARD DESCRIPTION:  To the right is a model of            \ / \ / \ / \ /
+                    the Think & Jump board.  The       O---O---O---O---O---O
+                    O's represent holes which         / \ / \ / \ / \ / \ / \
+                    contain pegs.                    O---O---O---O---O---O---O
+                                                      \ / \ / \ / \ / \ / \ /
+                                                       O---O---O---O---O---O
+DIRECTIONS:  To play this brain teaser, you begin         / \ / \ / \ / \
+             by removing the center peg.  Then,          O---O---O---O---O
+             moving any direction in the grid,            \ / \ / \ / \  /
+             jump over one peg at a time,                  O - O   O - O
+             removing the jumped peg - until only
+             one peg is left.  It's harder then it looks. 
+	     But it's more fun than you can imagine.
+
+SKILL CHART:
+
+	10 pegs left - getting better
+	 5 pegs left - true talent
+	 1 peg  left - you're a genius
+
+Manufactured by Pressman Toy Corporation, NY, NY.
+
+==> competition/games/think.and.jump.s <==
+Three-color the board in the obvious way.  The initial configuration has 12
+of each color, and each jump changes the parity of all three colors.  Thus,
+it is impossible to achieve any position where the colors do not have the
+same parity; in particular, (1,0,0).
+
+If you remove the requirement that the initially-empty cell must be at the
+center, the game becomes solvable.  The demonstration is left as an exercise.
+
+Karl Heuer   rutgers!harvard!ima!haddock!karl   karl@haddock.ima.isc.com
+
+
+
+
+Here is one way of reducing Think & Jump to two pegs.
+
+
+Long simplifies Balsley's scintillating snowflake solution:
+
+1  U-S           A - B   C - D
+2  H-U          / \ / \ / \ / \
+3  V-T         E---F---G---H---I
+4  S-H          \ / \ / \ / \ /
+5  D-M       J---K---L---M---N---O
+6  F-S      / \ / \ / \ / \ / \ / \
+7  Q-F     P---Q---R---S---T---U---V
+8  A-L      \ / \ / \ / \ / \ / \ /
+9  S-Q       W---X---Y---Z---a---b
+10 P-R          / \ / \ / \ / \
+11 Z-N         c---d---e---f---g
+12 Y-K          \ / \ / \ / \ /
+13 h-Y           h - i   j - k
+14 k-Z
+
+The board should now be in the snowflake pattern, i.e. look like
+
+         o - *   * - o
+        / \ / \ / \ / \
+       *---o---*---o---*
+        \ / \ / \ / \ /
+     *---*---*---*---*---*
+    / \ / \ / \ / \ / \ / \
+   o---o---o---o---o---o---o
+    \ / \ / \ / \ / \ / \ /
+     *---*---*---*---*---*
+        / \ / \ / \ / \
+       *---o---*---o---*
+        \ / \ / \ / \ /
+         o - *   * - o
+
+where o is empty and * is a peg.  The top and bottom can now be reduced
+to single pegs individually.  For example, we could continue
+
+15 g-T
+16 Y-a
+17 i-Z
+18 T-e
+19 j-Y
+20 b-Z
+21 c-R
+22 Z-X
+23 W-Y
+24 R-e
+
+which finishes the bottom.  The top can be done in a similar manner.
+-- 
+Chris Long
+
+==> competition/games/tictactoe.p <==
+In random tic-tac-toe, what is the probability that the first mover wins?
+
+==> competition/games/tictactoe.s <==
+Count cases.
+
+First assume that the game goes on even after a win.  (Later figure
+out who won if each player gets a row of three.)  Then there are
+9!/5!4! possible final boards, of which
+
+	8*6!/2!4! - 2*6*4!/0!4! - 3*3*4!/0!4! - 1 = 98
+
+have a row of three Xs.  The first term is 8 rows times (6 choose 2)
+ways to put down the remaining 2 Xs.  The second term is the number
+of ways X can have a diagonal row plus a horizontal or vertical row.
+The third term is the number of ways X can have a vertical and a
+horizontal row, and the 4th term is the number of ways X can have two
+diagonal rows.  All the two-row configurations must be subtracted to
+avoid double-counting.
+
+There are 8*6!/1!5! = 48 ways O can get a row.  There is no double-
+counting problem since only 4 Os are on the final board.
+
+There are 6*2*3!/2!1! = 36 ways that both players can have a
+row.  (6 possible rows for X, each leaving 2 possible rows for O
+and (3 choose 2) ways to arrange the remaining row.)  These
+cases need further consideration.
+
+There are 98 - 36 = 62 ways X can have a row but not O.
+
+There are 48 - 36 = 12 ways O can have a row but not X.
+
+There are 126 - 36 - 62 - 12 = 16 ways the game can be a tie.
+
+Now consider the 36 configurations in which each player has a row.
+Each such can be achieved in 5!4! = 2880 orders.  There are 3*4!4!
+= 1728 ways that X's last move completes his row.  In these cases O
+wins.  There are 2*3*3!3! = 216 ways that Xs fourth move completes
+his row and Os row is already done in three moves.  In these cases O
+also wins.  Altogether, O wins 1728 + 216 = 1944 out of 2880 times
+in each of these 36 configurations.  X wins the other 936 out of
+2880.
+
+Altogether, the probability of X winning is ( 62 + 36*(936/2880) ) / 126. 
+
+win:   737 / 1260  ( 0.5849206... )
+lose:  121 / 420   ( 0.2880952... )
+draw:  8 / 63      ( 0.1269841... )
+
+The computer output below agress with this analysis.
+
+1000000 games:  won 584865, lost 288240, tied 126895
+
+Instead, how about just methodically having the program play every
+possible game, tallying up who wins?
+
+Wonderful idea, especially since there are only 9! ~ 1/3 million
+possible games.  Of course some are identical because they end in
+fewer than 8 moves.  It is clear that these should be counted
+multiple times since they are more probable than games that go
+longer.
+
+The result:
+362880 games:  won 212256, lost 104544, tied 46080
+
+#include <stdio.h>
+
+int	board[9];
+int	N, move, won, lost, tied;
+
+int	perm[9] = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+
+int	rows[8][3] = {
+  { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 },
+  { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 }, { 2, 4, 6 }
+};
+
+
+main()
+{
+  do {
+    bzero((char *)board, sizeof board);
+    for ( move=0; move<9; move++ ) {
+      board[perm[move]] = (move&1) ? 4 : 1;
+      if ( move >= 4 && over() )
+	break;
+    }
+    if ( move == 9 )
+      tied++;
+#ifdef DEBUG
+    printf("%1d%1d%1d\n%1d%1d%1d  w %d, l %d, t %d\n%1d%1d%1d\n\n",
+	   board[0], board[1], board[2],
+	   board[3], board[4], board[5], won, lost, tied,
+	   board[6], board[7], board[8]);
+#endif
+    N++;
+  } while ( nextperm(perm, 9) );
+
+  printf("%d games:  won %d, lost %d, tied %d\n", N, won, lost, tied);
+  exit(0);
+}
+
+int	s;
+int	*row;
+
+over()
+{
+  for ( row=rows[0]; row<rows[8]; row+=3 ) {
+    s = board[row[0]] + board[row[1]] + board[row[2]];
+    if ( s == 3 )
+      return ++won;
+    if ( s == 12 )
+      return ++lost;
+  }
+  return 0;
+}
+
+nextperm(c, n)
+int	c[], n;
+{
+  int	i = n-2, j=n-1, t;
+
+  while ( i >= 0 && c[i] >= c[i+1] )
+    i--;
+  if ( i < 0 )
+    return 0;
+  while ( c[j] <= c[i] )
+    j--;
+  t = c[i];  c[i] = c[j];  c[j] = t;
+  i++;  j = n-1;
+  while ( i < j ) {
+    t = c[i];  c[i] = c[j];  c[j] = t;
+    i++;  j--;
+  }
+  return 1;
+}
+
+
+
+==> competition/tests/analogies/long.p <==
+1. Host : Guest :: Cynophobia : ?
+2. Mountain : Plain :: Acrocephalic : ?
+3. Lover : Believer :: Philofelist : ?
+4. 4 : 6 :: Bumblebee : ?
+5. 2 : 1 :: Major : ?
+6. 1 : 24 :: Group : ?
+7. 4 : 64 :: Crotchet : ?
+8. Last : First :: Grave : ?
+9. 7 : 9 :: Throne : ?
+10. Pride : Hatred :: Beelzebub : ?
+11. Dollar : Bond :: Grant : ?
+12. Ek : Sankh :: 1 : ?
+
+==> competition/tests/analogies/long.s <==
+1. Lyssophobia
+
+Cynophobia is the fear of dogs; lyssophobia is the fear of rabies.  As
+Rodney Adams pointed out, a word meaning the fear of fleas would be
+even better, but I've been unable to locate such a word (although
+surely one must exists).
+
+2. Homalocephalic
+
+Acrocephalic is having a pointed head; homalocephalic is having a flat
+head.  Rodney Adamas suggested "planoccipital", but on checking this
+apparently refers to having a flat back of the skull, so he only gets
+partial credit.
+
+3. Galeanthropist
+
+A philofelist is a cat-lover (also commonly called an ailurophile);
+a galeanthropist is a person who believes they are a cat.
+
+4. Blue Bird
+
+A Camp Fire Girl who is 4 is in the Bumblebee Club; a Campfire Girl
+who is 6 in the Blue Bird Club.  I should have had "4 or 5" instead
+of "4" to remove ambiguity (e.g. Mark Brader suggested "triplane").
+
+5. Brigadier
+
+A 2-star general in the army is a major general; a 1-star general
+in the army is a brigadier general.
+
+6. Field Army
+
+Army groupings; there are 24 "groups" in a "field army".
+
+7. Hemidemisemiquaver
+
+A crotchet is a quarter-note; a hemidemisemiquaver is a sixty-fourth
+note.  Rodney Adams and Mark Brader both got this.
+
+8. Prestissimo
+
+In music prestissimo means extremely fast; grave means very slow to
+the point of solemnity.  This question was poorly worded (I received
+both "womb" and "cradle" as answers).
+
+9. Seraph
+
+In the ninefold hierarchy of angels, a throne ranks 7th and a seraph
+9th (9th being most powerful).  Rodney Adams got this one.
+
+10. Sonneillon
+
+In Father Sebastien Machaelis's (one of the more famous exorcists)
+hierarchy of devils, Beelzebub is responsible for pride, Sonneillon
+for hatred.
+
+11. Roosevelt
+
+Grant is on the $50 bill; Roosevelt on the $50 savings bond.
+
+12. 10^14
+
+Ek is 1 in Hindi; sankh is 10^14 (one hundred quadrillion).
+-- 
+Chris Long, 265 Old York Rd., Bridgewater, NJ  08807-2618
+
+==> competition/tests/analogies/pomfrit.p <==
+1. NATURAL: ARTIFICIAL :: ANKYLOSIS: ?
+2.  RESCUE FROM CHOKING ON FOOD, etc.: HEIMLICH :: ADJUSTING MIDDLE EAR PRESSURE: ?
+3. LYING ON OATH: PERJURY :: INFLUENCING A JURY: ?
+4. RECTANGLE: ELLIPSE :: MERCATOR: ?
+5. CLOSED: CLEISTOGAMY :: OPEN: ?
+6. FO'C'SLE: SYNCOPE :: TH'ARMY: ?
+7. FILMS: OSCAR :: MYSTERY NOVELS: ?
+8. QUANTITATIVE DATA: STATISTICS :: HUMAN SETTLEMENTS: ?
+9. 7: 19 : : SEPTIMAL: ?
+10. 3 TO 2: SESQUILATERAL :: 7 TO 5: ?
+11. SICILY: JAPAN :: MAFIA: ?
+12. CELEBRITIES: SYCOPHANTIC :: ANCESTORS: ?
+13. 95: 98 :: VENITE: ?
+14. MINCES: EYES :: PORKIES: ?
+15. POSTAGE STAMPS: PHILATELIST: MATCHBOX LABELS: ?
+16. MALE: FEMALE :: ARRENOTOKY: ?
+17 TAILOR: DYER :: SARTORIAL: ?
+18. HERMES: BACCHUS :: CADUCEUS: ?
+19. 2823: 5331 :: ELEPHANT: ?
+20. CENTRE OF GRAVITY: BARYCENTRIC :: ROTARY MOTION: ?
+21. CALIFORNIA: EUREKA :: NEW YOKK: ?
+22. MARRIAGE: DIGAMY :: COMING OF CHRIST: ?
+23. 6: 5 :: PARR: ?
+24. GROUP: INDIVIDUAL :: PHYLOGENESIS: ?
+25. 12: 11 :: EPSOM: ?
+
+==> competition/tests/analogies/pomfrit.s <==
+1. ARTHRODESIS
+2. VALSALVA
+3. EMBRACERY
+4. MOLLWEIDE
+5. CHASMOGAMY
+6. SYNAL(O)EPHA
+7. EDGAR
+8. EKISTICS
+9. DECENNOVAL
+10. SUPERBIQUINTAL
+11. YAKUZA
+12. FILIOPETISTIC
+13. CANTATE
+14. LIES
+15. PHILLUMENIST
+16. THELYTOKY
+17. TINCTORIAL
+18. THYRSUS
+19. ANTIQUARIAN
+20. TROCHILIC
+21. EXCELSIOR (mottos)
+22. PAROUSIA
+23. HOWARD (wives of Henry VIII)
+24. ONTOGENESIS
+25. GLAUBER (salts)
+
+
+
+==> competition/tests/analogies/quest.p <==
+1. Mother: Maternal :: Stepmother: ?
+2. Club: Axe :: Claviform: ?
+3. Cook Food: Pressure Cooker :: Kill Germs: ?
+4. Water: Air :: Hydraulic: ?
+5. Prediction: Dirac :: Proof: ?
+6. Raised: Sunken :: Cameo: ?
+7. 1: 14 :: Pound: ?
+8. Malay: Amok :: Eskimo Women: ?
+9. Sexual Intercourse: A Virgin :: Bearing Children: ?
+10. Jaundice, Vomiting, Hemorrhages: Syndrome :: Jaundice: ?
+11. Guitar: Cello :: Segovia: ?
+12. Bars: Leaves :: Eagle: ?
+13. Roll: Aileron :: Yaw: ?
+14. 100: Century :: 10,000: ?
+15. Surface: Figure :: Mobius: ?
+16. Logic: Philosophy :: To Know Without Conscious Reasoning: ?
+17. Alive: Parasite :: Dead: ?
+18. Sea: Land :: Strait: ?
+19. Moses: Fluvial :: Noah: ?
+20. Remnant: Whole :: Meteorite: ?
+21. Opossum, Kangaroo, Wombat: Marsupial :: Salmon, Sturgeon, Shad: ?
+22. Twain/Clemens: Allonym :: White House/President: ?
+23. Sculptor: Judoka :: Fine: ?
+24. Dependent: Independent :: Plankton: ?
+25. Matthew, Mark, Luke, John: Gospels :: Joshua-Malachi: ?
+26. Luminous Flux: Lumen :: Sound Absorption: ?
+27. 2: 3 :: He: ?
+28. Growth: Temperature :: Pituitary Gland: ?
+29. Spider: Arachnoidism :: Snake: ?
+30. Epigram: Anthology :: Foreign Passages: ?
+31. Pathogen: Thermometer :: Lethal Wave: ?
+32. Russia: Balalaika :: India: ?
+33. Involuntary: Sternutatory :: Voluntary: ?
+34. Unusual Hunger: Bulimia :: Hunger for the Unusual: ?
+35. Blind: Stag :: Tiresias: ?
+36. River: Fluvial :: Rain: ?
+37. Country: City :: Tariff: ?
+38. $/Dollar: Logogram :: 3, 5, 14, 20/Cent: ?
+39. Lung Capacity: Spirometer :: Arterial Pressure: ?
+40. Gold: Ductile :: Ceramic: ?
+41. 7: 8 :: Uranium: ?
+42. Judaism: Messiah :: Islam: ?
+43. Sight: Amaurosis :: Smell: ?
+44. Oceans: Cousteau :: Close Encounters of the Third Kind: ?
+45. Diamond/Kimberlite: Perimorph :: Fungus/Oak: ?
+46. Compulsion to Pull One's Hair: Trichotillomania :: 
+    Imagine Oneself As a Beast: ?
+47. Cross: Neutralism :: Hexagram: ?
+48. Wing: Tail :: Fuselage: ?
+49. Bell: Loud :: Speak: ?
+50. Benevolence: Beg :: Philanthropist: ?
+51. 10: Decimal :: 20: ?
+52. Five-sided Polyhedron: Pentahedron :: ?
+    Faces of Parallelepiped Bounded by a Square: ?
+53. Motor: Helicopter :: Airflow: ?
+54. Man: Ant :: Barter: ?
+55. United States: Soviet Union :: Cubism: ?
+56. State: Stipend :: Church: ?
+57. Motorcycle: Bicycle :: Motordrome: ?
+58. Transparent: Porous :: Obsidian: ?
+59. pi*r^2*h: 1/3*pi*r^2*h :: Cylinder: ?
+
+==> competition/tests/analogies/quest.s <==
+Annotated solutions.
+
+If there is more than one word that fits the analogy, we list the best
+word first.  Goodness of fit considers many factors, such as parallel
+spelling, pronunciation or etymology.  In general, a word that occurs
+in Merriam-Webster's Third New International Dictionary is superior to
+one that does not.  If we are unsure of the answer, we mark it with
+a question mark.
+
+Most of these answers are drawn from Herbert M. Baus, _The Master
+Crossword Puzzle Dictionary_, Doubleday, New York, 1981.  The notation
+in parentheses refers to the heading and subheading, if any, in Baus.
+
+1. Mother: Maternal :: Stepmother: Novercal (STEPMOTHER, pert.)
+2. Club: Axe :: Claviform: Dolabriform, Securiform (AXE, -shaped)
+    "Claviform" is from Latin "clava" for "club"; "securiform" is from
+    Latin "secura" for "axe"; "dolabriform" is from Latin "dolabra" for "to
+    hit with an axe."  Thus "securiform" has the more parallel etymology.
+    However, only "dolabriform" occurs in Merriam-Webster's Third New
+    International Dictionary.
+3. Cook Food: Pressure Cooker :: Kill Germs: Autoclave (PRESSURE, cooker)
+4. Water: Air :: Hydraulic: Pneumatic (AIR, pert.)
+5. Prediction: Dirac :: Proof: Anderson (POSITRON, discoverer)
+6. Raised: Sunken :: Cameo: Intaglio (GEM, carved)
+7. 1: 14 :: Pound: Stone (ENGLAND, weight)
+8. Malay: Amok :: Eskimo Women: Piblokto (ESKIMO, hysteria)
+9. Sexual Intercourse: A Virgin :: Bearing Children: A Nullipara
+10. Jaundice, Vomiting, Hemorrhages: Syndrome :: Jaundice: Symptom (EVIDENCE)
+11. Guitar: Cello :: Segovia: Casals (SPAIN, cellist)
+12. Bars: Leaves :: Eagle: Stars (INSIGNIA)
+13. Roll: Aileron :: Yaw: Rudder (AIRCRAFT, part)
+14. 100: Century :: 10,000: Myriad, Banzai? (NUMBER)
+     "Century" usually refers to one hundred years, while "myriad" refers
+     to 10,000 things, but "century" can also mean 100 things.  "Banzai"
+     is Japanese for 10,000 years.
+15. Surface: Figure :: Mobius: Klein
+16. Logic: Philosophy ::
+    To Know Without Conscious Reasoning: Theosophy (MYSTICISM)
+     There are many schools of philosophy that tout the possibility of
+     knowledge without conscious reasoning (e.g., intuitionism).
+     "Theosophy" is closest in form to the word "philosophy."
+17. Alive: Parasite :: Dead: Saprophyte (SCAVENGER)
+18. Sea: Land :: Strait: Isthmus (CONNECTION)
+19. Moses: Fluvial :: Noah: Diluvial (FLOOD, pert.)
+20. Remnant: Whole :: Meteorite: Meteoroid? (METEOR)
+     A meteorite is the remains of a meteoroid after it has
+     partially burned up in the atmosphere.  The original meteoroid
+     may have come from an asteroid, comet, dust cloud, dark matter,
+     supernova, interstellar collision or other sources as yet unknown.
+21. Opossum, Kangaroo, Wombat: Marsupial ::
+    Salmon, Sturgeon, Shad: Andromous (SALMON)
+22. Twain/Clemens: Allonym :: White House/President: Metonym (FIGURE, of speech)
+23. Sculptor: Judoka :: Fine: Martial (SELF, -defense)
+24. Dependent: Independent :: Plankton: Nekton (ANIMAL, free-swimming)
+25. Matthew, Mark, Luke, John: Gospels ::
+    Joshua-Malachi: Nebiim (HEBREW, bible books)
+26. Luminous Flux: Lumen :: Sound Absorption: Sabin (SOUND, absorption unit)
+27. 2: 3 :: He: Li (ELEMENT)
+28. Growth: Temperature :: Pituitary Gland: Hypothalamus (BRAIN, part)
+29. Spider: Arachnoidism :: Snake: Ophidism, Ophidiasis, Ophiotoxemia
+     None of these words is in Webster's Third.
+30. Epigram: Anthology :: Foreign Passages: Chrestomathy, Delectus (COLLECTION)
+     These words are equally good answers.
+31. Pathogen: Thermometer :: Lethal Wave: Dosimeter? (X-RAY, measurement)
+     What does "lethal wave" refer to?  If it is radiation, then
+     a dosimeter measures the dose, not the effect, as does a thermometer.
+32. Russia: Balalaika :: India: Sitar, Sarod (INDIA, musical instrument)
+     Both are guitar-like instruments (lutes) native to India.
+33. Involuntary: Sternutatory :: Voluntary: Expectorant? (SPIT)
+     A better word would be an agent that tends to cause snorting or
+     exsufflation, which is the voluntary, rapid expulsion of air from
+     the lungs.
+34. Unusual Hunger: Bulimia ::
+    Hunger for the Unusual: Allotriophagy, Pica (HUNGER, unusual)
+    These words are synonyms.
+35. Blind: Stag :: Tiresias: Actaeon (STAG, changed to)
+36. River: Fluvial :: Rain: Pluvial (RAIN, part.)
+37. Country: City :: Tariff: Octroi (TAX, kind)
+38. $/Dollar: Logogram :: 3, 5, 14, 20/Cent: Cryptogram (CODE)
+39. Lung Capacity: Spirometer ::
+    Arterial Pressure: Sphygmomanometer (PULSE, measurer)
+40. Gold: Ductile :: Ceramic: Fictile (CLAY, made of)
+41. 7: 8 :: Uranium: Neptunium (ELEMENT, chemical)
+42. Judaism: Messiah :: Islam: Mahdi (MOHAMMEDAN, messiah)
+43. Sight: Amaurosis :: Smell: Anosmia, Anosphresia (SMELL, loss)
+     These words are synonyms.
+44. Oceans: Cousteau :: Close Encounters of the Third Kind: Spielburg, Truffaut
+     Steven Spielburg was the person most responsible for the movie;
+     Francois Truffaut was a French person appearing in the movie.
+45. Diamond/Kimberlite: Perimorph ::
+    Fungus/Oak: Endophyte, Endoparasite (PARASITE, plant)
+     An endoparasite is parasitic, while an endophyte may not be.  Which
+     answer is best depends upon the kind of fungus.
+46. Compulsion to Pull One's Hair: Trichotillomania :: 
+    Imagine Oneself As a Beast: Zoanthropy, Lycanthropy
+     Neither word is exactly right: "zoanthropy" means imagining oneself
+     to be an animal, while "lycanthropy" means imagining oneself to be
+     a wolf.
+47. Cross: Neutralism :: Hexagram: Zionism (ISRAEL, doctrine)
+48. Wing: Tail :: Fuselage: Empennage, Engines, Waist? (TAIL, kind)
+     "Empennage" means the tail assemply of an aircraft, which is more a
+     synonym for "tail" than "wing" is for "fuselage."  The four primary
+     forces on an airplane are: lift from the wings, negative lift from
+     the tail, drag from the fuselage, and thrust from the engines.  The
+     narrow part at the end of the fuselage is called the "waist."
+49. Bell: Loud :: Speak: Hear, Stentorian?
+     The Sanskrit root of "bell" means "he talks" or "he speaks"; the
+     Sanskrit root of "loud" means "he hears".  A bell that makes a lot
+     of noise is loud; a speaker who makes a lot of noise is stentorian.  
+50. Benevolence: Beg :: Philanthropist: Mendicant, Mendicate?
+     If the analogy is attribute: attribute :: noun: noun, the answer
+     is "mendicant";  if the analogy is noun: verb :: noun: verb the
+     answer is "mendicate."
+51. 10: Decimal :: 20: Vigesimal (TWENTY, pert.)
+52. Five-sided Polyhedron: Pentahedron ::
+    Faces of Parallelepiped Bounded by a Square: ?
+     Does this mean a parallelepiped all of whose faces are bounded by
+     a square (and what does "bounded" mean), or does it mean all six
+     parallelograms that form the faces of a parallelepiped drawn in a
+     plane inside of a square?
+53. Motor: Helicopter :: Airflow: Autogiro (HELICOPTER)
+54. Man: Ant :: Barter: Trophallaxis
+55. United States: Soviet Union :: Cubism: ? (ART, style)
+     If the emphasis is on opposition and collapse, there were several
+     movements that opposed Cubism and that died out (e.g., Purism,
+     Suprematism, Constructivism).  If the emphasis is on freedom of
+     perspective versus constraint, there were several movements that
+     emphasized exact conformance with nature (e.g., Naturalism, Realism,
+     Photo-Realism).  If the emphasis is on dominating the art
+     scene, the only movement that was contemporary with Cubism and
+     of the same popularity as Cubism was Surrealism.  A better answer
+     would be an art movement named "Turkey-ism", since the Soviet Union
+     offered to exchange missiles in Cuba for missiles in Turkey during
+     the Cuban Missile Crisis.
+56. State: Stipend :: Church: Prebend (STIPEND)
+57. Motorcycle: Bicycle :: Motordrome: Velodrome (CYCLE, track)
+58. Transparent: Porous :: Obsidian: Pumice (GLASS, volcanic)
+59. pi*r^2*h: 1/3*pi*r^2*h :: Cylinder: Cone
+
+==> competition/tests/math/putnam/putnam.1967.p <==
+
+In article <5840002@hpesoc1.HP.COM>, nicholso@hpesoc1.HP.COM (Ron Nicholson) writes:
+> Say that we have a hallway with n lockers, numbered from sequentialy
+> from 1 to n.  The lockers have two possible states, open and closed. 
+> Initially all the lockers are closed.  The first kid who walks down the
+> hallway flips every locker to the opposite state, that is, opens them
+> all.  The second kid flips the first locker door and every other locker
+> door to the opposite state, that is, closes them.  The third kid flips
+> every third door, opening some, closing others.  The forth kid does every
+> fourth door, etc.
+> 
+> After n kid have passed down the hallway, which lockers are open, and
+> which are closed?
+
+B4.  (a) Kids run down a row of lockers, flipping doors (closed doors
+are opened and opened doors are closed).  The nth boy flips every nth
+lockers' door.  If all the doors start out closed, which lockers will
+remain closed after infinitely many kids?
+
+==> competition/tests/math/putnam/putnam.1967.s <==
+B4.  (a) Only lockers whose numbers have an odd number of factors will remain
+closed, which are the squares.
+

@@ -1,0 +1,477 @@
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!howland.erols.net!newsfeed.mathworks.com!europa.netcrusader.net!209.130.129.214!nntp.frontiernet.net!nntp.gblx.net!news.frontiernet.net!not-for-mail
+From: mwdaly@pobox.com (Matthew Daly)
+Newsgroups: rec.puzzles,rec.answers,news.answers
+Subject: [FAQ] rec.puzzles Frequently Asked Questions [weekly]
+Followup-To: poster
+Date: Mon, 19 Feb 2001 20:19:43 GMT
+Organization: Global Crossing Telecommunications
+Lines: 456
+Sender: UNKNOWN@209-130-218-248.nas1.roc.gblx.net
+Approved: news-answers-request@MIT.EDU
+Message-ID: <3a917fdb.598007569@news.frontiernet.net>
+Reply-To: mwdaly@pobox.com
+NNTP-Posting-Host: 209-130-218-248.nas1.roc.gblx.net
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Trace: node17.cwnet.frontiernet.net 982613968 53602 209.130.218.248 (19 Feb 2001 20:19:28 GMT)
+X-Complaints-To: abuse@frontiernet.net
+NNTP-Posting-Date: 19 Feb 2001 20:19:28 GMT
+X-Newsreader: Forte Agent 1.5/32.452
+Xref: senator-bedfellow.mit.edu rec.puzzles:150868 rec.answers:64637 news.answers:202268
+
+Archive-name: puzzles/faq
+Posting-frequency: weekly
+Rec-puzzles-archive-name: puzzles/faq
+Last-modified: Mon Jan 15 2001
+Version: 1.345
+
+Welcome to the rec.puzzles Frequently Asked Questions List.  The purpose
+of this article is to assist readers in determining if their puzzle is 
+appropriate for posting to rec.puzzles and to introduce new readers of 
+rec.puzzles to newsgroup etiquette.  
+
+This FAQ is maintained by Matthew Daly and posted weekly.  Questions and 
+comments about this FAQ should be e-mailed to mwdaly@pobox.com or posted 
+to rec.puzzles.
+
+----------------------------------------------------------------------
+
+0.  INTRODUCTION AND CONTENTS
+
+The rec.puzzles newsgroup is generally friendly, and the signal-to-noise
+ratio is quite high compared with many other Usenet newsgroups.  However,
+many rec.puzzles readers have a MAJOR PET PEEVE -- seeing the same puzzles
+(and the same answers, and the same discussions) over and over again.
+
+0.  Introduction and contents.
+1.  What you should do before you post a puzzle.
+2.  Frequently asked puzzles (specific).
+2.1.  You have 12 coins, one of which is either light or heavy....
+2.2.  What are the three common English words that end in -GRY?
+2.3.  What's the probability that my other child is a girl?
+2.4   The Monty Hall Puzzle (Should I switch doors?)
+2.5   You come upon a fork in the road....
+2.6   Four men are crossing a bridge....
+2.7   Albert Einsein's logic puzzle (Who owns the fish?)
+3.  Frequently asked puzzles (general).
+3.1.  Lateral Thinking (or Situation) puzzles.
+3.2.  Sequence puzzles.
+3.3.  English language records.
+3.4.  Paradoxes.
+3.5.  The Equation Analysis Test (26 = L. of the A.)
+4.  General posting guidelines
+4.1   Posting puzzle solutions.
+4.2   ObPuzzles
+4.3   Sport-flaming
+5.  Information about the rec.puzzles archive.
+5.1.  The e-mail archive server.
+5.2.  Getting to the archive by Internet, FTP, gopher, and WAIS.
+6.  Information about the rec.puzzles oracle.
+7.  Credit where credit is due.
+
+----------------------------------------------------------------------
+
+1.  WHAT YOU SHOULD DO BEFORE YOU POST A PUZZLE:
+
+If the puzzle that you want to post came from a photocopy, or an e-mail 
+from a friend, it is likely that the puzzle has been in rec.puzzles 
+before, perhaps even very recently.  Before you post any puzzle to 
+rec.puzzles, you should take the following steps to ensure that the puzzle
+is not a chestnut:
+
+   o  If you haven't read the articles that are regularly posted to the
+      newsgroup news.announce.newusers, please do so.  You will learn
+      about some general rules and principles that apply to virtually
+      all newsgroups, like a ban on posting most binary files and MIME
+      attachments, and sending e-mail instead of posting if your message 
+      is intended only for one person.
+
+   o  Read the newsgroup for at least a week (Reading for some time before
+      posting is proper etiquette for ANY Usenet newsgroup.  If you didn't
+      realize that, all the more reason for you to go back and read
+      news.announce.newusers.)
+
+   o  Read the FAQ, with particular focus on sections 2 and 3.
+
+   o  If you have access to a Usenet archive like http://www.deja.com
+      check some obvious keywords to see if your puzzle has been discussed
+      in the past several months.
+
+   o  Look through the rec.puzzles archive (see Section 5 below).
+
+   o  Ask the rec.puzzles oracle (see Section 6 below).
+
+If what you really want is not to pose your question for the puzzlement of
+rec.puzzles readers, but rather simply to find out the answer to the
+puzzle (presumably fairly quickly), you'll generally get a faster
+turnaround from the archives and/or the oracle than posting to the
+newsgroup.
+
+----------------------------------------------------------------------
+
+2.  FREQUENTLY ASKED PUZZLES (SPECIFIC):
+
+This section contains, short summaries of the most commonly occurring 
+puzzles on rec.puzzles.  Unless you have some devastatingly new twist or 
+observation on these puzzles, please don't post about it.
+
+Throughout this FAQ, the phrases between arrows ==> like this <== are the
+names of puzzles as they appear in the archive.  The stuff in [square
+brackets] is the name of the file you should look for, once you're in the
+rec.puzzles archive directory, if you are accessing the archive by ftp
+(see Section 5.2 below).  In general, the solutions given in the archive
+are much broader than those given here.
+
+2.1.  ==> balance <==   [logic/part5]
+You have 12 coins, one of which is counterfeit.  The counterfeit is
+indistinguishable from the rest except that it is either heavier or
+lighter (but you don't know which).  How can you determine which coin is
+the counterfeit in 3 weighings on a balance scale?
+
+One solution is to label the coins with the letters from FAKE MIND CLOT
+and weigh the coins:  MA DO -- LIKE, ME TO -- FIND, FAKE -- COIN.  Logic 
+will now suffice to find the odd coin.  For instance, if the results are 
+left down, balance, and left down, then coin "A" is heavy.
+
+2.2.  ==> gry <==   [language/part2]
+What are the three common English words that end in -GRY?
+
+There are only two: angry and hungry. The rec.puzzles archive offers a
+large collection of words that end in -GRY, but none of them could be
+considered even remotely common.
+
+There are many generally unsatisfying "trick" answers to the problem,
+which depend on a specific wording of the question or that the question be
+spoken instead of written.  There seems to be no agreement among puzzle
+historians about which form is the original, or even the age of the
+problem.  In any event, it is apparent that the frequent mutations of the
+puzzle statement over the years have erased whatever answer was intended
+by the original author.
+
+2.3.  ==> oldest.girl <==   [probability]
+If a person has two children, and truthfully answers yes to the question
+"Is at least one of your children a girl?", what is the probability that
+both children are girls?
+
+The answer is 1/3, assuming that it is equally likely that a child will be
+a boy or a girl.  Assume that the children are named Pat and Chris: the
+three cases are that Pat is a girl and Chris is a boy, Chris is a girl and
+Pat is a boy, or both are girls.  Since one of those three equally likely
+possibilities have two girls, the probability is 1/3.
+
+2.4.  ==> monty.hall <==   [decision]
+You're about to play on a game show.  There are three doors; behind one is
+a valuable prize, behind the other two, junk.  You'll get to choose a
+door, and then Monty Hall (who knows where the prize is) will open one of
+the other doors, showing you junk.  At that point, you'll have a chance to
+"switch" your choice to the remaining unopened door.  After that, you'll
+win whatever is behind the door you have chosen.  Should you switch?
+
+It is advantageous to switch: your probability of winning is 2/3 if you do
+so.  The probability that your first guess is wrong is 2/3, and switching 
+doors will gain you the prize if and only if your first guess was wrong.  
+
+2.5.  ==> fork.two.men <==  [logic/part4]
+Two men stand at a fork in the road.  One fork leads to Heaven; the other
+fork leads to Hell.  One of the men always answers the truth to any yes/no
+questions asked of him, the other always lies.  Can you find a question
+that will allow you to determine the road to Heaven?
+
+One method is to point to one of the paths and to ask either of the men
+"Would the other man confirm that this was the path to Heaven?"  It is the
+path to Heaven if and only if the man answers "no".
+
+2.6. ==> bridge.crossing <==   [decision/crossing]
+Four men are on one side of a rickety bridge on a dark night.  The bridge
+is only strong enough to support two men at a time.  It is also necessary
+for the men crossing the bridge to carry a lantern to guide their way, and
+the four men have only one lantern between them.  Andy can cross the
+bridge in 1 minute, Ben in 2, Charlie in 5, and Dan in ten minutes.  How
+quickly can all four men be together at the other side?
+
+The solution is surprising to some people because they initially suspect
+that it is fastest if Andy escorts everyone across because he can return
+the fastest.  However, a faster method requires only 17 minutes.  First,
+Andy and Ben cross (2 min), then Andy returns (1 min).  Then, Charlie and
+Dan cross (10 min) and Ben returns (2 min). Finally, Andy and Ben recross
+(2 min).  In short, you save two minutes by having the two slowest people
+cross the bridge in the same trip.
+
+2.7
+"This is a quiz written by Einstein in the last century.  He said that 98%
+of the world's population could not solve it...."  This is followed by a
+series of fifteen clues about five European men who live in houses of
+different houses, drink different beverages, smoke different cigarettes,
+and keep different pets.  Who keeps the fish?
+
+The German keeps the fish.  A detailed explanation is available at
+http://www.frontiernet.net/~mwdaly/recpuzzles/einstein.html.  For the
+record, Einstein didn't write the puzzle and far more than 2% of the
+world's population could solve it.
+
+----------------------------------------------------------------------
+
+3.  FREQUENTLY ASKED PUZZLES (GENERAL):
+
+This section gives information on some general categories of puzzles that
+pop up over and over again.
+
+3.1.  ==> situation.puzzles <==   [logic/part3 and logic/part4]
+A man walks into a bar, asks for a drink, the bartender points a gun at
+him, the man says "thank you" and leaves.
+
+The essence of these puzzles is that one person in a group answers a
+series of yes/no questions and the other people in the group attempt to
+piece together the circumstance that would lead to the posed situation.
+Over the years, rec.puzzles has referred to these as  "situation puzzles",
+although a suite of books by Paul Sloane has made the term "lateral
+thinking puzzles" more commonplace.
+
+Because very few of the lateral thinking puzzles posted to rec.puzzles are
+original and the structure of Usenet is not conducive to posting and
+answering yes/no questions, moderating contests of this sort in
+rec.puzzles is a bad idea.  Fortunately, Sloane manages a very popular
+website where several original puzzles are moderated at a time, at
+http://www.lateralpuzzles.com.  There is also a very complete list of
+puzzles kept by Jed Hartman at http://kith.org/logos/things/sitpuz/.
+
+The answer to the puzzle given above is that the man had the hiccups,
+intended to cure them by drinking a glass of water with his nose plugged,
+and was glad that the bartender scared him enough to cure him.
+
+3.2.  Sequence puzzles
+
+     O, T, T, F, F, S, ?               ==> series.06 <==   [series]
+     5, 6, 5, 6, 5, 5, 7, 6, ?         ==> series.21 <==   [series]
+     11, 21, 1211, 111221, ?	       ==> series.07 <==   [series]	
+     ...
+
+The problem with letter sequences is that we've seen most of them, quite
+possibly even that one you just thought of yourself.  Check out the 
+archive, in the general category "series", to make sure yours isn't there.
+
+The problem with number sequences is that there are infinitely many 
+formulas that will fit any finite sequence, and the concept of the most 
+"natural" formula is a subjective one.  Since number sequences always lead
+to this same discussion, it's best to avoid them in rec.puzzles.  
+
+A great service for tracking down number sequences is N.J.A. Sloane's
+On-Line Encyclopedia of Integer Sequences.  Visit them on the Web at
+http://www.research.att.com/~njas/sequences/eisonline.html.  For
+information on the e-mail server, send a blank message to
+sequences@research.att.com.
+
+The next term in the third series is 312211, since the previous term was
+"three 1's, two 2's, one 1".
+
+3.3.  English language records
+
+     What's the shortest sentence with all 26 letters?  ==> pangram <==
+     What's the longest one-syllable word?             ==> syllable <==
+                                (all of those are in: [language/part2])
+
+These and many other questions are answered under the general archive 
+category "language".  Keep in mind that everyone has a different concept 
+of what words comprise the English language, and which words are common.
+
+3.4.  Paradoxes
+
+==> unexpected <==   [logic/part5]
+Swedish civil defense authorities announced that a civil defense drill
+would be held one day the following week, but the actual day would be a
+surprise....
+
+==> envelope <==   [logic/part5]
+Someone has prepared two envelopes containing money. One contains twice as
+much money as the other. You have decided to pick one envelope, but you
+can then "prove" that the other envelope contains more money than the one
+you chose.
+
+Threads about these and other logical paradoxes tend to go on for a long
+time and can get nasty as people try to convince each other of the truth
+of their positions.  If you would like to start a thread about a paradox,
+please read the archive explanation first to see if that clears things up
+for you.  Whether you are reading or posting to one of these threads, 
+remember that there are many logical interpretations that are often 
+equally valid.  If there weren't, it wouldn't be a paradox, would it?
+
+3.5   The Equation Analysis Test
+
+==> equations <== [language/part1]
+    26 = L of the A  (Letters of the Alphabet)
+     3 = BM(SHTR)    (Blind Mice - See How They Run)
+    27 = NOEBTCGPWTCAAAAPOTBOEOEWEOWTBUAEAAG
+
+The original form of the Equation Analysis Test was first printed in the
+May/June 1981 issue of _Games_ Magazine, and has perhaps become the most
+photocopied quiz in history.  Posting the original quiz (which includes
+the first two examples) is unnecessary, as the archive includes all of the
+originals plus several hundred extra equations.  If you come up with your
+own set, it is on-topic to post them, although you want to be sure to
+follow-up with your solutions within a week because many of them are hard
+to guess with certainty.
+
+----------------------------------------------------------------------
+
+4.  GENERAL POSTING GUIDELINES
+
+This section describes several specific aspects of the culture of
+rec.puzzles that have developed over the years.  They are different
+enough from the general Usenet "netiquette" that people tend to 
+wonder what we're doing and why we're doing it.
+
+4.1  Posting puzzle solutions
+
+When someone posts a puzzle that you know the solution to, or better yet,
+a puzzle that you discover the solution to after hours of thinking, it's
+natural to want to post the solution to proclaim your achievement to the
+world. Such posts are called "spoilers".  There's nothing wrong with
+posting a spoiler, but certain guidelines should be followed.
+
+When you post a spoiler, you should include the warning [SPOILER] after
+you quote the puzzle, but before you include your solution.  (Some people
+also include [SPOILER] in the subject line of their post, although 
+changing subject lines makes it difficult for some to follow the thread of
+a discussion, so it is frowned upon.)  After the [SPOILER] flag, insert a 
+page break by pressing Ctrl-L; it should look like this: ^L. The page 
+break will cause many newsreaders to pause at that point and give the 
+reader a chance to move on to the next post if they'd rather wait before 
+reading your spoiler.  If your editor doesn't allow pagebreaks, 24 or more
+blank lines will do.
+
+4.2  ObPuzzles
+
+A facet of rec.puzzles culture that comes from the early days of
+Usenet is based on the notion that all posts should contain either the
+statement, solution, or specific commentary about puzzles.  In those
+nearly-forgotten days, if you wished to make a generally off-topic post,
+you would include an "Obligatory Puzzle" (or ObPuzzle, for short) to amend
+for whatever else you were writing about.  The practice of posting
+ObPuzzles continues, although the necessity for it has disappeared to the
+point that posting a frequently-seen puzzle as an ObPuzzle would be
+considered more rude than making a simple off-topic post.  
+
+4.3  Sport-flaming
+
+One of the entertaining pastimes of rec.puzzles is "sport-flaming", where
+the regulars attempt to enliven a puzzle by taking advantage of poor
+wording or by simply making it clear that the puzzle poster should have
+read the FAQ or checked the archives before posting.  If you have been
+sport-flamed, please don't take it personally, and PLEASE don't start a
+real flame war over it. Nobody is trying to force you from the newsgroup:
+it's merely a good-natured way of pointing out that you should have been
+more cautious before posting.  When you've been around for a couple
+months, you'll understand why, and if you've seen netcops in other Usenet
+groups, you will probably appreciate our more entertaining style.  On the
+other hand, if you come to decide that this is too restrictive for your
+taste, you might enjoy alt.brain.teasers, which is a less structured
+puzzle newsgroup.  Also, keep in mind that more ordinary flames, like
+other discussion that has nothing to do with puzzles or puzzling, is
+tacky and frowned upon.
+
+----------------------------------------------------------------------
+
+5.  THE rec.puzzles ARCHIVE
+
+The rec.puzzles archive is a treasure trove of puzzles and their
+solutions.  Maintained by Chris Cole, the archive currently contains over
+500 puzzles, including those mentioned in this FAQ, and others of many
+varieties.  (It is not, as the name might suggest, an archive of all posts
+made to rec.puzzles.)
+
+Corrections to and comments on archive entries should be e-mailed to
+archive-comment@questrel.com.  Discussion of the solutions in the archive
+is generally welcomed in rec.puzzles.
+
+5.1.  The e-mail archive server
+
+The easiest way to figure out the archive is to get and read the index.
+The index contains descriptions of all of the puzzles in the archive and
+instructions for receiving individual puzzles.  To request a copy of the
+index, send e-mail to archive-request@questrel.com, with a body that looks
+like this (assuming you were the President of the United States):
+
+return_address president@whitehouse.gov
+send index
+
+The version of the archive that is available via e-mail is guaranteed to
+be the most current.
+
+5.2.  Getting to the archive by Internet, FTP, gopher, or WAIS
+
+Internet
+http://ce.et.tudelft.nl/~arlet/puzzles/
+    Partially HTMLized.
+http://alabanza.com/kabacoff/Inter-Links/puzzles.html
+http://xraysgi.ims.uconn.edu
+    A keyword search plus links to other puzzle sites
+
+FTP
+
+The entire archive is also accessible via anonymous FTP, from any site
+which maintains archives of the newsgroups news.answers or rec.answers.
+The file part01 contains the index.  The remaining files contain
+alternating problem text and solution text for all the puzzles.
+
+Some FTP sites are:
+
+    North America:
+ftp://rtfm.mit.edu/pub/usenet/news.answers/puzzles/archive
+ftp://ftp.uu.net/usenet/news.answers/puzzles/archive
+ftp://mirrors.aol.com/pub/rtfm/usenet/news.answers/puzzles/archive
+ftp://ftp.cis.ksu.edu/pub/mirrors/news.answers/puzzles/archive
+
+    Europe:
+ftp://ftp.cs.ruu.nl/pub/NEWS.ANSWERS/puzzles/archive
+ftp://src/doc.ic.ac.uk/usenet/news-faqs/news.answers/puzzles/archive
+ftp://uni-paderborn.de/doc/FAQ/rec/puzzles
+
+    Asia:
+ftp://ftp.hk.super.net/mirror/faqs/puzzles/archive
+
+GOPHER
+
+>From the global home page, the menu choices to access the archives at 
+"cs.ttu.edu" are:
+     North America/USA/Texas/Texas Tech University, Computer Sciences
+     /Entertainment/Games/Puzzles
+To access "uni-hohenheim.de" your menu choices are:
+     Europe/Germany/University of Hohenheim/Lots of Interesting Stuff
+     /FAQ Frequently Asked Questions/rec/puzzles/archive
+
+WAIS
+
+wais://xraysgi.ims.uconn.edu:8000/rpa
+
+----------------------------------------------------------------------
+
+6.  THE rec.puzzles ORACLE
+
+This is a group of rec.puzzles regulars, who are familiar with the
+rec.puzzles archive, and who will find your answer there if it exists, or
+maybe compose an original answer if they are interested enough!  At any
+rate, they promise to respond to your question within two days, and
+perhaps save you the embarrassment of posting a well-worn puzzle.  They
+will respond even if they do not know the answer to your question.
+
+To query the rec.puzzles oracle, send e-mail containing your question to
+puzzle-oracle@questrel.com.  Comments and suggestions are always welcome
+at the same address.
+
+----------------------------------------------------------------------
+
+7.  CREDIT WHERE CREDIT IS DUE
+
+The first rec.puzzles FAQ was written by Tom Magliery.  Many thanks to him
+for all his hard work putting it together.  Thanks also to Jonathan Haas, 
+who began the tradition of posting the FAQ weekly. 
+
+---
+Matthew Daly  mwdaly@pobox.com  http://www.frontiernet.net/~mwdaly/
+
+I am just like any law-abiding tax-paying citizen, except that I 
+don't obey laws or pay taxes.  - Mojo Jojo
+
+Though he is a person to whom things do not happen, perhaps they 
+may when he is on the other side.  -Edward Gorey

@@ -1,0 +1,312 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id AAA23737; Sat, 27 Apr 1996 00:58:59 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA27056; Sat, 27 Apr 96 00:38:02 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id VAA20254; Fri, 26 Apr 1996 21:38:39 -0700
+Date: Fri, 26 Apr 1996 21:38:39 -0700
+X-Mail-Submission-From: chris@questrel.questrel.com (Chris Cole)
+Message-Id: <199604270438.VAA20254@questrel.questrel.com>
+To: news-answers-request@MIT.EDU
+Reply-To: chris@questrel.questrel.com
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!gatech!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (geometry), part 14 of 35
+Message-ID: <puzzles/archive/geometry/part2_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:05:22 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 280
+Xref: senator-bedfellow.mit.edu rec.puzzles:25003 news.answers:11523 rec.answers:1923
+
+Archive-name: puzzles/archive/geometry/part2
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> geometry/tiling/rectangles.with.squares.p <==
+Given two sorts of squares, (axa) and (bxb), what rectangles can be tiled?
+
+==> geometry/tiling/rectangles.with.squares.s <==
+A rectangle can be tiled with (axa) and (bxb) squares,   iff
+
+(i) gcd(a,b)=1 , and any of the following hold:
+
+either:  both sides of the rectangle are multiples of a;
+    or:  both sides of the rectangle are multiples of b;
+    or:  one side is a multiple of (ab), and the other is any length EXCEPT
+         one of a finite number of "bad" lengths: those numbers which are
+         NOT positive integer combinations of a & b. { By Sylvester's theorem
+         there are (a-1)(b-1)/2 of these, the largest being (a-1)(b-1)-1. }
+
+(ii) gcd(a,b) = d . 
+     Then merely apply (i) to the problem with a,b replaced
+     by a/d, b/d  and the rectangle lengths also divided by d.
+     i.e.  all cells must appear in (dxd) subsquares.
+
+------
+PROOF
+It is clear that (ii) follows from (i), and that simple constructions give
+the "if" part of (i). For the "only if" part, we prove that...
+
+(S) If one side of the rectangle is not divisible by a, and the other is
+    not divisible by b, then the tiling is impossible.
+
+The results in (i) follow immediately from (S).
+
+To prove (S):  ( Chakraborty-Hoey style ).
+                 ~~~~~~~~~~~~~~~~
+Let the width of the rectangle be a NON-(a-multiple). Then the number of
+bxb squares starting (i.e. top edge) at row 1 must be a NON-a-multiple.
+Thus the number of bxb starting at row 2 must BE an a-multiple. Similarly
+for the number starting at rows 3,4,...,b . Then the number starting at
+row (b+1) must be a NON-a-multiple again.
+
+Similarly the number starting at rows (2b+1), (3b+1), (4b+1),... must all be
+non-a-multiples. So if the number of rows is NOT a multiple of b, (call it
+bx+r), then row (bx+1) must have a NON-a-multiple of bxb squares starting
+there, i.e. at least one, and there is no room left to squeeze it in.     [QED]
+----
+
+A Rickard-style proof of (S) is    ..BBB....BBWWW...WBBB....BBWWW...W(..etc)
+  ~~~~~~~   also possible, by      ..BBB....BBWWW...WBBB....BBWWW...W
+coloring the rectangle in          ..BBB....BBWWW...WBBB....BBWWW...W
+vertical strips as shown here:       <-  a  ->< b-a ><-  a  ->< b-a >
+
+Every square tile covers an a-multiple of black squares. But if the width
+is a NON-b-multiple, and the number of rows is a NON-a-multiple, then there
+are a NON-a-multiple of black squares in total.    [QED]
+
+(Note: the coloring must have 1 column of blacks on the right, and any
+ ====     spare columns of whites on the left.)
+
+===================
+
+Bill Taylor.            wft@math.canterbury.ac.nz
+
+>A Rickard-style proof of (S) is    ..BBB....BBWWW...WBBB....BBWWW...W(..etc)
+>  ~~~~~~~   also possible, by      ..BBB....BBWWW...WBBB....BBWWW...W
+>coloring the rectangle in          ..BBB....BBWWW...WBBB....BBWWW...W
+>vertical strips as shown here:       <-  a  ->< b-a ><-  a  ->< b-a >
+>
+>Every square tile covers an a-multiple of black squares. But if the width
+>is a NON-b-multiple, and the number of rows is a NON-a-multiple, then there
+>are a NON-a-multiple of black squares in total.    [QED]
+>
+>(Note: the coloring must have 1 column of blacks on the right, and any
+> ====     spare columns of whites on the left.)
+
+This statement of how to position the colouring isn't good enough, I'm
+afraid. Take a=4, b=7 and consider e.g. a 19x10 rectangle. Coloured your
+way, you get:
+
+    BWWWBBBBWWWBBBBWWWB
+    BWWWBBBBWWWBBBBWWWB
+    :::::::::::::::::::
+    BWWWBBBBWWWBBBBWWWB
+    BWWWBBBBWWWBBBBWWWB
+
+The result has 10*10=100 black squares in it, which *is* a multiple of a=4,
+despite the fact that 19 is not a multiple of 7 and 10 is not a multiple of
+4.
+
+Of course, there is an alternative offset for the pattern that does give you
+the result you want:
+
+    WWBBBBWWWBBBBWWWBBB
+    WWBBBBWWWBBBBWWWBBB
+    :::::::::::::::::::
+    WWBBBBWWWBBBBWWWBBB
+    WWBBBBWWWBBBBWWWBBB
+
+To show this happens in general: because the width of the rectangle is a
+non-multiple of b, it is possible to position it on the pattern so that the
+leftmost column in the rectangle is white and the column just right of the
+right edge of the rectangle is black. Suppose N columns are black with this
+positioning. Then the rectangle contains N*H black cells, where H is the
+height of the rectangle.
+
+If we then shift the rectangle right by one, the number of black columns
+increases by 1 and it contains (N+1)*H black cells. The difference between
+these two numbers of black cells is H, which is not a multiple of a.
+Therefore N*H and (N+1)*H cannot both be multiples of a, and so one of these
+two positionings of the pattern will suit your purposes.
+
+David Seal
+dseal@armltd.co.uk
+
+==> geometry/tiling/scaling.p <==
+A given rectangle can be entirely covered (i.e. concealed) by an
+appropriate arrangement of 25 disks of unit radius.
+
+Can the same rectangle be covered by 100 disks of 1/2 unit radius?
+
+==> geometry/tiling/scaling.s <==
+Yes.  The same configuration of circles, when every distance is reduced
+by half (including the diameters), will cover a similar rectangle whose
+sides are one half of the original one.  The original rectangle is the
+union of four such rectangles.
+
+==> geometry/tiling/seven.cubes.p <==
+Consider 7 cubes of equal size arranged as follows. Place 5 cubes so
+that they form a Swiss cross or a + (plus) (4 cubes on the sides and
+1 in the middle). Now place one cube on top of the middle cube and the
+seventh below the middle cube, to effectively form a 3-dimensional
+Swiss cross.
+
+Can a number of such blocks (of 7 cubes each) be arranged so that they
+are able to completely fill up a big cube (say 10 times the size of
+the small cubes)? It is all right if these blocks project out of the
+big cube, but there should be no holes or gaps.
+
+==> geometry/tiling/seven.cubes.s <==
+Let n be a positive integer.  Define the function f from Z^n to Z by
+f(x) = x_1+2x_2+3x_3+...+nx_n.  For x in Z^n, say y is a neighbor of x
+if y and x differ by one in exactly one coordinate.  Let S(x) be the
+set consisting of x and its 2n neighbors.  It is easy to check that
+the values of f(y) for y in S(x) are congruent to 0,1,2,...,2n+1 (mod
+2n+1) in some order.  Using this, it is easy to check that every y in
+Z^n is a neighbor of one and only one x in Z^n such that f(x) is
+congruent to 0 (mod 2n+1).  So Z^n can be tiled by clusters of the
+form S(x), where f(x) is congruent to 0 mod 2n+1.
+
+==> geometry/topology/fixed.point.p <==
+A man hikes up a mountain, and starts hiking at 2:00 in the afternoon
+on a Friday.  He does not hike at the same speed (a constant rate), and
+stops every once in a while to look at the view.  He reaches the top in
+4 hours.  After spending the night at the top, he leaves the next day
+on the same trail at 2:00 in the afternoon.  Coming down, he doesn't
+hike at a constant rate, and stops every once in a while to look at the
+view.  It takes him 3 hours to get down the mountain.
+
+Q: What is the probability that there exists a point along the trail
+that the hiker was at on the same time Friday as Saturday?
+
+You can assume that the hiker never backtracked. 
+
+==> geometry/topology/fixed.point.s <==
+100%.  Superimpose the days:  Friday starts walking up at 2:00,
+Saturday starts walking down at 2:00.   Since they are on the same
+path, they must meet.
+
+==> geometry/touching.blocks.p <==
+Can six 1x2x4 blocks be arranged so that each block touches n others, for all n?
+
+==> geometry/touching.blocks.s <==
+n=0: 6 separate blocks
+n=1: 3 pairs
+n=2: 2 threesomes
+n=3: a 3x3 grid
+n=4: a box (each sides touches the four adjoining sides, but not the opposite)
+n=5:
+
+Crude ascii:
+Front view:                  Side view:
+
+         /\  /\               ----- 
+        /  \/  \              | | |
+       /   /\   \             | | |
+      /   /  \   \            | | |
+      \  /----\  /         ---|.|.|---
+       \/|    |\/          |  | | |  |
+      -----------          -----------
+      |         |             |   |
+      -----------             -----
+
+-- 
+stein.kulseth@tf.tele.no [X.400] stein.kulseth@nta.no [internet]
+
+Place block A onto the x-y plane so that four of its corners are at
+(0,0), (0,1), (4,0), (4,1) (I give x and y coordinates only because
+the z coordinate will always be obvious).  Place block B so four of
+its corners are at (2,1), (2,2), (6,1), (6,2).  Now place block C with
+one 4x1 face on the x-y plane with one corner at (0,1) (tangent to
+block A) and tangent to block B at (2,1).  Note that the angle between
+block A and block C is arctan(1/2), and a corner of block C will be at
+a point with approximate coordinates (3.5777, 2.7888).  Call this
+point P.
+
+Now place an identical configuration of blocks on top of the first
+three as follows: block D with corners at (3.4,0.4), (4.4,0.4),
+(3.4,4.4), (4.4,4.4), block E with corners at (2.4,2.4), (3.4,2.4),
+(2.4,-1.6), (3.4,-1.6), and block F with one corner tangent to D at
+(3.4,4.4) and one side tangent to E at (2.4,2.4).
+
+If you have been plotting this on graph paper, then the following
+will be clear:
+
+Every block touches every other in its own layer.  And A and B each
+touch D and E, and block C touches F.  Point P falls under block D, so
+blocks C and D touch, and by symmetry so do blocks F and A.  And the
+edge of block C intersects the edge of block E at (2.4,2.2) so blocks
+C and E touch, and by symmetry so do blocks F and B.  Done!
+
+-- David Karr (karr@cs.cornell.edu)
+
+All the blocks are placed with their 2x4 face UP, although any face up
+would have worked, as it turns out.  The blocks are called AAAA BBBB CCCC,
+etc.
+
+      AAAA
+      AAAA /_______
+      BBCC \
+      BBCC
+      BBCC
+      BBCC
+       /\
+       ||
+
+The two arrows point to the intersection of AC and BC.
+
+Now take block "D" and place the top edge along the diagonal (between the
+two arrows) so that the block extends SOUTH EAST of the line.  Likely now
+the block does not touch either A or B.  So slide the block towards the
+NORTH WEST so that it just touches A and B.  You can now easily place
+blocks E and F perpendicular to block "D" so that they both touch all of
+ABC.....QED
+-- 
+Guy Cousineau
+
+==> geometry/trigonometry/euclidean.numbers.p <==
+For what numbers x is sin(x) expressible using only integers, +, -, *, / and
+square root?
+
+==> geometry/trigonometry/euclidean.numbers.s <==
+Numbers generated by +, -, *, /, and sqrt from the integers are the
+Euclidean numbers, so called because they are those for which line
+segments can be constructed by use of straightedge and compass the
+ratio of whose lengths has that value.
+
+Using degrees, sin (360*M/N) (where (M,N)=1) is Euclidean if and only
+if the regular polygon with N sides can be constructed by straightedge
+and compass. This is true if (Gauss) and only if (easier) N is a power
+of 2 times the product of different Fermat primes (3, 5, 17, 257, 65537
+and probably no more). So sin (3/17) = sin (360/(2^3*3*5*17)) is
+Euclidean, for example.
+
+Some particular values:
+
+sin(54) = (1 + sqrt(5))/4  
+sin(3) = sqrt(8 - sqrt(3) - sqrt(15) - sqrt(10 - 2*sqrt(5)))/4
+
+==> geometry/trigonometry/inequality.p <==
+Show that (sin x)^(sin x) < (cos x)^(cos x) when 0 < x < pi/4.
+
+==> geometry/trigonometry/inequality.s <==
+The function f(x) = x^(1/sqrt(1-x^2)) is monotonically increasing for
+0 < x < 1, easily verified by taking the derivative. 
+Since 0 < sin x < cos x < 1 for 0 < x < pi/4, f(sin x) < f(cos x).
+But f(sin x) = (sin x)^(1/cos x) and f(cos x) = (cos x)^(1/sin x).
+Raising both sides to the power (cos x.sin x), we get the desired
+result.
+

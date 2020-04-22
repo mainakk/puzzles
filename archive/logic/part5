@@ -1,0 +1,1350 @@
+Received: from MIT.EDU (PACIFIC-CARRIER-ANNEX.MIT.EDU [18.69.0.28]) by bloom-picayune.MIT.EDU (8.6.13/2.3JIK) with SMTP id PAA05127; Sat, 20 Apr 1996 15:09:33 -0400
+Received: from [199.164.164.1] by MIT.EDU with SMTP
+	id AA15782; Sat, 20 Apr 96 14:12:20 EDT
+Received: by questrel.questrel.com (940816.SGI.8.6.9/940406.SGI)
+	for news-answers-request@mit.edu id LAA25252; Sat, 20 Apr 1996 11:13:19 -0700
+Newsgroups: rec.puzzles,news.answers,rec.answers
+Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!spool.mu.edu!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!questrel!chris
+From: chris@questrel.questrel.com (Chris Cole)
+Subject: rec.puzzles Archive (logic), part 26 of 35
+Message-Id: <puzzles/archive/logic/part5_745653851@questrel.com>
+Followup-To: rec.puzzles
+Summary: This is part of an archive of questions
+ and answers that may be of interest to
+ puzzle enthusiasts.
+ Part 1 contains the index to the archive.
+ Read the rec.puzzles FAQ for more information.
+Sender: chris@questrel.questrel.com (Chris Cole)
+Reply-To: archive-comment@questrel.questrel.com
+Organization: Questrel, Inc.
+References: <puzzles/archive/Instructions_745653851@questrel.com>
+Date: Wed, 18 Aug 1993 06:06:26 GMT
+Approved: news-answers-request@MIT.Edu
+Expires: Thu, 1 Sep 1994 06:04:11 GMT
+Lines: 1322
+Xref: senator-bedfellow.mit.edu rec.puzzles:25010 news.answers:11530 rec.answers:1930
+Apparently-To: news-answers-request@mit.edu
+
+Archive-name: puzzles/archive/logic/part5
+Last-modified: 17 Aug 1993
+Version: 4
+
+
+==> logic/smullyan/priest.p <==
+In a small town there are N married couples in which one of the pair
+has committed adultery.  Each adulterer has succeeded in keeping their
+dalliance a secret from their spouse.  Since it is a small town,
+everyone knows about everyone else's infidelity.  In other words, each
+spouse of an adulterer thinks there are N - 1 adulterers, but everyone
+else thinks there are N adulterers.
+
+People of this town have a tradition of denouncing their spouse in
+church if they are guilty of adultery.  So far, of course, no one has
+been denounced.  In addition, people of this town are all amateur
+logicians of sorts, and can be expected to figure out the implications
+of anything they know.
+
+A priest has heard the confession of all the people in the town, and is
+troubled by the state of moral turpitude.  He cannot break the
+confessional, but knowing of his flock's logical turn of mind, he hits
+upon a plan to do God's work.  He announces in Mass one Sunday that
+there is adultery in the town.
+
+Is the priest correct?  Will this result in every adulterer being denounced?
+
+==> logic/smullyan/priest.s <==
+Yes.  Let's start with the simple case that N = 1.  The offended spouse
+reasons as follows: the priest knows there is at least one adulterer,
+but I don't know who this person is, and I would if it were anyone
+other than me, so it must be me.  What happens if N = 2?  On the first
+Sunday, the two offended spouses each calmly wait for the other to get
+up and condemn their spouses.  When the other doesn't stand, they
+think:  They do not think that they are a victim.  But if they do not
+think they are victims, then they must think there are no adulterers,
+contrary to what the priest said.  But everyone knows the priest speaks
+with the authority of God, so it is unthinkable that he is mistaken.
+The only remaining possibility is that they think there WAS another
+adulterer, and the only possibility is: MY SPOUSE!  So, they know that
+they too must be victims.  So on the next Sunday, they will get up.
+What if N = 3?  On the first Sunday, each victim believes that the other
+two will not get up because they did not know about the other person
+(in other words, they believe that each of the two other victims thought
+there was only one adulterer).  However, each victim reasons, the two
+will now realize that there must be two victims, for the reasons given
+under the N = 2 case above.  So they will get up next Sunday.  This
+excuse lasts until the next Sunday, when still no one gets up, and now
+each victim realizes that either the priest was mistaken (unthinkable!)
+or there are really three victims, and I am ONE!  So, on the third
+Sunday, all three get up.  This reasoning can be repeated inductively
+to show that no one will do anything (except use up N - 1 excuses as to
+why no one got up) until the Nth Sunday, when all N victims will arise
+in unison.
+
+The induction can also be run "top down" on the priest's statement.  What
+must everyone believe about what everyone else believes?
+N victims of adultery believe there are N - 1 victims, and that all of these
+ N - 1 victims believe that there are N - 2 victims, and that all of these
+  N - 2 victims believe that there are N - 3 victims, and that all of these
+  ...
+   2 victims believe that there is 1 victim, and that this
+    1 victim believes there are no victims.
+Suppose the priest says, "There are N adulterers in this town."  Then
+all the adulterers will know immediately that their spouses have been
+unfaithful, and will denounce them the next Sunday.  Now, suppose the
+priest says, "There are at least N - 1 adulterers in this town."  On
+the first Sunday, the offended spouses all wait for each other to stand
+up.  When none do, they all know that they have all been horribly
+mistaken, and they stand up on the following Sunday.  But what if the
+priest says, "There are at least N - 2 adulterers in this town."  On
+the first Sunday, the victims reason, those N - 1 victims are going to
+be surprised when no one stands up, and they'll stand up next Sunday.
+On the second Sunday, the victims reason, wait a minute, since they
+didn't stand up, I must be one of the deluded victims.  And everyone
+stands up on the third Sunday.  This resoning applies inductively,
+adding one Sunday at each step, until the priest's original statement
+is reached, which takes N Sundays for everyone to unravel.
+
+By the way, the rest of the town, which thinks there are N adulterers,
+is about to conclude that their perfectly innocent spouses have been
+unfaithful too.  This includes the adulterous spouses, who are about to
+conclude that the door swings both ways.  So the priest is playing a
+dangerous game.  A movie plot in there somewhere?
+
+This problem is an analogue of the "dirty children" problem discussed in
+the seminal paper on common knowledge by Halpern and Moses (JACM 1990).
+
+If the information of each victim is less than perfect, the problem is
+related to the "frame" problem of AI, cf. J. M. McCarthy & P. J. Hayes,
+"Some philosophical problems from the standpoint of artificial intelligence"
+(1968) in _Readings in Artificial Intelligence_ (pp. 431-450),
+Tioga Publishing Co., Palo Alto, CA (1981).
+
+==> logic/smullyan/stamps.p <==
+The moderator takes a set of 8 stamps, 4 red and 4 green, known to the
+logicians, and loosely affixes two to the forehead of each logician so that
+each logician can see all the other stamps except those 2 in the moderator's
+pocket and the two on her own head.  He asks them in turn
+if they know the colors of their own stamps:
+  A: "No"
+  B: "No"
+  C: "No"
+  A: "No
+  B: "Yes"
+  What are the colors of her stamps, and what is the situation?
+
+==> logic/smullyan/stamps.s <==
+B says: "Suppose I have red-red. A would have said on her 
+second turn: 'I see that B has red-red. If I also have red-red, then all
+four reds would be used, and C would have realized that she had green-green.
+But C didn't, so I don't have red-red.  Suppose I have green-green. In that
+case, C would have realized that if she had red-red, I would have seen
+four reds and I would have answered that I had green-green on my first
+turn.  On the other hand, if she also has green-green [we assume that
+A can see C; this line is only for completeness], then B would have seen
+four greens and she would have answered that she had two reds.  So C would
+have realized that, if I have green-green and B has red-red, and if
+neither of us answered on our first turn, then she must have green-red.
+  "'But she didn't. So I can't have green-green either, and if I can't have 
+green-green or red-red, then I must have green-red.'
+  So B continues: "But she (A) didn't say that she had green-red, so
+the supposition that I have red-red must be wrong.  And as my logic applies
+to green-green as well, then I must have green-red."
+  So B had green-red, and we don't know the distribution of the others
+certainly.
+  (Actually, it is possible to take the last step first, and deduce
+that the person who answered YES must have a solution which would work
+if the greens and reds were switched -- red-green.)
+
+==> logic/supertasks.p <==
+You have an empty urn, and an infinite number of labeled balls.  Each
+has a number written on it corresponding to when it will go in.  At a
+minute to the hour, you take the first ten balls and put them in the
+urn, and remove the last ball.  At the next half interval, you put in
+the next ten balls, and remove ball number 20.  At the next half
+interval, you put in ten more balls and remove ball 30.  This continues
+for the whole minute.... how many balls are in the urn at this point?
+(infinite)
+
+You have the same urn, and the same set of balls.  This time, you put
+in 10 balls and remove ball number 1.  Then you put in another ten
+balls and remove ball number 2.  Then you put in another ten balls and
+remove ball number 3.  After the minute is over, how many balls are
+left in the urn now? (zero)
+
+Are the above answers correct, and why or why not?
+
+==> logic/supertasks.s <==
+Almost all people will intuitively feel that the first experiment
+(where only balls labeled with multiples of 10 are removed) results in
+an urn with an infinite number of balls.
+
+The real excitement starts with the experiment where balls are removed
+in increasing order, but 10 times slower than they are added.  Some
+feel that the urn will not get empty, due to the slowness of removing.
+Some others feel that the urn does get empty, since each ball is
+removed at some time during the experiment.  The remaining people claim
+that the experiment is not well defined, that it is not possible to do
+something an infinite number of times, or something similar,
+effectively dismissing the experiment.
+
+Just to put a bit of doubt in some peoples mind, I will add a third experment:
+
+  Let us suppose that at 1 minute to 12 p.m. balls nummbered 1 through 9
+  are placed in the urn, and instead of withdrawing a ball we add a zero
+  to the label of ball number 1 so that its label becomes 10. At 1/2 minute
+  to 12 p.m., balls numbered 11 through 19 are placed in the urn, and we
+  add a zero to the label of ball number 2 so that it becomes ball number 20.
+  At 1/4 minute to 12 p.m., balls numbered 21 through 29 are placed in the
+  urn and ball number 3 becomes ball number 30, and so on.
+  At each instant, instead of withdrawing the ball with the smallest label
+  we add a zero to its label so that its number is multiplied by 10.
+  How many balls are in the urn at 12 p.m. and what are their labels?
+
+If we look at this experiment, at any point in time the inside of the
+urn looks exactly like the inside during the execution of the original
+paradoxical experiment. However, since no balls leave the urn, it is
+now impossible to conclude that the urn will be empty at 12 p.m.
+Still, there is no natural number that is the label of any ball in the
+urn.  Instead, each ball in the urn will have as its lable a natural
+number followed by an infinite number of zero's.
+
+A possible question is now: does this support that the outcome of the
+original experiment where balls are removed in increasing order is that
+there are an infinite number of balls in the urn? Possibly also with
+'infinite natural numbers' as their labels, or are these experiments so
+different that the answer is still a clear 'zero'?
+
+I now come to the main points. 
+1. Our normal mathematical models do not cater for the COMPLETION of infinite
+   tasks (called super tasks by Thomson in 1954).
+2. Since we intuitively feel that for many of these experiments there
+   are obvious outcomes, we would like to enhance our model to describe the
+   outcomes of these experiments.
+3. In the enhancement of the model continuity should play an important role.
+
+We include statement 3, since a model in which the conclusion of all
+these experiments is that, at 12 p.m. the urn contains "exactly 7
+balls, all red" is not desirable, nor useful.
+
+It can be easily shown that general continuity is unattainable. For
+instance the sentence "it is before midnight" is true during the
+experiment, but is suddenly false after the experiment.
+
+The people claiming that in the second experiment the urn will contain
+an infinite number of balls, base this on the fact that the number of
+balls in the urn during the experiment, is 9n at (1/2)^(n-1) minute
+before 12. They thus assume that this statement is continuous. This
+remains to be seen, however.
+
+We have not come to a clear set of criteria which decide whether a
+given statement is continuous with respect to performing supertasks. We
+did define a "kinematical principle of continuity", which is roughly
+formalised as:
+
+	If at some moment before 12 p.m. a ball comes to rest at a particular
+	position, which it does not leave till 12 p.m., then it is still at
+	that position at 12 p.m.
+
+If we look at the three experiments mentioned, then we can see that in
+each case we can come to a conclusion on the contents of the urn.
+
+1. In the first experiment, with the 10-folds being removed, each ball
+   which number is a multiple of 10 comes to rest outside the urn (just
+   after being removed) and thus is outside the urn at 12 p.m. All other
+   balls come to rest inside the urn (just after being placed there), and
+   thus are inside the urn at 12 p.m.  Therefore the urn contains an infinite
+   number of balls at 12 p.m.
+
+2. In the second experiment, with the balls being removed in increasing order, 
+   each balls comes to rest outside the urn. Thus all balls involved are not
+   in the urn. Thus the urn is empty.
+
+3. In the third experiment, all balls come to rest inside the urn and thus the
+   urn contains an infinite number of balls. The labels of these balls are
+   naturall number followed by an infinite number of zero's (since each of the
+   numbers is not changed, and zero's once added remain at the label, we can
+   draw this conclusion).
+
+The first and third experiment are rather straightforward, while the
+second is paradoxical, but not inconsistent.  Please note that is just
+one way of extending our model to include super tasks.  We have only
+shown that for these experiments, in our model, we come to consistent
+conclusions. It does not mean that there are no other models which lead
+to different, but also, within that model, consistent solutions.
+
+A final remark: while thinking about these matters, we have wondered
+whether we could create a model in which the second experiment would
+lead to an urn containing an infinite number of balls. A possibility is
+assuming that if a position is continuously occupied by a ball,
+although the occupant ball may be swapped every now and again for
+another ball, that at 12 p.m. the position is occupied by a so-called
+LIMIT BALL.  For the second experiment we could than place balls 1, 10,
+100 ..  2, 20, 200, .. each at its own spot in the urn. Each spot in
+the urn, once occupied is than continuously occupied with a ball,
+leading to limit balls.
+
+This idea of continuity is stronger than the kinematic principle
+suggested above, and we have not followed these ideas up enough to
+decide whether this extended principle can be made consistent. If any
+of the readers have feelings whether this can or cannot be done, I
+would be interested to hear their arguments.
+
+I conclude by stating that the result of the super task depends on how
+our standard models are enlarged to include the execution of
+supertasks. We have given one extension which leads to consistent
+results for the supertasks suggested by Ross. Other models may lead to
+different, but also consistent, conclusions.
+
+Reference:
+
+Victor Allis and Teunis Koetsier (1991).
+On Some Paradoxes of the Infinite.
+Brit. J. Phil. Sci. 42 pp. 187-194.
+
+-- allis@cs.rulimburg.nl (Victor Allis)
+
+I am interested in the origin of the puzzle.  As far as I know in this
+form the puzzle occurs for the first time in Littlewood's "Mathematical
+Miscellanea", which is an amusing little booklet from the 1950s (it may
+be even older). Littlewood does not discuss the puzzle.  DOES ANYONE
+KNOW OF EARLIER REFERENCES TO THIS PUZZLE?  The puzzle also occurs in
+S. Ross's "A first course in probability", New York and London, 1988,
+without critical comment.
+
+-- teun@cs.vu.nl (Teun Koetsier)
+
+==> logic/timezone.p <==
+Two people are talking long distance on the phone; one is in an East-
+Coast state of the US, the other is in a West-Coast state of the US.
+The first asks the other "What time is it?", hears the answer, and
+says, "That's funny.  It's the same time here!"
+
+==> logic/timezone.s <==
+One is in Eastern Oregon (in Mountain time), the other in
+Western Florida (in Central time), and it's daylight-savings
+changeover day at 1:30 AM.  
+
+==> logic/unexpected.p <==
+Swedish civil defense authorities announced that a civil defense drill would
+be held one day the following week, but the actual day would be a surprise.
+However, we can prove by induction that the drill cannot be held.  Clearly,
+they cannot wait until Friday, since everyone will know it will be held that
+day.  But if it cannot be held on Friday, then by induction it cannot be held
+on Thursday, Wednesday, or indeed on any day.
+
+What is wrong with this proof?
+
+==> logic/unexpected.s <==
+This problem has generated a vast literature (see below).  Several
+solutions of the paradox have been proposed, but as with most paradoxes
+there is no consensus on which solution is the "right" one.
+
+The earliest writers (O'Connor, Cohen, Alexander) see the announcement as
+simply a statement whose utterance refutes itself.  If I tell you that I
+will have a surprise birthday party for you and then tell you all the
+details, including the exact time and place, then I destroy the surprise,
+refuting my statement that the birthday will be a surprise.
+
+Soon, however, it was noticed that the drill could occur (say on Wednesday),
+and still be a surprise.  Thus the announcement is vindicated instead of
+being refuted.  So a puzzle remains.
+
+One school of thought (Scriven, Shaw, Medlin, Fitch, Windt) interprets
+the announcement that the drill is unexpected as saying that the date
+of the drill cannot be deduced in advanced.  This begs the question,
+deduced from which premises?  Examination of the inductive argument
+shows that one of the premises used is the announcement itself, and in
+particular the fact that the drill is unexpected.  Thus the word
+"unexpected" is defined circularly.  Shaw and Medlin claim that this
+circularity is illegitimate and is the source of the paradox.  Fitch
+uses Godelian techniques to produce a fully rigorous self-referential
+announcement, and shows that the resulting proposition is
+self-contradictory.  However, none of these authors explain how it can
+be that this illegitimate or self-contradictory announcement
+nevertheless appears to be vindicated when the drill occurs.  In other
+words, what they have shown is that under one interpretation of "surprise"
+the announcement is faulty, but their interpretation does not capture the
+intuition that the drill really is a surprise when it occurs and thus
+they are open to the charge that they have not captured the essence of
+the paradox.
+
+Another school of thought (Quine, Kaplan and Montague, Binkley,
+Harrison, Wright and Sudbury, McClelland, Chihara, Sorenson) interprets
+"surprise" in terms of "knowing" instead of "deducing."  Quine claims
+that the victims of the drill cannot assert that on the eve of the last
+day they will "know" that the drill will occur on the next day.  This
+blocks the inductive argument from the start, but Quine is not very
+explicit in showing what exactly is wrong with our strong intuition
+that everybody will "know" on the eve of the last day that the drill
+will occur on the following day.  Later writers formalize the paradox
+using modal logic (a logic that attempts to represent propositions
+about knowing and believing) and suggest that various axioms about
+knowing are at fault, e.g., the axiom that if one knows something, then
+one knows that one knows it (the "KK axiom").  Sorenson, however,
+formulates three ingenious variations of the paradox that are
+independent of these doubtful axioms, and suggests instead that the
+problem is that the announcement involves a "blindspot":  a statement
+that is true but which cannot be known by certain individuals even if
+they are presented with the statement.  This idea was foreshadowed by
+O'Beirne and Binkley.  Unfortunately, a full discussion of how this
+blocks the paradox is beyond the scope of this summary.
+
+Finally, there are two other approaches that deserve mention.  Cargile
+interprets the paradox as a game between ideally rational agents and finds
+fault with the notion that ideally rational agents will arrive at the same
+conclusion independently of the situation they find themselves in.  Olin
+interprets the paradox as an issue about justified belief: on the eve of
+the last day one cannot be justified in believing BOTH that the drill will
+occur on the next day AND that the drill will be a surprise even if both
+statements turn out to be true; hence the argument cannot proceed and the
+drill can be a surprise even on the last day.
+
+For those who wish to read some of the literature, good papers to start with
+are Bennett-Cargile and both papers of Sorenson.  All of these provide
+overviews of previous work and point out some errors, and so it's helpful to
+read them before reading the original papers.  For further reading on the
+"deducibility" side, Shaw, Medlin and Fitch are good representatives.  Other
+papers that are definitely worth reading are Quine, Binkley, and Olin.
+
+D. O'Connor, "Pragmatic Paradoxes," Mind 57:358-9, 1948.
+L. Cohen, "Mr. O'Connor's 'Pragmatic Paradoxes,'" Mind 59:85-7, 1950.
+P. Alexander, "Pragmatic Paradoxes," Mind 59:536-8, 1950.
+M. Scriven, "Paradoxical Announcements," Mind 60:403-7, 1951.
+D. O'Connor, "Pragmatic Paradoxes and Fugitive Propositions," Mind 60:536-8,
+ 1951
+P. Weiss, "The Prediction Paradox," Mind 61:265ff, 1952.
+W. Quine, "On A So-Called Paradox," Mind 62:65-7, 1953.
+R. Shaw, "The Paradox of the Unexpected Examination," Mind 67:382-4, 1958.
+A. Lyon, "The Prediction Paradox," Mind 68:510-7, 1959.
+D. Kaplan and R. Montague, "A Paradox Regained," Notre Dame J Formal Logic
+ 1:79-90, 1960.
+G. Nerlich, "Unexpected Examinations and Unprovable Statements," Mind
+ 70:503-13, 1961.
+M. Gardner, "A New Prediction Paradox," Brit J Phil Sci 13:51, 1962.
+K. Popper, "A Comment on the New Prediction Paradox," Brit J Phil Sci 13:51,
+ 1962.
+B. Medlin, "The Unexpected Examination," Am Phil Q 1:66-72, 1964.
+F. Fitch, "A Goedelized Formulation of the Prediction Paradox," Am Phil Q
+ 1:161-4, 1964.
+R. Sharpe, "The Unexpected Examination," Mind 74:255, 1965.
+J. Chapman & R. Butler, "On Quine's So-Called 'Paradox,'" Mind 74:424-5, 1965.
+J. Bennett and J. Cargile, Reviews, J Symb Logic 30:101-3, 1965.
+J. Schoenberg, "A Note on the Logical Fallacy in the Paradox of the
+ Unexpected Examination," Mind 75:125-7, 1966.
+J. Wright, "The Surprise Exam: Prediction on the Last Day Uncertain," Mind
+ 76:115-7, 1967.
+J. Cargile, "The Surprise Test Paradox," J Phil 64:550-63, 1967.
+R. Binkley, "The Surprise Examination in Modal Logic," J Phil 65:127-36,
+ 1968.
+C. Harrison, "The Unanticipated Examination in View of Kripke's Semantics
+ for Modal Logic," in Philosophical Logic, J. Davis et al (ed.), Dordrecht,
+ 1969.
+P. Windt, "The Liar in the Prediction Paradox," Am Phil Q 10:65-8, 1973.
+A. Ayer, "On a Supposed Antinomy," Mind 82:125-6, 1973.
+M. Edman, "The Prediction Paradox," Theoria 40:166-75, 1974.
+J. McClelland & C. Chihara, "The Surprise Examination Paradox," J Phil Logic
+ 4:71-89, 1975.
+C. Wright and A. Sudbury, "The Paradox of the Unexpected Examination,"
+ Aust J Phil 55:41-58, 1977.
+I. Kvart, "The Paradox of the Surprise Examination," Logique et Analyse
+ 337-344, 1978.
+R. Sorenson, "Recalcitrant Versions of the Prediction Paradox," Aust J Phil
+ 69:355-62, 1982.
+D. Olin, "The Prediction Paradox Resolved," Phil Stud 44:225-33, 1983.
+R. Sorenson, "Conditional Blindspots and the Knowledge Squeeze: A Solution to
+ the Prediction Paradox," Aust J Phil 62:126-35, 1984.
+C. Chihara, "Olin, Quine and the Surprise Examination," Phil Stud 47:191-9,
+ 1985.
+R. Kirkham, "The Two Paradoxes of the Unexpected Hanging," Phil Stud
+ 49:19-26, 1986.
+D. Olin, "The Prediction Paradox: Resolving Recalcitrant Variations," Aust J
+ Phil 64:181-9, 1986.
+C. Janaway, "Knowing About Surprises: A Supposed Antinomy Revisited," Mind
+ 98:391-410, 1989.
+
+    -- tycchow@math.mit.edu.
+
+==> logic/verger.p <==
+A very bright and sunny Day
+The Priest did to the Verger say:
+"Last Monday met I strangers three
+None of which were known to Thee.
+I ask'd Them of Their Age combin'd
+which amounted twice to Thine!
+A Riddle now will I give Thee:
+Tell Me what Their Ages be!"
+
+So the Verger ask'd the Priest:
+"Give to Me a Clue at least!"
+"Keep Thy Mind and Ears awake,
+And see what Thou of this can make.
+Their Ages multiplied make plenty,
+Fifty and Ten Dozens Twenty."
+
+The Verger had a sleepless Night
+To try to get Their Ages right.
+"I almost found the Answer right.
+Please shed on it a little Light."
+"A little Clue I give to Thee,
+I'm older than all Strangers three."
+After but a little While
+The Verger answered with a Smile:
+"Inside my Head has rung a Bell.
+Now I know the answer well!"
+
+
+Now, the question is:
+
+How old is the PRIEST??
+               ======
+
+==> logic/verger.s <==
+The puzzler tried to take the test;
+Intriguing rhymes he wished to best.
+But "Fifty and ten dozens twenty"
+made his headache pound aplenty.
+When he finally found some leisure,
+He took to task this witty treasure.
+
+"The product of the age must be
+Twenty-Four Hundred Fifty!"
+Knowing that, he took its primes,
+permuted them as many times
+as needed, til he found amounts
+equal to, by all accounts,
+twice the Verger's age, so that
+He would have that next day's spat.
+
+The reason for the lad's confusion
+was due to multiple solution!
+Hence he needed one more clue
+to give the answer back to you!
+Since only one could fit the bill,
+and then confirm the priest's age still,
+the eldest age of each solution
+by one could differ, with no coercion.  <=(Sorry)
+
+Else, that last clue's revelation
+would not have brought information!
+With two, two, five, seven, and seven,
+construct three ages, another set of seven.
+Two sets of three yield sixty-four,
+Examine them, yet one time more.
+The eldest age of each would be
+forty-nine, and then, fifty!
+
+With lack of proper rhyme and meter,
+I've tried to be the first completor
+of this poem and a puzzle;
+my poetry, you'd try to muzzle!
+And lest you think my wit is thrifty,
+The answer, of course, must be fifty!
+If dispute, you wish to tender,
+note my addresss, as the sender!
+
+-- 
+Kevin Nechodom <knechod@stacc.med.utah.edu>
+
+==> logic/weighing/balance.p <==
+You are given 12 identical-looking coins, one of which is counterfeit
+and weighs slightly more or less (you don't know which) than the
+others.  You are given a balance scale which lets you put the same
+number of coins on each side and observe which side (if either) is
+heavier.  How can you identify the counterfeit and tell whether it
+is heavy or light, in 3 weighings?
+
+More generally, you are given N coins, one of which is heavy or light.
+
+==> logic/weighing/balance.s <==
+Martin Gardner gave a neat solution to this problem.
+
+Assume that you are allowed W weighings.  Write down the 3^W possible
+length W strings of the symbols '0', '1', and '2'.  Eliminate the three
+such strings that consist of only one symbol repeated W times.
+
+For each string, find the first symbol that is different from the symbol
+preceeding it.  Consider that pair of symbols.  If that pair is not 01,
+12, or 20, cross out that string.  In other words, we only allow strings
+of the forms 0*01.*, 1*12.*, or 2*20.* ( using ed(1) regular expressions ).
+
+You will have (3^W-3)/2 strings left.  This is how many coins you can
+handle in W weighings.
+
+Perform W weighings as follows:
+
+	For weighing I, take all the coins that have a 0 in string
+	position I, and weigh them against all the coins that have
+	a 2 in string position I. 
+
+	If the side with the 0's in position I goes down, write down
+	a 0.  If the other side goes down, write down a 2.  Otherwise,
+	write down a 1.
+
+After the W weighings, you have written down an W symbol string.  If
+your string matches the string on one of the coins, then that is the
+odd coin, and it is heavy.  If none of them match, than change every
+2 to a 0 in your string, and every 0 to a 2.  You will then have a
+string that matches one of the coins, and that coin is lighter than
+the others.
+
+Note that if you only have to identify the odd coin, but don't have to
+determine if it is heavy or light, you can handle (3^W-3)/2+1 coins.
+Label the extra coin with a string of all 1's, and use the above
+method.
+
+Note also that you can handle (3^W-3)/2+1 coins if you *do* have to
+determine whether it is heavy or light, provided you have a single reference
+coin available, which you know has the correct weight. You do this by
+labelling the extra coin with a string of all 2s. This results in it being
+placed on the same side of the scales each time, and in that side of the
+scales having one more coin than the other each time. So you put the
+reference coin on the other side of the scales to the "all 2s" coin on each
+weighing.
+
+Proving that this works is straightforward, once you notice that the
+method of string construction makes sure that in each position, 1/3
+of the strings have 0, 1/3 have 1, and 1/3 have 2, and that if a
+string occurs, then the string obtained by replacing each 0 with a
+2 and each 2 with a 0 does not occur.
+
+If you already know the odd coin is heavy (or light), you can handle
+3^W coins.  Given W weighings, there can only be 3^W possible
+combinations of balances, left pan heavy, and right pan heavy.
+
+The algorithm in this case:
+
+Divide the coins into three equal groups... A, B, and C. Weigh A
+against B. If a pan sinks, it contains the heavy coin, otherwise, the
+heavy coin is in group C. If your group size is 1, you've found the coin,
+otherwise recurse on the group containing the heavy coin.
+
+==> logic/weighing/box.p <==
+You have ten boxes; each contains nine balls.  The balls in one box
+weigh 0.9 kg; the rest weigh 1.0 kg.  You have one weighing on an
+accurate scale to find the box containing the light balls.  How do you
+do it?
+
+==> logic/weighing/box.s <==
+Number the boxes 0-9.  Take 0 balls from box 0, 1 ball from box 1, 2
+balls from box 2, etc.  Now weigh all those balls and follow this
+table:
+
+If odd box is	Weight is
+0		45 kg
+1		44.9 kg
+2		44.8 kg
+3		44.7 kg
+4		44.6 kg
+5		44.5 kg
+6		44.4 kg
+7		44.3 kg
+8		44.2 kg
+9		44.1 kg
+
+==> logic/weighing/find.median.p <==
+What is the least number of pairwise comparisons needed to find the median of
+2n+1 distinct real numbers?
+
+
+==> logic/weighing/find.median.s <==
+Consider median of three numbers {a,b,c}.
+Let G[a,b]=max(a,b) and L[a,b]=min(a,b)
+If we assume that median of {a,b,c} can be computed by two
+comparisons, then the solution must be one of the following:
+G[c,G[a,b]], G[c,L[a,b]], L[c,G[a,b]], L[c,L[a,b]].
+However, it is easily seen that none of these provides
+a solution. Therefore, we need more than two comparisons to
+get median of three numbers.
+ 
+Now, consider median of 5 numbers {a,b,c,d,e}.
+There are two possible ways to start the computation.
+Let Ci[a,b] denote the ith comparison between {a} and {b}.
+First, we could start with C1[a,b] and C2[c,d].
+Second, we could start with C2[a,C1[b,c]].
+We ignore other trivialities such as C1[a,a] or C2[a,C1[a,b]].
+ 
+In the first case, the next operation is to find
+median of S={e,C1[a,b],C2[c,d]} which requires at least three
+comparisons in addition to the two comparisons already performed.
+So the total cost of the first approach is at least 5 comparisons.
+However, if the median is not equal to {e} then we can always
+choose C1 and C2 such that the median is not in S.
+ 
+In the second case, the next step is to find median of S={C2[a,C1[b,c]],d,e}.
+Again, the total cost of this approach is at least five comparisons.
+If median is not equal to {d} or {e}, we can again always
+choose C1 and C2 such that the median is not in S.
+ 
+Other starting sets, such as {e,d,c,b,a}, can always be ordered
+as {a,b,c,d,e}. This shows that the argument covers all possible cases.
+ 
+Navid,
+haddadi@sipi.usc.edu
+
+==> logic/weighing/gummy.bears.p <==
+Real gummy drop bears have a mass of 10 grams, while imitation gummy
+drop bears have a mass of 9 grams.  Spike has 7 cartons of gummy drop bears,
+4 of which contain real gummy drop bears, the others imitation.
+Using a scale only once and the minimum number of gummy drop bears, how
+can Spike determine which cartons contain real gummy drop bears?
+
+==> logic/weighing/gummy.bears.s <==
+Spike uses 51 gummy drop bears:  from the 7 boxes he takes respectively
+0, 1, 2, 4, 7, 13, and 24 bears.
+
+The notion is that each box of imitation bears will subtract its
+number of bears from the total "ideal" weight of 510 grams (1 gram of
+missing weight per bear), so Spike weighs the bears, subtracts the
+result from 510 to obtain a number N, and finds the unique combination
+of 3 numbers from the above list (since there are 3 "imitation" boxes)
+that sum to N.
+
+The trick is for the sums of all triples selected from the set S of
+numbers of bears to be unique.  To accomplish this, I put numbers into
+S one at a time in ascending order, starting with the obvious choice,
+0.  (Why is this obvious?  If I'd started with k > 0, then I could
+have improved on the resulting solution by subtracting k from each
+number) Each new number obviously had to be greater than any previous,
+because otherwise sums are not unique, but also the sums it made when
+paired with any previous number had to be distinct from all previous
+pairs (otherwise when this pair is combined with a third number you
+can't distinguish it from the other pair)--except for the last box,
+where we can ignore this point.  And most obviously all the new
+triples had to be distinct from any old triples; it was easy to find
+what the new triples were by adding the newest number to each old sum
+of pairs.
+
+Now, in case you're curious, the possible weight deficits and their
+unique decompositions are:
+
+3       = 0 + 1 + 2
+5       = 0 + 1 + 4
+6       = 0 + 2 + 4
+7       = 1 + 2 + 4
+8       = 0 + 1 + 7
+9       = 0 + 2 + 7
+10      = 1 + 2 + 7
+11      = 0 + 4 + 7
+12      = 1 + 4 + 7
+13      = 2 + 4 + 7
+14      = 0 + 1 + 13
+15      = 0 + 2 + 13
+16      = 1 + 2 + 13
+17      = 0 + 4 + 13
+18      = 1 + 4 + 13
+19      = 2 + 4 + 13
+20      = 0 + 7 + 13
+21      = 1 + 7 + 13
+22      = 2 + 7 + 13
+24      = 4 + 7 + 13
+25      = 0 + 1 + 24
+26      = 0 + 2 + 24
+27      = 1 + 2 + 24
+28      = 0 + 4 + 24
+29      = 1 + 4 + 24
+30      = 2 + 4 + 24
+31      = 0 + 7 + 24
+32      = 1 + 7 + 24
+33      = 2 + 7 + 24
+35      = 4 + 7 + 24
+37      = 0 + 13 + 24
+38      = 1 + 13 + 24
+39      = 2 + 13 + 24
+41      = 4 + 13 + 24
+44      = 7 + 13 + 24
+
+Note that there had to be (7 choose 3) distinct values; they end up
+ranging from 3 to 44 inclusive with 7 numbers missing:  4, 23, 34, 36,
+40, 42, and 43.
+
+-- David Karr (karr@cs.cornell.edu)
+
+==> logic/weighing/optimal.weights.p <==
+What is the smallest set of weights that allow you to weigh on a
+balance scale every integer number of kilograms up to some number N?
+
+==> logic/weighing/optimal.weights.s <==
+a) EQUATION
+-----------
+Obviously (I hate this word! :-) any weight Y that can be weighed
+by X1, X2, ... Xn can be written as:
+
+    Y = A1*X1 + A2*X2 + .... + An*Xn
+
+where Ai is equal to -1, or 0, or 1.
+
+b) UPPER BOUND FOR Y(n)
+-----------------------
+Each Ai can have one of three values, so the total number of
+combinations of values for A1,A2, ... An is 3^n. At least one of these 
+combinations gives Y=0 (A1=A2=...=An=0). Out of the remaining 3^n-1
+combinations, some give a negative Y (for example A1=A2=...=An=-1).
+and some a positive Y (and some might also give zero values, e.g. if
+X1=X2, and A1=1, A2=-1).
+Because of symmetry it's easy to see that the combinations that give Y>0
+are at most half i.e. (3^n-1)/2. It is also possible that different
+combinations might give the same value of Y, and it is also possible
+that these values of Y are not successive.
+However, to obtain an upper bound, lets assume the best case i.e.
+all (3^n-1)/2 combinations give different, positive, and successive
+values, so:
+    Y(n) <= (3^n-1)/2
+
+c) AN OPTIMAL ALGORITHM FOR CHOOSING Xn
+---------------------------------------
+I will present an algorithm for choosing the weights X1,X2,...Xn.
+Then we will prove that it is optimal.
+
+For n=1, we choose X1=1, and of course Y(1) = 1.
+
+Let's assume that we have already chosen n weights X1, X2 ... Xn,
+and that we can weigh all Y where 1<=Y<=Y(n).
+We are allowed to get an extra new weight Xn+1.
+If we choose:
+    Xn+1 = 2*Y(n)+1
+then we get
+    Y(n+1) = Y(n) + Xn+1 = 3*Y(n)+1
+
+Proof:
+    for 1<= Y <= Y(n):
+	use the weights X1...Xn (ignoring the new one)
+    for Y(n)+1 <= Y < Xn+1 = 2*Y(n)+1
+	Put Xn+1 on one side of the scale, and on the other side put
+	the unknown weight, and a combination of X1...Xn so that
+	this combination weighs "Xn+1 - Y" (which is a number
+	in the range 0...Y(n), so *there exists* such a combination)
+    for 2*Y(n)+1 <= Y <= 3*Y(n)+1:
+	put the unknown weight on one side, and on the other side
+	put Xn+1, and combination of X1...Xn with a weight equal to
+	"Y - Xn+1" (which again is a number in the range 0...Y(n),
+	so there exists such a combination)
+
+So, to summarize, if we use such an algorithm, we have:
+    X1 = 1;
+    Y(1) =1;
+
+    Xn+1 = 2*Y(n)+1
+    Y(n+1) = Y(n) + Xn+1 = 3*Y(n) + 1
+
+It's easy to prove (e.g. by induction) that:
+    Y(n) = (3^n-1)/2
+    X(n) = 3^n
+
+So, Y(n) is equal to the upper bound we found before, so this algorithm is
+optimal, and the weights you must choose are powers of 3.
+
+Spyros Potamianos
+potamian@hpl.hp.com
+
+
+==> logic/weighing/weighings.p <==
+Some of the supervisors of Scandalvania's n mints are producing bogus coins.
+It would be easy to determine which mints are producing bogus coins but,
+alas, the only scale in the known world is located in Nastyville,
+which isn't on very friendly terms with Scandalville.  In fact, Nastyville's
+king will only let you use the scale twice.  Your job?  You must determine
+which of the n mints are producing the bogus coins using only two weighings
+and the minimum number of coins (your king is rather parsimonious, to put it
+nicely).  This is a true scale, i.e. it will tell you the weight of whatever
+you put on it.  Good coins are known to have a weight of 1 ounce and it is
+also known that all the bogus mints (if any) produce coins that are
+light or heavy by the same amount.
+
+Some examples: if n=1 then we only need 1 coin, if n=2 then clearly 2
+coins suffice, one from each mint.
+
+What are the solutions for n=3,4,5?  What can be said for general n?
+
+==> logic/weighing/weighings.s <==
+Oh gracious and wise king, I have solved this problem by first
+simplifying and then expanding.  That is, consider the problem of
+being allowed only a single weighing.  Stop reading right now if you
+want to think about it further.
+
+There are three possible outcomes for each mint (light, OK, heavy)
+which may be represented as (-1, 0, +1).  Now, let each mint represent
+one place in base 3.  Thus, the first mint is the ones place, the
+second the threes place, the third is the nines place and so on.  The
+number of coins from each mint must equal the place.  That is, we'll
+have 1 coin from mint 1, 3 from mint 2, 9 from mint 3, and, in
+general, 3^(n-1) from mint n.
+
+By weighing all coins at once, we will get a value between 1 + 3 + 9 +
+...  and -1 + -3 + -9 + ...  In fact, we notice that that value will
+be unique for any mint outcomes.  Thus, for the one weighing problem,
+we need
+
+sum for i=1 to n (3^(i-1))
+
+which evaluates to (3^n - 1)/2
+
+I'm fairly satisfied that this is a minimum for a single weighing.
+What does a second weighing give us?  Well, we can divide the coins
+into two groups and use the same method.  That is, if we have 5 mints,
+one weighing will be:
+
+1 coin from mint 1 + 3 coins from mint 2 + 9 coins from mint 3
+
+while the other weighing will be:
+
+1 coin from mint 4 + 3 coins from mint 5
+
+It's pretty plain that this gives us a total coinage of:
+
+   3^(n/2) - 1 for even n and, after some arithmetic agitation:
+   2 * 3^((n-1)/2) - 1 for odd n
+
+I think the flaw in this solution is that we don't know ahead of time
+the amount by which the coins are off weight.  So if you weigh 1 coin
+from mint 1 together with 3 coins from mint 2 and the result is heavy
+by 3x units, you still don't know whether the bogus coins are from
+mint 3 (heavy by x units) or from mint 1 (heavy by 3x units).  Note
+that we're not given the error amount, only the fact that is is equal
+for all bogus coins.
+
+Here is my partial solution:
+
+After considering the above, it would seem that on each of the two
+weighings we must include coins from all of the mints (except for the
+special cases of small n).  So let ai (a sub i) be the number of coins
+from mint i on weighing 1 and bi be the number of coins from mint i on
+weighing 2.  Let the error in the bogus coins have a value x, and let
+ci be a the counterfeit function: ci is 0 if mint i is good, 1
+otherwise.
+
+Then
+	Sum   ai ci x = delta1		error on weighing 1
+	Sum   bi ci x = delta2		error on weighing 2
+
+Now the ratio of delta1 to delta2 will be rational regardless of the
+value of x, since x will factor out; let's call this ratio p over q (p
+and q relatively prime).  We would like to choose { ai } and { bi }
+such that for any set of mints J, which will be a subset of { 1 , 2 ,
+... , n }, that
+
+	Sum aj	( = Sum  ai ci ) is relatively prime to Sum bj.
+
+If this is true then we can determine the error x; it will simply be
+delta1/p, which is equal to  delta2/q.
+
+If the { ai } have been carefully chosen, we should be able to figure
+out the bogus mints from one of the weighings, provided that
+all subsets ( { { aj } over all J } ) have unique sums.
+This was the strategy proposed above, where is was suggested
+that ai = 3 ** (i-1) ; note that you can use base 2 instead
+of base 3 since all the errors have the same sign.
+
+Well, for the time being I'm stumped.
+
+This agrees with the analysis I've been fighting with.  I actually
+came up with a pair of functions that "almost" works.  So that the
+rest of you can save some time (in case you think the way I did):
+    Weighing 1: 1 coin from each mint
+    Weighing 2: 2^(k-1) coins from mint k, for 1...k...n 
+	(total 2^n - 1 coins)
+
+Consider the n mints to be one-bit-each -- bit set -> mint makes bogus
+coins.  Then we can just state that we're trying to discover "K",
+where K is a number whose bit pattern _just_ describes the bogosity of
+each mint.  OK - now, assuming we know 'x', and we only consider the
+*difference* of the weighing from what it should be, for weighing 1,
+the devaiation is just the Hamming weight of K -- that is the number
+of 1-bits in it -- that is, the number of bogosifying mints.  For
+weighing 2, the deviation is just K!  When the nth bit of K is set,
+then that mint contributes just 2^n to the deviation, and so the total
+deviation will just be K.
+
+So that set me in search of a lemma: given H(x) is the hamming weight
+of x, is f(x) = x / H(x) a 1-1 map integers into rationals?  That is,
+if x/H(x) = y/H(y) can we conclude that x = y?
+
+The answer (weep) is NO.  The lowest pair I could find are 402/603
+(both give the ratio 100.5).  Boy it sure looked like a good
+conjecture for a while!  Sigh.
+
+
+There are two parts to the problem. First let us try to come up with a 
+solution to finding the answer in 2 weighings - then worry about using the
+min. number of coins.
+Solutions are for GENERAL n.
+
+Let N = set of all mints, 1 to n. Card(N) = n.
+Let P = set of all bogus mints. Let Card(P) = p.
+
+Weighing I: Weigh n coins, 1 from each mint.
+
+Since each "good" coins weighs one ounce, let delta1 be the error in weighing.
+Since all bogus coins are identical, let delta1 be abs(error).
+If x is the weight by which one bogus coin differs from a good coin,
+ delta1 = p * x.
+
+Weighing II: The coins to be weighed are composed thusly.
+
+Let a1 be the number of coins from mint 1, a2 # from mint2 .. and an from
+mint n. All ai's are distinct integers.
+
+Let A = Set of all ai's.
+
+Let delta2 = (abs.) error in weighing 2 = x * k
+	where k is the number of coins that are bogus in weighing two.
+Or more formally
+		k = sigma(ai)
+		 (over all i in P)
+
+Assuming p is not zero (from Weighing I - in that case go back and get beheaded
+for giving the king BAAAAAD advice), 
+	Let ratio = delta1/delta2 = p/k.
+	Let IR = delta2/delta1 = k/p = inverse-ratio (for later proof).
+
+Let S(i) be the bag of all numbers generated by summing i distinct elements 
+from A. Clearly there will be nCi (that n comb. i) elements in S(i).
+
+[A bag is a set that can have the same element occur more than once.]
+
+So S(1) = A
+and S(n) will have one element that is the sum of all the elements of A.
+
+Let R(i) = {x : For-all y in S(i), x = i/y} expressed as p/q (no common 
+								factors).
+(R is a bag too).
+
+Let R-A = Bag-Union(R(i) for 1>= i >=n). (can include same element twice)
+
+Choose A, such that all elements of R-A are DISTINCT, i.e. Bag(R-A) = Set(R-A).
+
+Let the sequence a1, a2, .. an, be an L-sequence if the above property is
+true. Or more simply, A is in L.
+
+**********************************************************************
+CONJECTURE: The bogus mint problem is solved in two weighings if A is in L.
+
+Sketchy proof: R(1) = all possible ratios (= delta1/delta2) when p=1.
+R(i) = all possible ratio's when p=i.
+
+Since all possible combinations of bogus mints are reflected in R, just match
+the actual ratio with the generated table for n.
+
+************************************************************************
+A brief example. Say n=3. Skip to next line if you want.
+Let A=(2,3,7).
+
+p=1 possible ratios = 1/2 1/3 1/7
+p=2 possible ratios = 2/5 2/9 1/5(2/10)
+p=3 possible ratios = 1/4(3/12) (lots of blood in Scandalvania).
+
+As all outcomes are distinct, and the actual ratio MUST be one of these,
+match it to the answer, and start sharpening the axe.
+
+Note that the minimum for n=3 is A=(0,1,3)
+possible ratios are 
+p=1 infinity (delta2=0),1,1/3
+p=2 2/1,2/3,1/2
+p=3 3/4
+
+************************************************************************
+
+All those with the determination to get this far are saying OK, OK how do we
+get A.
+
+I propose a solution that will generate A, to give you the answer in two
+weighings, but will not give you the optimal number of coins.
+
+Let a1=0
+
+For i>=2 >=n
+
+ai = i*(a1 + a2 + ... + ai-1) + 1
+
+*****************************************
+*		i-1			*
+*	ai = i* [Sigma(aj)] + 1 	*   ****Generator function G*****
+*		j=1			*
+*****************************************
+
+If A is L, all RATIO's are unique. Also all inverse-ratio's (1/ratio) are
+unique. I will prove that all inverse-ratio's (or IR's) are unique.
+
+Let A(k), be the series generated by the first k elements from eqn. G.(above)
+
+************************************************************************
+
+PROOF BY INDUCTION.
+
+A(1) = {0} is in L.
+A(2) = {0,1} is in L.
+
+ASSUME A(k) = {0,1, ..., ak} is in L.
+
+T.P.T. A(k+1) = {0,1, ..., ak, D) is in L where D is generated from G.
+
+We know that all IR's(inverse ratio's)  from A(k) are distinct.
+
+Let K = set of all IR's of A(k).
+
+Since A(k+1) contains A(k), all IR's of A(k) will also be IR's of A(K+1).
+
+So for all P, such that (k+1) is not in P, we get a distinct IR.
+
+So consider cases when (k+1) is in P.
+
+p=1 (i.e. (k+1) = only bogus mint), IR = D
+
+______________________________________________________________________
+CONJECTURE: Highest IR for A(k) = max(K) = ak
+
+Proof: 	Since max[A(k)] = ak,
+		for p'= 1, max IR = ak/1 = ak
+		for p'= 2, max IR (max sum of 2 ai's)/2
+			   = (ak + ak-1)/2 < ak (as ak>ak-1).
+		for p'= i max IR sum of largest i elements of A(k)
+			          --------------------------------
+						i
+				< i * ak/i = ak.
+	So max. IR for A(k) is ak.
+______________________________________________________________________
+
+D > ak
+So for p=1 IR is distinct.
+
+Let Xim be the IR formed by choosing i elements from A(k+1). 
+	Note: We are choosing D and (i-1) elements from A(k).
+	      m is just an index to denote each distinct combination of
+	      (i-1) elemnts of A(i).
+
+______________________________________________________________________
+CONJECTURE : For p=j, all new IR's Xjm are limited to the range
+		 D/(j-1) > Xjm > D/j.
+
+Proof:
+	Xjm = (D + {j-1 elements of A(k)})/j
+
+	Clearly Xjm > D/j.
+
+	To show: max[Xjm] < D/(j-1)
+
+	Note: a1 + a2 .. + ak < D/(k+1)
+
+       max[Xjm] = (D + ak + ak-1 +  ... + a(k-j+1))/j
+		< (D + D/(k+1))/j
+		= D (k+2)/(k+1)j
+		= [D/(j-1)] * alpha.
+
+	alpha = (j-1)/(j)  *  (k+2)/(k+1)
+		
+		Since j <= k, (j-1)/j <= (k-1)/k < (k+1)/(k+2)
+
+	IMPLIES alpha < 1.
+
+Conjecture proved.
+
+______________________________________________________________________
+CONJECTURE : For a given p, all newly generated IR's are distinct.
+
+Proof by contradiction:
+
+Assume this is not so.
+
+Implies
+	(D + (p-1) elements of A(k))/p 
+	= (D + some other (p-1) elements of A(k))/p 
+
+Implies SUM[(p-1) elements of A(k)] = SUM[ some other (p-1) elements of A(k)]
+
+Implies SUM[(p-1) elements of A(k)]/(p-1) 
+		= SUM[some other (p-1) elements]/(p-1)
+
+Implies A(k) is NOT in L.
+
+Contra.
+
+Hence conjecture.
+______________________________________________________________________
+
+CONJECTURE: A(k+1) is in L.
+
+Since all newly generated IR's are distinct from each other, and all newly generated IR's are greater than previous IR's, A(k+1) is in L.
+
+==> logic/zoo.p <==
+ I took some nephews and nieces to the Zoo, and we halted at a cage marked
+
+		    Tovus Slithius, male and female.
+		  Beregovus Mimsius, male and female.
+		     Rathus Momus, male and female.
+		Jabberwockius Vulgaris, male and female.
+
+ The eight animals were asleep in a row, and the children began to guess
+ which was which.  "That one at the end is Mr Tove."  "No, no!  It's Mrs
+ Jabberwock," and so on.  I suggested that they should each write down
+ the names in order from left to right, and offered a prize to the one
+ who got most names right.
+
+ As the four species were easily distinguished, no mistake would arise in
+ pairing the animals; naturally a child who identified one animal as Mr
+ Tove identified the other animal of the same species as Mrs Tove.
+
+ The keeper, who consented to judge the lists, scrutinised them carefully.
+ "Here's a queer thing.  I take two of the lists, say, John's and Mary's.
+ The animal which John supposes to be the animal which Mary supposes to be
+ Mr Tove is the animal which Mary supposes to be the animal which John
+ supposes to be Mrs Tove.  It is just the same for every pair of lists,
+ and for all four species.
+
+ "Curiouser and curiouser!  Each boy supposes Mr Tove to be the animal
+ which he supposes to be Mr Tove; but each girl supposes Mr Tove to be
+ the animal which she supposes to be Mrs Tove.  And similarly for the oth-
+ er animals.  I mean, for instance, that the animal Mary calls Mr Tove
+ is really Mrs Rathe, but the animal she calls Mrs Rathe is really Mrs
+ Tove."
+
+ "It seems a little involved," I said, "but I suppose it is a remarkable
+ coincidence."
+
+ "Very remarkable," replied Mr Dodgson (whom I had supposed to be the
+ keeper) "and it could not have happened if you had brought any more
+ children."
+
+ How many nephews and nieces were there?  Was the winner a boy or a girl?
+ And how many names did the winner get right?	[by Sir Arthur Eddington]
+
+==> logic/zoo.s <==
+Given that there is at least one boy and one girl (John and Mary are
+mentioned) then the answer is that there were 3 nephews and 2 nieces,
+the winner was a boy who got 4 right.
+
+Number the animals 1 through 8, such that the females are even and the
+males are odd, with members of the same species consecutive; i.e.  1 is
+Mr. Tove, 2 Mrs. Tove, etc.
+
+Then each childs guesses can be represented by a permutation.  I use
+the standard notation of a permutation as a set of orbits.  For
+example: (1 3 5)(6 8) means 1 -> 3, 3 -> 5, 5 -> 1, 6 -> 8, 8 -> 6 and
+2,4,7 are unchanged.
+
+[1]  Let P be any childs guesses.  Then P(mate(i)) = mate(P(i)).
+
+[2]  If Q is another childs guesses, then [P,Q] = T, where [P,Q] is the
+commutator of P and Q (P composed with Q composed with P inverse
+composed with Q inverse) and T is the special permutation (1 2) (3 4)
+(5 6) (7 8) that just swaps each animal with its spouse.
+
+[3]  If P represents a boy, then P*P = I (I use * for composition, and
+I for the identity permutation: (1)(2)(3)(4)(5)(6)(7)(8)
+
+[4]  If P represents a girl, then P*P = T.
+
+[1] and [4] together mean that all girl's guesses must be of the form:
+    (A B C D) (E F G H) where A and C are mates, as are B & D,
+    E & F G & H.
+
+So without loss of generality let Mary = (1 3 2 4) (5 7 6 8)
+Without to much effort we see that the only possibilities for other
+girls "compatible" with Mary (I use compatible to mean the relation
+expressed in [2]) are:
+    g1:  (1 5 2 6) (3 8 4 7)
+    g2:  (1 6 2 5) (3 7 4 8)
+    g3:  (1 7 2 8) (3 5 4 6)
+    g4:  (1 8 2 7) (3 6 4 5)
+
+Note that g1 is incompatible with g2 and g3 is incompatible with g4.
+Thus no 4 of Mary and g1-4 are mutually compatible.  Thus there are at
+most three girls: Mary, g1 and g3 (without loss of generality)
+
+By [1] and [3], each boy must be represented as a product of
+transpostions and/or singletons: e.g. (1 3) (2 4) (5) (6) (7) (8) or
+(1) (2) (3 4) (5 8) (6 7).
+
+Let J represent John's guesses and consider J(1).
+If J(1) = 1, then J(2) = 2 (by [1]) using [2] and Mary J(3) = 4, J(4) =
+3,  and g1 & J => J(5) = 6, J(6) = 5, & g3 & J => J(8) = 7 J(7) = 8
+i.e. J = (1)(2)(3 4)(5 6)(7 8).  But the [J,Mary] <> T.  In fact, we
+can see that J must have no fixed points, J(i) <> i for all i, since
+there is nothing special about i = 1.
+
+If J(1) = 2, then we get from Mary that J(3) = 3.  contradiction.
+
+If J(1) = 3, then J(2) = 4, J(3) = 1, J(4) = 2 (from Mary) =>
+   J(5) = 7, J(6) = 8, J(7) = 5, J(8) = 6 => J = (1 3)(2 4)(5 7)(6 8)
+   (from g1)
+But then J is incompatible with g3.
+
+A similar analysis shows that J(1) cannot be 4,5,6,7 or 8; i.e. no J 
+can be compatible with all three girls.  So without loss of generality,
+throw away g3.
+
+We have Mary = (1 3 2 4) (5 7 6 8)
+        g1   = (1 5 2 6) (3 8 4 7)
+
+The following are the only possible boy guesses which are compatible
+with
+both of these:
+
+  B1: (1)(2)(3 4)(5 6)(7)(8)
+  B2: (1 2)(3)(4)(5)(6)(7 8)
+  B3: (1 3)(2 4)(5 7)(6 8)
+  B4: (1 4)(2 3)(5 8)(6 7)
+  B5: (1 5)(2 6)(3 8)(4 7)
+  B6: (1 6)(2 5)(3 7)(4 8)
+
+Note that B1 & B2 are incombatible, as are B3 & B4, B5 & B6, so at most
+three of them are mutually compatible.  In fact, Mary, g1, B1, B3 and
+B5 are all mutually compatible (as are all the other possibilities you
+can get by choosing either B1 or B2, B3 or B4, B5 or B6.  So if there
+are 2 girls there can be 3 boys, but no more, and we have already
+eliminated the case of 3 girls and 1 boy.
+
+The only other possibility to consider is whether there can be 4 or
+more boys and 1 girl.  Suppose there are Mary and 4 boys.  Each boy
+must map 1 to a different digit or they would not be mutually
+compatible.  For example if b1 and b2 both map 1 to 3, then they both
+map 3 to 1 (since a boy's map consists of transpositions), so both
+b1*b2 and b2*b1 map 1 to 1.  Furthermore, b1 and b2 cannot map 1 onto
+spouses.  For example, if b1(1) = a and b is the spouse of a, then
+b1(2) = b.  If b2(1) = b, then b2(2) = a.  Then b1*b2(1) = b1(b) = 2
+and b2*b1(1) = b2(a) = 2 (again using the fact that boys are all
+transpostions).  Thus the four boys must be:
+
+B1: (1)(2)...    or (1 2)....
+B2: (1 3)...     or (1 4) ...
+B3: (1 5) ...    or (1 6) ...
+B4: (1 7) ...    or (1 8) ...
+
+Consider B4.  The only permutation of the form (1 7)... which is
+compatible
+with Mary ( (1 3 2 4) (5 7 6 8) ) is:
+
+   (1 7)(2 8)(3 5)(4 6)
+
+The only (1 8)... possibility is:
+
+   (1 8)(2 7)(3 6)(4 5)
+
+Suppose B4 = (1 7)(2 8)(3 5)(4 6)
+
+If B3 starts (1 5), it must be (1 5)(2 6)(3 8)(4 7) to be compatible
+with B4.  This is compatible with Mary also.
+
+Assuming this and B2 starts with (1 3) we get B2 = (1 3)(2 4)(5 8)(6 7)
+in order to be compatible with B4.  But then B2*B3 and B3*B2 moth map 1
+to 8.  I.e. no B2 is mutually compatible with B3 & B4.
+
+Similarly if B2 starts with (1 4) it must be (1 4)(2 3)(5 7)(6 8) to
+work with B4, but this doesn't work with B3.
+
+Likewise B3 starting with (1 6) leads to no possible B2 and the
+identical reasoning eliminates B4 = (1 8)...
+
+So no B4 is possible!
+
+I.e at most 3 boys are mutually compatiblw with Mary, so 2 girls & 3
+boys is optimal.
+
+Thus:
+
+Mary = (1 3 2 4) (5 7 6 8)
+Sue  = (1 5 2 6) (3 8 4 7)  
+John = (1)(2)(3 4)(5 6)(7)(8)
+Bob  = (1 3)(2 4)(5 7)(6 8)
+Jim  = (1 5)(2 6)(3 8)(4 7)
+
+is one optimal solution, with the winner being John (4 right: 1 2 7 & 8)
+
